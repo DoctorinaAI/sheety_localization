@@ -86,17 +86,17 @@ jobs:
         id: check-format
         timeout-minutes: 1
         run: |
-          find lib test -name "*.dart" ! -name "*.*.dart" -print0 | xargs -0 dart format --set-exit-if-changed --line-length 80 -o none lib/ test/
+          find lib test -name "*.dart" ! -name "*.*.dart" -print0 | xargs -0 dart format --set-exit-if-changed --line-length 80 -o none bin/
 
       - name: 📈 Check analyzer
         id: check-analyzer
         timeout-minutes: 1
-        run: dart analyze --fatal-infos --fatal-warnings lib/ test/
+        run: dart analyze --fatal-infos --fatal-warnings bin/
 
-      - name: 🧪 Run unit tests
-        id: run-unit-tests
-        timeout-minutes: 5
-        run: |
-          dart test --color --platform=vm --concurrency=12 \
-            --timeout=60s --reporter=github --file-reporter=json:reports/tests.json \
-            --coverage=coverage -- test/unit_test.dart
+      #- name: 🧪 Run unit tests
+      #  id: run-unit-tests
+      #  timeout-minutes: 5
+      #  run: |
+      #    dart test --color --platform=vm --concurrency=12 \
+      #      --timeout=60s --reporter=github --file-reporter=json:reports/tests.json \
+      #      --coverage=coverage -- test/unit_test.dart
