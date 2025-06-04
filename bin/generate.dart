@@ -253,7 +253,7 @@ ArgParser buildArgumentsParser() => ArgParser()
       'generated-header',
     ],
     mandatory: false,
-    defaultsTo: '/// This file is generated, do not edit it manually!',
+    defaultsTo: '// This file is generated, do not edit it manually!',
     help: 'Header for the generated Dart files',
   )
   ..addFlag(

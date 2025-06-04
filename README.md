@@ -33,7 +33,7 @@
 
 ## TL;DR
 
-1. **Create a properly formatted Google Sheet** with headers: `label | description | meta | en | ru | ...`.
+1. **Create a properly formatted Google Sheet** with headers: `label | description | meta | en | ru | ... (other locales)`.
 2. **Generate a Service Account** in Google Cloud, enable Sheets API, and share the sheet.
 3. **Activate** Sheety Localization via `dart pub global activate sheety_localization`.
 4. **Run** the generator:
@@ -67,7 +67,7 @@
 3. **Google Sheet** laid out in the following format (each sheet/tab = one ARB file):
    - First row (header) must contain:
      ```
-     label | description | meta | en | ru | es | de |
+     label | description | meta | en | ru | es | de | ... (other locales)
      ```
    - Column definitions:
      - `label` - key (getter name) for your Dart code
@@ -135,7 +135,7 @@ dart pub global run sheety_localization:generate \
 - `--prefix`:
   Prefix for ARB filenames (e.g., `app` will produce `app_en.arb`, `app_ru.arb`, etc.). Defaults to `app`.
 - `--header`:
-  Custom header comment for each generated Dart file. Defaults to `/// This file is generated, do not edit it manually!`.
+  Custom header comment for each generated Dart file. Defaults to `// This file is generated, do not edit it manually!`.
 - `--format` / `--no-format`:
   Whether to run `dart format` on generated Dart code. Enabled by default.
 
@@ -146,7 +146,7 @@ dart pub global run sheety_localization:generate \
 1. **Prepare your Google Sheet**
 
    - Create a new or reuse an existing Google Sheet.
-   - For each sheet/tab within that spreadsheet, set up the header in the first row as follows: `label | description | meta | en | ru | es | de | ...`
+   - For each sheet/tab within that spreadsheet, set up the header in the first row as follows: `label | description | meta | en | ru | es | de | ... (other locales)`.
 
    - Each subsequent row represents one localized string:
 
@@ -193,7 +193,7 @@ dart pub global run sheety_localization:generate \
    - Run `flutter pub get` (or `dart pub get`).
    - Later, import this package as a dependency in your app, and export the generated `localization.dart` barrel file.
 
-5. **Configure a VS Code task (optional)**
+5. **(Optional) Configure a VS Code task**
    If you use VS Code, add a task to automatically generate localization on demand. Create (or edit) `.vscode/tasks.json` in your package root:
 
    ```json
@@ -264,6 +264,42 @@ dart pub global run sheety_localization:generate \
      - One Dart file per locale under `lib/src/generated/` (e.g., `app_localizations_en.dart`, `app_localizations_ru.dart`, etc.)
 
 ---
+
+9. **Add the generated localization package to your app**
+
+   In your main Dart file (e.g., `main.dart`), import the generated localization
+   and set up the localization delegates at MaterialApp:
+
+   ```dart
+   import 'package:localization/localization.dart';
+
+   MaterialApp(
+    // Add generated localization delegate here:
+    localizationsDelegates: const <LocalizationsDelegate<Object?>>[
+      AppLocalization.delegate,
+      ErrorsLocalization.delegate,
+      SignUpLocalization.delegate,
+      ChatLocalization.delegate,
+      SettingsLocalization.delegate,
+      GlobalMaterialLocalizations.delegate,
+      GlobalCupertinoLocalizations.delegate,
+      GlobalWidgetsLocalizations.delegate,
+    ],
+    supportedLocales: const <Locale>[
+      Locale('en'),
+      Locale('ru'),
+      // Add other supported locales here
+    ],
+   ```
+
+10. **Use the generated localization classes in your app**
+
+    You can now access localized strings from context under the MaterialApp,
+    using the generated localization classes. For example:
+
+    ```dart
+    String title = AppLocalization.of(context).title;
+    ```
 
 ## Directory Structure Example
 

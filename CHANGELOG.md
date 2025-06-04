@@ -1,3 +1,7 @@
+## 0.1.2
+
+- Add usage examples to the documentation.
+
 ## 0.1.1
 
 - Updated documentation to clarify usage.
