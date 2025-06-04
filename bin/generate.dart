@@ -586,9 +586,19 @@ Future<Set<String>> generateFlutterLocalization({
     String() || null => io.Directory.current,
   };
 
-  $log('Creating output directory: ${genDirectory.path}');
-  if (genDirectory.existsSync()) genDirectory.deleteSync(recursive: true);
-  await genDirectory.create(recursive: true);
+  final toDelete = <String>{};
+  if (!genDirectory.existsSync()) {
+    $log('Creating output directory: ${genDirectory.path}');
+    await genDirectory.create(recursive: true);
+  } else {
+    toDelete.addAll(
+      genDirectory
+          .listSync(followLinks: false, recursive: true)
+          .whereType<io.File>()
+          .map((file) => file.absolute.path)
+          .where((path) => path.endsWith('.dart')),
+    );
+  }
 
   /// Convert snake_case to PascalCase
   /// This is used to convert the bucket name to the class name
@@ -653,7 +663,21 @@ Future<Set<String>> generateFlutterLocalization({
       io.exit(1);
     }
     $log('Generated localization files for "$bucket"');
-    localizations.add(path.normalize(path.join(genPath, outputFile)));
+    final file =
+        io.File(path.normalize(path.join(genPath, outputFile))).absolute;
+    if (!file.existsSync()) {
+      $err('Generated file does not exist: ${file.path}');
+      continue;
+    }
+    localizations.add(file.path);
+    // Remove generated files from deletion list
+    toDelete
+        .removeWhere((f) => f.startsWith(genDir.path) && f.endsWith('.dart'));
+  }
+
+  for (final file in toDelete) {
+    $log('Deleting old file: $file');
+    io.File(file).deleteSync(recursive: true);
   }
 
   // Validate generated files
