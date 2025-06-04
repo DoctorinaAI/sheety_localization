@@ -6,7 +6,7 @@
 [![Dart](https://img.shields.io/badge/Dart-%230175C2.svg?style=flat&logo=dart&logoColor=white)](https://dart.dev)
 [![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=flat&logo=Flutter&logoColor=white)](https://flutter.dev)
 
-**Sheety Localization** is a Dart console script that generates ARB files (Application Resource Bundle) and corresponding Dart localization classes from a Google Sheets spreadsheet. It uses the Google Sheets API to fetch localization tables and produces everything you need to integrate internationalization into your Flutter or Dart project.
+**Sheety Localization** is a Dart console script that generates ARB files (Application Resource Bundle) and corresponding Dart localization classes from a Google Sheets spreadsheet. It uses the Google Sheets API to fetch localization tables and produces everything you need to integrate internationalization into your Flutter project.
 
 ---
 
@@ -49,7 +49,7 @@
      --format
    ```
 
-5. **Import/Export** the generated barrel file (`lib/localization.dart`) in your Flutter or Dart project.
+5. **Import/Export** the generated barrel file (`lib/localization.dart`) in your Flutter project.
 6. **Optionally** automate translation formulas, conditional formatting, VS Code tasks, and CI pipelines.
 
 ---
@@ -172,7 +172,7 @@ dart pub global run sheety_localization:generate \
    - Add your Service Account's email (from the JSON file) with **Viewer** or **Editor** rights.
 
 4. **(Optional) Create a dedicated localization Dart package**
-   If you want to keep generated localization code in its own package, set up a new Dart (or Flutter) package, for example:
+   If you want to keep generated localization code in its own package, set up a new Flutter package, for example:
 
    ```yaml
    # packages/localization/pubspec.yaml
