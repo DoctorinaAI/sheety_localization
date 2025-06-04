@@ -1,0 +1,28 @@
+{
+  "@@locale": "ru",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-06-04T12:30:00Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "error": "Произошла ошибка",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Произошла неизвестная ошибка",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "authErrorMessages": "{errorCode, select, passwordLengthError{Пароль должен быть не менее 6 символов} invalidEmailOrPhoneNumberError{Пожалуйста, укажите действительный адрес электронной почты или номер телефона в международном формате. Примеры: me@example.com и +1234567890987.} invalidEmailError{Неверный формат электронной почты} operationNotAllowedError{Операция не разрешена} weakPasswordError{Пароль слишком слабый} userTokenExpiredError{Токен пользователя истек} invalidPhoneNumberError{Пожалуйста, укажите номера телефона в международном формате, начиная с + и кода страны} invalidActionCodeError{Код операции недействителен} networkRequestFailedError{Ошибка соединения с сервером} tooManyRequestsError{Слишком много запросов} acceptTermsAndConditionsError{Пожалуйста, примите условия пользовательского соглашения и подтвердите политику конфиденциальности.} acceptAIConsentError{Пожалуйста, подтвердите, что консультации с искусственным интеллектом и не заменяет профессиональную медицинскую помощь лицензированного специалиста.} emailOrPhoneError{Ошибка электронной почты или номера телефона} passwordError{Ошибка пароля} unknownError{Неизвестная ошибка} googleSSOError{Ошибка Google SSO} emailAlreadyInUse{Электронная почта уже используется другой учетной записью} phoneAlreadyInUse{Номер телефона уже используется другой учетной записью} invalidCredentialError{Данные входа не верны} invalidAppCredentialError{Недействительные учетные данные приложения}  invalidVerificationCodeError{Неверный код подтверждения} other{Неизвестная ошибка}}",
+  "@authErrorMessages": {
+    "description": "Ошибка аутентификации",
+    "placeholders": {
+      "errorCode": {
+        "type": "String"
+      }
+    }
+  },
+  "bugReportSentText": "Отчёт об ошибке успешно отправлен.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

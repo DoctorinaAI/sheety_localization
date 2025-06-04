@@ -1,0 +1,95 @@
+{
+  "@@locale": "de",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-06-04T12:30:00Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Anmelden",
+  "@title": {},
+  "logIn": "Anmelden",
+  "@logIn": {},
+  "password": "Passwort",
+  "@password": {},
+  "changeNumber": "Nummer ändern",
+  "@changeNumber": {},
+  "forgotPassword": "Passwort vergessen?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "Geben Sie Ihre E-Mail-Adresse ein, und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "Passwort wieder eingefallen?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "Ich habe ein Passwort",
+  "@backToLoginButton": {},
+  "continueButton": "Weiter",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "E-Mail zum Zurücksetzen des Passworts wurde gesendet.",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "Passwort zurücksetzen",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "Code bestätigen",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "Entdecke Doctorina – starte noch heute",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "ODER",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "Passwort für die E-Mail eingeben",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "Geben Sie Ihr Passwort ein",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "Passwort verbergen",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "Anmeldedaten löschen",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "E-Mail oder Telefonnummer",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com oder +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": " E-Mail oder Telefonnummer eingeben",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "Bitte akzeptieren Sie die Vereinbarungen, um fortzufahren.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "Ich stimme der Verarbeitung personenbezogener Daten zu,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "der Verwendung von ",
+  "@consentTheUseOf": {},
+  "consentCookies": "Cookies",
+  "@consentCookies": {},
+  "consentAgreeToThe": "den",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "Allgemeinen Geschäftsbedingungen zu,",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": "und nehme die",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "Datenschutzerklärung zur Kenntnis",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "Ich erkenne an, dass meine Beratung mit einer KI und nicht mit einem lizenzierten medizinischen Fachmann erfolgt.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "Abmelden",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "Möchten Sie sich wirklich abmelden?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "Abbrechen",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "Ja, abmelden",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  }
+}

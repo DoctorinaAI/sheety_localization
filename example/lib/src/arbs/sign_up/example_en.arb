@@ -1,0 +1,95 @@
+{
+  "@@locale": "en",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-06-04T12:30:00Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Sign In",
+  "@title": {},
+  "logIn": "Log in",
+  "@logIn": {},
+  "password": "Password",
+  "@password": {},
+  "changeNumber": "Change number",
+  "@changeNumber": {},
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "Enter your email address, and we’ll send you a link to reset your password.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "Remember your password?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "I have a password",
+  "@backToLoginButton": {},
+  "continueButton": "Continue",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "Password reset email sent",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "Reset password",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "Confirm code",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "Start using Doctorina today",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "OR",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "Enter your password",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "Show password",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "Obscure password",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "Clear login",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "Email or phone",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com or +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "Enter email or phone number",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "Please accept the agreements to continue.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "I consent to the processing of personal data,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "the use of",
+  "@consentTheUseOf": {},
+  "consentCookies": "cookies",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", agree to the",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "terms and conditions",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", and acknowledge the ",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "privacy policy",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "I acknowledge that my consultation is with an AI and not a licensed medical professional.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "Log out",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "Are you sure to log out?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "Cancel",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "Yes, log out",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  }
+}

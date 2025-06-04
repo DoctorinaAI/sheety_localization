@@ -1,0 +1,28 @@
+{
+  "@@locale": "es",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-06-04T12:30:00Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "error": "Ocurrió un error",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Ocurrió un error inesperado",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "authErrorMessages": "{errorCode, select, passwordLengthError{La contraseña debe tener al menos 6 caracteres} invalidEmailOrPhoneNumberError{Por favor, proporcione un correo electrónico válido o un número de teléfono en formato internacional. Ejemplos: me@example.com y +1234567890987.} invalidEmailError{La dirección de correo electrónico no es válida} operationNotAllowedError{Operación no permitida} weakPasswordError{La contraseña es demasiado débil} userTokenExpiredError{El token de usuario ha expirado} invalidPhoneNumberError{Por favor, proporcione los números de teléfono en formato internacional, comenzando con + y el código de país.} invalidActionCodeError{El código de acción no es válido} networkRequestFailedError{Error de solicitud de red} tooManyRequestsError{Demasiadas solicitudes} acceptTermsAndConditionsError{Por favor, acepta los términos y condiciones y reconoce la política de privacidad.} acceptAIConsentError{Por favor, reconoce que consultas son con una IA y no con un profesional médico con licencia.} emailOrPhoneError{Error de correo electrónico o número de teléfono} passwordError{Error de contraseña} unknownError{Error desconocido} googleSSOError{Error de Google SSO} emailAlreadyInUse{La dirección de correo electrónico ya está en uso por otra cuenta.} phoneAlreadyInUse{El número de teléfono ya está en uso por otra cuenta.} invalidCredentialError{Las credenciales no son válidas.} invalidAppCredentialError{Credenciales no válidas de la aplicación} invalidVerificationCodeError{Código de verificación no válido} other{Error desconocido}}",
+  "@authErrorMessages": {
+    "description": "Ошибка аутентификации",
+    "placeholders": {
+      "errorCode": {
+        "type": "String"
+      }
+    }
+  },
+  "bugReportSentText": "Informe de error enviado con éxito.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

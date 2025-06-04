@@ -1,0 +1,95 @@
+{
+  "@@locale": "ru",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-06-04T12:30:00Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Вход в аккаунт",
+  "@title": {},
+  "logIn": "Войти",
+  "@logIn": {},
+  "password": "Пароль",
+  "@password": {},
+  "changeNumber": "Сменить номер",
+  "@changeNumber": {},
+  "forgotPassword": "Забыли пароль?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "Введите ваш адрес электронной почты, и мы отправим вам ссылку для сброса пароля.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "Помните свой пароль?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "У меня есть пароль",
+  "@backToLoginButton": {},
+  "continueButton": "Продолжить",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "Письмо для сброса пароля отправлено",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "Сбросить пароль",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "Подтвердить код",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "Начните работу с Doctorina уже сегодня",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "ИЛИ",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "Введите ваш пароль",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "Показать пароль",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "Скрыть пароль",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "Стереть вход",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "Email или телефон",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com или +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "Введите email или номер телефона",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "Пожалуйста, примите соглашения, чтобы продолжить.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "Я даю согласие на обработку персональных данных,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "использование",
+  "@consentTheUseOf": {},
+  "consentCookies": "cookies",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", согласен с",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "условиями и положениями",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": "и подтверждаю",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "политику конфиденциальности",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "Я подтверждаю, что моя консультация проводится с ИИ, а не с лицензированным медицинским специалистом.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "Выйти",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "Вы уверены, что хотите выйти?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "Закрыть",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "Да, выйти",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  }
+}

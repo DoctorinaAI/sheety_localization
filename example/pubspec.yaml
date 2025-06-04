@@ -1,0 +1,22 @@
+name: example_sheety_localization
+description: >
+  A package to generate localization files from Google Sheets.
+  It uses the Google Sheets API to fetch translations and generates
+  Dart localization files for use in Flutter applications.
+version: 0.0.1
+# ==============================================================================
+# DEPENDENCIES
+# ==============================================================================
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.29.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ">=5.0.0 <7.0.0"
