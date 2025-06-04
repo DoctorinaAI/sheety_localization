@@ -125,11 +125,11 @@ dart pub global run sheety_localization:generate \
 - `--gen` (or `-g`):
   Relative path (under `--lib`) where generated Dart classes will be written. Defaults to `src/generated`.
 - `--author`:
-  String to insert as author in generated Dart files (e.g., `--author="Jane Doe <jane@example.com>"`).
+  String to insert as author in generated ARB files (e.g., `--author="Jane Doe <jane@example.com>"`).
 - `--comment`:
   Description text to include in generated ARB files.
 - `--modified`:
-  Last modified timestamp for generated files in ISO 8601 (e.g., `2025-06-04T12:30:00Z`). Defaults to the current time.
+  Last modified timestamp for generated ARB files in ISO 8601 (e.g., `2025-06-04T12:30:00Z`). Defaults to the current time.
 - `--context`:
   Arbitrary string (e.g., version number) to embed in ARB files.
 - `--prefix`:
