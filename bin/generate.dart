@@ -61,7 +61,9 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         // Fetch spreadsheets from Google Sheets API
         $log('Generating localization table...');
         final sheets = fetchSpreadsheets(
-            credentialsPath: credentialsPath, sheetId: sheetId);
+          credentialsPath: credentialsPath,
+          sheetId: sheetId,
+        );
         final buckets = await generateLocalizationTable(sheets);
         if (buckets.isEmpty) {
           $err('No data found in the sheets');
@@ -77,8 +79,10 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           meta: meta,
         );
         if (arbs.isEmpty) {
-          $log('No new ARB files generated, '
-              'nothing to do, exiting...');
+          $log(
+            'No new ARB files generated, '
+            'nothing to do, exiting...',
+          );
           io.exit(0);
         }
 
@@ -96,18 +100,17 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         }
 
         $log('Generating batch file...');
-        await generateLibraryFile(
-          files: files,
-          libDir: libDir,
-        );
+        await generateLibraryFile(files: files, libDir: libDir);
 
         if (format) {
           $log('Formatting package...');
           await formatPackage(libDir: libDir);
         }
 
-        $log('Successfully generated localization table with '
-            '${buckets.length} buckets');
+        $log(
+          'Successfully generated localization table with '
+          '${buckets.length} buckets',
+        );
         io.exit(0);
       },
       (error, stackTrace) {
@@ -144,7 +147,7 @@ ArgParser buildArgumentsParser() => ArgParser()
       'spreadsheet-id',
       'table',
       'source',
-      'id'
+      'id',
     ],
     mandatory: true,
     valueHelp: 'spreadsheet-id',
@@ -175,7 +178,7 @@ ArgParser buildArgumentsParser() => ArgParser()
       'arb-dir',
       'arb-directory',
       'arb-dir-path',
-      'arb-path'
+      'arb-path',
     ],
     mandatory: false,
     defaultsTo: 'src/l10n',
@@ -219,7 +222,7 @@ ArgParser buildArgumentsParser() => ArgParser()
       'modified-date',
       'last_modified',
       'timestamp',
-      'date'
+      'date',
     ],
     mandatory: false,
     defaultsTo: DateTime.now().toUtc().toIso8601String(),
@@ -289,7 +292,7 @@ Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
         .cast<List<int>, Map<String, Object?>>()
         .convert(bytes);
     credentials = ServiceAccountCredentials.fromJson(credentialsJson);
-  } catch (e) {
+  } on Object catch (e) {
     $err('Error reading credentials file: $e');
     io.exit(1);
   }
@@ -297,8 +300,9 @@ Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
   $log('Creating Google Sheets API client...');
   SheetsApi sheetsApi;
   try {
-    final client = await clientViaServiceAccount(
-        credentials, [SheetsApi.spreadsheetsReadonlyScope]);
+    final client = await clientViaServiceAccount(credentials, [
+      SheetsApi.spreadsheetsReadonlyScope,
+    ]);
     sheetsApi = SheetsApi(client);
   } on Object catch (e) {
     $err('Error creating Google Sheets API client: $e');
@@ -334,8 +338,10 @@ Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
       $err('Sheet title is null or empty, skipping sheet...');
       continue;
     }
-    final ValueRange(:values) =
-        await sheetsApi.spreadsheets.values.get(sheetId, title);
+    final ValueRange(:values) = await sheetsApi.spreadsheets.values.get(
+      sheetId,
+      title,
+    );
     if (values == null) {
       $err('Sheet "$title" has no values, skipping sheet...');
       continue;
@@ -357,7 +363,8 @@ Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
 /// Generate localization table from Google Sheets
 /// [sheets] - List of sheets in the spreadsheet
 Future<Buckets> generateLocalizationTable(
-    Stream<({Sheet sheet, List<List<Object?>> values})> sheets) async {
+  Stream<({Sheet sheet, List<List<Object?>> values})> sheets,
+) async {
   final sanitize = Buckets.sanitizer();
   final buckets = Buckets.empty();
 
@@ -369,7 +376,7 @@ Future<Buckets> generateLocalizationTable(
     do {
       int remainder = index % 26;
       columnName = String.fromCharCode(65 + remainder) + columnName;
-      index = (index / 26).floor() - 1;
+      index = (index / 26).floor() - 1; // ignore: parameter_assignments
     } while (index >= 0);
     return columnName;
   }
@@ -377,15 +384,22 @@ Future<Buckets> generateLocalizationTable(
   await for (final (:sheet, :values) in sheets) {
     final bucket = sanitize(sheet.properties?.title ?? '');
     if (bucket.isEmpty) {
-      $err('Sheet '
-          '"${sheet.properties?.sheetId ?? sheet.properties?.index ?? '???'}" '
-          'title is empty, skipping sheet...');
+      $err(
+        'Sheet '
+        '"${sheet.properties?.sheetId ?? sheet.properties?.index ?? '???'}" '
+        'title is empty, skipping sheet...',
+      );
       continue;
     }
     //final data = sheet.data ?? [];
     final header = values.first;
     final $ = buckets.push(bucket);
-    final locales = List.filled(header.length, (locale: '', push: ignoreColumn),
+    final locales = List.filled(
+        header.length,
+        (
+          locale: '',
+          push: ignoreColumn,
+        ),
         growable: false);
     for (var i = 3; i < header.length; i++) {
       final cell = header[i];
@@ -394,13 +408,16 @@ Future<Buckets> generateLocalizationTable(
           final locale = sanitize(text);
           locales[i] = (locale: locale, push: $(locale));
         case String _:
-          $err('Sheet "$bucket" has empty column [${column(i)}] in header, '
-              'ignore the whole column...');
+          $err(
+            'Sheet "$bucket" has empty column [${column(i)}] in header, '
+            'ignore the whole column...',
+          );
           continue;
         default:
           $err(
-              'Sheet "$bucket" has non-string column [${column(i)}] in header, '
-              'ignore whole column...');
+            'Sheet "$bucket" has non-string column [${column(i)}] in header, '
+            'ignore whole column...',
+          );
           continue;
       }
     }
@@ -410,14 +427,18 @@ Future<Buckets> generateLocalizationTable(
         $err('Sheet "$bucket" has empty row #${i + 1}, skipping row...');
         continue;
       } else if (row.length != locales.length) {
-        $err('Sheet "$bucket" row #${i + 1} has wrong number of locales, '
-            'skipping row...');
+        $err(
+          'Sheet "$bucket" row #${i + 1} has wrong number of locales, '
+          'skipping row...',
+        );
         continue;
       }
       final [$label, $description, $meta, ..._] = row;
       if ($label == null || $label is! String || $label.isEmpty) {
-        $err('Sheet "$bucket" has empty label in row #${i + 1}, '
-            'skipping row...');
+        $err(
+          'Sheet "$bucket" has empty label in row #${i + 1}, '
+          'skipping row...',
+        );
         continue;
       }
       final label = sanitize($label);
@@ -460,14 +481,18 @@ Future<Buckets> generateLocalizationTable(
           case String text when text.isNotEmpty:
             locale.push(label, text);
           case String() || null:
-            $err('Sheet "$bucket" has empty column '
-                '[${column(j)}] in row #${i + 1}');
+            $err(
+              'Sheet "$bucket" has empty column '
+              '[${column(j)}] in row #${i + 1}',
+            );
             locale.push(label, '');
           case num():
             locale.push(label, cell.toString());
           default:
-            $err('Sheet "$bucket" has non-string column '
-                '[${column(j)}] in row #${i + 1}');
+            $err(
+              'Sheet "$bucket" has non-string column '
+              '[${column(j)}] in row #${i + 1}',
+            );
             locale.push(label, cell.toString());
         }
         locale.push('@$label', meta);
@@ -499,8 +524,9 @@ Future<List<io.File>> generateArbFiles({
   }
 
   final arbDirectory = switch (arbDir) {
-    String p when p.isNotEmpty =>
-      io.Directory(path.join(libDirectory.path, path.normalize(p))),
+    String p when p.isNotEmpty => io.Directory(
+        path.join(libDirectory.path, path.normalize(p)),
+      ),
     String() || null => io.Directory.current,
   };
 
@@ -521,8 +547,9 @@ Future<List<io.File>> generateArbFiles({
   while (iterator.moveNext()) {
     final (:bucket, :locale, :bytes) = iterator.current;
     final fileName = '${prefix ?? 'app'}_$locale.arb';
-    final filePath =
-        path.normalize(path.join(arbDirectory.path, bucket, fileName));
+    final filePath = path.normalize(
+      path.join(arbDirectory.path, bucket, fileName),
+    );
     final file = io.File(filePath);
     toDelete.remove(filePath);
     if (!file.parent.existsSync()) {
@@ -581,8 +608,9 @@ Future<Set<String>> generateFlutterLocalization({
   }
 
   final genDirectory = switch (genDir) {
-    String p when p.isNotEmpty =>
-      io.Directory(path.join(libDirectory.path, path.normalize(p))),
+    String p when p.isNotEmpty => io.Directory(
+        path.join(libDirectory.path, path.normalize(p)),
+      ),
     String() || null => io.Directory.current,
   };
 
@@ -604,9 +632,11 @@ Future<Set<String>> generateFlutterLocalization({
   /// This is used to convert the bucket name to the class name
   String snakeToPascalCase(String snakeCase) => snakeCase
       .split('_')
-      .map((word) => (word.length < 2)
-          ? word.toUpperCase()
-          : word[0].toUpperCase() + word.substring(1).toLowerCase())
+      .map(
+        (word) => (word.length < 2)
+            ? word.toUpperCase()
+            : word[0].toUpperCase() + word.substring(1).toLowerCase(),
+      )
       .join('');
 
   final localizations = <String>{};
@@ -640,7 +670,7 @@ Future<Set<String>> generateFlutterLocalization({
         '--output-localization-file=$outputFile',
         '--output-class=${snakeToPascalCase(bucket)}Localization',
         if (header case String value when value.isNotEmpty) '--header=$value',
-        '--no-format'
+        '--no-format',
       ],
       mode: io.ProcessStartMode.normal,
       includeParentEnvironment: true,
@@ -663,16 +693,18 @@ Future<Set<String>> generateFlutterLocalization({
       io.exit(1);
     }
     $log('Generated localization files for "$bucket"');
-    final file =
-        io.File(path.normalize(path.join(genPath, outputFile))).absolute;
+    final file = io.File(
+      path.normalize(path.join(genPath, outputFile)),
+    ).absolute;
     if (!file.existsSync()) {
       $err('Generated file does not exist: ${file.path}');
       continue;
     }
     localizations.add(file.path);
     // Remove generated files from deletion list
-    toDelete
-        .removeWhere((f) => f.startsWith(genDir.path) && f.endsWith('.dart'));
+    toDelete.removeWhere(
+      (f) => f.startsWith(genDir.path) && f.endsWith('.dart'),
+    );
   }
 
   for (final file in toDelete) {
@@ -682,9 +714,11 @@ Future<Set<String>> generateFlutterLocalization({
 
   // Validate generated files
   if (localizations.length < toGenerate.length) {
-    $err('Not all localization files were generated, '
-        'expected: ${toGenerate.length}, '
-        'got: ${localizations.length}');
+    $err(
+      'Not all localization files were generated, '
+      'expected: ${toGenerate.length}, '
+      'got: ${localizations.length}',
+    );
     io.exit(1);
   }
 
@@ -694,8 +728,10 @@ Future<Set<String>> generateFlutterLocalization({
 /// Generate a library file for the localization files
 /// to export all localization files
 /// [files] - Set of localization files to export
-Future<void> generateLibraryFile(
-    {required Iterable<String> files, String? libDir}) async {
+Future<void> generateLibraryFile({
+  required Iterable<String> files,
+  String? libDir,
+}) async {
   final libDirectory = switch (libDir) {
     String p when p.isNotEmpty => io.Directory(path.normalize(p)),
     String() || null => io.Directory.current,
@@ -710,7 +746,8 @@ Future<void> generateLibraryFile(
   const flutterLocalizations =
       'flutter_localizations/flutter_localizations.dart';
   final buffer = StringBuffer()
-    ..writeln('/// This file is generated, do not edit it manually!')
+    ..writeln('// This file is generated, do not edit it manually!')
+    ..writeln('// ignore_for_file: directives_ordering')
     ..writeln('library;')
     ..writeln()
     ..writeln('export \'package:$flutterLocalizations\';')
@@ -723,8 +760,9 @@ Future<void> generateLibraryFile(
   }
   final localizationBytes = utf8.encode(buffer.toString());
 
-  final libraryFile =
-      io.File(path.join(libDirectory.path, 'localization.dart'));
+  final libraryFile = io.File(
+    path.join(libDirectory.path, 'localization.dart'),
+  );
   if (libraryFile.existsSync() &&
       libraryFile.lengthSync() == localizationBytes.length) {
     // File exists and has the same length as the new bytes,
@@ -732,13 +770,18 @@ Future<void> generateLibraryFile(
     final existingBytes = await libraryFile.readAsBytes();
     if (crypto.sha256.convert(existingBytes) ==
         crypto.sha256.convert(localizationBytes)) {
-      $log('Library file already exists and is up to date: '
-          '${libraryFile.path}');
+      $log(
+        'Library file already exists and is up to date: '
+        '${libraryFile.path}',
+      );
       return;
     }
   }
-  await libraryFile.writeAsBytes(localizationBytes,
-      mode: io.FileMode.writeOnly, flush: true);
+  await libraryFile.writeAsBytes(
+    localizationBytes,
+    mode: io.FileMode.writeOnly,
+    flush: true,
+  );
 }
 
 /// Format the package using dart format
@@ -772,15 +815,15 @@ Future<void> formatPackage({String? libDir}) async {
 /// This class is used to store the localization table for the application
 extension type Buckets._(
     Map<String, Map<String, Map<String, Object>>> _source) {
-  /// Creates an empty localization table
-  /// This constructor is used to create an empty localization table
-  Buckets.empty() : _source = <String, Map<String, Map<String, Object>>>{};
-
   /// Creates a new localization table from a list of buckets (sheets)
   Buckets(List<String> buckets)
       : _source = <String, Map<String, Map<String, Object>>>{
           for (final key in buckets) key: <String, Map<String, Object>>{},
         };
+
+  /// Creates an empty localization table
+  /// This constructor is used to create an empty localization table
+  Buckets.empty() : _source = <String, Map<String, Map<String, Object>>>{};
 
   /// Check if the localization table is empty
   bool get isEmpty => _source.isEmpty;
@@ -790,8 +833,8 @@ extension type Buckets._(
 
   /// Create sanitizer function to sanitize the localization table keys
   static String Function(String input) sanitizer() {
-    final invalid = RegExp(r'[^a-zA-Z0-9_]');
-    final merge = RegExp(r'_+');
+    final invalid = RegExp('[^a-zA-Z0-9_]');
+    final merge = RegExp('_+');
     final trim = RegExp(r'^_+|_+$');
     return (String input) => input
         .replaceAll(invalid, '_') // replace invalid characters with _
@@ -806,8 +849,10 @@ extension type Buckets._(
   /// value - The value of the record
   void Function(String key, Object value) Function(String) push(String bucket) {
     // Add the bucket if it doesn't exist
-    final $ =
-        _source.putIfAbsent(bucket, () => <String, Map<String, Object>>{});
+    final $ = _source.putIfAbsent(
+      bucket,
+      () => <String, Map<String, Object>>{},
+    );
     return (String locale) {
       // Add the locale if it doesn't exist
       final $$ = $.putIfAbsent(locale, () => <String, Object>{});
@@ -823,8 +868,9 @@ extension type Buckets._(
   Set<String> get buckets => _source.keys.toSet();
 
   /// Get the set of all possible locales in the localization table
-  Set<String> get locales =>
-      <String>{for (final locales in _source.values) ...locales.keys};
+  Set<String> get locales => <String>{
+        for (final locales in _source.values) ...locales.keys,
+      };
 
   /// Human readable representation of the localization table
   String get representation {
@@ -846,14 +892,15 @@ extension type Buckets._(
   Iterable<({String bucket, String locale, List<int> bytes})> encode({
     Map<String, String>? meta,
   }) sync* {
-    final encoder =
-        const JsonEncoder.withIndent('  ').fuse(const Utf8Encoder());
+    final encoder = const JsonEncoder.withIndent(
+      '  ',
+    ).fuse(const Utf8Encoder());
     for (final MapEntry(key: bucket, value: locales) in _source.entries)
       for (final MapEntry(key: locale, value: values) in locales.entries)
         yield (
           bucket: bucket,
           locale: locale,
-          bytes: encoder.convert({'@@locale': locale, ...?meta, ...values})
+          bytes: encoder.convert({'@@locale': locale, ...?meta, ...values}),
         );
   }
 }
