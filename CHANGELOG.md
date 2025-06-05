@@ -1,3 +1,7 @@
+## 0.1.3
+
+- **ADDED**: `ignore_for_file: directives_ordering` for generated files to prevent linting issues.
+
 ## 0.1.2
 
 - Add usage examples to the documentation.
