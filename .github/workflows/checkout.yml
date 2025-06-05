@@ -12,6 +12,7 @@ on:
       - "main"
       - "master"
     paths:
+      - "bin/**.dart"
       - "lib/**.dart"
       - "test/**.dart"
       - "example/**.dart"
@@ -30,6 +31,7 @@ on:
       - "hotfix/**"
       - "support/**"
     paths:
+      - "bin/**.dart"
       - "lib/**.dart"
       - "test/**.dart"
       - "example/**.dart"
