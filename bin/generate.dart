@@ -6,6 +6,7 @@ import 'dart:io' as io;
 
 import 'package:args/args.dart';
 import 'package:crypto/crypto.dart' as crypto show sha256;
+import 'package:googleapis/people/v1.dart';
 import 'package:googleapis/sheets/v4.dart';
 import 'package:googleapis_auth/auth_io.dart';
 import 'package:path/path.dart' as path;
@@ -25,7 +26,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         final args = parser.parse($arguments ?? []);
         if (args['help'] == true) {
           io.stdout
-            ..writeln(_help)
+            ..writeln($help)
             ..writeln()
             ..writeln(parser.usage);
           io.exit(0);
@@ -64,6 +65,8 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           credentialsPath: credentialsPath,
           sheetId: sheetId,
         );
+
+        // Generate localization table from the fetched sheets
         final buckets = await generateLocalizationTable(sheets);
         if (buckets.isEmpty) {
           $err('No data found in the sheets');
@@ -99,8 +102,14 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           io.exit(1);
         }
 
+        final file = await generateFlutterLocalesFile(
+          locales: buckets.locales,
+          libDir: libDir,
+          genDir: genDir,
+        );
+
         $log('Generating batch file...');
-        await generateLibraryFile(files: files, libDir: libDir);
+        await generateLibraryFile(files: [...files, file], libDir: libDir);
 
         if (format) {
           $log('Formatting package...');
@@ -395,12 +404,15 @@ Future<Buckets> generateLocalizationTable(
     final header = values.first;
     final $ = buckets.push(bucket);
     final locales = List.filled(
-        header.length,
-        (
-          locale: '',
-          push: ignoreColumn,
-        ),
-        growable: false);
+      header.length,
+      (
+        locale: '',
+        push: ignoreColumn,
+      ),
+      growable: false,
+    );
+
+    // Fill locales
     for (var i = 3; i < header.length; i++) {
       final cell = header[i];
       switch (cell) {
@@ -421,6 +433,32 @@ Future<Buckets> generateLocalizationTable(
           continue;
       }
     }
+
+    // Add missing base locales
+    final missingBaseLocales = <String>{};
+    for (var i = 0; i < locales.length; i++) {
+      final lcl = locales[i];
+      // Ignore base and unrecognized locales
+      if (lcl.locale.length < 4 || lcl.locale[2] != '_') continue;
+      final baseLocale = lcl.locale.substring(0, 2);
+      // Skip if base locale already fixed
+      if (missingBaseLocales.contains(baseLocale)) continue;
+      missingBaseLocales.add(baseLocale);
+      $log('Sheet "$bucket" has missing base locale "$baseLocale", adding...');
+      final basePush = $(baseLocale);
+      final localePush = lcl.push;
+      locales[i] = (
+        locale: lcl.locale,
+        push: (key, value) {
+          // Add to the base locale
+          basePush(key, value);
+          // Add to the original locale
+          localePush(key, value);
+        }
+      );
+    }
+
+    // Fill in data from the sheet, row by row, cell by cell
     for (var i = 1; i < values.length; i++) {
       final row = values[i];
       if (row.isEmpty) {
@@ -433,6 +471,8 @@ Future<Buckets> generateLocalizationTable(
         );
         continue;
       }
+
+      // Extract label, description, and meta from the row
       final [$label, $description, $meta, ..._] = row;
       if ($label == null || $label is! String || $label.isEmpty) {
         $err(
@@ -442,13 +482,14 @@ Future<Buckets> generateLocalizationTable(
         continue;
       }
       final label = sanitize($label);
-      // Prepare meta data
 
+      // Prepare meta data
       final meta = <String, Object?>{
         // Add description to meta if it is not empty
         if ($description case String description when description.isNotEmpty)
           'description': description,
       };
+
       // Add meta to the localization table if it is not empty
       switch ($meta) {
         case String text
@@ -470,6 +511,7 @@ Future<Buckets> generateLocalizationTable(
         case Map<String, Object?> map:
           meta.addAll(map);
       }
+
       // Extract locales from the row
       for (var j = 3; j < row.length; j++) {
         final cell = row[j];
@@ -499,6 +541,7 @@ Future<Buckets> generateLocalizationTable(
       }
     }
   }
+
   return buckets;
 }
 
@@ -725,6 +768,75 @@ Future<Set<String>> generateFlutterLocalization({
   return localizations;
 }
 
+Future<String> generateFlutterLocalesFile({
+  required Iterable<String> locales,
+  String? libDir,
+  String? genDir,
+}) async {
+  final libDirectory = switch (libDir) {
+    String p when p.isNotEmpty => io.Directory(path.normalize(p)),
+    String() || null => io.Directory.current,
+  }
+      .absolute;
+
+  if (!libDirectory.existsSync()) {
+    $log('Creating library directory: ${libDirectory.path}');
+    await libDirectory.create(recursive: true);
+  }
+
+  final genDirectory = switch (genDir) {
+    String p when p.isNotEmpty => io.Directory(
+        path.join(libDirectory.path, path.normalize(p)),
+      ),
+    String() || null => io.Directory.current,
+  };
+
+  final file = io.File(
+    path.join(genDirectory.path, 'locales.dart'),
+  ).absolute;
+
+  final buffer = StringBuffer()
+    ..writeln('// This file is generated, do not edit it manually!')
+    ..writeln('// ignore_for_file: directives_ordering')
+    ..writeln()
+    ..writeln('import \'package:ui/ui.dart\' show Locale;')
+    ..writeln()
+    ..writeln('/// Supported locales for the application.')
+    ..writeln('abstract final class Locales {')
+    ..writeln('  const Locales._();')
+    ..writeln('');
+
+  final vars = <String>[];
+  for (final lcl in locales) {
+    final parts = lcl.split('_');
+    final language = parts.first;
+    if (language.isEmpty) continue;
+    final country = parts.length > 1 ? parts.last : null;
+    final field = country != null ? '$language\$$country' : language;
+    buffer
+      ..write('  static const Locale ')
+      ..write(field)
+      ..write(' = Locale(\'$language\'');
+    if (country != null) {
+      buffer.write(', \'$country\'');
+    }
+    buffer.writeln(');');
+    vars.add(field);
+  }
+  buffer
+    ..writeln()
+    ..writeln('  static const List<Locale> values = [${vars.join(', ')}];')
+    ..writeln('}');
+
+  file.writeAsStringSync(
+    buffer.toString(),
+    mode: io.FileMode.writeOnly,
+    flush: true,
+  );
+
+  return file.path;
+}
+
 /// Generate a library file for the localization files
 /// to export all localization files
 /// [files] - Set of localization files to export
@@ -906,7 +1018,7 @@ extension type Buckets._(
 }
 
 /// Help message for the command line arguments
-const String _help = '''
+const String $help = '''
 Localization Generator
 
 Generate ARB files from Google Sheets.
