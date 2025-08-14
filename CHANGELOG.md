@@ -1,3 +1,7 @@
+## 0.2.1
+
+- **FIX**: Fix locales import to `dart:ui`
+
 ## 0.2.0
 
 - **ADDED**: Support for generating Flutter locales file.

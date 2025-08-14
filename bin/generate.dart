@@ -799,7 +799,7 @@ Future<String> generateFlutterLocalesFile({
     ..writeln('// This file is generated, do not edit it manually!')
     ..writeln('// ignore_for_file: directives_ordering')
     ..writeln()
-    ..writeln('import \'package:ui/ui.dart\' show Locale;')
+    ..writeln('import \'dart:ui\' show Locale;')
     ..writeln()
     ..writeln('/// Supported locales for the application.')
     ..writeln('abstract final class Locales {')
