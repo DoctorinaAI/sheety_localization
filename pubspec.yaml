@@ -9,7 +9,7 @@ description: >
   It uses the Google Sheets API to fetch translations and generates
   Dart localization files for use in Flutter applications.
 
-version: 0.2.1
+version: 0.2.2
 
 homepage: https://github.com/DoctorinaAI/sheety_localization
 repository: https://github.com/DoctorinaAI/sheety_localization
@@ -59,3 +59,6 @@ dev_dependencies:
   #flutter_test:
   #  sdk: flutter
   lints: ">=5.0.0 <7.0.0"
+
+flutter:
+  generate: true

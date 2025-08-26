@@ -1,0 +1,91 @@
+{
+  "@@locale": "fr",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Paramètres du compte",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "sectionClearAllChatsTitle": "Effacer toutes les discussions",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "Cela supprimera définitivement votre historique de discussion.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "Effacer toutes les discussions",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "Effacer toutes les discussions",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "Supprimer le compte",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "La suppression de votre compte est une action permanente et ne peut pas être annulée.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "Supprimer",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "Supprimer le compte",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "Se déconnecter",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "Vous serez déconnecté de votre compte.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "Se déconnecter",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "Envoyer un rapport de bogue",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithShiftEnterTitle": "Envoyer un message avec [⏎ Entrée]",
+  "@sectionSendMessageWithShiftEnterTitle": {},
+  "sectionSendMessageWithShiftEnterSubtitle": "Envoyer un message avec [⏎ Entrée] et une nouvelle ligne avec [Maj] + [⏎ Entrée]",
+  "@sectionSendMessageWithShiftEnterSubtitle": {},
+  "sectionSelectLocaleTitle": "Langue",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "Sélectionnez votre langue préférée pour l'interface de l'application",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "Mode sombre",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "Activez le mode sombre pour une expérience de visionnage confortable en basse lumière",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "Journaux",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "Afficher et gérer les journaux d'application pour le débogage",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "Fait",
+  "@doneButton": {},
+  "bugReportDialogTitle": "Rapport de bogue",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "Veuillez décrire le bug que vous avez rencontré",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "Joindre des fichiers",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "Échec de la sélection des fichiers",
+  "@filePickerError": {},
+  "emptyBugReportError": "Veuillez d'abord saisir un rapport de bogue",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "Échec de l'envoi du rapport de bogue",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "Gérer l'abonnement",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "Gérez vos paramètres d'abonnement",
+  "@sectionManageSubscriptionSubtitle": {}
+}

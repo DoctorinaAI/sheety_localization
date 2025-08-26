@@ -6,10 +6,18 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'chat_localization_ar.dart';
+import 'chat_localization_bn.dart';
 import 'chat_localization_de.dart';
 import 'chat_localization_en.dart';
 import 'chat_localization_es.dart';
+import 'chat_localization_fr.dart';
+import 'chat_localization_hi.dart';
+import 'chat_localization_it.dart';
+import 'chat_localization_ko.dart';
+import 'chat_localization_pt.dart';
 import 'chat_localization_ru.dart';
+import 'chat_localization_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -97,10 +105,20 @@ abstract class ChatLocalization {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('ar'),
+    Locale('bn'),
     Locale('de'),
     Locale('en'),
     Locale('es'),
-    Locale('ru')
+    Locale('fr'),
+    Locale('hi'),
+    Locale('it'),
+    Locale('ko'),
+    Locale('pt'),
+    Locale('pt', 'BR'),
+    Locale('ru'),
+    Locale('zh'),
+    Locale('zh', 'CN')
   ];
 
   /// No description provided for @title.
@@ -451,6 +469,54 @@ abstract class ChatLocalization {
   /// In en, this message translates to:
   /// **'Export to PDF'**
   String get chatActionButtonTooltipExportSummary;
+
+  /// Надпись в меню для выбора из галлереи
+  ///
+  /// In en, this message translates to:
+  /// **'Photos'**
+  String get chatPickerPhotos;
+
+  /// Надпись в меню для прикрепления фото с помощью камеры
+  ///
+  /// In en, this message translates to:
+  /// **'Camera'**
+  String get chatPickerCamera;
+
+  /// Надпись в меню для выбора файлов
+  ///
+  /// In en, this message translates to:
+  /// **'Files'**
+  String get chatPickerFiles;
+
+  /// No description provided for @chatRecommendationYIAG.
+  ///
+  /// In en, this message translates to:
+  /// **'Hope that helped! Was this explanation useful to you?'**
+  String get chatRecommendationYIAG;
+
+  /// Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, it\'s all good!'**
+  String get chatRecommendationButtonDonate;
+
+  /// No description provided for @chatHistoryTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat History'**
+  String get chatHistoryTitle;
+
+  /// No description provided for @failedToRetrieveChatSummary.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to retrieve chat summary'**
+  String get failedToRetrieveChatSummary;
+
+  /// No description provided for @chatSummaryCopiedToClipboard.
+  ///
+  /// In en, this message translates to:
+  /// **'Chat summary copied to clipboard'**
+  String get chatSummaryCopiedToClipboard;
 }
 
 class _ChatLocalizationDelegate
@@ -463,24 +529,72 @@ class _ChatLocalizationDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['de', 'en', 'es', 'ru'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+        'ar',
+        'bn',
+        'de',
+        'en',
+        'es',
+        'fr',
+        'hi',
+        'it',
+        'ko',
+        'pt',
+        'ru',
+        'zh'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_ChatLocalizationDelegate old) => false;
 }
 
 ChatLocalization lookupChatLocalization(Locale locale) {
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return ChatLocalizationPtBr();
+        }
+        break;
+      }
+    case 'zh':
+      {
+        switch (locale.countryCode) {
+          case 'CN':
+            return ChatLocalizationZhCn();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'ar':
+      return ChatLocalizationAr();
+    case 'bn':
+      return ChatLocalizationBn();
     case 'de':
       return ChatLocalizationDe();
     case 'en':
       return ChatLocalizationEn();
     case 'es':
       return ChatLocalizationEs();
+    case 'fr':
+      return ChatLocalizationFr();
+    case 'hi':
+      return ChatLocalizationHi();
+    case 'it':
+      return ChatLocalizationIt();
+    case 'ko':
+      return ChatLocalizationKo();
+    case 'pt':
+      return ChatLocalizationPt();
     case 'ru':
       return ChatLocalizationRu();
+    case 'zh':
+      return ChatLocalizationZh();
   }
 
   throw FlutterError(

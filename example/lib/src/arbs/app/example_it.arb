@@ -1,0 +1,45 @@
+{
+  "@@locale": "it",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Dottoressa",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Aggiorna ora",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Forse più tardi",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Nuovo aggiornamento disponibile",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Aggiornamento richiesto",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "È disponibile una nuova versione (v{version}) dell'app. Aggiornala per continuare a usufruire della migliore esperienza possibile.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Per continuare, aggiorna l'app. Questo aggiornamento include importanti correzioni e miglioramenti.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  }
+}

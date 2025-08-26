@@ -47,4 +47,67 @@ class SettingsLocalizationRu extends SettingsLocalization {
 
   @override
   String get sectionLogOutButton => 'Выйти из аккаунта';
+
+  @override
+  String get sendBugReportButton => 'Отправить отчет об ошибке';
+
+  @override
+  String get sectionSendMessageWithShiftEnterTitle =>
+      'Отправить сообщение с помощью [⏎ Enter]';
+
+  @override
+  String get sectionSendMessageWithShiftEnterSubtitle =>
+      'Отправьте сообщение с помощью [⏎ Enter] и создайте новую строку с помощью [Shift] + [⏎ Enter]';
+
+  @override
+  String get sectionSelectLocaleTitle => 'Язык';
+
+  @override
+  String get sectionSelectLocaleSubtitle =>
+      'Выберите язык интерфейса приложения';
+
+  @override
+  String get sectionSwitchThemeTitle => 'Темный режим';
+
+  @override
+  String get sectionSwitchThemeSubtitle =>
+      'Включите темный режим для комфортного просмотра при слабом освещении.';
+
+  @override
+  String get sectionLogsTitle => 'Логи';
+
+  @override
+  String get sectionLogsSubtitle =>
+      'Просмотр и управление журналами приложений для отладки';
+
+  @override
+  String get doneButton => 'Готово';
+
+  @override
+  String get bugReportDialogTitle => 'Отчет об ошибке';
+
+  @override
+  String get bugReportDialogHintText =>
+      'Опишите ошибку, с которой вы столкнулись.';
+
+  @override
+  String get attachFilesButtonTooltip => 'Прикрепить файлы';
+
+  @override
+  String get filePickerError => 'Не удалось выбрать файлы';
+
+  @override
+  String get emptyBugReportError =>
+      'Пожалуйста, сначала отправьте отчет об ошибке';
+
+  @override
+  String get failedToSendBugReportError =>
+      'Не удалось отправить отчет об ошибке';
+
+  @override
+  String get sectionManageSubscriptionTitle => 'Управление подпиской';
+
+  @override
+  String get sectionManageSubscriptionSubtitle =>
+      'Управляйте настройками подписки';
 }

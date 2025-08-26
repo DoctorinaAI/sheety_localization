@@ -1,0 +1,91 @@
+{
+  "@@locale": "it",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Impostazioni dell'account",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "sectionClearAllChatsTitle": "Cancella tutte le chat",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "Questa operazione eliminerà definitivamente la cronologia della chat.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "Cancella tutte le chat",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "Cancella tutte le chat",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "Elimina account",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "L'eliminazione del tuo account è un'azione permanente e non può essere annullata.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "Eliminare",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "Elimina account",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "Disconnessione",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "Verrai disconnesso dal tuo account.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "Disconnessione",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "Invia segnalazione bug",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithShiftEnterTitle": "Invia messaggio con [⏎ Invio]",
+  "@sectionSendMessageWithShiftEnterTitle": {},
+  "sectionSendMessageWithShiftEnterSubtitle": "Invia un messaggio con [⏎ Invio] e una nuova riga con [Maiusc] + [⏎ Invio]",
+  "@sectionSendMessageWithShiftEnterSubtitle": {},
+  "sectionSelectLocaleTitle": "Lingua",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "Seleziona la lingua preferita per l'interfaccia dell'app",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "Modalità scura",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "Abilita la modalità scura per un'esperienza visiva confortevole in condizioni di scarsa illuminazione",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "Registri",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "Visualizza e gestisci i registri delle applicazioni per il debug",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "Fatto",
+  "@doneButton": {},
+  "bugReportDialogTitle": "Segnalazione di bug",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "Descrivi il bug che hai riscontrato",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "Allega file",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "Impossibile selezionare i file",
+  "@filePickerError": {},
+  "emptyBugReportError": "Inserisci prima una segnalazione di bug",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "Impossibile inviare la segnalazione di bug",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "Gestisci l'abbonamento",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "Gestisci le impostazioni del tuo abbonamento",
+  "@sectionManageSubscriptionSubtitle": {}
+}

@@ -1,7 +1,7 @@
 {
   "@@locale": "de",
   "@@author": "example@gmail.com",
-  "@@last_modified": "2025-06-04T15:18:15.787321Z",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
   "@@comment": "Generated from Google Sheets",
   "@@context": "From Google Sheets",
   "title": "Zahlung",
@@ -11,5 +11,163 @@
   "exampleButton": "Schaltflächenbeispiel",
   "@exampleButton": {
     "description": "Пример кнопки"
-  }
+  },
+  "donationYesItsAllGoodButton": "Ja, alles gut!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Jeder Beitrag heilt!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Ihr Beitrag hilft dabei, kostenlose medizinische Beratung für Bedürftige zu ermöglichen.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Zahlen Sie, was sich richtig anfühlt –",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "oder nutzen Sie Doctorina weiterhin kostenlos, dank der Großzügigkeit anderer.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Einmalig",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Monatlich",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Wählen Sie den monatlichen Spendenbetrag",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Sie sind dabei, einen Monatsplan zu abonnieren.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Sie abonnieren ein Monatsabonnement für {amount}/Monat.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Die Zahlung wird Ihrem Konto nach Kaufbestätigung belastet. Das Abonnement verlängert sich automatisch jeden Monat, sofern die automatische Verlängerung nicht mindestens 24 Stunden vor Ablauf des aktuellen Zeitraums deaktiviert wird. Sie können Ihr Abonnement jederzeit in Ihren Kontoeinstellungen verwalten oder kündigen. Indem Sie fortfahren, stimmen Sie unseren {termsOfService} und {privacyPolicy} zu.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Wählen Sie den einmaligen Spendenbetrag",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Die meisten Leute geben 7–15 $",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Währung wählen",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Zahlungsabwicklung",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Verarbeite eine einmalige Zahlung von {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Monatliche Zahlung von {amount} wird bearbeitet",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Danke!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Dank Ihrer Unterstützung können nun noch mehr Menschen kostenlose Beratung erhalten – Ihr Beitrag ist von unschätzbarem Wert.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Sie haben gespendet:",
+  "@youContributedLabel": {},
+  "perMonth": "/ Monat",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Zurück zum Hauptbildschirm",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Servicebedingungen",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Datenschutzrichtlinie",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Spenden",
+  "@donateButton": {},
+  "manageSubscriptionTitle": "Abonnement verwalten",
+  "@manageSubscriptionTitle": {},
+  "subscriptionStatusActiveLabel": "Aktiv",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Abgesagt",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Angehalten",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Ausstehend",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Erstellt",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Time-out",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Unbekannt",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina-Mitarbeiter",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Erneuert",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Abonnement kündigen",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Bist du sicher?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Mit Ihrer monatlichen Unterstützung bleibt Doctorina für Menschen, die darauf angewiesen sind, sich die Kosten aber nicht leisten können, kostenlos.\n\nIhr Abonnement ermöglicht mindestens 10 kostenlose Konsultationen pro Monat.\nWenn Sie aussteigen, erhalten weniger Patienten die benötigte Hilfe.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Abonnement behalten",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Trotzdem abbrechen",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Ihr monatlicher Support wurde erfolgreich gekündigt.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Falsche Abonnementdaten",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Melden Sie sich für den monatlichen Support an, damit er hier angezeigt wird.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Noch keine Abonnements",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Abonnementdatum",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Läuft ab",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Abonnement-ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Produkt-ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "OK",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Wir konnten Ihre Zahlung nicht durchführen",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Bei der Zahlung ist ein Fehler aufgetreten.\nBitte versuchen Sie es erneut.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Wiederholen",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Zahlungsabwicklung",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Sie schließen Ihren Einkauf auf der sicheren Checkout-Seite von Stripe ab.",
+  "@processingDonationStripeSubtitle": {}
 }

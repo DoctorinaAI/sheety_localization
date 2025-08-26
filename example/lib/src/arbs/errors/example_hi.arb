@@ -1,0 +1,28 @@
+{
+  "@@locale": "hi",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "error": "एक त्रुटि पाई गई",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "एक अप्रत्याशित त्रुटि हुई",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "authErrorMessages": "{errorCode, select, passwordLengthError{पासवर्ड कम से कम 6 अक्षरों का होना चाहिए} invalidEmailOrPhoneNumberError{कृपया मान्य ईमेल या अंतर्राष्ट्रीय प्रारूप में फोन नंबर प्रदान करें। उदाहरण: me@example.com और +1234567890987} invalidEmailError{ईमेल मान्य नहीं है} operationNotAllowedError{क्रिया की अनुमति नहीं है} weakPasswordError{पासवर्ड बहुत कमजोर है} userTokenExpiredError{उपयोगकर्ता टोकन की समय सीमा समाप्त हो गई} invalidPhoneNumberError{कृपया फोन नंबर अंतर्राष्ट्रीय प्रारूप में प्रदान करें, जो + और देश कोड से शुरू होता हो।} invalidActionCodeError{क्रिया कोड मान्य नहीं है} networkRequestFailedError{नेटवर्क अनुरोध विफल हुआ} tooManyRequestsError{बहुत अधिक अनुरोध} acceptTermsAndConditionsError{कृपया नियम और शर्तों को स्वीकार करें और गोपनीयता नीति को स्वीकार करने की पुष्टि करें।} acceptAIConsentError{कृपया स्वीकार करें कि परामर्श एक AI के साथ है, न कि लाइसेंस प्राप्त चिकित्सा पेशेवर के साथ।} emailOrPhoneError{ईमेल या फोन त्रुटि} passwordError{पासवर्ड त्रुटि} unknownError{अज्ञात त्रुटि} googleSSOError{Google SSO त्रुटि} emailAlreadyInUse{यह ईमेल पता पहले से ही किसी अन्य खाते द्वारा उपयोग में है।} invalidCredentialError{अमान्य प्रमाणपत्र} invalidAppCredentialError{अमान्य ऐप प्रमाणपत्र} invalidVerificationCodeError{अमान्य सत्यापन कोड} other{अज्ञात त्रुटि}}",
+  "@authErrorMessages": {
+    "description": "Ошибка аутентификации",
+    "placeholders": {
+      "errorCode": {
+        "type": "String"
+      }
+    }
+  },
+  "bugReportSentText": "बग रिपोर्ट सफलतापूर्वक भेजी गई.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

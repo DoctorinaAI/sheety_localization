@@ -1,0 +1,91 @@
+{
+  "@@locale": "bn",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "অ্যাকাউন্ট সেটিংস",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "sectionClearAllChatsTitle": "সমস্ত চ্যাট সাফ করুন",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "এটি স্থায়ীভাবে আপনার চ্যাট ইতিহাস মুছে ফেলবে।",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "সমস্ত চ্যাট সাফ করুন",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "সমস্ত চ্যাট সাফ করুন",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "অ্যাকাউন্ট মুছুন",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "আপনার অ্যাকাউন্ট মুছে ফেলা একটি স্থায়ী কাজ এবং পূর্বাবস্থায় ফেরানো যাবে না।",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "মুছুন",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "অ্যাকাউন্ট মুছুন",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "সাইন আউট",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "আপনি আপনার অ্যাকাউন্ট থেকে সাইন আউট করা হবে.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "সাইন আউট",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "বাগ রিপোর্ট পাঠান",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithShiftEnterTitle": "[⏎ Enter] দিয়ে বার্তা পাঠান",
+  "@sectionSendMessageWithShiftEnterTitle": {},
+  "sectionSendMessageWithShiftEnterSubtitle": "[⏎ Enter] দিয়ে একটি বার্তা পাঠান এবং [Shift] + [⏎ Enter] দিয়ে একটি নতুন লাইন পাঠান",
+  "@sectionSendMessageWithShiftEnterSubtitle": {},
+  "sectionSelectLocaleTitle": "ভাষা",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "অ্যাপ ইন্টারফেসের জন্য আপনার পছন্দের ভাষা নির্বাচন করুন",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "ডার্ক মোড",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "কম আলোতে আরামদায়ক দেখার অভিজ্ঞতার জন্য অন্ধকার মোড সক্ষম করুন",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "লগ",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "ডিবাগিংয়ের জন্য অ্যাপ্লিকেশন লগগুলি দেখুন এবং পরিচালনা করুন৷",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "সম্পন্ন",
+  "@doneButton": {},
+  "bugReportDialogTitle": "বাগ রিপোর্ট",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "আপনি সম্মুখীন বাগ বর্ণনা করুন",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "ফাইল সংযুক্ত করুন",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "ফাইল বাছাই করতে ব্যর্থ হয়েছে",
+  "@filePickerError": {},
+  "emptyBugReportError": "অনুগ্রহ করে প্রথমে একটি বাগ রিপোর্ট লিখুন",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "বাগ রিপোর্ট পাঠাতে ব্যর্থ হয়েছে",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "সদস্যতা পরিচালনা করুন",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "আপনার সদস্যতা সেটিংস পরিচালনা করুন",
+  "@sectionManageSubscriptionSubtitle": {}
+}

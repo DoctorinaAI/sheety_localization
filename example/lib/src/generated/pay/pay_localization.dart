@@ -6,10 +6,18 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'pay_localization_ar.dart';
+import 'pay_localization_bn.dart';
 import 'pay_localization_de.dart';
 import 'pay_localization_en.dart';
 import 'pay_localization_es.dart';
+import 'pay_localization_fr.dart';
+import 'pay_localization_hi.dart';
+import 'pay_localization_it.dart';
+import 'pay_localization_ko.dart';
+import 'pay_localization_pt.dart';
 import 'pay_localization_ru.dart';
+import 'pay_localization_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -97,10 +105,20 @@ abstract class PayLocalization {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('ar'),
+    Locale('bn'),
     Locale('de'),
     Locale('en'),
     Locale('es'),
-    Locale('ru')
+    Locale('fr'),
+    Locale('hi'),
+    Locale('it'),
+    Locale('ko'),
+    Locale('pt'),
+    Locale('pt', 'BR'),
+    Locale('ru'),
+    Locale('zh'),
+    Locale('zh', 'CN')
   ];
 
   /// Заголовок экрана
@@ -114,6 +132,330 @@ abstract class PayLocalization {
   /// In en, this message translates to:
   /// **'Button example'**
   String get exampleButton;
+
+  /// Кнопка доната после рекомендаций
+  ///
+  /// In en, this message translates to:
+  /// **'Yes, it\'s all good!'**
+  String get donationYesItsAllGoodButton;
+
+  /// No description provided for @everyContributionHealsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Every contribution heals!'**
+  String get everyContributionHealsTitle;
+
+  /// No description provided for @ifThisHelpedYouConsiderSupportingSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Your contribution helps fund free advice for others in need.'**
+  String get ifThisHelpedYouConsiderSupportingSubtitle;
+
+  /// No description provided for @payWhatFeelsRightLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Pay what feels right,'**
+  String get payWhatFeelsRightLabel;
+
+  /// No description provided for @orKeepUsingDoctorinaForFreeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'or keep using Doctorina for free, thanks to others who chose to give.'**
+  String get orKeepUsingDoctorinaForFreeLabel;
+
+  /// No description provided for @oneTimeLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'One-Time'**
+  String get oneTimeLabel;
+
+  /// No description provided for @monthlyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly'**
+  String get monthlyLabel;
+
+  /// No description provided for @chooseMonthlyDonationAmountLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose monthly donation amount'**
+  String get chooseMonthlyDonationAmountLabel;
+
+  /// Сумма подписки еще не выбрана
+  ///
+  /// In en, this message translates to:
+  /// **'You are about to subscribe to a monthly plan.'**
+  String get subscriptionNoAmount;
+
+  /// Subscription info text with amount
+  ///
+  /// In en, this message translates to:
+  /// **'You are subscribing to a monthly plan for {amount}/month.'**
+  String subscriptionAmount(String amount);
+
+  /// Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment will be charged to your account at confirmation of purchase. The subscription automatically renews every month unless auto-renew is turned off at least 24 hours before the end of the current period. You can manage or cancel your subscription anytime in your account settings. By proceeding, you agree to our {termsOfService} and {privacyPolicy}.'**
+  String subscriptionInfo(String termsOfService, String privacyPolicy);
+
+  /// No description provided for @chooseOneTimeDonationAmountLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose one-time donation amount'**
+  String get chooseOneTimeDonationAmountLabel;
+
+  /// No description provided for @mostPeopleGiveHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Most people give \$7–\$15'**
+  String get mostPeopleGiveHint;
+
+  /// No description provided for @selectCurrencyTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Select currency'**
+  String get selectCurrencyTooltip;
+
+  /// No description provided for @processingPaymentSemantics.
+  ///
+  /// In en, this message translates to:
+  /// **'Processing payment'**
+  String get processingPaymentSemantics;
+
+  /// Shown when processing a one-time payment, with currency code and amount placeholders.
+  ///
+  /// In en, this message translates to:
+  /// **'Processing one-time payment of {currency} {amount}'**
+  String processingOneTimePaymentSemantics(String currency, String amount);
+
+  /// Shown when processing a monthly payment with amount placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'Processing monthly payment of {amount}'**
+  String processingMonthlyPaymentSemantics(String amount);
+
+  /// No description provided for @thankYouTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Thank you!'**
+  String get thankYouTitle;
+
+  /// No description provided for @thankYouSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Now even more people will receive free advice — your support is truly invaluable.'**
+  String get thankYouSubtitle;
+
+  /// No description provided for @youContributedLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'You contributed:'**
+  String get youContributedLabel;
+
+  /// No description provided for @perMonth.
+  ///
+  /// In en, this message translates to:
+  /// **'/ month'**
+  String get perMonth;
+
+  /// No description provided for @returnToTheMainScreenButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Return to the main screen'**
+  String get returnToTheMainScreenButton;
+
+  /// No description provided for @termsOfServiceLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Terms Of Service'**
+  String get termsOfServiceLabel;
+
+  /// No description provided for @privacyPolicyLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Privacy Policy'**
+  String get privacyPolicyLabel;
+
+  /// No description provided for @donateButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Donate'**
+  String get donateButton;
+
+  /// No description provided for @manageSubscriptionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage subscription'**
+  String get manageSubscriptionTitle;
+
+  /// No description provided for @subscriptionStatusActiveLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get subscriptionStatusActiveLabel;
+
+  /// No description provided for @subscriptionStatusCanceledLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Canceled'**
+  String get subscriptionStatusCanceledLabel;
+
+  /// No description provided for @subscriptionStatusPausedLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Paused'**
+  String get subscriptionStatusPausedLabel;
+
+  /// No description provided for @subscriptionStatusPendingLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Pending'**
+  String get subscriptionStatusPendingLabel;
+
+  /// No description provided for @subscriptionStatusCreatedLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Created'**
+  String get subscriptionStatusCreatedLabel;
+
+  /// No description provided for @subscriptionStatusTimeoutLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Timeout'**
+  String get subscriptionStatusTimeoutLabel;
+
+  /// No description provided for @subscriptionStatusUnknownLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown'**
+  String get subscriptionStatusUnknownLabel;
+
+  /// No description provided for @subscriptionDoctorinaContributor.
+  ///
+  /// In en, this message translates to:
+  /// **'Doctorina contributor'**
+  String get subscriptionDoctorinaContributor;
+
+  /// No description provided for @subscriptionRenews.
+  ///
+  /// In en, this message translates to:
+  /// **'Renews'**
+  String get subscriptionRenews;
+
+  /// No description provided for @subscriptionCancelButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel subscription'**
+  String get subscriptionCancelButton;
+
+  /// No description provided for @subscriptionAreYouSureDialogTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure?'**
+  String get subscriptionAreYouSureDialogTitle;
+
+  /// No description provided for @subscriptionAreYouSureDialogText.
+  ///
+  /// In en, this message translates to:
+  /// **'Your monthly support keeps Doctorina free for people who rely on it but can’t afford to pay. \n\nYour subscription funds at least  10 free consultations each month.\n If you leave, fewer patients will get  the help they need.'**
+  String get subscriptionAreYouSureDialogText;
+
+  /// No description provided for @subscriptionAreYouSureDialogKeepButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Keep subscription'**
+  String get subscriptionAreYouSureDialogKeepButton;
+
+  /// No description provided for @subscriptionAreYouSureDialogCancelButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel anyway'**
+  String get subscriptionAreYouSureDialogCancelButton;
+
+  /// No description provided for @subscriptionYourMonthlySupportCanceledNotification.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Monthly support \nhas been successfully canceled.'**
+  String get subscriptionYourMonthlySupportCanceledNotification;
+
+  /// No description provided for @subscriptionMalformed.
+  ///
+  /// In en, this message translates to:
+  /// **'Incorrect subscription data'**
+  String get subscriptionMalformed;
+
+  /// No description provided for @subscriptionSignUpForMonthlySupportButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign up for monthly support to have it appear here.'**
+  String get subscriptionSignUpForMonthlySupportButton;
+
+  /// No description provided for @subscriptionNoSubscriptionsYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No subscriptions yet'**
+  String get subscriptionNoSubscriptionsYet;
+
+  /// No description provided for @subscriptionCreatedAtDateLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription date'**
+  String get subscriptionCreatedAtDateLabel;
+
+  /// No description provided for @subscriptionExpiresAtDateLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Expires'**
+  String get subscriptionExpiresAtDateLabel;
+
+  /// No description provided for @subscriptionSubscriptionIdLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Subscription ID'**
+  String get subscriptionSubscriptionIdLabel;
+
+  /// No description provided for @subscriptionProductIdLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Product ID'**
+  String get subscriptionProductIdLabel;
+
+  /// No description provided for @subscriptionDialogOkButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Ok'**
+  String get subscriptionDialogOkButton;
+
+  /// No description provided for @errorProcessDonationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'We couldn’t proceed your payment'**
+  String get errorProcessDonationTitle;
+
+  /// No description provided for @errorProcessDonationSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Something went wrong with the payment.\nPlease try again.'**
+  String get errorProcessDonationSubtitle;
+
+  /// No description provided for @errorProcessDonationRetryButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get errorProcessDonationRetryButton;
+
+  /// No description provided for @processingDonationTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Processing payment'**
+  String get processingDonationTitle;
+
+  /// No description provided for @processingDonationStripeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'You’ll complete your purchase on Stripe’s secure checkout page.'**
+  String get processingDonationStripeSubtitle;
 }
 
 class _PayLocalizationDelegate extends LocalizationsDelegate<PayLocalization> {
@@ -125,24 +467,72 @@ class _PayLocalizationDelegate extends LocalizationsDelegate<PayLocalization> {
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['de', 'en', 'es', 'ru'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+        'ar',
+        'bn',
+        'de',
+        'en',
+        'es',
+        'fr',
+        'hi',
+        'it',
+        'ko',
+        'pt',
+        'ru',
+        'zh'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_PayLocalizationDelegate old) => false;
 }
 
 PayLocalization lookupPayLocalization(Locale locale) {
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return PayLocalizationPtBr();
+        }
+        break;
+      }
+    case 'zh':
+      {
+        switch (locale.countryCode) {
+          case 'CN':
+            return PayLocalizationZhCn();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'ar':
+      return PayLocalizationAr();
+    case 'bn':
+      return PayLocalizationBn();
     case 'de':
       return PayLocalizationDe();
     case 'en':
       return PayLocalizationEn();
     case 'es':
       return PayLocalizationEs();
+    case 'fr':
+      return PayLocalizationFr();
+    case 'hi':
+      return PayLocalizationHi();
+    case 'it':
+      return PayLocalizationIt();
+    case 'ko':
+      return PayLocalizationKo();
+    case 'pt':
+      return PayLocalizationPt();
     case 'ru':
       return PayLocalizationRu();
+    case 'zh':
+      return PayLocalizationZh();
   }
 
   throw FlutterError(

@@ -6,10 +6,18 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'settings_localization_ar.dart';
+import 'settings_localization_bn.dart';
 import 'settings_localization_de.dart';
 import 'settings_localization_en.dart';
 import 'settings_localization_es.dart';
+import 'settings_localization_fr.dart';
+import 'settings_localization_hi.dart';
+import 'settings_localization_it.dart';
+import 'settings_localization_ko.dart';
+import 'settings_localization_pt.dart';
 import 'settings_localization_ru.dart';
+import 'settings_localization_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -98,10 +106,20 @@ abstract class SettingsLocalization {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('ar'),
+    Locale('bn'),
     Locale('de'),
     Locale('en'),
     Locale('es'),
-    Locale('ru')
+    Locale('fr'),
+    Locale('hi'),
+    Locale('it'),
+    Locale('ko'),
+    Locale('pt'),
+    Locale('pt', 'BR'),
+    Locale('ru'),
+    Locale('zh'),
+    Locale('zh', 'CN')
   ];
 
   /// Заголовок экрана
@@ -175,6 +193,114 @@ abstract class SettingsLocalization {
   /// In en, this message translates to:
   /// **'Sign Out'**
   String get sectionLogOutButton;
+
+  /// No description provided for @sendBugReportButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Send Bug Report'**
+  String get sendBugReportButton;
+
+  /// No description provided for @sectionSendMessageWithShiftEnterTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Send message with [⏎ Enter]'**
+  String get sectionSendMessageWithShiftEnterTitle;
+
+  /// No description provided for @sectionSendMessageWithShiftEnterSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Send a message with [⏎ Enter] and a new line with [Shift] + [⏎ Enter]'**
+  String get sectionSendMessageWithShiftEnterSubtitle;
+
+  /// No description provided for @sectionSelectLocaleTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Language'**
+  String get sectionSelectLocaleTitle;
+
+  /// No description provided for @sectionSelectLocaleSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Select your preferred language for the app interface'**
+  String get sectionSelectLocaleSubtitle;
+
+  /// No description provided for @sectionSwitchThemeTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark mode'**
+  String get sectionSwitchThemeTitle;
+
+  /// No description provided for @sectionSwitchThemeSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Enable dark mode for a comfortable viewing experience in low light'**
+  String get sectionSwitchThemeSubtitle;
+
+  /// No description provided for @sectionLogsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Logs'**
+  String get sectionLogsTitle;
+
+  /// No description provided for @sectionLogsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'View and manage application logs for debugging'**
+  String get sectionLogsSubtitle;
+
+  /// No description provided for @doneButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Done'**
+  String get doneButton;
+
+  /// No description provided for @bugReportDialogTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Bug Report'**
+  String get bugReportDialogTitle;
+
+  /// No description provided for @bugReportDialogHintText.
+  ///
+  /// In en, this message translates to:
+  /// **'Please describe the bug you encountered'**
+  String get bugReportDialogHintText;
+
+  /// No description provided for @attachFilesButtonTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Attach files'**
+  String get attachFilesButtonTooltip;
+
+  /// No description provided for @filePickerError.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to pick files'**
+  String get filePickerError;
+
+  /// No description provided for @emptyBugReportError.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a bug report first'**
+  String get emptyBugReportError;
+
+  /// No description provided for @failedToSendBugReportError.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to send bug report'**
+  String get failedToSendBugReportError;
+
+  /// No description provided for @sectionManageSubscriptionTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage subscription'**
+  String get sectionManageSubscriptionTitle;
+
+  /// No description provided for @sectionManageSubscriptionSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage your subscription settings'**
+  String get sectionManageSubscriptionSubtitle;
 }
 
 class _SettingsLocalizationDelegate
@@ -188,24 +314,72 @@ class _SettingsLocalizationDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['de', 'en', 'es', 'ru'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+        'ar',
+        'bn',
+        'de',
+        'en',
+        'es',
+        'fr',
+        'hi',
+        'it',
+        'ko',
+        'pt',
+        'ru',
+        'zh'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_SettingsLocalizationDelegate old) => false;
 }
 
 SettingsLocalization lookupSettingsLocalization(Locale locale) {
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return SettingsLocalizationPtBr();
+        }
+        break;
+      }
+    case 'zh':
+      {
+        switch (locale.countryCode) {
+          case 'CN':
+            return SettingsLocalizationZhCn();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'ar':
+      return SettingsLocalizationAr();
+    case 'bn':
+      return SettingsLocalizationBn();
     case 'de':
       return SettingsLocalizationDe();
     case 'en':
       return SettingsLocalizationEn();
     case 'es':
       return SettingsLocalizationEs();
+    case 'fr':
+      return SettingsLocalizationFr();
+    case 'hi':
+      return SettingsLocalizationHi();
+    case 'it':
+      return SettingsLocalizationIt();
+    case 'ko':
+      return SettingsLocalizationKo();
+    case 'pt':
+      return SettingsLocalizationPt();
     case 'ru':
       return SettingsLocalizationRu();
+    case 'zh':
+      return SettingsLocalizationZh();
   }
 
   throw FlutterError(

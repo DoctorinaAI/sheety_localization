@@ -1,0 +1,173 @@
+{
+  "@@locale": "it",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Pagamento",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "exampleButton": "Esempio di pulsante",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Sì, va tutto bene!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Ogni contributo guarisce!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Il tuo contributo aiuta a finanziare la consulenza gratuita per altre persone bisognose.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Paga quello che ritieni giusto,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "oppure continua a usare Doctorina gratuitamente, grazie ad altri che hanno scelto di donare.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Una volta",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Mensile",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Scegli l'importo della donazione mensile",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Stai per sottoscrivere un abbonamento mensile.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Stai sottoscrivendo un abbonamento mensile per {amount}/mese.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Il pagamento verrà addebitato sul tuo account alla conferma dell'acquisto. L'abbonamento si rinnova automaticamente ogni mese, a meno che il rinnovo automatico non venga disattivato almeno 24 ore prima della fine del periodo in corso. Puoi gestire o annullare l'abbonamento in qualsiasi momento nelle impostazioni del tuo account. Procedendo, accetti i nostri {termsOfService} e la {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Scegli l'importo della donazione una tantum",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "La maggior parte delle persone dona dai 7 ai 15 dollari",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Seleziona la valuta",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Elaborazione del pagamento",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Elaborazione di un pagamento una tantum di {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Elaborazione del pagamento mensile di {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Grazie!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Ora ancora più persone riceveranno consulenza gratuita: il vostro supporto è davvero inestimabile.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Hai contribuito:",
+  "@youContributedLabel": {},
+  "perMonth": "/ mese",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Torna alla schermata principale",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Termini di servizio",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "politica sulla riservatezza",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Donare",
+  "@donateButton": {},
+  "manageSubscriptionTitle": "Gestisci l'abbonamento",
+  "@manageSubscriptionTitle": {},
+  "subscriptionStatusActiveLabel": "Attivo",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Annullato",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "In pausa",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "In attesa di",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Creato",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Tempo scaduto",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Sconosciuto",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Collaboratore di Doctorina",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Rinnova",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Annulla abbonamento",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Sei sicuro?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Il tuo contributo mensile mantiene Doctorina gratuito per le persone che ne fanno affidamento ma non possono permettersi di pagare.\n\nIl tuo abbonamento finanzia almeno 10 consulenze gratuite ogni mese.\nSe abbandoni l'abbonamento, meno pazienti riceveranno l'assistenza di cui hanno bisogno.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Mantieni l'abbonamento",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Annulla comunque",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Il tuo supporto mensile\nè stato annullato con successo.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Dati di abbonamento errati",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Iscriviti al supporto mensile per vederlo apparire qui.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Nessun abbonamento ancora",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Data di sottoscrizione",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Scade",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "ID abbonamento",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "ID prodotto",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "OK",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Non siamo riusciti a procedere con il pagamento",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Si è verificato un errore durante il pagamento.\nRiprova.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Riprova",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Elaborazione del pagamento",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Completerai il tuo acquisto sulla pagina di pagamento sicura di Stripe.",
+  "@processingDonationStripeSubtitle": {}
+}

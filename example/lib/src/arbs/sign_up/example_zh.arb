@@ -1,0 +1,109 @@
+{
+  "@@locale": "zh",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "登入",
+  "@title": {},
+  "logIn": "登录",
+  "@logIn": {},
+  "password": "密码",
+  "@password": {},
+  "changeNumber": "更改号码",
+  "@changeNumber": {},
+  "forgotPassword": "忘记密码？",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "输入您的电子邮件地址，我们将向您发送重置密码的链接。",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "记住密码了吗？",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "我有密码",
+  "@backToLoginButton": {},
+  "continueButton": "继续",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "密码重置电子邮件已发送",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "重置密码",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "确认码",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "立即开始使用 Doctorina",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "或者",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "输入您的密码",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "显示密码",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "模糊密码",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "清除登录信息",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "电子邮件或电话",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com 或 +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "输入电子邮件或电话号码",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "请接受协议以继续。",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "我同意处理个人数据，",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "使用",
+  "@consentTheUseOf": {},
+  "consentCookies": "曲奇饼",
+  "@consentCookies": {},
+  "consentAgreeToThe": "，同意",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "条款和条件",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": "，并承认",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "隐私政策",
+  "@consentPrivacyPolicy": {},
+  "consentDot": "。",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "我承认我的咨询对象是人工智能，而不是有执照的医疗专业人员。",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "登出",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "您确定要退出吗？",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "取消",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "是的，退出",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "重新发送代码",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "重新发送代码 ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  }
+}

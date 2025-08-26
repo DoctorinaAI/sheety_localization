@@ -1,0 +1,109 @@
+{
+  "@@locale": "fr",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Se connecter",
+  "@title": {},
+  "logIn": "Se connecter",
+  "@logIn": {},
+  "password": "Mot de passe",
+  "@password": {},
+  "changeNumber": "Changer de numéro",
+  "@changeNumber": {},
+  "forgotPassword": "Mot de passe oublié?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "Vous vous souvenez de votre mot de passe ?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "J'ai un mot de passe",
+  "@backToLoginButton": {},
+  "continueButton": "Continuer",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "E-mail de réinitialisation du mot de passe envoyé",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "Réinitialiser le mot de passe",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "Confirmer le code",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "Commencez à utiliser Doctorina dès aujourd'hui",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "OU",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "Entrez votre mot de passe",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "Afficher le mot de passe",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "Mot de passe obscur",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "Effacer la connexion",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "Courriel ou téléphone",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "nom@gmail.com ou +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "Entrez l'e-mail ou le numéro de téléphone",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "Veuillez accepter les accords pour continuer.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "Je consens au traitement des données personnelles,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "l'utilisation de",
+  "@consentTheUseOf": {},
+  "consentCookies": "cookies",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", acceptez le",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "termes et conditions",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", et reconnaissons le",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "politique de confidentialité",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "Je reconnais que ma consultation est effectuée avec une IA et non avec un professionnel de la santé agréé.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "Se déconnecter",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "Êtes-vous sûr de vouloir vous déconnecter ?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "Annuler",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "Oui, déconnectez-vous",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "Renvoyer le code",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "Renvoyer le code ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "@@locale": "pt",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Configurações de Conta",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "sectionClearAllChatsTitle": "Limpar todos os chats",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "Isso excluirá permanentemente seu histórico de bate-papo.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "Limpar todos os chats",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "Limpar todos os chats",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "Excluir conta",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "Excluir sua conta é uma ação permanente e não pode ser desfeita.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "Excluir",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "Excluir conta",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "Sair",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "Você será desconectado da sua conta.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "Sair",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "Enviar relatório de bug",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithShiftEnterTitle": "Enviar mensagem com [⏎ Enter]",
+  "@sectionSendMessageWithShiftEnterTitle": {},
+  "sectionSendMessageWithShiftEnterSubtitle": "Envie uma mensagem com [⏎ Enter] e uma nova linha com [Shift] + [⏎ Enter]",
+  "@sectionSendMessageWithShiftEnterSubtitle": {},
+  "sectionSelectLocaleTitle": "Linguagem",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "Selecione seu idioma preferido para a interface do aplicativo",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "Modo escuro",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "Ative o modo escuro para uma experiência de visualização confortável com pouca luz",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "Registros",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "Visualizar e gerenciar logs de aplicativos para depuração",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "Feito",
+  "@doneButton": {},
+  "bugReportDialogTitle": "Relatório de bug",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "Por favor descreva o bug que você encontrou",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "Anexar arquivos",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "Falha ao selecionar arquivos",
+  "@filePickerError": {},
+  "emptyBugReportError": "Por favor, insira um relatório de bug primeiro",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "Falha ao enviar relatório de bug",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "Gerenciar assinatura",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "Gerencie suas configurações de assinatura",
+  "@sectionManageSubscriptionSubtitle": {}
+}

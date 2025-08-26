@@ -1,0 +1,109 @@
+{
+  "@@locale": "hi",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "दाखिल करना",
+  "@title": {},
+  "logIn": "लॉग इन करें",
+  "@logIn": {},
+  "password": "पासवर्ड",
+  "@password": {},
+  "changeNumber": "अंक बदलो",
+  "@changeNumber": {},
+  "forgotPassword": "पासवर्ड भूल गए?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "अपना ईमेल पता दर्ज करें, और हम आपको अपना पासवर्ड रीसेट करने के लिए एक लिंक भेजेंगे।",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "अपना पासवर्ड याद रखें?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "मेरे पास एक पासवर्ड है",
+  "@backToLoginButton": {},
+  "continueButton": "जारी रखना",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "पासवर्ड रीसेट ईमेल भेजा गया",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "पासवर्ड रीसेट",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "कोड की पुष्टि करें",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "आज ही डॉक्टरिना का उपयोग शुरू करें",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "या",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "अपना कूटशब्द भरें",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "पासवर्ड दिखाए",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "अस्पष्ट पासवर्ड",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "लॉगिन साफ़ करें",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "ईमेल या फ़ोन",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com या +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "ईमेल या फ़ोन नंबर दर्ज करें",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "कृपया आगे बढ़ने के लिए समझौते को स्वीकार करें।",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "मैं व्यक्तिगत डेटा के प्रसंस्करण के लिए सहमति देता/देती हूँ,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "का उपयोग",
+  "@consentTheUseOf": {},
+  "consentCookies": "कुकीज़",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", इस बात से सहमत हैं",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "नियम और शर्तें",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", और स्वीकार करते हैं",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "गोपनीयता नीति",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "मैं स्वीकार करता हूं कि मेरा परामर्श एक एआई के साथ है, न कि किसी लाइसेंस प्राप्त चिकित्सा पेशेवर के साथ।",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "लॉग आउट",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "क्या आप लॉग आउट करने के लिए आश्वस्त हैं?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "रद्द करना",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "हाँ, लॉग आउट करें",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "पुन: कोड भेजे",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "कोड पुनः भेजें ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  }
+}

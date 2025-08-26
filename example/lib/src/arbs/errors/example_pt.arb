@@ -1,0 +1,28 @@
+{
+  "@@locale": "pt",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "error": "Ocorreu um erro",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Ocorreu um erro inesperado",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "authErrorMessages": "{errorCode, select, passwordLengthError{A senha deve ter pelo menos 6 caracteres} invalidEmailOrPhoneNumberError{Informe um e-mail válido ou um número de telefone no formato internacional. Exemplos: me@example.com e +1234567890987} invalidEmailError{E-mail inválido} operationNotAllowedError{Operação não permitida} weakPasswordError{Senha muito fraca} userTokenExpiredError{Token do usuário expirou} invalidPhoneNumberError{Informe números de telefone no formato internacional, começando com + e o código do país.} invalidActionCodeError{Código de ação inválido} networkRequestFailedError{Falha na requisição de rede} tooManyRequestsError{Muitas solicitações} acceptTermsAndConditionsError{Aceite os termos e condições e reconheça a política de privacidade.} acceptAIConsentError{Reconheça que as consultas são com uma IA e não com um profissional médico licenciado.} emailOrPhoneError{Erro de e-mail ou telefone} passwordError{Erro de senha} unknownError{Erro desconhecido} googleSSOError{Erro no SSO do Google} emailAlreadyInUse{Este e-mail já está em uso por outra conta.} invalidCredentialError{Credenciais inválidas} invalidAppCredentialError{Credenciais do aplicativo inválidas} invalidVerificationCodeError{Código de verificação inválido} other{Erro desconhecido}}\n",
+  "@authErrorMessages": {
+    "description": "Ошибка аутентификации",
+    "placeholders": {
+      "errorCode": {
+        "type": "String"
+      }
+    }
+  },
+  "bugReportSentText": "Relatório de bug enviado com sucesso.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "@@locale": "en",
   "@@author": "example@gmail.com",
-  "@@last_modified": "2025-06-04T15:18:15.787321Z",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
   "@@comment": "Generated from Google Sheets",
   "@@context": "From Google Sheets",
   "title": "Payment",
@@ -11,5 +11,163 @@
   "exampleButton": "Button example",
   "@exampleButton": {
     "description": "Пример кнопки"
-  }
+  },
+  "donationYesItsAllGoodButton": "Yes, it's all good!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Every contribution heals!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Your contribution helps fund free advice for others in need.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Pay what feels right,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "or keep using Doctorina for free, thanks to others who chose to give.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "One-Time",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Monthly",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Choose monthly donation amount",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "You are about to subscribe to a monthly plan.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "You are subscribing to a monthly plan for {amount}/month.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Payment will be charged to your account at confirmation of purchase. The subscription automatically renews every month unless auto-renew is turned off at least 24 hours before the end of the current period. You can manage or cancel your subscription anytime in your account settings. By proceeding, you agree to our {termsOfService} and {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Choose one-time donation amount",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Most people give $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Select currency",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Processing payment",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Processing one-time payment of {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Processing monthly payment of {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Thank you!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Now even more people will receive free advice — your support is truly invaluable.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "You contributed:",
+  "@youContributedLabel": {},
+  "perMonth": "/ month",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Return to the main screen",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Terms Of Service",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Privacy Policy",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Donate",
+  "@donateButton": {},
+  "manageSubscriptionTitle": "Manage subscription",
+  "@manageSubscriptionTitle": {},
+  "subscriptionStatusActiveLabel": "Active",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Canceled",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Paused",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Pending",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Created",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Timeout",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Unknown",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina contributor",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Renews",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Cancel subscription",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Are you sure?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Your monthly support keeps Doctorina free for people who rely on it but can’t afford to pay. \n\nYour subscription funds at least  10 free consultations each month.\n If you leave, fewer patients will get  the help they need.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Keep subscription",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Cancel anyway",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Your Monthly support \nhas been successfully canceled.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Incorrect subscription data",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Sign up for monthly support to have it appear here.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "No subscriptions yet",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Subscription date",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Expires",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Subscription ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Product ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "We couldn’t proceed your payment",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Something went wrong with the payment.\nPlease try again.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Retry",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Processing payment",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "You’ll complete your purchase on Stripe’s secure checkout page.",
+  "@processingDonationStripeSubtitle": {}
 }

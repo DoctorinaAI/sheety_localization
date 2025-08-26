@@ -1,0 +1,91 @@
+{
+  "@@locale": "hi",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "अकाउंट सेटिंग",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "sectionClearAllChatsTitle": "सभी चैट साफ़ करें",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "इससे आपका चैट इतिहास स्थायी रूप से मिट जाएगा।",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "सभी चैट साफ़ करें",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "सभी चैट साफ़ करें",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "खाता हटा दो",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "अपना खाता हटाना एक स्थायी कार्रवाई है और इसे पूर्ववत नहीं किया जा सकता.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "मिटाना",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "खाता हटा दो",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "साइन आउट",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "आप अपने खाते से साइन आउट हो जाएंगे.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "साइन आउट",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "बग रिपोर्ट भेजें",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithShiftEnterTitle": "[⏎ Enter] के साथ संदेश भेजें",
+  "@sectionSendMessageWithShiftEnterTitle": {},
+  "sectionSendMessageWithShiftEnterSubtitle": "[⏎ Enter] के साथ एक संदेश और [Shift] + [⏎ Enter] के साथ एक नई पंक्ति भेजें",
+  "@sectionSendMessageWithShiftEnterSubtitle": {},
+  "sectionSelectLocaleTitle": "भाषा",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "ऐप इंटरफ़ेस के लिए अपनी पसंदीदा भाषा चुनें",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "डार्क मोड",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "कम रोशनी में आरामदायक दृश्य अनुभव के लिए डार्क मोड सक्षम करें",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "लॉग्स",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "डिबगिंग के लिए एप्लिकेशन लॉग देखें और प्रबंधित करें",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "हो गया",
+  "@doneButton": {},
+  "bugReportDialogTitle": "बग रिपोर्ट",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "कृपया उस बग का वर्णन करें जिसका आपने सामना किया",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "फ़ाइलों को संलग्न करें",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "फ़ाइलें चुनने में विफल",
+  "@filePickerError": {},
+  "emptyBugReportError": "कृपया पहले एक बग रिपोर्ट दर्ज करें",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "बग रिपोर्ट भेजने में विफल",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "सदस्यता प्रबंधित करें",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "अपनी सदस्यता सेटिंग प्रबंधित करें",
+  "@sectionManageSubscriptionSubtitle": {}
+}

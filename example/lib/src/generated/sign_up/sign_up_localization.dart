@@ -6,10 +6,18 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'sign_up_localization_ar.dart';
+import 'sign_up_localization_bn.dart';
 import 'sign_up_localization_de.dart';
 import 'sign_up_localization_en.dart';
 import 'sign_up_localization_es.dart';
+import 'sign_up_localization_fr.dart';
+import 'sign_up_localization_hi.dart';
+import 'sign_up_localization_it.dart';
+import 'sign_up_localization_ko.dart';
+import 'sign_up_localization_pt.dart';
 import 'sign_up_localization_ru.dart';
+import 'sign_up_localization_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -97,10 +105,20 @@ abstract class SignUpLocalization {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('ar'),
+    Locale('bn'),
     Locale('de'),
     Locale('en'),
     Locale('es'),
-    Locale('ru')
+    Locale('fr'),
+    Locale('hi'),
+    Locale('it'),
+    Locale('ko'),
+    Locale('pt'),
+    Locale('pt', 'BR'),
+    Locale('ru'),
+    Locale('zh'),
+    Locale('zh', 'CN')
   ];
 
   /// No description provided for @title.
@@ -312,6 +330,18 @@ abstract class SignUpLocalization {
   /// In en, this message translates to:
   /// **'Yes, log out'**
   String get logOutDialogLogOutButton;
+
+  /// Кнопка отправить код заного
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code'**
+  String get resendCodeButton;
+
+  /// Таймер для повторной отправки кода
+  ///
+  /// In en, this message translates to:
+  /// **'Resend code ({timer})'**
+  String resendCodeTimer(String timer);
 }
 
 class _SignUpLocalizationDelegate
@@ -325,24 +355,72 @@ class _SignUpLocalizationDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['de', 'en', 'es', 'ru'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+        'ar',
+        'bn',
+        'de',
+        'en',
+        'es',
+        'fr',
+        'hi',
+        'it',
+        'ko',
+        'pt',
+        'ru',
+        'zh'
+      ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_SignUpLocalizationDelegate old) => false;
 }
 
 SignUpLocalization lookupSignUpLocalization(Locale locale) {
+  // Lookup logic when language+country codes are specified.
+  switch (locale.languageCode) {
+    case 'pt':
+      {
+        switch (locale.countryCode) {
+          case 'BR':
+            return SignUpLocalizationPtBr();
+        }
+        break;
+      }
+    case 'zh':
+      {
+        switch (locale.countryCode) {
+          case 'CN':
+            return SignUpLocalizationZhCn();
+        }
+        break;
+      }
+  }
+
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'ar':
+      return SignUpLocalizationAr();
+    case 'bn':
+      return SignUpLocalizationBn();
     case 'de':
       return SignUpLocalizationDe();
     case 'en':
       return SignUpLocalizationEn();
     case 'es':
       return SignUpLocalizationEs();
+    case 'fr':
+      return SignUpLocalizationFr();
+    case 'hi':
+      return SignUpLocalizationHi();
+    case 'it':
+      return SignUpLocalizationIt();
+    case 'ko':
+      return SignUpLocalizationKo();
+    case 'pt':
+      return SignUpLocalizationPt();
     case 'ru':
       return SignUpLocalizationRu();
+    case 'zh':
+      return SignUpLocalizationZh();
   }
 
   throw FlutterError(

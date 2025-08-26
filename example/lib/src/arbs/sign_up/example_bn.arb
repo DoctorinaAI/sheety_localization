@@ -1,0 +1,109 @@
+{
+  "@@locale": "bn",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "সাইন ইন করুন",
+  "@title": {},
+  "logIn": "লগ ইন করুন",
+  "@logIn": {},
+  "password": "পাসওয়ার্ড",
+  "@password": {},
+  "changeNumber": "নম্বর পরিবর্তন করুন",
+  "@changeNumber": {},
+  "forgotPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "আপনার ইমেল ঠিকানা লিখুন, এবং আমরা আপনাকে আপনার পাসওয়ার্ড পুনরায় সেট করার জন্য একটি লিঙ্ক পাঠাব।",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "আপনার পাসওয়ার্ড মনে আছে?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "আমার কাছে একটি পাসওয়ার্ড আছে",
+  "@backToLoginButton": {},
+  "continueButton": "চালিয়ে যান",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "পাসওয়ার্ড রিসেট ইমেল পাঠানো হয়েছে",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "পাসওয়ার্ড রিসেট করুন",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "কোড নিশ্চিত করুন",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "আজই ডক্টরিনা ব্যবহার করা শুরু করুন",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "বা",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "আপনার পাসওয়ার্ড লিখুন",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "পাসওয়ার্ড দেখান",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "অস্পষ্ট পাসওয়ার্ড",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "সাফ লগইন",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "ইমেইল বা ফোন",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com বা +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "ইমেল বা ফোন নম্বর লিখুন",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "চালিয়ে যেতে চুক্তি স্বীকার করুন.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "আমি ব্যক্তিগত তথ্য প্রক্রিয়াকরণে সম্মতি জানাই,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "এর ব্যবহার",
+  "@consentTheUseOf": {},
+  "consentCookies": "কুকিজ",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", রাজি",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "শর্তাবলী",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", এবং স্বীকার করুন ",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "গোপনীয়তা নীতি",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "আমি স্বীকার করি যে আমার পরামর্শ একজন AI এর সাথে এবং লাইসেন্সপ্রাপ্ত মেডিকেল পেশাদার নয়।",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "লগ আউট করুন",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "আপনি লগ আউট করতে নিশ্চিত?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "বাতিল করুন",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "হ্যাঁ, লগ আউট করুন",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "কোড আবার পাঠান",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "কোড আবার পাঠান ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  }
+}

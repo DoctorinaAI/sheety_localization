@@ -1,0 +1,91 @@
+{
+  "@@locale": "ar",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "إعدادات الحساب",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "sectionClearAllChatsTitle": "مسح جميع الدردشات",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "سيؤدي هذا إلى حذف سجل الدردشة الخاص بك بشكل دائم.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "مسح جميع الدردشات",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "مسح جميع الدردشات",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "حذف الحساب",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "إن حذف حسابك هو إجراء دائم ولا يمكن التراجع عنه.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "يمسح",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "حذف الحساب",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "تسجيل الخروج",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "سيتم تسجيل خروجك من حسابك.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "تسجيل الخروج",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "إرسال تقرير عن الخطأ",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithShiftEnterTitle": "أرسل رسالة باستخدام [⏎ Enter]",
+  "@sectionSendMessageWithShiftEnterTitle": {},
+  "sectionSendMessageWithShiftEnterSubtitle": "أرسل رسالة باستخدام [⏎ Enter] وسطر جديد باستخدام [Shift] + [⏎ Enter]",
+  "@sectionSendMessageWithShiftEnterSubtitle": {},
+  "sectionSelectLocaleTitle": "لغة",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "حدد اللغة المفضلة لديك لواجهة التطبيق",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "الوضع المظلم",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "قم بتمكين الوضع المظلم للحصول على تجربة مشاهدة مريحة في الإضاءة المنخفضة",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "السجلات",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "عرض وإدارة سجلات التطبيق للتصحيح",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "منتهي",
+  "@doneButton": {},
+  "bugReportDialogTitle": "تقرير الأخطاء",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "يرجى وصف الخطأ الذي واجهته",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "إرفاق الملفات",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "فشل في اختيار الملفات",
+  "@filePickerError": {},
+  "emptyBugReportError": "الرجاء إدخال تقرير الخطأ أولاً",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "فشل في إرسال تقرير الخطأ",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "إدارة الاشتراك",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "إدارة إعدادات اشتراكك",
+  "@sectionManageSubscriptionSubtitle": {}
+}

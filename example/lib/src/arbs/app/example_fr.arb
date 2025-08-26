@@ -1,0 +1,45 @@
+{
+  "@@locale": "fr",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "Docteure",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Mettre à jour maintenant",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Peut-être plus tard",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Nouvelle mise à jour disponible",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Mise à jour requise",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Une nouvelle version (v{version}) de l'application est disponible. Veuillez la mettre à jour pour profiter d'une expérience optimale.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Pour continuer, veuillez mettre à jour l'application. Cette mise à jour inclut des correctifs et améliorations importants.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  }
+}

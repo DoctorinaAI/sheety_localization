@@ -1,0 +1,28 @@
+{
+  "@@locale": "ar",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "error": "حدث خطأ",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "حدث خطأ غير متوقع",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "authErrorMessages": "{errorCode, select, passwordLengthError{Password should be at least 6 characters} invalidEmailOrPhoneNumberError{Please provide valid email or a phone number in the international format. Examples: me@example.com and +1234567890987} invalidEmailError{Email is not valid} operationNotAllowedError{Operation is not allowed} weakPasswordError{Password is too weak} userTokenExpiredError{User token expired} invalidPhoneNumberError{Please provide phone numbers in the international format, starting with + and the country code.} invalidActionCodeError{Action code is not valid} networkRequestFailedError{Network request failed} tooManyRequestsError{Too many requests} acceptTermsAndConditionsError{Please accept the terms and conditions and acknowledge the privacy policy.} acceptAIConsentError{Please acknowledge that consultations are with an AI and not a licensed medical professional.} emailOrPhoneError{Email or phone error} passwordError{Password error} unknownError{Unknown error} googleSSOError{Google SSO error} emailAlreadyInUse{The email address is already in use by another account.} invalidCredentialError{Invalid credentials} invalidAppCredentialError{Invalid app credentials} invalidVerificationCodeError{Invalid verification code} other{Unknown error}}",
+  "@authErrorMessages": {
+    "description": "Ошибка аутентификации",
+    "placeholders": {
+      "errorCode": {
+        "type": "String"
+      }
+    }
+  },
+  "bugReportSentText": "تم إرسال تقرير الخطأ بنجاح.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}
