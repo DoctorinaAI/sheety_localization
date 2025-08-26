@@ -121,4 +121,12 @@ class SignUpLocalizationDe extends SignUpLocalization {
 
   @override
   String get logOutDialogLogOutButton => 'Ja, abmelden';
+
+  @override
+  String get resendCodeButton => 'Code erneut senden';
+
+  @override
+  String resendCodeTimer(String timer) {
+    return 'Code erneut senden ($timer)';
+  }
 }

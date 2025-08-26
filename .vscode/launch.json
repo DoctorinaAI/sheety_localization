@@ -12,6 +12,7 @@
         "--lib=\"example/lib/\"",
         "--arb=\"src/arbs/\"",
         "--gen=\"src/generated/\"",
+        "--ignore=\"help, back.*\"",
         "--comment=Generated from Google Sheets",
         "--author=example@gmail.com",
         "--context=From Google Sheets",

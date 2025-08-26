@@ -1,0 +1,173 @@
+{
+  "@@locale": "bn",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "পেমেন্ট",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "exampleButton": "বোতাম উদাহরণ",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "হ্যাঁ, এটা সব ভাল!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "প্রতিটি অবদান আরোগ্য!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "আপনার অবদান প্রয়োজনে অন্যদের জন্য বিনামূল্যে পরামর্শ তহবিল সাহায্য করে.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "যা সঠিক মনে হয় তাই পরিশোধ করুন,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "অথবা বিনামূল্যে ডক্টরিনা ব্যবহার করা চালিয়ে যান, যারা দিতে বেছে নিয়েছেন তাদের ধন্যবাদ।",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "ওয়ান-টাইম",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "মাসিক",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "মাসিক অনুদান পরিমাণ চয়ন করুন",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "আপনি একটি মাসিক পরিকল্পনার সদস্যতা নিতে চলেছেন৷",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "আপনি {amount}/মাসের জন্য একটি মাসিক প্ল্যানে সদস্যতা নিচ্ছেন।",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "ক্রয়ের নিশ্চিতকরণে আপনার অ্যাকাউন্টে অর্থ প্রদান করা হবে। সাবস্ক্রিপশন স্বয়ংক্রিয়ভাবে প্রতি মাসে পুনর্নবীকরণ হয় যদি না বর্তমান মেয়াদ শেষ হওয়ার কমপক্ষে 24 ঘন্টা আগে স্বয়ংক্রিয় পুনর্নবীকরণ বন্ধ করা হয়। আপনি আপনার অ্যাকাউন্ট সেটিংসে যেকোনো সময় আপনার সদস্যতা পরিচালনা বা বাতিল করতে পারেন। এগিয়ে যাওয়ার মাধ্যমে, আপনি আমাদের {termsOfService} এবং {privacyPolicy}-এ সম্মত হন।",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "এককালীন অনুদানের পরিমাণ চয়ন করুন",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "বেশিরভাগ লোক $7-$15 দেয়",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "মুদ্রা নির্বাচন করুন",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "পেমেন্ট প্রক্রিয়াকরণ",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "{currency} {amount}-এর এককালীন পেমেন্ট প্রক্রিয়া করা হচ্ছে",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "{amount} মাসিক পেমেন্ট প্রক্রিয়া করা হচ্ছে",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "ধন্যবাদ!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "এখন আরও বেশি লোক বিনামূল্যে পরামর্শ পাবে — আপনার সমর্থন সত্যিই অমূল্য।",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "আপনি অবদান রেখেছেন:",
+  "@youContributedLabel": {},
+  "perMonth": "/ মাস",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "মূল পর্দায় ফিরে যান",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "পরিষেবার শর্তাবলী",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "গোপনীয়তা নীতি",
+  "@privacyPolicyLabel": {},
+  "donateButton": "দান করুন",
+  "@donateButton": {},
+  "manageSubscriptionTitle": "সদস্যতা পরিচালনা করুন",
+  "@manageSubscriptionTitle": {},
+  "subscriptionStatusActiveLabel": "সক্রিয়",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "বাতিল",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "বিরতি দেওয়া হয়েছে",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "মুলতুবি",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "তৈরি হয়েছে",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "টাইম আউট",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "অজানা",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "ডক্টরিনা অবদানকারী",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "রিনিউজ",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "সদস্যতা বাতিল করুন",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "আপনি কি নিশ্চিত?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "আপনার মাসিক সহায়তা এমন লোকদের জন্য ডক্টরিনাকে বিনামূল্যে রাখে যারা এটির উপর নির্ভর করে কিন্তু অর্থ প্রদানের সামর্থ্য রাখে না। \n\nআপনার সদস্যতা তহবিল প্রতি মাসে অন্তত 10 বিনামূল্যে পরামর্শ.\n আপনি চলে গেলে, কম রোগী তাদের প্রয়োজনীয় সহায়তা পাবেন।",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "সাবস্ক্রিপশন রাখুন",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "যাইহোক বাতিল করুন",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "আপনার মাসিক সমর্থন \nসফলভাবে বাতিল করা হয়েছে।",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "ভুল সাবস্ক্রিপশন ডেটা",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "এটি এখানে উপস্থিত হওয়ার জন্য মাসিক সহায়তার জন্য সাইন আপ করুন৷",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "এখনো কোনো সদস্যতা নেই",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "সদস্যতা তারিখ",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "মেয়াদ শেষ",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "সাবস্ক্রিপশন আইডি",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "পণ্য আইডি",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "ঠিক আছে",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "আমরা আপনার পেমেন্ট এগোতে পারিনি",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "পেমেন্টে কিছু ভুল হয়েছে।\nআবার চেষ্টা করুন.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "আবার চেষ্টা করুন",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "পেমেন্ট প্রক্রিয়াকরণ",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "আপনি স্ট্রাইপের নিরাপদ চেকআউট পৃষ্ঠায় আপনার কেনাকাটা সম্পূর্ণ করবেন।",
+  "@processingDonationStripeSubtitle": {}
+}

@@ -47,4 +47,67 @@ class SettingsLocalizationDe extends SettingsLocalization {
 
   @override
   String get sectionLogOutButton => 'Abmelden';
+
+  @override
+  String get sendBugReportButton => 'Fehlerbericht senden';
+
+  @override
+  String get sectionSendMessageWithShiftEnterTitle =>
+      'Nachricht senden mit [⏎ Enter]';
+
+  @override
+  String get sectionSendMessageWithShiftEnterSubtitle =>
+      'Senden Sie eine Nachricht mit [⏎ Enter] und eine neue Zeile mit [Shift] + [⏎ Enter]';
+
+  @override
+  String get sectionSelectLocaleTitle => 'Sprache';
+
+  @override
+  String get sectionSelectLocaleSubtitle =>
+      'Wählen Sie Ihre bevorzugte Sprache für die App-Oberfläche';
+
+  @override
+  String get sectionSwitchThemeTitle => 'Dunkler Modus';
+
+  @override
+  String get sectionSwitchThemeSubtitle =>
+      'Aktivieren Sie den Dunkelmodus für ein angenehmes Seherlebnis bei schwachem Licht';
+
+  @override
+  String get sectionLogsTitle => 'Protokolle';
+
+  @override
+  String get sectionLogsSubtitle =>
+      'Anzeigen und Verwalten von Anwendungsprotokollen zum Debuggen';
+
+  @override
+  String get doneButton => 'Erledigt';
+
+  @override
+  String get bugReportDialogTitle => 'Fehlerbericht';
+
+  @override
+  String get bugReportDialogHintText =>
+      'Bitte beschreiben Sie den aufgetretenen Fehler';
+
+  @override
+  String get attachFilesButtonTooltip => 'Dateien anhängen';
+
+  @override
+  String get filePickerError => 'Fehler beim Auswählen der Dateien';
+
+  @override
+  String get emptyBugReportError =>
+      'Bitte geben Sie zuerst einen Fehlerbericht ein';
+
+  @override
+  String get failedToSendBugReportError =>
+      'Fehlerbericht konnte nicht gesendet werden';
+
+  @override
+  String get sectionManageSubscriptionTitle => 'Abonnement verwalten';
+
+  @override
+  String get sectionManageSubscriptionSubtitle =>
+      'Verwalten Sie Ihre Abonnementeinstellungen';
 }

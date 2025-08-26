@@ -191,4 +191,30 @@ class ChatLocalizationRu extends ChatLocalization {
 
   @override
   String get chatActionButtonTooltipExportSummary => 'Экспортировать в PDF';
+
+  @override
+  String get chatPickerPhotos => 'Фотографии';
+
+  @override
+  String get chatPickerCamera => 'Камера';
+
+  @override
+  String get chatPickerFiles => 'Файлы';
+
+  @override
+  String get chatRecommendationYIAG =>
+      'Надеюсь, это помогло! Было ли это объяснение вам полезным?';
+
+  @override
+  String get chatRecommendationButtonDonate => 'Да, все хорошо!';
+
+  @override
+  String get chatHistoryTitle => 'История чата';
+
+  @override
+  String get failedToRetrieveChatSummary => 'Не удалось получить сводку чата';
+
+  @override
+  String get chatSummaryCopiedToClipboard =>
+      'Сводка чата скопирована в буфер обмена';
 }

@@ -1,0 +1,28 @@
+{
+  "@@locale": "fr",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "error": "Une erreur s'est produite",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Une erreur inattendue s'est produite",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "authErrorMessages": "{errorCode, select, passwordLengthError{Le mot de passe doit contenir au moins 6 caractères} invalidEmailOrPhoneNumberError{Veuillez fournir un email valide ou un numéro de téléphone au format international. Exemples : me@example.com et +1234567890987} invalidEmailError{L'email n'est pas valide} operationNotAllowedError{Opération non autorisée} weakPasswordError{Le mot de passe est trop faible} userTokenExpiredError{Le jeton utilisateur a expiré} invalidPhoneNumberError{Veuillez fournir des numéros de téléphone au format international, commençant par + et l'indicatif du pays.} invalidActionCodeError{Le code d'action n'est pas valide} networkRequestFailedError{La requête réseau a échoué} tooManyRequestsError{Trop de demandes} acceptTermsAndConditionsError{Veuillez accepter les termes et conditions et reconnaître la politique de confidentialité.} acceptAIConsentError{Veuillez reconnaître que les consultations se font avec une IA et non un professionnel de santé agréé.} emailOrPhoneError{Erreur d'email ou de téléphone} passwordError{Erreur de mot de passe} unknownError{Erreur inconnue} googleSSOError{Erreur Google SSO} emailAlreadyInUse{L'adresse email est déjà utilisée par un autre compte.} invalidCredentialError{Identifiants invalides} invalidAppCredentialError{Identifiants d'application invalides} invalidVerificationCodeError{Code de vérification invalide} other{Erreur inconnue}}\n",
+  "@authErrorMessages": {
+    "description": "Ошибка аутентификации",
+    "placeholders": {
+      "errorCode": {
+        "type": "String"
+      }
+    }
+  },
+  "bugReportSentText": "Rapport de bogue envoyé avec succès.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "@@locale": "ko",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "닥터리나",
+  "@title": {},
+  "checkVersionUpdateNowButton": "지금 업데이트",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "아마도 나중에",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "새로운 업데이트가 제공됩니다",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "업데이트가 필요합니다",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "앱의 새 버전(v{version})이 출시되었습니다. 최상의 환경을 위해 계속 사용하려면 업데이트해 주세요.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "계속하려면 앱을 업데이트하세요. 이 업데이트에는 중요한 수정 사항과 개선 사항이 포함되어 있습니다.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  }
+}

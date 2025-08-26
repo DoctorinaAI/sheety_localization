@@ -1,3 +1,7 @@
+## 0.2.2
+
+- **ADDED**: Optional support for ignoring specific sheets by title with RegExp patterns.
+
 ## 0.2.1
 
 - **FIX**: Fix locales import to `dart:ui`

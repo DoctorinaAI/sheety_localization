@@ -15,4 +15,187 @@ class PayLocalizationRu extends PayLocalization {
 
   @override
   String get exampleButton => 'Пример кнопки';
+
+  @override
+  String get donationYesItsAllGoodButton => 'Да, все хорошо!';
+
+  @override
+  String get everyContributionHealsTitle => 'Каждый вклад лечит!';
+
+  @override
+  String get ifThisHelpedYouConsiderSupportingSubtitle =>
+      'Ваш вклад поможет финансировать бесплатные консультации для других нуждающихся.';
+
+  @override
+  String get payWhatFeelsRightLabel =>
+      'Платите столько, сколько считаете нужным,';
+
+  @override
+  String get orKeepUsingDoctorinaForFreeLabel =>
+      'или продолжайте пользоваться Doctorina бесплатно, благодаря другим, кто решил пожертвовать.';
+
+  @override
+  String get oneTimeLabel => 'Один раз';
+
+  @override
+  String get monthlyLabel => 'Ежемесячно';
+
+  @override
+  String get chooseMonthlyDonationAmountLabel =>
+      'Выберите сумму ежемесячного пожертвования';
+
+  @override
+  String get subscriptionNoAmount =>
+      'Вы собираетесь оформить подписку на ежемесячный план.';
+
+  @override
+  String subscriptionAmount(String amount) {
+    return 'Вы оформляете ежемесячную подписку на $amount/месяц.';
+  }
+
+  @override
+  String subscriptionInfo(String termsOfService, String privacyPolicy) {
+    return 'Оплата будет списана с вашего счёта при подтверждении покупки. Подписка автоматически продлевается каждый месяц, если автоматическое продление не будет отключено как минимум за 24 часа до окончания текущего периода. Вы можете управлять подпиской или отменить её в любое время в настройках своей учётной записи. Продолжая, вы соглашаетесь с нашими $termsOfService и $privacyPolicy.';
+  }
+
+  @override
+  String get chooseOneTimeDonationAmountLabel =>
+      'Выберите сумму единовременного пожертвования';
+
+  @override
+  String get mostPeopleGiveHint => 'Большинство людей дают 7–15 долларов';
+
+  @override
+  String get selectCurrencyTooltip => 'Выберите валюту';
+
+  @override
+  String get processingPaymentSemantics => 'Обработка платежа';
+
+  @override
+  String processingOneTimePaymentSemantics(String currency, String amount) {
+    return 'Обработка единовременного платежа в размере $currency $amount';
+  }
+
+  @override
+  String processingMonthlyPaymentSemantics(String amount) {
+    return 'Обработка ежемесячного платежа в размере $amount';
+  }
+
+  @override
+  String get thankYouTitle => 'Спасибо!';
+
+  @override
+  String get thankYouSubtitle =>
+      'Теперь еще больше людей получат бесплатные консультации — ваша поддержка действительно бесценна.';
+
+  @override
+  String get youContributedLabel => 'Вы внесли свой вклад:';
+
+  @override
+  String get perMonth => '/ месяц';
+
+  @override
+  String get returnToTheMainScreenButton => 'Вернуться на главный экран';
+
+  @override
+  String get termsOfServiceLabel => 'Условия обслуживания';
+
+  @override
+  String get privacyPolicyLabel => 'политика конфиденциальности';
+
+  @override
+  String get donateButton => 'Пожертвовать';
+
+  @override
+  String get manageSubscriptionTitle => 'Управление подпиской';
+
+  @override
+  String get subscriptionStatusActiveLabel => 'Активна';
+
+  @override
+  String get subscriptionStatusCanceledLabel => 'Отменена';
+
+  @override
+  String get subscriptionStatusPausedLabel => 'Приостановлена';
+
+  @override
+  String get subscriptionStatusPendingLabel => 'В ожидании';
+
+  @override
+  String get subscriptionStatusCreatedLabel => 'Создана';
+
+  @override
+  String get subscriptionStatusTimeoutLabel => 'Тайм-аут';
+
+  @override
+  String get subscriptionStatusUnknownLabel => 'Неизвестно';
+
+  @override
+  String get subscriptionDoctorinaContributor => 'Участник Doctorina';
+
+  @override
+  String get subscriptionRenews => 'Обновляется';
+
+  @override
+  String get subscriptionCancelButton => 'Отменить подписку';
+
+  @override
+  String get subscriptionAreYouSureDialogTitle => 'Вы уверены?';
+
+  @override
+  String get subscriptionAreYouSureDialogText =>
+      'Ваша ежемесячная поддержка позволяет людям, которые пользуются Doctorina, но не могут позволить себе платить, получать бесплатную подписку.\n\nВаша подписка покрывает как минимум 10 бесплатных консультаций в месяц.\nЕсли вы откажетесь от услуг, меньше пациентов получат необходимую им помощь.';
+
+  @override
+  String get subscriptionAreYouSureDialogKeepButton => 'Сохранить подписку';
+
+  @override
+  String get subscriptionAreYouSureDialogCancelButton =>
+      'Отменить в любом случае';
+
+  @override
+  String get subscriptionYourMonthlySupportCanceledNotification =>
+      'Ваша ежемесячная поддержка\nбыла успешно отменена.';
+
+  @override
+  String get subscriptionMalformed => 'Некорректные данные подписки';
+
+  @override
+  String get subscriptionSignUpForMonthlySupportButton =>
+      'Оформите ежемесячную поддержку, чтобы она появилась здесь.';
+
+  @override
+  String get subscriptionNoSubscriptionsYet => 'Подписок пока нет';
+
+  @override
+  String get subscriptionCreatedAtDateLabel => 'Дата оформления подписки';
+
+  @override
+  String get subscriptionExpiresAtDateLabel => 'Истекает';
+
+  @override
+  String get subscriptionSubscriptionIdLabel => 'Идентификатор подписки';
+
+  @override
+  String get subscriptionProductIdLabel => 'Идентификатор продукта';
+
+  @override
+  String get subscriptionDialogOkButton => 'Хорошо';
+
+  @override
+  String get errorProcessDonationTitle => 'Мы не смогли обработать ваш платеж';
+
+  @override
+  String get errorProcessDonationSubtitle =>
+      'Произошла ошибка при оплате.\nПопробуйте ещё раз.';
+
+  @override
+  String get errorProcessDonationRetryButton => 'Повторить попытку';
+
+  @override
+  String get processingDonationTitle => 'Обработка платежа';
+
+  @override
+  String get processingDonationStripeSubtitle =>
+      'Покупку можно завершить на защищенной странице оформления заказа Stripe.';
 }

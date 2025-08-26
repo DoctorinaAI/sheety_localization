@@ -1,7 +1,7 @@
 {
   "@@locale": "ru",
   "@@author": "example@gmail.com",
-  "@@last_modified": "2025-06-04T15:18:15.787321Z",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
   "@@comment": "Generated from Google Sheets",
   "@@context": "From Google Sheets",
   "title": "Оплата",
@@ -11,5 +11,163 @@
   "exampleButton": "Пример кнопки",
   "@exampleButton": {
     "description": "Пример кнопки"
-  }
+  },
+  "donationYesItsAllGoodButton": "Да, все хорошо!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Каждый вклад лечит!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Ваш вклад поможет финансировать бесплатные консультации для других нуждающихся.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Платите столько, сколько считаете нужным,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "или продолжайте пользоваться Doctorina бесплатно, благодаря другим, кто решил пожертвовать.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Один раз",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Ежемесячно",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Выберите сумму ежемесячного пожертвования",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Вы собираетесь оформить подписку на ежемесячный план.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Вы оформляете ежемесячную подписку на {amount}/месяц.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Оплата будет списана с вашего счёта при подтверждении покупки. Подписка автоматически продлевается каждый месяц, если автоматическое продление не будет отключено как минимум за 24 часа до окончания текущего периода. Вы можете управлять подпиской или отменить её в любое время в настройках своей учётной записи. Продолжая, вы соглашаетесь с нашими {termsOfService} и {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Выберите сумму единовременного пожертвования",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Большинство людей дают 7–15 долларов",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Выберите валюту",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Обработка платежа",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Обработка единовременного платежа в размере {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Обработка ежемесячного платежа в размере {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Спасибо!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Теперь еще больше людей получат бесплатные консультации — ваша поддержка действительно бесценна.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Вы внесли свой вклад:",
+  "@youContributedLabel": {},
+  "perMonth": "/ месяц",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Вернуться на главный экран",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Условия обслуживания",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "политика конфиденциальности",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Пожертвовать",
+  "@donateButton": {},
+  "manageSubscriptionTitle": "Управление подпиской",
+  "@manageSubscriptionTitle": {},
+  "subscriptionStatusActiveLabel": "Активна",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Отменена",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Приостановлена",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "В ожидании",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Создана",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Тайм-аут",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Неизвестно",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Участник Doctorina",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Обновляется",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Отменить подписку",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Вы уверены?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Ваша ежемесячная поддержка позволяет людям, которые пользуются Doctorina, но не могут позволить себе платить, получать бесплатную подписку.\n\nВаша подписка покрывает как минимум 10 бесплатных консультаций в месяц.\nЕсли вы откажетесь от услуг, меньше пациентов получат необходимую им помощь.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Сохранить подписку",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Отменить в любом случае",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Ваша ежемесячная поддержка\nбыла успешно отменена.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Некорректные данные подписки",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Оформите ежемесячную поддержку, чтобы она появилась здесь.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Подписок пока нет",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Дата оформления подписки",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Истекает",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Идентификатор подписки",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Идентификатор продукта",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Хорошо",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Мы не смогли обработать ваш платеж",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Произошла ошибка при оплате.\nПопробуйте ещё раз.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Повторить попытку",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Обработка платежа",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Покупку можно завершить на защищенной странице оформления заказа Stripe.",
+  "@processingDonationStripeSubtitle": {}
 }

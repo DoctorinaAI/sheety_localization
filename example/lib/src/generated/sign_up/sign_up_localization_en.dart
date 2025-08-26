@@ -118,4 +118,12 @@ class SignUpLocalizationEn extends SignUpLocalization {
 
   @override
   String get logOutDialogLogOutButton => 'Yes, log out';
+
+  @override
+  String get resendCodeButton => 'Resend code';
+
+  @override
+  String resendCodeTimer(String timer) {
+    return 'Resend code ($timer)';
+  }
 }

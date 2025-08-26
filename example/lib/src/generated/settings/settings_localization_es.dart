@@ -47,4 +47,67 @@ class SettingsLocalizationEs extends SettingsLocalization {
 
   @override
   String get sectionLogOutButton => 'Cerrar sesión';
+
+  @override
+  String get sendBugReportButton => 'Enviar informe de error';
+
+  @override
+  String get sectionSendMessageWithShiftEnterTitle =>
+      'Enviar mensaje con [⏎ Enter]';
+
+  @override
+  String get sectionSendMessageWithShiftEnterSubtitle =>
+      'Envía un mensaje con [⏎ Enter] y una nueva línea con [Shift] + [⏎ Enter]';
+
+  @override
+  String get sectionSelectLocaleTitle => 'Idioma';
+
+  @override
+  String get sectionSelectLocaleSubtitle =>
+      'Seleccione su idioma preferido para la interfaz de la aplicación';
+
+  @override
+  String get sectionSwitchThemeTitle => 'Modo oscuro';
+
+  @override
+  String get sectionSwitchThemeSubtitle =>
+      'Habilite el modo oscuro para una experiencia de visualización cómoda con poca luz.';
+
+  @override
+  String get sectionLogsTitle => 'Registros';
+
+  @override
+  String get sectionLogsSubtitle =>
+      'Ver y administrar registros de aplicaciones para depuración';
+
+  @override
+  String get doneButton => 'Hecho';
+
+  @override
+  String get bugReportDialogTitle => 'Informe de errores';
+
+  @override
+  String get bugReportDialogHintText =>
+      'Por favor describe el error que encontraste';
+
+  @override
+  String get attachFilesButtonTooltip => 'Adjuntar archivos';
+
+  @override
+  String get filePickerError => 'No se pudieron seleccionar los archivos';
+
+  @override
+  String get emptyBugReportError =>
+      'Por favor, primero ingrese un informe de error';
+
+  @override
+  String get failedToSendBugReportError =>
+      'No se pudo enviar el informe de error';
+
+  @override
+  String get sectionManageSubscriptionTitle => 'Administrar suscripción';
+
+  @override
+  String get sectionManageSubscriptionSubtitle =>
+      'Administrar la configuración de su suscripción';
 }

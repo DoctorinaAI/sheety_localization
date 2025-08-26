@@ -1,0 +1,109 @@
+{
+  "@@locale": "ar",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "تسجيل الدخول",
+  "@title": {},
+  "logIn": "تسجيل الدخول",
+  "@logIn": {},
+  "password": "كلمة المرور",
+  "@password": {},
+  "changeNumber": "تغيير الرقم",
+  "@changeNumber": {},
+  "forgotPassword": "هل نسيت كلمة السر؟",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "أدخل عنوان بريدك الإلكتروني وسنرسل لك رابطًا لإعادة تعيين كلمة المرور الخاصة بك.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "تذكر كلمة المرور الخاصة بك؟",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "لدي كلمة مرور",
+  "@backToLoginButton": {},
+  "continueButton": "يكمل",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "تم إرسال بريد إلكتروني لإعادة تعيين كلمة المرور",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "إعادة تعيين كلمة المرور",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "تأكيد الرمز",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "ابدأ باستخدام Doctorina اليوم",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "أو",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "أدخل كلمة المرور الخاصة بك",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "إظهار كلمة المرور",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "كلمة مرور غامضة",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "مسح تسجيل الدخول",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "البريد الإلكتروني أو الهاتف",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com أو +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "أدخل البريد الإلكتروني أو رقم الهاتف",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "يرجى قبول الاتفاقيات للاستمرار.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "أوافق على معالجة البيانات الشخصية،",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "استخدام",
+  "@consentTheUseOf": {},
+  "consentCookies": "ملفات تعريف الارتباط",
+  "@consentCookies": {},
+  "consentAgreeToThe": "، أوافق على",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "الشروط والأحكام",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": "، والاعتراف",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "سياسة الخصوصية",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "أقر بأن استشارتي تتم مع الذكاء الاصطناعي وليس مع أخصائي طبي مرخص.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "تسجيل الخروج",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "هل أنت متأكد من تسجيل الخروج؟",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "يلغي",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "نعم، تسجيل الخروج",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "إعادة إرسال الرمز",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "إعادة إرسال الرمز ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  }
+}

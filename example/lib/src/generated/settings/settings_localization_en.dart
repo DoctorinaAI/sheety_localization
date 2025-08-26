@@ -47,4 +47,65 @@ class SettingsLocalizationEn extends SettingsLocalization {
 
   @override
   String get sectionLogOutButton => 'Sign Out';
+
+  @override
+  String get sendBugReportButton => 'Send Bug Report';
+
+  @override
+  String get sectionSendMessageWithShiftEnterTitle =>
+      'Send message with [⏎ Enter]';
+
+  @override
+  String get sectionSendMessageWithShiftEnterSubtitle =>
+      'Send a message with [⏎ Enter] and a new line with [Shift] + [⏎ Enter]';
+
+  @override
+  String get sectionSelectLocaleTitle => 'Language';
+
+  @override
+  String get sectionSelectLocaleSubtitle =>
+      'Select your preferred language for the app interface';
+
+  @override
+  String get sectionSwitchThemeTitle => 'Dark mode';
+
+  @override
+  String get sectionSwitchThemeSubtitle =>
+      'Enable dark mode for a comfortable viewing experience in low light';
+
+  @override
+  String get sectionLogsTitle => 'Logs';
+
+  @override
+  String get sectionLogsSubtitle =>
+      'View and manage application logs for debugging';
+
+  @override
+  String get doneButton => 'Done';
+
+  @override
+  String get bugReportDialogTitle => 'Bug Report';
+
+  @override
+  String get bugReportDialogHintText =>
+      'Please describe the bug you encountered';
+
+  @override
+  String get attachFilesButtonTooltip => 'Attach files';
+
+  @override
+  String get filePickerError => 'Failed to pick files';
+
+  @override
+  String get emptyBugReportError => 'Please enter a bug report first';
+
+  @override
+  String get failedToSendBugReportError => 'Failed to send bug report';
+
+  @override
+  String get sectionManageSubscriptionTitle => 'Manage subscription';
+
+  @override
+  String get sectionManageSubscriptionSubtitle =>
+      'Manage your subscription settings';
 }

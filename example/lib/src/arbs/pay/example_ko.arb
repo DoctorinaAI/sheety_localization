@@ -1,0 +1,173 @@
+{
+  "@@locale": "ko",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "지불",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "exampleButton": "버튼 예시",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "네, 다 괜찮아요!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "모든 기여는 치유를 가져다줍니다!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "귀하의 기부금은 도움이 필요한 다른 사람들에게 무료 상담을 제공하는 데 도움이 됩니다.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "옳다고 생각되는 금액을 지불하세요.",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "또는 다른 사람들이 기부를 선택했기 때문에 Doctorina를 계속 무료로 사용할 수 있습니다.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "일회성",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "월간 간행물",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "월 기부 금액을 선택하세요",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "월간 요금제를 구독하려고 합니다.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "{amount}/월에 월간 요금제를 구독하고 있습니다.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "구매 확인 시 계정으로 요금이 청구됩니다. 현재 구독 기간 종료 최소 24시간 전에 자동 갱신을 해제하지 않으면 구독은 매달 자동으로 갱신됩니다. 계정 설정에서 언제든지 구독을 관리하거나 취소할 수 있습니다. 계속 진행하시면 {termsOfService} 및 {privacyPolicy}에 동의하는 것으로 간주됩니다.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "일회 기부 금액을 선택하세요",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "대부분의 사람들은 $7~$15를 기부합니다.",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "통화 선택",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "결제 처리 중",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "{currency} {amount}의 일회성 결제 처리 중",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "{amount}의 월별 지불 처리 중",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "감사합니다!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "이제 더 많은 사람들이 무료 상담을 받게 될 것입니다. 여러분의 지원은 정말 귀중합니다.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "귀하의 기여:",
+  "@youContributedLabel": {},
+  "perMonth": "/ 월",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "메인 화면으로 돌아가기",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "서비스 약관",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "개인정보 보호정책",
+  "@privacyPolicyLabel": {},
+  "donateButton": "기부하기",
+  "@donateButton": {},
+  "manageSubscriptionTitle": "구독 관리",
+  "@manageSubscriptionTitle": {},
+  "subscriptionStatusActiveLabel": "활동적인",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "취소",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "일시 중지됨",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "보류 중",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "생성됨",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "타임아웃",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "알려지지 않은",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "닥터리나 기고자",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "갱신하다",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "구독 취소",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "정말이에요?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "월간 후원을 통해 Doctorina를 무료로 이용하실 수 있습니다. 부담스러운 분들을 위해 Doctorina를 무료로 제공해 드립니다.\n\n구독을 통해 매달 최소 10회의 무료 상담을 받으실 수 있습니다.\n구독을 중단하시면 필요한 도움을 받을 수 있는 환자가 줄어들게 됩니다.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "구독 유지",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "어쨌든 취소하세요",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "월간 지원이\n취소되었습니다.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "잘못된 구독 데이터",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "여기에 표시되려면 월별 지원에 가입하세요.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "아직 구독이 없습니다",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "구독 날짜",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "만료",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "구독 ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "제품 ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "좋아요",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "결제를 진행할 수 없습니다.",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "결제 과정에서 문제가 발생했습니다.\n다시 시도해 주세요.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "다시 해 보다",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "결제 처리 중",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Stripe의 안전한 결제 페이지에서 구매를 완료하세요.",
+  "@processingDonationStripeSubtitle": {}
+}

@@ -120,4 +120,12 @@ class SignUpLocalizationRu extends SignUpLocalization {
 
   @override
   String get logOutDialogLogOutButton => 'Да, выйти';
+
+  @override
+  String get resendCodeButton => 'Отправить код повторно';
+
+  @override
+  String resendCodeTimer(String timer) {
+    return 'Отправить код повторно ($timer)';
+  }
 }

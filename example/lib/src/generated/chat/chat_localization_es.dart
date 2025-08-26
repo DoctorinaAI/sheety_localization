@@ -154,7 +154,7 @@ class ChatLocalizationEs extends ChatLocalization {
   String get chatActionButtonTooltipChatList => 'Seleccionar chat';
 
   @override
-  String get chatActionButtonTooltipShowDrawer => 'Show drawer';
+  String get chatActionButtonTooltipShowDrawer => 'Mostrar cajón';
 
   @override
   String get chatLabelNoChatAvailableRefresh =>
@@ -191,4 +191,31 @@ class ChatLocalizationEs extends ChatLocalization {
 
   @override
   String get chatActionButtonTooltipExportSummary => 'Exportar a PDF';
+
+  @override
+  String get chatPickerPhotos => 'Fotos';
+
+  @override
+  String get chatPickerCamera => 'Cámara';
+
+  @override
+  String get chatPickerFiles => 'Archivos';
+
+  @override
+  String get chatRecommendationYIAG =>
+      '¡Espero que te haya servido! ¿Te resultó útil esta explicación?';
+
+  @override
+  String get chatRecommendationButtonDonate => '¡Sí, está todo bien!';
+
+  @override
+  String get chatHistoryTitle => 'Historial de chat';
+
+  @override
+  String get failedToRetrieveChatSummary =>
+      'No se pudo recuperar el resumen del chat';
+
+  @override
+  String get chatSummaryCopiedToClipboard =>
+      'Resumen del chat copiado al portapapeles';
 }

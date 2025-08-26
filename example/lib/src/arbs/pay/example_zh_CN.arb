@@ -1,0 +1,173 @@
+{
+  "@@locale": "zh_CN",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "支付",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "exampleButton": "按钮示例",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "是的，一切都很好！",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "每一次贡献都会带来治愈！",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "您的捐款有助于为有需要的人提供免费建议。",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "支付合适的费用，",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "或者继续免费使用 Doctorina，感谢其他选择捐赠的人。",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "一度",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "每月",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "选择每月捐款金额",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "您即将订阅月度计划。",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "您正在订阅每月 {amount} 的月度计划。",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "确认购买后，款项将从您的账户中扣除。除非在当前订阅期结束前至少 24 小时关闭自动续订，否则订阅将每月自动续订。您可以随时在账户设置中管理或取消订阅。继续操作即表示您同意我们的{termsOfService}和{privacyPolicy}。",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "选择一次性捐款金额",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "大多数人捐赠 7 至 15 美元",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "选择货币",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "处理付款",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "正在处理一次性付款 {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "处理每月 {amount} 的付款",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "谢谢你！",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "现在将有更多的人获得免费建议——您的支持确实非常宝贵。",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "您贡献了：",
+  "@youContributedLabel": {},
+  "perMonth": "/ 月",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "返回主屏幕",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "服务条款",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "隐私政策",
+  "@privacyPolicyLabel": {},
+  "donateButton": "捐",
+  "@donateButton": {},
+  "manageSubscriptionTitle": "管理订阅",
+  "@manageSubscriptionTitle": {},
+  "subscriptionStatusActiveLabel": "积极的",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "取消",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "已暂停",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "待办的",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "创建",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "暂停",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "未知",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina 撰稿人",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "续订",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "取消订阅",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "你确定吗？",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "您的每月支持将使那些依赖 Doctorina 但无力支付的患者能够免费使用。\n\n您的订阅费用每月至少可支持 10 次免费咨询。\n如果您离开，获得所需帮助的患者将会减少。",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "保持订阅",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "仍然取消",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "您的每月支持已成功取消。",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "订阅数据不正确",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "注册每月支持以使其出现在这里。",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "尚未订阅",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "订阅日期",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "过期",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "订阅 ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "产品 ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "好的",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "我们无法继续您的付款",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "付款出现问题。\n请重试。",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "重试",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "处理付款",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "您将在 Stripe 的安全结账页面上完成购买。",
+  "@processingDonationStripeSubtitle": {}
+}

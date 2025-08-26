@@ -1,0 +1,28 @@
+{
+  "@@locale": "zh",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "error": "发生错误",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "发生意外错误",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "authErrorMessages": "{errorCode, select, passwordLengthError{密码长度至少为 6 个字符} invalidEmailOrPhoneNumberError{请提供有效的电子邮箱或符合国际格式的电话号码。例如：me@example.com 和 +1234567890987} invalidEmailError{电子邮箱无效} operationNotAllowedError{不允许的操作} weakPasswordError{密码太弱} userTokenExpiredError{用户令牌已过期} invalidPhoneNumberError{请提供以 + 和国家代码开头的国际格式电话号码。} invalidActionCodeError{操作代码无效} networkRequestFailedError{网络请求失败} tooManyRequestsError{请求过多} acceptTermsAndConditionsError{请接受条款与条件并确认隐私政策。} acceptAIConsentError{请确认咨询对象为 AI，而非持证医疗专业人士。} emailOrPhoneError{邮箱或电话号码错误} passwordError{密码错误} unknownError{未知错误} googleSSOError{Google SSO 错误} emailAlreadyInUse{该电子邮箱已被其他账户使用。} invalidCredentialError{凭据无效} invalidAppCredentialError{应用凭据无效} invalidVerificationCodeError{验证码无效} other{未知错误}}\n",
+  "@authErrorMessages": {
+    "description": "Ошибка аутентификации",
+    "placeholders": {
+      "errorCode": {
+        "type": "String"
+      }
+    }
+  },
+  "bugReportSentText": "错误报告发送成功。",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

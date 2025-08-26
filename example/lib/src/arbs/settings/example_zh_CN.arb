@@ -1,0 +1,91 @@
+{
+  "@@locale": "zh_CN",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "帐户设置",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "sectionClearAllChatsTitle": "清除所有聊天",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "这将永久删除您的聊天记录。",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "清除所有聊天",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "清除所有聊天",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "删除帐户",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "删除您的帐户是永久性操作，无法撤消。",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "删除",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "删除帐户",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "登出",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "您将退出您的帐户。",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "登出",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "发送错误报告",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithShiftEnterTitle": "使用 [⏎ Enter] 发送消息",
+  "@sectionSendMessageWithShiftEnterTitle": {},
+  "sectionSendMessageWithShiftEnterSubtitle": "使用 [⏎ Enter] 发送消息，使用 [Shift] + [⏎ Enter] 换行",
+  "@sectionSendMessageWithShiftEnterSubtitle": {},
+  "sectionSelectLocaleTitle": "语言",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "选择应用程序界面的首选语言",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "黑暗模式",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "启用暗模式，在弱光环境下获得舒适的观看体验",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "日志",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "查看和管理应用程序日志以进行调试",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "完毕",
+  "@doneButton": {},
+  "bugReportDialogTitle": "错误报告",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "请描述您遇到的bug",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "附加文件",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "选择文件失败",
+  "@filePickerError": {},
+  "emptyBugReportError": "请先输入错误报告",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "无法发送错误报告",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "管理订阅",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "管理您的订阅设置",
+  "@sectionManageSubscriptionSubtitle": {}
+}

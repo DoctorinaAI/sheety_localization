@@ -1,0 +1,45 @@
+{
+  "@@locale": "bn",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "ডক্টরিনা",
+  "@title": {},
+  "checkVersionUpdateNowButton": "এখনই আপডেট করুন",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "হয়তো পরে",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "নতুন আপডেট উপলব্ধ",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "আপডেট প্রয়োজন",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "অ্যাপটির একটি নতুন সংস্করণ (v{version}) উপলব্ধ৷ সেরা অভিজ্ঞতার জন্য চালিয়ে যেতে অনুগ্রহ করে আপডেট করুন।",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "চালিয়ে যেতে, অনুগ্রহ করে অ্যাপটি আপডেট করুন। এই আপডেটে গুরুত্বপূর্ণ সংশোধন এবং উন্নতি অন্তর্ভুক্ত রয়েছে।",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  }
+}

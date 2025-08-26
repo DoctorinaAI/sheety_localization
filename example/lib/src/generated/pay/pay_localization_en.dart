@@ -15,4 +15,185 @@ class PayLocalizationEn extends PayLocalization {
 
   @override
   String get exampleButton => 'Button example';
+
+  @override
+  String get donationYesItsAllGoodButton => 'Yes, it\'s all good!';
+
+  @override
+  String get everyContributionHealsTitle => 'Every contribution heals!';
+
+  @override
+  String get ifThisHelpedYouConsiderSupportingSubtitle =>
+      'Your contribution helps fund free advice for others in need.';
+
+  @override
+  String get payWhatFeelsRightLabel => 'Pay what feels right,';
+
+  @override
+  String get orKeepUsingDoctorinaForFreeLabel =>
+      'or keep using Doctorina for free, thanks to others who chose to give.';
+
+  @override
+  String get oneTimeLabel => 'One-Time';
+
+  @override
+  String get monthlyLabel => 'Monthly';
+
+  @override
+  String get chooseMonthlyDonationAmountLabel =>
+      'Choose monthly donation amount';
+
+  @override
+  String get subscriptionNoAmount =>
+      'You are about to subscribe to a monthly plan.';
+
+  @override
+  String subscriptionAmount(String amount) {
+    return 'You are subscribing to a monthly plan for $amount/month.';
+  }
+
+  @override
+  String subscriptionInfo(String termsOfService, String privacyPolicy) {
+    return 'Payment will be charged to your account at confirmation of purchase. The subscription automatically renews every month unless auto-renew is turned off at least 24 hours before the end of the current period. You can manage or cancel your subscription anytime in your account settings. By proceeding, you agree to our $termsOfService and $privacyPolicy.';
+  }
+
+  @override
+  String get chooseOneTimeDonationAmountLabel =>
+      'Choose one-time donation amount';
+
+  @override
+  String get mostPeopleGiveHint => 'Most people give \$7–\$15';
+
+  @override
+  String get selectCurrencyTooltip => 'Select currency';
+
+  @override
+  String get processingPaymentSemantics => 'Processing payment';
+
+  @override
+  String processingOneTimePaymentSemantics(String currency, String amount) {
+    return 'Processing one-time payment of $currency $amount';
+  }
+
+  @override
+  String processingMonthlyPaymentSemantics(String amount) {
+    return 'Processing monthly payment of $amount';
+  }
+
+  @override
+  String get thankYouTitle => 'Thank you!';
+
+  @override
+  String get thankYouSubtitle =>
+      'Now even more people will receive free advice — your support is truly invaluable.';
+
+  @override
+  String get youContributedLabel => 'You contributed:';
+
+  @override
+  String get perMonth => '/ month';
+
+  @override
+  String get returnToTheMainScreenButton => 'Return to the main screen';
+
+  @override
+  String get termsOfServiceLabel => 'Terms Of Service';
+
+  @override
+  String get privacyPolicyLabel => 'Privacy Policy';
+
+  @override
+  String get donateButton => 'Donate';
+
+  @override
+  String get manageSubscriptionTitle => 'Manage subscription';
+
+  @override
+  String get subscriptionStatusActiveLabel => 'Active';
+
+  @override
+  String get subscriptionStatusCanceledLabel => 'Canceled';
+
+  @override
+  String get subscriptionStatusPausedLabel => 'Paused';
+
+  @override
+  String get subscriptionStatusPendingLabel => 'Pending';
+
+  @override
+  String get subscriptionStatusCreatedLabel => 'Created';
+
+  @override
+  String get subscriptionStatusTimeoutLabel => 'Timeout';
+
+  @override
+  String get subscriptionStatusUnknownLabel => 'Unknown';
+
+  @override
+  String get subscriptionDoctorinaContributor => 'Doctorina contributor';
+
+  @override
+  String get subscriptionRenews => 'Renews';
+
+  @override
+  String get subscriptionCancelButton => 'Cancel subscription';
+
+  @override
+  String get subscriptionAreYouSureDialogTitle => 'Are you sure?';
+
+  @override
+  String get subscriptionAreYouSureDialogText =>
+      'Your monthly support keeps Doctorina free for people who rely on it but can’t afford to pay. \n\nYour subscription funds at least  10 free consultations each month.\n If you leave, fewer patients will get  the help they need.';
+
+  @override
+  String get subscriptionAreYouSureDialogKeepButton => 'Keep subscription';
+
+  @override
+  String get subscriptionAreYouSureDialogCancelButton => 'Cancel anyway';
+
+  @override
+  String get subscriptionYourMonthlySupportCanceledNotification =>
+      'Your Monthly support \nhas been successfully canceled.';
+
+  @override
+  String get subscriptionMalformed => 'Incorrect subscription data';
+
+  @override
+  String get subscriptionSignUpForMonthlySupportButton =>
+      'Sign up for monthly support to have it appear here.';
+
+  @override
+  String get subscriptionNoSubscriptionsYet => 'No subscriptions yet';
+
+  @override
+  String get subscriptionCreatedAtDateLabel => 'Subscription date';
+
+  @override
+  String get subscriptionExpiresAtDateLabel => 'Expires';
+
+  @override
+  String get subscriptionSubscriptionIdLabel => 'Subscription ID';
+
+  @override
+  String get subscriptionProductIdLabel => 'Product ID';
+
+  @override
+  String get subscriptionDialogOkButton => 'Ok';
+
+  @override
+  String get errorProcessDonationTitle => 'We couldn’t proceed your payment';
+
+  @override
+  String get errorProcessDonationSubtitle =>
+      'Something went wrong with the payment.\nPlease try again.';
+
+  @override
+  String get errorProcessDonationRetryButton => 'Retry';
+
+  @override
+  String get processingDonationTitle => 'Processing payment';
+
+  @override
+  String get processingDonationStripeSubtitle =>
+      'You’ll complete your purchase on Stripe’s secure checkout page.';
 }

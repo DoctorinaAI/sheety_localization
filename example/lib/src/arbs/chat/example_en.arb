@@ -1,7 +1,7 @@
 {
   "@@locale": "en",
   "@@author": "example@gmail.com",
-  "@@last_modified": "2025-06-04T15:18:15.787321Z",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
   "@@comment": "Generated from Google Sheets",
   "@@context": "From Google Sheets",
   "title": "Chat",
@@ -135,5 +135,29 @@
   "chatActionButtonTooltipExportSummary": "Export to PDF",
   "@chatActionButtonTooltipExportSummary": {
     "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
-  }
+  },
+  "chatPickerPhotos": "Photos",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "Camera",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "Files",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatRecommendationYIAG": "Hope that helped! Was this explanation useful to you?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "Yes, it's all good!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "chatHistoryTitle": "Chat History",
+  "@chatHistoryTitle": {},
+  "failedToRetrieveChatSummary": "Failed to retrieve chat summary",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "Chat summary copied to clipboard",
+  "@chatSummaryCopiedToClipboard": {}
 }

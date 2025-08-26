@@ -1,0 +1,173 @@
+{
+  "@@locale": "ar",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "قسط",
+  "@title": {
+    "description": "Заголовок экрана"
+  },
+  "exampleButton": "مثال على الزر",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "نعم، كل شيء جيد!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "كل مساهمة تشفي!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "تساهم مساهمتك في تمويل تقديم المشورة المجانية للآخرين المحتاجين.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "ادفع ما تشعر أنه مناسب",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "أو استمر في استخدام Doctorina مجانًا، وذلك بفضل الآخرين الذين اختاروا التبرع.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "لمرة واحدة",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "شهريا",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "اختر مبلغ التبرع الشهري",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "أنت على وشك الاشتراك في خطة شهرية.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "لقد قمت بالاشتراك في خطة شهرية بمبلغ {amount}/الشهر.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "سيتم خصم المبلغ من حسابك عند تأكيد الشراء. يُجدد الاشتراك تلقائيًا شهريًا ما لم يتم إيقاف التجديد التلقائي قبل 24 ساعة على الأقل من نهاية الفترة الحالية. يمكنك إدارة اشتراكك أو إلغاؤه في أي وقت من إعدادات حسابك. بالمتابعة، أنت توافق على {termsOfService} و{privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "اختر مبلغ التبرع لمرة واحدة",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "معظم الناس يعطون 7 إلى 15 دولارًا",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "اختر العملة",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "معالجة الدفع",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "معالجة دفعة لمرة واحدة بقيمة {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "معالجة الدفع الشهري بقيمة {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "شكرًا لك!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "الآن سيحصل المزيد من الأشخاص على نصائح مجانية - دعمك لا يقدر بثمن حقًا.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "لقد ساهمت بـ:",
+  "@youContributedLabel": {},
+  "perMonth": "/ شهر",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "العودة إلى الشاشة الرئيسية",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "شروط الخدمة",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "سياسة الخصوصية",
+  "@privacyPolicyLabel": {},
+  "donateButton": "يتبرع",
+  "@donateButton": {},
+  "manageSubscriptionTitle": "إدارة الاشتراك",
+  "@manageSubscriptionTitle": {},
+  "subscriptionStatusActiveLabel": "نشيط",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "تم الإلغاء",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "متوقف مؤقتًا",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "قيد الانتظار",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "مخلوق",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "نفذ الوقت",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "مجهول",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "مساهم في دكتورينا",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "يجدد",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "إلغاء الاشتراك",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "هل أنت متأكد؟",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "دعمكم الشهري يُبقي \"دكتورينا\" مجانيًا لمن يعتمدون عليه ولكنهم غير قادرين على الدفع.\n\nيُغطي اشتراككم ما لا يقل عن ١٠ استشارات مجانية شهريًا.\n\nإذا تركتم الخدمة، فسيقل عدد المرضى الذين يحصلون على المساعدة التي يحتاجونها.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "الحفاظ على الاشتراك",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "إلغاء على أية حال",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "لقد تم إلغاء الدعم الشهري الخاص بك بنجاح.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "بيانات الاشتراك غير صحيحة",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "قم بالتسجيل للحصول على الدعم الشهري حتى يظهر هنا.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "لا يوجد اشتراكات حتى الآن",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "تاريخ الاشتراك",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "تنتهي صلاحيتها",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "معرف الاشتراك",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "معرف المنتج",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "نعم",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "لم نتمكن من متابعة الدفع الخاص بك",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "حدث خطأ أثناء الدفع. يُرجى المحاولة مرة أخرى.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "إعادة المحاولة",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "معالجة الدفع",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "ستتمكن من إكمال عملية الشراء الخاصة بك على صفحة الدفع الآمنة الخاصة بـ Stripe.",
+  "@processingDonationStripeSubtitle": {}
+}

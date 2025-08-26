@@ -190,4 +190,29 @@ class ChatLocalizationEn extends ChatLocalization {
 
   @override
   String get chatActionButtonTooltipExportSummary => 'Export to PDF';
+
+  @override
+  String get chatPickerPhotos => 'Photos';
+
+  @override
+  String get chatPickerCamera => 'Camera';
+
+  @override
+  String get chatPickerFiles => 'Files';
+
+  @override
+  String get chatRecommendationYIAG =>
+      'Hope that helped! Was this explanation useful to you?';
+
+  @override
+  String get chatRecommendationButtonDonate => 'Yes, it\'s all good!';
+
+  @override
+  String get chatHistoryTitle => 'Chat History';
+
+  @override
+  String get failedToRetrieveChatSummary => 'Failed to retrieve chat summary';
+
+  @override
+  String get chatSummaryCopiedToClipboard => 'Chat summary copied to clipboard';
 }

@@ -32,21 +32,43 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           io.exit(0);
         }
 
+        String? excludeQuotes(String? input) {
+          if (input == null || input.length < 2) return input;
+          final Runes(:first, :last) = input.runes;
+          if (first == 34 && last == 34) {
+            return input.substring(1, input.length - 1);
+          } else if (first == 39 && last == 39) {
+            return input.substring(1, input.length - 1);
+          } else {
+            return input;
+          }
+        }
+
         $log('Reading command line arguments...');
-        final credentialsPath = args.option('credentials')?.replaceAll('"', '');
-        final sheetId = args.option('sheet')?.replaceAll('"', '');
-        final libDir = args.option('lib')?.replaceAll('"', '');
-        final arbDir = args.option('arb')?.replaceAll('"', '');
-        final genDir = args.option('gen')?.replaceAll('"', '');
-        final prefix = args.option('prefix')?.replaceAll('"', '') ?? 'app';
-        final header = args.option('header')?.replaceAll('"', '');
+        final credentialsPath = excludeQuotes(args.option('credentials'));
+        final sheetId = excludeQuotes(args.option('sheet'));
+        final libDir = excludeQuotes(args.option('lib'));
+        final arbDir = excludeQuotes(args.option('arb'));
+        final genDir = excludeQuotes(args.option('gen'));
+        final ignore = excludeQuotes(args.option('ignore'))
+                ?.split(',')
+                .map((e) => e.trim())
+                .where((e) => e.isNotEmpty)
+                .map((e) => RegExp(e))
+                .toList(growable: false) ??
+            const [];
+        final prefix = excludeQuotes(args.option('prefix')) ?? 'app';
+        final header = excludeQuotes(args.option('header'));
         final format = args.flag('format');
         final meta = <String, String>{
-          if (args.option('author') case String author) '@@author': author,
-          if (args.option('modified') case String modified)
+          if (excludeQuotes(args.option('author')) case String author)
+            '@@author': author,
+          if (excludeQuotes(args.option('modified')) case String modified)
             '@@last_modified': modified,
-          if (args.option('comment') case String comment) '@@comment': comment,
-          if (args.option('context') case String context) '@@context': context,
+          if (excludeQuotes(args.option('comment')) case String comment)
+            '@@comment': comment,
+          if (excludeQuotes(args.option('context')) case String context)
+            '@@context': context,
         };
 
         // Validate arguments
@@ -64,6 +86,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         final sheets = fetchSpreadsheets(
           credentialsPath: credentialsPath,
           sheetId: sheetId,
+          ignore: ignore,
         );
 
         // Generate localization table from the fetched sheets
@@ -211,6 +234,26 @@ ArgParser buildArgumentsParser() => ArgParser()
         'relative to the library directory',
   )
   ..addOption(
+    'ignore',
+    abbr: 'i',
+    aliases: const <String>[
+      'ignore-table',
+      'exclude',
+      'skip',
+      'ignore-patterns',
+      'ignore-sheets',
+      'exclude-sheets',
+      'skip-sheets',
+      'exclude-patterns',
+      'skip-patterns',
+    ],
+    mandatory: false,
+    defaultsTo: '',
+    valueHelp: 'help, backend-.*, temp-.*',
+    help: 'Comma-separated list of RegExp patterns to ignore sheets '
+        'whose titles match any of the patterns',
+  )
+  ..addOption(
     'author',
     aliases: const <String>['meta-author'],
     mandatory: false,
@@ -284,6 +327,7 @@ ArgParser buildArgumentsParser() => ArgParser()
 Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
   required String credentialsPath,
   required String sheetId,
+  List<RegExp> ignore = const [],
 }) async* {
   $log('Credentials path: $credentialsPath');
   final credentialsFile = io.File(credentialsPath);
@@ -340,17 +384,25 @@ Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
       continue;
     }
     final SheetProperties(sheetId: id, title: title) = properties;
+
+    // Check if the sheet title matches any of the ignore patterns
     if (id == null) {
       $err('Sheet ID is null, skipping sheet...');
       continue;
     } else if (title == null || title.isEmpty) {
       $err('Sheet title is null or empty, skipping sheet...');
       continue;
+    } else if (ignore.any((pattern) => pattern.hasMatch(title))) {
+      $log('Ignoring sheet "$title" as it matches ignore patterns');
+      continue;
     }
+
     final ValueRange(:values) = await sheetsApi.spreadsheets.values.get(
       sheetId,
       title,
     );
+
+    // Validate sheet values
     if (values == null) {
       $err('Sheet "$title" has no values, skipping sheet...');
       continue;
@@ -363,9 +415,9 @@ Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
     } else if (values.first.length < 4) {
       $err('Sheet "$title" has no localizations, skipping sheet...');
       continue;
-    } else {
-      yield (sheet: sheet, values: values);
     }
+
+    yield (sheet: sheet, values: values);
   }
 }
 
@@ -706,7 +758,7 @@ Future<Set<String>> generateFlutterLocalization({
         'gen-l10n',
         '--no-nullable-getter',
         // flutter config --explicit-package-dependencies
-        '--no-synthetic-package',
+        //'--no-synthetic-package',
         '--template-arb-file=${prefix ?? 'app'}_en.arb',
         '--arb-dir=$dir',
         '--output-dir=${genDir.path}',

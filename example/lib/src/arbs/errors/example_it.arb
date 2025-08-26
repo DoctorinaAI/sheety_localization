@@ -1,0 +1,28 @@
+{
+  "@@locale": "it",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "error": "Si è verificato un errore",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Si è verificato un errore imprevisto",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "authErrorMessages": "{errorCode, select, passwordLengthError{La password deve contenere almeno 6 caratteri} invalidEmailOrPhoneNumberError{Fornisci un'email valida o un numero di telefono nel formato internazionale. Esempi: me@example.com e +1234567890987} invalidEmailError{L'email non è valida} operationNotAllowedError{Operazione non consentita} weakPasswordError{La password è troppo debole} userTokenExpiredError{Il token utente è scaduto} invalidPhoneNumberError{Fornisci numeri di telefono nel formato internazionale, iniziando con + e il prefisso del paese.} invalidActionCodeError{Il codice azione non è valido} networkRequestFailedError{Richiesta di rete non riuscita} tooManyRequestsError{Troppe richieste} acceptTermsAndConditionsError{Accetta i termini e le condizioni e conferma la politica sulla privacy.} acceptAIConsentError{Riconosci che le consulenze sono con un'IA e non con un medico abilitato.} emailOrPhoneError{Errore email o telefono} passwordError{Errore password} unknownError{Errore sconosciuto} googleSSOError{Errore Google SSO} emailAlreadyInUse{L'indirizzo email è già utilizzato da un altro account.} invalidCredentialError{Credenziali non valide} invalidAppCredentialError{Credenziali app non valide} invalidVerificationCodeError{Codice di verifica non valido} other{Errore sconosciuto}}\n",
+  "@authErrorMessages": {
+    "description": "Ошибка аутентификации",
+    "placeholders": {
+      "errorCode": {
+        "type": "String"
+      }
+    }
+  },
+  "bugReportSentText": "Segnalazione bug inviata con successo.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

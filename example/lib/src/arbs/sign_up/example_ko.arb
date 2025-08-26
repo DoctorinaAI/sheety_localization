@@ -1,0 +1,109 @@
+{
+  "@@locale": "ko",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2025-08-26T14:28:36.220548Z",
+  "@@comment": "Generated from Google Sheets",
+  "@@context": "From Google Sheets",
+  "title": "로그인",
+  "@title": {},
+  "logIn": "로그인",
+  "@logIn": {},
+  "password": "비밀번호",
+  "@password": {},
+  "changeNumber": "번호 변경",
+  "@changeNumber": {},
+  "forgotPassword": "비밀번호를 잊으셨나요?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "이메일 주소를 입력하시면 비밀번호 재설정 링크를 보내드립니다.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "비밀번호를 기억하세요?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "비밀번호가 있어요",
+  "@backToLoginButton": {},
+  "continueButton": "계속하다",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "비밀번호 재설정 이메일이 전송되었습니다.",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "비밀번호 재설정",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "코드 확인",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "오늘부터 Doctorina를 사용해보세요",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "또는",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "비밀번호를 입력하세요",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "비밀번호 표시",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "모호한 비밀번호",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "로그인 지우기",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "이메일 또는 전화",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com 또는 +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "이메일 또는 전화번호를 입력하세요",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "계속하려면 계약에 동의해 주세요.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "개인정보 처리에 동의합니다.",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "의 사용",
+  "@consentTheUseOf": {},
+  "consentCookies": "쿠키",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", 동의합니다",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "이용 약관",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", 그리고 인정합니다",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "개인정보 보호정책",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "저는 상담을 AI와 진행하며, 면허를 소지한 의료 전문가와 진행하지 않는다는 점을 인정합니다.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "로그아웃",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "로그아웃 하시겠습니까?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "취소",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "네, 로그아웃합니다",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "코드 재전송",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "코드 재전송 ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  }
+}
