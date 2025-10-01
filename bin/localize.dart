@@ -895,6 +895,43 @@ class OpenAIClient {
   }
 }
 
+/// Rate limiter for Google Sheets API calls
+class RateLimiter {
+  RateLimiter({
+    required this.maxRequestsPerMinute,
+  }) : _requestTimes = <int>[];
+
+  final int maxRequestsPerMinute;
+  final List<int> _requestTimes;
+  final Stopwatch _stopwatch = Stopwatch()..start();
+
+  /// Wait if necessary to respect rate limits
+  Future<void> waitIfNeeded() async {
+    final now = _stopwatch.elapsedMilliseconds;
+
+    // Remove requests older than 1 minute
+    _requestTimes.removeWhere((time) => now - time > 60000);
+
+    // If we're at the limit, wait until we can make another request
+    if (_requestTimes.length >= maxRequestsPerMinute) {
+      final oldestRequest = _requestTimes.first;
+      final waitTime = 60000 - (now - oldestRequest) + 100; // +100ms buffer
+      if (waitTime > 0) {
+        $log('Rate limit reached, waiting ${waitTime}ms...');
+        await Future<void>.delayed(Duration(milliseconds: waitTime));
+      }
+      // Remove the oldest request after waiting
+      _requestTimes.removeAt(0);
+    }
+
+    // Record this request
+    _requestTimes.add(_stopwatch.elapsedMilliseconds);
+  }
+}
+
+// Global rate limiter instance
+final RateLimiter _sheetsRateLimiter = RateLimiter(maxRequestsPerMinute: 60);
+
 /// Update the Google Sheet with localized values
 /// [api] - The Google Sheets API client
 /// [sheetId] - The sheet to update
@@ -912,8 +949,12 @@ Future<void> updateSheet({
     if (cell.isEmpty) continue;
     final text = cell.text;
     const attempts = 3;
+
     for (var attempt = 1; attempt <= attempts; attempt++) {
       try {
+        // Wait for rate limiter before making API call
+        await _sheetsRateLimiter.waitIfNeeded();
+
         await api.spreadsheets.values.update(
           ValueRange(values: [
             [text]
@@ -922,6 +963,7 @@ Future<void> updateSheet({
           '$sheetTitle!${columnFromIndex(cell.column)}${row.row + 1}',
           valueInputOption: 'RAW',
         );
+        break; // Success, exit retry loop
       } on Object catch (e) {
         if (attempt == attempts) {
           $err(
