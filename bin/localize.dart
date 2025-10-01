@@ -146,7 +146,12 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
             client: client,
           )) {
             if (row.isEmpty) continue;
-            await updateSheet(sheetsApi, sheetId, row);
+            await updateSheet(
+              api: sheetsApi,
+              sheetId: sheetId,
+              sheetTitle: title,
+              row: row,
+            );
           }
         }
       },
@@ -414,17 +419,6 @@ Future<List<LocalizeRow>> extractEmptyCells({
 }) async {
   final sanitize = sanitizer();
 
-  String column(int index) {
-    if (index < 0) throw ArgumentError('Index must be non-negative');
-    var columnName = '';
-    do {
-      int remainder = index % 26;
-      columnName = String.fromCharCode(65 + remainder) + columnName;
-      index = (index / 26).floor() - 1; // ignore: parameter_assignments
-    } while (index >= 0);
-    return columnName;
-  }
-
   final bucket = sanitize(sheet.properties?.title ?? '');
   if (bucket.isEmpty) {
     $err(
@@ -447,13 +441,15 @@ Future<List<LocalizeRow>> extractEmptyCells({
         locales[i] = locale;
       case String _:
         $err(
-          'Sheet "$bucket" has empty column [${column(i)}] in header, '
+          'Sheet "$bucket" has empty column '
+          '[${columnFromIndex(i)}] in header, '
           'ignore the whole column...',
         );
         continue;
       default:
         $err(
-          'Sheet "$bucket" has non-string column [${column(i)}] in header, '
+          'Sheet "$bucket" has non-string column '
+          '[${columnFromIndex(i)}] in header, '
           'ignore whole column...',
         );
         continue;
@@ -710,7 +706,6 @@ Stream<LocalizeRow> localizeRows({
         );
       }
     }
-    debugger();
     yield row;
   }
 }
@@ -878,26 +873,29 @@ class OpenAIClient {
 /// Update the Google Sheet with localized values
 /// [api] - The Google Sheets API client
 /// [sheetId] - The sheet to update
-/// [rows] - The rows with localized values
-Future<void> updateSheet(
-  SheetsApi api,
-  String sheetId,
-  LocalizeRow row,
-) async {
+/// [sheetTitle] - The title of the sheet
+/// [row] - The row with localized values
+Future<void> updateSheet({
+  required SheetsApi api,
+  required String sheetId,
+  required String sheetTitle,
+  required LocalizeRow row,
+}) async {
   if (row.isEmpty) return;
+
   for (final cell in row.cells) {
     if (cell.isEmpty) continue;
     final text = cell.text;
-    api.spreadsheets.values.update(
+    await api.spreadsheets.values.update(
       ValueRange(values: [
         [text]
       ]),
       sheetId,
-      '${row.label}!${String.fromCharCode(65 + cell.column)}${row.row + 1}',
+      '$sheetTitle!${columnFromIndex(cell.column)}${row.row + 1}',
       valueInputOption: 'RAW',
     );
   }
-  String.fromCharCode(65 + 34);
+
   debugger();
 }
 
@@ -961,4 +959,16 @@ String Function(String input) sanitizer() {
       .replaceAll(invalid, '_') // replace invalid characters with _
       .replaceAll(merge, '_') // merge multiple _ into one
       .replaceAll(trim, ''); // remove leading and trailing _
+}
+
+/// Convert column index to column name (e.g. 0 -> A, 1 -> B, 26 -> AA)
+String columnFromIndex(int index) {
+  if (index < 0) throw ArgumentError('Index must be non-negative');
+  var columnName = '';
+  do {
+    int remainder = index % 26;
+    columnName = String.fromCharCode(65 + remainder) + columnName;
+    index = (index / 26).floor() - 1;
+  } while (index >= 0);
+  return columnName;
 }
