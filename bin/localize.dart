@@ -681,44 +681,49 @@ Stream<LocalizeRow> localizeRows({
     final cells = row.cells.map((e) => e.code).toList(growable: false);
     const cellsPerBatch = 4;
     for (var i = 0; i <= cells.length; i += cellsPerBatch) {
-      // Get the next batch of languages to process
-      if (i >= cells.length) break;
-      final languages =
-          cells.skip(i).take(cellsPerBatch).toList(growable: false);
-      if (languages.isEmpty) break;
+      try {
+        // Get the next batch of languages to process
+        if (i >= cells.length) break;
+        final languages =
+            cells.skip(i).take(cellsPerBatch).toList(growable: false);
+        if (languages.isEmpty) break;
 
-      // Create user prompt:
-      final (:prompt, :schema) = buildLocalizationPrompt(
-        label: row.label,
-        en: row.english,
-        description: row.description,
-        meta: row.meta,
-        languages: languages,
-      );
-
-      // Call OpenAI API:
-      final data = await client(prompt: prompt, schema: schema);
-      if (data.label != row.label)
-        throw ArgumentError(
-          'Mismatched label in response: expected "${row.label}", '
-          'got "${data.label}"',
+        // Create user prompt:
+        final (:prompt, :schema) = buildLocalizationPrompt(
+          label: row.label,
+          en: row.english,
+          description: row.description,
+          meta: row.meta,
+          languages: languages,
         );
 
-      // Update row with localized values:
-      for (final MapEntry(key: locale, :value) in data.localization.entries) {
-        if (value case {'text': String text} when text.isNotEmpty) {
-          final cell = row.cells.firstWhere(
-            (c) => c.code == locale,
-            orElse: () => throw ArgumentError(
-              'Unexpected locale in response: $locale',
-            ),
-          );
-          cell.text = text;
-        } else {
+        // Call OpenAI API:
+        final data = await client(prompt: prompt, schema: schema);
+        if (data.label != row.label)
           throw ArgumentError(
-            'Invalid or empty text for locale "$locale" in response',
+            'Mismatched label in response: expected "${row.label}", '
+            'got "${data.label}"',
           );
+
+        // Update row with localized values:
+        for (final MapEntry(key: locale, :value) in data.localization.entries) {
+          if (value case {'text': String text} when text.isNotEmpty) {
+            final cell = row.cells.firstWhere(
+              (c) => c.code == locale,
+              orElse: () => throw ArgumentError(
+                'Unexpected locale in response: $locale',
+              ),
+            );
+            cell.text = text;
+          } else {
+            throw ArgumentError(
+              'Invalid or empty text for locale "$locale" in response',
+            );
+          }
         }
+      } on Object catch (e, s) {
+        $err('Error localizing row "${row.label}": $e\n$s');
+        continue;
       }
     }
     yield row;
