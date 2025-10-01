@@ -124,7 +124,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         // Create OpenAI client
         final client = OpenAIClient(
           apiKey: openaiApiKey,
-          model: openaiModel ?? 'O3-MINI',
+          model: openaiModel ?? 'gpt-4o-mini',
           workers: workers.clamp(1, 14),
           systemPrompt: systemPrompt,
         );
@@ -230,7 +230,7 @@ ArgParser buildArgumentsParser() => ArgParser()
       'localize-model',
       'llm',
     ],
-    defaultsTo: 'O3-MINI',
+    defaultsTo: 'gpt-4o-mini',
     mandatory: false,
     valueHelp: 'model',
     help: 'OpenAI model to use (e.g. chatgpt-4)',
@@ -536,47 +536,38 @@ Future<List<LocalizeRow>> extractEmptyCells({
 /// - Uses jsonEncode for safe inline JSON embedding.
 /// - Uses StringBuffer with cascade operators for clarity and speed.
 /// - Keeps soft-ish validation with explicit errors (same as original intent).
-String buildLocalizationPrompt({
+({String prompt, Map<String, Object?> schema}) buildLocalizationPrompt({
   required String label,
   required String en,
   required List<String> languages,
   String? description,
-  String? meta,
+  String? meta, // keep as String? to avoid breaking callers; embed as-is
 }) {
   // -- helpers ---------------------------------------------------------------
 
-  /// Return trimmed string or empty if null.
-  String? safeStr(String? v) => v == null || v.isEmpty ? null : v.trim();
+  /// Return trimmed string or null if empty.
+  String? safeStr(String? v) => v == null || v.trim().isEmpty ? null : v.trim();
 
   /// Unique, order-preserving list of non-empty language codes.
-  List<String> uniqLangs(Iterable<String> arr) =>
-      List<String>.unmodifiable(LinkedHashSet<String>.from(
-          arr.map(safeStr).whereType<String>().where((s) => s.isNotEmpty)));
+  List<String> uniqLangs(Iterable<String> arr) => List<String>.unmodifiable(
+        LinkedHashSet<String>.from(
+          arr.map(safeStr).whereType<String>().where((s) => s.isNotEmpty),
+        ),
+      );
 
   // -- unpack & normalize ----------------------------------------------------
   final normLabel = safeStr(label);
   final normDesc = safeStr(description);
   final normEn = safeStr(en);
   final langs = uniqLangs(languages);
-  final metaObj = meta;
-  final String? metaJson =
-      metaObj == null ? null : jsonEncode(metaObj as Object);
+  final String? metaInline = safeStr(meta); // already a string; embed as-is
 
   // -- validation (explicit) -------------------------------------------------
   if (normLabel == null) throw ArgumentError('Missing label');
   if (normEn == null) throw ArgumentError('Missing source English text');
   if (langs.isEmpty) throw ArgumentError('No target languages provided');
 
-  // -- static schema block ---------------------------------------------------
-  const schema = '{\n'
-      '  "label": string,\n'
-      '  "localization": {\n'
-      '    <language_code>: { "text": string (non-empty) } '
-      '(one entry per requested language, no extras)\n'
-      '  }\n'
-      '}';
-
-  // -- output skeleton (use jsonEncode to safely embed strings) --------------
+  // -- output skeleton (built once; used in prompt to fix structure) ---------
   final skeleton = StringBuffer()
     ..writeln('{')
     ..writeln('  "label": ${jsonEncode(normLabel)},')
@@ -584,24 +575,24 @@ String buildLocalizationPrompt({
   for (var i = 0; i < langs.length; i++) {
     final key = jsonEncode(langs[i]); // safe quoted JSON key
     final comma = i == langs.length - 1 ? '' : ',';
-    skeleton.writeln('    $key: { "text": "" }$comma');
+    skeleton.writeln('    $key: {"text": ""}$comma');
   }
   skeleton
     ..writeln('  }')
     ..writeln('}');
 
-  // -- prompt assembly -------------------------------------------------------
+  // -- prompt assembly (tight, explicit, production-safe) --------------------
   final p = StringBuffer()
     ..writeln('You are a professional localization engine '
         'for a medical symptom-based advice chatbot.')
     ..writeln('Localize the item below into the target languages.')
     ..writeln('--- CONTEXT INPUT ---')
     ..writeln('label: $normLabel');
-  if (normDesc != null) {
-    p.writeln('description: $normDesc');
-  }
-  if (metaJson != null) {
-    p.writeln('meta_placeholders (ICU / intl format): $metaJson');
+  if (normDesc != null) p.writeln('description: $normDesc');
+  if (metaInline != null) {
+    // meta is already string; if caller wants JSON,
+    // they should pass it as a JSON string.
+    p.writeln('meta_placeholders (ICU / intl format): $metaInline');
   }
   p
     ..writeln('en_source: $normEn')
@@ -617,6 +608,8 @@ String buildLocalizationPrompt({
     ..writeln('Do not introduce new placeholders or variables.')
     ..writeln('If translation would be identical to English, '
         'repeat the English text.')
+    ..writeln('If a translation is infeasible or unclear, '
+        'copy the English text as fallback.')
     ..writeln('Avoid adding periods if original does not have one; '
         'keep stylistic equivalence.')
     ..writeln('No leading/trailing spaces in values.')
@@ -624,7 +617,13 @@ String buildLocalizationPrompt({
         'neutral and concise.')
     ..writeln('No quotes escaping beyond standard JSON string escaping.')
     ..writeln('--- JSON SCHEMA (informal) ---')
-    ..writeln(schema)
+    ..writeln('{')
+    ..writeln('  "label": string,')
+    ..writeln('  "localization": {')
+    ..writeln('    <language_code>: {"text": string (non-empty)} '
+        '// exactly the requested languages')
+    ..writeln('  }')
+    ..writeln('}')
     ..writeln('--- OUTPUT SKELETON (structure to follow) ---')
     ..writeln(skeleton.toString())
     ..writeln('--- RULES SUMMARY ---')
@@ -635,42 +634,91 @@ String buildLocalizationPrompt({
     ..writeln('5. Do not include description, meta, or extra metadata fields.')
     ..writeln('6. Do not translate placeholders or modify their braces.')
     ..writeln('7. Keep punctuation style consistent with source.')
-    ..writeln('8. Avoid hallucinating additional medical advice '
-        'beyond the source meaning.')
+    ..writeln('8. Avoid hallucinating additional medical '
+        'advice beyond the source meaning.')
     ..writeln('9. Keep resulting JSON compact (no unnecessary whitespace).')
     ..writeln('10. Use UTF-8 characters directly (no HTML entities).');
 
-  return p.toString();
+  // -- strict JSON Schema for Responses API ----------------------------------
+  // This object can be used directly under response_format.json_schema
+  // { "name": "...", "strict": true, "schema": { ... } }
+  Map<String, Object?> langObjectSchema() => <String, Object?>{
+        'type': 'object',
+        'additionalProperties': false,
+        'required': ['text'],
+        'properties': {
+          'text': {'type': 'string', 'minLength': 1}
+        },
+      };
+
+  final Map<String, Object?> langProps = {
+    for (final code in langs) code: langObjectSchema()
+  };
+
+  final schemaMap = <String, Object?>{
+    'type': 'object',
+    'additionalProperties': false,
+    'required': ['label', 'localization'],
+    'properties': {
+      'label': {'type': 'string', 'minLength': 1},
+      'localization': {
+        'type': 'object',
+        'additionalProperties': false,
+        'required': langs, // exactly these languages must be present
+        'properties': langProps,
+      }
+    }
+  };
+
+  return (prompt: p.toString(), schema: schemaMap);
 }
 
 /// Localize rows using OpenAI API
 /// [rows] - The rows to localize
-/// [openaiApiKey] - OpenAI API key
-/// [openaiModel] - OpenAI model to use
-/// [workers] - Number of worker isolates to use
-/// [systemPrompt] - Optional system prompt to guide the localization
+/// [client] - The OpenAI client to use
 Stream<LocalizeRow> localizeRows({
   required List<LocalizeRow> rows,
   required OpenAIClient client,
 }) async* {
   for (final row in rows) {
     // Create user prompt:
-    final prompt = buildLocalizationPrompt(
+    final (:prompt, :schema) = buildLocalizationPrompt(
       label: row.label,
       en: row.english,
       description: row.description,
       meta: row.meta,
       languages: row.cells.map((e) => e.code).toList(growable: false),
     );
-    final response = await client(prompt);
+    final data = await client(prompt: prompt, schema: schema);
+    if (data.label != row.label)
+      throw ArgumentError(
+        'Mismatched label in response: expected "${row.label}", '
+        'got "${data.label}"',
+      );
+    for (final MapEntry(key: locale, :value) in data.localization.entries) {
+      if (value case {'text': String text} when text.isNotEmpty) {
+        final cell = row.cells.firstWhere(
+          (c) => c.code == locale,
+          orElse: () => throw ArgumentError(
+            'Unexpected locale in response: $locale',
+          ),
+        );
+        cell.text = text;
+      } else {
+        throw ArgumentError(
+          'Invalid or empty text for locale "$locale" in response',
+        );
+      }
+    }
     debugger();
+    yield row;
   }
 }
 
 class OpenAIClient {
   OpenAIClient({
     required this.apiKey,
-    this.model = 'O3-MINI',
+    this.model = 'gpt-4o-mini', // gpt-4o-mini
     this.workers = 6,
     this.retries = 3,
     this.systemPrompt,
@@ -688,45 +736,90 @@ class OpenAIClient {
   bool _isProcessing = false;
   bool get isProcessing => _isProcessing;
 
-  Future<String> _request(
-      {required io.HttpClient client, required String prompt}) async {
-    final request = await client.postUrl(
-      Uri.parse('https://api.openai.com/v1/chat/completions'),
-    );
-    request.headers.set('Content-Type', 'application/json');
-    request.headers.set('Authorization', 'Bearer $apiKey');
+  Future<({String label, Map<String, Object?> localization})> _request({
+    required io.HttpClient client,
+    required String prompt,
+    required Map<String, Object?> schema,
+  }) async {
+    final uri = Uri.parse('https://api.openai.com/v1/responses');
+    final request = await client.postUrl(uri)
+      ..headers.set('Content-Type', 'application/json')
+      ..headers.set('Authorization', 'Bearer $apiKey');
     final body = jsonEncode({
-      'model': model,
-      'messages': [
-        if (systemPrompt != null) {'role': 'system', 'content': systemPrompt},
-        {'role': 'user', 'content': prompt},
+      'model': model, // e.g. "gpt-4o-mini"
+
+      // System prompt goes into `instructions` for Responses API
+      if (systemPrompt != null) 'instructions': systemPrompt,
+
+      // User prompt goes into `input` with explicit content typing
+      'input': [
+        {
+          'role': 'user',
+          'content': [
+            {
+              'type': 'input_text',
+              'text': prompt,
+            }
+          ]
+        }
       ],
-      'max_tokens': 2000,
-      'temperature': 0.7,
+
+      // Specify structured output at the TOP-LEVEL under "text.format"
+      'text': {
+        'format': {
+          'name': 'i18n_payload',
+          'strict': true,
+          'type': 'json_schema',
+          'schema': schema
+        }
+      },
+
+      // Deterministic outputs for pipeline stability
+      //'verbosity': 'low',
+      'temperature': 0,
+      'top_p': 1,
+      //'seed': 42,
+
+      // Token budget: translation payload is small, but keep headroom
+      'max_output_tokens': 1536,
+
+      //'reasoning': {'effort': 'low'}
     });
     request.add(utf8.encode(body));
     final response = await request.close();
-    if (response.statusCode == 200) {
-      final responseBody = await response.transform(utf8.decoder).join();
-      final data = jsonDecode(responseBody) as Map<String, Object?>;
-      final choices = data['choices'] as List<Object?>?;
-      if (choices != null && choices.isNotEmpty) {
-        final message = (choices.first as Map<String, Object?>)['message']
-            as Map<String, Object?>?;
-        if (message != null) {
-          final content = message['content'] as String?;
-          if (content != null) {
-            return content.trim();
+    if (response.statusCode != 200)
+      throw Exception(
+        'OpenAI API error: ${response.statusCode}'
+        ' - '
+        '${await response.transform(utf8.decoder).join()}',
+      );
+    final responseBody = await response.transform(utf8.decoder).join();
+    final json = jsonDecode(responseBody);
+    if (json case {'output': List<Object?> output} when output.isNotEmpty) {
+      for (final item in output) {
+        if (item case {'content': List<Object?> content}) {
+          for (final {'text': text}
+              in content.whereType<Map<String, Object?>>()) {
+            if (jsonDecode(text as String)
+                case {
+                  'label': String label,
+                  'localization': Map<String, Object?> localization
+                }) {
+              return (label: label, localization: localization);
+            } else {
+              throw Exception('Invalid JSON structure in OpenAI response');
+            }
           }
+        } else {
+          throw Exception('Invalid content structure in OpenAI response');
         }
       }
-      throw Exception('Invalid response format from OpenAI API');
+    } else if (json case {'error': Map<String, Object?> error}) {
+      throw Exception('OpenAI API error: $error');
     } else {
-      final errorBody = await response.transform(utf8.decoder).join();
-      throw Exception(
-        'OpenAI API error: ${response.statusCode} - $errorBody',
-      );
+      throw Exception('Invalid response from OpenAI API: $json');
     }
+    throw Exception('Invalid response format from OpenAI API');
   }
 
   void _processQueue() {
@@ -746,18 +839,23 @@ class OpenAIClient {
     }).ignore();
   }
 
-  Future<Map<String, Object?>> call(String prompt) async {
-    final completer = Completer<Map<String, Object?>>();
+  Future<({String label, Map<String, Object?> localization})> call({
+    required String prompt,
+    required Map<String, Object?> schema,
+  }) async {
+    final completer =
+        Completer<({String label, Map<String, Object?> localization})>();
     _taskQueue.add(() async {
       io.HttpClient client = io.HttpClient();
       try {
         for (var i = 0; i < retries; i++) {
           try {
-            final response = await _request(client: client, prompt: prompt);
-            if (jsonDecode(response) case Map<String, Object?> json) {
-              completer.complete(json);
-              return;
-            }
+            final response = await _request(
+              client: client,
+              prompt: prompt,
+              schema: schema,
+            );
+            completer.complete(response);
             throw Exception('Invalid JSON response from OpenAI API');
           } on Object catch (e) {
             if (i == retries - 1) rethrow;
