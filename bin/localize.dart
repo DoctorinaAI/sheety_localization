@@ -796,7 +796,7 @@ class OpenAIClient {
       //'seed': 42,
 
       // Token budget: translation payload is small, but keep headroom
-      'max_output_tokens': 1536,
+      'max_output_tokens': 2048,
 
       //'reasoning': {'effort': 'low'}
     });
