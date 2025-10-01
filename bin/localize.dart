@@ -875,7 +875,7 @@ class OpenAIClient {
           } on Object catch (e) {
             if (i == retries - 1) rethrow;
             $err('OpenAI API call failed (attempt ${i + 1}/$retries): $e');
-            await Future<void>.delayed(const Duration(seconds: 1));
+            await Future<void>.delayed(const Duration(milliseconds: 250));
           }
         }
       } on Object catch (e, s) {
