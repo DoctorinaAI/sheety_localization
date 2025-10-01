@@ -872,9 +872,14 @@ class OpenAIClient {
             );
             if (!completer.isCompleted) completer.complete(response);
             return;
+          } on FormatException catch (e) {
+            if (i == retries - 1) rethrow;
+            $err('OpenAI API returned invalid JSON '
+                '(attempt ${i + 1}/$retries): $e');
+            await Future<void>.delayed(const Duration(milliseconds: 250));
           } on Object catch (e) {
             if (i == retries - 1) rethrow;
-            $err('OpenAI API call failed (attempt ${i + 1}/$retries): $e');
+            $err('OpenAI API call failed ' '(attempt ${i + 1}/$retries): $e');
             await Future<void>.delayed(const Duration(milliseconds: 250));
           }
         }
