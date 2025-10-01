@@ -432,7 +432,7 @@ Future<Buckets> generateLocalizationTable(
   void ignoreColumn(String key, Object value) {}
 
   String column(int index) {
-    if (index < 0) throw ArgumentError('Индекс не может быть отрицательным');
+    if (index < 0) throw ArgumentError('Index must be non-negative');
     var columnName = '';
     do {
       int remainder = index % 26;
