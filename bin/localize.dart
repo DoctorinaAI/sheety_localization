@@ -885,6 +885,19 @@ Future<void> updateSheet(
   LocalizeRow row,
 ) async {
   if (row.isEmpty) return;
+  for (final cell in row.cells) {
+    if (cell.isEmpty) continue;
+    final text = cell.text;
+    api.spreadsheets.values.update(
+      ValueRange(values: [
+        [text]
+      ]),
+      sheetId,
+      '${row.label}!${String.fromCharCode(65 + cell.column)}${row.row + 1}',
+      valueInputOption: 'RAW',
+    );
+  }
+  String.fromCharCode(65 + 34);
   debugger();
 }
 
