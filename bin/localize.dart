@@ -332,7 +332,8 @@ Future<SheetsApi> createSheetsApiClient(
   SheetsApi sheetsApi;
   try {
     final client = await clientViaServiceAccount(credentials, [
-      SheetsApi.spreadsheetsReadonlyScope,
+      // SheetsApi.spreadsheetsReadonlyScope,
+      SheetsApi.spreadsheetsScope,
     ]);
     sheetsApi = SheetsApi(client);
   } on Object catch (e) {
@@ -677,33 +678,47 @@ Stream<LocalizeRow> localizeRows({
   required OpenAIClient client,
 }) async* {
   for (final row in rows) {
-    // Create user prompt:
-    final (:prompt, :schema) = buildLocalizationPrompt(
-      label: row.label,
-      en: row.english,
-      description: row.description,
-      meta: row.meta,
-      languages: row.cells.map((e) => e.code).toList(growable: false),
-    );
-    final data = await client(prompt: prompt, schema: schema);
-    if (data.label != row.label)
-      throw ArgumentError(
-        'Mismatched label in response: expected "${row.label}", '
-        'got "${data.label}"',
+    final cells = row.cells.map((e) => e.code).toList(growable: false);
+    const cellsPerBatch = 4;
+    for (var i = 0; i <= cells.length; i += cellsPerBatch) {
+      // Get the next batch of languages to process
+      if (i >= cells.length) break;
+      final languages =
+          cells.skip(i).take(cellsPerBatch).toList(growable: false);
+      if (languages.isEmpty) break;
+
+      // Create user prompt:
+      final (:prompt, :schema) = buildLocalizationPrompt(
+        label: row.label,
+        en: row.english,
+        description: row.description,
+        meta: row.meta,
+        languages: languages,
       );
-    for (final MapEntry(key: locale, :value) in data.localization.entries) {
-      if (value case {'text': String text} when text.isNotEmpty) {
-        final cell = row.cells.firstWhere(
-          (c) => c.code == locale,
-          orElse: () => throw ArgumentError(
-            'Unexpected locale in response: $locale',
-          ),
-        );
-        cell.text = text;
-      } else {
+
+      // Call OpenAI API:
+      final data = await client(prompt: prompt, schema: schema);
+      if (data.label != row.label)
         throw ArgumentError(
-          'Invalid or empty text for locale "$locale" in response',
+          'Mismatched label in response: expected "${row.label}", '
+          'got "${data.label}"',
         );
+
+      // Update row with localized values:
+      for (final MapEntry(key: locale, :value) in data.localization.entries) {
+        if (value case {'text': String text} when text.isNotEmpty) {
+          final cell = row.cells.firstWhere(
+            (c) => c.code == locale,
+            orElse: () => throw ArgumentError(
+              'Unexpected locale in response: $locale',
+            ),
+          );
+          cell.text = text;
+        } else {
+          throw ArgumentError(
+            'Invalid or empty text for locale "$locale" in response',
+          );
+        }
       }
     }
     yield row;
@@ -850,8 +865,8 @@ class OpenAIClient {
               prompt: prompt,
               schema: schema,
             );
-            completer.complete(response);
-            throw Exception('Invalid JSON response from OpenAI API');
+            if (!completer.isCompleted) completer.complete(response);
+            return;
           } on Object catch (e) {
             if (i == retries - 1) rethrow;
             $err('OpenAI API call failed (attempt ${i + 1}/$retries): $e');
@@ -895,8 +910,6 @@ Future<void> updateSheet({
       valueInputOption: 'RAW',
     );
   }
-
-  debugger();
 }
 
 /// Represents a cell to be localized
