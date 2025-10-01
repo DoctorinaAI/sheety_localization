@@ -45,7 +45,8 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         $log('Reading command line arguments...');
         final credentialsPath = excludeQuotes(args.option('credentials'));
         final sheetId = excludeQuotes(args.option('sheet'));
-        final openaiApiKey = excludeQuotes(args.option('token'));
+        var openaiApiKey = excludeQuotes(args.option('token'));
+        final openaiApiKeyFile = excludeQuotes(args.option('token-file'));
         final openaiModel = excludeQuotes(args.option('model'));
         final promptPath = excludeQuotes(args.option('prompt'));
         final ignore = excludeQuotes(args.option('ignore'))
@@ -64,6 +65,21 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           if (sheetId == null || sheetId.isEmpty) {
             $err('Error: Missing required argument --sheet');
             io.exit(1);
+          }
+          if (openaiApiKeyFile != null && openaiApiKeyFile.isNotEmpty) {
+            try {
+              final file = io.File(openaiApiKeyFile);
+              if (!file.existsSync()) {
+                $err(
+                  'Error: OpenAI API key file not found at $openaiApiKeyFile',
+                );
+                io.exit(1);
+              }
+              openaiApiKey = (await file.readAsString()).trim();
+            } on Object catch (e) {
+              $err('Error: Invalid OpenAI API key file path: $e');
+              io.exit(1);
+            }
           }
           if (openaiApiKey == null || openaiApiKey.isEmpty) {
             $err('Error: Missing required argument --token');
@@ -105,6 +121,14 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           io.exit(1);
         }
 
+        // Create OpenAI client
+        final client = OpenAIClient(
+          apiKey: openaiApiKey,
+          model: openaiModel ?? 'O3-MINI',
+          workers: workers.clamp(1, 14),
+          systemPrompt: systemPrompt,
+        );
+
         // Process each sheet
         $log('Processing ${sheets.length} sheets...');
         for (final (:sheet, :values) in sheets) {
@@ -119,10 +143,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           $log('Found ${rows.length} rows to localize in sheet: $title');
           await for (final row in localizeRows(
             rows: rows,
-            openaiApiKey: openaiApiKey,
-            openaiModel: openaiModel ?? 'O3-MINI',
-            //workers: workers.clamp(1, 14),
-            systemPrompt: systemPrompt,
+            client: client,
           )) {
             if (row.isEmpty) continue;
             await updateSheet(sheetsApi, sheetId, row);
@@ -178,9 +199,23 @@ ArgParser buildArgumentsParser() => ArgParser()
       'api',
       'apikey',
       'api-key',
-      'localize',
     ],
-    mandatory: true,
+    mandatory: false,
+    valueHelp: '<your-api-key>',
+    help: 'OpenAI API key (e.g. sk-...)',
+  )
+  ..addOption(
+    'token-file',
+    abbr: 'f',
+    aliases: const <String>[
+      'token-path',
+      'chatgpt-file',
+      'openai-file',
+      'api-file',
+      'apikey-file',
+      'api-key-file',
+    ],
+    mandatory: false,
     valueHelp: '<your-api-key>',
     help: 'OpenAI API key (e.g. sk-...)',
   )
@@ -431,13 +466,13 @@ Future<List<LocalizeRow>> extractEmptyCells({
     final queue = Queue<LocalizeCell>();
     for (var i = 1; i < values.length; i++) {
       final row = values[i];
-      if (row.isEmpty) {
+      if (row.isEmpty || row.every((cell) => cell == null) || row.length < 5) {
         $err('Sheet "$bucket" has empty row ${i + 1}, skipping row...');
         continue;
       }
 
       // Extract label, description, and meta from the row
-      final [$label, $description, $meta, ..._] = row;
+      final [$label, $description, $meta, $english, ..._] = row;
       if ($label == null || $label is! String || $label.isEmpty) {
         $err(
           'Sheet "$bucket" has empty label in row #${i + 1}, '
@@ -448,7 +483,7 @@ Future<List<LocalizeRow>> extractEmptyCells({
       final label = sanitize($label);
 
       // Extract locales from the row
-      for (var j = 3; j < locales.length; j++) {
+      for (var j = 4; j < locales.length; j++) {
         final cell = row.length > j ? row[j] : null;
         final locale = locales[j];
         if (locale.isEmpty) continue; // Skip empty locales
@@ -471,6 +506,21 @@ Future<List<LocalizeRow>> extractEmptyCells({
         LocalizeRow(
           row: i,
           label: label,
+          description: switch ($description) {
+            String text when text.isNotEmpty => text,
+            num number => number.toString(),
+            _ => null,
+          },
+          meta: switch ($meta) {
+            String text when text.isNotEmpty => text,
+            num number => number.toString(),
+            _ => null,
+          },
+          english: switch ($english) {
+            String text when text.isNotEmpty => text,
+            num number => number.toString(),
+            _ => label,
+          },
           cells: queue.toList(growable: false),
         ),
       );
@@ -479,38 +529,118 @@ Future<List<LocalizeRow>> extractEmptyCells({
   }
 
   return localize;
+}
 
-  /* final $workers = workers.clamp(1, 14);
-  final localized = <({int row, List<({int column, String text})> cells})>[];
-  for (var w = 0; w < localize.length; w += $workers) {
-    final batch = localize.sublist(
-      w,
-      (w + $workers).clamp(0, localize.length),
-    );
-    await Future.wait(batch.map((item) async {
-      final (:row, :label, :languages) = item;
-      for (final (:column, :code) in languages) {
-        // Call OpenAI API to localize the label
-        // This is a placeholder for the actual OpenAI API call
-        // Replace this with your OpenAI API integration
-        final localizedText = '$label ($code)'; // Mock localization
+/// Builds a strict prompt for a localization task.
+/// - Comments are in English.
+/// - Uses jsonEncode for safe inline JSON embedding.
+/// - Uses StringBuffer with cascade operators for clarity and speed.
+/// - Keeps soft-ish validation with explicit errors (same as original intent).
+String buildLocalizationPrompt({
+  required String label,
+  required String en,
+  required List<String> languages,
+  String? description,
+  String? meta,
+}) {
+  // -- helpers ---------------------------------------------------------------
 
-        // Update the values in the sheet
-        if (row < values.length && column < values[row].length) {
-          //values[row][column] = localizedText;
-          $log(
-            'Sheet "$bucket": Localized "$label" to "$localizedText" '
-            'for locale "$code" at row ${row + 1}, column ${column + 1}',
-          );
-        } else {
-          $err(
-            'Sheet "$bucket": Invalid row or column index '
-            'for localization of "$label" to "$code"',
-          );
-        }
-      }
-    }));
-  } */
+  /// Return trimmed string or empty if null.
+  String? safeStr(String? v) => v == null || v.isEmpty ? null : v.trim();
+
+  /// Unique, order-preserving list of non-empty language codes.
+  List<String> uniqLangs(Iterable<String> arr) =>
+      List<String>.unmodifiable(LinkedHashSet<String>.from(
+          arr.map(safeStr).whereType<String>().where((s) => s.isNotEmpty)));
+
+  // -- unpack & normalize ----------------------------------------------------
+  final normLabel = safeStr(label);
+  final normDesc = safeStr(description);
+  final normEn = safeStr(en);
+  final langs = uniqLangs(languages);
+  final metaObj = meta;
+  final String? metaJson =
+      metaObj == null ? null : jsonEncode(metaObj as Object);
+
+  // -- validation (explicit) -------------------------------------------------
+  if (normLabel == null) throw ArgumentError('Missing label');
+  if (normEn == null) throw ArgumentError('Missing source English text');
+  if (langs.isEmpty) throw ArgumentError('No target languages provided');
+
+  // -- static schema block ---------------------------------------------------
+  const schema = '{\n'
+      '  "label": string,\n'
+      '  "localization": {\n'
+      '    <language_code>: { "text": string (non-empty) } '
+      '(one entry per requested language, no extras)\n'
+      '  }\n'
+      '}';
+
+  // -- output skeleton (use jsonEncode to safely embed strings) --------------
+  final skeleton = StringBuffer()
+    ..writeln('{')
+    ..writeln('  "label": ${jsonEncode(normLabel)},')
+    ..writeln('  "localization": {');
+  for (var i = 0; i < langs.length; i++) {
+    final key = jsonEncode(langs[i]); // safe quoted JSON key
+    final comma = i == langs.length - 1 ? '' : ',';
+    skeleton.writeln('    $key: { "text": "" }$comma');
+  }
+  skeleton
+    ..writeln('  }')
+    ..writeln('}');
+
+  // -- prompt assembly -------------------------------------------------------
+  final p = StringBuffer()
+    ..writeln('You are a professional localization engine '
+        'for a medical symptom-based advice chatbot.')
+    ..writeln('Localize the item below into the target languages.')
+    ..writeln('--- CONTEXT INPUT ---')
+    ..writeln('label: $normLabel');
+  if (normDesc != null) {
+    p.writeln('description: $normDesc');
+  }
+  if (metaJson != null) {
+    p.writeln('meta_placeholders (ICU / intl format): $metaJson');
+  }
+  p
+    ..writeln('en_source: $normEn')
+    ..writeln('target_languages: ${langs.join(', ')}')
+    ..writeln('--- OUTPUT REQUIREMENTS ---')
+    ..writeln(
+        'Return ONLY valid minified JSON (no comments, no markdown fences).')
+    ..writeln('Do NOT add explanatory text before or after JSON.')
+    ..writeln('All requested languages MUST be present, no additional keys.')
+    ..writeln('Preserve ICU/intl placeholders exactly '
+        '(e.g., {name}, {version}, {count}).')
+    ..writeln('Preserve HTML-like or XML-like tags verbatim if present.')
+    ..writeln('Do not introduce new placeholders or variables.')
+    ..writeln('If translation would be identical to English, '
+        'repeat the English text.')
+    ..writeln('Avoid adding periods if original does not have one; '
+        'keep stylistic equivalence.')
+    ..writeln('No leading/trailing spaces in values.')
+    ..writeln('Each value MUST be culturally and medically appropriate, '
+        'neutral and concise.')
+    ..writeln('No quotes escaping beyond standard JSON string escaping.')
+    ..writeln('--- JSON SCHEMA (informal) ---')
+    ..writeln(schema)
+    ..writeln('--- OUTPUT SKELETON (structure to follow) ---')
+    ..writeln(skeleton.toString())
+    ..writeln('--- RULES SUMMARY ---')
+    ..writeln('1. Output only JSON.')
+    ..writeln('2. Keys: label, localization.')
+    ..writeln('3. localization contains exactly the target languages.')
+    ..writeln('4. Each language object: {"text": "<translation>"}.')
+    ..writeln('5. Do not include description, meta, or extra metadata fields.')
+    ..writeln('6. Do not translate placeholders or modify their braces.')
+    ..writeln('7. Keep punctuation style consistent with source.')
+    ..writeln('8. Avoid hallucinating additional medical advice '
+        'beyond the source meaning.')
+    ..writeln('9. Keep resulting JSON compact (no unnecessary whitespace).')
+    ..writeln('10. Use UTF-8 characters directly (no HTML entities).');
+
+  return p.toString();
 }
 
 /// Localize rows using OpenAI API
@@ -521,26 +651,19 @@ Future<List<LocalizeRow>> extractEmptyCells({
 /// [systemPrompt] - Optional system prompt to guide the localization
 Stream<LocalizeRow> localizeRows({
   required List<LocalizeRow> rows,
-  required String openaiApiKey,
-  String openaiModel = 'O3-MINI',
-  String? systemPrompt,
+  required OpenAIClient client,
 }) async* {
-  const maxRowsPerBatch = 5;
   for (final row in rows) {
-    if (row.isEmpty) continue;
-    for (var i = 0; i < row.cells.length; i += maxRowsPerBatch) {
-      final batch = row.cells.sublist(
-        i,
-        (i + maxRowsPerBatch).clamp(0, row.cells.length),
-      );
-      if (batch.isEmpty) continue;
-      // Simulate localization delay
-      await Future<void>.delayed(const Duration(milliseconds: 250));
-      for (final cell in batch) {
-        // Mock localization by appending locale code to the label
-        cell.text = '${row.label} (${cell.code})';
-      }
-    }
+    // Create user prompt:
+    final prompt = buildLocalizationPrompt(
+      label: row.label,
+      en: row.english,
+      description: row.description,
+      meta: row.meta,
+      languages: row.cells.map((e) => e.code).toList(growable: false),
+    );
+    final response = await client(prompt);
+    debugger();
   }
 }
 
@@ -561,6 +684,9 @@ class OpenAIClient {
 
   final Queue<Future<void> Function()> _taskQueue =
       Queue<Future<void> Function()>();
+
+  bool _isProcessing = false;
+  bool get isProcessing => _isProcessing;
 
   Future<String> _request(
       {required io.HttpClient client, required String prompt}) async {
@@ -603,6 +729,23 @@ class OpenAIClient {
     }
   }
 
+  void _processQueue() {
+    if (_isProcessing) return;
+    if (_taskQueue.isEmpty) return;
+    _isProcessing = true;
+    Future<void>(() async {
+      while (_taskQueue.isNotEmpty) {
+        try {
+          final task = _taskQueue.removeFirst();
+          await task();
+        } on Object {
+          // Ignore errors in the queue processing
+        }
+      }
+      _isProcessing = false;
+    }).ignore();
+  }
+
   Future<Map<String, Object?>> call(String prompt) async {
     final completer = Completer<Map<String, Object?>>();
     _taskQueue.add(() async {
@@ -629,6 +772,7 @@ class OpenAIClient {
         client.close();
       }
     });
+    _processQueue();
     return completer.future;
   }
 }
@@ -641,7 +785,10 @@ Future<void> updateSheet(
   SheetsApi api,
   String sheetId,
   LocalizeRow row,
-) async {}
+) async {
+  if (row.isEmpty) return;
+  debugger();
+}
 
 /// Represents a cell to be localized
 class LocalizeCell {
@@ -662,11 +809,17 @@ class LocalizeRow {
   LocalizeRow({
     required this.row,
     required this.label,
+    required this.description,
+    required this.meta,
+    required this.english,
     required this.cells,
   });
 
   int row;
   String label;
+  String? description;
+  String? meta;
+  String english;
   List<LocalizeCell> cells;
   bool get isEmpty => cells.isEmpty;
 }

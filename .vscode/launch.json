@@ -33,8 +33,9 @@
       "args": [
         "--credentials=credentials.json",
         "--sheet=1QgD5i0U-va3VrljXw8I3o8FxtMJAqrhk3ybbJ9O5mA4",
-        "--token=\"your-openai-api-key\"",
-        "--ignore=\"help, back.*, locales\""
+        "--token-path=\"openai.key\"",
+        "--ignore=\"help, back.*, locales\"",
+        "--prompt=\"prompt.txt\""
       ],
       "env": {},
       /* "preLaunchTask": "flutter:pub:get", */
