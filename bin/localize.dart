@@ -12,6 +12,12 @@ import 'package:googleapis/sheets/v4.dart';
 import 'package:googleapis_auth/auth_io.dart';
 import 'package:path/path.dart' as path;
 
+// TODO(plugfox): Add workers support with semaphore
+// Mike Matiunin <plugfox@gmail.com>, 02 October 2025
+
+// TODO(plugfox): Combine cells range into single batch requests
+// Mike Matiunin <plugfox@gmail.com>, 02 October 2025
+
 final $log = io.stdout.writeln; // Log to stdout
 final $err = io.stderr.writeln; // Log to stderr
 

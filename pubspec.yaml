@@ -35,6 +35,7 @@ platforms:
 # dart run sheety_localization:generate
 executables:
   generate: generate
+  localize: localize
 
 # ==============================================================================
 # DEPENDENCIES
