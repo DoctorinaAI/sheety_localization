@@ -911,14 +911,33 @@ Future<void> updateSheet({
   for (final cell in row.cells) {
     if (cell.isEmpty) continue;
     final text = cell.text;
-    await api.spreadsheets.values.update(
-      ValueRange(values: [
-        [text]
-      ]),
-      sheetId,
-      '$sheetTitle!${columnFromIndex(cell.column)}${row.row + 1}',
-      valueInputOption: 'RAW',
-    );
+    const attempts = 3;
+    for (var attempt = 1; attempt <= attempts; attempt++) {
+      try {
+        await api.spreadsheets.values.update(
+          ValueRange(values: [
+            [text]
+          ]),
+          sheetId,
+          '$sheetTitle!${columnFromIndex(cell.column)}${row.row + 1}',
+          valueInputOption: 'RAW',
+        );
+      } on Object catch (e) {
+        if (attempt == attempts) {
+          $err(
+            'Error updating sheet "$sheetTitle" '
+            'cell [${columnFromIndex(cell.column)}${row.row + 1}]: $e',
+          );
+          rethrow;
+        }
+        $err(
+          'Retrying update for sheet "$sheetTitle" '
+          'cell [${columnFromIndex(cell.column)}${row.row + 1}] '
+          '(attempt $attempt/$attempts) due to error: $e',
+        );
+        await Future<void>.delayed(const Duration(seconds: 30));
+      }
+    }
   }
 }
 
