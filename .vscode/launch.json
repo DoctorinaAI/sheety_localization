@@ -34,7 +34,7 @@
         "--credentials=credentials.json",
         "--sheet=1QgD5i0U-va3VrljXw8I3o8FxtMJAqrhk3ybbJ9O5mA4",
         "--token-path=\"openai.key\"",
-        "--ignore=\"help, back.*, locales\"",
+        "--ignore=\"help, locales\"",
         "--prompt=\"prompt.txt\"",
         "--model=\"gpt-4o-mini\""
       ],

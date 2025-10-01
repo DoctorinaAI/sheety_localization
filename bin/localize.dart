@@ -679,7 +679,7 @@ Stream<LocalizeRow> localizeRows({
 }) async* {
   for (final row in rows) {
     final cells = row.cells.map((e) => e.code).toList(growable: false);
-    const cellsPerBatch = 4;
+    const cellsPerBatch = 3;
     for (var i = 0; i <= cells.length; i += cellsPerBatch) {
       try {
         // Get the next batch of languages to process
