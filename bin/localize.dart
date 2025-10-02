@@ -469,7 +469,7 @@ Future<List<LocalizeRow>> extractEmptyCells({
     final queue = Queue<LocalizeCell>();
     for (var i = 1; i < values.length; i++) {
       final row = values[i];
-      if (row.isEmpty || row.every((cell) => cell == null) || row.length < 5) {
+      if (row.isEmpty || row.every((cell) => cell == null) || row.length < 4) {
         $err('Sheet "$bucket" has empty row ${i + 1}, skipping row...');
         continue;
       }
