@@ -334,7 +334,8 @@ ArgParser buildArgumentsParser() => ArgParser()
   )
   ..addFlag(
     'last-modified',
-    aliases: const ['meta-last-modified', 'last_modified'],
+    aliases: const ['meta-last-modified'],
+    negatable: true,
     defaultsTo: true,
     help: 'Include @@last_modified in generated ARB meta',
   );

@@ -1,3 +1,8 @@
+## 0.3.0
+
+- **FIX**: Resolved issue with `--no-last-modified` flag not functioning as intended.
+- **ADDED**: Introduced localization with ChatGPT for improved translation quality.
+
 ## 0.2.3
 
 - **ADDED**: Optional handling of rows with missing locale columns via `--include-empty`.
