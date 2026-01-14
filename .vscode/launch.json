@@ -12,7 +12,7 @@
         "--lib=\"example/lib/\"",
         "--arb=\"src/arbs/\"",
         "--gen=\"src/generated/\"",
-        "--ignore=\"help, back.*\"",
+        "--ignore=\"help, back.*, locales\"",
         "--comment=Generated from Google Sheets",
         "--author=example@gmail.com",
         "--context=From Google Sheets",
@@ -25,5 +25,22 @@
       /* "preLaunchTask": "flutter:pub:get", */
       "console": "debugConsole"
     },
+    {
+      "name": "Localize",
+      "request": "launch",
+      "type": "dart",
+      "program": "bin/localize.dart",
+      "args": [
+        "--credentials=credentials.json",
+        "--sheet=1QgD5i0U-va3VrljXw8I3o8FxtMJAqrhk3ybbJ9O5mA4",
+        "--token-path=\"openai.key\"",
+        "--ignore=\"help, locales\"",
+        "--prompt=\"prompt.txt\"",
+        "--model=\"gpt-4o-mini\""
+      ],
+      "env": {},
+      /* "preLaunchTask": "flutter:pub:get", */
+      "console": "debugConsole"
+    }
   ]
 }

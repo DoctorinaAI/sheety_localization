@@ -1,0 +1,1064 @@
+// ignore_for_file: unused_import, depend_on_referenced_packages
+
+import 'dart:async';
+import 'dart:collection';
+import 'dart:convert';
+import 'dart:developer';
+import 'dart:io' as io;
+
+import 'package:args/args.dart';
+import 'package:googleapis/people/v1.dart';
+import 'package:googleapis/sheets/v4.dart';
+import 'package:googleapis_auth/auth_io.dart';
+import 'package:path/path.dart' as path;
+
+// TODO(plugfox): Add workers support with semaphore
+// Mike Matiunin <plugfox@gmail.com>, 02 October 2025
+
+// TODO(plugfox): Combine cells range into single batch requests
+// Mike Matiunin <plugfox@gmail.com>, 02 October 2025
+
+final $log = io.stdout.writeln; // Log to stdout
+final $err = io.stderr.writeln; // Log to stderr
+
+/// Localize Google Sheets with OpenAI API (ChatGPT)
+void main(List<String>? $arguments) => runZonedGuarded<void>(
+      () async {
+        // Get command line arguments
+        // If no arguments are provided, use the default values
+        final parser = buildArgumentsParser();
+        final args = parser.parse($arguments ?? []);
+        if (args['help'] == true) {
+          io.stdout
+            ..writeln($help)
+            ..writeln()
+            ..writeln(parser.usage);
+          io.exit(0);
+        }
+
+        String? excludeQuotes(String? input) {
+          if (input == null || input.length < 2) return input;
+          final Runes(:first, :last) = input.runes;
+          if (first == 34 && last == 34) {
+            return input.substring(1, input.length - 1);
+          } else if (first == 39 && last == 39) {
+            return input.substring(1, input.length - 1);
+          } else {
+            return input;
+          }
+        }
+
+        $log('Reading command line arguments...');
+        final credentialsPath = excludeQuotes(args.option('credentials'));
+        final sheetId = excludeQuotes(args.option('sheet'));
+        var openaiApiKey = excludeQuotes(args.option('token'));
+        final openaiApiKeyFile = excludeQuotes(args.option('token-file'));
+        final openaiModel = excludeQuotes(args.option('model'));
+        final promptPath = excludeQuotes(args.option('prompt'));
+        final ignore = excludeQuotes(args.option('ignore'))
+                ?.split(',')
+                .map((e) => e.trim())
+                .where((e) => e.isNotEmpty)
+                .map((e) => RegExp(e))
+                .toList(growable: false) ??
+            const [];
+        final workers =
+            int.tryParse(excludeQuotes(args.option('workers')) ?? '6') ?? 6;
+        String? systemPrompt;
+
+        // Validate required arguments
+        {
+          if (sheetId == null || sheetId.isEmpty) {
+            $err('Error: Missing required argument --sheet');
+            io.exit(1);
+          }
+          if (openaiApiKeyFile != null && openaiApiKeyFile.isNotEmpty) {
+            try {
+              final file = io.File(openaiApiKeyFile);
+              if (!file.existsSync()) {
+                $err(
+                  'Error: OpenAI API key file not found at $openaiApiKeyFile',
+                );
+                io.exit(1);
+              }
+              openaiApiKey = (await file.readAsString()).trim();
+            } on Object catch (e) {
+              $err('Error: Invalid OpenAI API key file path: $e');
+              io.exit(1);
+            }
+          }
+          if (openaiApiKey == null || openaiApiKey.isEmpty) {
+            $err('Error: Missing required argument --token');
+            io.exit(1);
+          }
+          if (credentialsPath == null || credentialsPath.isEmpty) {
+            $err('Error: Missing required argument --credentials');
+            io.exit(1);
+          }
+          if (!io.File(credentialsPath).existsSync()) {
+            $err('Error: Credentials file not found at $credentialsPath');
+            io.exit(1);
+          }
+          if (promptPath != null && promptPath.isNotEmpty) {
+            if (!io.File(promptPath).existsSync()) {
+              $err('Error: Prompt file not found at $promptPath');
+              io.exit(1);
+            }
+            systemPrompt = await io.File(promptPath).readAsString();
+          }
+        }
+
+        // Create Google Sheets API client
+        $log('Creating Google Sheets API client...');
+        final sheetsApi = await createSheetsApiClient(
+          credentialsPath,
+        );
+
+        // Fetch spreadsheets from Google Sheets API
+        $log('Generating localization table...');
+        final sheets = await fetchSpreadsheets(
+          sheetsApi: sheetsApi,
+          sheetId: sheetId,
+          ignore: ignore,
+        ).toList();
+
+        if (sheets.isEmpty) {
+          $err('No valid sheets found to process.');
+          io.exit(1);
+        }
+
+        // Create OpenAI client
+        final client = OpenAIClient(
+          apiKey: openaiApiKey,
+          model: openaiModel ?? 'gpt-4o-mini',
+          workers: workers.clamp(1, 14),
+          systemPrompt: systemPrompt,
+        );
+
+        // Process each sheet
+        $log('Processing ${sheets.length} sheets...');
+        for (final (:sheet, :values) in sheets) {
+          final title = sheet.properties?.title ?? 'Unknown';
+          $log('Processing sheet: $title');
+          final rows = await extractEmptyCells(
+            sheet: sheet,
+            values: values,
+          );
+          if (rows.isEmpty) continue;
+
+          $log('Found ${rows.length} rows to localize in sheet: $title');
+          await for (final row in localizeRows(
+            rows: rows,
+            client: client,
+          )) {
+            if (row.isEmpty) continue;
+            await updateSheet(
+              api: sheetsApi,
+              sheetId: sheetId,
+              sheetTitle: title,
+              row: row,
+            );
+          }
+        }
+      },
+      (error, stackTrace) {
+        $err(error);
+        io.exit(1);
+      },
+    );
+
+/// Parse arguments
+ArgParser buildArgumentsParser() => ArgParser()
+  ..addFlag(
+    'help',
+    abbr: 'h',
+    aliases: const <String>['readme', 'usage', 'info', 'howto'],
+    negatable: false,
+    defaultsTo: false,
+    help: 'Print this usage information',
+  )
+  ..addOption(
+    'credentials',
+    abbr: 'c',
+    aliases: const <String>['key', 'keyfile', 'cred', 'creds', 'secret'],
+    mandatory: false,
+    defaultsTo: 'credentials.json',
+    valueHelp: 'path/to/credentials.json',
+    help: 'Path to service account credentials JSON file',
+  )
+  ..addOption(
+    'sheet',
+    abbr: 's',
+    aliases: const <String>[
+      'sheet',
+      'spreadsheet',
+      'spreadsheet-id',
+      'table',
+      'source',
+      'id',
+    ],
+    mandatory: true,
+    valueHelp: 'spreadsheet-id',
+    help: 'Google Spreadsheet ID',
+  )
+  ..addOption(
+    'token',
+    abbr: 't',
+    aliases: const <String>[
+      'chatgpt',
+      'openai',
+      'api',
+      'apikey',
+      'api-key',
+    ],
+    mandatory: false,
+    valueHelp: '<your-api-key>',
+    help: 'OpenAI API key (e.g. sk-...)',
+  )
+  ..addOption(
+    'token-file',
+    abbr: 'f',
+    aliases: const <String>[
+      'token-path',
+      'chatgpt-file',
+      'openai-file',
+      'api-file',
+      'apikey-file',
+      'api-key-file',
+    ],
+    mandatory: false,
+    valueHelp: '<your-api-key>',
+    help: 'OpenAI API key (e.g. sk-...)',
+  )
+  ..addOption(
+    'model',
+    abbr: 'm',
+    aliases: const <String>[
+      'gpt',
+      'gpt-model',
+      'openai-model',
+      'chatgpt-model',
+      'localize-model',
+      'llm',
+    ],
+    defaultsTo: 'gpt-4o-mini',
+    mandatory: false,
+    valueHelp: 'model',
+    help: 'OpenAI model to use (e.g. chatgpt-4)',
+  )
+  ..addOption(
+    'ignore',
+    abbr: 'i',
+    aliases: const <String>[
+      'ignore-table',
+      'exclude',
+      'skip',
+      'ignore-patterns',
+      'ignore-sheets',
+      'exclude-sheets',
+      'skip-sheets',
+      'exclude-patterns',
+      'skip-patterns',
+    ],
+    mandatory: false,
+    defaultsTo: '',
+    valueHelp: 'help, backend-.*, temp-.*',
+    help: 'Comma-separated list of RegExp patterns to ignore sheets '
+        'whose titles match any of the patterns',
+  )
+  ..addOption(
+    'prompt',
+    abbr: 'p',
+    aliases: const <String>[
+      'system',
+      'instruction',
+      'instructions',
+      'localize-prompt',
+      'chatgpt-prompt',
+      'openai-prompt',
+    ],
+    mandatory: false,
+    valueHelp: 'path/to/prompt.txt',
+    help: 'Path to the system prompt file',
+  )
+  ..addOption(
+    'workers',
+    abbr: 'w',
+    aliases: const <String>[
+      'isolates',
+      'isolate',
+      'threads',
+      'thread',
+      'concurrency',
+      'parallel',
+      'parallelism'
+    ],
+    mandatory: false,
+    defaultsTo: '6',
+    valueHelp: 'number',
+    help: 'Number of worker isolates to use',
+  );
+
+/// Help message for the command line arguments
+const String $help = '''
+Localization Generator
+
+This script uses the OpenAI API to localize the content of a Google Sheet.
+You need to provide the Google Spreadsheet ID and the path to the service account credentials JSON file.
+
+Usage: dart run bin/localize.dart [options]
+''';
+
+/// Create Google Sheets API client
+Future<SheetsApi> createSheetsApiClient(
+  String credentialsPath,
+) async {
+  $log('Credentials path: $credentialsPath');
+  final credentialsFile = io.File(credentialsPath);
+  if (!credentialsFile.existsSync()) {
+    $err('Credentials file not found: $credentialsPath');
+    io.exit(1);
+  }
+
+  $log('Extracting credentials from file...');
+  ServiceAccountCredentials credentials;
+  try {
+    final bytes = await credentialsFile.readAsBytes();
+    final credentialsJson = const Utf8Decoder()
+        .fuse(const JsonDecoder())
+        .cast<List<int>, Map<String, Object?>>()
+        .convert(bytes);
+    credentials = ServiceAccountCredentials.fromJson(credentialsJson);
+  } on Object catch (e) {
+    $err('Error reading credentials file: $e');
+    io.exit(1);
+  }
+
+  $log('Creating Google Sheets API client...');
+  SheetsApi sheetsApi;
+  try {
+    final client = await clientViaServiceAccount(credentials, [
+      // SheetsApi.spreadsheetsReadonlyScope,
+      SheetsApi.spreadsheetsScope,
+    ]);
+    sheetsApi = SheetsApi(client);
+  } on Object catch (e) {
+    $err('Error creating Google Sheets API client: $e');
+    io.exit(1);
+  }
+  return sheetsApi;
+}
+
+/// Fetch spreadsheets from Google Sheets API
+/// [credentialsPath] - Path to the service account credentials JSON file
+/// [sheetId] - Google Spreadsheet ID
+/// Returns a list of sheets and their values.
+Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
+  required SheetsApi sheetsApi,
+  required String sheetId,
+  List<RegExp> ignore = const [],
+}) async* {
+  $log('Fetching spreadsheet data...');
+  List<Sheet> sheets;
+  try {
+    final spreadsheet = await sheetsApi.spreadsheets.get(sheetId);
+    sheets = spreadsheet.sheets ?? [];
+  } on Object catch (e) {
+    $err('Error fetching spreadsheet data: $e');
+    io.exit(1);
+  }
+  if (sheets.isEmpty) {
+    $err('No sheets found in the spreadsheet with ID: $sheetId');
+    io.exit(1);
+  }
+
+  $log('Retrieving data from ${sheets.length} sheets...');
+  for (final sheet in sheets) {
+    final properties = sheet.properties;
+    if (properties == null) {
+      $err('Sheet properties are null, skipping sheet...');
+      continue;
+    }
+    final SheetProperties(sheetId: id, title: title) = properties;
+
+    // Check if the sheet title matches any of the ignore patterns
+    if (id == null) {
+      $err('Sheet ID is null, skipping sheet...');
+      continue;
+    } else if (title == null || title.isEmpty) {
+      $err('Sheet title is null or empty, skipping sheet...');
+      continue;
+    } else if (ignore.any((pattern) => pattern.hasMatch(title))) {
+      $log('Ignoring sheet "$title" as it matches ignore patterns');
+      continue;
+    }
+
+    final ValueRange(:values) = await sheetsApi.spreadsheets.values.get(
+      sheetId,
+      title,
+    );
+
+    // Validate sheet values
+    if (values == null) {
+      $err('Sheet "$title" has no values, skipping sheet...');
+      continue;
+    } else if (values.isEmpty) {
+      $err('Sheet "$title" is empty, skipping sheet...');
+      continue;
+    } else if (values.length < 2) {
+      $err('Sheet "$title" has no rows, skipping sheet...');
+      continue;
+    } else if (values.first.length < 4) {
+      $err('Sheet "$title" has no localizations, skipping sheet...');
+      continue;
+    }
+
+    yield (sheet: sheet, values: values);
+  }
+}
+
+/// Extract empty cells to be localized
+/// [sheet] - The sheet to process
+/// [values] - The values of the sheet
+Future<List<LocalizeRow>> extractEmptyCells({
+  required Sheet sheet,
+  required List<List<Object?>> values,
+}) async {
+  final sanitize = sanitizer();
+
+  final bucket = sanitize(sheet.properties?.title ?? '');
+  if (bucket.isEmpty) {
+    $err(
+      'Sheet '
+      '"${sheet.properties?.sheetId ?? sheet.properties?.index ?? '???'}" '
+      'title is empty, skipping sheet...',
+    );
+    return const [];
+  }
+
+  final header = values.first;
+
+  // Fill locales
+  final locales = List.filled(header.length, '', growable: false);
+  for (var i = 3; i < header.length; i++) {
+    final cell = header[i];
+    switch (cell) {
+      case String text when text.isNotEmpty:
+        final locale = sanitize(text);
+        locales[i] = locale;
+      case String _:
+        $err(
+          'Sheet "$bucket" has empty column '
+          '[${columnFromIndex(i)}] in header, '
+          'ignore the whole column...',
+        );
+        continue;
+      default:
+        $err(
+          'Sheet "$bucket" has non-string column '
+          '[${columnFromIndex(i)}] in header, '
+          'ignore whole column...',
+        );
+        continue;
+    }
+  }
+
+  // Process locales from the sheet, skipping empty ones
+  final localize = <LocalizeRow>[];
+  {
+    final queue = Queue<LocalizeCell>();
+    for (var i = 1; i < values.length; i++) {
+      final row = values[i];
+      if (row.isEmpty || row.every((cell) => cell == null) || row.length < 4) {
+        $err('Sheet "$bucket" has empty row ${i + 1}, skipping row...');
+        continue;
+      }
+
+      // Extract label, description, and meta from the row
+      final [$label, $description, $meta, $english, ..._] = row;
+      if ($label == null || $label is! String || $label.isEmpty) {
+        $err(
+          'Sheet "$bucket" has empty label in row #${i + 1}, '
+          'skipping row...',
+        );
+        continue;
+      }
+      final label = sanitize($label);
+
+      // Extract locales from the row
+      for (var j = 4; j < locales.length; j++) {
+        final cell = row.length > j ? row[j] : null;
+        final locale = locales[j];
+        if (locale.isEmpty) continue; // Skip empty locales
+        switch (cell) {
+          case null:
+            queue.add(LocalizeCell(column: j, code: locale, text: ''));
+          case String text when text.isNotEmpty:
+            continue; // Already localized, skip
+          case String():
+            queue.add(LocalizeCell(column: j, code: locale, text: ''));
+          case num():
+          default:
+            continue; // Skip non-string cells
+        }
+      }
+
+      // Skip rows with no locales to localize
+      if (queue.isEmpty) continue;
+      localize.add(
+        LocalizeRow(
+          row: i,
+          label: label,
+          description: switch ($description) {
+            String text when text.isNotEmpty => text,
+            num number => number.toString(),
+            _ => null,
+          },
+          meta: switch ($meta) {
+            String text when text.isNotEmpty => text,
+            num number => number.toString(),
+            _ => null,
+          },
+          english: switch ($english) {
+            String text when text.isNotEmpty => text,
+            num number => number.toString(),
+            _ => label,
+          },
+          cells: queue.toList(growable: false),
+        ),
+      );
+      queue.clear();
+    }
+  }
+
+  return localize;
+}
+
+/// Builds a strict prompt for a localization task.
+/// - Comments are in English.
+/// - Uses jsonEncode for safe inline JSON embedding.
+/// - Uses StringBuffer with cascade operators for clarity and speed.
+/// - Keeps soft-ish validation with explicit errors (same as original intent).
+({String prompt, Map<String, Object?> schema}) buildLocalizationPrompt({
+  required String label,
+  required String en,
+  required List<String> languages,
+  String? description,
+  String? meta, // keep as String? to avoid breaking callers; embed as-is
+}) {
+  // -- helpers ---------------------------------------------------------------
+
+  /// Return trimmed string or null if empty.
+  String? safeStr(String? v) => v == null || v.trim().isEmpty ? null : v.trim();
+
+  /// Unique, order-preserving list of non-empty language codes.
+  List<String> uniqLangs(Iterable<String> arr) => List<String>.unmodifiable(
+        LinkedHashSet<String>.from(
+          arr.map(safeStr).whereType<String>().where((s) => s.isNotEmpty),
+        ),
+      );
+
+  // -- unpack & normalize ----------------------------------------------------
+  final normLabel = safeStr(label);
+  final normDesc = safeStr(description);
+  final normEn = safeStr(en);
+  final langs = uniqLangs(languages);
+  final String? metaInline = safeStr(meta); // already a string; embed as-is
+
+  // -- validation (explicit) -------------------------------------------------
+  if (normLabel == null) throw ArgumentError('Missing label');
+  if (normEn == null) throw ArgumentError('Missing source English text');
+  if (langs.isEmpty) throw ArgumentError('No target languages provided');
+
+  // -- output skeleton (built once; used in prompt to fix structure) ---------
+  final skeleton = StringBuffer()
+    ..writeln('{')
+    ..writeln('  "label": ${jsonEncode(normLabel)},')
+    ..writeln('  "localization": {');
+  for (var i = 0; i < langs.length; i++) {
+    final key = jsonEncode(langs[i]); // safe quoted JSON key
+    final comma = i == langs.length - 1 ? '' : ',';
+    skeleton.writeln('    $key: {"text": ""}$comma');
+  }
+  skeleton
+    ..writeln('  }')
+    ..writeln('}');
+
+  // -- prompt assembly (tight, explicit, production-safe) --------------------
+  final p = StringBuffer()
+    ..writeln('You are a professional localization engine '
+        'for a medical symptom-based advice chatbot.')
+    ..writeln('Localize the item below into the target languages.')
+    ..writeln('--- CONTEXT INPUT ---')
+    ..writeln('label: $normLabel');
+  if (normDesc != null) p.writeln('description: $normDesc');
+  if (metaInline != null) {
+    // meta is already string; if caller wants JSON,
+    // they should pass it as a JSON string.
+    p.writeln('meta_placeholders (ICU / intl format): $metaInline');
+  }
+  p
+    ..writeln('en_source: $normEn')
+    ..writeln('target_languages: ${langs.join(', ')}')
+    ..writeln('--- OUTPUT REQUIREMENTS ---')
+    ..writeln(
+        'Return ONLY valid minified JSON (no comments, no markdown fences).')
+    ..writeln('Do NOT add explanatory text before or after JSON.')
+    ..writeln('All requested languages MUST be present, no additional keys.')
+    ..writeln('Preserve ICU/intl placeholders exactly '
+        '(e.g., {name}, {version}, {count}).')
+    ..writeln('Preserve HTML-like or XML-like tags verbatim if present.')
+    ..writeln('Do not introduce new placeholders or variables.')
+    ..writeln('If translation would be identical to English, '
+        'repeat the English text.')
+    ..writeln('If a translation is infeasible or unclear, '
+        'copy the English text as fallback.')
+    ..writeln('Avoid adding periods if original does not have one; '
+        'keep stylistic equivalence.')
+    ..writeln('No leading/trailing spaces in values.')
+    ..writeln('Each value MUST be culturally and medically appropriate, '
+        'neutral and concise.')
+    ..writeln('No quotes escaping beyond standard JSON string escaping.')
+    ..writeln('--- JSON SCHEMA (informal) ---')
+    ..writeln('{')
+    ..writeln('  "label": string,')
+    ..writeln('  "localization": {')
+    ..writeln('    <language_code>: {"text": string (non-empty)} '
+        '// exactly the requested languages')
+    ..writeln('  }')
+    ..writeln('}')
+    ..writeln('--- OUTPUT SKELETON (structure to follow) ---')
+    ..writeln(skeleton.toString())
+    ..writeln('--- RULES SUMMARY ---')
+    ..writeln('1. Output only JSON.')
+    ..writeln('2. Keys: label, localization.')
+    ..writeln('3. localization contains exactly the target languages.')
+    ..writeln('4. Each language object: {"text": "<translation>"}.')
+    ..writeln('5. Do not include description, meta, or extra metadata fields.')
+    ..writeln('6. Do not translate placeholders or modify their braces.')
+    ..writeln('7. Keep punctuation style consistent with source.')
+    ..writeln('8. Avoid hallucinating additional medical '
+        'advice beyond the source meaning.')
+    ..writeln('9. Keep resulting JSON compact (no unnecessary whitespace).')
+    ..writeln('10. Use UTF-8 characters directly (no HTML entities).');
+
+  // -- strict JSON Schema for Responses API ----------------------------------
+  // This object can be used directly under response_format.json_schema
+  // { "name": "...", "strict": true, "schema": { ... } }
+  Map<String, Object?> langObjectSchema() => <String, Object?>{
+        'type': 'object',
+        'additionalProperties': false,
+        'required': ['text'],
+        'properties': {
+          'text': {'type': 'string', 'minLength': 1}
+        },
+      };
+
+  final Map<String, Object?> langProps = {
+    for (final code in langs) code: langObjectSchema()
+  };
+
+  final schemaMap = <String, Object?>{
+    'type': 'object',
+    'additionalProperties': false,
+    'required': ['label', 'localization'],
+    'properties': {
+      'label': {'type': 'string', 'minLength': 1},
+      'localization': {
+        'type': 'object',
+        'additionalProperties': false,
+        'required': langs, // exactly these languages must be present
+        'properties': langProps,
+      }
+    }
+  };
+
+  return (prompt: p.toString(), schema: schemaMap);
+}
+
+/// Localize rows using OpenAI API
+/// [rows] - The rows to localize
+/// [client] - The OpenAI client to use
+Stream<LocalizeRow> localizeRows({
+  required List<LocalizeRow> rows,
+  required OpenAIClient client,
+}) async* {
+  for (final row in rows) {
+    final cells = row.cells.map((e) => e.code).toList(growable: false);
+    const cellsPerBatch = 3;
+    for (var i = 0; i <= cells.length; i += cellsPerBatch) {
+      try {
+        // Get the next batch of languages to process
+        if (i >= cells.length) break;
+        final languages =
+            cells.skip(i).take(cellsPerBatch).toList(growable: false);
+        if (languages.isEmpty) break;
+
+        // Create user prompt:
+        final (:prompt, :schema) = buildLocalizationPrompt(
+          label: row.label,
+          en: row.english,
+          description: row.description,
+          meta: row.meta,
+          languages: languages,
+        );
+
+        // Call OpenAI API:
+        final data = await client(prompt: prompt, schema: schema);
+        if (data.label != row.label)
+          throw ArgumentError(
+            'Mismatched label in response: expected "${row.label}", '
+            'got "${data.label}"',
+          );
+
+        // Update row with localized values:
+        for (final MapEntry(key: locale, :value) in data.localization.entries) {
+          if (value case {'text': String text} when text.isNotEmpty) {
+            final cell = row.cells.firstWhere(
+              (c) => c.code == locale,
+              orElse: () => throw ArgumentError(
+                'Unexpected locale in response: $locale',
+              ),
+            );
+            cell.text = text;
+          } else {
+            throw ArgumentError(
+              'Invalid or empty text for locale "$locale" in response',
+            );
+          }
+        }
+      } on Object catch (e, s) {
+        $err('Error localizing row "${row.label}": $e\n$s');
+        continue;
+      }
+    }
+    yield row;
+  }
+}
+
+class OpenAIClient {
+  OpenAIClient({
+    required this.apiKey,
+    this.model = 'gpt-4o-mini', // gpt-4o-mini
+    this.workers = 6,
+    this.retries = 3,
+    this.systemPrompt,
+  });
+
+  final String apiKey;
+  final String model;
+  final int workers;
+  final int retries;
+  final String? systemPrompt;
+
+  final Queue<Future<void> Function()> _taskQueue =
+      Queue<Future<void> Function()>();
+
+  bool _isProcessing = false;
+  bool get isProcessing => _isProcessing;
+
+  Future<({String label, Map<String, Object?> localization})> _request({
+    required io.HttpClient client,
+    required String prompt,
+    required Map<String, Object?> schema,
+  }) async {
+    final uri = Uri.parse('https://api.openai.com/v1/responses');
+    final request = await client.postUrl(uri)
+      ..headers.set('Content-Type', 'application/json')
+      ..headers.set('Authorization', 'Bearer $apiKey');
+    final body = jsonEncode({
+      'model': model, // e.g. "gpt-4o-mini"
+
+      // System prompt goes into `instructions` for Responses API
+      if (systemPrompt != null) 'instructions': systemPrompt,
+
+      // User prompt goes into `input` with explicit content typing
+      'input': [
+        {
+          'role': 'user',
+          'content': [
+            {
+              'type': 'input_text',
+              'text': prompt,
+            }
+          ]
+        }
+      ],
+
+      // Specify structured output at the TOP-LEVEL under "text.format"
+      'text': {
+        'format': {
+          'name': 'i18n_payload',
+          'strict': true,
+          'type': 'json_schema',
+          'schema': schema
+        }
+      },
+
+      // Deterministic outputs for pipeline stability
+      //'verbosity': 'low',
+      'temperature': 0,
+      'top_p': 1,
+      //'seed': 42,
+
+      // Token budget: translation payload is small, but keep headroom
+      'max_output_tokens': 2048,
+
+      //'reasoning': {'effort': 'low'}
+    });
+    request.add(utf8.encode(body));
+    final response = await request.close();
+    if (response.statusCode != 200)
+      throw Exception(
+        'OpenAI API error: ${response.statusCode}'
+        ' - '
+        '${await response.transform(utf8.decoder).join()}',
+      );
+    final responseBody = await response.transform(utf8.decoder).join();
+    final json = jsonDecode(responseBody);
+    if (json case {'output': List<Object?> output} when output.isNotEmpty) {
+      for (final item in output) {
+        if (item case {'content': List<Object?> content}) {
+          for (final {'text': text}
+              in content.whereType<Map<String, Object?>>()) {
+            if (jsonDecode(text as String)
+                case {
+                  'label': String label,
+                  'localization': Map<String, Object?> localization
+                }) {
+              return (label: label, localization: localization);
+            } else {
+              throw Exception('Invalid JSON structure in OpenAI response');
+            }
+          }
+        } else {
+          throw Exception('Invalid content structure in OpenAI response');
+        }
+      }
+    } else if (json case {'error': Map<String, Object?> error}) {
+      throw Exception('OpenAI API error: $error');
+    } else {
+      throw Exception('Invalid response from OpenAI API: $json');
+    }
+    throw Exception('Invalid response format from OpenAI API');
+  }
+
+  void _processQueue() {
+    if (_isProcessing) return;
+    if (_taskQueue.isEmpty) return;
+    _isProcessing = true;
+    Future<void>(() async {
+      while (_taskQueue.isNotEmpty) {
+        try {
+          final task = _taskQueue.removeFirst();
+          await task();
+        } on Object {
+          // Ignore errors in the queue processing
+        }
+      }
+      _isProcessing = false;
+    }).ignore();
+  }
+
+  Future<({String label, Map<String, Object?> localization})> call({
+    required String prompt,
+    required Map<String, Object?> schema,
+  }) async {
+    final completer =
+        Completer<({String label, Map<String, Object?> localization})>();
+    _taskQueue.add(() async {
+      io.HttpClient client = io.HttpClient();
+      try {
+        for (var i = 0; i < retries; i++) {
+          try {
+            final response = await _request(
+              client: client,
+              prompt: prompt,
+              schema: schema,
+            );
+            if (!completer.isCompleted) completer.complete(response);
+            return;
+          } on FormatException catch (e) {
+            if (i == retries - 1) rethrow;
+            $err('OpenAI API returned invalid JSON '
+                '(attempt ${i + 1}/$retries): $e');
+            await Future<void>.delayed(const Duration(milliseconds: 250));
+          } on Object catch (e) {
+            if (i == retries - 1) rethrow;
+            $err('OpenAI API call failed ' '(attempt ${i + 1}/$retries): $e');
+            await Future<void>.delayed(const Duration(milliseconds: 250));
+          }
+        }
+      } on Object catch (e, s) {
+        if (!completer.isCompleted) completer.completeError(e, s);
+        $err('OpenAI API call failed: $e');
+      } finally {
+        client.close();
+      }
+    });
+    _processQueue();
+    return completer.future;
+  }
+}
+
+/// Rate limiter for Google Sheets API calls
+class RateLimiter {
+  RateLimiter({
+    required this.maxRequestsPerMinute,
+  }) : _requestTimes = <int>[];
+
+  final int maxRequestsPerMinute;
+  final List<int> _requestTimes;
+  final Stopwatch _stopwatch = Stopwatch()..start();
+
+  /// Wait if necessary to respect rate limits
+  Future<void> waitIfNeeded() async {
+    final now = _stopwatch.elapsedMilliseconds;
+
+    // Remove requests older than 1 minute
+    _requestTimes.removeWhere((time) => now - time > 60000);
+
+    // If we're at the limit, wait until we can make another request
+    if (_requestTimes.length >= maxRequestsPerMinute) {
+      final oldestRequest = _requestTimes.first;
+      final waitTime = 60000 - (now - oldestRequest) + 100; // +100ms buffer
+      if (waitTime > 0) {
+        $log('Rate limit reached, waiting ${waitTime}ms...');
+        await Future<void>.delayed(Duration(milliseconds: waitTime));
+      }
+      // Remove the oldest request after waiting
+      _requestTimes.removeAt(0);
+    }
+
+    // Record this request
+    _requestTimes.add(_stopwatch.elapsedMilliseconds);
+  }
+}
+
+// Global rate limiter instance
+final RateLimiter _sheetsRateLimiter = RateLimiter(maxRequestsPerMinute: 60);
+
+/// Update the Google Sheet with localized values
+/// [api] - The Google Sheets API client
+/// [sheetId] - The sheet to update
+/// [sheetTitle] - The title of the sheet
+/// [row] - The row with localized values
+Future<void> updateSheet({
+  required SheetsApi api,
+  required String sheetId,
+  required String sheetTitle,
+  required LocalizeRow row,
+}) async {
+  if (row.isEmpty) return;
+
+  for (final cell in row.cells) {
+    if (cell.isEmpty) continue;
+    final text = cell.text;
+    const attempts = 3;
+
+    for (var attempt = 1; attempt <= attempts; attempt++) {
+      try {
+        // Wait for rate limiter before making API call
+        await _sheetsRateLimiter.waitIfNeeded();
+
+        await api.spreadsheets.values.update(
+          ValueRange(values: [
+            [text]
+          ]),
+          sheetId,
+          '$sheetTitle!${columnFromIndex(cell.column)}${row.row + 1}',
+          valueInputOption: 'RAW',
+        );
+        break; // Success, exit retry loop
+      } on Object catch (e) {
+        if (attempt == attempts) {
+          $err(
+            'Error updating sheet "$sheetTitle" '
+            'cell [${columnFromIndex(cell.column)}${row.row + 1}]: $e',
+          );
+          rethrow;
+        }
+        $err(
+          'Retrying update for sheet "$sheetTitle" '
+          'cell [${columnFromIndex(cell.column)}${row.row + 1}] '
+          '(attempt $attempt/$attempts) due to error: $e',
+        );
+        await Future<void>.delayed(const Duration(seconds: 30));
+      }
+    }
+  }
+}
+
+/// Represents a cell to be localized
+class LocalizeCell {
+  LocalizeCell({
+    required this.column,
+    required this.code,
+    required this.text,
+  });
+
+  int column;
+  String code;
+  String text;
+  bool get isEmpty => text.isEmpty;
+}
+
+/// Represents a row to be localized
+class LocalizeRow {
+  LocalizeRow({
+    required this.row,
+    required this.label,
+    required this.description,
+    required this.meta,
+    required this.english,
+    required this.cells,
+  });
+
+  int row;
+  String label;
+  String? description;
+  String? meta;
+  String english;
+  List<LocalizeCell> cells;
+  bool get isEmpty => cells.isEmpty;
+}
+
+/*
+sheetsApi.spreadsheets.values.batchUpdate(
+  BatchUpdateValuesRequest(
+    data: <ValueRange>[
+      ValueRange(
+        range: 'A1:Z1',
+        majorDimension: 'ROWS',
+        values: [
+          ['Header1', 'Header2', 'Header3', 'Locale1', 'Locale2']
+        ],
+      ),
+    ],
+    valueInputOption: 'RAW',
+  ),
+  sheetId,
+); */
+
+/// Create sanitizer function to sanitize the localization table keys
+String Function(String input) sanitizer() {
+  final invalid = RegExp('[^a-zA-Z0-9_]');
+  final merge = RegExp('_+');
+  final trim = RegExp(r'^_+|_+$');
+  return (String input) => input
+      .replaceAll(invalid, '_') // replace invalid characters with _
+      .replaceAll(merge, '_') // merge multiple _ into one
+      .replaceAll(trim, ''); // remove leading and trailing _
+}
+
+/// Convert column index to column name (e.g. 0 -> A, 1 -> B, 26 -> AA)
+String columnFromIndex(int index) {
+  if (index < 0) throw ArgumentError('Index must be non-negative');
+  var columnName = '';
+  do {
+    int remainder = index % 26;
+    columnName = String.fromCharCode(65 + remainder) + columnName;
+    index = (index / 26).floor() - 1;
+  } while (index >= 0);
+  return columnName;
+}
