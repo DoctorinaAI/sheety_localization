@@ -138,7 +138,10 @@ dart pub global run sheety_localization:generate \
   Custom header comment for each generated Dart file. Defaults to `// This file is generated, do not edit it manually!`.
 - `--format` / `--no-format`:
   Whether to run `dart format` on generated Dart code. Enabled by default.
-
+- `--include-empty`:
+  Allow processing rows where Google Sheets API omits trailing empty locale cells.
+  Missing translations are omitted per-locale (no key and no `@meta` entry).
+  Default: disabled (rows with missing locale columns are skipped).
 ---
 
 ## Integration Steps
@@ -386,6 +389,12 @@ packages/
 - **Use `--author`, `--comment`, and `--modified` flags** to annotate generated files for auditing.
 - If you add or remove columns in the sheet (e.g., adding `fr` for French), delete old ARB files or run the generator with `--prefix` set to a new value to force regeneration.
 - To regenerate only a subset of sheets, you can temporarily hide unwanted sheets in Google Sheets, or maintain separate spreadsheets per feature set.
+
+### Note about missing cells in Google Sheets
+
+Google Sheets API may omit trailing empty cells in returned rows.
+By default, such rows are skipped to avoid generating partially broken translations.
+Use `--include-empty` to still generate available translations from these rows.
 
 ---
 

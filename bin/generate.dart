@@ -60,6 +60,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         final prefix = excludeQuotes(args.option('prefix')) ?? 'app';
         final header = excludeQuotes(args.option('header'));
         final format = args.flag('format');
+        final includeEmpty = args.flag('include-empty');
         final meta = <String, String>{
           if (excludeQuotes(args.option('author')) case String author)
             '@@author': author,
@@ -90,7 +91,10 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         );
 
         // Generate localization table from the fetched sheets
-        final buckets = await generateLocalizationTable(sheets);
+        final buckets = await generateLocalizationTable(
+          sheets,
+          includeEmpty: includeEmpty,
+        );
         if (buckets.isEmpty) {
           $err('No data found in the sheets');
           io.exit(1);
@@ -312,6 +316,14 @@ ArgParser buildArgumentsParser() => ArgParser()
     help: 'Header for the generated Dart files',
   )
   ..addFlag(
+    'include-empty',
+    aliases: const ['include-empty-strings', 'empty', 'keep-empty'],
+    negatable: true,
+    defaultsTo: false,
+    help: 'Generate empty string values for missing translations. '
+        'If false, missing translations are omitted (no key and no @meta).',
+  )
+  ..addFlag(
     'format',
     abbr: 'f',
     aliases: const <String>['dart-format', 'dartfmt', 'format-dart', 'fmt'],
@@ -424,8 +436,9 @@ Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
 /// Generate localization table from Google Sheets
 /// [sheets] - List of sheets in the spreadsheet
 Future<Buckets> generateLocalizationTable(
-  Stream<({Sheet sheet, List<List<Object?>> values})> sheets,
-) async {
+  Stream<({Sheet sheet, List<List<Object?>> values})> sheets, {
+  bool includeEmpty = false,
+}) async {
   final sanitize = Buckets.sanitizer();
   final buckets = Buckets.empty();
 
@@ -516,20 +529,37 @@ Future<Buckets> generateLocalizationTable(
       if (row.isEmpty) {
         $err('Sheet "$bucket" has empty row #${i + 1}, skipping row...');
         continue;
-      } else if (row.length != locales.length) {
-        $err(
-          'Sheet "$bucket" row #${i + 1} has wrong number of locales, '
-          'skipping row...',
-        );
-        continue;
       }
 
-      // Extract label, description, and meta from the row
-      final [$label, $description, $meta, ..._] = row;
+      // If row has fewer cells than header/locales, Sheets API may have omitted trailing empties.
+      // Default behaviour: skip such rows.
+      // With includeEmpty=true: pad missing cells with nulls
+      // so we can still generate existing translations.
+      final List<Object?> normalizedRow;
+      if (row.length == locales.length) {
+        normalizedRow = row;
+      } else if (row.length < locales.length) {
+        if (!includeEmpty) {
+          $err(
+            'Sheet "$bucket" row #${i + 1} has missing locale columns '
+            '(${row.length} < ${locales.length}), skipping row...',
+          );
+          continue;
+        }
+        normalizedRow = <Object?>[
+          ...row,
+          ...List<Object?>.filled(locales.length - row.length, null),
+        ];
+      } else {
+        // Extra cells: keep only header-sized part
+        normalizedRow = row.sublist(0, locales.length);
+      }
+
+      final [$label, $description, $meta, ..._] = normalizedRow;
+
       if ($label == null || $label is! String || $label.isEmpty) {
         $err(
-          'Sheet "$bucket" has empty label in row #${i + 1}, '
-          'skipping row...',
+          'Sheet "$bucket" has empty label in row #${i + 1}, skipping row...',
         );
         continue;
       }
@@ -565,31 +595,34 @@ Future<Buckets> generateLocalizationTable(
       }
 
       // Extract locales from the row
-      for (var j = 3; j < row.length; j++) {
-        final cell = row[j];
+      for (var j = 3; j < normalizedRow.length; j++) {
+        final cell = normalizedRow[j];
         final locale = locales[j];
+
         // TODO(plugfox): Add support for other types of cells
         // (e.g. booleans, DateTime, Formulas, JSON etc.)
         // Mike Matiunin <plugfox@gmail.com>, 03 April 2025
         switch (cell) {
           case String text when text.isNotEmpty:
             locale.push(label, text);
+            locale.push('@$label', meta);
+            break;
+
           case String() || null:
-            $err(
-              'Sheet "$bucket" has empty column '
-              '[${column(j)}] in row #${i + 1}',
-            );
-            locale.push(label, '');
+            // Missing translation:
+            // do not generate key nor @meta for this locale.
+            break;
+
           case num():
             locale.push(label, cell.toString());
+            locale.push('@$label', meta);
+            break;
+
           default:
-            $err(
-              'Sheet "$bucket" has non-string column '
-              '[${column(j)}] in row #${i + 1}',
-            );
             locale.push(label, cell.toString());
+            locale.push('@$label', meta);
+            break;
         }
-        locale.push('@$label', meta);
       }
     }
   }
