@@ -129,7 +129,10 @@ dart pub global run sheety_localization:generate \
 - `--comment`:
   Description text to include in generated ARB files.
 - `--modified`:
-  Last modified timestamp for generated ARB files in ISO 8601 (e.g., `2025-06-04T12:30:00Z`). Defaults to the current time.
+  Last modified timestamp in ISO 8601. Defaults to current UTC time.
+- `--last-modified` / `--no-last-modified`:
+  Toggle adding `@@last_modified` to ARB meta. Default: enabled.
+  When disabled, `--modified` has no effect.
 - `--context`:
   Arbitrary string (e.g., version number) to embed in ARB files.
 - `--prefix`:
@@ -142,6 +145,7 @@ dart pub global run sheety_localization:generate \
   Allow processing rows where Google Sheets API omits trailing empty locale cells.
   Missing translations are omitted per-locale (no key and no `@meta` entry).
   Default: disabled (rows with missing locale columns are skipped).
+
 ---
 
 ## Integration Steps
@@ -257,7 +261,9 @@ dart pub global run sheety_localization:generate \
      --arb=src/l10n \
      --gen=src/generated \
      --prefix=app \
-     --format
+     --format \
+     --no-include-empty \
+     --no-last-modified
    ```
 
    - This will produce:
@@ -389,6 +395,7 @@ packages/
 - **Use `--author`, `--comment`, and `--modified` flags** to annotate generated files for auditing.
 - If you add or remove columns in the sheet (e.g., adding `fr` for French), delete old ARB files or run the generator with `--prefix` set to a new value to force regeneration.
 - To regenerate only a subset of sheets, you can temporarily hide unwanted sheets in Google Sheets, or maintain separate spreadsheets per feature set.
+- Use `--no-last-modified` to keep ARBs stable in git diffs.
 
 ### Note about missing cells in Google Sheets
 

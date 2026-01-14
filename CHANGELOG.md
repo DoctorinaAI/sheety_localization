@@ -1,7 +1,8 @@
 ## 0.2.3
 
-- **ADDED**: Optional handling of rows with missing locale columns.
+- **ADDED**: Optional handling of rows with missing locale columns via `--include-empty`.
 - **CHANGED**: Default behavior now skips rows with incomplete localization data.
+- **ADDED**: Ability to disable generation of `@@last_modified` metadata using `--no-last-modified`.
 
 ## 0.2.2
 

@@ -61,11 +61,12 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         final header = excludeQuotes(args.option('header'));
         final format = args.flag('format');
         final includeEmpty = args.flag('include-empty');
+        final includeLastModified = args.flag('last-modified');
         final meta = <String, String>{
           if (excludeQuotes(args.option('author')) case String author)
             '@@author': author,
           if (excludeQuotes(args.option('modified')) case String modified)
-            '@@last_modified': modified,
+            if (includeLastModified) '@@last_modified': modified,
           if (excludeQuotes(args.option('comment')) case String comment)
             '@@comment': comment,
           if (excludeQuotes(args.option('context')) case String context)
@@ -330,6 +331,12 @@ ArgParser buildArgumentsParser() => ArgParser()
     negatable: true,
     defaultsTo: true,
     help: 'Format the generated Dart files using `dart format`',
+  )
+  ..addFlag(
+    'last-modified',
+    aliases: const ['meta-last-modified', 'last_modified'],
+    defaultsTo: true,
+    help: 'Include @@last_modified in generated ARB meta',
   );
 
 /// Fetch spreadsheets from Google Sheets API
