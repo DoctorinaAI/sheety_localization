@@ -110,11 +110,8 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           meta: meta,
         );
         if (arbs.isEmpty) {
-          $log(
-            'No new ARB files generated, '
-            'nothing to do, exiting...',
-          );
-          io.exit(0);
+          $err('No ARB files generated from the sheets');
+          io.exit(1);
         }
 
         $log('Generate Flutter localization files...');
@@ -691,16 +688,15 @@ Future<List<io.File>> generateArbFiles({
     if (!file.parent.existsSync()) {
       $log('Creating directory: ${file.parent.path}');
       await file.parent.create(recursive: true);
-    } else {
-      if (file.existsSync() && file.lengthSync() == bytes.length) {
-        // File exists and has the same length as the new bytes,
-        // check if the content is the same using SHA-256 hash.
-        final existingBytes = await file.readAsBytes();
-        if (crypto.sha256.convert(existingBytes) ==
-            crypto.sha256.convert(bytes)) {
-          $log('Arb file already exists and is up to date: $filePath');
-          continue;
-        }
+    } else if (file.existsSync() && file.lengthSync() == bytes.length) {
+      // File exists and has the same length as the new bytes,
+      // check if the content is the same using SHA-256 hash.
+      final existingBytes = await file.readAsBytes();
+      if (crypto.sha256.convert(existingBytes) ==
+          crypto.sha256.convert(bytes)) {
+        $log('Arb file already exists and is up to date: $filePath');
+        files.add(file);
+        continue;
       }
     }
     await file.writeAsBytes(bytes, mode: io.FileMode.writeOnly, flush: true);

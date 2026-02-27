@@ -1,3 +1,7 @@
+## 0.4.0
+
+- **FIX**: Fix aggressive caching of translations that caused outdated translations to be used.
+
 ## 0.3.0
 
 - **FIX**: Resolved issue with `--no-last-modified` flag not functioning as intended.
