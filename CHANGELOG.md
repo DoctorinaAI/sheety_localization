@@ -1,3 +1,8 @@
+## 0.4.2
+
+- **ADDED**: Configurable language batch size via `--batch` (`-b`) CLI parameter to control how many languages are translated per single API call (default: 3).
+- **CHANGED**: Default OpenAI model updated from `gpt-4o-mini` to `gpt-5-mini`.
+
 ## 0.4.1
 
 - **ADDED**: Language name hints in localization prompts to prevent AI misinterpretation of ambiguous ISO codes (e.g. `uk` as Ukrainian, not United Kingdom).

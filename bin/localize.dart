@@ -64,6 +64,8 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
             const [];
         final workers =
             int.tryParse(excludeQuotes(args.option('workers')) ?? '6') ?? 6;
+        final batch =
+            int.tryParse(excludeQuotes(args.option('batch')) ?? '3') ?? 3;
         String? systemPrompt;
 
         // Validate required arguments
@@ -130,7 +132,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         // Create OpenAI client
         final client = OpenAIClient(
           apiKey: openaiApiKey,
-          model: openaiModel ?? 'gpt-4o-mini',
+          model: openaiModel ?? 'gpt-5-mini',
           workers: workers.clamp(1, 14),
           systemPrompt: systemPrompt,
         );
@@ -150,6 +152,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           await for (final row in localizeRows(
             rows: rows,
             client: client,
+            cellsPerBatch: batch.clamp(1, 20),
           )) {
             if (row.isEmpty) continue;
             await updateSheet(
@@ -241,10 +244,10 @@ ArgParser buildArgumentsParser() => ArgParser()
       'localize-model',
       'llm',
     ],
-    defaultsTo: 'gpt-4o-mini',
+    defaultsTo: 'gpt-5-mini',
     mandatory: false,
     valueHelp: 'model',
-    help: 'OpenAI model to use (e.g. chatgpt-4)',
+    help: 'OpenAI model to use (e.g. gpt-5-mini)',
   )
   ..addOption(
     'ignore',
@@ -280,6 +283,19 @@ ArgParser buildArgumentsParser() => ArgParser()
     mandatory: false,
     valueHelp: 'path/to/prompt.txt',
     help: 'Path to the system prompt file',
+  )
+  ..addOption(
+    'batch',
+    abbr: 'b',
+    aliases: const <String>[
+      'batch-size',
+      'languages-per-batch',
+      'langs-per-batch',
+    ],
+    mandatory: false,
+    defaultsTo: '3',
+    valueHelp: 'number',
+    help: 'Number of languages to translate per single API call',
   )
   ..addOption(
     'workers',
@@ -685,10 +701,10 @@ Future<List<LocalizeRow>> extractEmptyCells({
 Stream<LocalizeRow> localizeRows({
   required List<LocalizeRow> rows,
   required OpenAIClient client,
+  int cellsPerBatch = 3,
 }) async* {
   for (final row in rows) {
     final cells = row.cells.map((e) => e.code).toList(growable: false);
-    const cellsPerBatch = 3;
     for (var i = 0; i <= cells.length; i += cellsPerBatch) {
       try {
         // Get the next batch of languages to process
@@ -742,7 +758,7 @@ Stream<LocalizeRow> localizeRows({
 class OpenAIClient {
   OpenAIClient({
     required this.apiKey,
-    this.model = 'gpt-4o-mini', // gpt-4o-mini
+    this.model = 'gpt-5-mini', // gpt-5-mini
     this.workers = 6,
     this.retries = 3,
     this.systemPrompt,
@@ -770,7 +786,7 @@ class OpenAIClient {
       ..headers.set('Content-Type', 'application/json')
       ..headers.set('Authorization', 'Bearer $apiKey');
     final body = jsonEncode({
-      'model': model, // e.g. "gpt-4o-mini"
+      'model': model, // e.g. "gpt-5-mini"
 
       // System prompt goes into `instructions` for Responses API
       if (systemPrompt != null) 'instructions': systemPrompt,

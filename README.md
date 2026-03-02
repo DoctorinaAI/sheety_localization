@@ -388,6 +388,45 @@ packages/
 
 ---
 
+## AI-Powered Localization
+
+In addition to generating ARB/Dart files, Sheety Localization can automatically translate missing cells in your Google Sheet using the OpenAI API.
+
+### Basic Command
+
+```bash
+dart pub global run sheety_localization:localize \
+  --credentials=credentials.json \
+  --sheet=<YOUR_SPREADSHEET_ID> \
+  --token=<YOUR_OPENAI_API_KEY> \
+  --model=gpt-5-mini \
+  --batch=3 \
+  --workers=6
+```
+
+### Localize Option Definitions
+
+- `--credentials` (or `-c`):
+  Path to your Service Account JSON file. Defaults to `credentials.json`.
+- `--sheet` (or `-s`) **(required)**:
+  The Google Spreadsheet ID.
+- `--token` (or `-t`):
+  OpenAI API key (e.g. `sk-...`).
+- `--token-file` (or `-f`):
+  Path to a file containing the OpenAI API key (alternative to `--token`).
+- `--model` (or `-m`):
+  OpenAI model to use. Defaults to `gpt-5-mini`.
+- `--batch` (or `-b`):
+  Number of languages to translate per single API call. Defaults to `3`. Higher values are faster but may reduce quality for weaker models. Range: 1–20.
+- `--workers` (or `-w`):
+  Number of concurrent API requests. Defaults to `6`, max `14`.
+- `--ignore` (or `-i`):
+  Comma-separated list of RegExp patterns to skip sheets whose titles match (e.g. `help,backend-.*,temp-.*`).
+- `--prompt` (or `-p`):
+  Path to a custom system prompt file for the AI model.
+
+---
+
 ## Tips & Best Practices
 
 - **Keep your ARB files under version control** (for reference and manual tweaks).
