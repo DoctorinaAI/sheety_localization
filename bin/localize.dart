@@ -599,7 +599,10 @@ Future<List<LocalizeRow>> extractEmptyCells({
   }
   p
     ..writeln('en_source: $normEn')
-    ..writeln('target_languages: ${langs.join(', ')}')
+    ..writeln('target_languages: ${langs.map((code) {
+      final name = resolveLanguageName(code);
+      return name != null ? '$code ($name)' : code;
+    }).join(', ')}')
     ..writeln('--- OUTPUT REQUIREMENTS ---')
     ..writeln(
         'Return ONLY valid minified JSON (no comments, no markdown fences).')
@@ -1039,6 +1042,282 @@ sheetsApi.spreadsheets.values.batchUpdate(
   ),
   sheetId,
 ); */
+
+/// Comprehensive mapping of ISO 639-1 language codes (and common extended
+/// locale codes) to their English language names.
+/// Keys are lowercase with `_` as separator.
+const Map<String, String> kLanguageNames = <String, String>{
+  // A
+  'aa': 'Afar',
+  'ab': 'Abkhazian',
+  'af': 'Afrikaans',
+  'ak': 'Akan',
+  'am': 'Amharic',
+  'an': 'Aragonese',
+  'ar': 'Arabic',
+  'as': 'Assamese',
+  'av': 'Avaric',
+  'ay': 'Aymara',
+  'az': 'Azerbaijani',
+  // B
+  'ba': 'Bashkir',
+  'be': 'Belarusian',
+  'bg': 'Bulgarian',
+  'bh': 'Bihari',
+  'bi': 'Bislama',
+  'bm': 'Bambara',
+  'bn': 'Bengali',
+  'bo': 'Tibetan',
+  'br': 'Breton',
+  'bs': 'Bosnian',
+  // C
+  'ca': 'Catalan',
+  'ce': 'Chechen',
+  'ch': 'Chamorro',
+  'co': 'Corsican',
+  'cr': 'Cree',
+  'cs': 'Czech',
+  'cu': 'Church Slavic',
+  'cv': 'Chuvash',
+  'cy': 'Welsh',
+  // D
+  'da': 'Danish',
+  'de': 'German',
+  'dv': 'Divehi',
+  'dz': 'Dzongkha',
+  // E
+  'ee': 'Ewe',
+  'el': 'Greek',
+  'en': 'English',
+  'eo': 'Esperanto',
+  'es': 'Spanish',
+  'et': 'Estonian',
+  'eu': 'Basque',
+  // F
+  'fa': 'Persian',
+  'ff': 'Fulah',
+  'fi': 'Finnish',
+  'fj': 'Fijian',
+  'fo': 'Faroese',
+  'fr': 'French',
+  'fy': 'Western Frisian',
+  // G
+  'ga': 'Irish',
+  'gd': 'Scottish Gaelic',
+  'gl': 'Galician',
+  'gn': 'Guarani',
+  'gu': 'Gujarati',
+  'gv': 'Manx',
+  // H
+  'ha': 'Hausa',
+  'he': 'Hebrew',
+  'hi': 'Hindi',
+  'ho': 'Hiri Motu',
+  'hr': 'Croatian',
+  'ht': 'Haitian Creole',
+  'hu': 'Hungarian',
+  'hy': 'Armenian',
+  'hz': 'Herero',
+  // I
+  'ia': 'Interlingua',
+  'id': 'Indonesian',
+  'ie': 'Interlingue',
+  'ig': 'Igbo',
+  'ii': 'Sichuan Yi',
+  'ik': 'Inupiaq',
+  'io': 'Ido',
+  'is': 'Icelandic',
+  'it': 'Italian',
+  'iu': 'Inuktitut',
+  // J
+  'ja': 'Japanese',
+  'jv': 'Javanese',
+  // K
+  'ka': 'Georgian',
+  'kg': 'Kongo',
+  'ki': 'Kikuyu',
+  'kj': 'Kuanyama',
+  'kk': 'Kazakh',
+  'kl': 'Kalaallisut',
+  'km': 'Khmer',
+  'kn': 'Kannada',
+  'ko': 'Korean',
+  'kr': 'Kanuri',
+  'ks': 'Kashmiri',
+  'ku': 'Kurdish',
+  'kv': 'Komi',
+  'kw': 'Cornish',
+  'ky': 'Kyrgyz',
+  // L
+  'la': 'Latin',
+  'lb': 'Luxembourgish',
+  'lg': 'Ganda',
+  'li': 'Limburgish',
+  'ln': 'Lingala',
+  'lo': 'Lao',
+  'lt': 'Lithuanian',
+  'lu': 'Luba-Katanga',
+  'lv': 'Latvian',
+  // M
+  'mg': 'Malagasy',
+  'mh': 'Marshallese',
+  'mi': 'Maori',
+  'mk': 'Macedonian',
+  'ml': 'Malayalam',
+  'mn': 'Mongolian',
+  'mr': 'Marathi',
+  'ms': 'Malay',
+  'mt': 'Maltese',
+  'my': 'Burmese',
+  // N
+  'na': 'Nauru',
+  'nb': 'Norwegian Bokmal',
+  'nd': 'North Ndebele',
+  'ne': 'Nepali',
+  'ng': 'Ndonga',
+  'nl': 'Dutch',
+  'nn': 'Norwegian Nynorsk',
+  'no': 'Norwegian',
+  'nr': 'South Ndebele',
+  'nv': 'Navajo',
+  'ny': 'Chichewa',
+  // O
+  'oc': 'Occitan',
+  'oj': 'Ojibwe',
+  'om': 'Oromo',
+  'or': 'Odia',
+  'os': 'Ossetian',
+  // P
+  'pa': 'Punjabi',
+  'pi': 'Pali',
+  'pl': 'Polish',
+  'ps': 'Pashto',
+  'pt': 'Portuguese',
+  // Q
+  'qu': 'Quechua',
+  // R
+  'rm': 'Romansh',
+  'rn': 'Kirundi',
+  'ro': 'Romanian',
+  'ru': 'Russian',
+  'rw': 'Kinyarwanda',
+  // S
+  'sa': 'Sanskrit',
+  'sc': 'Sardinian',
+  'sd': 'Sindhi',
+  'se': 'Northern Sami',
+  'sg': 'Sango',
+  'si': 'Sinhala',
+  'sk': 'Slovak',
+  'sl': 'Slovenian',
+  'sm': 'Samoan',
+  'sn': 'Shona',
+  'so': 'Somali',
+  'sq': 'Albanian',
+  'sr': 'Serbian',
+  'ss': 'Swati',
+  'st': 'Southern Sotho',
+  'su': 'Sundanese',
+  'sv': 'Swedish',
+  'sw': 'Swahili',
+  // T
+  'ta': 'Tamil',
+  'te': 'Telugu',
+  'tg': 'Tajik',
+  'th': 'Thai',
+  'ti': 'Tigrinya',
+  'tk': 'Turkmen',
+  'tl': 'Tagalog',
+  'tn': 'Tswana',
+  'to': 'Tongan',
+  'tr': 'Turkish',
+  'ts': 'Tsonga',
+  'tt': 'Tatar',
+  'tw': 'Twi',
+  'ty': 'Tahitian',
+  // U
+  'ug': 'Uyghur',
+  'uk': 'Ukrainian',
+  'ur': 'Urdu',
+  'uz': 'Uzbek',
+  // V
+  've': 'Venda',
+  'vi': 'Vietnamese',
+  'vo': 'Volapuk',
+  // W
+  'wa': 'Walloon',
+  'wo': 'Wolof',
+  // X
+  'xh': 'Xhosa',
+  // Y
+  'yi': 'Yiddish',
+  'yo': 'Yoruba',
+  // Z
+  'za': 'Zhuang',
+  'zh': 'Chinese',
+  'zu': 'Zulu',
+
+  // --- Extended locale codes (language + region) ---
+  'zh_cn': 'Chinese Simplified',
+  'zh_tw': 'Chinese Traditional',
+  'zh_hk': 'Chinese Traditional (Hong Kong)',
+  'pt_br': 'Brazilian Portuguese',
+  'pt_pt': 'European Portuguese',
+  'en_us': 'American English',
+  'en_gb': 'British English',
+  'en_au': 'Australian English',
+  'es_mx': 'Mexican Spanish',
+  'es_ar': 'Argentinian Spanish',
+  'es_es': 'European Spanish',
+  'fr_ca': 'Canadian French',
+  'fr_fr': 'European French',
+  'fr_be': 'Belgian French',
+  'fr_ch': 'Swiss French',
+  'de_at': 'Austrian German',
+  'de_ch': 'Swiss German',
+  'de_de': 'German',
+  'nl_be': 'Flemish',
+  'sr_latn': 'Serbian (Latin)',
+  'sr_cyrl': 'Serbian (Cyrillic)',
+  'nb_no': 'Norwegian Bokmal',
+  'nn_no': 'Norwegian Nynorsk',
+  'ro_md': 'Moldavian',
+  'ar_sa': 'Saudi Arabic',
+  'ar_eg': 'Egyptian Arabic',
+  'ar_ma': 'Moroccan Arabic',
+  'ms_my': 'Malay (Malaysia)',
+  'ms_bn': 'Malay (Brunei)',
+  'sw_ke': 'Swahili (Kenya)',
+  'sw_tz': 'Swahili (Tanzania)',
+  'ta_lk': 'Tamil (Sri Lanka)',
+  'ur_pk': 'Urdu (Pakistan)',
+  'ur_in': 'Urdu (India)',
+  'bn_bd': 'Bengali (Bangladesh)',
+  'bn_in': 'Bengali (India)',
+  'pa_guru': 'Punjabi (Gurmukhi)',
+  'pa_arab': 'Punjabi (Shahmukhi)',
+  'az_latn': 'Azerbaijani (Latin)',
+  'az_cyrl': 'Azerbaijani (Cyrillic)',
+  'uz_latn': 'Uzbek (Latin)',
+  'uz_cyrl': 'Uzbek (Cyrillic)',
+};
+
+/// Returns human-readable language name for the given locale [code],
+/// or `null` if no match is found.
+///
+/// Lookup order:
+/// 1. Exact match after normalization (lowercase, `_` separator).
+/// 2. If the code contains `_`, try the language-only prefix (part before `_`).
+String? resolveLanguageName(String code) {
+  final normalized = code.toLowerCase().replaceAll('-', '_');
+  final name = kLanguageNames[normalized];
+  if (name != null) return name;
+  final underscore = normalized.indexOf('_');
+  if (underscore > 0) {
+    return kLanguageNames[normalized.substring(0, underscore)];
+  }
+  return null;
+}
 
 /// Create sanitizer function to sanitize the localization table keys
 String Function(String input) sanitizer() {

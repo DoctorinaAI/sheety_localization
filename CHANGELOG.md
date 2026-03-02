@@ -1,3 +1,7 @@
+## 0.4.1
+
+- **ADDED**: Language name hints in localization prompts to prevent AI misinterpretation of ambiguous ISO codes (e.g. `uk` as Ukrainian, not United Kingdom).
+
 ## 0.4.0
 
 - **FIX**: Fix aggressive caching of translations that caused outdated translations to be used.

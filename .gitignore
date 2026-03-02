@@ -1,6 +1,7 @@
 credentials.json
 build
-.dart_tool
+.dart_tool/
 pubspec.lock
 prompt.txt
 openai.key
+.claude/
