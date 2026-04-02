@@ -1,0 +1,13 @@
+.git
+.github
+.vscode
+.dart_tool
+.packages
+build
+example
+*.md
+LICENSE
+.gitignore
+.pubignore
+analysis_options.yaml
+*.txt.template
