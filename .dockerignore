@@ -11,3 +11,4 @@ LICENSE
 .pubignore
 analysis_options.yaml
 *.txt.template
+pubspec.lock
