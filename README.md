@@ -58,7 +58,6 @@
 
 1. **Dart SDK >= 3.7.0 < 4.0.0**
 2. **Service Account** with **Google Sheets API** enabled:
-
    - Create a new project in [Google Cloud Console](https://console.cloud.google.com/).
    - Enable **Google Sheets API** for that project.
    - Create a **Service Account** and download its credentials JSON (e.g., `credentials.json`).
@@ -151,12 +150,10 @@ dart pub global run sheety_localization:generate \
 ## Integration Steps
 
 1. **Prepare your Google Sheet**
-
    - Create a new or reuse an existing Google Sheet.
    - For each sheet/tab within that spreadsheet, set up the header in the first row as follows: `label | description | meta | en | ru | es | de | ... (other locales)`.
 
    - Each subsequent row represents one localized string:
-
      - **`label`**: Unique key (used as a Dart getter name).
      - **`description`**: Short human-readable note (e.g., `"Login button text"`).
      - **`meta`**: JSON string with any metadata (e.g., `{"plural":"one","other":"{count} items"}`).
@@ -165,7 +162,6 @@ dart pub global run sheety_localization:generate \
 2. **Create a Google Cloud project & Service Account**
 
    > **Note:** [How to use client libraries to access Google APIs](https://cloud.google.com/docs/authentication/client-libraries#creating_a_service_account)
-
    - Go to [Google Cloud Console](https://console.cloud.google.com/).
    - Create a new project or select an existing one.
    - Enable the **Google Sheets API** for that project.
@@ -174,7 +170,6 @@ dart pub global run sheety_localization:generate \
    - Download the JSON key file (e.g., `credentials.json`).
 
 3. **Share your spreadsheet with the Service Account**
-
    - In Google Sheets, click **Share** (top right).
    - Add your Service Account's email (from the JSON file) with **Viewer** or **Editor** rights.
 
@@ -242,9 +237,7 @@ dart pub global run sheety_localization:generate \
    This formula translates the English text to Russian whenever `E2` is empty. Replace `"ru"` with any target locale code.
 
 7. **(Optional) Conditional formatting to highlight missing or machine-translated cells**
-
    - Set up **Conditional Formatting** in Google Sheets:
-
      - Select all cells in a language column (e.g., column `E` for Russian).
      - Use a rule like `=ISFORMULA(E2)` to gray out any cell where a formula (i.e., machine translation) is used.
      - Use `=E2=""` to highlight cells that are still empty (missing translation).
@@ -267,7 +260,6 @@ dart pub global run sheety_localization:generate \
    ```
 
    - This will produce:
-
      - `lib/localization.dart` (exports all generated classes)
      - One ARB file per sheet (e.g., `app_en.arb`, `app_ru.arb`, etc.) under `lib/src/l10n/`
      - One Dart file per locale under `lib/src/generated/` (e.g., `app_localizations_en.dart`, `app_localizations_ru.dart`, etc.)
@@ -427,6 +419,112 @@ dart pub global run sheety_localization:localize \
 
 ---
 
+## Docker
+
+A minimal Docker image with AOT-compiled `generate` and `localize` binaries is available on DockerHub. No Dart SDK installation required.
+
+### Pull
+
+```bash
+docker pull plugfox/sheety:latest
+```
+
+### Generate localization files
+
+```bash
+docker run --rm \
+  -v $(pwd)/credentials.json:/credentials.json:ro \
+  -v $(pwd)/lib:/output \
+  plugfox/sheety:latest \
+    --credentials=/credentials.json \
+    --sheet=<YOUR_SPREADSHEET_ID> \
+    --lib=/output \
+    --arb=src/l10n \
+    --gen=src/generated \
+    --prefix=app \
+    --no-format
+```
+
+> **Note:** `--no-format` is recommended inside Docker since `dart format` is not available in the minimal image. Format the generated files on the host afterwards.
+
+The default entrypoint is `/bin/generate`. Mount your `credentials.json` as read-only and the output directory as a volume.
+
+### AI-powered localization (translate missing cells)
+
+Override the entrypoint to use `/bin/localize`:
+
+```bash
+docker run --rm \
+  --entrypoint /bin/localize \
+  -v $(pwd)/credentials.json:/credentials.json:ro \
+  plugfox/sheety:latest \
+    --credentials=/credentials.json \
+    --sheet=<YOUR_SPREADSHEET_ID> \
+    --token=<YOUR_OPENAI_API_KEY> \
+    --model=gpt-5-mini \
+    --batch=3 \
+    --workers=6
+```
+
+Alternatively, pass the API key via a file:
+
+```bash
+docker run --rm \
+  --entrypoint /bin/localize \
+  -v $(pwd)/credentials.json:/credentials.json:ro \
+  -v $(pwd)/openai_token.txt:/token.txt:ro \
+  plugfox/sheety:latest \
+    --credentials=/credentials.json \
+    --sheet=<YOUR_SPREADSHEET_ID> \
+    --token-file=/token.txt
+```
+
+### Custom system prompt for localization
+
+```bash
+docker run --rm \
+  --entrypoint /bin/localize \
+  -v $(pwd)/credentials.json:/credentials.json:ro \
+  -v $(pwd)/my_prompt.txt:/prompt.txt:ro \
+  plugfox/sheety:latest \
+    --credentials=/credentials.json \
+    --sheet=<YOUR_SPREADSHEET_ID> \
+    --token=<YOUR_OPENAI_API_KEY> \
+    --prompt=/prompt.txt
+```
+
+### Print help
+
+```bash
+# generate help
+docker run --rm plugfox/sheety --help
+
+# localize help
+docker run --rm --entrypoint /bin/localize plugfox/sheety:latest --help
+```
+
+### Building the image locally
+
+```bash
+# Clone the repository
+git clone https://github.com/DoctorinaAI/sheety_localization.git
+
+# Navigate into the project directory
+cd sheety_localization
+
+# Local build
+docker build -t username/sheety:latest .
+
+# Multi-platform build and push to DockerHub
+docker buildx build \
+  --platform linux/amd64,linux/arm64 \
+  -t username/sheety:latest \
+  -t username/sheety:0.4.2 \
+  --push .
+```
+
+---
+
 ## Tips & Best Practices
 
 - **Keep your ARB files under version control** (for reference and manual tweaks).
@@ -495,13 +593,11 @@ If you want to auto-fill missing translations from English to Russian:
 ## Example: Conditional Formatting Rules
 
 1. **Gray out machine translations**
-
    - Select entire column (e.g., column `E` for `ru`).
    - Add a custom formula rule: `=ISFORMULA(E2)`.
    - Set fill color to light gray.
 
 2. **Highlight empty cells (missing translations)**
-
    - Select entire column (e.g., `E`).
    - Add a custom formula rule: `=E2=""`.
    - Set fill color to red (or any noticeable color).

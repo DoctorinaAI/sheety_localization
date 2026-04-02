@@ -31,6 +31,64 @@
       }
     },
     {
+      "label": "docker:build",
+      "detail": "Build Docker image locally",
+      "icon": {
+        "color": "terminal.ansiBlue",
+        "id": "package"
+      },
+      "type": "shell",
+      "command": "docker build -t plugfox/sheety:latest -t plugfox/sheety:${input:dockerTag} .",
+      "dependsOn": [],
+      "args": [],
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true,
+        "group": "docker"
+      }
+    },
+    {
+      "label": "docker:push",
+      "detail": "Build multi-platform image and push to DockerHub (plugfox)",
+      "icon": {
+        "color": "terminal.ansiBlue",
+        "id": "cloud-upload"
+      },
+      "type": "shell",
+      "command": "docker buildx build --platform linux/amd64,linux/arm64 -t plugfox/sheety:latest -t plugfox/sheety:${input:dockerTag} --push .",
+      "dependsOn": [],
+      "args": [],
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true,
+        "group": "docker"
+      }
+    },
+    {
       "label": "dart:format",
       "detail": "Format all files in the project",
       "icon": {
@@ -60,6 +118,14 @@
         "clear": false,
         "group": "dart"
       }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "dockerTag",
+      "type": "promptString",
+      "description": "Docker image version tag (e.g. 0.4.2)",
+      "default": "0.4.2"
     }
   ]
 }
