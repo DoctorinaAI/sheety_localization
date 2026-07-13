@@ -1,3 +1,8 @@
+## 0.4.3
+
+- **CHANGED**: `localize` now writes translated cells to Google Sheets via batch updates per row instead of one request per cell.
+- **CHANGED**: `--workers` now controls real concurrent OpenAI requests during localization.
+
 ## 0.4.2
 
 - **ADDED**: Configurable language batch size via `--batch` (`-b`) CLI parameter to control how many languages are translated per single API call (default: 3).
