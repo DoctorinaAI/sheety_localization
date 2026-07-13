@@ -766,11 +766,8 @@ Stream<LocalizeRow> localizeRows({
   }
 
   // Dispatch every row concurrently and emit each one as soon as it finishes.
+  if (rows.isEmpty) return const Stream<LocalizeRow>.empty();
   final controller = StreamController<LocalizeRow>();
-  if (rows.isEmpty) {
-    controller.close();
-    return controller.stream;
-  }
 
   var pending = rows.length;
   for (final row in rows) {
