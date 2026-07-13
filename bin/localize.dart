@@ -766,17 +766,21 @@ Stream<LocalizeRow> localizeRows({
   }
 
   // Dispatch every row concurrently and emit each one as soon as it finishes.
-  if (rows.isEmpty) return const Stream<LocalizeRow>.empty();
+  if (rows.isEmpty) return const Stream.empty();
   final controller = StreamController<LocalizeRow>();
-
   var pending = rows.length;
   for (final row in rows) {
-    localizeOne(row).whenComplete(() {
-      controller.add(row);
-      if (--pending == 0) controller.close();
+    Future<void>(() async {
+      try {
+        await localizeOne(row);
+      } on Object catch (e, _) {
+        $err('Error localizing row: $e');
+      } finally {
+        pending--;
+        if (pending == 0) controller.close().ignore();
+      }
     });
   }
-
   return controller.stream;
 }
 
