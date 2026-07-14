@@ -20,6 +20,7 @@ class Placeholders {
   const Placeholders({
     required this.arguments,
     required this.directives,
+    required this.branchArguments,
     required this.tags,
   });
 
@@ -35,6 +36,13 @@ class Placeholders {
   /// the pluralization while keeping the argument name — is still rejected.
   final Set<String> directives;
 
+  /// Arguments used *inside* the branches of a directive, unioned over the
+  /// branches. `{value, plural, one{{value} year} other{{value} years}}` uses
+  /// `value` both as the plural argument and inside its branches; a
+  /// translation that keeps the directive but drops the number from the
+  /// branches ("лет" instead of "5 лет") is caught only by this set.
+  final Set<String> branchArguments;
+
   /// Markup tags, sorted, compared as a multiset.
   final List<String> tags;
 }
@@ -49,8 +57,9 @@ class Placeholders {
 Placeholders extractPlaceholders(String text) {
   final arguments = <String>{};
   final directives = <String>{};
+  final branchArguments = <String>{};
 
-  void scan(String source) {
+  void scan(String source, {required bool inBranch}) {
     var i = 0;
     while (i < source.length) {
       if (source.codeUnitAt(i) != 0x7B /* { */) {
@@ -73,21 +82,25 @@ Placeholders extractPlaceholders(String text) {
 
       final inner = source.substring(i + 1, j);
       final argument = _argument.firstMatch(inner);
+      final isDirective = _directive.hasMatch(inner);
       if (argument != null) {
         final name = argument.group(1)!;
         arguments.add(name);
-        if (_directive.hasMatch(inner)) directives.add(name);
+        if (isDirective) directives.add(name);
+        if (inBranch) branchArguments.add(name);
       }
-      scan(inner); // Branch bodies may hold placeholders of their own.
+      // Branch bodies may hold placeholders of their own.
+      scan(inner, inBranch: inBranch || isDirective);
       i = j + 1;
     }
   }
 
-  scan(text);
+  scan(text, inBranch: false);
 
   return Placeholders(
     arguments: arguments,
     directives: directives,
+    branchArguments: branchArguments,
     tags: _tag.allMatches(text).map((m) => m.group(0)!).toList()..sort(),
   );
 }
@@ -160,6 +173,12 @@ String? validateTranslation({
 
   final lost = expected.directives.difference(actual.directives);
   if (lost.isNotEmpty) return 'lost ICU directive for ${lost.toList()..sort()}';
+
+  final droppedInBranch =
+      expected.branchArguments.difference(actual.branchArguments);
+  if (droppedInBranch.isNotEmpty)
+    return 'placeholder dropped inside a plural/select branch: '
+        '${droppedInBranch.toList()..sort()}';
 
   if (expected.tags.join(' ') != actual.tags.join(' '))
     return 'markup mismatch: expected ${expected.tags}, got ${actual.tags}';

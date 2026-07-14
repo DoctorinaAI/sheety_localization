@@ -128,6 +128,18 @@ void main() {
       );
     });
 
+    test('rejects a plural whose branches lost the number', () {
+      // The directive survives, but "лет" without {value} renders as bare text
+      // with no number in it.
+      expect(
+        validateTranslation(
+          source: '{value, plural, one{{value} year} other{{value} years}}',
+          translation: '{value, plural, other{лет}}',
+        ),
+        contains('dropped inside a plural/select branch'),
+      );
+    });
+
     test('rejects unbalanced braces', () {
       expect(
         validateTranslation(
