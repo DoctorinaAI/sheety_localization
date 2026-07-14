@@ -3,18 +3,35 @@ import 'package:test/test.dart';
 
 void main() {
   group('extractPlaceholders', () {
-    test('collects ICU placeholders and markup tags', () {
-      expect(
-        extractPlaceholders('Hi {name}, you have {count} <b>new</b> messages'),
-        <String>['</b>', '<b>', '{count}', '{name}'],
-      );
+    test('collects simple placeholders and markup tags', () {
+      final found =
+          extractPlaceholders('Hi {name}, you have {count} <b>new</b> ones');
+      expect(found.arguments, {'name', 'count'});
+      expect(found.directives, isEmpty);
+      expect(found.tags, <String>['</b>', '<b>']);
     });
 
-    test('is order independent', () {
-      expect(
-        extractPlaceholders('{a} {b}'),
-        extractPlaceholders('{b} {a}'),
+    test('reads a plural as ONE argument, not as its branches', () {
+      final found = extractPlaceholders(
+        'You have {count, plural, one {# message} other {# messages}}',
       );
+      expect(found.arguments, {'count'});
+      expect(found.directives, {'count'});
+    });
+
+    test('descends into the branches of a plural', () {
+      // The shape this project actually ships in its sheets.
+      final found = extractPlaceholders(
+        '{value, plural, one{{value} year} other{{value} years}}',
+      );
+      expect(found.arguments, {'value'});
+      expect(found.directives, {'value'});
+    });
+
+    test('reads a formatted argument', () {
+      final found = extractPlaceholders('Total: {amount, number, currency}');
+      expect(found.arguments, {'amount'});
+      expect(found.directives, isEmpty);
     });
   });
 
@@ -50,6 +67,74 @@ void main() {
           translation: 'Привіт!',
         ),
         contains('placeholder mismatch'),
+      );
+    });
+
+    test('rejects dropped markup', () {
+      expect(
+        validateTranslation(
+          source: 'Hello, <b>friend</b>!',
+          translation: 'Привіт, друже!',
+        ),
+        contains('markup mismatch'),
+      );
+    });
+
+    test('accepts a correctly translated plural', () {
+      expect(
+        validateTranslation(
+          source: 'You have {count, plural, one {# message} '
+              'other {# messages}}',
+          translation: 'Sie haben {count, plural, one {# Nachricht} '
+              'other {# Nachrichten}}',
+        ),
+        isNull,
+      );
+    });
+
+    test('accepts a plural whose language needs more categories', () {
+      // Russian has four plural categories where English has two: the number
+      // of times the placeholder occurs legitimately differs.
+      expect(
+        validateTranslation(
+          source: '{value, plural, one{{value} year} other{{value} years}}',
+          translation: '{value, plural, one{{value} рік} few{{value} роки} '
+              'many{{value} років} other{{value} року}}',
+        ),
+        isNull,
+      );
+    });
+
+    test('accepts a plural whose language needs fewer categories', () {
+      expect(
+        validateTranslation(
+          source: '{value, plural, one{{value} year} other{{value} years}}',
+          translation: '{value, plural, other{{value}年}}',
+        ),
+        isNull,
+      );
+    });
+
+    test('rejects a translation that flattened the plural directive', () {
+      // The argument names survive, but the pluralization is gone — the ARB
+      // would either fail to parse or render both branches at once.
+      expect(
+        validateTranslation(
+          source: 'You have {count, plural, one {1 message} '
+              'other {# messages}}',
+          translation: 'У вас {count} сообщений',
+        ),
+        contains('lost ICU directive'),
+      );
+    });
+
+    test('rejects unbalanced braces', () {
+      expect(
+        validateTranslation(
+          source: 'Hello, {name}!',
+          translation: 'Привіт, {name!',
+        ),
+        contains('unbalanced braces'),
       );
     });
 

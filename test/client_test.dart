@@ -9,6 +9,7 @@ void main() {
           'status': 'completed',
           'output': [
             {
+              'type': 'message',
               'content': [
                 {'type': 'output_text', 'text': jsonEncode(payload)}
               ]
@@ -27,6 +28,68 @@ void main() {
       );
       expect(response.label, 'greeting');
       expect(response.localization['uk'], {'text': 'Привіт'});
+    });
+
+    test('skips a reasoning item that carries its thinking as content', () {
+      // A reasoning model may emit its chain of thought as an output item with
+      // a `content` list of its own, ahead of the real message. Parsing that
+      // as the payload would fail every single request.
+      final body = jsonEncode({
+        'status': 'completed',
+        'output': [
+          {
+            'type': 'reasoning',
+            'summary': <Object?>[],
+            'content': [
+              {
+                'type': 'reasoning_text',
+                'text': 'Let me think about Ukrainian...',
+              }
+            ],
+          },
+          {
+            'type': 'message',
+            'content': [
+              {
+                'type': 'output_text',
+                'text': jsonEncode({
+                  'label': 'greeting',
+                  'localization': {
+                    'uk': {'text': 'Привіт'}
+                  },
+                }),
+              }
+            ],
+          },
+        ],
+      });
+
+      final response = OpenAIClient.parseResponseBody(body);
+      expect(response.localization['uk'], {'text': 'Привіт'});
+    });
+
+    test('reports a refusal as a refusal', () {
+      final body = jsonEncode({
+        'status': 'completed',
+        'output': [
+          {
+            'type': 'message',
+            'content': [
+              {'type': 'refusal', 'refusal': 'I cannot help with that'}
+            ],
+          }
+        ],
+      });
+      expect(
+        () => OpenAIClient.parseResponseBody(body),
+        throwsA(
+          isA<LocalizationResponseException>().having(
+            (e) => e.message,
+            'message',
+            contains('refused'),
+          ),
+        ),
+      );
     });
 
     test('rejects a truncated response instead of retrying it', () {
@@ -126,6 +189,29 @@ void main() {
       expect(OpenAIClient.isReasoningModel('o3-mini'), isTrue);
       expect(OpenAIClient.isReasoningModel('gpt-4o-mini'), isFalse);
       expect(OpenAIClient.isReasoningModel('gpt-4.1'), isFalse);
+    });
+
+    test('excludes the chat variants, which reject `reasoning`', () {
+      // gpt-5-chat-latest is NOT a reasoning model: it accepts temperature and
+      // answers `400 Invalid reasoning_effort for non-reasoning model`.
+      expect(OpenAIClient.isReasoningModel('gpt-5-chat-latest'), isFalse);
+      expect(OpenAIClient.isReasoningModel('gpt-5-chat'), isFalse);
+    });
+
+    test('excludes the o1 models that predate the reasoning parameter', () {
+      expect(OpenAIClient.isReasoningModel('o1-mini'), isFalse);
+      expect(OpenAIClient.isReasoningModel('o1-preview'), isFalse);
+      expect(OpenAIClient.isReasoningModel('o1'), isTrue);
+    });
+  });
+
+  group('OpenAIApiException retryability', () {
+    test('an error inside a delivered body is not retried', () {
+      expect(
+        const OpenAIApiException('content filter', retryable: false)
+            .isRetryable,
+        isFalse,
+      );
     });
   });
 

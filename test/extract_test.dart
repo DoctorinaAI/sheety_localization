@@ -81,6 +81,23 @@ void main() {
       expect(rows.single.row, 4);
     });
 
+    test('ignores a column whose locale duplicates an earlier one', () {
+      // "pt-BR" and "pt_BR" sanitize to the same code: localizing both would
+      // ask the model for the language twice and write the answer into the
+      // first column only, leaving the second empty forever.
+      final rows = extractEmptyCells(
+        title: 'app',
+        values: <List<Object?>>[
+          ['label', 'description', 'meta', 'en', 'pt-BR', 'pt_BR', 'ru '],
+          ['greeting', null, null, 'Hello', null, null, null],
+        ],
+      );
+      expect(
+        rows.single.cells.map((c) => (c.code, c.column)),
+        [('pt_BR', 4), ('ru', 6)],
+      );
+    });
+
     test('ignores columns without a locale in the header', () {
       final rows = extractEmptyCells(
         title: 'app',

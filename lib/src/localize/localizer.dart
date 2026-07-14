@@ -56,11 +56,24 @@ List<LocalizeRow> extractEmptyCells({
 
   // Fill locales
   final locales = List.filled(header.length, '', growable: false);
+  final seen = <String>{};
   for (var i = 3; i < header.length; i++) {
     final cell = header[i];
     switch (cell) {
       case String text when text.isNotEmpty:
-        locales[i] = sanitize(text);
+        final locale = sanitize(text);
+        // Two columns can sanitize to the same code ("pt-BR" and "pt_BR", or a
+        // trailing space). Localizing both would ask the model for a language
+        // twice and write the answer into the first column only, leaving the
+        // second one empty forever.
+        if (!seen.add(locale)) {
+          $err(
+            'Sheet "$bucket" has a duplicate locale "$locale" in column '
+            '[${columnFromIndex(i)}], ignoring the whole column...',
+          );
+          continue;
+        }
+        locales[i] = locale;
       case String _:
         $err(
           'Sheet "$bucket" has empty column '
@@ -213,12 +226,14 @@ Stream<LocalizeRow> localizeRows({
     return failed;
   }
 
+  final batchSize = cellsPerBatch < 1 ? 1 : cellsPerBatch;
+
   Future<void> localizeOne(LocalizeRow row) async {
     final codes = row.cells.map((e) => e.code).toList(growable: false);
     final retryAlone = <String>[];
 
-    for (var i = 0; i < codes.length; i += cellsPerBatch) {
-      final batch = codes.skip(i).take(cellsPerBatch).toList(growable: false);
+    for (var i = 0; i < codes.length; i += batchSize) {
+      final batch = codes.skip(i).take(batchSize).toList(growable: false);
       if (batch.isEmpty) break;
       final failed = await translate(row, batch);
       if (failed.isEmpty) continue;

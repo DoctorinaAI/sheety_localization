@@ -45,7 +45,11 @@ class LocalizationResponseException implements Exception {
 /// Error raised when the OpenAI API itself fails (network, 429, 5xx, 4xx).
 class OpenAIApiException implements Exception {
   /// Creates an API-level failure with an optional HTTP [statusCode].
-  const OpenAIApiException(this.message, {this.statusCode});
+  ///
+  /// [retryable] overrides the decision derived from [statusCode]; it is used
+  /// for failures reported inside a delivered body, which carry no status.
+  const OpenAIApiException(this.message, {this.statusCode, bool? retryable})
+      : _retryable = retryable;
 
   /// Human-readable reason.
   final String message;
@@ -53,8 +57,12 @@ class OpenAIApiException implements Exception {
   /// HTTP status code, when the failure happened after a response was received.
   final int? statusCode;
 
+  final bool? _retryable;
+
   /// Whether retrying the very same request can plausibly succeed.
   bool get isRetryable {
+    final override = _retryable;
+    if (override != null) return override;
     final code = statusCode;
     if (code == null) return true; // network / timeout
     if (code == 408 || code == 409 || code == 429) return true;
@@ -135,8 +143,16 @@ class OpenAIClient implements LocalizationClient {
   ///
   /// Those models reject the sampling parameters, and their reasoning tokens
   /// are charged against the same `max_output_tokens` budget as the answer.
+  ///
+  /// The chat variants (`gpt-5-chat-latest`) are the mirror image: they are
+  /// *not* reasoning models, they accept `temperature` and reject
+  /// `reasoning.effort`, so they must not be swept up by the `gpt-5` prefix.
+  /// The first o-series models predate the `reasoning` parameter entirely.
   static bool isReasoningModel(String model) {
     final name = model.toLowerCase();
+    if (name.contains('chat')) return false;
+    if (name.startsWith('o1-mini') || name.startsWith('o1-preview'))
+      return false;
     return name.startsWith('gpt-5') ||
         name.startsWith('o1') ||
         name.startsWith('o3') ||
@@ -158,13 +174,23 @@ class OpenAIClient implements LocalizationClient {
   /// On a reasoning model the budget also has to cover the reasoning tokens,
   /// which are invisible but billed against the very same ceiling — without
   /// the extra headroom the answer itself gets cut off mid-JSON.
+  ///
+  /// The reserve is deliberately generous: `max_output_tokens` is a ceiling,
+  /// not a charge, so an unused reserve costs nothing, while an exhausted one
+  /// truncates the answer into unparseable JSON. It dwarfs the per-language
+  /// term on purpose — the reasoning burn is driven by the prompt, so the
+  /// single-language fallback must not end up with a *smaller* budget than the
+  /// batch that just failed.
+  static const int _reasoningReserve = 16384;
+
+  /// Ceiling for `max_output_tokens` of a request carrying [schema].
   static int maxOutputTokensFor(
     Map<String, Object?> schema, {
     String model = 'gpt-5-mini',
   }) {
     final languages = languagesOf(schema);
-    final reasoning = isReasoningModel(model) ? 4096 : 0;
-    return (1024 + reasoning + 768 * languages).clamp(1024, 32768);
+    final reserve = isReasoningModel(model) ? _reasoningReserve : 0;
+    return (1024 + reserve + 768 * languages).clamp(1024, 32768);
   }
 
   Future<LocalizationResponse> _request({
@@ -241,8 +267,11 @@ class OpenAIClient implements LocalizationClient {
       throw LocalizationResponseException('Malformed JSON from OpenAI: $e');
     }
 
+    // An error inside a delivered body is a decision of the API about this very
+    // prompt (content filter, failed run) — re-sending it verbatim would only
+    // reproduce it, so it is not treated as a transient failure.
     if (json case {'error': Map<String, Object?> error})
-      throw OpenAIApiException(error.toString());
+      throw OpenAIApiException(error.toString(), retryable: false);
 
     // The model hit the token ceiling / was cut off: the payload is truncated
     // garbage, retrying the same prompt would truncate again.
@@ -257,10 +286,20 @@ class OpenAIClient implements LocalizationClient {
     }
 
     if (json case {'output': List<Object?> output} when output.isNotEmpty) {
-      for (final item in output) {
+      for (final item in output.whereType<Map<String, Object?>>()) {
+        // Reasoning items also carry `content` — with the model's thinking in
+        // it, not the answer. Only a message item holds the payload, and only
+        // its `output_text` part. Everything else is skipped, not parsed.
+        if (item['type'] != 'message') continue;
         if (item case {'content': List<Object?> content}) {
           for (final part in content.whereType<Map<String, Object?>>()) {
-            if (part case {'text': String text}) {
+            // The model declined to answer: report it as such, so the operator
+            // is not sent chasing a phantom transport problem.
+            if (part case {'type': 'refusal', 'refusal': String refusal})
+              throw LocalizationResponseException(
+                'Model refused to answer: $refusal',
+              );
+            if (part case {'type': 'output_text', 'text': String text}) {
               Object? payload;
               try {
                 payload = jsonDecode(text);
@@ -294,35 +333,44 @@ class OpenAIClient implements LocalizationClient {
   }) async {
     // Throttle to at most [workers] concurrent in-flight requests.
     await _acquire();
-    final client = io.HttpClient()..connectionTimeout = timeout;
     try {
-      for (var attempt = 1;; attempt++) {
-        try {
-          return await _request(
-            client: client,
-            prompt: prompt,
-            schema: schema,
-          ).timeout(
-            timeout,
-            onTimeout: () => throw OpenAIApiException(
-              'Request timed out after ${timeout.inSeconds}s',
-            ),
-          );
-        } on LocalizationResponseException {
-          // Unusable payload: never retried here — the caller splits the batch
-          // into single languages, which is a *different*, shorter prompt.
-          rethrow;
-        } on Object catch (e) {
-          final retryable = e is! OpenAIApiException || e.isRetryable;
-          if (!retryable || attempt >= retries) rethrow;
-          $err('OpenAI API call failed (attempt $attempt/$retries): $e');
-          await Future<void>.delayed(
-            Duration(milliseconds: 250 * (1 << (attempt - 1))),
-          );
+      // Everything that can throw lives under the semaphore's `finally`, so a
+      // slot can never leak — a leaked slot would eventually starve every
+      // worker and hang the run with no output at all.
+      final client = io.HttpClient()..connectionTimeout = timeout;
+      try {
+        for (var attempt = 1;; attempt++) {
+          try {
+            return await _request(
+              client: client,
+              prompt: prompt,
+              schema: schema,
+            ).timeout(
+              timeout,
+              onTimeout: () => throw OpenAIApiException(
+                'Request timed out after ${timeout.inSeconds}s',
+              ),
+            );
+          } on LocalizationResponseException {
+            // Unusable payload: never retried here — the caller splits the
+            // batch into single languages, a *different*, shorter prompt.
+            rethrow;
+          } on Object catch (e) {
+            final retryable = e is! OpenAIApiException || e.isRetryable;
+            if (!retryable || attempt >= retries) rethrow;
+            $err('OpenAI API call failed (attempt $attempt/$retries): $e');
+            await Future<void>.delayed(
+              Duration(milliseconds: 500 * (1 << (attempt - 1))),
+            );
+          }
         }
+      } finally {
+        // Closing an already-aborted client must not mask the real error.
+        try {
+          client.close(force: true);
+        } on Object catch (_) {}
       }
     } finally {
-      client.close(force: true);
       _release();
     }
   }

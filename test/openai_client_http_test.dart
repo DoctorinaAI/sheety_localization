@@ -45,7 +45,13 @@ class FakeOpenAI {
 String okBody(Map<String, String> texts) => jsonEncode({
       'status': 'completed',
       'output': [
+        // A reasoning model puts its thinking in front of the answer.
         {
+          'type': 'reasoning',
+          'summary': <Object?>[],
+        },
+        {
+          'type': 'message',
           'content': [
             {
               'type': 'output_text',
@@ -179,6 +185,7 @@ void main() {
             'status': 'completed',
             'output': [
               {
+                'type': 'message',
                 'content': [
                   {'type': 'output_text', 'text': '{"label": "greet'}
                 ]
