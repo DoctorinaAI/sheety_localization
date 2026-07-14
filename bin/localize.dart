@@ -123,11 +123,15 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
 
         // Fetch spreadsheets from Google Sheets API
         $log('Generating localization table...');
-        final sheets = await fetchSpreadsheets(
-          sheetsApi: sheetsApi,
-          sheetId: sheetId,
-          ignore: ignore,
-        ).toList();
+        final gateway = GoogleSheetsGateway(api: sheetsApi, id: sheetId);
+        final List<SheetData> sheets;
+        try {
+          sheets = await gateway.fetch(ignore: ignore).toList();
+        } on Object catch (e) {
+          sheetsClient.close();
+          $err('$e');
+          io.exit(1);
+        }
 
         if (sheets.isEmpty) {
           sheetsClient.close();
@@ -144,11 +148,13 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           timeout: Duration(seconds: timeout),
         );
 
+        // Stay under the Google Sheets write quota (60 requests/min).
+        final limiter = RateLimiter(maxRequestsPerMinute: 60);
+
         // Process each sheet
         $log('Processing ${sheets.length} sheets...');
         try {
-          for (final (:sheet, :values) in sheets) {
-            final title = sheet.properties?.title ?? 'Unknown';
+          for (final (:title, :values) in sheets) {
             $log('Processing sheet: $title');
             final rows = extractEmptyCells(
               title: title,
@@ -163,11 +169,11 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
               cellsPerBatch: batch,
             )) {
               if (row.isEmpty) continue;
-              await updateSheet(
-                api: sheetsApi,
-                sheetId: sheetId,
+              await updateRow(
+                sheets: gateway,
                 sheetTitle: title,
                 row: row,
+                limiter: limiter,
               );
             }
           }
@@ -387,186 +393,5 @@ Future<({SheetsApi api, AutoRefreshingAuthClient client})>
   } on Object catch (e) {
     $err('Error creating Google Sheets API client: $e');
     io.exit(1);
-  }
-}
-
-/// Fetch spreadsheets from Google Sheets API
-/// [sheetsApi] - The Google Sheets API client
-/// [sheetId] - Google Spreadsheet ID
-/// [ignore] - Patterns of sheet titles to skip
-/// Returns a list of sheets and their values.
-Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
-  required SheetsApi sheetsApi,
-  required String sheetId,
-  List<RegExp> ignore = const [],
-}) async* {
-  $log('Fetching spreadsheet data...');
-  List<Sheet> sheets;
-  try {
-    final spreadsheet = await sheetsApi.spreadsheets.get(sheetId);
-    sheets = spreadsheet.sheets ?? [];
-  } on Object catch (e) {
-    $err('Error fetching spreadsheet data: $e');
-    io.exit(1);
-  }
-  if (sheets.isEmpty) {
-    $err('No sheets found in the spreadsheet with ID: $sheetId');
-    io.exit(1);
-  }
-
-  $log('Retrieving data from ${sheets.length} sheets...');
-  for (final sheet in sheets) {
-    final properties = sheet.properties;
-    if (properties == null) {
-      $err('Sheet properties are null, skipping sheet...');
-      continue;
-    }
-    final SheetProperties(sheetId: id, title: title) = properties;
-
-    // Check if the sheet title matches any of the ignore patterns
-    if (id == null) {
-      $err('Sheet ID is null, skipping sheet...');
-      continue;
-    } else if (title == null || title.isEmpty) {
-      $err('Sheet title is null or empty, skipping sheet...');
-      continue;
-    } else if (ignore.any((pattern) => pattern.hasMatch(title))) {
-      $log('Ignoring sheet "$title" as it matches ignore patterns');
-      continue;
-    }
-
-    final ValueRange(:values) = await sheetsApi.spreadsheets.values.get(
-      sheetId,
-      title,
-    );
-
-    // Validate sheet values
-    if (values == null) {
-      $err('Sheet "$title" has no values, skipping sheet...');
-      continue;
-    } else if (values.isEmpty) {
-      $err('Sheet "$title" is empty, skipping sheet...');
-      continue;
-    } else if (values.length < 2) {
-      $err('Sheet "$title" has no rows, skipping sheet...');
-      continue;
-    } else if (values.first.length < 4) {
-      $err('Sheet "$title" has no localizations, skipping sheet...');
-      continue;
-    }
-
-    yield (sheet: sheet, values: values);
-  }
-}
-
-/// Rate limiter for Google Sheets API calls
-class RateLimiter {
-  /// Creates a limiter allowing [maxRequestsPerMinute] calls per minute.
-  RateLimiter({
-    required this.maxRequestsPerMinute,
-  }) : _requestTimes = <int>[];
-
-  /// Maximum number of requests per rolling minute.
-  final int maxRequestsPerMinute;
-  final List<int> _requestTimes;
-  final Stopwatch _stopwatch = Stopwatch()..start();
-
-  /// Wait if necessary to respect rate limits
-  Future<void> waitIfNeeded() async {
-    final now = _stopwatch.elapsedMilliseconds;
-
-    // Remove requests older than 1 minute
-    _requestTimes.removeWhere((time) => now - time > 60000);
-
-    // If we're at the limit, wait until we can make another request
-    if (_requestTimes.length >= maxRequestsPerMinute) {
-      final oldestRequest = _requestTimes.first;
-      final waitTime = 60000 - (now - oldestRequest) + 100; // +100ms buffer
-      if (waitTime > 0) {
-        $log('Rate limit reached, waiting ${waitTime}ms...');
-        await Future<void>.delayed(Duration(milliseconds: waitTime));
-      }
-      // Remove the oldest request after waiting
-      _requestTimes.removeAt(0);
-    }
-
-    // Record this request
-    _requestTimes.add(_stopwatch.elapsedMilliseconds);
-  }
-}
-
-// Global rate limiter instance
-final RateLimiter _sheetsRateLimiter = RateLimiter(maxRequestsPerMinute: 60);
-
-/// Update the Google Sheet with localized values
-/// [api] - The Google Sheets API client
-/// [sheetId] - The sheet to update
-/// [sheetTitle] - The title of the sheet
-/// [row] - The row with localized values
-Future<void> updateSheet({
-  required SheetsApi api,
-  required String sheetId,
-  required String sheetTitle,
-  required LocalizeRow row,
-}) async {
-  if (row.isEmpty) return;
-
-  // Collect every non-empty cell into a single batch so the whole row is
-  // written in ONE API request instead of one request per cell. This keeps us
-  // well under the Google Sheets write quota (60 requests/min).
-  // A title with a space or an apostrophe ("App Strings", "Don't") is not a
-  // valid bare A1 range — it has to be quoted, with inner quotes doubled.
-  final title = "'${sheetTitle.replaceAll("'", "''")}'";
-
-  final data = <ValueRange>[];
-  for (final cell in row.cells) {
-    if (cell.isEmpty) continue;
-    data.add(
-      ValueRange(
-        range: '$title!${columnFromIndex(cell.column)}${row.row + 1}',
-        values: [
-          [cell.text]
-        ],
-      ),
-    );
-  }
-  if (data.isEmpty) return;
-
-  const attempts = 3;
-  for (var attempt = 1; attempt <= attempts; attempt++) {
-    try {
-      // Wait for rate limiter before making API call
-      await _sheetsRateLimiter.waitIfNeeded();
-
-      await api.spreadsheets.values.batchUpdate(
-        BatchUpdateValuesRequest(
-          valueInputOption: 'RAW',
-          data: data,
-        ),
-        sheetId,
-      );
-      return; // Success
-    } on Object catch (e) {
-      // A malformed range, a missing scope or a deleted sheet will fail exactly
-      // the same way on every attempt. Sleeping 30s three times over it only
-      // stalls every row queued behind this one.
-      final status = e is DetailedApiRequestError ? e.status : null;
-      final retryable =
-          status == null || status == 429 || (status >= 500 && status < 600);
-      if (!retryable || attempt == attempts) {
-        // Do not abort the whole run because of one unwritable row.
-        $err(
-          'Error updating sheet "$sheetTitle" '
-          'row [${row.row + 1}], skipping it: $e',
-        );
-        return;
-      }
-      $err(
-        'Retrying update for sheet "$sheetTitle" '
-        'row [${row.row + 1}] '
-        '(attempt $attempt/$attempts) due to error: $e',
-      );
-      await Future<void>.delayed(Duration(seconds: 5 * (1 << (attempt - 1))));
-    }
   }
 }

@@ -8,6 +8,9 @@
 - **FIX**: A sheet title containing a space or an apostrophe produced an invalid A1 range, so the row could not be written.
 - **FIX**: Two columns whose headers sanitize to the same locale (`pt-BR` and `pt_BR`) left the second one empty forever; the duplicate column is now skipped.
 - **CHANGED**: Failed writes to Google Sheets are retried only when retrying can help (429, 5xx, network) — a malformed range or a missing scope no longer costs 60s of sleeping per row.
+- **CHANGED**: A single OpenAI request now has a hard timeout (`--timeout`, default 120s), and retries are limited to transient failures; an unusable payload is answered by splitting the batch instead of re-sending the same prompt.
+- **CHANGED**: An invalid numeric option (`--workers=abc`, `--batch=99`) is reported instead of being silently replaced by the default.
+- **CHANGED**: The pipeline moved to `lib/`, behind interfaces for both the model (`LocalizationClient`) and the spreadsheet (`SheetsGateway`), and is covered by unit tests — including the sheet-write path that used to be reachable only through a live Google account.
 - **ADDED**: Per-language fallback: a failed batch of languages is split and each language is retried on its own instead of being re-sent as a whole, so one rare language the model chokes on no longer breaks its neighbours.
 - **ADDED**: Translation validation before writing: ICU placeholders and markup tags must survive, no empty values, no leaked markdown fences, no runaway output. A rejected translation is retried alone.
 - **ADDED**: Language hints in the prompt and in the JSON schema — English name, native endonym and an explicit disambiguation note for codes models misread (`uk` is Ukrainian, not "United Kingdom").
