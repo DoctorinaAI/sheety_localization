@@ -1,25 +1,13 @@
-// ignore_for_file: unused_import, depend_on_referenced_packages
+// ignore_for_file: depend_on_referenced_packages
 
 import 'dart:async';
-import 'dart:collection';
 import 'dart:convert';
-import 'dart:developer';
 import 'dart:io' as io;
 
 import 'package:args/args.dart';
-import 'package:googleapis/people/v1.dart';
 import 'package:googleapis/sheets/v4.dart';
 import 'package:googleapis_auth/auth_io.dart';
-import 'package:path/path.dart' as path;
-
-// TODO(plugfox): Add workers support with semaphore
-// Mike Matiunin <plugfox@gmail.com>, 02 October 2025
-
-// TODO(plugfox): Combine cells range into single batch requests
-// Mike Matiunin <plugfox@gmail.com>, 02 October 2025
-
-final $log = io.stdout.writeln; // Log to stdout
-final $err = io.stderr.writeln; // Log to stderr
+import 'package:sheety_localization/localize.dart';
 
 /// Localize Google Sheets with OpenAI API (ChatGPT)
 void main(List<String>? $arguments) => runZonedGuarded<void>(
@@ -59,13 +47,15 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
                 ?.split(',')
                 .map((e) => e.trim())
                 .where((e) => e.isNotEmpty)
-                .map((e) => RegExp(e))
+                .map(RegExp.new)
                 .toList(growable: false) ??
-            const [];
+            const <RegExp>[];
         final workers =
             int.tryParse(excludeQuotes(args.option('workers')) ?? '6') ?? 6;
         final batch =
             int.tryParse(excludeQuotes(args.option('batch')) ?? '3') ?? 3;
+        final timeout =
+            int.tryParse(excludeQuotes(args.option('timeout')) ?? '120') ?? 120;
         String? systemPrompt;
 
         // Validate required arguments
@@ -137,6 +127,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           model: openaiModel ?? 'gpt-5-mini',
           workers: workers.clamp(1, 14),
           systemPrompt: systemPrompt,
+          timeout: Duration(seconds: timeout.clamp(10, 900)),
         );
 
         // Process each sheet
@@ -145,8 +136,8 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
           for (final (:sheet, :values) in sheets) {
             final title = sheet.properties?.title ?? 'Unknown';
             $log('Processing sheet: $title');
-            final rows = await extractEmptyCells(
-              sheet: sheet,
+            final rows = extractEmptyCells(
+              title: title,
               values: values,
             );
             if (rows.isEmpty) continue;
@@ -187,7 +178,6 @@ ArgParser buildArgumentsParser() => ArgParser()
     abbr: 'h',
     aliases: const <String>['readme', 'usage', 'info', 'howto'],
     negatable: false,
-    defaultsTo: false,
     help: 'Print this usage information',
   )
   ..addOption(
@@ -308,6 +298,18 @@ ArgParser buildArgumentsParser() => ArgParser()
     help: 'Number of languages to translate per single API call',
   )
   ..addOption(
+    'timeout',
+    aliases: const <String>[
+      'request-timeout',
+      'openai-timeout',
+      'deadline',
+    ],
+    mandatory: false,
+    defaultsTo: '120',
+    valueHelp: 'seconds',
+    help: 'Hard timeout of a single OpenAI request, in seconds',
+  )
+  ..addOption(
     'workers',
     abbr: 'w',
     aliases: const <String>[
@@ -322,7 +324,7 @@ ArgParser buildArgumentsParser() => ArgParser()
     mandatory: false,
     defaultsTo: '6',
     valueHelp: 'number',
-    help: 'Number of worker isolates to use',
+    help: 'Number of concurrent OpenAI requests',
   );
 
 /// Help message for the command line arguments
@@ -375,8 +377,9 @@ Future<({SheetsApi api, AutoRefreshingAuthClient client})>
 }
 
 /// Fetch spreadsheets from Google Sheets API
-/// [credentialsPath] - Path to the service account credentials JSON file
+/// [sheetsApi] - The Google Sheets API client
 /// [sheetId] - Google Spreadsheet ID
+/// [ignore] - Patterns of sheet titles to skip
 /// Returns a list of sheets and their values.
 Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
   required SheetsApi sheetsApi,
@@ -442,515 +445,14 @@ Stream<({Sheet sheet, List<List<Object?>> values})> fetchSpreadsheets({
   }
 }
 
-/// Extract empty cells to be localized
-/// [sheet] - The sheet to process
-/// [values] - The values of the sheet
-Future<List<LocalizeRow>> extractEmptyCells({
-  required Sheet sheet,
-  required List<List<Object?>> values,
-}) async {
-  final sanitize = sanitizer();
-
-  final bucket = sanitize(sheet.properties?.title ?? '');
-  if (bucket.isEmpty) {
-    $err(
-      'Sheet '
-      '"${sheet.properties?.sheetId ?? sheet.properties?.index ?? '???'}" '
-      'title is empty, skipping sheet...',
-    );
-    return const [];
-  }
-
-  final header = values.first;
-
-  // Fill locales
-  final locales = List.filled(header.length, '', growable: false);
-  for (var i = 3; i < header.length; i++) {
-    final cell = header[i];
-    switch (cell) {
-      case String text when text.isNotEmpty:
-        final locale = sanitize(text);
-        locales[i] = locale;
-      case String _:
-        $err(
-          'Sheet "$bucket" has empty column '
-          '[${columnFromIndex(i)}] in header, '
-          'ignore the whole column...',
-        );
-        continue;
-      default:
-        $err(
-          'Sheet "$bucket" has non-string column '
-          '[${columnFromIndex(i)}] in header, '
-          'ignore whole column...',
-        );
-        continue;
-    }
-  }
-
-  // Process locales from the sheet, skipping empty ones
-  final localize = <LocalizeRow>[];
-  {
-    final queue = Queue<LocalizeCell>();
-    for (var i = 1; i < values.length; i++) {
-      final row = values[i];
-      if (row.isEmpty || row.every((cell) => cell == null) || row.length < 4) {
-        $err('Sheet "$bucket" has empty row ${i + 1}, skipping row...');
-        continue;
-      }
-
-      // Extract label, description, and meta from the row
-      final [$label, $description, $meta, $english, ..._] = row;
-      if ($label == null || $label is! String || $label.isEmpty) {
-        $err(
-          'Sheet "$bucket" has empty label in row #${i + 1}, '
-          'skipping row...',
-        );
-        continue;
-      }
-      final label = sanitize($label);
-
-      // Extract locales from the row
-      for (var j = 4; j < locales.length; j++) {
-        final cell = row.length > j ? row[j] : null;
-        final locale = locales[j];
-        if (locale.isEmpty) continue; // Skip empty locales
-        switch (cell) {
-          case null:
-            queue.add(LocalizeCell(column: j, code: locale, text: ''));
-          case String text when text.isNotEmpty:
-            continue; // Already localized, skip
-          case String():
-            queue.add(LocalizeCell(column: j, code: locale, text: ''));
-          case num():
-          default:
-            continue; // Skip non-string cells
-        }
-      }
-
-      // Skip rows with no locales to localize
-      if (queue.isEmpty) continue;
-      localize.add(
-        LocalizeRow(
-          row: i,
-          label: label,
-          description: switch ($description) {
-            String text when text.isNotEmpty => text,
-            num number => number.toString(),
-            _ => null,
-          },
-          meta: switch ($meta) {
-            String text when text.isNotEmpty => text,
-            num number => number.toString(),
-            _ => null,
-          },
-          english: switch ($english) {
-            String text when text.isNotEmpty => text,
-            num number => number.toString(),
-            _ => label,
-          },
-          cells: queue.toList(growable: false),
-        ),
-      );
-      queue.clear();
-    }
-  }
-
-  return localize;
-}
-
-/// Builds a strict prompt for a localization task.
-/// - Comments are in English.
-/// - Uses jsonEncode for safe inline JSON embedding.
-/// - Uses StringBuffer with cascade operators for clarity and speed.
-/// - Keeps soft-ish validation with explicit errors (same as original intent).
-({String prompt, Map<String, Object?> schema}) buildLocalizationPrompt({
-  required String label,
-  required String en,
-  required List<String> languages,
-  String? description,
-  String? meta, // keep as String? to avoid breaking callers; embed as-is
-}) {
-  // -- helpers ---------------------------------------------------------------
-
-  /// Return trimmed string or null if empty.
-  String? safeStr(String? v) => v == null || v.trim().isEmpty ? null : v.trim();
-
-  /// Unique, order-preserving list of non-empty language codes.
-  List<String> uniqLangs(Iterable<String> arr) => List<String>.unmodifiable(
-        LinkedHashSet<String>.from(
-          arr.map(safeStr).whereType<String>().where((s) => s.isNotEmpty),
-        ),
-      );
-
-  // -- unpack & normalize ----------------------------------------------------
-  final normLabel = safeStr(label);
-  final normDesc = safeStr(description);
-  final normEn = safeStr(en);
-  final langs = uniqLangs(languages);
-  final String? metaInline = safeStr(meta); // already a string; embed as-is
-
-  // -- validation (explicit) -------------------------------------------------
-  if (normLabel == null) throw ArgumentError('Missing label');
-  if (normEn == null) throw ArgumentError('Missing source English text');
-  if (langs.isEmpty) throw ArgumentError('No target languages provided');
-
-  // -- output skeleton (built once; used in prompt to fix structure) ---------
-  final skeleton = StringBuffer()
-    ..writeln('{')
-    ..writeln('  "label": ${jsonEncode(normLabel)},')
-    ..writeln('  "localization": {');
-  for (var i = 0; i < langs.length; i++) {
-    final key = jsonEncode(langs[i]); // safe quoted JSON key
-    final comma = i == langs.length - 1 ? '' : ',';
-    skeleton.writeln('    $key: {"text": ""}$comma');
-  }
-  skeleton
-    ..writeln('  }')
-    ..writeln('}');
-
-  // -- prompt assembly (tight, explicit, production-safe) --------------------
-  final p = StringBuffer()
-    ..writeln('You are a professional localization engine '
-        'for a medical symptom-based advice chatbot.')
-    ..writeln('Localize the item below into the target languages.')
-    ..writeln('--- CONTEXT INPUT ---')
-    ..writeln('label: $normLabel');
-  if (normDesc != null) p.writeln('description: $normDesc');
-  if (metaInline != null) {
-    // meta is already string; if caller wants JSON,
-    // they should pass it as a JSON string.
-    p.writeln('meta_placeholders (ICU / intl format): $metaInline');
-  }
-  p
-    ..writeln('en_source: $normEn')
-    ..writeln('target_languages: ${langs.map((code) {
-      final name = resolveLanguageName(code);
-      return name != null ? '$code ($name)' : code;
-    }).join(', ')}')
-    ..writeln('--- OUTPUT REQUIREMENTS ---')
-    ..writeln(
-        'Return ONLY valid minified JSON (no comments, no markdown fences).')
-    ..writeln('Do NOT add explanatory text before or after JSON.')
-    ..writeln('All requested languages MUST be present, no additional keys.')
-    ..writeln('Preserve ICU/intl placeholders exactly '
-        '(e.g., {name}, {version}, {count}).')
-    ..writeln('Preserve HTML-like or XML-like tags verbatim if present.')
-    ..writeln('Do not introduce new placeholders or variables.')
-    ..writeln('If translation would be identical to English, '
-        'repeat the English text.')
-    ..writeln('If a translation is infeasible or unclear, '
-        'copy the English text as fallback.')
-    ..writeln('Avoid adding periods if original does not have one; '
-        'keep stylistic equivalence.')
-    ..writeln('No leading/trailing spaces in values.')
-    ..writeln('Each value MUST be culturally and medically appropriate, '
-        'neutral and concise.')
-    ..writeln('No quotes escaping beyond standard JSON string escaping.')
-    ..writeln('--- JSON SCHEMA (informal) ---')
-    ..writeln('{')
-    ..writeln('  "label": string,')
-    ..writeln('  "localization": {')
-    ..writeln('    <language_code>: {"text": string (non-empty)} '
-        '// exactly the requested languages')
-    ..writeln('  }')
-    ..writeln('}')
-    ..writeln('--- OUTPUT SKELETON (structure to follow) ---')
-    ..writeln(skeleton.toString())
-    ..writeln('--- RULES SUMMARY ---')
-    ..writeln('1. Output only JSON.')
-    ..writeln('2. Keys: label, localization.')
-    ..writeln('3. localization contains exactly the target languages.')
-    ..writeln('4. Each language object: {"text": "<translation>"}.')
-    ..writeln('5. Do not include description, meta, or extra metadata fields.')
-    ..writeln('6. Do not translate placeholders or modify their braces.')
-    ..writeln('7. Keep punctuation style consistent with source.')
-    ..writeln('8. Avoid hallucinating additional medical '
-        'advice beyond the source meaning.')
-    ..writeln('9. Keep resulting JSON compact (no unnecessary whitespace).')
-    ..writeln('10. Use UTF-8 characters directly (no HTML entities).');
-
-  // -- strict JSON Schema for Responses API ----------------------------------
-  // This object can be used directly under response_format.json_schema
-  // { "name": "...", "strict": true, "schema": { ... } }
-  Map<String, Object?> langObjectSchema() => <String, Object?>{
-        'type': 'object',
-        'additionalProperties': false,
-        'required': ['text'],
-        'properties': {
-          'text': {'type': 'string', 'minLength': 1}
-        },
-      };
-
-  final Map<String, Object?> langProps = {
-    for (final code in langs) code: langObjectSchema()
-  };
-
-  final schemaMap = <String, Object?>{
-    'type': 'object',
-    'additionalProperties': false,
-    'required': ['label', 'localization'],
-    'properties': {
-      'label': {'type': 'string', 'minLength': 1},
-      'localization': {
-        'type': 'object',
-        'additionalProperties': false,
-        'required': langs, // exactly these languages must be present
-        'properties': langProps,
-      }
-    }
-  };
-
-  return (prompt: p.toString(), schema: schemaMap);
-}
-
-/// Localize rows using OpenAI API
-/// [rows] - The rows to localize
-/// [client] - The OpenAI client to use
-Stream<LocalizeRow> localizeRows({
-  required List<LocalizeRow> rows,
-  required OpenAIClient client,
-  int cellsPerBatch = 3,
-}) {
-  // Localize a single row: split its target locales into batches and call the
-  // OpenAI API for each batch. Batches within a row run sequentially, but many
-  // rows are dispatched concurrently below — the client's internal semaphore
-  // caps the number of simultaneous requests at [OpenAIClient.workers].
-  Future<void> localizeOne(LocalizeRow row) async {
-    final cells = row.cells.map((e) => e.code).toList(growable: false);
-    for (var i = 0; i < cells.length; i += cellsPerBatch) {
-      try {
-        // Get the next batch of languages to process
-        final languages =
-            cells.skip(i).take(cellsPerBatch).toList(growable: false);
-        if (languages.isEmpty) break;
-
-        // Create user prompt:
-        final (:prompt, :schema) = buildLocalizationPrompt(
-          label: row.label,
-          en: row.english,
-          description: row.description,
-          meta: row.meta,
-          languages: languages,
-        );
-
-        // Call OpenAI API:
-        final data = await client(prompt: prompt, schema: schema);
-        if (data.label != row.label)
-          throw ArgumentError(
-            'Mismatched label in response: expected "${row.label}", '
-            'got "${data.label}"',
-          );
-
-        // Update row with localized values:
-        for (final MapEntry(key: locale, :value) in data.localization.entries) {
-          if (value case {'text': String text} when text.isNotEmpty) {
-            final cell = row.cells.firstWhere(
-              (c) => c.code == locale,
-              orElse: () => throw ArgumentError(
-                'Unexpected locale in response: $locale',
-              ),
-            );
-            cell.text = text;
-          } else {
-            throw ArgumentError(
-              'Invalid or empty text for locale "$locale" in response',
-            );
-          }
-        }
-      } on Object catch (e, s) {
-        $err('Error localizing row "${row.label}": $e\n$s');
-        continue;
-      }
-    }
-  }
-
-  // Dispatch every row concurrently and emit each one as soon as it finishes.
-  if (rows.isEmpty) return const Stream.empty();
-  final controller = StreamController<LocalizeRow>();
-  var pending = rows.length;
-  for (final row in rows) {
-    Future<void>(() async {
-      try {
-        await localizeOne(row);
-      } on Object catch (e, _) {
-        $err('Error localizing row: $e');
-      } finally {
-        pending--;
-        if (pending == 0) controller.close().ignore();
-      }
-    });
-  }
-  return controller.stream;
-}
-
-class OpenAIClient {
-  OpenAIClient({
-    required this.apiKey,
-    this.model = 'gpt-5-mini', // gpt-5-mini
-    this.workers = 6,
-    this.retries = 3,
-    this.systemPrompt,
-  }) : _available = workers < 1 ? 1 : workers;
-
-  final String apiKey;
-  final String model;
-  final int workers;
-  final int retries;
-  final String? systemPrompt;
-
-  /// Counting semaphore limiting the number of concurrent in-flight
-  /// OpenAI requests to [workers].
-  int _available;
-  final Queue<Completer<void>> _waiters = Queue<Completer<void>>();
-
-  /// Acquire a slot before performing a request, waiting if [workers] requests
-  /// are already in flight.
-  Future<void> _acquire() {
-    if (_available > 0) {
-      _available--;
-      return Future<void>.value();
-    }
-    final completer = Completer<void>();
-    _waiters.add(completer);
-    return completer.future;
-  }
-
-  /// Release a slot, waking the next waiter if any.
-  void _release() {
-    if (_waiters.isNotEmpty) {
-      _waiters.removeFirst().complete();
-    } else {
-      _available++;
-    }
-  }
-
-  Future<({String label, Map<String, Object?> localization})> _request({
-    required io.HttpClient client,
-    required String prompt,
-    required Map<String, Object?> schema,
-  }) async {
-    final uri = Uri.parse('https://api.openai.com/v1/responses');
-    final request = await client.postUrl(uri)
-      ..headers.set('Content-Type', 'application/json')
-      ..headers.set('Authorization', 'Bearer $apiKey');
-    final body = jsonEncode({
-      'model': model, // e.g. "gpt-5-mini"
-
-      // System prompt goes into `instructions` for Responses API
-      if (systemPrompt != null) 'instructions': systemPrompt,
-
-      // User prompt goes into `input` with explicit content typing
-      'input': [
-        {
-          'role': 'user',
-          'content': [
-            {
-              'type': 'input_text',
-              'text': prompt,
-            }
-          ]
-        }
-      ],
-
-      // Specify structured output at the TOP-LEVEL under "text.format"
-      'text': {
-        'format': {
-          'name': 'i18n_payload',
-          'strict': true,
-          'type': 'json_schema',
-          'schema': schema
-        }
-      },
-
-      // Deterministic outputs for pipeline stability
-      //'verbosity': 'low',
-      'temperature': 0,
-      'top_p': 1,
-      //'seed': 42,
-
-      // Token budget: translation payload is small, but keep headroom
-      'max_output_tokens': 2048,
-
-      //'reasoning': {'effort': 'low'}
-    });
-    request.add(utf8.encode(body));
-    final response = await request.close();
-    if (response.statusCode != 200)
-      throw Exception(
-        'OpenAI API error: ${response.statusCode}'
-        ' - '
-        '${await response.transform(utf8.decoder).join()}',
-      );
-    final responseBody = await response.transform(utf8.decoder).join();
-    final json = jsonDecode(responseBody);
-    if (json case {'output': List<Object?> output} when output.isNotEmpty) {
-      for (final item in output) {
-        if (item case {'content': List<Object?> content}) {
-          for (final {'text': text}
-              in content.whereType<Map<String, Object?>>()) {
-            if (jsonDecode(text as String)
-                case {
-                  'label': String label,
-                  'localization': Map<String, Object?> localization
-                }) {
-              return (label: label, localization: localization);
-            } else {
-              throw Exception('Invalid JSON structure in OpenAI response');
-            }
-          }
-        } else {
-          throw Exception('Invalid content structure in OpenAI response');
-        }
-      }
-    } else if (json case {'error': Map<String, Object?> error}) {
-      throw Exception('OpenAI API error: $error');
-    } else {
-      throw Exception('Invalid response from OpenAI API: $json');
-    }
-    throw Exception('Invalid response format from OpenAI API');
-  }
-
-  Future<({String label, Map<String, Object?> localization})> call({
-    required String prompt,
-    required Map<String, Object?> schema,
-  }) async {
-    // Throttle to at most [workers] concurrent in-flight requests.
-    await _acquire();
-    final client = io.HttpClient();
-    try {
-      for (var i = 0; i < retries; i++) {
-        try {
-          return await _request(
-            client: client,
-            prompt: prompt,
-            schema: schema,
-          );
-        } on FormatException catch (e) {
-          if (i == retries - 1) rethrow;
-          $err('OpenAI API returned invalid JSON '
-              '(attempt ${i + 1}/$retries): $e');
-          await Future<void>.delayed(const Duration(milliseconds: 250));
-        } on Object catch (e) {
-          if (i == retries - 1) rethrow;
-          $err('OpenAI API call failed ' '(attempt ${i + 1}/$retries): $e');
-          await Future<void>.delayed(const Duration(milliseconds: 250));
-        }
-      }
-      throw Exception('OpenAI API call failed after $retries attempts');
-    } finally {
-      client.close();
-      _release();
-    }
-  }
-}
-
 /// Rate limiter for Google Sheets API calls
 class RateLimiter {
+  /// Creates a limiter allowing [maxRequestsPerMinute] calls per minute.
   RateLimiter({
     required this.maxRequestsPerMinute,
   }) : _requestTimes = <int>[];
 
+  /// Maximum number of requests per rolling minute.
   final int maxRequestsPerMinute;
   final List<int> _requestTimes;
   final Stopwatch _stopwatch = Stopwatch()..start();
@@ -1028,11 +530,12 @@ Future<void> updateSheet({
       break; // Success, exit retry loop
     } on Object catch (e) {
       if (attempt == attempts) {
+        // Do not abort the whole run because of one unwritable row.
         $err(
           'Error updating sheet "$sheetTitle" '
-          'row [${row.row + 1}]: $e',
+          'row [${row.row + 1}], skipping it: $e',
         );
-        rethrow;
+        return;
       }
       $err(
         'Retrying update for sheet "$sheetTitle" '
@@ -1042,354 +545,4 @@ Future<void> updateSheet({
       await Future<void>.delayed(const Duration(seconds: 30));
     }
   }
-}
-
-/// Represents a cell to be localized
-class LocalizeCell {
-  LocalizeCell({
-    required this.column,
-    required this.code,
-    required this.text,
-  });
-
-  int column;
-  String code;
-  String text;
-  bool get isEmpty => text.isEmpty;
-}
-
-/// Represents a row to be localized
-class LocalizeRow {
-  LocalizeRow({
-    required this.row,
-    required this.label,
-    required this.description,
-    required this.meta,
-    required this.english,
-    required this.cells,
-  });
-
-  int row;
-  String label;
-  String? description;
-  String? meta;
-  String english;
-  List<LocalizeCell> cells;
-  bool get isEmpty => cells.isEmpty;
-}
-
-/*
-sheetsApi.spreadsheets.values.batchUpdate(
-  BatchUpdateValuesRequest(
-    data: <ValueRange>[
-      ValueRange(
-        range: 'A1:Z1',
-        majorDimension: 'ROWS',
-        values: [
-          ['Header1', 'Header2', 'Header3', 'Locale1', 'Locale2']
-        ],
-      ),
-    ],
-    valueInputOption: 'RAW',
-  ),
-  sheetId,
-); */
-
-/// Comprehensive mapping of ISO 639-1 language codes (and common extended
-/// locale codes) to their English language names.
-/// Keys are lowercase with `_` as separator.
-const Map<String, String> kLanguageNames = <String, String>{
-  // A
-  'aa': 'Afar',
-  'ab': 'Abkhazian',
-  'af': 'Afrikaans',
-  'ak': 'Akan',
-  'am': 'Amharic',
-  'an': 'Aragonese',
-  'ar': 'Arabic',
-  'as': 'Assamese',
-  'av': 'Avaric',
-  'ay': 'Aymara',
-  'az': 'Azerbaijani',
-  // B
-  'ba': 'Bashkir',
-  'be': 'Belarusian',
-  'bg': 'Bulgarian',
-  'bh': 'Bihari',
-  'bi': 'Bislama',
-  'bm': 'Bambara',
-  'bn': 'Bengali',
-  'bo': 'Tibetan',
-  'br': 'Breton',
-  'bs': 'Bosnian',
-  // C
-  'ca': 'Catalan',
-  'ce': 'Chechen',
-  'ch': 'Chamorro',
-  'co': 'Corsican',
-  'cr': 'Cree',
-  'cs': 'Czech',
-  'cu': 'Church Slavic',
-  'cv': 'Chuvash',
-  'cy': 'Welsh',
-  // D
-  'da': 'Danish',
-  'de': 'German',
-  'dv': 'Divehi',
-  'dz': 'Dzongkha',
-  // E
-  'ee': 'Ewe',
-  'el': 'Greek',
-  'en': 'English',
-  'eo': 'Esperanto',
-  'es': 'Spanish',
-  'et': 'Estonian',
-  'eu': 'Basque',
-  // F
-  'fa': 'Persian',
-  'ff': 'Fulah',
-  'fi': 'Finnish',
-  'fj': 'Fijian',
-  'fo': 'Faroese',
-  'fr': 'French',
-  'fy': 'Western Frisian',
-  // G
-  'ga': 'Irish',
-  'gd': 'Scottish Gaelic',
-  'gl': 'Galician',
-  'gn': 'Guarani',
-  'gu': 'Gujarati',
-  'gv': 'Manx',
-  // H
-  'ha': 'Hausa',
-  'he': 'Hebrew',
-  'hi': 'Hindi',
-  'ho': 'Hiri Motu',
-  'hr': 'Croatian',
-  'ht': 'Haitian Creole',
-  'hu': 'Hungarian',
-  'hy': 'Armenian',
-  'hz': 'Herero',
-  // I
-  'ia': 'Interlingua',
-  'id': 'Indonesian',
-  'ie': 'Interlingue',
-  'ig': 'Igbo',
-  'ii': 'Sichuan Yi',
-  'ik': 'Inupiaq',
-  'io': 'Ido',
-  'is': 'Icelandic',
-  'it': 'Italian',
-  'iu': 'Inuktitut',
-  // J
-  'ja': 'Japanese',
-  'jv': 'Javanese',
-  // K
-  'ka': 'Georgian',
-  'kg': 'Kongo',
-  'ki': 'Kikuyu',
-  'kj': 'Kuanyama',
-  'kk': 'Kazakh',
-  'kl': 'Kalaallisut',
-  'km': 'Khmer',
-  'kn': 'Kannada',
-  'ko': 'Korean',
-  'kr': 'Kanuri',
-  'ks': 'Kashmiri',
-  'ku': 'Kurdish',
-  'kv': 'Komi',
-  'kw': 'Cornish',
-  'ky': 'Kyrgyz',
-  // L
-  'la': 'Latin',
-  'lb': 'Luxembourgish',
-  'lg': 'Ganda',
-  'li': 'Limburgish',
-  'ln': 'Lingala',
-  'lo': 'Lao',
-  'lt': 'Lithuanian',
-  'lu': 'Luba-Katanga',
-  'lv': 'Latvian',
-  // M
-  'mg': 'Malagasy',
-  'mh': 'Marshallese',
-  'mi': 'Maori',
-  'mk': 'Macedonian',
-  'ml': 'Malayalam',
-  'mn': 'Mongolian',
-  'mr': 'Marathi',
-  'ms': 'Malay',
-  'mt': 'Maltese',
-  'my': 'Burmese',
-  // N
-  'na': 'Nauru',
-  'nb': 'Norwegian Bokmal',
-  'nd': 'North Ndebele',
-  'ne': 'Nepali',
-  'ng': 'Ndonga',
-  'nl': 'Dutch',
-  'nn': 'Norwegian Nynorsk',
-  'no': 'Norwegian',
-  'nr': 'South Ndebele',
-  'nv': 'Navajo',
-  'ny': 'Chichewa',
-  // O
-  'oc': 'Occitan',
-  'oj': 'Ojibwe',
-  'om': 'Oromo',
-  'or': 'Odia',
-  'os': 'Ossetian',
-  // P
-  'pa': 'Punjabi',
-  'pi': 'Pali',
-  'pl': 'Polish',
-  'ps': 'Pashto',
-  'pt': 'Portuguese',
-  // Q
-  'qu': 'Quechua',
-  // R
-  'rm': 'Romansh',
-  'rn': 'Kirundi',
-  'ro': 'Romanian',
-  'ru': 'Russian',
-  'rw': 'Kinyarwanda',
-  // S
-  'sa': 'Sanskrit',
-  'sc': 'Sardinian',
-  'sd': 'Sindhi',
-  'se': 'Northern Sami',
-  'sg': 'Sango',
-  'si': 'Sinhala',
-  'sk': 'Slovak',
-  'sl': 'Slovenian',
-  'sm': 'Samoan',
-  'sn': 'Shona',
-  'so': 'Somali',
-  'sq': 'Albanian',
-  'sr': 'Serbian',
-  'ss': 'Swati',
-  'st': 'Southern Sotho',
-  'su': 'Sundanese',
-  'sv': 'Swedish',
-  'sw': 'Swahili',
-  // T
-  'ta': 'Tamil',
-  'te': 'Telugu',
-  'tg': 'Tajik',
-  'th': 'Thai',
-  'ti': 'Tigrinya',
-  'tk': 'Turkmen',
-  'tl': 'Tagalog',
-  'tn': 'Tswana',
-  'to': 'Tongan',
-  'tr': 'Turkish',
-  'ts': 'Tsonga',
-  'tt': 'Tatar',
-  'tw': 'Twi',
-  'ty': 'Tahitian',
-  // U
-  'ug': 'Uyghur',
-  'uk': 'Ukrainian',
-  'ur': 'Urdu',
-  'uz': 'Uzbek',
-  // V
-  've': 'Venda',
-  'vi': 'Vietnamese',
-  'vo': 'Volapuk',
-  // W
-  'wa': 'Walloon',
-  'wo': 'Wolof',
-  // X
-  'xh': 'Xhosa',
-  // Y
-  'yi': 'Yiddish',
-  'yo': 'Yoruba',
-  // Z
-  'za': 'Zhuang',
-  'zh': 'Chinese',
-  'zu': 'Zulu',
-
-  // --- Extended locale codes (language + region) ---
-  'zh_cn': 'Chinese Simplified',
-  'zh_tw': 'Chinese Traditional',
-  'zh_hk': 'Chinese Traditional (Hong Kong)',
-  'pt_br': 'Brazilian Portuguese',
-  'pt_pt': 'European Portuguese',
-  'en_us': 'American English',
-  'en_gb': 'British English',
-  'en_au': 'Australian English',
-  'es_mx': 'Mexican Spanish',
-  'es_ar': 'Argentinian Spanish',
-  'es_es': 'European Spanish',
-  'fr_ca': 'Canadian French',
-  'fr_fr': 'European French',
-  'fr_be': 'Belgian French',
-  'fr_ch': 'Swiss French',
-  'de_at': 'Austrian German',
-  'de_ch': 'Swiss German',
-  'de_de': 'German',
-  'nl_be': 'Flemish',
-  'sr_latn': 'Serbian (Latin)',
-  'sr_cyrl': 'Serbian (Cyrillic)',
-  'nb_no': 'Norwegian Bokmal',
-  'nn_no': 'Norwegian Nynorsk',
-  'ro_md': 'Moldavian',
-  'ar_sa': 'Saudi Arabic',
-  'ar_eg': 'Egyptian Arabic',
-  'ar_ma': 'Moroccan Arabic',
-  'ms_my': 'Malay (Malaysia)',
-  'ms_bn': 'Malay (Brunei)',
-  'sw_ke': 'Swahili (Kenya)',
-  'sw_tz': 'Swahili (Tanzania)',
-  'ta_lk': 'Tamil (Sri Lanka)',
-  'ur_pk': 'Urdu (Pakistan)',
-  'ur_in': 'Urdu (India)',
-  'bn_bd': 'Bengali (Bangladesh)',
-  'bn_in': 'Bengali (India)',
-  'pa_guru': 'Punjabi (Gurmukhi)',
-  'pa_arab': 'Punjabi (Shahmukhi)',
-  'az_latn': 'Azerbaijani (Latin)',
-  'az_cyrl': 'Azerbaijani (Cyrillic)',
-  'uz_latn': 'Uzbek (Latin)',
-  'uz_cyrl': 'Uzbek (Cyrillic)',
-};
-
-/// Returns human-readable language name for the given locale [code],
-/// or `null` if no match is found.
-///
-/// Lookup order:
-/// 1. Exact match after normalization (lowercase, `_` separator).
-/// 2. If the code contains `_`, try the language-only prefix (part before `_`).
-String? resolveLanguageName(String code) {
-  final normalized = code.toLowerCase().replaceAll('-', '_');
-  final name = kLanguageNames[normalized];
-  if (name != null) return name;
-  final underscore = normalized.indexOf('_');
-  if (underscore > 0) {
-    return kLanguageNames[normalized.substring(0, underscore)];
-  }
-  return null;
-}
-
-/// Create sanitizer function to sanitize the localization table keys
-String Function(String input) sanitizer() {
-  final invalid = RegExp('[^a-zA-Z0-9_]');
-  final merge = RegExp('_+');
-  final trim = RegExp(r'^_+|_+$');
-  return (String input) => input
-      .replaceAll(invalid, '_') // replace invalid characters with _
-      .replaceAll(merge, '_') // merge multiple _ into one
-      .replaceAll(trim, ''); // remove leading and trailing _
-}
-
-/// Convert column index to column name (e.g. 0 -> A, 1 -> B, 26 -> AA)
-String columnFromIndex(int index) {
-  if (index < 0) throw ArgumentError('Index must be non-negative');
-  var columnName = '';
-  do {
-    int remainder = index % 26;
-    columnName = String.fromCharCode(65 + remainder) + columnName;
-    index = (index / 26).floor() - 1;
-  } while (index >= 0);
-  return columnName;
 }

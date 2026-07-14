@@ -1,3 +1,15 @@
+## 0.5.0
+
+- **FIX**: `localize` wrote nothing back to Google Sheets — the row stream introduced in 0.4.3 never emitted the localized rows.
+- **ADDED**: Per-language fallback: a failed batch of languages is split and each language is retried on its own instead of being re-sent as a whole, so one rare language the model chokes on no longer breaks its neighbours.
+- **ADDED**: Translation validation before writing: ICU placeholders and markup tags must survive, no empty values, no leaked markdown fences, no runaway output. A rejected translation is retried alone.
+- **ADDED**: Language hints in the prompt and in the JSON schema — English name, native endonym and an explicit disambiguation note for codes models misread (`uk` is Ukrainian, not "United Kingdom").
+- **ADDED**: `--timeout` option (default `120s`) — a request the model never finishes is aborted instead of stalling a worker.
+- **CHANGED**: Retries are limited to transient failures (network, timeout, 429, 5xx). Unusable payloads are never re-sent with the same prompt.
+- **CHANGED**: `max_output_tokens` scales with the number of requested languages, so a large batch is no longer truncated into invalid JSON.
+- **CHANGED**: A row that cannot be written to the sheet is skipped instead of aborting the whole run.
+- **CHANGED**: The localization pipeline moved to `lib/` and is covered by unit tests.
+
 ## 0.4.3
 
 - **CHANGED**: `localize` now writes translated cells to Google Sheets via batch updates per row instead of one request per cell.

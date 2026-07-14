@@ -412,10 +412,21 @@ dart pub global run sheety_localization:localize \
   Number of languages to translate per single API call. Defaults to `3`. Higher values are faster but may reduce quality for weaker models. Range: 1–20.
 - `--workers` (or `-w`):
   Number of concurrent API requests. Defaults to `6`, max `14`.
+- `--timeout`:
+  Hard timeout of a single OpenAI request, in seconds. Defaults to `120`, range 10–900. A request that the model never finishes is aborted instead of stalling a worker forever.
 - `--ignore` (or `-i`):
   Comma-separated list of RegExp patterns to skip sheets whose titles match (e.g. `help,backend-.*,temp-.*`).
 - `--prompt` (or `-p`):
   Path to a custom system prompt file for the AI model.
+
+### How Localization Failures Are Handled
+
+Language models are unreliable on ambiguous or rare locale codes, so `localize` defends against that:
+
+- **Every locale code is spelled out for the model** — name, native endonym and, for codes that are routinely misread, an explicit warning. `uk` is sent as `uk — Ukrainian (українська) — Ukrainian (Cyrillic script). NOT English and NOT "United Kingdom"`, so it can no longer come back as English.
+- **A failed batch is split, not retried.** If a request for a batch of languages fails — timeout, truncated or invalid JSON, garbage output — the batch is *not* re-sent as-is. Each language of that batch is retried on its own, so one problematic rare language cannot take its neighbours down with it.
+- **Every translation is validated before it is written**: non-empty, ICU placeholders (`{name}`) and markup tags preserved exactly, no leaked markdown fences, no runaway output. A translation that fails validation is retried alone; only that one language is affected.
+- **Partial rows are still saved.** Languages that succeeded are written to the sheet even if one of their neighbours never worked; the failed cell stays empty and is picked up on the next run.
 
 ---
 

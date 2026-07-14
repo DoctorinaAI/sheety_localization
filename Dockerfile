@@ -10,6 +10,7 @@ COPY pubspec.yaml ./
 RUN dart pub get --no-example
 
 # Copy source and compile
+COPY lib/ lib/
 COPY bin/ bin/
 RUN dart compile exe bin/generate.dart -o /app/bin/generate && \
     dart compile exe bin/localize.dart  -o /app/bin/localize
