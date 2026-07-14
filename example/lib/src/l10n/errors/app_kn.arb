@@ -1,0 +1,15 @@
+{
+  "@@locale": "kn",
+  "error": "An error occurred",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "An unexpected error occurred",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "ಬಗ್ ವರದಿ ಯಶಸ್ವಿಯಾಗಿ ಕಳುಹಿಸಲಾಗಿದೆ.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

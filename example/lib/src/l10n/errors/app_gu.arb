@@ -1,0 +1,15 @@
+{
+  "@@locale": "gu",
+  "error": "ભૂલ થઇ",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "અનપેક્ષિત ભૂલ આવી",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "બગ રિપોર્ટ સફળતાપૂર્વક મોકલાયેલું છે.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

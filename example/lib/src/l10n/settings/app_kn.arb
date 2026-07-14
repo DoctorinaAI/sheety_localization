@@ -1,0 +1,283 @@
+{
+  "@@locale": "kn",
+  "sectionClearAllChatsTitle": "ಎಲ್ಲಾ ಚಾಟ್‌ಗಳನ್ನು ಕ್ಲಿಯರ್ ಮಾಡಿ",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "ಇದು ನಿಮ್ಮ ಚಾಟ್ ಇತಿಹಾಸವನ್ನು ಶಾಶ್ವತವಾಗಿ ಅಳಿಸುತ್ತದೆ.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "ಎಲ್ಲಾ ಚಾಟ್‌ಗಳನ್ನು ಕ್ಲಿಯರ್ ಮಾಡಿ",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "ಎಲ್ಲಾ ಚಾಟ್‌ಗಳನ್ನು ಕ್ಲಿಯರ್ ಮಾಡಿ",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "ಖಾತೆ ಅಳಿಸಿ",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "ನಿಮ್ಮ ಖಾತೆ ಅಳಿಸುವುದು ಶಾಶ್ವತ ಕ್ರಿಯೆ ಮತ್ತು ಅದನ್ನು ಹಿಂದಿರುಗಿಸಲಾಗುವುದಿಲ್ಲ",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "ಅಳಿಸಿ",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "ಖಾತೆ ಅಳಿಸಿ",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "ಸೈನ್ ಔಟ್",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "ನೀವು ನಿಮ್ಮ ಖಾತೆಯಿಂದ ಹೊರಗೊಮ್ಮಲು ಹೋಗುತ್ತೀರಿ.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "ಸೈನ್ ಔಟ್",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "ಬಗ್ ವರದಿ ಕಳುಹಿಸಿ",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "ಸಂದೇಶವನ್ನು [⏎ Enter] ಮೂಲಕ ಕಳುಹಿಸಿ",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "[⏎ Enter] ಬಳಸಿ ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಿ ಮತ್ತು [Shift] + [⏎ Enter] ಬಳಸಿ ಹೊಸ ಸಾಲು",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "[⏎ Enter] ಮೂಲಕ ಕಳುಹಿಸಿ",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "ಗೋಪ್ಯತಾ ನೀತಿ",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "ಭಾಷೆ",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "ನಿಮ್ಮ ಆಯ್ಕೆಯ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಆಪ್ ಇಂಟರ್ಫೇಸ್‌ಗಾಗಿ",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "ಕಪ್ಪು ಮೋಡ್",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "ಕಡಿಮೆ ಬೆಳಕಿನಲ್ಲಿ ಆರಾಮದಾಯಕ ವೀಕ್ಷಣೆಯ ಅನುಭವಕ್ಕಾಗಿ ಕಪ್ಪು ಮೋಡ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "Logs",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "ಅನುಷ್ಠಾನ ಲಾಗ್‌ಗಳನ್ನು ವೀಕ್ಷಿಸಿ ಮತ್ತು ನಿರ್ವಹಿಸಿ",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "ಮುಗಿಯಿತು",
+  "@doneButton": {},
+  "bugReportDialogTitle": "ಬಗ್ ವರದಿ",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "ದಯವಿಟ್ಟು ನೀವು ಎದುರಿಸಿದ ದೋಷವನ್ನು ವಿವರಿಸಿ",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "ಫೈಲ್‌ಗಳನ್ನು ಅಟ್ಯಾಚ್ ಮಾಡಿ",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "ಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ",
+  "@filePickerError": {},
+  "emptyBugReportError": "ದಯವಿಟ್ಟು ಮೊದಲು ದೋಷ ವರದಿಯನ್ನು ನಮೂದಿಸಿ",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "ದೋಷ ವರದಿಯನ್ನು ಕಳುಹಿಸಲು ವಿಫಲವಾಗಿದೆ",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "ಚಂದಾ ನಿರ್ವಹಣೆ",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "ನಿಮ್ಮ ಚಂದಾ ಸೆಟಿಂಗ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "Haptic Feedback",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": " ಬೆಂಬಲಿತ ಸಾಧನಗಳಲ್ಲಿ ಹ್ಯಾಪ್ಟಿಕ್ ಫೀಡ್‌ಬ್ಯಾಕ್ (ಕಂಪನ) ಅನ್ನು ಸಕ್ರಿಯ ಅಥವಾ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "ನೋಟಿಫಿಕೇಶನ್‌ಗಳನ್ನು ಆನ್ ಮಾಡಿ",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "Doctorina ನಿಮ್ಮ ಚಾಟ್‌ಗಳಲ್ಲಿ, ವರದಿಗಳಲ್ಲಿ ಅಥವಾ ಲಕ್ಷಣಗಳಲ್ಲಿ ಏನಾದರೂ ಪ್ರಮುಖವನ್ನು ಕಂಡುಹಿಡಿದಾಗ ನವೀಕರಿತವಾಗಿರಿ.",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "ಖಾತೆ",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "ಆಪ್",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "ಹೆಚ್ಚಿನ ಮಾಹಿತಿ",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "ಅಧಿಸೂಚನೆಗಳು",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "ವಿಡಿಯೋ ಟ್ಯುಟೋರಿಯಲ್",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "ದೂರವಾಣಿ",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "ಇಮೇಲ್",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "ಹೆಸರು",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "{count} ಫೈಲ್‌ಗಳನ್ನು ಇತ್ತೀಚಿನ ಫೈಲ್‌ಗಳೊಂದಿಗೆ ಡುಪ್ಲಿಕೇಟ್‌ನ ಕಾರಣದಿಂದ ಬಿಟ್ಟುಹೋಗಿದೆ",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "ಪ್ರಕಾರ",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "ವಿವರಣೆ",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "ಜೋಡಣೆಗಳು",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "ಬಗ್",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "ಕ್ರ್ಯಾಶ್",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "ಯುಐ ಸಮಸ್ಯೆ",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "ಇತರ",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "ನಿಮ್ಮ ಖಾತೆ ಅಳಿಸುವುದರಿಂದ ಡಾಕ್ಟೊರಿನಾದಿಂದ ನಿಮ್ಮ ಡೇಟಾ ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ.",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "ನೀವು ಅಳಿಸುವ ಮೊದಲು",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "{store} ಮೂಲಕ ನೀವು ಸಕ್ರಿಯ ಚಂದಾ ಹೊಂದಿದ್ದೀರಿ. ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅಳಿಸುವುದರಿಂದ ಅದು ರದ್ದುಗೊಳ್ಳುವುದಿಲ್ಲ.",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "{store}ನಲ್ಲಿ ಚಂದಾ ರದ್ದುಪಡಿಸಿ",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "ಮುಂದುವರಿಯಿರಿ",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "ನೀವು ಹೋಗುತ್ತಿರುವುದನ್ನು ನೋಡಿ ನಮಗೆ ವಿಷಾದವಾಗಿದೆ. ನೀವು ನಿಮ್ಮ ಖಾತೆಯನ್ನು ಅಳಿಸಲು ಖಚಿತವಾಗಿದ್ದೀರಾ? ನೀವು ದೃಢೀಕರಿಸಿದಾಗ, ನಿಮ್ಮ ಡೇಟಾ ಹೋಗುತ್ತದೆ.",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "ನಾನು ಆಪ್ ಅನ್ನು ಇನ್ನೂ ಬಳಸುತ್ತಿಲ್ಲ",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "ಹೆಚ್ಚು ಉತ್ತಮವಾದದ್ದನ್ನು ಕಂಡುಬಂದಿದೆ",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "ತಾಂತ್ರಿಕ ಸಮಸ್ಯೆಗಳು",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "ಬಳಕೆದಾರ ಅನುಭವದ ಸಮಸ್ಯೆಗಳು",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "ವಿಶೇಷಣಗಳ ಕೊರತೆಯಾಗಿದೆ",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "ಗೋಪ್ಯತೆಯ ಬಗ್ಗೆ ಚಿಂತೆ",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "ನಾನು ನನ್ನ ಡೇಟಾವನ್ನು ಕ್ಲಿಯರ್ ಮಾಡಲು ಬಯಸುತ್ತೆನೆ",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "ಇತರ",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆ ಹಂಚಿಕೊಳ್ಳಿ",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "ನಿಮ್ಮ ಖಾತೆ ಅಳಿಸುತ್ತಿದ್ದೇವೆ...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "ಅಳಿಸುತ್ತಿದೆ",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "ಮರುಗೊಳ್ಳಿ",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "ನಿಮ್ಮ ಖಾತೆ ಅಳಿಸಲಾಗಿದೆ.",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "ಖಾತೆ ಅಳಿಸಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "ಈ ಸಾಧನದಲ್ಲಿ ಯಾವುದೇ ಇಮೇಲ್ ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು support@doctorina.com ಗೆ ಕೈಯಿಂದ ಸಂಪರ್ಕಿಸಿ.",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

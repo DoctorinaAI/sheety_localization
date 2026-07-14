@@ -1,0 +1,283 @@
+{
+  "@@locale": "zh_HK",
+  "sectionClearAllChatsTitle": "清除所有對話",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "呢個會永久刪除你嘅對話記錄.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "清除所有對話",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "清除所有對話",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "刪除帳戶",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "刪除你嘅帳戶係永久性操作，無法還原.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "刪除",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "刪除帳戶",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "登出",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "你將會登出你嘅帳戶.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "登出",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "發送Bug報告",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "用 [⏎ Enter] 發送訊息",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "用 [⏎ Enter] 發送訊息，而用 [Shift] + [⏎ Enter] 換行",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "使用 [⏎ Enter] 發送",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "私隱政策",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "語言",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "揀選你鍾意嘅應用程式界面語言",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "深色模式",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "開啟暗色模式，令您喺弱光環境下享受舒適瀏覽體驗",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "日誌",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "睇同管理應用程式嘅日誌用嚟偵錯",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "完成",
+  "@doneButton": {},
+  "bugReportDialogTitle": "錯誤回報",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "請描述您遇到嘅bug",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "附上檔案",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "揀唔到檔案",
+  "@filePickerError": {},
+  "emptyBugReportError": "請先輸入bug報告",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "發送錯誤回報失敗",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "管理訂閱",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "管理你的訂閱設定",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "觸覺反饋",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "喺支援嘅裝置上啟用或停用觸覺反饋(震動)",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "開啟通知",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "當 Doctorina 在您的聊天、報告或症狀中發現重要信息時，保持更新。",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "帳戶",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "應用程式",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "關於",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "通知",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "視頻教程",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "電話",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "電子郵件",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "姓名",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "因與現有文件重複而跳過 {count} 個文件",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "類型",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "描述",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "附件",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "錯誤",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "崩潰",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "界面問題",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "其他",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "刪除您的帳戶將永久刪除您在Doctorina的數據",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "在您刪除之前",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "您在 {store} 有一個活躍的訂閱。刪除您的帳戶不會取消它。",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "在 {store} 取消訂閱",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "繼續",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "我們很遺憾看到你離開。你確定要刪除你的帳戶嗎？一旦你確認，你的數據將會消失。",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "我不再使用這個應用程式",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "找到更好的選擇",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "技術問題",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "使用問題",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "缺少功能",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "隱私問題",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "我只是想清除我的數據",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "其他",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "分享您的意見",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "正在刪除您的帳戶...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "刪除中",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "撤銷",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "您的帳戶已被刪除。",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "刪除帳戶失敗。請再試一次。",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "此設備上沒有可用的電子郵件應用程式。請手動聯繫support@doctorina.com。",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

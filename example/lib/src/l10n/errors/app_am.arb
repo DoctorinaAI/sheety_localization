@@ -1,0 +1,15 @@
+{
+  "@@locale": "am",
+  "error": "ስህተት ተከስቷል",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "አስቸኳይ ስህተት ተከስቷል",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "በተሳካ ሁኔታ የተላከ ባግ ሪፖርት ነው.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

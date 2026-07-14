@@ -1,0 +1,390 @@
+{
+  "@@locale": "km",
+  "logIn": "ចូល",
+  "@logIn": {
+    "description": "Надпись \"логин\""
+  },
+  "password": "ពាក្យសម្ងាត់",
+  "@password": {
+    "description": "Надпись \"пароль\""
+  },
+  "changeNumber": "ប្តូរលេខ",
+  "@changeNumber": {},
+  "forgotPassword": "ភ្លេចពាក្យសម្ងាត់?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "បញ្ចូលអាសយដ្ឋានអ៊ីមែលរបស់អ្នក ហើយយើងនឹងផ្ញើអ្នកតំណភ្ជាប់ដើម្បីកំណត់ពាក្យសម្ងាត់របស់អ្នកឡើងវិញ។",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "ចងចាំពាក្យសម្ងាត់របស់អ្នកទេ?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "ខ្ញុំមានពាក្យសម្ងាត់",
+  "@backToLoginButton": {},
+  "continueButton": "បន្ត",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "អ៊ីមែលកំណត់ពាក្យសម្ងាត់ត្រូវបានផ្ញើ",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "កំណត់ពាក្យសម្ងាត់ឡើងវិញ",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "បញ្ជាក់កូដ",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "ចាប់ផ្តើមប្រើ Doctorina ថ្ងៃនេះ",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "ឬ",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "បញ្ចូលពាក្យសម្ងាត់របស់អ្នក",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "បង្ហាញពាក្យសម្ងាត់",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "Obscure password",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "សម្អាតការចូល",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "អ៊ីមែល ឬ ទូរស័ព្ទ",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com ឬ +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "បញ្ចូលអ៊ីមែលឬលេខទូរស័ព្ទ",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "សូមទទួលយកកិច្ចព្រមព្រៀងដើម្បីបន្ត",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "ខ្ញុំយល់ព្រមចំពោះការប្រតិបត្តិការទិន្នន័យផ្ទាល់ខ្លួន,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "ការប្រើប្រាស់",
+  "@consentTheUseOf": {},
+  "consentCookies": "cookies",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", យល់ព្រម",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "កិច្ចព្រមព្រៀង និងលក្ខខណ្ឌ",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", និងទទួលស្គាល់ថា",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "គោលការណ៍ឯកជនភាព",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "ខ្ញុំទទួលស្គាល់ថាការពិភាក្សារបស់ខ្ញុំជាមួយAI ហើយមិនមែនជាជំនាញវេជ្ជសាស្ត្រដែលមានអាជ្ញាប័ណ្ណទេ",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "ចេញ",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "តើអ្នកប្រាកដថាចង់ចេញពីប្រព័ន្ធទេ?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "បោះបង់",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "បាទ ចេញ",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "ផ្ញើកូដម្តងទៀត",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "ផ្ញើកូដម្តងទៀត ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  },
+  "consentFull": "ខ្ញុំយល់ព្រមចំពោះការប្រតិបត្តិការទិន្នន័យផ្ទាល់ខ្លួន ការប្រើប្រាស់ <c>cookies</c> យល់ព្រមទៅនឹង <t>ល័ក្ខខ័ណ្ឌ និងលក្ខខណ្ឌ</t> និងទទួលស្គាល់ <p>គោលការណ៍ឯកជនភាព</p>.",
+  "@consentFull": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <c> <t> <p> указаны кликабельные спаны, они должны присутсвовать во всех языках."
+  },
+  "emailLabel": "បញ្ចូលអ៊ីមែលរបស់អ្នក",
+  "@emailLabel": {
+    "description": "Email input field label."
+  },
+  "signUpWithEmailTitle": "ចុះឈ្មោះជាមួយអ៊ីមែល",
+  "@signUpWithEmailTitle": {
+    "description": "AppBar title for email signup overlay"
+  },
+  "logInWithEmailTitle": "ចូលដោយអ៊ីមែល",
+  "@logInWithEmailTitle": {
+    "description": "AppBar title for email login overlay"
+  },
+  "phoneLabel": "បញ្ចូលលេខទូរស័ព្ទរបស់អ្នក",
+  "@phoneLabel": {
+    "description": "Phone input field label"
+  },
+  "confirmPhoneTitle": "បញ្ជាក់ទូរស័ព្ទរបស់អ្នក",
+  "@confirmPhoneTitle": {
+    "description": "AppBar title for phone confirmation screen"
+  },
+  "signUpText": "ចុះឈ្មោះ",
+  "@signUpText": {
+    "description": "Standalone \"Sign up\" text for buttons and tabs"
+  },
+  "emailHintShort": "បញ្ចូលអ៊ីមែល",
+  "@emailHintShort": {
+    "description": "Short email hint text in login dialog"
+  },
+  "buttonTextSignUpWithGoogle": "ចុះឈ្មោះជាមួយ Google",
+  "@buttonTextSignUpWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextSignUpWithApple": "ចុះឈ្មោះជាមួយ Apple",
+  "@buttonTextSignUpWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextSignUpWithPhone": "ចុះឈ្មោះដោយប្រើទូរស័ព្ទ",
+  "@buttonTextSignUpWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "buttonTextLoginWithGoogle": "ចូលដោយ Google",
+  "@buttonTextLoginWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextLoginWithApple": "ចូលដោយ Apple",
+  "@buttonTextLoginWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextLoginWithPhone": "ចូលដោយទូរស័ព្ទ",
+  "@buttonTextLoginWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "youAreLoggedOutMessage": "អ្នកចាកចេញរួចរាល់",
+  "@youAreLoggedOutMessage": {
+    "description": "Message displayed on logout screen"
+  },
+  "reloadButtonText": "បញ្ចូលឡើងវិញ",
+  "@reloadButtonText": {
+    "description": "Reload button text on logout screen"
+  },
+  "emailErrorText": "អាសយដ្ឋានអ៊ីមែលមិនត្រឹមត្រូវ",
+  "@emailErrorText": {
+    "description": "Error message for invalid email address"
+  },
+  "passwordErrorText": "ពាក្យសម្ងាត់ត្រូវមានយ៉ាងហោច 6 តួអក្សរ",
+  "@passwordErrorText": {
+    "description": "Error message for password validation (minimum length)"
+  },
+  "invalidPhoneNumberError": "លេខទូរស័ព្ទមិនត្រឹមត្រូវ: {phoneNumber}",
+  "@invalidPhoneNumberError": {
+    "description": "Error message for invalid phone number format"
+  },
+  "resendCodeWaitError": "សូម​រង់ចាំ {seconds} វិនាទី មុនពេលស្នើសុំ​កូដ​ថ្មី​មួយ។",
+  "@resendCodeWaitError": {
+    "description": "Error message when trying to resend code too soon"
+  },
+  "invalidPhoneCodeError": "លេខកូដទូរស័ព្ទមិនត្រឹមត្រូវ: {phoneCode}",
+  "@invalidPhoneCodeError": {
+    "description": "Error message for invalid phone verification code"
+  },
+  "termsAndConditionsText": "លក្ខខណ្ឌ",
+  "@termsAndConditionsText": {
+    "description": "Terms and conditions link text in login dialog"
+  },
+  "continueAsGuestBtn": "បន្តជា​ភ្ញៀវ",
+  "@continueAsGuestBtn": {
+    "description": "Btn to continue as guest on sign up screen"
+  },
+  "noAccountYetPromptText": "មិនមានគណនីមួយទេ? <p>ចុះឈ្មោះ</p>",
+  "@noAccountYetPromptText": {
+    "description": "Login tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Sign up” link."
+  },
+  "alreadyHaveAccountPromptText": "មានគណនីរួចហើយ? <p>ចូល</p>",
+  "@alreadyHaveAccountPromptText": {
+    "description": "Sign up tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Log in” link."
+  },
+  "beforeSubscribeYouNeedSignUpLoginDialogSubtitle": "អ្នកត្រូវចុះឈ្មោះមុនពេលអ្នកអាចបន្តជាមួយ Premium",
+  "@beforeSubscribeYouNeedSignUpLoginDialogSubtitle": {
+    "description": "Subtitle for login dialog"
+  },
+  "loginSubtitle": "ទទួលបានមាតិកាដែលមានលក្ខណៈផ្ទាល់ខ្លួន និងរក្សាទំនាក់ទំនងជាមួយសហគមន៍របស់អ្នក!",
+  "@loginSubtitle": {
+    "description": "Подзаголовок на экране входа, мотивирующий пользователя авторизоваться"
+  },
+  "emailFieldLabel": "អ៊ីមែល",
+  "@emailFieldLabel": {
+    "description": "Метка поля ввода email в форме"
+  },
+  "emailPlaceholder": "username@gmail.com",
+  "@emailPlaceholder": {
+    "description": "Пример email в поле ввода"
+  },
+  "recoverPasswordTooltip": "ស្ដារពាក្យសម្ងាត់របស់អ្នក",
+  "@recoverPasswordTooltip": {
+    "description": "Тултип кнопки восстановления пароля когда email валиден"
+  },
+  "createAccountTitle": "បង្កើតគណនី",
+  "@createAccountTitle": {
+    "description": "Заголовок экрана регистрации"
+  },
+  "createAccountSubtitle": "យើងត្រូវការគណនីដើម្បីរក្សាទុកទិន្នន័យសុខភាពរបស់អ្នកយ៉ាងសុវត្ថិភាព និងបន្តការប៉ាន់ប្រមាណរបស់អ្នក។",
+  "@createAccountSubtitle": {
+    "description": "Подзаголовок экрана регистрации, объясняет зачем нужен аккаунт"
+  },
+  "repeatLabel": "កំណត់ឡើងវិញ",
+  "@repeatLabel": {
+    "description": "Метка поля повторного ввода пароля"
+  },
+  "repeatPasswordHint": "កំណត់ពាក្យសម្ងាត់របស់អ្នកឡើងវិញ",
+  "@repeatPasswordHint": {
+    "description": "Подсказка в поле повторного ввода пароля"
+  },
+  "confirmButton": "បញ្ជាក់",
+  "@confirmButton": {
+    "description": "Кнопка подтверждения регистрации с паролем"
+  },
+  "noAccountPrompt": "មិនមានគណនីទេ?",
+  "@noAccountPrompt": {
+    "description": "Текст перед ссылкой на регистрацию на экране входа"
+  },
+  "alreadyHaveAccountPrompt": "មានគណនីរួចហើយឬ?",
+  "@alreadyHaveAccountPrompt": {
+    "description": "Текст перед ссылкой на вход на экране регистрации"
+  },
+  "createPasswordHeader": "បង្កើតពាក្យសម្ងាត់",
+  "@createPasswordHeader": {
+    "description": "Заголовок шага создания пароля в хедере диалога"
+  },
+  "phoneHeader": "ទូរស័ព្ទ",
+  "@phoneHeader": {
+    "description": "Заголовок шага ввода телефона в хедере диалога"
+  },
+  "verifyPhoneHeader": "បញ្ជាក់លេខទូរស័ព្ទ",
+  "@verifyPhoneHeader": {
+    "description": "Заголовок шага верификации телефона в хедере диалога"
+  },
+  "phoneTitle": "លេខរបស់អ្នកគឺអ្វី?",
+  "@phoneTitle": {
+    "description": "Заголовок экрана ввода номера телефона"
+  },
+  "phoneSubtitle": "យើងនឹងផ្ញើកូដមួយដើម្បីបញ្ជាក់លេខទូរស័ព្ទរបស់អ្នក",
+  "@phoneSubtitle": {
+    "description": "Подзаголовок экрана ввода телефона"
+  },
+  "phoneNumberLabel": "លេខ",
+  "@phoneNumberLabel": {
+    "description": "Метка поля ввода номера телефона"
+  },
+  "enterPhoneNumber": "បញ្ចូលលេខទូរស័ព្ទ",
+  "@enterPhoneNumber": {
+    "description": "Подсказка в поле ввода телефона"
+  },
+  "phonePlaceholder": "+1 (201) 555-01-23",
+  "@phonePlaceholder": {
+    "description": "Пример номера телефона в поле ввода"
+  },
+  "waitCountdownButton": "រង់ចាំ {countdown} វិនាទី",
+  "@waitCountdownButton": {
+    "description": "Текст кнопки во время ожидания повторной отправки OTP",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next OTP can be sent"
+      }
+    }
+  },
+  "enterCodeTitle": "បញ្ចូលកូដរបស់អ្នក",
+  "@enterCodeTitle": {
+    "description": "Заголовок экрана ввода OTP кода"
+  },
+  "codeSentToPhone": "យើងបានផ្ញើកូដទៅកាន់ {phone}",
+  "@codeSentToPhone": {
+    "description": "Текст с информацией куда отправлен код",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+1234567890",
+        "description": "Phone number where code was sent"
+      }
+    }
+  },
+  "didntReceiveCode": "កូដមិនទទួលបានទេ?",
+  "@didntReceiveCode": {
+    "description": "Текст перед ссылкой на повторную отправку кода"
+  },
+  "clickToResend": "ចុចដើម្បីផ្ញើម្តងទៀត",
+  "@clickToResend": {
+    "description": "Текст ссылки повторной отправки кода"
+  },
+  "requestNewCodeCountdown": "អ្នកអាចស្នើសុំកូដថ្មីក្នុង {countdown} វិនាទី",
+  "@requestNewCodeCountdown": {
+    "description": "Текст с обратным отсчётом до возможности повторной отправки кода",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next code request"
+      }
+    }
+  },
+  "closeTooltip": "បិទ",
+  "@closeTooltip": {
+    "description": "Тултип кнопки закрытия диалога"
+  },
+  "backTooltip": "ត្រឡប់",
+  "@backTooltip": {
+    "description": "Тултип кнопки назад"
+  },
+  "termsOfServiceLink": "ល័ក្ខខ័ណ្ឌសេវាកម្ម",
+  "@termsOfServiceLink": {
+    "description": "Текст ссылки на условия использования в футере"
+  },
+  "privacyPolicyLink": "គោលការណ៍ឯកជនភាព",
+  "@privacyPolicyLink": {
+    "description": "Текст ссылки на политику конфиденциальности в футере"
+  },
+  "welcomeBackTitle": "សូមស្វាគមន៍ត្រឡប់មកវិញ",
+  "@welcomeBackTitle": {
+    "description": "Заголовок экрана приветствия при возвращении пользователя"
+  },
+  "welcomeBackSubtitle": "ចូលប្រើប្រាស់ប្រសិនបើអ្នកមានគណនី Doctorina ហើយ ឬចុះឈ្មោះដើម្បីចាប់ផ្តើម។",
+  "@welcomeBackSubtitle": {
+    "description": "Подзаголовок экрана приветствия, предлагающий войти или зарегистрироваться"
+  },
+  "passwordRuleLength": "ពី ៨ ដល់ ១២៨ អក្សរ",
+  "@passwordRuleLength": {
+    "description": "Правило валидации пароля: длина от 8 до 128 символов"
+  },
+  "passwordRuleNumber": "យ៉ាងហោចណាស់ ១ លេខ",
+  "@passwordRuleNumber": {
+    "description": "Правило валидации пароля: минимум 1 цифра"
+  },
+  "passwordRuleUppercase": "យ៉ាងហោចណាស់ ១ អក្សរ​ធំ",
+  "@passwordRuleUppercase": {
+    "description": "Правило валидации пароля: минимум 1 заглавная буква"
+  },
+  "passwordRuleMatch": "ពាក្យសម្ងាត់ត្រូវគ្នា",
+  "@passwordRuleMatch": {
+    "description": "Правило валидации пароля: пароли совпадают"
+  },
+  "phoneOtpVerificationFailed": "ការផ្ទៀងផ្ទាត់ OTP បានបរាជ័យ។ សូមព្យាយាមម្តងទៀត។",
+  "@phoneOtpVerificationFailed": {},
+  "referralCodeLabel": "កូដយោង",
+  "@referralCodeLabel": {
+    "description": "Заголовок поля ввода реферального кода на экране регистрации"
+  },
+  "enterReferralCodeHint": "បញ្ចូលកូដយោងរបស់អ្នក",
+  "@enterReferralCodeHint": {
+    "description": "Подсказка (labelText) в поле ввода реферального кода"
+  },
+  "referralCodeExampleHint": "ឧទាហរណ៍កូដយោងនៅក្នុងវាលបញ្ចូល",
+  "@referralCodeExampleHint": {
+    "description": "Пример реферального кода в поле ввода (hintText)"
+  },
+  "haveReferralCodeQuestion": "មានកូដយោងមែនទេ?",
+  "@haveReferralCodeQuestion": {
+    "description": "Ссылка-вопрос, раскрывающая поле ввода реферального кода"
+  }
+}

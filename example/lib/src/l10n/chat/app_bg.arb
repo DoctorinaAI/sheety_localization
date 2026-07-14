@@ -1,0 +1,742 @@
+{
+  "@@locale": "bg",
+  "drawerTooltipNotifications": "Уведомления",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "Помощ",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "Затвори",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "Акаунт",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "Профил",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "Настройки на акаунта",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "Дарете за подкрепа",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "Абонамент",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "Чатове",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "История на чата",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "Прикачени документи",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "Как да използвате",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "Видео уроци",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "Правен",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "Свържете се с нас",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "Доклад за грешка",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "Условия и правила",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "Политика за поверителност",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "Обратна връзка",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "Оцени приложението",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "Сподели с приятели",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "Изход",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "Помогнете на другите да получат медицинска помощ",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "Потребител",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "Премиум функции\nс Doctorina",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "Вземи",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "Присъединете се",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "Версия на приложението:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "Наскоро чати",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "Профил",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "Наскоро чата",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "Изтеглете приложения",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "Въведете съобщение",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "Прикрепете файл",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "Диктувай",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "Завърши и транскрибирай",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "Изпрати съобщение",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "Неуспешно извличане на съобщения",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "Неуспешно извличане на съобщения. Моля, опитайте отново.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "Изтегли съобщения",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "Няма налични съобщения.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "Свързан",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "Няма връзка",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "Търсене",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "Любими",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "Изтегли",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "Печатай PDF",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "Сподели с приятели",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "Нов чат",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "Чат",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "Изберете Чат",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "Покажи чекмедже",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "Няма налични чатове. Моля, опреснете или създайте нов чат.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "Обнови чатовете",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "Създайте нов чат",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "Копирай текст",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "Пише\nМоля, изчакайте",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "Актуализиране...\nМоля, проверете интернет връзката си",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "Съобщението вече се обработва в момента.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "Съобщението е твърде дълго.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "Премахни прикачения файл",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "Неуспешно обработване на съобщение",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "Експорт в PDF",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "Снимки",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "Камера",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "Файлове",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "Снимки и файлове",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "Надявам се, че помогна! Беше ли полезно това обяснение за вас?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "Да, всичко е наред!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "Неуспешно извличане на резюме на чата",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "Резюме на чата копирано в клипборда",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "Опитайте Doctorina в мобилното приложение!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "Изтегли от",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "ВЗЕМИ ГО НА",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "Изтеглете от App Store",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "Вземи го от Google Play",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "Докладвай съобщение",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "Защо докладвате това съобщение?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "По избор: Опишете какво не е наред с това съобщение...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "Това ще ни помогне да подобрим нашите AI отговори.",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "Отказ",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "Доклад",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "Благодарим ви за обратната връзка! Докладът е изпратен.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "Неуспешно изпращане на доклад",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "Копирано в клипборда",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "Неуспешно копиране на съобщението",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "Докладвай съобщение",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "Качете в чата на Doctorina",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "Плъзнете и пуснете файлове тук, за да добавите в чата",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "Можете да добавите до 15 файла в едно съобщение",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "Искате ли да ви уведомя, ако се появи нещо важно за вашето здраве?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "Да, известя ме",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "Може би по-късно",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "Затвори",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "Уведомленията са блокирани на системно ниво. Активирайте ги в системните настройки, преди да активирате уведомленията на Doctorina.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "Уведомленията са блокирани на системно ниво. Активирайте ги в настройките на браузъра, преди да активирате уведомленията на Doctorina.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "Останете информирани за вашата консултация",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Doctorina може да ви уведомява, когато са налични нови прозрения или актуализации относно вашето здраве.",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "Активирайте известията",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "Може би по-късно",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "Като продължавате, вие се съгласявате с обработката на лични данни, използването на <c>cookies</c>, приемате <t>terms and conditions</t> и потвърждавате <p>privacy policy</p>. Също така признавате, че консултацията ви се води от AI, а не от лицензиран медицински специалист",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "Затвори",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "Запазете този чат първо?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "Регистрирай се безплатно, за да запазиш тази консултация преди започване на нова",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "Стартирай без записване",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "Регистрирай се",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "За да продължите разговора, изберете опция по-горе",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "Затвори",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "Премахни прикачен файл",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "Неуспешен избор на файлове от зоната за плъзгане",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "Моля, въведете съобщение или прикачете файл",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "Моля, изчакайте завършването на качванията",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "Съобщението се обработва",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "Съобщението е твърде дълго",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "Съобщението в момента се обработва.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "Връзката е трайно затворена",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "Няма връзка със сървъра",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "Неуспешен избор на файлове",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "Неуспешен избор на изображения",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "Неуспешно заснемане на снимка от камерата",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "Можете да прикачите до {count} файла наведнъж.",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "Изчисти разпознатия текст",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "Съобщението е твърде дълго.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "Моля, изчакайте завършването на качванията.",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "Файлът {kind} \"{name}\" вече е прикачен и не беше добавен отново.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "Файлът {kind} \"{name}\" е дубликат на {exist} и не беше добавен",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "Прикаченият файл \"{name}\" от тип {kind} не беше добавен, тъй като е надвишен максималният брой прикачени файлове.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "Файлът \"{name}\" е празен.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "Файлът е празен.",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "Файл \"{name}\" надвишава максимално допустимия размер.",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "Файлът надвишава максимално допустимия размер.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "Възникна грешка при обработката на файла \"{name}\".",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "Възникна грешка при обработката на файла.",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "Файлът \"{name}\" не беше добавен, защото е надвишен максималният брой прикачени файлове.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "Файл(ове) не бяха добавени, тъй като е надвишен максималният брой прикачени файлове.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "Файлът не беше добавен, защото е надвишен максималният брой прикачени файлове.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "Опит за добавяне на файл без име",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "Опит за добавяне на файл с неподдържана разширение: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "Опит за добавяне на файл с неподдържано разширение",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "Невъзможно е да се добави файл.",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "Файлът \"{name}\" е невалиден и не може да бъде добавен.",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "Файлът е невалиден и не може да бъде добавен.",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "Елементът \"{name}\" не е валиден файл.",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "Елементът не е валиден файл",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "Възникна грешка при обработката на елемент.",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "Възникна грешка при обработката на елемент(и).",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "Не са добавени файлове",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "Някои файлове бяха пропуснати поради дубликати със съществуващи файлове.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "Настъпи неизвестна грешка",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "Възникнаха следните грешки при прикачване на файлове:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "Неуспешно споделяне на файл: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "Затвори",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "Сподели",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "Зареждане на файла...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "Неуспешно зареждане на файла",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "Настъпи неизвестна грешка",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "Опитай отново",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "Неподдържан тип файл",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "Не може да се прегледа {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "Сподели файл",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "Неуспешно показване на изображение",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "Нулиране на мащаба",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "Неуспешно зареждане на PDF",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "Неуспешно декодиране на текстовото съдържание",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "И {count} други грешки.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "Файлът е повреден",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "Изисква се съгласие",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "Като продължавате, вие се съгласявате с нашите <tc>Условия</tc>, <privacy_policy>Политика за поверителност</privacy_policy> и <cookies>използване на бисквитки</cookies> и потвърждавате, че тази консултация се предоставя от AI, а не от лицензирано медицинско лице.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "Затвори",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "Изтрий",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "Изтрий чат",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "Чат „{title}“ беше успешно изтрит.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "Изтриване на чата?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "Вашите симптоми, резюме на диагнозата и всякакви препоръки в този чат ще бъдат премахнати.\nТази операция не може да бъде отменена.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "Увеличаване",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "Намали",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "Нулиране на мащаба",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "Сподели",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "Днес",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "Вчера",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "Само първа страница. Използвайте Сподели, за да изтеглите целия файл.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

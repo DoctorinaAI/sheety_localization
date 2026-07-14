@@ -1,0 +1,425 @@
+{
+  "@@locale": "sk",
+  "chatDrawerTitle": "Zdravotné záznamy",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "NOVÉ",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Vytvorte si zdravotný záznam",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Na konci konzultácie pridajte svoj profil.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Pridať viac profilov",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Začnite konzultáciu pre niekoho iného, aby si vytvoril svoj profil.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Zaregistrujte sa a vytvorte si svoj Zdravotný záznam",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Skúsiť znova",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Nepodarilo sa zmazať profil",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Nepodarilo sa načítať súhrn profilu",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Zobraziť celý záznam",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Zdieľať",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Zmazať",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Vek",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} rok} other{{value} rokov}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Hmotnosť",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Výška",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Alergie",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Chronické",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Lieky",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Zariadenia",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Konzultácie",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Dokumenty",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Zmazať zdravotný záznam?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Toto trvalo odstráni vaše zdravotné údaje a nemožno to vrátiť späť. Stratíte kontext, ktorý používame na to, aby sme vás usmerňovali.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Zrušiť",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Zmazať",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Odstraňujem váš zdravotný záznam...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Nepodarilo sa odstrániť profil",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Zdravotný záznam bol odstránený",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Nový môžete vytvoriť kedykoľvek tak, že sa porozprávate s asistentom.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Návrat do chatu",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Úprava",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Nepodarilo sa načítať profilové údaje",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Zmeny uložené",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Vaše informácie boli úspešne aktualizované.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Návrat na profil",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Nepodarilo sa aktualizovať údaje profilu",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Zahodiť zmeny?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Urobili ste niektoré zmeny vo svojom profile. Uložte ich pred odchodom alebo ich zahoďte.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Pokračovať v úprave",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Zahodiť",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Upraviť",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Pridať záznam",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Hľadať",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Nenašli sa žiadne výsledky",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Stiahnuť",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Zdieľať",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Zmazať",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Nenašli sa žiadne dokumenty",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Zmazať tento dokument?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Tento súbor bude trvalo odstránený",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Zrušiť",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Zmazať",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Ďalšie akcie",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Hľadať",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Nenašli sa žiadne profily",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Zobraziť viac",
+  "@profilesViewMore": {},
+  "profilesMore": "Viac",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina si teraz pamätá vaše zdravie",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Vaše konzultácie teraz automaticky vytvárajú a aktualizujú váš Zdravotný záznam.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Vaša zdravotná dokumentácia, vaše pravidlá",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Zobrazte, upravte alebo pridajte symptómy, lieky, históriu alebo dokumenty kedykoľvek.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Starostlivosť o celú rodinu",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Vytvorte zdravotný záznam pre svojich blízkych, deti, rodičov alebo partnera.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Pripravení uložiť svoj zdravotný záznam?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Po vašej konzultácii ťuknite na „Pridať profil“, aby ste ho uložili.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Ďalší",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Začať konzultáciu",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Možno neskôr",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Zavrieť",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Zdravotná dokumentácia",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Zdravotný záznam — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...viac",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...menej",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Pridať nový profil",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Vytvorte profil na uloženie podrobností o tejto konzultácii",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Môžete to kedykoľvek posúdiť vo vašich Health Records",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Ak máte ďalšie otázky o tomto alebo o čomkoľvek súvisiacom, kľudne sa so mnou ďalej porozprávajte. Som tu, aby som pomohol",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Všeobecné Informácie",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Meno",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "Ján Novák",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Krstné meno",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "Ján",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Priezvisko",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Novák",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Pohlavie",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Vyberte",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Muž",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Žena",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Iné",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Dátum narodenia",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Vek",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "napr. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Telefónne číslo",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "E-mail",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Miesto",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "napr. Mesto, Krajina",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Telo & Strava",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Výška",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "napr. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Hmotnosť",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "napr. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Menštruačný cyklus",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "napr. Pravidelný, Nepravidelný",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Stravovacie obmedzenia",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Vyberte",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Dajte nám vedieť, čo jete a aké obmedzenia máte",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Žiadne",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Vegetarián",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Vegán",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Bez lepku",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Index telesnej hmotnosti (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "napr. 24,5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Zdravotný profil",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Chronické ochorenia",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "napr. Diabetes typu 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Uveďte všetky chronické ochorenia a zahrňte, kedy boli diagnostikované a akékoľvek komplikácie.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Predchádzajúce ochorenia",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "napr. časté prechladnutie",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Prosím, uveďte vážne ochorenia, ktoré ste mali v minulosti, aj keď ste sa uzdravili",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Chirurgická anamnéza",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "napr. Apendektómia",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Prosím, uveďte všetky operácie a zahrňte rok a či došlo k nejakým komplikáciám.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Príležitostne užívané lieky",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "napr. Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Prosím, uveďte lieky, ktoré užívate občas (napríklad: lieky proti bolesti, alergické lieky), vrátane dávky a dôvodu použitia.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Pravidelné lieky",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "napr. Metformín",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Prosím, uveďte všetky lieky, ktoré pravidelne užívate, vrátane názvu, dávky, koľkokrát denne ich užívate a na akú chorobu sú.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Alergie",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "napr. penicilín – spôsobuje vyrážku",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Prosím, uveďte všetky alergie (lieky, jedlo, prostredie) a popíšte, akú reakciu máte (napríklad: vyrážka, opuch, problémy s dýchaním).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Špeciálne Zdravotné Stavy",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "napr. Tehotenstvo, Postihnutie",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Ak máte akékoľvek dôležité zdravotné ťažkosti, o ktorých by mali lekári vždy vedieť (napríklad: tehotenstvo, implantované zariadenia, postihnutia, antikoagulačná terapia), prosím, popíšte ich. Ak nemáte žiadne, môžete to nechať prázdne.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Rodinná anamnéza",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "napr. srdcové choroby, rakovina",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Prosím, popíšte dôležité choroby vo vašej rodine (napríklad: cukrovka, hypertenzia, srdcové choroby, rakovina, genetické choroby) a uveďte, ktorý rodinný príslušník mal daný stav.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Sociálne & Faktory Životného Štýlu",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "napr. fajčenie, konzumácia alkoholu",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Prosím, popíšte faktory životného štýlu, ktoré môžu ovplyvniť vaše zdravie, ako sú fajčenie, alkohol, fyzická aktivita, strava, spánok a zamestnanie.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Zdravotnícke pomôcky",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "napr. kardiostimulátor, sluchadlo, inzulínová pumpa",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Prosím, uveďte akékoľvek lekárske zariadenia, ktoré používate alebo máte implantované, ako sú kardiostimulátory, inzulínové pumpy, sluchadlá, protézy alebo iné asistenčné alebo monitorovacie zariadenia. Zahrňte relevantné podrobnosti, ak je to možné.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Všežravý",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Rýchle občerstvenie",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Pescetarián",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Bez laktózy",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Nízkosodíková diéta",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Diéta s nízkym obsahom cukru",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Diéta pri srdcovom ochorení",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Renálna diéta",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Iné",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

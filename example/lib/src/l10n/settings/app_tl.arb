@@ -1,0 +1,283 @@
+{
+  "@@locale": "tl",
+  "sectionClearAllChatsTitle": "I-clear ang Lahat ng Usapan",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "Ito ay permanenteng magbubura ng iyong kasaysayan ng chat.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "I-clear ang Lahat ng Usapan",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "I-clear ang Lahat ng Usapan",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "Tanggalin ang Account",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "Ang pagtanggal ng iyong account ay isang permanenteng aksyon at hindi maibabalik.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "Tanggalin",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "Tanggalin ang Account",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "Mag-Log Out",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "Mag-sign out ka sa iyong account.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "Mag-logout",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "Magpadala ng Ulat ng Bug",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "Mag-send ng mensahe gamit ang [⏎ Enter]",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "Mag-send ng mensahe gamit ang [⏎ Enter] at bagong linya gamit ang [Shift] + [⏎ Enter]",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "Ipadala gamit ang [⏎ Enter]",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "Patakaran sa Privacy",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "Wika",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "Pumili ng iyong gustong wika para sa interface ng app",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "Madilim na mode",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "I-enable ang madilim na mode para sa komportableng karanasan sa pagtingin sa mababang ilaw",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "Mga Tala",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "Tingnan at pamahalaan ang mga log ng aplikasyon para sa pag-debug",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "Tapos",
+  "@doneButton": {},
+  "bugReportDialogTitle": "Ulat ng Bug",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "Pakisabi ang bug na iyong naranasan",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "Mag-attach ng mga file",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "Nabigong pumili ng mga file",
+  "@filePickerError": {},
+  "emptyBugReportError": "Mangyaring maglagay ng ulat ng bug muna",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "Nabigong magpadala ng ulat ng bug",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "Pamahalaan ang subscription",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "Pamahalaan ang iyong mga setting ng subscription",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "Haptic Feedback",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "I-enable o i-disable ang haptic feedback (panginginig) sa mga suportadong device",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "I-on ang mga notification",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "Manatiling updated kapag may mahalagang natagpuan si Doctorina sa iyong mga chat, ulat, o sintomas.",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "Account",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "App",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "Tungkol",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "Mga Abiso",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "Mga video tutorial",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "Telepono",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "Email",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "Pangalan",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "Nawala ang {count} na mga file dahil sa pagkakapareho sa mga umiiral na file",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "Uri",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "Paglalarawan",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "Mga Kalakip",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "Bug",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "Bumagsak",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "Isyu sa UI",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "Iba",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "Ang pagtanggal ng iyong account ay permanenteng aalisin ang iyong data mula sa Doctorina.",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "Bago mo tanggalin",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "Mayroon kang aktibong subscription sa {store}. Ang pagtanggal ng iyong account ay hindi ito kakanselahin.",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "I-cancel ang subscription sa {store}",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "Magpatuloy",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "Ikinalulungkot naming makita kang umalis. Sigurado ka bang nais mong tanggalin ang iyong account? Kapag nakumpirma mo, mawawala na ang iyong data.",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "Hindi ko na ginagamit ang app",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "Nakahanap ng mas mabuti",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "Mga teknikal na isyu",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "Mga isyu sa kadalian ng paggamit",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "Kulang na mga tampok",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "Mga alalahanin sa privacy",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "Gusto ko lang linisin ang aking data",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "Iba",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "Ibahagi ang iyong feedback",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "Tinatanggal ang iyong account...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "Nagtatanggal",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "Bawiin",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "Nabura na ang iyong account.",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "Nabigong tanggalin ang account. Pakisubukan muli.",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "Walang available na email app sa device na ito. Mangyaring makipag-ugnayan sa support@doctorina.com nang manu-mano.",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

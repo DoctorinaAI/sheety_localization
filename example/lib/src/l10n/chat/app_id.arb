@@ -1,0 +1,742 @@
+{
+  "@@locale": "id",
+  "drawerTooltipNotifications": "Pemberitahuan",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "Bantuan",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "Tutup",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "Akun",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "Profil",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "Pengaturan Akun",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "Donasi untuk Mendukung",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "Langganan",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "Obrolan",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "Riwayat Obrolan",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "Dokumen Terlampir",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "Cara Menggunakan",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "Tutorial Video",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "Hukum",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "Hubungi Kami",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "Laporan Bug",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "Syarat & Ketentuan",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "Kebijakan Privasi",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "Umpan balik",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "Nilai Aplikasi",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "Bagikan dengan Teman",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "Keluar",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "Bantu orang lain mendapatkan perawatan medis",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "Pengguna",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "Fitur Premium\ndengan Doctorina",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "Dapatkan",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "Bergabunglah dengan kami",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "Versi aplikasi:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "Obrolan Terbaru",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "Profil",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "Obrolan terbaru",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "Unduh Aplikasi",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "Masukkan pesan",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "Lampirkan file",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "Mendikte",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "Selesai & Transkripsi",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "Kirim pesan",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "Gagal mengambil pesan",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "Gagal mengambil pesan. Silakan coba lagi.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "Ambil pesan",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "Tidak ada pesan yang tersedia. Silakan kirim pesan untuk memulai percakapan.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "Tersambung",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "Tidak ada koneksi",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "Cari",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "Favorit",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "Unduh",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "Cetak PDF",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "Bagikan dengan Teman",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "Obrolan baru",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "Obrolan",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "Pilih Chat",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "Tampilkan Drawer",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "Tidak ada chat yang tersedia. Silakan segarkan atau buat chat baru.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "Segarkan obrolan",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "Buat obrolan baru",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "Salin teks",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "Mengetik\nSebentar",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "Memperbarui...\nSilakan periksa koneksi internet Anda",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "Pesan sedang diproses saat ini.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "Pesan terlalu panjang.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "Hapus lampiran",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "Gagal memproses pesan",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "Ekspor ke PDF",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "Foto",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "Kamera",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "Berkas",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "Foto dan Berkas",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "Semoga itu membantu! Apakah penjelasan ini berguna bagi Anda?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "Ya, semuanya baik!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "Gagal mengambil ringkasan obrolan",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "Ringkasan obrolan disalin ke papan klip",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "Coba Doctorina di aplikasi mobile!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "Unduh di",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "DAPATKAN DI",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "Unduh di App Store",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "Dapatkan di Google Play",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "Laporkan Pesan",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "Mengapa Anda melaporkan pesan ini?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "Opsional: Deskripsikan apa yang salah dengan pesan ini...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "Ini akan membantu kami meningkatkan respons AI kami",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "Batal",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "Laporkan",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "Terima kasih atas umpan balik Anda! Laporan telah dikirim.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "Gagal mengirim laporan",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "Disalin ke clipboard",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "Gagal menyalin pesan",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "Laporkan Pesan",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "Unggah ke obrolan Doctorina",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "Seret dan lepas file di sini untuk menambahkan ke obrolan",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "Anda dapat menambahkan hingga 15 file ke satu pesan",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "Apakah Anda ingin saya memberi tahu Anda jika ada sesuatu yang penting tentang kesehatan Anda?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "Ya, beri tahu saya",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "Mungkin nanti",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "Tutup",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "Notifikasi diblokir di tingkat sistem. Aktifkan di pengaturan sistem sebelum mengaktifkan notifikasi Doctorina.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "Notifikasi diblokir di tingkat sistem. Aktifkan di pengaturan browser sebelum mengaktifkan notifikasi Doctorina.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "Tetap terupdate tentang konsultasi Anda",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Doctorina dapat memberi tahu Anda ketika wawasan atau pembaruan baru tentang kesehatan Anda tersedia.",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "Aktifkan notifikasi",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "Mungkin nanti",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "Dengan melanjutkan, Anda menyetujui pemrosesan data pribadi, penggunaan <c>cookies</c>, setuju dengan <t>terms and conditions</t>, dan mengakui <p>privacy policy</p>. Juga, Anda mengakui bahwa konsultasi Anda dilakukan oleh AI dan bukan oleh profesional medis berlisensi",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "Tutup",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "Simpan chat ini terlebih dahulu?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "Daftar gratis untuk menyimpan konsultasi ini sebelum memulai yang baru",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "Mulai tanpa menyimpan",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "Daftar",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "Untuk melanjutkan percakapan, pilih opsi di atas",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "Tutup",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "Hapus lampiran",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "Gagal mengambil file dari zona drop",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "Silakan masukkan pesan atau lampirkan file",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "Silakan tunggu hingga unggahan selesai",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "Pesan sedang diproses",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "Pesan terlalu panjang",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "Pesan sedang diproses saat ini.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "Koneksi ditutup secara permanen",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "Tidak ada koneksi ke server",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "Gagal memilih file",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "Gagal memilih gambar",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "Gagal menangkap foto dari kamera",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "Anda dapat melampirkan hingga {count} file sekaligus.",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "Hapus teks yang dikenali",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "Pesan terlalu panjang.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "Silakan tunggu hingga unggahan selesai.",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "File {kind} \"{name}\" sudah terlampir dan tidak ditambahkan lagi.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "The {kind} \"{name}\" adalah duplikat dari {exist} dan tidak ditambahkan.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "File {kind} \"{name}\" tidak ditambahkan karena jumlah maksimum lampiran telah terlampaui.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "File \"{name}\" kosong.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "File kosong.",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "File \"{name}\" melebihi ukuran maksimum yang diizinkan.",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "File melebihi ukuran maksimum yang diizinkan.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "Terjadi kesalahan saat memproses file \"{name}\".",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "Terjadi kesalahan saat memproses file.",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "File \"{name}\" tidak ditambahkan karena jumlah maksimum lampiran telah terlampaui.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "Sebuah file tidak ditambahkan karena jumlah maksimum lampiran telah terlampaui.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "Sebuah file tidak ditambahkan karena jumlah maksimum lampiran telah terlampaui.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "Sebuah file tanpa nama telah dicoba untuk ditambahkan.",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "Sebuah file dengan ekstensi yang tidak didukung telah dicoba untuk ditambahkan: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "File dengan ekstensi yang tidak didukung telah dicoba untuk ditambahkan.",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "Tidak mungkin menambahkan file.",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "File \"{name}\" tidak valid dan tidak dapat ditambahkan.",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "Sebuah file tidak valid dan tidak dapat ditambahkan.",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "Item \"{name}\" bukan file yang valid",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "Sebuah item bukan file yang valid",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "Terjadi kesalahan saat memproses item.",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "Terjadi kesalahan saat memproses item.",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "Tidak ada file yang ditambahkan.",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "Beberapa file dilewati karena duplikat dengan file yang ada.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "Terjadi kesalahan yang tidak diketahui",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "Kesalahan berikut terjadi saat melampirkan file:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "Gagal membagikan file: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "Tutup",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "Bagikan",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "Memuat file...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "Gagal memuat file",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "Kesalahan tidak diketahui terjadi",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "Coba lagi",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "Tipe file tidak didukung",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "Tidak dapat melihat pratayang {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "Bagikan File",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "Gagal menampilkan gambar",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "Atur ulang zoom",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "Gagal memuat PDF",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "Gagal mendekode konten teks",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "Dan {count} kesalahan lagi.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "File tidak valid",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "Persetujuan Diperlukan",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "Dengan melanjutkan, Anda setuju dengan <tc>Ketentuan</tc>, <privacy_policy>Kebijakan Privasi</privacy_policy>, dan <cookies>penggunaan cookies</cookies>, dan mengonfirmasi bahwa konsultasi ini disediakan oleh AI, bukan profesional medis berlisensi.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "Tutup",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "Hapus",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "Hapus obrolan",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "Obrolan “{title}” berhasil dihapus.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "Hapus obrolan?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "Gejala, ringkasan diagnosis, dan rekomendasi apa pun dalam obrolan ini akan dihapus.\nTindakan ini tidak dapat dibatalkan.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "Perbesar",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "Perbesar",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "Atur Ulang Zoom",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "Bagikan",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "Hari ini",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "Kemarin",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "Hanya halaman pertama. Gunakan Bagikan untuk mengunduh file lengkap.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

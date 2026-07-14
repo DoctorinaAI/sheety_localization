@@ -1,0 +1,129 @@
+{
+  "@@locale": "km",
+  "lang": "ខ្មែរ",
+  "@lang": {},
+  "langEn": "Khmer",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Update Now",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "ប្រហែលជាពេលក្រោយ",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "មានការអាប់ដេតថ្មី available",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "ត្រូវការកំណែថ្មី",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "កំណែថ្មីមួយ (v{version}) នៃកម្មវិធីមានស្រាប់។ សូមធ្វើបច្ចុប្បន្នភាពដើម្បីបន្តទទួលបានបទពិសោធន៍ល្អបំផុត។",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "ដើម្បីបន្ត សូមធ្វើការអាប់ដេតកម្មវិធី។ ការអាប់ដេតនេះមានការកែសម្រួលនិងការកែលម្អសំខាន់ៗ។",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "ទាញយក",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "ចូលប្រើប្រសិនបើអ្នកមានគណនី Doctorina ហើយ ឬចុះឈ្មោះដើម្បីចាប់ផ្តើម។",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "ចូល",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "ចុះឈ្មោះ",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "បន្តជា​ភ្ញៀវ",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "ចូល",
+  "@titleLogin": {},
+  "titleLogout": "ចាកចេញ",
+  "@titleLogout": {},
+  "titleSignIn": "ចុះឈ្មោះ",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "សន្ទនា",
+  "@titleDialog": {},
+  "titleChat": "ការសន្ទនា",
+  "@titleChat": {},
+  "titleSettings": "ការកំណត់គណនី",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "ប្រវត្តិការជជែក",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "ការទូទាត់",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "គ្រប់គ្រងការជាវ",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "ការជាវប្រចាំខែ",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "ការបណ្តុះបណ្តាល",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "សូមស្វាគមន៍ត្រឡប់មកវិញ",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "ប្រវត្តិរូបកំណត់ត្រាសុខភាព",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "ការប្រកាសពីប្រវត្តិ",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "កំណត់ត្រាសុខភាព",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "កំណត់ត្រាពេញ",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "ឯកសារ",
+  "@titleDocuments": {},
+  "titleConsultations": "ការពិគ្រោះ",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "ការបិទច្រក",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "កំពុងលុប? សូមប្រាប់យើងពីមូលហេតុ!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "ចាប់ផ្តើមការពិភាក្សាអំពីសុខភាពថ្មី",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "ចែករំលែកគំនិតឬរាយការណ៍បញ្ហា",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "ប្រាប់យើងពីរបៀបដែល Doctorina អាចធ្វើឱ្យប្រសើរឡើង",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "@@locale": "th",
+  "chatDrawerTitle": "บันทึกสุขภาพ",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "ใหม่",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "สร้างบันทึกสุขภาพของคุณ",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "เมื่อสิ้นสุดการปรึกษาของคุณ ให้เพิ่มโปรไฟล์ของคุณ",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "เพิ่มโปรไฟล์เพิ่มเติม",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "เริ่มการปรึกษาสำหรับคนอื่นเพื่อสร้างโปรไฟล์ของพวกเขา",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "ลงทะเบียนเพื่อสร้างบันทึกสุขภาพของคุณ",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "ลองใหม่",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "ไม่สามารถลบโปรไฟล์ได้",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "ไม่สามารถโหลดข้อมูลสรุปโปรไฟล์ได้",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "ดูบันทึกทั้งหมด",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "แชร์",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "ลบ",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "อายุ",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} ปี} other{{value} ปี}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "น้ำหนัก",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} กก",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "ความสูง",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} ซม",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "ภูมิแพ้",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "เรื้อรัง",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "ยา",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "อุปกรณ์",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "การปรึกษา",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "เอกสาร",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "ลบข้อมูลสุขภาพ?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "นี่จะลบข้อมูลสุขภาพของคุณอย่างถาวรและไม่สามารถย้อนกลับได้ คุณจะสูญเสียบริบทที่เราใช้ในการแนะนำคุณ",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "ยกเลิก",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "ลบ",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "กำลังลบข้อมูลสุขภาพของคุณ...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "ไม่สามารถลบโปรไฟล์ได้",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "ลบข้อมูลสุขภาพแล้ว",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "คุณสามารถสร้างใหม่ได้ทุกเมื่อโดยการสนทนากับผู้ช่วย",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "กลับไปที่แชท",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "การแก้ไข",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "ไม่สามารถโหลดข้อมูลโปรไฟล์ได้",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "บันทึกการเปลี่ยนแปลงเรียบร้อย",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "ข้อมูลของคุณได้รับการอัปเดตเรียบร้อยแล้ว",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "กลับไปที่โปรไฟล์",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "ไม่สามารถอัปเดตข้อมูลโปรไฟล์ได้",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "ยกเลิกการเปลี่ยนแปลงหรือไม่?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "คุณได้ทำการเปลี่ยนแปลงบางอย่างในโปรไฟล์ของคุณ บันทึกการเปลี่ยนแปลงก่อนที่คุณจะออกจากระบบ หรือยกเลิกการเปลี่ยนแปลง",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "แก้ไขต่อ",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "ทิ้ง",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "แก้ไข",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "เพิ่มบันทึก",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "ค้นหา",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "ไม่พบผลลัพธ์",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "ดาวน์โหลด",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "แชร์",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "ลบ",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "ไม่พบเอกสาร",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "ลบเอกสารนี้ใช่ไหม?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "ไฟล์นี้จะถูกลบอย่างถาวร",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "ยกเลิก",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "ลบ",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "การดำเนินการเพิ่มเติม",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "ค้นหา",
+  "@profilesSearch": {},
+  "profilesEmptyList": "ไม่พบโปรไฟล์",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "ดูเพิ่มเติม",
+  "@profilesViewMore": {},
+  "profilesMore": "เพิ่มเติม",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina จำสุขภาพของคุณได้แล้ว",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "การปรึกษาของคุณจะสร้างและอัปเดตบันทึกสุขภาพของคุณโดยอัตโนมัติ",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "บันทึกสุขภาพของคุณ กฎของคุณ",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "ดู แก้ไข หรือเพิ่มอาการ ยา ประวัติ หรือเอกสารได้ทุกเมื่อ",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "ดูแลครอบครัวของคุณทั้งหมด",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "สร้างบันทึกสุขภาพสำหรับคนที่คุณรัก ลูกๆ ของคุณ พ่อแม่ หรือคู่ของคุณ",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "พร้อมที่จะบันทึกประวัติสุขภาพของคุณหรือยัง?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "หลังจากการปรึกษาของคุณ ให้แตะ \"เพิ่มโปรไฟล์\" เพื่อบันทึกมัน",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "ถัดไป",
+  "@profilesNextButton": {},
+  "profilesStartButton": "เริ่มการปรึกษา",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "อาจจะทีหลัง",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "ปิด",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "บันทึกสุขภาพ",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "บันทึกสุขภาพ — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...เพิ่มเติม",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...น้อยลง",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "เพิ่มโปรไฟล์ใหม่",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "สร้างโปรไฟล์เพื่อบันทึกรายละเอียดของการปรึกษานี้",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "คุณสามารถเข้าถึงได้ตลอดเวลาในบันทึกสุขภาพของคุณ",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "หากคุณมีคำถามเพิ่มเติมเกี่ยวกับเรื่องนี้หรือเรื่องที่เกี่ยวข้อง อย่าลังเลที่จะพูดคุยกับฉันต่อ. ฉันพร้อมช่วยเหลือ",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "ข้อมูลทั่วไป",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "ชื่อ",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "ชื่อ",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "นามสกุล",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "เพศ",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "กรุณาเลือก",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "ชาย",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "หญิง",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "อื่นๆ",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "วันเกิด",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "อายุ",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "เช่น 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "หมายเลขโทรศัพท์",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "อีเมล",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "ที่อยู่",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "เช่น เมือง, ประเทศ",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "ร่างกาย & อาหาร",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "ความสูง",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "เช่น 180 ซม",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "น้ำหนัก",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "เช่น 75 กก",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "รอบเดือน",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "เช่น สม่ำเสมอ, ไม่สม่ำเสมอ",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "ข้อจำกัดด้านอาหาร",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "โปรดเลือก",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "บอกเราหน่อยว่าคุณกินอะไรและมีข้อจำกัดอะไรบ้าง",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "ไม่มี",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "มังสวิรัติ",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "วีแกน",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "ปราศจากกลูเตน",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "ดัชนีมวลกาย (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "เช่น 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "ข้อมูลสุขภาพ",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "โรคเรื้อรัง",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "เช่น เบาหวานชนิดที่ 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "โปรดระบุโรคเรื้อรังทั้งหมดและรวมถึงเมื่อใดที่ได้รับการวินิจฉัยและภาวะแทรกซ้อนใด ๆ",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "ประวัติการเจ็บป่วย",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "เช่น ไข้หวัดใหญ่บ่อย",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "โปรดระบุโรคร้ายแรงที่คุณเคยเป็นในอดีต แม้ว่าคุณจะหายแล้วก็ตาม",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "ประวัติการผ่าตัด",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "เช่น ผ่าตัดไส้ติ่ง",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "กรุณาระบุการผ่าตัดทั้งหมดและรวมถึงปีและว่ามีภาวะแทรกซ้อนหรือไม่",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "ยาที่ใช้เป็นครั้งคราว",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "เช่น ไอบูโพรเฟน",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "กรุณาระบุยาที่คุณทานเป็นครั้งคราว (เช่น: ยาแก้ปวด, ยาแก้แพ้) รวมถึงขนาดและเหตุผลในการใช้",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "ยาที่ใช้เป็นประจำ",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "เช่น เมตฟอร์มิน",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "โปรดระบุชื่อยาที่คุณทานเป็นประจำ รวมถึงชื่อ ขนาดยา จำนวนครั้งต่อวันที่คุณทาน และอาการที่ใช้รักษา",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "การแพ้",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "เช่น เพนิซิลลิน – ทำให้เกิดผื่น",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "กรุณาระบุอาการแพ้ทั้งหมด (ยา, อาหาร, สิ่งแวดล้อม) และอธิบายปฏิกิริยาที่คุณมี (เช่น: ผื่น, บวม, ปัญหาการหายใจ)",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "ภาวะพิเศษ",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "เช่น การตั้งครรภ์, ความพิการ",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "หากคุณมีเงื่อนไขทางการแพทย์ที่สำคัญที่แพทย์ควรรู้เสมอ (เช่น: การตั้งครรภ์, อุปกรณ์ที่ฝัง, ความพิการ, การบำบัดด้วยยาต้านการแข็งตัวของเลือด) กรุณาอธิบายเงื่อนไขเหล่านั้น หากไม่มี คุณสามารถปล่อยว่างไว้ได้.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "ประวัติครอบครัว",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "เช่น โรคหัวใจ, มะเร็ง",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "โปรดอธิบายโรคที่สำคัญในครอบครัวของคุณ (เช่น เบาหวาน ความดันโลหิตสูง โรคหัวใจ มะเร็ง โรคทางพันธุกรรม) และระบุว่าญาติคนไหนที่มีอาการนี้",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "ปัจจัยทางสังคม & วิถีชีวิต",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "เช่น การสูบบุหรี่, การดื่มแอลกอฮอล์",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "โปรดอธิบายปัจจัยด้านวิถีชีวิตที่สามารถส่งผลต่อสุขภาพของคุณ เช่น การสูบบุหรี่ แอลกอฮอล์ กิจกรรมทางกาย อาหาร การนอนหลับ และอาชีพ",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "อุปกรณ์การแพทย์",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "เช่น เครื่องกระตุ้นหัวใจ, เครื่องช่วยฟัง, ปั๊มอินซูลิน",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "โปรดระบุอุปกรณ์ทางการแพทย์ที่คุณใช้หรือมีการฝัง เช่น เครื่องกระตุ้นหัวใจ ปั๊มอินซูลิน เครื่องช่วยฟัง ขาเทียม หรืออุปกรณ์ช่วยเหลือหรือเฝ้าติดตามอื่น ๆ รวมถึงรายละเอียดที่เกี่ยวข้องหากมี",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "กินทุกอย่าง",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "ฟาสต์ฟู้ด",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "กินปลาแต่ไม่กินเนื้อสัตว์",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "ปราศจากแลคโตส",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "อาหารโซเดียมต่ำ",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "อาหารลดน้ำตาล",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "อาหารสำหรับโรคหัวใจ",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "อาหารสำหรับโรคไต",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "อื่นๆ",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

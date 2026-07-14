@@ -1,0 +1,15 @@
+{
+  "@@locale": "cs",
+  "error": "Došlo k chybě",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Došlo k neočekávané chybě",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Hlášení o chybě bylo úspěšně odesláno.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

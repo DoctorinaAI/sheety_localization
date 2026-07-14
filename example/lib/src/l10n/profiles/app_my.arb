@@ -1,0 +1,425 @@
+{
+  "@@locale": "my",
+  "chatDrawerTitle": "ကျန်းမာရေးမှတ်တမ်းများ",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "အသစ်",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "သင့်ကျန်းမာရေးမှတ်တမ်းကိုဖန်တီးပါ",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "သင်၏ အကြံပြုချက်အဆုံးတွင် သင့်ပရိုဖိုင်ကို ထည့်ပါ။",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "ပိုမိုပရိုဖိုင်းများထည့်ပါ",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "တစ်ဦးတည်းအတွက် အကြံပြုချက်စတင်ပါ။",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "အထွေထွေ အသုံးပြုသူအတွက် ကျန်းမာရေးမှတ်တမ်း ဖန်တီးရန် စာရင်းသွင်းပါ",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Cuba",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "ပရိုဖိုင်းကို ဖျက်ရန် မအောင်မြင်ပါ",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "ပရိုဖိုင်းအကျဉ်းချုပ်ကို အောင်မြင်စွာ မထုတ်လုပ်နိုင်ပါ",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "ပြည့်စုံသောမှတ်တမ်းကိုကြည့်ပါ",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "မျှဝေပါ",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "ဖျက်ရန်",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "အသက်",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} နှစ်} other{{value} နှစ်များ}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "အလေးချိန်",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} ကီလိုဂရမ်",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "အမြင့်",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} စင်တီမီတာ",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "အာလျားဂျီ",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "ခရိုနစ်",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "ဆေးဝါး",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "ကိရိယာများ",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "အကြံပြုချက်များ",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "စာရွက်စာတမ်းများ",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "ကျန်းမာရေးမှတ်တမ်းကို ဖျက်မလား?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "ဤသည်သည် သင့်ကျန်းမာရေးဒေတာကို အမြဲတမ်း ဖျက်သိမ်းမည်ဖြစ်ပြီး ပြန်လည်ပြုပြင်၍မရပါ။ သင့်ကို ဦးညွှန်းရန် အသုံးပြုသည့် အကြောင်းအရာကို လျှော့နည်းမည်။",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "မလုပ်တော့ပါ",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "ဖျက်မည်",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "သင့်ကျန်းမာရေးမှတ်တမ်းကို ဖျက်နေပါသည်...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "ပရိုဖိုင်းကို ဖျက်ရန် မအောင်မြင်ပါ",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "မှတ်တမ်းကျန်းမာရေးဖျက်ပြီး",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "သင်သည် အကူအညီနှင့် စကားပြောခြင်းဖြင့် မည်သည့်အချိန်တွင်မဆို အသစ်တစ်ခု ဖန်တီးနိုင်သည်။",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "ပြန်သွားရန်",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "ပြင်ဆင်နေသည်",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "မူပိုင်ခွင့်ဒေတာကို အောင်မြင်စွာ မထုတ်ယူနိုင်ပါ",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "ပြင်ဆင်မှုများကို သိမ်းဆည်းပြီး",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "သင်၏အချက်အလက်များကိုအောင်မြင်စွာအပ်ဒိတ်လုပ်ပြီးပါပြီ။",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Profile သို့ ပြန်သွားပါ",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "ပရိုဖိုင်းဒေတာကို အပ်ဒိတ်လုပ်ရန် မအောင်မြင်ပါ",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "ပြင်ဆင်မှုများကို ဖျက်မလား?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "သင်၏ပရိုဖိုင်းတွင်ပြောင်းလဲမှုများပြုလုပ်ခဲ့သည်။ သင်ထွက်ခွာမီ၌၎င်းတို့ကိုသိမ်းဆည်းပါ၊ သို့မဟုတ်ဖျက်ပစ်ပါ။",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "တည်းဖြတ်နေပါ",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "ဖျက်ပစ်ပါ",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "တည်းဖြတ်ရန်",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "မှတ်တမ်းထည့်ပါ",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "ရှာဖွေပါ",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "မည်သည့်ရလဒ်များကိုမတွေ့ပါ",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "ဒေါင်းလုပ်",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "မျှဝေပါ",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "ဖျက်ရန်",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "မည်သည့်စာရွက်စာတမ်းများကို မတွေ့ပါ",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "ဒီစာရွက်ကို ဖျက်မလား?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "ဖိုင်ကို အမြဲတမ်း ဖျက်ပစ်မည်",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "မလုပ်တော့ပါ",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "ဖျက်မည်",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "နောက်ထပ်လုပ်ဆောင်ချက်များ",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "ရှာဖွေပါ",
+  "@profilesSearch": {},
+  "profilesEmptyList": "ပရိုဖိုင်မတွေ့ပါ",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "ပိုမိုကြည့်ရှုရန်",
+  "@profilesViewMore": {},
+  "profilesMore": "ပိုမို",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina သင်၏ ကျန်းမာရေးကို အမှတ်တရ ထားရှိပါပြီ",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "သင်၏ အကြံပြုချက်များသည် သင့် ကျန်းမာရေး မှတ်တမ်းကို အလိုအလျောက် တည်ဆောက်ပြီး အပ်ဒိတ် လုပ်ပါသည်။",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "သင်၏ ကျန်းမာရေးမှတ်တမ်း၊ သင်၏ စည်းမျဉ်းများ",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "လက္ခဏာများ၊ ဆေးဝါးများ၊ သမိုင်း၊ သို့မဟုတ် စာရွက်စာတမ်းများကို အချိန်မရွေး ကြည့်၊ ပြင်ဆင်၊ သို့မဟုတ် ထည့်ပါ။",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "မိသားစုအားလုံးအတွက်ဂရုစိုက်ပါ",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "သင်၏ချစ်သူများ၊ သားသမီးများ၊ မိဘများ သို့မဟုတ် မိတ်ဆွေများအတွက် ကျန်းမာရေးမှတ်တမ်းတစ်ခု ဖန်တီးပါ။",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "သင်၏ ကျန်းမာရေးမှတ်တမ်းကို သိမ်းဆည်းရန် ပြင်ဆင်နေပါသလား?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "သင်၏ အကြံပြုချက်ပြီးဆုံးသည့်အခါ \"ပရိုဖိုင်းထည့်ပါ\" ကိုနှိပ်ပါ။",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "နောက်",
+  "@profilesNextButton": {},
+  "profilesStartButton": "စကားဝိုင်းစတင်ပါ",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "နောက်မှ",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Tutup",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "ကျန်းမာရေးမှတ်တမ်း",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "ကျန်းမာရေးမှတ်တမ်း — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...ပို၍",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "နည်းနည်း",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "ပရိုဖိုင်းအသစ်ထည့်ပါ",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "ဤအကြံဉာဏ်၏အသေးစိတ်များကိုသိမ်းဆည်းရန်ပရိုဖိုင်းတစ်ခုဖန်တီးပါ။",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਵੇਲੇ ਆਪਣੇ ਹੈਲਥ ਰਿਕਾਰਡ ਵਿੱਚ ਇਸ ਦਾ ਮੁਲਾਂਕਣ ਕਰ ਸਕਦੇ ਹੋ",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਇਸ ਬਾਰੇ ਜਾਂ ਇਸ ਨਾਲ ਸੰਬੰਧਤ ਹੋਰ ਸਵਾਲ ਹਨ, ਤਾਂ ਬੇਝਿਝਕ ਮੈਨੂੰ ਗੱਲ ਜਾਰੀ ਰੱਖੋ. ਮੈਂ ਮਦਦ ਲਈ ਇੱਥੇ ਹਾਂ",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "ਸਧਾਰਨ ਜਾਣਕਾਰੀ",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "ਨਾਮ",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "ਪਹਿਲਾ ਨਾਮ",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "ਜੌਨ",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "ਆਖਰੀ ਨਾਮ",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "ਲਿੰਗ",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "ਕਿਰਪਾ ਕਰਕੇ ਚੁਣੋ",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "ਮਰਦ",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "ਮਹਿਲਾ",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "ਹੋਰ",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "ਜਨਮ ਤਾਰੀਖ",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "ਉਮਰ",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "ਜਿਵੇਂ 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "ਫੋਨ ਨੰਬਰ",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "ਈਮੇਲ",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "ਟਿਕਾਣਾ",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "ਉਦਾਹਰਨ: ਸ਼ਹਿਰ, ਦੇਸ਼",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "ਸਰੀਰ & ਆਹਾਰ",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "ਉਚਾਈ",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "e.g. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "ਵਜ਼ਨ",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "ਜਿਵੇਂ 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "ਮਾਸਿਕ ਚੱਕਰ",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "ਉਦਾਹਰਣ: ਨਿਯਮਤ, ਅਨਿਯਮਤ",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "ਆਹਾਰਿਕ ਪਾਬੰਦੀਆਂ",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "ਕਿਰਪਾ ਕਰਕੇ ਚੁਣੋ",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "ကျွန်ုပ်တို့ကို သင်စားသုံးသောအစားအစာနှင့် သင်၏ ကန့်သတ်ချက်များကို အသိပေးပါ",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "ਕੋਈ ਨਹੀਂ",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "ਸ਼ਾਕਾਹਾਰੀ",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "ਵੀਗਨ",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "ਗਲੂਟਨ ਮੁਕਤ",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "ਬਾਡੀ ਮਾਸ ਇੰਡੈਕਸ (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "ਉਦਾਹਰਨ: 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "ਸਿਹਤ ਪ੍ਰੋਫਾਈਲ",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "ਦੀਰਘਕਾਲੀਨ ਬਿਮਾਰੀਆਂ",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "ဦးရည်ချိုချို",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "ကျေးဇူးပြု၍ အထူးသဖြင့် ရောဂါများအားလုံးကို စာရင်းပြုစုပါ၊ ရောဂါကို ဘယ်အချိန်မှာ ရှာဖွေတွေ့ရှိခဲ့ပြီး၊ အခက်အခဲများကိုပါ ထည့်ပါ။",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "ਪਿਛਲੀਆਂ ਬਿਮਾਰੀਆਂ",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "ဥပမာ။ အကြိမ်ကြိမ်ဖြစ်သော အထွေထွေ အအေး",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "ကျေးဇူးပြု၍ သင်၏ အတိတ်က ရင်ဆိုင်ခဲ့သော အရေးကြီးသော ရောဂါများကို စာရင်းပြုစုပါ၊ သင် ပြန်လည်ကောင်းမွန်ခဲ့ပါကလည်း။",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "ਸਰਜਰੀ ਇਤਿਹਾਸ",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "ਜਿਵੇਂ ਕਿ ਐਪੈਂਡੈਕਟੋਮੀ",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "ကျေးဇူးပြု၍ ခွဲစိတ်မှုများအားလုံးကို စာရင်းပြုစုပါ၊ နှစ်နှင့် အခက်အခဲများရှိခဲ့မလားဆိုတာပါ ထည့်ပါ။",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "ਕਦੇ-ਕਦੇ ਵਰਤੀ ਜਾਣ ਵਾਲੀਆਂ ਦਵਾਈਆਂ",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "ဥပမာ။ Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "ကျေးဇူးပြု၍ သင်သည် အချိန်အခါအားလျော်စွာ သောက်သုံးသော ဆေးဝါးများကို (ဥပမာ - နာကျင်မှုဆေး၊ အာရုံစူးစိုက်မှုဆေး) အရေအတွက်နှင့် သုံးစွဲမှုအကြောင်းအရာပါ အတူ ဖော်ပြပါ။",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "ਨਿਯਮਤ ਦਵਾਈਆਂ",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "ဥပမာ။ Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "ကျေးဇူးပြု၍ သင်သည် ပုံမှန်အားဖြင့် သောက်သုံးသော ဆေးဝါးများအားလုံးကို အမည်၊ အရေအတွက်၊ တစ်နေ့တွင် ဘယ်နှစ်ကြိမ် သောက်သုံးသည်နှင့် ဘာရောဂါအတွက် သုံးသည်ကို စာရင်းပြုစုပါ။",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "ਅਲਰਜੀਆਂ",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "ဥပမာ။ ပီနီစီလင် - အရေပြားရောင်ရမ်းမှုဖြစ်စေသည်",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "ကျေးဇူးပြု၍ အားလုံးသော အာရုံစူးစိုက်မှုများ (ဆေးဝါး၊ အစားအစာ၊ ပတ်ဝန်းကျင်) ကို စာရင်းပြုစုပါ၊ သင်၏ တုံ့ပြန်မှုကို ဖေါ်ပြပါ (ဥပမာ - အရေပြားရောင်ခြင်း၊ အထူထူခြင်း၊ အသက်ရှုရခက်ခြင်း)။",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "ਖਾਸ ਹਾਲਤਾਂ",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "ਉਦਾਹਰਨ ਵਜੋਂ ਗਰਭਾਵਸਥਾ, ਅਪੰਗਤਾ",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "သင်သည် ဆရာဝန်များသည် အမြဲသိရမည့် အရေးကြီးသော ဆေးဘက်ဆိုင်ရာ အခြေအနေများ (ဥပမာ - မေတ္တာ၊ ထည့်သွင်းထားသော ကိရိယာများ၊ အထင်အမြင်များ၊ သွေးခွဲခြင်းကုသမှု) ရှိပါက ဖော်ပြပါ။ မရှိပါက ဤကို အလွတ်ထားနိုင်သည်။",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "ਪਰਿਵਾਰਕ ਇਤਿਹਾਸ",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "ਉਦਾਹਰਨ: ਦਿਲ ਦੀ ਬਿਮਾਰੀ, ਕੈਂਸਰ",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "ကျေးဇူးပြု၍ မိသားစုတွင် အရေးကြီးသော ရောဂါများကို ဖော်ပြပါ (ဥပမာ - ဆီးချို၊ သွေးဖိအား၊ နှလုံးရောဂါ၊ ကင်ဆာ၊ ဂျင်နက်ရောဂါများ) နှင့် အဆိုပါ ရောဂါကို ရင်ဆိုင်ခဲ့သော မိသားစုဝင်ကို သတ်မှတ်ပါ။",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "ਸਮਾਜਿਕ & ਜੀਵਨਸ਼ੈਲੀ ਕਾਰਕ",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "ਜਿਵੇਂ ਕਿ ਧੂਮਰਪਾਨ, ਸ਼ਰਾਬ ਦੀ ਖਪਤ",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "ကျန်းမာရေးကိုထိခိုက်စေနိုင်သော အသက်မွေးဝမ်းကျောင်းအချက်အလက်များကို ဖေါ်ပြပါ၊ ဥပမာ - ဆေးလိပ်သောက်ခြင်း၊ အရက်သောက်ခြင်း၊ ရုပ်ပိုင်းဆိုင်ရာလှုပ်ရှားမှု၊ အစားအသောက်၊ အိပ်စက်မှုနှင့် အလုပ်အကိုင်။",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "ਚਿਕਿਤਸਾ ਉਪਕਰਣ",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "ਉਦਾਹਰਨ ਵਜੋਂ ਪੇਸਮੇਕਰ, ਸੁਣਨ ਸਹਾਇਕ, ਇੰਸੁਲਿਨ ਪੰਪ",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "ကျေးဇူးပြု၍ သင်အသုံးပြုနေသော သို့မဟုတ် ထည့်သွင်းထားသော ဆေးဘက်ဆိုင်ရာ ကိရိယာများကို စာရင်းပြုစုပါ၊ ဥပမာအားဖြင့် ပေးဆောင်စက်များ၊ အင်ဆူလင် ပံ့ပိုးစက်များ၊ နားထောင်စက်များ၊ အစားထိုးကိရိယာများ သို့မဟုတ် အခြားကူညီမှု သို့မဟုတ် စောင့်ကြည့်မှု ကိရိယာများ။ သက်ဆိုင်ရာ အသေးစိတ်များကို ထည့်ပါ။",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "ਸਭ ਕੁਝ ਖਾਣ ਵਾਲਾ",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "ਫਾਸਟ ਫੂਡ",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "ਪੇਸਕੈਟੇਰੀਅਨ",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "ਲੈਕਟੋਜ਼-ਮੁਕਤ",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "ਘੱਟ ਨਮਕ ਵਾਲਾ ਆਹਾਰ",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "ਘੱਟ-ਚੀਨੀ ਆਹਾਰ",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "ਹਿਰਦੇ ਲਈ ਆਹਾਰ",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "ਗੁਰਦੇ ਲਈ ਖੁਰਾਕ",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "ਹੋਰ",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

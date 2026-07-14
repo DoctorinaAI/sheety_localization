@@ -1,0 +1,227 @@
+{
+  "@@locale": "sk",
+  "exampleButton": "Príklad tlačidla",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Áno, je to všetko v poriadku!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Každý príspevok lieči!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Vaša príspevok pomáha financovať bezplatné poradenstvo pre ostatných v núdzi",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Zaplaťte, čo sa vám zdá správne,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "alebo pokračujte v používaní Doctorina zadarmo, vďaka ostatným, ktorí sa rozhodli prispieť.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Jednorazový",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Mesačne",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Vyberte mesačnú sumu daru",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Chystáte sa prihlásiť na mesačný plán.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Prihlasujete sa na mesačný plán za {amount}/mesiac.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Platba bude účtovaná na váš účet po potvrdení nákupu. Predplatné sa automaticky obnovuje každý mesiac, pokiaľ nie je automatické obnovenie vypnuté najmenej 24 hodín pred koncom aktuálneho obdobia. Svoje predplatné môžete spravovať alebo zrušiť kedykoľvek v nastaveniach účtu. Pokračovaním súhlasíte s našimi {termsOfService} a {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Vyberte sumu jednorazového daru",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Väčšina ľudí dáva 7–15 $",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Vyberte menu",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Spracovanie platby",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Spracovanie jednorazovej platby {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Spracovanie mesačnej platby vo výške {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Ďakujem!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Teraz ešte viac ľudí dostane bezplatné rady — vaša podpora je naozaj neoceniteľná.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Prispeli ste:",
+  "@youContributedLabel": {},
+  "perMonth": "/ mesiac",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Návrat na hlavnú obrazovku",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Podmienky služby",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Zásady ochrany osobných údajov",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Darovať",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Aktívne",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Zrušené",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Pozastavené",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Čaká sa",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Vytvorené",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Časový limit",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Neznáme",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Prispievateľ Doctorina",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Obnovuje sa",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Zrušiť predplatné",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Ste si istí?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Vaša mesačná podpora udržuje Doctorinu bezplatnou pre ľudí, ktorí sa na ňu spoliehajú, ale nemôžu si ju dovoliť zaplatiť. Vaša predplatné financuje aspoň 10 bezplatných konzultácií každý mesiac. Ak odídete, menej pacientov dostane pomoc, ktorú potrebujú.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Udržať predplatné",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Zrušiť aj tak",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Vaša mesačná podpora bola úspešne zrušená.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Nesprávne údaje o predplatnom",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Prihláste sa na mesačnú podporu, aby sa tu zobrazila.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Žiadne predplatné zatiaľ",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Dátum predplatného",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Expiruje",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "ID predplatného",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "ID produktu",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Nemohli sme spracovať vašu platbu",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Niečo sa pokazilo s platbou. Skúste to prosím znova.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Skúsiť znova",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Spracovanie platby",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Nákup dokončíte na zabezpečenej stránke Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ týždeň",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ rok",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Najobľúbenejšie",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Zavrieť",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Čo získate s prémiou:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Konzultácie bez reklám",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Rýchlejšie odpovede",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Prednostný prístup k novým funkciám",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/týždeň",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Zrušte kedykoľvek. Žiadne záväzky.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "OBMEDZENÝ ČAS",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Automaticky sa obnovuje každý týždeň. Zrušiť kedykoľvek v nastaveniach. Pokračovaním súhlasíte s našimi <t>Podmienkami</t> a <p>Zásadami ochrany osobných údajov</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Pokračovať s prémiovým",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Vaša podpora pomáha udržiavať prístupnú starostlivosť",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Prosím, zaregistrujte sa alebo sa prihláste, aby ste dokončili nákup.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

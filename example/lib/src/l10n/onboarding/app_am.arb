@@ -1,0 +1,588 @@
+{
+  "@@locale": "am",
+  "appNameLogo": "doctorina",
+  "@appNameLogo": {
+    "description": "Brand name displayed under the logo on the welcome screen"
+  },
+  "welcomeTagline": "የተሻሻለ ኤይ አይ ጤና አገልግሎት",
+  "@welcomeTagline": {
+    "description": "Short tagline describing the product category"
+  },
+  "welcomeScreenTitle": "እንኳን ወደ ዶክቶሪና በደህና መጡ!",
+  "@welcomeScreenTitle": {
+    "description": "Main headline welcoming the user"
+  },
+  "socialProofTrustedBy": "Trusted by\n<green>48K+ Users</green>",
+  "@socialProofTrustedBy": {
+    "description": "Social proof header with highlighted user count\nNew line should be preserved. 48K+"
+  },
+  "welcomeDescription": "ልምድ ያላቸው የሕክምና ባለሙያዎች እንደሚያደርጉት ምልክቶችን ለመተንተን የተነደፈ - ቅጦችን፣ ጊዜን እና አውድን በመረዳት።",
+  "@welcomeDescription": {
+    "description": "Short paragraph explaining the value proposition of the app"
+  },
+  "getStartedBtn": "እንጀምር",
+  "@getStartedBtn": {
+    "description": "Primary call-to-action button to begin onboarding"
+  },
+  "alreadyHaveAccount": "መለያ አለዎት? <link>ግባ</link>",
+  "@alreadyHaveAccount": {
+    "description": "Secondary text prompting existing users to sign in with tappable login action"
+  },
+  "termsConsent": "በመቀጠል፣ በእኛ <termsOfService>የአገልግሎት ውል</termsOfService> | <privacyPolicy>የግላዊነት መመሪያ</privacyPolicy> ተስማምተዋል",
+  "@termsConsent": {
+    "description": "Legal consent text with tappable Terms of Service and Privacy Policy\nNew line should be preserved"
+  },
+  "personalizationInterruptionTitle": "ለእርስዎ የዶክተሪናን ብራንድ እናስተካክል",
+  "@personalizationInterruptionTitle": {
+    "description": "Headline prompting the user to start personalization with highlighted brand name"
+  },
+  "personalizationSectionLabel": "ግላዊነት ማላበስ",
+  "@personalizationSectionLabel": {
+    "description": "Small section label indicating personalization flow"
+  },
+  "personalizationReasonTitle": "ዛሬ እዚህ ምን አመጣህ?",
+  "@personalizationReasonTitle": {
+    "description": "Question asking why the user opened the app"
+  },
+  "personalizationReasonSymptomsNow": "አሁን የሕመም ምልክቶች እያጋጠሙኝ ነው",
+  "@personalizationReasonSymptomsNow": {
+    "description": "Option indicating the user currently has symptoms"
+  },
+  "personalizationReasonUnderstandChange": "የጤና ለውጥን መረዳት እፈልጋለሁ",
+  "@personalizationReasonUnderstandChange": {
+    "description": "Option indicating the user wants to understand a health change"
+  },
+  "personalizationReasonRuleOutSerious": "ከባድ የሆነ ነገርን ማስወገድ እፈልጋለሁ",
+  "@personalizationReasonRuleOutSerious": {
+    "description": "Option indicating the user wants to rule out serious issues"
+  },
+  "personalizationReasonMonitoring": "ጤናዬን በንቃት እየተከታተልኩ ነው",
+  "@personalizationReasonMonitoring": {
+    "description": "Option indicating proactive health monitoring"
+  },
+  "continueBtn": "ቀጥል",
+  "@continueBtn": {
+    "description": "Primary button to proceed to next step"
+  },
+  "captionEmpathyText": "በጤናዎ ላይ የሆነ ነገር ሲለወጥ፣ ምን አስፈላጊ እንደሆነ ማወቅ በጣም ከባድ ነው።",
+  "@captionEmpathyText": {
+    "description": "Introductory empathy statement about health uncertainty"
+  },
+  "captionDifferentiatorText": "ዶክቶሪና በምልክት ምልክቶች እና በጊዜ አቆጣጠር ላይ ያተኩራል -- ይህም ክሊኒኮች ቀደም ብለው የሚፈልጉት ተመሳሳይ ምልክቶች ናቸው።",
+  "@captionDifferentiatorText": {
+    "description": "Statement explaining Doctorina's analytical approach with emphasized phrase"
+  },
+  "genderTitle": "ጾታዎን ይምረጡ",
+  "@genderTitle": {
+    "description": "Question asking the user to select gender"
+  },
+  "genderSubtitle": "ይህም ምልክቶችን ለመተርጎም እና ምክሮችን በበለጠ በትክክል ለመስጠት ይረዳናል።",
+  "@genderSubtitle": {
+    "description": "Supporting text explaining why gender data is used"
+  },
+  "genderMale": "ወንድ",
+  "@genderMale": {
+    "description": "Gender selection option male"
+  },
+  "genderFemale": "ሴት",
+  "@genderFemale": {
+    "description": "Gender selection option female"
+  },
+  "genderPreferNotSay": "ባትናገር እመርጣለሁ",
+  "@genderPreferNotSay": {
+    "description": "Gender selection option prefer not to disclose"
+  },
+  "ageTitle": "ዕድሜህ ስንት ነው?",
+  "@ageTitle": {
+    "description": "Question asking the user's age"
+  },
+  "ageSubtitle": "ዕድሜ የጤና ሁኔታዎችን በትክክል እንድንገመግም ይረዳናል።",
+  "@ageSubtitle": {
+    "description": "Supporting explanation for age usage"
+  },
+  "socialProofLargeTitle": "<አረንጓዴ>ከ48ሺህ በላይ ሰዎች </green>\nዶክተሪናን መርጠዋል",
+  "@socialProofLargeTitle": {
+    "description": "Social proof headline with emphasized number\nNew line should be preserved"
+  },
+  "socialProofDisclaimer": "*በዶኪና የተጠቃሚ መሰረት ስታቲስቲክስ ላይ የተመሠረተ",
+  "@socialProofDisclaimer": {
+    "description": "Small note describing data source"
+  },
+  "developedByDoctors": "በ <b>ዶክተሮች</b> የተዘጋጀ",
+  "@developedByDoctors": {
+    "description": "Badge text indicating medical expertise\nNew line should be preserved"
+  },
+  "quizStepLabel1": "ደረጃ 1/6",
+  "@quizStepLabel1": {
+    "description": "Progress indicator showing current quiz step"
+  },
+  "quizHealthSituationTitle": "የአሁኑን የጤና ሁኔታዎን እንዴት ይገልጹታል?",
+  "@quizHealthSituationTitle": {
+    "description": "Question about overall health situation"
+  },
+  "quizHealthHealthy": "በአጠቃላይ ጤናማ እንደሆንኩ ይሰማኛል",
+  "@quizHealthHealthy": {
+    "description": "Option indicating no major health concerns"
+  },
+  "quizHealthMinorConcerns": "ቀጣይ የሆኑ ጥቃቅን ስጋቶች አሉብኝ",
+  "@quizHealthMinorConcerns": {
+    "description": "Option indicating minor ongoing issues"
+  },
+  "quizHealthKnownCondition": "የታወቀ ሁኔታን እያስተዳደርኩ ነው",
+  "@quizHealthKnownCondition": {
+    "description": "Option indicating an existing diagnosed condition"
+  },
+  "quizHealthUnresolved": "ያልተፈታ ነገር እያጋጠመኝ ነው",
+  "@quizHealthUnresolved": {
+    "description": "Option indicating unresolved issue"
+  },
+  "quizStepLabel2": "ደረጃ 2/6",
+  "@quizStepLabel2": {
+    "description": "Progress indicator showing second quiz step"
+  },
+  "quizDoctorVisitFrequencyTitle": "አብዛኛውን ጊዜ ዶክተርን ምን ያህል ጊዜ ነው የሚያዩት?",
+  "@quizDoctorVisitFrequencyTitle": {
+    "description": "Question about frequency of doctor visits"
+  },
+  "quizDoctorVisitRegular": "በመደበኛነት (ምርመራዎች / ክትትል)",
+  "@quizDoctorVisitRegular": {
+    "description": "Option indicating regular checkups"
+  },
+  "quizDoctorVisitOccasional": "አልፎ አልፎ፣ የሆነ ነገር ሲበላሽ",
+  "@quizDoctorVisitOccasional": {
+    "description": "Option indicating occasional visits"
+  },
+  "quizDoctorVisitRare": "አልፎ አልፎ፣ አስፈላጊ ከሆነ ብቻ",
+  "@quizDoctorVisitRare": {
+    "description": "Option indicating rare visits"
+  },
+  "quizDoctorVisitAvoid": "ወንጀል ወደ ዶክታር መግባት አትፈልጉም",
+  "@quizDoctorVisitAvoid": {
+    "description": "Пользователь говорит, что не любит ходить к врачам и старается\n лишний раз не обращаться к доктору. Итоговая фраза должна быть\n понятной и отражать это поведение, например:\n«Вы не любите обращаться к врачам»"
+  },
+  "quizDoctorVisitNever": "ዶክተር ሄጄ አላውቅም",
+  "@quizDoctorVisitNever": {
+    "description": "Option indicating never visited"
+  },
+  "quizStepLabel3": "ደረጃ 3/6",
+  "@quizStepLabel3": {
+    "description": "Progress indicator showing third quiz step"
+  },
+  "quizBiggestChallengeTitle": "እስካሁን ድረስ በጤና አጠባበቅ ረገድ ትልቁ ፈተናዎ ምንድነው?",
+  "@quizBiggestChallengeTitle": {
+    "description": "Question about healthcare challenges"
+  },
+  "quizMultiSelectHint": "የፈለጉትን ያህል ይምረጡ",
+  "@quizMultiSelectHint": {
+    "description": "Helper text indicating multiple selection allowed"
+  },
+  "quizChallengeLongWait": "ለቀጠሮዎች ረጅም የጥበቃ ጊዜዎች",
+  "@quizChallengeLongWait": {
+    "description": "Option indicating long appointment wait times"
+  },
+  "quizChallengeRushedVisits": "ጉብኝቶች በፍጥነት ይሰማቸዋል",
+  "@quizChallengeRushedVisits": {
+    "description": "Option indicating short or rushed visits"
+  },
+  "quizChallengeCost": "ከፍተኛ ዋጋ ወይም ግልጽ ያልሆነ ዋጋ",
+  "@quizChallengeCost": {
+    "description": "Option indicating cost or pricing clarity issues"
+  },
+  "quizChallengeHardExplain": "ሁሉንም ነገር በግልፅ ለማስረዳት ይከብዳል",
+  "@quizChallengeHardExplain": {
+    "description": "Option indicating difficulty explaining symptoms"
+  },
+  "quizChallengeConflictingAdvice": "የሚጋጩ አስተያየቶች ወይም ምክሮች",
+  "@quizChallengeConflictingAdvice": {
+    "description": "Option indicating conflicting medical opinions"
+  },
+  "quizChallengeNone": "ምንም ዋና ዋና ችግሮች የሉም",
+  "@quizChallengeNone": {
+    "description": "Option indicating no major issues"
+  },
+  "quizStepLabel4": "ደረጃ 4/6",
+  "@quizStepLabel4": {
+    "description": "Progress indicator showing fourth quiz step"
+  },
+  "quizConfidenceAfterAppointmentTitle": "ከቀጠሮ በኋላ፣ ስለተነገረህ ነገር ምን ያህል በራስ መተማመን ይሰማሃል?",
+  "@quizConfidenceAfterAppointmentTitle": {
+    "description": "Question about clarity after doctor appointments"
+  },
+  "quizConfidenceNoRightAnswer": "ትክክል ወይም የተሳሳተ መልስ የለም።",
+  "@quizConfidenceNoRightAnswer": {
+    "description": "Helper note clarifying subjective nature"
+  },
+  "quizConfidenceVeryClear": "ምን እየተከናወነ እንዳለ በጣም ግልፅ ነው",
+  "@quizConfidenceVeryClear": {
+    "description": "Option indicating full understanding"
+  },
+  "quizConfidenceSomewhatClear": "በተወሰነ ደረጃ ግልጽ",
+  "@quizConfidenceSomewhatClear": {
+    "description": "Option indicating partial clarity"
+  },
+  "quizConfidenceStillUncertain": "አሁንም እርግጠኛ አለመሆን",
+  "@quizConfidenceStillUncertain": {
+    "description": "Option indicating ongoing uncertainty"
+  },
+  "quizConfidenceMoreConfused": "ከበፊቱ የበለጠ ግራ ተጋብቷል",
+  "@quizConfidenceMoreConfused": {
+    "description": "Option indicating increased confusion"
+  },
+  "captionDiagnosisVsChange": "ብዙ <green>ሰዎች የሚያስቸግሩት ከመድኃኒታቸው በኋላ</green> ነው ነገር ግን ምልክቶች በጊዜ ሲለዋወጡ ነው.",
+  "@captionDiagnosisVsChange": {
+    "description": "Образовательная подпись, подчеркивающая развитие симптомов.\n Подпись должна объяснять, что многие люди сталкиваются с трудностями\n не сразу после постановки диагноза, а когда симптомы меняются со временем."
+  },
+  "quizStepLabel5": "ደረጃ 5/6",
+  "@quizStepLabel5": {
+    "description": "Progress indicator showing fifth quiz step"
+  },
+  "quizConcernsAddressedTitle": "ስጋቶችዎ ብዙውን ጊዜ እንዴት እንደሚፈቱ ይሰማዎታል?",
+  "@quizConcernsAddressedTitle": {
+    "description": "Question about how well concerns are addressed"
+  },
+  "quizConcernsAddressedSubtitle": "በእርስዎ ግላዊ ስሜቶች ላይ በመመስረት",
+  "@quizConcernsAddressedSubtitle": {
+    "description": "Clarifies answers are subjective"
+  },
+  "quizConcernsVeryWell": "በጣም ጥሩ",
+  "@quizConcernsVeryWell": {
+    "description": "Option indicating strong satisfaction"
+  },
+  "quizConcernsFairlyWell": "በጣም ጥሩ",
+  "@quizConcernsFairlyWell": {
+    "description": "Option indicating moderate satisfaction"
+  },
+  "quizConcernsNotVeryWell": "ብዙም ጥሩ አይደለም",
+  "@quizConcernsNotVeryWell": {
+    "description": "Option indicating low satisfaction"
+  },
+  "quizConcernsVaries": "በጣም ይለያያል",
+  "@quizConcernsVaries": {
+    "description": "Option indicating inconsistent experience"
+  },
+  "quizStepLabel6": "ደረጃ 6/6",
+  "@quizStepLabel6": {
+    "description": "Progress indicator showing sixth quiz step"
+  },
+  "quizSelfResearchTitle": "ዶክተር ጋር ከመገናኘትዎ በፊት፣ ብዙውን ጊዜ እራስዎ የሕመም ምልክቶችን ለመረዳት ይሞክራሉ?",
+  "@quizSelfResearchTitle": {
+    "description": "Question about pre-visit self-research behavior"
+  },
+  "quizSelfResearchYes": "አዎ፣ ነገሮችን እመረምራለሁ እና እከታተላለሁ",
+  "@quizSelfResearchYes": {
+    "description": "Option indicating proactive research"
+  },
+  "quizSelfResearchSometimes": "አንዳንድ ጊዜ",
+  "@quizSelfResearchSometimes": {
+    "description": "Option indicating occasional research"
+  },
+  "quizSelfResearchRarely": "አልፎ አልፎ",
+  "@quizSelfResearchRarely": {
+    "description": "Option indicating rare research"
+  },
+  "quizSelfResearchNo": "አይ፣ ሙሉ በሙሉ በባለሙያዎች ላይ እተማመናለሁ",
+  "@quizSelfResearchNo": {
+    "description": "Option indicating full reliance on professionals"
+  },
+  "captionAvailabilityTitle": "የጤና ጥያቄዎች <አረንጓዴ>የቢሮ ሰዓቶችን አይከተሉም </green> ።",
+  "@captionAvailabilityTitle": {
+    "description": "Statement about healthcare accessibility with highlighted phrase"
+  },
+  "captionAvailabilitySupport": "ዶክቶሪና <አረንጓዴ>24/7 ይገኛል። </green>",
+  "@captionAvailabilitySupport": {
+    "description": "Statement about continuous availability"
+  },
+  "captionAvailabilityDescription": "ክላሪቲ ለሚቀጥለው ቀጠሮ መጠበቅ የለባትም።",
+  "@captionAvailabilityDescription": {
+    "description": "Supporting line reinforcing immediate clarity"
+  },
+  "notificationTitle": "እባኮትን የጤና ምልክቶችዎን ለመከታተል እንደምን እንደምን እባኮትን?",
+  "@notificationTitle": {
+    "description": "Question asking about permission for notifications"
+  },
+  "notificationDescription": "AI የምርመራዎትን ምርመራ ይከታተል እና አንዳንድ ነገር እንደሚያስፈልግ ይማርከዋል",
+  "@notificationDescription": {
+    "description": "Explanation about why better to enable notification"
+  },
+  "notificationYes": "አዎን — ጤናዬን እንደ እንቅስቃሴ እቀጥላለሁ",
+  "@notificationYes": {
+    "description": "Option indicating yes to all notifications"
+  },
+  "notificationOnlyImportant": "አዎ — አስፈላጊ ለውጦች ብቻ",
+  "@notificationOnlyImportant": {
+    "description": "Option indicating yes only for important notification"
+  },
+  "notificationNo": "አልተረዳኩም",
+  "@notificationNo": {
+    "description": "Option indicating user don't want to enable notification now"
+  },
+  "referralSourceTitle": "ስለ ዶክቶሪና ከዶክተር ሰምተሃል?",
+  "@referralSourceTitle": {
+    "description": "Question asking whether a doctor recommended Doctorina"
+  },
+  "referralSourceYes": "አዎ",
+  "@referralSourceYes": {
+    "description": "Yes option"
+  },
+  "referralSourceNo": "አይ",
+  "@referralSourceNo": {
+    "description": "No option"
+  },
+  "processingSectionLabel": "ውጤቶችዎን መተንተን",
+  "@processingSectionLabel": {
+    "description": "Small label indicating analysis phase"
+  },
+  "processingTitle": "ተሞክሮዎን ለግል ማበጀት",
+  "@processingTitle": {
+    "description": "Title on the results processing screen"
+  },
+  "processingPercentValue": "{percent}%",
+  "@processingPercentValue": {
+    "description": "Progress percentage value during processing",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "99",
+        "description": "Current processing percentage"
+      }
+    }
+  },
+  "paywallHeadline": "ከ <brand>Doctorina Pro</brand> ጋር ያልተገደበ ልምድ",
+  "@paywallHeadline": {
+    "description": "Main paywall headline with highlighted product tier"
+  },
+  "paywallAssistantTagline": "ሁልጊዜ በአቅራቢያዎ የሚገኝ የእርስዎ ረዳት",
+  "@paywallAssistantTagline": {
+    "description": "Supporting tagline under logo"
+  },
+  "paywallEnableTrialToggle": "እስካሁን እርግጠኛ አይደሉም? ነጻ ሙከራን ያንቁ።",
+  "@paywallEnableTrialToggle": {
+    "description": "Toggle label offering free trial"
+  },
+  "paywallPlanYear": "ዓመታዊ",
+  "@paywallPlanYear": {
+    "description": "Yearly subscription plan title"
+  },
+  "paywallPlanMonthly": "ወርሃዊ",
+  "@paywallPlanMonthly": {
+    "description": "Monthly subscription plan title"
+  },
+  "paywallPlanWeek": "ሳምንታዊ",
+  "@paywallPlanWeek": {
+    "description": "Weekly subscription plan title"
+  },
+  "paywallPlanDaily": "በየቀኑ",
+  "@paywallPlanDaily": {
+    "description": "Daily subscription plan title"
+  },
+  "paywallPlanYearPrice": "$39.99 (በሳምንት $3.34 ብቻ)",
+  "@paywallPlanYearPrice": {
+    "description": "Yearly subscription price with weekly equivalent"
+  },
+  "paywallPlanWeekPrice": "3.99 ዶላር",
+  "@paywallPlanWeekPrice": {
+    "description": "Weekly subscription price"
+  },
+  "paywallSaveBadge": "58% ይቆጥቡ",
+  "@paywallSaveBadge": {
+    "description": "Discount badge label"
+  },
+  "paywallContinueBtn": "ቀጥል",
+  "@paywallContinueBtn": {
+    "description": "Continue purchase without trial"
+  },
+  "paywallStartTrialBtn": "ነፃ ሙከራ ጀምር",
+  "@paywallStartTrialBtn": {
+    "description": "Start free trial CTA"
+  },
+  "paywallSubscriptionDisclaimer": "የደንበኝነት ምዝገባ በራስ-ሰር ሊታደስ ይችላል። በማንኛውም ጊዜ ይሰርዙ",
+  "@paywallSubscriptionDisclaimer": {
+    "description": "Legal renewal disclaimer"
+  },
+  "paywallTermsPrivacy": "<termsOfService>የአገልግሎት ውሎች</termsOfService> | <privacypolicy>የግላዊነት መመሪያ</privacypolicy>",
+  "@paywallTermsPrivacy": {
+    "description": "Links to legal documents"
+  },
+  "paywallPerWeek": "ሳምንት",
+  "@paywallPerWeek": {
+    "description": "Week, in context per week, e.g. \"$3,99/week\""
+  },
+  "processingLabel": "ውጤቶችዎን መተንተን",
+  "@processingLabel": {
+    "description": "Section label on the results processing screen"
+  },
+  "paywallCloseTooltip": "ማዋሃድን ዝጋ",
+  "@paywallCloseTooltip": {
+    "description": "Tooltip for the paywall close button"
+  },
+  "paywallRestoreTooltip": "ግዢዎችን ወደነበረበት ይመልሱ",
+  "@paywallRestoreTooltip": {
+    "description": "Tooltip for the restore purchases button"
+  },
+  "paywallRestoreBtn": "ወደነበረበት መልስ",
+  "@paywallRestoreBtn": {
+    "description": "Restore purchases button text"
+  },
+  "paywallRestoreNoneFound": "ወደነበረበት ለመመለስ ምንም ንቁ የደንበኝነት ምዝገባ አልተገኘም።",
+  "@paywallRestoreNoneFound": {
+    "description": "Message when no active subscription found to restore"
+  },
+  "paywallRestoreError": "ግዢዎችን ወደነበረበት መመለስ አልተሳካም። እባክዎ ቆይተው እንደገና ይሞክሩ።",
+  "@paywallRestoreError": {
+    "description": "Error message when restore purchases fails"
+  },
+  "paywallPurchaseError": "ግዴታ ግዢውን ማሳካት አልቻልኩም። እባኮትን ወደ ኋላ ይሞክሩ።",
+  "@paywallPurchaseError": {
+    "description": "Error message when subscription purchase fails"
+  },
+  "paywallTrialStep1Title": "ዛሬ: እቅፍ መዳረሻ ይቀበሉ",
+  "@paywallTrialStep1Title": {
+    "description": "Заголовок 1-го шага в таймлайне триала на пейволле v2 (доступ открывается сегодня)"
+  },
+  "paywallTrialStep1Description": "እባክዎ ሙሉ መዳረሻ ይከፍቱ፣ የAI ጤና መልስ ይቀበሉ፣ ወቅታዊ ነው።",
+  "@paywallTrialStep1Description": {
+    "description": "Описание 1-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep2Title": "ቀን 2: የሙከራ ማስታወሻ",
+  "@paywallTrialStep2Title": {
+    "description": "Заголовок 2-го шага таймлайна триала (напоминание о завершении триала)"
+  },
+  "paywallTrialStep2Description": "እንደ ምርጫ ወቅት ወደ መጨረሻ እንደሚያደርግ ማስታወሻ እንላችሁ",
+  "@paywallTrialStep2Description": {
+    "description": "Описание 2-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep3Title": "3ኛ ቀን: እንደገና ማድረግ",
+  "@paywallTrialStep3Title": {
+    "description": "Заголовок 3-го шага таймлайна триала (списание после окончания триала)"
+  },
+  "paywallTrialStep3Description": "በ{date} ይከፈልህ፣ ከዚያ በፊት ማቋረጥ ይቻላል.",
+  "@paywallTrialStep3Description": {
+    "description": "Описание 3-го шага таймлайна с датой ближайшего списания",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "April 30, 2026"
+      }
+    }
+  },
+  "paywallBenefitsHeader": "ምን አካባቢ አለ",
+  "@paywallBenefitsHeader": {
+    "description": "Заголовок таблицы с фичами Free/Pro на пейволле v2"
+  },
+  "paywallBenefitsBadgeFree": "FREE",
+  "@paywallBenefitsBadgeFree": {
+    "description": "Бейдж колонки \"Free\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitsBadgePro": "PRO",
+  "@paywallBenefitsBadgePro": {
+    "description": "Бейдж колонки \"Pro\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitPrivateSecure": "የግል እና ደህንነታቸው ይታወቃል",
+  "@paywallBenefitPrivateSecure": {
+    "description": "Пункт списка фич на пейволле v2 — приватность и безопасность"
+  },
+  "paywallBenefitAiAssistant": "አይ አስስታንት፣ 24/7",
+  "@paywallBenefitAiAssistant": {
+    "description": "Пункт списка фич на пейволле v2 — AI-ассистент 24/7"
+  },
+  "paywallBenefitInstantAnswers": "እንቅስቃሴ የጤና መልስ",
+  "@paywallBenefitInstantAnswers": {
+    "description": "Пункт списка фич на пейволле v2 — мгновенные ответы"
+  },
+  "paywallBenefitScienceInsights": "ግልጽ የሳይንስ መረጃ እና እውነታ የተመለከተ",
+  "@paywallBenefitScienceInsights": {
+    "description": "Пункт списка фич на пейволле v2 — научно обоснованные инсайты"
+  },
+  "paywallBenefitAutoSummaries": "አውቶ ውይይቶች ማጠቃለያዎች",
+  "@paywallBenefitAutoSummaries": {
+    "description": "Пункт списка фич на пейволле v2 — автоматические резюме консультаций"
+  },
+  "paywallBenefitAnyLanguage": "እያንዳንዱ ቋንቋ በማንኛውም ጊዜ",
+  "@paywallBenefitAnyLanguage": {
+    "description": "Пункт списка фич на пейволле v2 — поддержка любого языка"
+  },
+  "paywallPriceUnitPerWeek": "በሳምንት",
+  "@paywallPriceUnitPerWeek": {
+    "description": "Подпись \"per week\" под ценой подписки в плитке выбора плана на пейволле v2"
+  },
+  "paywallOfferTitle": "አንድ ጊዜ የሚሰጥ ዕቅፍ",
+  "@paywallOfferTitle": {
+    "description": "Заголовок шита одноразового оффера после онбординга. Для языков русского, белорусского, украинского - слово \"одноразовый\" применимо к поссуде, а не к предложению. One time offer лучше перевести как \"Разовое предложение\""
+  },
+  "paywallOfferDiscountPercent": "{percent}% እኩል",
+  "@paywallOfferDiscountPercent": {
+    "description": "Процент скидки на белой карточке шита одноразового оффера",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "40"
+      }
+    }
+  },
+  "paywallOfferForeverBadge": "ወይዘር",
+  "@paywallOfferForeverBadge": {
+    "description": "Подпись \"FOREVER\" под процентом скидки.  Для языков русского, белорусского, украинского - слово FOREVER лучше перевести  как \"НАВСЕГДА\" (не так пафосно , как \"навечно\")"
+  },
+  "paywallOfferDisclaimer": "አንድ ጊዜ የሚሰጥ የቅናሽ ዕቅፍዎን ከዝግጅት በኋላ ይህ ይሠርዝ!",
+  "@paywallOfferDisclaimer": {
+    "description": "Дисклеймер о том, что предложение исчезнет после закрытия шита. лучше на русский/белорусский и украинский переводить по смыслу так: \"У вас только один шанс воспользоваться этим предложением\""
+  },
+  "paywallOfferPricePerMonth": "{price}/ወር",
+  "@paywallOfferPricePerMonth": {
+    "description": "Цена за месяц для годовой подписки на карточке одноразового оффера",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "$1.99"
+      }
+    }
+  },
+  "paywallOfferLowestPriceBadge": "ከሁሉም የታቀደ ዋጋ",
+  "@paywallOfferLowestPriceBadge": {
+    "description": "Бейдж \"LOWEST PRICE EVER\" над карточкой годовой подписки. лучше на русский/белорусский и украинский переводить по смыслу так: \"САМАЯ НИЗКАЯ ЦЕНА\""
+  },
+  "paywallOfferCancelAnytime": "ወቅታዊ ይቅርታ",
+  "@paywallOfferCancelAnytime": {
+    "description": "Подпись \"Cancel anytime\" между карточкой подписки и CTA. \"Отмена в любой момент\" - хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferClaimButton": "የእቅፍዎን ይቀበሉ",
+  "@paywallOfferClaimButton": {
+    "description": "CTA-кнопка для активации одноразового оффера. \"Получить предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferAutoRenewable": "አውቶማቲክ የሚያወጣ እቅፍ",
+  "@paywallOfferAutoRenewable": {
+    "description": "Футер шита одноразового оффера — текст про автопродление подписки"
+  },
+  "paywallGiftBoxTitle": "አስፈላጊ ስጦታ ውስጥ አለ",
+  "@paywallGiftBoxTitle": {
+    "description": "Заголовок шита подарка перед одноразовым оффером"
+  },
+  "paywallGiftBoxSubtitle": "አንድ ጥቅል ወደ የአንቀጽ ዕቅፍ ለማስገንዘብ",
+  "@paywallGiftBoxSubtitle": {
+    "description": "Подзаголовок шита подарка с приглашением открыть оффер. \"Нажмите, чтобы открыть специальное предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallGiftBoxOpenButton": "አሁን ክፈት",
+  "@paywallGiftBoxOpenButton": {
+    "description": "CTA-кнопка для открытия шита подарка. \"Открыть\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallRetryLoadPricesError": "እቅፍ አማራጮች ማስገንዘብ አልቻልኩም። እባኮትን ወደ ኋላ ይሞክሩ.",
+  "@paywallRetryLoadPricesError": {
+    "description": "Тост-ошибка при неудачной повторной загрузке цен подписок на пейволле"
+  },
+  "paywallPricesUnavailableTitle": "እቅፍ ዋጋዎችን ማስገንዘብ አልቻልኩም",
+  "@paywallPricesUnavailableTitle": {
+    "description": "Заголовок фолбэка на пейволле, когда RevenueCat не отдал цены подписок"
+  },
+  "paywallPricesUnavailableMessage": "እባኮትን የእንቅስቃሴዎን ያረጋግጡ እና ይሞክሩ ወደ ኋላ",
+  "@paywallPricesUnavailableMessage": {
+    "description": "Подзаголовок фолбэка на пейволле с просьбой проверить соединение и повторить"
+  },
+  "paywallPricesUnavailableRetryButton": "እባክዎ ይሞክሩ",
+  "@paywallPricesUnavailableRetryButton": {
+    "description": "Текст кнопки повторной загрузки цен в фолбэке пейволла"
+  },
+  "skipOnboardingButton": "Skip",
+  "@skipOnboardingButton": {
+    "description": "Кнопка для пропуска онбординга, должна быть записана емко и кратко. Например: \"Пр-ть\""
+  }
+}

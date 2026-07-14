@@ -1,0 +1,15 @@
+{
+  "@@locale": "ur",
+  "error": "ایک خرابی پیش آئی",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "ایک غیر متوقع خرابی واقع ہوئی",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "بگ رپورٹ کامیابی سے بھیجی گئی.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

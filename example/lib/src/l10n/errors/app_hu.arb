@@ -1,0 +1,15 @@
+{
+  "@@locale": "hu",
+  "error": "Hiba történt",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Váratlan hiba történt",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "A hibajelentés sikeresen elküldve.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

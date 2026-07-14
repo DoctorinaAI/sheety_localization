@@ -1,0 +1,129 @@
+{
+  "@@locale": "bn",
+  "lang": "বাংলা",
+  "@lang": {},
+  "langEn": "Bengali",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "এখন আপডেট করুন",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "হয়তো পরে",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "নতুন আপডেট উপলব্ধ",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "আপডেট প্রয়োজন",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "অ্যাপের নতুন সংস্করণ (v{version}) পাওয়া যাচ্ছে. সর্বোত্তম অভিজ্ঞতার জন্য অনুগ্রহ করে আপডেট করুন.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "চালিয়ে যেতে, অনুগ্রহ করে অ্যাপটি আপডেট করুন. এই আপডেটে গুরুত্বপূর্ণ সংশোধন ও উন্নতি অন্তর্ভুক্ত রয়েছে.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "ডাউনলোড",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "আপনার যদি ইতিমধ্যে একটি Doctorina অ্যাকাউন্ট থাকে তবে লগ ইন করুন, অথবা শুরু করতে সাইন আপ করুন",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "লগ ইন",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "সাইন আপ করুন",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "অতিথি হিসেবে চালিয়ে যান",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "লগ ইন",
+  "@titleLogin": {},
+  "titleLogout": "লগ আউট",
+  "@titleLogout": {},
+  "titleSignIn": "সাইন ইন",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "সংলাপ",
+  "@titleDialog": {},
+  "titleChat": "চ্যাট",
+  "@titleChat": {},
+  "titleSettings": "অ্যাকাউন্ট সেটিংস",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "চ্যাট ইতিহাস",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "পেমেন্ট",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "সাবস্ক্রিপশন পরিচালনা করুন",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "মাসিক সাবস্ক্রিপশন",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "অনবোর্ডিং",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "স্বাগতম ফিরে",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "স্বাস্থ্য নথির প্রোফাইল",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "প্রোফাইল ঘোষণা",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "স্বাস্থ্য রেকর্ড",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "সম্পূর্ণ রেকর্ড",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "নথি",
+  "@titleDocuments": {},
+  "titleConsultations": "পরামর্শ",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "পে ওয়াল",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "মুছে ফেলছেন? আমাদের জানান কেন!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "নতুন স্বাস্থ্য আলোচনা শুরু করুন",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "একটি ধারণা শেয়ার করুন বা একটি সমস্যা রিপোর্ট করুন",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Doctorina কিভাবে উন্নতি করতে পারে আমাদের জানান",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

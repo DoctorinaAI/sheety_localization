@@ -1,0 +1,742 @@
+{
+  "@@locale": "te",
+  "drawerTooltipNotifications": "నోటిఫికేషన్లు",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "సహాయం",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "మూసు",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "ఖాతా",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "ప్రొఫైల్",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "ఖాతా అమరికలు",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "మద్దతు కోసం దానం చేయండి",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "సబ్స్క్రిప్షన్",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "చాట్‌లు",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "చాట్ చరిత్ర",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "జోడించిన పత్రాలు",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "ఎలా ఉపయోగించాలి",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "వీഡിയോ ట్యుటోరియల్స్",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "చట్టపరమైన",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "మమ్మల్ని సంప్రదించండి",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "బగ్ నివేదిక",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "నిబంధనలు & షరతులు",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "గోప్యతా విధానం",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "అభిప్రాయం",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "అప్ రేట్ చేయండి",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "స్నేహితులతో పంచుకోండి",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "లాగ్ అవుట్",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "ఇతరులు వైద్య సేవలు పొందడానికి సహాయం చేయండి",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "యూజర్",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "ప్రీమియం ఫీచర్లు\nడాక్టరినా‌తో",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "పొందండి",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "మనతో చేరండి",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "యాప్ వెర్షన్:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "ఇటీవల చాట్లు",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "ప్రొఫైల్",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "ఇటీవల చాట్",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "అప్లికేషన్లు డౌన్‌లోడ్ చేయండి",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "సందేశాన్ని నమోదు చేయండి",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "ఫైల్ జోడించండి",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "డిక్ట్ చేయండి",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "ముగించు & లిప్యంతరించు",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "సందేశం పంపండి",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "సందేశాలను పొందడంలో విఫలమైంది",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "సందేశాలను పొందడంలో విఫలమయ్యాం. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "సందేశాలను తీసుకోండి",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "సందేశాలు అందుబాటులో లేవు. సంభాషణను ప్రారంభించడానికి ఒక సందేశం పంపండి.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "కనెక్టైనది",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "కనెక్షన్ లేదు",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "శోధించు",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "ఇష్టమైనవి",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "డౌన్లోడ్",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "PDF ముద్రించండి",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "మిత్రులతో పంచుకోండి",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "కొత్త చాట్",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "చాట్",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "చాట్ ఎంచుకోండి",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "డ్రాయర్ చూపించు",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "చాట్‌లు అందుబాటులో లేవు. దయచేసి రిఫ్రెష్ చేయండి లేదా కొత్త చాట్ సృష్టించండి.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "చాట్‌లను రిఫ్రెష్ చేయండి",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "కొత్త చాట్ సృష్టించు",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "పాఠ్యం కాపీ చేయి",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "టైపింగ్\nకొద్ది క్షణం",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "అప్‌డేటింగ్...\nమీ ఇంటర్నెట్ కనెక్షన్‌ను తనిఖీ చేయండి",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "సందేశం ఇప్పటికే ఈ క్షణమే ప్రాసెస్ చేయబడుతోంది.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "సందేశం చాలా పొడవుగా ఉంది.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "అటాచ్‌మెంట్ తొలగించు",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "సందేశాన్ని ప్రాసెస్ చేయడంలో విఫలమైంది",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "PDFకి ఎగుమతి చేయండి",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "ఫోటోలు",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "కెమెరా",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "ఫైళ్ళు",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "ఫోటోలు మరియు ఫైల్స్",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "ఆశిస్తున్నాము, ఇది సహాయపడింది! ఈ వివరణ మీకు ఉపయోగపడుతుందా?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "అవును, అన్నీ బాగానే ఉన్నాయి!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "చాట్ సారాంశం సేకరించడంలో విఫలమైంది",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "చాట్ సారాంశం క్లిప్‌బోర్డ్కు కాపీ చేయబడింది",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "మొబైల్ యాప్‌లో Doctorina ని ప్రయత్నించండి!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "లో డౌన్లోడ్",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "ఇప్పుడే పొందండి",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "App Store నుండి డౌన్లోడ్ చేయండి",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "గూగుల్ ప్లే నుండి పొందండి",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "సందేశం నివేదిక",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "మీరు ఈ సందేశాన్ని ఎందుకు నివేదిస్తున్నారు?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "ఐచికంగా: ఈ సందేశంలో ఏమి తప్పు ఉందో వివరించండి...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "ఇది మా AI ప్రతిస్పందనలను మెరుగుపరచడంలో సహాయపడుతుంది.",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "రద్దు",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "రిపోర్ట్",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "మీ అభిప్రాయానికి ధన్యవాదాలు! నివేదిక సమర్పించబడింది.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "రిపోర్ట్ సమర్పించడంలో విఫలమైంది",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "క్లిప్‌బోర్డుకు కాపీ చేయబడింది",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "సందేశాన్ని కాపీ చేయడం విఫలమైంది",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "సందేశం నివేదిక",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "డాక్టర్ చాట్‌కు అప్‌లోడ్ చేయండి",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "చాట్‌లో చేర్చడానికి ఇక్కడ ఫైళ్లను డ్రాగ్ చేసి వదిలేయండి",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "మీరు ఒక సందేశానికి 15 ఫైళ్లను జోడించవచ్చు",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "మీ ఆరోగ్యం గురించి ముఖ్యమైనది వస్తే మీకు తెలియజేయాలా?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "అవును, నాకు తెలియజేయండి",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "తర్వాత కావచ్చు",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "మూసివేయి",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "సిస్టమ్ స్థాయిలో నోటిఫికేషన్లు అడ్డుకోబడ్డాయి. డాక్టోరినా యొక్క నోటిఫికేషన్లను ప్రారంభించడానికి ముందు వాటిని సిస్టమ్ సెట్టింగ్స్‌లో ప్రారంభించండి.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "సిస్టమ్ స్థాయిలో నోటిఫికేషన్లు అడ్డుకోబడ్డాయి. డాక్టోరినా యొక్క నోటిఫికేషన్లను ప్రారంభించడానికి ముందు బ్రౌజర్ సెట్టింగ్స్‌లో వాటిని ప్రారంభించండి.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "మీ సంప్రదింపుల గురించి అప్డేట్‌లో ఉండండి",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "డాక్టర్‌నా మీ ఆరోగ్యం గురించి కొత్త సమాచారం లేదా నవీకరణలు అందుబాటులో ఉన్నప్పుడు మీకు తెలియజేయవచ్చు.",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "నోటిఫికేషన్లు ప్రారంభించండి",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "తర్వాత కావచ్చు",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "ముందుకు సాగడం ద్వారా మీరు వ్యక్తిగత డేటా ప్రక్రియ, <c>cookies</c> వినియోగం, <t>నిబంధనలు మరియు షరతులు</t> అంగీకరించి, <p>గోప్యతా విధానం</p>ని ధృవీకరిస్తున్నారు. అదనంగా, మీ కన్సల్టేషన్ అనేది లైసెన్స్ పొందిన వైద్య నిపుణుడి కాదని మీరు అంగీకరిస్తున్నారు",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "తిరస్కరించు",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "ముందుగా ఈ చాట్‌ను సేవ్ చేయండి?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "కొత్త సలహా ప్రారంభించే ముందు ఈ సలహాను సేవ్ చేసుకోవడానికి ఉచితంగా సైన్ అప్ చేయండి",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "సేవ్ చేయకుండానే ప్రారంభించు",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "సైన్ అప్ చేయండి",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "సంభాషణను కొనసాగించడానికి, పై నుండి ఒక ఎంపికను ఎంచుకోండి",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "మూసివేయి",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "అటాచ్‌మెంట్‌ను తొలగించండి",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "డ్రాప్ జోన్ నుండి ఫైళ్లను ఎంచుకోవడంలో విఫలమైంది",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "దయచేసి సందేశాన్ని నమోదు చేయండి లేదా ఫైల్‌ను జోడించండి",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "అప్‌లోడ్లు పూర్తయ్యే వరకు వేచి ఉండండి",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "సందేశం ప్రాసెస్ అవుతోంది",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "సందేశం చాలా పొడవుగా ఉంది",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "సందేశం ప్రస్తుతం ప్రాసెస్ అవుతోంది.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "కనెక్షన్ శాశ్వతంగా మూసివేయబడింది",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "సర్వర్‌కు కనెక్షన్ లేదు",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "ఫైళ్ళను ఎంచుకోవడంలో విఫలమయ్యింది",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "చిత్రాలను ఎంచుకోవడంలో విఫలమైంది",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "కామరా నుండి ఫోటోను పట్టుకోవడంలో విఫలమైంది",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "మీరు ఒకేసారి {count} ఫైల్స్ జోడించవచ్చు.",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "గుర్తించిన పాఠాన్ని క్లియర్ చేయండి",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "సందేశం చాలా పొడవుగా ఉంది.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "అప్లోడ్లు పూర్తయ్యే వరకు వేచి ఉండండి.",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "The {kind} \"{name}\" is already attached and was not added again.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "The {kind} \"{name}\" is a duplicate of {exist} and was not added.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "The {kind} \"{name}\" was not added because the maximum number of attachments has been exceeded.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "ఫైల్ \"{name}\" ఖాళీగా ఉంది.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "ఫైల్ ఖాళీగా ఉంది.",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "ఫైల్ \"{name}\" అనుమతించిన గరిష్ట పరిమాణాన్ని మించిపోయింది.",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "ఫైల్ అనుమతించబడిన గరిష్ట పరిమాణాన్ని మించిపోయింది.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "ఫైల్ \"{name}\" ప్రాసెస్ చేయడంలో లోపం జరిగింది.",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "ఫైల్ ప్రాసెస్ చేయడంలో లోపం జరిగింది.",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "ఫైల్ \"{name}\" జోడించబడలేదు ఎందుకంటే జోడింపుల గరిష్ట సంఖ్య మించిపోయింది.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "ఒకటి లేదా ఎక్కువ ఫైళ్లు జోడించబడలేదు, ఎందుకంటే అనుబంధాల గరిష్ట సంఖ్య మించిపోయింది.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "ఒక ఫైల్ జోడించబడలేదు ఎందుకంటే జోడింపుల గరిష్ట సంఖ్య మించిపోయింది.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "ఒక పేరుతో లేని ఫైల్ జోడించడానికి ప్రయత్నించబడింది.",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "అనుమతించని విస్తరణతో కూడిన ఫైల్ జోడించడానికి ప్రయత్నించబడింది: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "అనుమతించని విస్తరణతో కూడిన ఫైల్ జోడించడానికి ప్రయత్నించబడింది.",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "ఫైల్‌ను జోడించడం సాధ్యం కాదు.",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "ఫైల్ \"{name}\" చెల్లదు మరియు జోడించబడదు.",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "ఒక ఫైల్ చెల్లదు మరియు జోడించబడదు.",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "ఐటమ్ \"{name}\" చెల్లుబాటు అయ్యే ఫైల్ కాదు.",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "ఒక అంశం చెల్లుబాటు అయ్యే ఫైల్ కాదు.",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "ఒక అంశాన్ని ప్రాసెస్ చేయడంలో లోపం జరిగింది",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "ఒకటి(లు)ని ప్రాసెస్ చేయడంలో లోపం జరిగింది.",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "ఫైళ్ళు జోడించబడలేదు.",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "కొన్ని ఫైళ్లు ఇప్పటికే ఉన్న ఫైళ్లతో డూప్లికేట్ల కారణంగా దాటవేయబడ్డాయి.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "ఒక తెలియని లోపం జరిగింది.",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "ఫైళ్ళను జోడించేటప్పుడు ఈ క్రింది లోపాలు జరిగాయి:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "ఫైల్‌ను పంచడం విఫలమైంది: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "మూసివేయి",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "షేర్",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "ఫైల్ లోడ్ అవుతోంది...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "ఫైల్ లోడ్ చేయడంలో విఫలమైంది",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "అజ్ఞాత లోపం జరిగింది",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "మళ్లీ ప్రయత్నించండి",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "మద్దతు లేని ఫైల్ రకం",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "{contentType} ను ప్రివ్యూ చేయలేరు",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "ఫైల్ పంచుకోండి",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "చిత్రాన్ని ప్రదర్శించడంలో విఫలమైంది",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "జూమ్ రీసెట్ చేయండి",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "PDF లోడ్ చేయడంలో విఫలమైంది",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "పాఠ్య విషయాన్ని డీకోడ్ చేయడంలో విఫలమైంది.",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "మరియు {count} మరిన్ని లోపాలు.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "ఫైల్ తప్పుగా ఉంది",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "అనుమతి అవసరం",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "కొనసాగడం ద్వారా, మీరు మా <tc>నిబంధనలు</tc>, <privacy_policy>గోప్యతా విధానం</privacy_policy>, మరియు <cookies>కుకీలు ఉపయోగం</cookies> కు అంగీకరిస్తున్నారు మరియు ఈ సలహా AI ద్వారా అందించబడుతుందని, లైసెన్స్ పొందిన వైద్య నిపుణుడి ద్వారా కాదు అని నిర్ధారిస్తున్నారు.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "మూసివేయి",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "తొలగించు",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "చాట్ తొలగించు",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "చాట్ “{title}” విజయవంతంగా తొలగించబడింది.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "చాట్‌ను తొలగించాలా?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "మీ లక్షణాలు, నిర్ధారణ సారాంశం మరియు ఈ చాట్‌లోని సిఫార్సులు తొలగించబడతాయి.\nఈ చర్యను తిరిగి తీసుకోలేరు.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "జూమ్ ఇన్",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "జూమ్ అవుట్",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "జూమ్ రీసెట్ చేయండి",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "షేర్",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "ఈ రోజు",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "నిన్న",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "మొదటి పేజీ మాత్రమే. పూర్తి ఫైల్ డౌన్‌లోడ్ చేయడానికి షేర్‌ను ఉపయోగించండి.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

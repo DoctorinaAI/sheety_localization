@@ -1,0 +1,227 @@
+{
+  "@@locale": "uz",
+  "exampleButton": "Tugma misoli",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Ha, hammasi yaxshi!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Har bir hissa shifo beradi!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Sizning hissangiz yordamga muhtojlar uchun bepul maslahatlar moliyalashtirishga yordam beradi.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Sizga to'g'ri kelgan miqdorni to'lang,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "yoki boshqalar sovg'a qilishni tanlaganlari tufayli Doctorina-dan bepul foydalanishda davom eting",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Bir martalik",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Oylik",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Oylik xayriya miqdorini tanlang",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Siz oylik reja uchun obuna bo‘lish arafidasiz.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Siz {amount}/oy narxi bilan oylik reja uchun obuna bo'lyapsiz",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Xarid tasdiqlanganda hisobingizdan to'lov olinadi. Obuna avtomatik ravishda har oy yangilanadi, agar avtomatik yangilanish joriy davr tugashidan kamida 24 soat oldin o'chirilmagan bo'lsa. Hisob sozlamalarida obunangizni istalgan vaqtda boshqarishingiz yoki bekor qilishingiz mumkin. Davom etish orqali siz bizning {termsOfService} va {privacyPolicy} ga rozilik bildirasiz.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Bir martalik xayriya miqdorini tanlang",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Aksariyat odamlar $7–$15 beradi",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Valyutani tanlang",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "To'lov qayta ishlanmoqda",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Bir martalik to'lov {currency} {amount} qayta ishlanmoqda",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Har oy {amount} to'lovi qayta ishlanmoqda",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Rahmat!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Endi yanada ko‘proq odamlar bepul maslahat oladi — qo‘llab-quvvatlashingiz haqiqatan ham bebaho.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Siz hissa qo‘shdingiz:",
+  "@youContributedLabel": {},
+  "perMonth": "/ oy",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Asosiy ekranga qaytish",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Xizmat ko'rsatish shartlari",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Maxfiylik siyosati",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Xayriya qiling",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Faol",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Bekor qilindi",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "To‘xtatilgan",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Kutilmoqda",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Yaratildi",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Vaqt tugadi",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Noma'lum",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina hissa qo'shuvchisi",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Yangilanadi",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Obunani bekor qilish",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Ishonchingiz komilmi?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Har oy bergan yordamlaringiz, Doctorina xizmatidan to'lovga qodir bo'lmagan, unga tayanadigan odamlarga bepul bo‘lib qolishiga imkon beradi.\n\nA'zolik to'lovingiz har oy kamida 10 ta bepul konsultatsiyani moliyalashtiradi.\nAgar chiqib ketsangiz, kamroq bemor zarur yordam oladi",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Obunani saqlang",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Shunday bo‘lsa ham bekor qil",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Sizning oylik qo‘llab-quvvatlashingiz muvaffaqiyatli bekor qilindi.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Noto'g'ri obuna ma'lumotlari",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Oylik qo'llab-quvvatlashga obuna bo'ling, shunda u bu yerda paydo bo'ladi",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Hozircha obuna yo'q",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Obuna sanasi",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Muddati tugaydi",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Obuna ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Mahsulot ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Tasdiqlash",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "To'lovingizni amalga oshira olmadik",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Toʻlovda xatolik yuz berdi.\nIltimos, qayta urinib koʻring.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Qayta urinib ko'ring",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Toʻlov qayta ishlanmoqda",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Siz Stripe'ning xavfsiz to'lov sahifasida xaridingizni yakunlaysiz.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ hafta",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ yil",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Eng mashhur",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Yopish",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Premium bilan oladigan narsalaringiz:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Reklamasiz maslahatlar",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Tezroq javoblar",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Yangi funksiyalarga erta kirish",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/hafta",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Istalgan vaqtda bekor qiling. Hech qanday majburiyat yo'q.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "Maqsadli vaqt",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Har hafta avtomatik yangilanadi. Har qanday vaqtda sozlamalarda bekor qilishingiz mumkin. Davom etish orqali siz <t>Shartlar</t> va <p>Maxfiylik siyosati</p> bilan rozi bo'lasiz.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Premium bilan davom etish",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Sizning qo'llab-quvvatlashingiz tibbiy xizmatlarni mavjud qiladi",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Iltimos, xaridni yakunlash uchun ro'yxatdan o'ting yoki tizimga kiring.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

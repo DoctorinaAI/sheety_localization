@@ -1,0 +1,390 @@
+{
+  "@@locale": "ml",
+  "logIn": "ലോഗിൻ",
+  "@logIn": {
+    "description": "Надпись \"логин\""
+  },
+  "password": "പാസ്വേഡ്",
+  "@password": {
+    "description": "Надпись \"пароль\""
+  },
+  "changeNumber": "നമ്പർ മാറ്റുക",
+  "@changeNumber": {},
+  "forgotPassword": "പാസ്വേഡ് മറന്നോ?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "നിങ്ങളുടെ ഇമെയിൽ വിലാസം നൽകുക, ഞങ്ങൾ നിങ്ങളുടെ പാസ്വേഡുകൾ പുനഃസജ്ജമാക്കാൻ ഒരു ലിങ്ക് അയയ്ക്കും.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "നിങ്ങളുടെ പാസ്വേഡിനെ നിങ്ങൾ ഓർമ്മിക്കുന്നു吗?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "എനിക്ക് പാസ്‌വേഡ് ഉണ്ട്",
+  "@backToLoginButton": {},
+  "continueButton": "തുടരുക",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "പാസ്വേഡ്ഡിന് പുനഃസജ്ജീകരണ ഇമെയിൽ അയച്ചു",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "പാസ്വേഡുകൾ പുനഃസജ്ജമാക്കുക",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "കോഡ് സ്ഥിരീകരിക്കുക",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "ഇന്ന് ഡോക്ടറിന ഉപയോഗിക്കാൻ തുടങ്ങുക",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "അല്ല",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "നിങ്ങളുടെ പാസ്വേഡ്ഡ് നൽകുക",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "പാസ്വേഡ്ഡ് കാണിക്കുക",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "പാസ്വേഡിനെ മറയ്ക്കുക",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "ലോഗിൻ ക്ലിയർ ചെയ്യുക",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "ഇമെയിൽ അല്ലെങ്കിൽ ഫോൺ",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com അല്ലെങ്കിൽ +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "ഇമെയിൽ അല്ലെങ്കിൽ ഫോൺ നമ്പർ നൽകുക",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "ദയവായി തുടരാൻ കരാറുകൾ അംഗീകരിക്കുക.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "ഞാൻ വ്യക്തിഗത ഡാറ്റയുടെ പ്രോസസ്സിംഗിന് സമ്മതിക്കുന്നു,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "ഉപയോഗം",
+  "@consentTheUseOf": {},
+  "consentCookies": "കുക്കീസ്",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", സമ്മതിക്കുന്നു",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "നിബന്ധനകളും വ്യവസ്ഥകളും",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", ഒപ്പം അംഗീകരിക്കുക",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "ഗോപ്പനീയത നയം",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "ഞാൻ എന്റെ ഉപദേശത്തിന് എഐയുമായാണ്, ലൈസൻസുള്ള മെഡിക്കൽ പ്രൊഫഷണലുമായല്ല എന്ന് അംഗീകരിക്കുന്നു.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "ലോഗ് ഔട്ട്",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "നിങ്ങൾ ലോഗ് ഔട്ട് ചെയ്യാൻ ഉറപ്പാണോ?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "റദ്ദാക്കുക",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "അതെ, ലോഗ് ഔട്ട് ചെയ്യുക",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "കോഡ് വീണ്ടും അയക്കുക",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "കോഡ് വീണ്ടും അയക്കുക ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  },
+  "consentFull": "ഞാൻ വ്യക്തിഗത ഡാറ്റയുടെ പ്രോസസ്സിംഗിന്, <c>കുക്കികൾ</c> ഉപയോഗിക്കാൻ, <t>നിബന്ധനകളും വ്യവസ്ഥകളും</t> അംഗീകരിക്കുന്നു, കൂടാതെ <p>ഗോപ്പ്യനയം</p> അംഗീകരിക്കുന്നു.",
+  "@consentFull": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <c> <t> <p> указаны кликабельные спаны, они должны присутсвовать во всех языках."
+  },
+  "emailLabel": "നിങ്ങളുടെ ഇമെയിൽ നൽകുക",
+  "@emailLabel": {
+    "description": "Email input field label."
+  },
+  "signUpWithEmailTitle": "ഇമെയിലിലൂടെ സൈൻ അപ്പ് ചെയ്യുക",
+  "@signUpWithEmailTitle": {
+    "description": "AppBar title for email signup overlay"
+  },
+  "logInWithEmailTitle": "ഇമെയിൽ വഴി ലോഗിൻ ചെയ്യുക",
+  "@logInWithEmailTitle": {
+    "description": "AppBar title for email login overlay"
+  },
+  "phoneLabel": "നിങ്ങളുടെ ഫോൺ നൽകുക",
+  "@phoneLabel": {
+    "description": "Phone input field label"
+  },
+  "confirmPhoneTitle": "നിങ്ങളുടെ ഫോൺ സ്ഥിരീകരിക്കുക",
+  "@confirmPhoneTitle": {
+    "description": "AppBar title for phone confirmation screen"
+  },
+  "signUpText": "സൈൻ അപ് ചെയ്യുക",
+  "@signUpText": {
+    "description": "Standalone \"Sign up\" text for buttons and tabs"
+  },
+  "emailHintShort": "ഇമെയിൽ നൽകുക",
+  "@emailHintShort": {
+    "description": "Short email hint text in login dialog"
+  },
+  "buttonTextSignUpWithGoogle": "Google ഉപയോഗിച്ച് സൈൻ അപ്പ് ചെയ്യുക",
+  "@buttonTextSignUpWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextSignUpWithApple": "Apple ഉപയോഗിച്ച് സൈനപ്പ് ചെയ്യുക",
+  "@buttonTextSignUpWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextSignUpWithPhone": "ഫോൺ ഉപയോഗിച്ച് സൈൻ അപ്പ് ചെയ്യുക",
+  "@buttonTextSignUpWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "buttonTextLoginWithGoogle": "Google ഉപയോഗിച്ച് ലോഗിന് ചെയ്യുക",
+  "@buttonTextLoginWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextLoginWithApple": "Apple ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യുക",
+  "@buttonTextLoginWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextLoginWithPhone": "ഫോൺ ഉപയോഗിച്ച് ലോഗിൻ ചെയ്യുക",
+  "@buttonTextLoginWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "youAreLoggedOutMessage": "നിങ്ങള്‍ ലോഗൗട്ട് ചെയ്തു",
+  "@youAreLoggedOutMessage": {
+    "description": "Message displayed on logout screen"
+  },
+  "reloadButtonText": "പുനഃലോഡ് ചെയ്യുക",
+  "@reloadButtonText": {
+    "description": "Reload button text on logout screen"
+  },
+  "emailErrorText": "തെറ്റായ ഇമെയിൽ വിലാസം",
+  "@emailErrorText": {
+    "description": "Error message for invalid email address"
+  },
+  "passwordErrorText": "പാസ്വേഡ് കുറഞ്ഞത് 6 അക്ഷരങ്ങളിരിക്കണം",
+  "@passwordErrorText": {
+    "description": "Error message for password validation (minimum length)"
+  },
+  "invalidPhoneNumberError": "തെറ്റായ ഫോൺ നമ്പർ: {phoneNumber}",
+  "@invalidPhoneNumberError": {
+    "description": "Error message for invalid phone number format"
+  },
+  "resendCodeWaitError": "ദയവായി പുതിയ കോഡ് അപേക്ഷിക്കുന്നതിന് മുമ്പ് {seconds} സെക്കൻഡ്‌ കാത്തിരിക്കുക.",
+  "@resendCodeWaitError": {
+    "description": "Error message when trying to resend code too soon"
+  },
+  "invalidPhoneCodeError": "തെറ്റായ ഫോൺ കോഡ്: {phoneCode}",
+  "@invalidPhoneCodeError": {
+    "description": "Error message for invalid phone verification code"
+  },
+  "termsAndConditionsText": "നിബന്ധനകളും വ്യവസ്ഥകളും",
+  "@termsAndConditionsText": {
+    "description": "Terms and conditions link text in login dialog"
+  },
+  "continueAsGuestBtn": "വിരുന്നുകാരനായി തുടരുക",
+  "@continueAsGuestBtn": {
+    "description": "Btn to continue as guest on sign up screen"
+  },
+  "noAccountYetPromptText": "അക്കൗണ്ട് ഇല്ലേ? <p>സൈൻ അപ് ചെയ്യുക</p>",
+  "@noAccountYetPromptText": {
+    "description": "Login tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Sign up” link."
+  },
+  "alreadyHaveAccountPromptText": "നിങ്ങൾക്ക് ഇതിനകം ഒരു അക്കൗണ്ട് ഉണ്ടോ? <p>ലോഗിൻ</p>",
+  "@alreadyHaveAccountPromptText": {
+    "description": "Sign up tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Log in” link."
+  },
+  "beforeSubscribeYouNeedSignUpLoginDialogSubtitle": "നിങ്ങൾ പ്രീമിയത്തിലേക്ക് തുടരാൻ മുമ്പ് സൈൻ അപ്പ് ചെയ്യണം",
+  "@beforeSubscribeYouNeedSignUpLoginDialogSubtitle": {
+    "description": "Subtitle for login dialog"
+  },
+  "loginSubtitle": "വ്യക്തിഗത ഉള്ളടക്കം നേടുകയും നിങ്ങളുടെ സമൂഹവുമായി ബന്ധത്തിൽ തുടരുകയും ചെയ്യുക!",
+  "@loginSubtitle": {
+    "description": "Подзаголовок на экране входа, мотивирующий пользователя авторизоваться"
+  },
+  "emailFieldLabel": "ഇ-മെയിൽ",
+  "@emailFieldLabel": {
+    "description": "Метка поля ввода email в форме"
+  },
+  "emailPlaceholder": "username@gmail.com",
+  "@emailPlaceholder": {
+    "description": "Пример email в поле ввода"
+  },
+  "recoverPasswordTooltip": "നിങ്ങളുടെ പാസ്‌വേഡ് പുനഃസ്ഥാപിക്കുക",
+  "@recoverPasswordTooltip": {
+    "description": "Тултип кнопки восстановления пароля когда email валиден"
+  },
+  "createAccountTitle": "അക്കൗണ്ട് സൃഷ്ടിക്കുക",
+  "@createAccountTitle": {
+    "description": "Заголовок экрана регистрации"
+  },
+  "createAccountSubtitle": "നിങ്ങളുടെ ആരോഗ്യ ഡാറ്റ സുരക്ഷിതമായി സംരക്ഷിക്കാൻ ಮತ್ತು നിങ്ങളുടെ മൂല്യനിർണയം തുടരാൻ ഒരു അക്കൗണ്ട് ആവശ്യമാണ്.",
+  "@createAccountSubtitle": {
+    "description": "Подзаголовок экрана регистрации, объясняет зачем нужен аккаунт"
+  },
+  "repeatLabel": "മറുപടി",
+  "@repeatLabel": {
+    "description": "Метка поля повторного ввода пароля"
+  },
+  "repeatPasswordHint": "നിങ്ങളുടെ പാസ്വേഡുകൾ ആവർത്തിക്കുക",
+  "@repeatPasswordHint": {
+    "description": "Подсказка в поле повторного ввода пароля"
+  },
+  "confirmButton": "സ്ഥിരീകരിക്കുക",
+  "@confirmButton": {
+    "description": "Кнопка подтверждения регистрации с паролем"
+  },
+  "noAccountPrompt": "നിങ്ങൾക്ക് ഒരു അക്കൗണ്ട് ഇല്ലേ?",
+  "@noAccountPrompt": {
+    "description": "Текст перед ссылкой на регистрацию на экране входа"
+  },
+  "alreadyHaveAccountPrompt": "നിങ്ങൾക്ക് ഇതിനകം ഒരു അക്കൗണ്ട് ഉണ്ടോ?",
+  "@alreadyHaveAccountPrompt": {
+    "description": "Текст перед ссылкой на вход на экране регистрации"
+  },
+  "createPasswordHeader": "പാസ്വേഡുകൾ സൃഷ്ടിക്കുക",
+  "@createPasswordHeader": {
+    "description": "Заголовок шага создания пароля в хедере диалога"
+  },
+  "phoneHeader": "ഫോൺ",
+  "@phoneHeader": {
+    "description": "Заголовок шага ввода телефона в хедере диалога"
+  },
+  "verifyPhoneHeader": "ഫോൺ സ്ഥിരീകരിക്കുക",
+  "@verifyPhoneHeader": {
+    "description": "Заголовок шага верификации телефона в хедере диалога"
+  },
+  "phoneTitle": "നിങ്ങളുടെ നമ്പർ എന്താണ്?",
+  "@phoneTitle": {
+    "description": "Заголовок экрана ввода номера телефона"
+  },
+  "phoneSubtitle": "നിങ്ങളുടെ ഫോൺ സ്ഥിരീകരിക്കാൻ ഒരു കോഡ് ഞങ്ങൾ സന്ദേശം അയയ്ക്കും",
+  "@phoneSubtitle": {
+    "description": "Подзаголовок экрана ввода телефона"
+  },
+  "phoneNumberLabel": "നമ്പർ",
+  "@phoneNumberLabel": {
+    "description": "Метка поля ввода номера телефона"
+  },
+  "enterPhoneNumber": "ഫോൺ നമ്പർ നൽകുക",
+  "@enterPhoneNumber": {
+    "description": "Подсказка в поле ввода телефона"
+  },
+  "phonePlaceholder": "+1 (201) 555-01-23",
+  "@phonePlaceholder": {
+    "description": "Пример номера телефона в поле ввода"
+  },
+  "waitCountdownButton": "{countdown} സെക്കൻഡ് കാത്തിരിക്കുക",
+  "@waitCountdownButton": {
+    "description": "Текст кнопки во время ожидания повторной отправки OTP",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next OTP can be sent"
+      }
+    }
+  },
+  "enterCodeTitle": "നിങ്ങളുടെ കോഡ് നൽകുക",
+  "@enterCodeTitle": {
+    "description": "Заголовок экрана ввода OTP кода"
+  },
+  "codeSentToPhone": "{phone} എന്ന നമ്പറിലേക്ക് ഒരു കോഡ് അയച്ചു",
+  "@codeSentToPhone": {
+    "description": "Текст с информацией куда отправлен код",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+1234567890",
+        "description": "Phone number where code was sent"
+      }
+    }
+  },
+  "didntReceiveCode": "കോഡ് ലഭിച്ചില്ലേ?",
+  "@didntReceiveCode": {
+    "description": "Текст перед ссылкой на повторную отправку кода"
+  },
+  "clickToResend": "മറുപടി അയക്കാൻ ക്ലിക്ക് ചെയ്യുക",
+  "@clickToResend": {
+    "description": "Текст ссылки повторной отправки кода"
+  },
+  "requestNewCodeCountdown": "{countdown} സെക്കൻഡുകൾക്കുള്ളിൽ നിങ്ങൾ പുതിയ കോഡ് അഭ്യർത്ഥിക്കാം",
+  "@requestNewCodeCountdown": {
+    "description": "Текст с обратным отсчётом до возможности повторной отправки кода",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next code request"
+      }
+    }
+  },
+  "closeTooltip": "അടയ്ക്കുക",
+  "@closeTooltip": {
+    "description": "Тултип кнопки закрытия диалога"
+  },
+  "backTooltip": "മടങ്ങുക",
+  "@backTooltip": {
+    "description": "Тултип кнопки назад"
+  },
+  "termsOfServiceLink": "സേവനത്തിന്റെ നിബന്ധനകൾ",
+  "@termsOfServiceLink": {
+    "description": "Текст ссылки на условия использования в футере"
+  },
+  "privacyPolicyLink": "ഗോപ്പനീയത നയം",
+  "@privacyPolicyLink": {
+    "description": "Текст ссылки на политику конфиденциальности в футере"
+  },
+  "welcomeBackTitle": "സ്വാഗതം തിരിച്ചുവരവിന്",
+  "@welcomeBackTitle": {
+    "description": "Заголовок экрана приветствия при возвращении пользователя"
+  },
+  "welcomeBackSubtitle": "നിങ്ങൾക്ക് ഇതിനകം Doctorina അക്കൗണ്ട് ഉണ്ടെങ്കിൽ ലോഗിൻ ചെയ്യുക, അല്ലെങ്കിൽ ആരംഭിക്കാൻ സൈൻ അപ്പ് ചെയ്യുക.",
+  "@welcomeBackSubtitle": {
+    "description": "Подзаголовок экрана приветствия, предлагающий войти или зарегистрироваться"
+  },
+  "passwordRuleLength": "8 മുതൽ 128 അക്ഷരങ്ങൾ",
+  "@passwordRuleLength": {
+    "description": "Правило валидации пароля: длина от 8 до 128 символов"
+  },
+  "passwordRuleNumber": "കുറഞ്ഞത് 1 നമ്പർ",
+  "@passwordRuleNumber": {
+    "description": "Правило валидации пароля: минимум 1 цифра"
+  },
+  "passwordRuleUppercase": "കുറഞ്ഞത് 1 വലിയ അക്ഷരം",
+  "@passwordRuleUppercase": {
+    "description": "Правило валидации пароля: минимум 1 заглавная буква"
+  },
+  "passwordRuleMatch": "പാസ്വേഡുകൾ പൊരുത്തപ്പെടുന്നു",
+  "@passwordRuleMatch": {
+    "description": "Правило валидации пароля: пароли совпадают"
+  },
+  "phoneOtpVerificationFailed": "OTP പരിശോധന പരാജയപ്പെട്ടു. വീണ്ടും ശ്രമിക്കുക.",
+  "@phoneOtpVerificationFailed": {},
+  "referralCodeLabel": "Referral code",
+  "@referralCodeLabel": {
+    "description": "Заголовок поля ввода реферального кода на экране регистрации"
+  },
+  "enterReferralCodeHint": "നിങ്ങളുടെ റിഫറൽ കോഡ് നൽകുക",
+  "@enterReferralCodeHint": {
+    "description": "Подсказка (labelText) в поле ввода реферального кода"
+  },
+  "referralCodeExampleHint": "ഉദാഹരണം: CREATOR2026",
+  "@referralCodeExampleHint": {
+    "description": "Пример реферального кода в поле ввода (hintText)"
+  },
+  "haveReferralCodeQuestion": "നിങ്ങൾക്ക് റഫറൽ കോഡ് ഉണ്ടോ?",
+  "@haveReferralCodeQuestion": {
+    "description": "Ссылка-вопрос, раскрывающая поле ввода реферального кода"
+  }
+}

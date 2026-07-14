@@ -1,0 +1,129 @@
+{
+  "@@locale": "fa",
+  "lang": "فارسی",
+  "@lang": {},
+  "langEn": "Persian",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "اکنون به‌روزرسانی کنید",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "شاید بعداً",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "به‌روزرسانی جدید موجود",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "به‌روزرسانی مورد نیاز",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "نسخه جدید (v{version}) اپلیکیشن در دسترس است. لطفاً برای ادامه بهترین تجربه، به‌روزرسانی کنید.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "برای ادامه، لطفاً برنامه را به‌روزرسانی کنید. این به‌روزرسانی شامل رفع اشکالات و بهبودهای مهم است.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "دانلود",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "اگر حساب Doctorina دارید، وارد شوید یا برای شروع ثبت‌نام کنید.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "ورود",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "ثبت نام",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "ادامه به عنوان مهمان",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "ورود",
+  "@titleLogin": {},
+  "titleLogout": "خروج",
+  "@titleLogout": {},
+  "titleSignIn": "ورود",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "گفتگو",
+  "@titleDialog": {},
+  "titleChat": "چت",
+  "@titleChat": {},
+  "titleSettings": "تنظیمات حساب",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "تاریخچه چت",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "پرداخت",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "مدیریت اشتراک",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "اشتراک ماهانه",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "آموزش",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "خوش آمدید",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "پروفایل‌های سوابق سلامت",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "اعلام پروفایل‌ها",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "سوابق پزشکی",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "سوابق کامل",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "اسناد",
+  "@titleDocuments": {},
+  "titleConsultations": "مشاوره‌ها",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "دیوار پرداخت",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "در حال حذف؟ به ما بگویید چرا!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "یک گفتگوی جدید در مورد سلامت شروع کنید",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "ایده‌ای به اشتراک بگذارید یا مشکلی را گزارش کنید",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "به ما بگویید چگونه دکترینا می‌تواند بهبود یابد",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

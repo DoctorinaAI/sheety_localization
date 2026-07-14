@@ -1,0 +1,15 @@
+{
+  "@@locale": "kk",
+  "error": "Қате орын алды",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Күтпеген қате орын алды",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Баг туралы есеп сәтті жіберілді.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

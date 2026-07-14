@@ -1,0 +1,390 @@
+{
+  "@@locale": "my",
+  "logIn": "Log in",
+  "@logIn": {
+    "description": "Надпись \"логин\""
+  },
+  "password": "Katalaluan",
+  "@password": {
+    "description": "Надпись \"пароль\""
+  },
+  "changeNumber": "Nombor Tukar",
+  "@changeNumber": {},
+  "forgotPassword": "Lupa Kata Laluan?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "အီးမေးလ်လိပ်စာကိုရိုက်ထည့်ပါ၊ သင်၏စကားဝှက်ကိုပြန်လည်သတ်မှတ်ရန်လင့်ခ်တစ်ခုကိုပို့ပါမည်။",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "သင်၏စကားဝှက်ကိုမှတ်မိပါသလား?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "Saya mempunyai kata laluan",
+  "@backToLoginButton": {},
+  "continueButton": "ဆက်လက်လုပ်ဆောင်ပါ",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "စကားဝှက်ပြန်လည်သတ်မှတ်ရန်အီးမေးလ်ပို့ပြီးပါပြီ",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "စကားဝှက်ကိုပြန်လည်သတ်မှတ်ပါ",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "Kod disahkan",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "ယနေ့ Doctorina ကို အသုံးပြုရန် စတင်ပါ",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "သို့",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "Kata laluan anda",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "စကားဝှက်ကိုပြပါ",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "စကားဝှက်ကိုမှုတ်ပါ",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "Clear login",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "အီးမေးလ် သို့မဟုတ် ဖုန်း",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com သို့မဟုတ် +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "အီးမေးလ် သို့မဟုတ် ဖုန်းနံပါတ် ထည့်ပါ",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "ဆက်လက်ရန် သဘောတူညီချက်များကို လက်ခံပါ။",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "Saya bersetuju untuk pemprosesan data peribadi,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "အသုံးပြုခြင်း",
+  "@consentTheUseOf": {},
+  "consentCookies": "kukis",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", setuju dengan",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "terma dan syarat",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", dan mengakui bahawa",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "dasar privasi",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "Saya mengakui bahwa konsultasi saya adalah dengan AI dan bukan profesional medis berlisensi",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "Log out",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "Adakah anda pasti untuk log keluar?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "Batal",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "Ya, log out",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "Hantar semula kod",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "Hantar semula kod ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  },
+  "consentFull": "Saya bersetuju dengan pemprosesan data peribadi, penggunaan <c>cookies</c>, bersetuju dengan <t>syarat dan ketentuan</t>, dan mengakui <p>dasar privasi</p>.",
+  "@consentFull": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <c> <t> <p> указаны кликабельные спаны, они должны присутсвовать во всех языках."
+  },
+  "emailLabel": "သင့်အီးမေးကို ရိုက်ထည့်ပါ",
+  "@emailLabel": {
+    "description": "Email input field label."
+  },
+  "signUpWithEmailTitle": "အီးမေးလ်ဖြင့် စာရင်းသွင်းခြင်း",
+  "@signUpWithEmailTitle": {
+    "description": "AppBar title for email signup overlay"
+  },
+  "logInWithEmailTitle": "အီးမေးလ်ဖြင့် လော့ဂ်အင်လုပ်ပါ",
+  "@logInWithEmailTitle": {
+    "description": "AppBar title for email login overlay"
+  },
+  "phoneLabel": "သင့်ဖုန်းကိုထည့်ပါ",
+  "@phoneLabel": {
+    "description": "Phone input field label"
+  },
+  "confirmPhoneTitle": "သင်၏ဖုန်းကိုအတည်ပြုပါ",
+  "@confirmPhoneTitle": {
+    "description": "AppBar title for phone confirmation screen"
+  },
+  "signUpText": "စာရင်းသွင်းပါ",
+  "@signUpText": {
+    "description": "Standalone \"Sign up\" text for buttons and tabs"
+  },
+  "emailHintShort": "အီးမေးလ်ထည့်ပါ",
+  "@emailHintShort": {
+    "description": "Short email hint text in login dialog"
+  },
+  "buttonTextSignUpWithGoogle": "Google ဖြင့် စာရင်းသွင်းပါ",
+  "@buttonTextSignUpWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextSignUpWithApple": "Apple ဖြင့် စာရင်းသွင်းပါ",
+  "@buttonTextSignUpWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextSignUpWithPhone": "ဖုန်းဖြင့် စာရင်းသွင်းပါ",
+  "@buttonTextSignUpWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "buttonTextLoginWithGoogle": "Google ဖြင့် ဝင်ပါ",
+  "@buttonTextLoginWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextLoginWithApple": "Apple ဖြင့် ဝင်ရောက်ပါ",
+  "@buttonTextLoginWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextLoginWithPhone": "ဖုန်းဖြင့် လော့ဂ်အင်",
+  "@buttonTextLoginWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "youAreLoggedOutMessage": "သင်ထွက်သွားပါပြီ",
+  "@youAreLoggedOutMessage": {
+    "description": "Message displayed on logout screen"
+  },
+  "reloadButtonText": "ပြန်လည်သွင်းယူပါ",
+  "@reloadButtonText": {
+    "description": "Reload button text on logout screen"
+  },
+  "emailErrorText": "မမှန်ကန်သောအီးမေးလ်လိပ်စာ",
+  "@emailErrorText": {
+    "description": "Error message for invalid email address"
+  },
+  "passwordErrorText": "စကားဝှက်သည် အနည်းဆုံး ၆ လုံးရှိရမည်",
+  "@passwordErrorText": {
+    "description": "Error message for password validation (minimum length)"
+  },
+  "invalidPhoneNumberError": "မမှန်သောဖုန်းနံပါတ်: {phoneNumber}",
+  "@invalidPhoneNumberError": {
+    "description": "Error message for invalid phone number format"
+  },
+  "resendCodeWaitError": "ကျေးဇူးပြု၍ အသစ်သောကုဒ်တောင်းဆိုမှုမပြုမီ {seconds} စက္ကန့်စောင့်ပါ။",
+  "@resendCodeWaitError": {
+    "description": "Error message when trying to resend code too soon"
+  },
+  "invalidPhoneCodeError": "မှားယွင်းသော ဖုန်းကုဒ်: {phoneCode}",
+  "@invalidPhoneCodeError": {
+    "description": "Error message for invalid phone verification code"
+  },
+  "termsAndConditionsText": "စည်းမျဉ်းစည်းကမ်းများ",
+  "@termsAndConditionsText": {
+    "description": "Terms and conditions link text in login dialog"
+  },
+  "continueAsGuestBtn": "ဧည့်သည်အနေနှင့် ဆက်လက်ပါ",
+  "@continueAsGuestBtn": {
+    "description": "Btn to continue as guest on sign up screen"
+  },
+  "noAccountYetPromptText": "အကောင့်မရှိသေးရဲ့လား? <p>စာရင်းသွင်းပါ</p>",
+  "@noAccountYetPromptText": {
+    "description": "Login tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Sign up” link."
+  },
+  "alreadyHaveAccountPromptText": "အကောင့်ရှိပြီးလား? <p>လော့ဂ်အင်</p>",
+  "@alreadyHaveAccountPromptText": {
+    "description": "Sign up tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Log in” link."
+  },
+  "beforeSubscribeYouNeedSignUpLoginDialogSubtitle": "Anda perlu mendaftar sebelum anda boleh meneruskan dengan Premium",
+  "@beforeSubscribeYouNeedSignUpLoginDialogSubtitle": {
+    "description": "Subtitle for login dialog"
+  },
+  "loginSubtitle": "ကိုယ်ပိုင်အကြောင်းအရာများရယူပြီး သင့်လူမှုကွန်ရက်နှင့် ဆက်သွယ်ပါ!",
+  "@loginSubtitle": {
+    "description": "Подзаголовок на экране входа, мотивирующий пользователя авторизоваться"
+  },
+  "emailFieldLabel": "အီးမေးလ်",
+  "@emailFieldLabel": {
+    "description": "Метка поля ввода email в форме"
+  },
+  "emailPlaceholder": "username@gmail.com",
+  "@emailPlaceholder": {
+    "description": "Пример email в поле ввода"
+  },
+  "recoverPasswordTooltip": "သင်၏စကားဝှက်ကိုပြန်လည်ရယူပါ",
+  "@recoverPasswordTooltip": {
+    "description": "Тултип кнопки восстановления пароля когда email валиден"
+  },
+  "createAccountTitle": "အကောင့်တစ်ခုဖန်တီးပါ",
+  "@createAccountTitle": {
+    "description": "Заголовок экрана регистрации"
+  },
+  "createAccountSubtitle": "ကျွန်ုပ်တို့သည် သင့်ကျန်းမာရေးဒေတာကို လုံခြုံစွာ သိမ်းဆည်းရန်နှင့် သင့်အကဲဖြတ်မှုကို ဆက်လက်လုပ်ဆောင်ရန် အကောင့်တစ်ခုလိုအပ်သည်။",
+  "@createAccountSubtitle": {
+    "description": "Подзаголовок экрана регистрации, объясняет зачем нужен аккаунт"
+  },
+  "repeatLabel": "ထပ်မံ",
+  "@repeatLabel": {
+    "description": "Метка поля повторного ввода пароля"
+  },
+  "repeatPasswordHint": "သင်၏စကားဝှက်ကိုထပ်မံရိုက်ထည့်ပါ",
+  "@repeatPasswordHint": {
+    "description": "Подсказка в поле повторного ввода пароля"
+  },
+  "confirmButton": "အတည်ပြုပါ",
+  "@confirmButton": {
+    "description": "Кнопка подтверждения регистрации с паролем"
+  },
+  "noAccountPrompt": "အကောင့်မရှိပါလား?",
+  "@noAccountPrompt": {
+    "description": "Текст перед ссылкой на регистрацию на экране входа"
+  },
+  "alreadyHaveAccountPrompt": "အကောင့်ရှိပါသလား?",
+  "@alreadyHaveAccountPrompt": {
+    "description": "Текст перед ссылкой на вход на экране регистрации"
+  },
+  "createPasswordHeader": "စကားဝှက်တစ်ခုဖန်တီးပါ",
+  "@createPasswordHeader": {
+    "description": "Заголовок шага создания пароля в хедере диалога"
+  },
+  "phoneHeader": "ဖုန်း",
+  "@phoneHeader": {
+    "description": "Заголовок шага ввода телефона в хедере диалога"
+  },
+  "verifyPhoneHeader": "ဖုန်းကို အတည်ပြုပါ",
+  "@verifyPhoneHeader": {
+    "description": "Заголовок шага верификации телефона в хедере диалога"
+  },
+  "phoneTitle": "သင်၏နံပါတ်ကဘာလဲ?",
+  "@phoneTitle": {
+    "description": "Заголовок экрана ввода номера телефона"
+  },
+  "phoneSubtitle": "ကျွန်ုပ်တို့သည် သင့်ဖုန်းကို အတည်ပြုရန် ကုဒ်တစ်ခုကို စာတိုပို့ပါမည်",
+  "@phoneSubtitle": {
+    "description": "Подзаголовок экрана ввода телефона"
+  },
+  "phoneNumberLabel": "နံပါတ်",
+  "@phoneNumberLabel": {
+    "description": "Метка поля ввода номера телефона"
+  },
+  "enterPhoneNumber": "ဖုန်းနံပါတ်ထည့်ပါ",
+  "@enterPhoneNumber": {
+    "description": "Подсказка в поле ввода телефона"
+  },
+  "phonePlaceholder": "+1 (201) 555-01-23",
+  "@phonePlaceholder": {
+    "description": "Пример номера телефона в поле ввода"
+  },
+  "waitCountdownButton": "စောင့်ဆိုင်းပါ {countdown} စက္ကန့်",
+  "@waitCountdownButton": {
+    "description": "Текст кнопки во время ожидания повторной отправки OTP",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next OTP can be sent"
+      }
+    }
+  },
+  "enterCodeTitle": "သင်၏ကုဒ်ကိုထည့်ပါ",
+  "@enterCodeTitle": {
+    "description": "Заголовок экрана ввода OTP кода"
+  },
+  "codeSentToPhone": "{phone} သို့ ကုဒ်တစ်ခု ပို့ခဲ့ပါသည်",
+  "@codeSentToPhone": {
+    "description": "Текст с информацией куда отправлен код",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+1234567890",
+        "description": "Phone number where code was sent"
+      }
+    }
+  },
+  "didntReceiveCode": "ကုဒ်မရပါဘူးလား?",
+  "@didntReceiveCode": {
+    "description": "Текст перед ссылкой на повторную отправку кода"
+  },
+  "clickToResend": "ပြန်ပို့ရန်နှိပ်ပါ",
+  "@clickToResend": {
+    "description": "Текст ссылки повторной отправки кода"
+  },
+  "requestNewCodeCountdown": "{countdown} စက္ကန့်အတွင်း သင်သည် ကုဒ်အသစ်တောင်းဆိုနိုင်သည်",
+  "@requestNewCodeCountdown": {
+    "description": "Текст с обратным отсчётом до возможности повторной отправки кода",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next code request"
+      }
+    }
+  },
+  "closeTooltip": "ပိတ်ပါ",
+  "@closeTooltip": {
+    "description": "Тултип кнопки закрытия диалога"
+  },
+  "backTooltip": "ပြန်သွားမည်",
+  "@backTooltip": {
+    "description": "Тултип кнопки назад"
+  },
+  "termsOfServiceLink": "ဝန်ဆောင်မှုအခြေအနေများ",
+  "@termsOfServiceLink": {
+    "description": "Текст ссылки на условия использования в футере"
+  },
+  "privacyPolicyLink": "ကိုယ်ရေးကိုယ်တာ မူဝါဒ",
+  "@privacyPolicyLink": {
+    "description": "Текст ссылки на политику конфиденциальности в футере"
+  },
+  "welcomeBackTitle": "မင်္ဂလာပါ ပြန်လာတာဝမ်းသာပါတယ်",
+  "@welcomeBackTitle": {
+    "description": "Заголовок экрана приветствия при возвращении пользователя"
+  },
+  "welcomeBackSubtitle": "လက်ရှိ Doctorina အကောင့်ရှိပါက ဝင်ရောက်ပါ၊ သို့မဟုတ် စတင်ရန် စာရင်းသွင်းပါ။",
+  "@welcomeBackSubtitle": {
+    "description": "Подзаголовок экрана приветствия, предлагающий войти или зарегистрироваться"
+  },
+  "passwordRuleLength": "8 မှ 128 အက္ခရာ",
+  "@passwordRuleLength": {
+    "description": "Правило валидации пароля: длина от 8 до 128 символов"
+  },
+  "passwordRuleNumber": "အနည်းဆုံး ၁ နံပါတ်",
+  "@passwordRuleNumber": {
+    "description": "Правило валидации пароля: минимум 1 цифра"
+  },
+  "passwordRuleUppercase": "အနည်းဆုံး ၁ လက်ရှိအကြီးအစားစာလုံး",
+  "@passwordRuleUppercase": {
+    "description": "Правило валидации пароля: минимум 1 заглавная буква"
+  },
+  "passwordRuleMatch": "စကားဝှက်များကို ကိုက်ညီသည်",
+  "@passwordRuleMatch": {
+    "description": "Правило валидации пароля: пароли совпадают"
+  },
+  "phoneOtpVerificationFailed": "OTP အတည်ပြုခြင်း မအောင်မြင်ပါ။ ထပ်မံကြိုးစားပါ။",
+  "@phoneOtpVerificationFailed": {},
+  "referralCodeLabel": "ညွှန်ကြားချက်ကုဒ်",
+  "@referralCodeLabel": {
+    "description": "Заголовок поля ввода реферального кода на экране регистрации"
+  },
+  "enterReferralCodeHint": "သင်၏ referral ကုဒ်ကို ထည့်ပါ",
+  "@enterReferralCodeHint": {
+    "description": "Подсказка (labelText) в поле ввода реферального кода"
+  },
+  "referralCodeExampleHint": "ဥပမာ CREATOR2026",
+  "@referralCodeExampleHint": {
+    "description": "Пример реферального кода в поле ввода (hintText)"
+  },
+  "haveReferralCodeQuestion": "သင့်တွင် referral code ရှိပါသလား?",
+  "@haveReferralCodeQuestion": {
+    "description": "Ссылка-вопрос, раскрывающая поле ввода реферального кода"
+  }
+}

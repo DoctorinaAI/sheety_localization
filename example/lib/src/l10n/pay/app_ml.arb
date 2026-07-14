@@ -1,0 +1,227 @@
+{
+  "@@locale": "ml",
+  "exampleButton": "ബട്ടൺ ഉദാഹരണം",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "അതെ, എല്ലാം നല്ലതാണ്!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "പ്രതിയോഗം രോഗം ഭേദമാക്കുന്നു!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "നിങ്ങളുടെ സംഭാവന മറ്റുള്ളവർക്കുള്ള സൗജന്യ ഉപദേശം ഫണ്ടുചെയ്യാൻ സഹായിക്കുന്നു.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "ശരിയായതായി തോന്നുന്നതിന്റെ അടിസ്ഥാനത്തിൽ പണം നൽകുക",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "അല്ലെങ്കിൽ ഡോക്ടറിനയെ സൗജന്യമായി ഉപയോഗിക്കണം, നൽകാൻ തിരഞ്ഞെടുക്കുന്ന മറ്റുള്ളവർക്കു നന്ദി.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "ഒരിക്കൽ",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "മാസിക",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "മാസിക സംഭാവനയുടെ തുക തിരഞ്ഞെടുക്കുക",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "നിങ്ങൾ ഒരു മാസിക പദ്ധതിയിൽ സബ്സ്ക്രൈബ് ചെയ്യാൻ പോകുന്നു.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "നിങ്ങൾ {amount}/മാസം എന്ന മാസിക പദ്ധതിക്ക് സബ്സ്ക്രൈബ് ചെയ്യുന്നു.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "കുറഞ്ഞത് 24 മണിക്കൂറുകൾ മുമ്പ് ഓട്ടോ-നവീകരണം ഓഫ് ചെയ്യാത്ത പക്ഷം, വാങ്ങൽ സ്ഥിരീകരണത്തിൽ നിങ്ങളുടെ അക്കൗണ്ടിൽ പണമടയ്ക്കും. സബ്സ്ക്രിപ്ഷൻ ഓരോ മാസവും സ്വയം പുതുക്കുന്നു. നിങ്ങൾക്ക് നിങ്ങളുടെ അക്കൗണ്ട് ക്രമീകരണങ്ങളിൽ എപ്പോഴും നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ കൈകാര്യം ചെയ്യാനും റദ്ദാക്കാനും കഴിയും. മുന്നോട്ട് പോകുന്നതിലൂടെ, നിങ്ങൾ ഞങ്ങളുടെ {termsOfService}യും {privacyPolicy}യും അംഗീകരിക്കുന്നു.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "ഒരിക്കൽ ദാനം നൽകാനുള്ള തുക തിരഞ്ഞെടുക്കുക",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "അധികം ആളുകൾ $7–$15 നൽകുന്നു",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "നാണയം തിരഞ്ഞെടുക്കുക",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "പണമടയ്ക്കുന്നു",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "{currency} {amount} എന്ന ഒരു തവണയുടെ പണമടയ്ക്കൽ പ്രക്രിയ",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "{amount} എന്ന മാസിക പണമടയ്ക്കൽ പ്രോസസ്സ് ചെയ്യുന്നു",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "നന്ദി!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "ഇപ്പോൾ കൂടുതൽ ആളുകൾ സൗജന്യ ഉപദേശം ലഭിക്കും — നിങ്ങളുടെ പിന്തുണ വാസ്തവത്തിൽ വിലമതിക്കാനാവാത്തതാണ്.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "നിങ്ങൾ സംഭാവന നൽകി:",
+  "@youContributedLabel": {},
+  "perMonth": "/ മാസം",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "പ്രധാന സ്ക്രീനിലേക്ക് മടങ്ങുക",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "സേവനത്തിന്റെ നിബന്ധനകൾ",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "ഗോപ്പനീയത നയം",
+  "@privacyPolicyLabel": {},
+  "donateButton": "ദാനം ചെയ്യുക",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "സജീവം",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "റദ്ദാക്കപ്പെട്ടു",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "നിർത്തിയിരിക്കുന്നു",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "പ്രതീക്ഷിച്ച",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "സൃഷ്ടിച്ചു",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Timeout",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "അറിയപ്പെടുന്നില്ല",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "ഡോക്ടറിനയുടെ സഹയോജകൻ",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "പുനരാവൃത്തി",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "സബ്സ്ക്രിപ്ഷൻ റദ്ദാക്കുക",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "നിങ്ങൾ ഉറപ്പാണോ?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "നിങ്ങളുടെ മാസിക പിന്തുണ ഡോക്ടറിനയെ അവയ്ക്ക് ആശ്രയിക്കുന്ന, പക്ഷേ പണം നൽകാൻ കഴിയാത്ത ആളുകൾക്കായി സൗജന്യമായി നിലനിര്‍ത്തുന്നു. നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ ഓരോ മാസവും കുറഞ്ഞത് 10 സൗജന്യ കൺസൾട്ടേഷനുകൾക്ക് ഫണ്ടിംഗ് നൽകുന്നു. നിങ്ങൾ വിടുകയാണെങ്കിൽ, കുറച്ച് രോഗികൾക്ക് അവർക്ക് ആവശ്യമുള്ള സഹായം ലഭ്യമാകില്ല.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "സബ്സ്ക്രിപ്ഷൻ നിലനിർത്തുക",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "റദ്ദാക്കുക",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "നിങ്ങളുടെ മാസിക പിന്തുണ വിജയകരമായി റദ്ദാക്കപ്പെട്ടു",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "തെറ്റായ സബ്സ്ക്രിപ്ഷൻ ഡാറ്റ",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "മാസിക പിന്തുണയ്ക്കായി സൈൻ അപ്പ് ചെയ്യുക, ഇത് ഇവിടെ പ്രത്യക്ഷപ്പെടാൻ.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "എന്തെങ്കിലും സബ്സ്ക്രിപ്ഷനുകൾ ഇല്ല",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "സബ്സ്ക്രിപ്ഷൻ തീയതി",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "കാലാവധി അവസാനിക്കുന്നു",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "സബ്സ്ക്രിപ്ഷൻ ഐഡി",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Product ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "നിങ്ങളുടെ പണമടയ്ക്കൽ മുന്നോട്ട് കൊണ്ടുപോകാൻ കഴിയുന്നില്ല",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "പേയ്മെന്റിൽ എന്തോ തെറ്റായി. ദയവായി വീണ്ടും ശ്രമിക്കുക.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "മറുപടി നൽകുക",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "പണമടയ്ക്കൽ പ്രോസസ്സ് ചെയ്യുന്നു",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "നിങ്ങൾ സ്റ്റ്രൈപ്പിന്റെ സുരക്ഷിതമായ ചെക്ക്‌ഔട്ട് പേജിൽ നിങ്ങളുടെ വാങ്ങൽ പൂർത്തിയാക്കും.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ ആഴ്ച",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ വർഷം",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "ഏറ്റവും പ്രശസ്തം",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "അടയ്ക്കുക",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "പ്രീമിയം ഉപയോഗിച്ചാൽ നിങ്ങൾക്ക് ലഭിക്കുന്നതെന്ത്:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "വ്യാപനമില്ലാത്ത ഉപദേശങ്ങൾ",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "വേഗത്തിലുള്ള മറുപടികൾ",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "പുതിയ ഫീച്ചറുകൾക്ക് നേരത്തെ പ്രവേശനം",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/ആഴ്ച",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "എപ്പോഴും റദ്ദാക്കാം. പ്രതിബദ്ധത ഇല്ല.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "LIMITED TIME",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "ആട്ടോമാറ്റിക് ആയി ആഴ്ചയിൽ ഒരിക്കൽ പുതുക്കുന്നു. ക്രമീകരണങ്ങളിൽ എപ്പോഴും റദ്ദാക്കാം. തുടരുന്നതിലൂടെ, നിങ്ങൾ ഞങ്ങളുടെ <t>നിബന്ധനകൾ</t>യും <p>സ്വകാര്യതാ നയം</p>യും അംഗീകരിക്കുന്നു.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 പ്രീമിയം തുടരുക",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 നിങ്ങളുടെ പിന്തുണ ആരോഗ്യപരിചരണം ലഭ്യമാക്കാൻ സഹായിക്കുന്നു",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "കൃപയോടെ സൈൻ അപ്പ് ചെയ്യുക അല്ലെങ്കിൽ ലോഗിൻ ചെയ്യുക വാങ്ങൽ പൂർത്തിയാക്കാൻ.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

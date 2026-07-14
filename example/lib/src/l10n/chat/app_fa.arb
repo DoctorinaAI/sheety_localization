@@ -1,0 +1,742 @@
+{
+  "@@locale": "fa",
+  "drawerTooltipNotifications": "اعلانات",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "راهنما",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "بستن",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "حساب",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "پروفایل",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "تنظیمات حساب",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "برای حمایت اهدا کنید",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "اشتراک",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "گپ‌ها",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "تاریخچه چت",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "اسناد پیوست",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "نحوه استفاده",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "آموزش‌های ویدیویی",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "حقوقی",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "تماس با ما",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "گزارش اشکال",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "شرایط و ضوابط",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "سیاست حریم خصوصی",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "بازخورد",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "برنامه را ارزیابی کنید",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "با دوستان به اشتراک بگذارید",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "خروج",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "به دیگران کمک کنید تا به مراقبت‌های پزشکی دسترسی پیدا کنند",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "کاربر",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "امکانات ویژه\nبا Doctorina",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "دریافت",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "به ما بپیوندید",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "نسخه برنامه:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "چت‌های اخیر",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "پروفایل",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "چت اخیر",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "دانلود برنامه‌ها",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "پیام را وارد کنید",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "افزودن فایل",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "دیکته",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "پایان و رونویسی",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "ارسال پیام",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "دریافت پیام‌ها ناموفق بود",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "دریافت پیام‌ها ناموفق بود. لطفاً دوباره تلاش کنید.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "دریافت پیام‌ها",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "پیامی موجود نیست.\nلطفاً برای شروع مکالمه یک پیام ارسال کنید.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "متصل",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "اتصال ندارد",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "جستجو",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "مورد علاقه‌ها",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "دانلود",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "چاپ PDF",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "با دوستان به اشتراک بگذار",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "چت جدید",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "چت",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "انتخاب گفت‌وگو",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "نمایش کشو",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "چتی موجود نیست. لطفاً تازه‌سازی کنید یا یک چت جدید ایجاد کنید.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "به‌روزرسانی چت‌ها",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "ایجاد چت جدید",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "کپی متن",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "در حال تایپ\nلحظه‌ای صبر کنید",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "در حال به‌روزرسانی...\nلطفاً اتصال اینترنت خود را بررسی کنید",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "این پیام در حال حاضر در حال پردازش است.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "پیام بسیار طولانی است.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "حذف پیوست",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "پردازش پیام ناموفق",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "صادر کردن به PDF",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "تصاویر",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "دوربین",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "فایل‌ها",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "عکس‌ها و فایل‌ها",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "امیدوارم که این کمک کرده باشد! آیا این توضیح برای شما مفید بود?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "بله، همه چیز خوب است!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "دریافت خلاصه چت ناموفق بود",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "خلاصۀ گفتگو به کلیپ بورد کپی شد",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "اپلیکیشن موبایل Doctorina را امتحان کنید!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "دانلود در",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "دریافت از",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "دانلود در App Store",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "از Google Play دریافت کنید",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "گزارش پیام",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "چرا این پیام را گزارش می‌کنید؟",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "اختیاری: توصیف کنید که چه مشکلی در این پیام وجود دارد...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "این به ما کمک می‌کند تا پاسخ‌های هوش مصنوعی خود را بهبود بخشیم.",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "لغو",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "گزارش",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "از بازخورد شما متشکریم! گزارش ارسال شده است.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "ارسال گزارش ناموفق بود",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "کپی شد به کلیپ بورد",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "کپی پیام ناموفق بود",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "گزارش پیام",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "بارگذاری به چت دکترینا",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "فایل‌ها را اینجا بکشید و رها کنید تا به چت اضافه شوند",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "شما می‌توانید تا ۱۵ فایل را به یک پیام اضافه کنید",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "آیا می‌خواهید اگر چیزی مهم درباره سلامتی‌تان پیش آمد، به شما اطلاع دهم؟",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "بله، به من اطلاع بده",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "شاید بعداً",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "بستن",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "اطلاعیه‌ها در سطح سیستم مسدود شده‌اند. قبل از فعال‌سازی اطلاعیه‌های دکترینا، آن‌ها را در تنظیمات سیستم فعال کنید.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "اطلاعیه‌ها در سطح سیستم مسدود شده‌اند. آن‌ها را در تنظیمات مرورگر فعال کنید قبل از اینکه اعلان‌های دکترینا را فعال کنید.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "در جریان مشاوره خود باشید",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "داکترینا می‌تواند شما را زمانی که بینش‌ها یا به‌روزرسانی‌های جدیدی درباره سلامت شما در دسترس است، مطلع کند.",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "فعال‌سازی اعلان‌ها",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "شاید بعداً",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "با ادامه، شما موافقت خود را با پردازش داده‌های شخصی، استفاده از <c>cookies</c>، قبول <t>terms and conditions</t>، و تأیید <p>privacy policy</p> اعلام می‌کنید. همچنین شما تأیید می‌کنید که مشاوره شما با یک هوش مصنوعی و نه با یک متخصص پزشکی مجاز صورت می‌گیرد",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "رد کردن",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "ابتدا این چت را ذخیره کنید?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "برای ذخیره این مشاوره قبل از شروع مشاوره جدید، به‌صورت رایگان ثبت‌نام کنید",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "بدون ذخیره شروع کنید",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "ثبت‌نام",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "برای ادامه گفتگو، گزینه‌ای را در بالا انتخاب کنید",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "بستن",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "ضمیمه را حذف کنید",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "انتخاب فایل‌ها از ناحیه درگ ناموفق بود",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "لطفاً یک پیام وارد کنید یا یک فایل پیوست کنید",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "لطفاً منتظر بمانید تا بارگذاری‌ها کامل شوند",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "پیام در حال پردازش است",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "پیام خیلی طولانی است",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "پیام در حال حاضر در حال پردازش است",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "اتصال به طور دائمی بسته شده است",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "هیچ اتصالی به سرور وجود ندارد",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "انتخاب فایل‌ها ناموفق بود",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "انتخاب تصاویر ناموفق بود",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "خطا در گرفتن عکس از دوربین",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "شما می‌توانید تا {count} فایل را به‌طور همزمان پیوست کنید",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "متن شناسایی شده را پاک کنید",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "پیام خیلی طولانی است.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "لطفاً منتظر بمانید تا بارگذاری‌ها کامل شوند",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "فایل {kind} \"{name}\" قبلاً پیوست شده و دوباره اضافه نشد.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "فایل {kind} \"{name}\" تکراری از {exist} است و اضافه نشد.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "فایل {kind} \"{name}\" اضافه نشد زیرا حداکثر تعداد پیوست‌ها تجاوز شده است.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "فایل \"{name}\" خالی است.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "فایل خالی است.",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "فایل \"{name}\" از حداکثر اندازه مجاز بیشتر است",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "فایل از حداکثر اندازه مجاز فراتر است.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "در حین پردازش فایل \"{name}\" خطایی رخ داد.",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "خطایی در پردازش فایل رخ داد.",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "فایل \"{name}\" اضافه نشد زیرا حداکثر تعداد پیوست‌ها تجاوز شده است.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "فایل(ها) اضافه نشد زیرا حداکثر تعداد پیوست‌ها تجاوز شده است.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "فایلی اضافه نشد زیرا حداکثر تعداد پیوست‌ها تجاوز شده است.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "فایلی بدون نام تلاش شده است که اضافه شود",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "فایلی با پسوند غیرمجاز تلاش شده است اضافه شود: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "فایلی با پسوند غیرمجاز سعی در اضافه شدن داشت",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "امکان افزودن فایل وجود ندارد",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "فایل \"{name}\" نامعتبر است و نمی‌تواند اضافه شود.",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "فایل نامعتبر است و نمی‌تواند اضافه شود",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "آیتم \"{name}\" فایل معتبری نیست",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "یک مورد فایل معتبر نیست",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "خطایی در پردازش یک مورد رخ داد.",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "خطایی در پردازش یک یا چند مورد رخ داده است",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "هیچ فایلی اضافه نشده است",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "برخی فایل‌ها به دلیل تکراری بودن با فایل‌های موجود نادیده گرفته شدند",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "یک خطای ناشناخته رخ داد.",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "خطاهای زیر در حین پیوست فایل‌ها رخ داد:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "به اشتراک گذاری فایل ناموفق بود: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "بستن",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "به اشتراک گذاری",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "در حال بارگذاری فایل...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "بارگذاری فایل ناموفق بود",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "خطای ناشناخته رخ داده است",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "تلاش دوباره",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "نوع فایل پشتیبانی نمی‌شود",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "نمی‌توان پیش‌نمایش {contentType} را مشاهده کرد",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "فایل را به اشتراک بگذارید",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "نمایش تصویر ناموفق بود",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "بزرگنمایی را بازنشانی کنید",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "بارگذاری PDF ناموفق بود",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "عدم توانایی در رمزگشایی محتوای متنی.",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "و {count} خطای دیگر.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "فایل خراب است",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "نیاز به رضایت",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "با ادامه دادن، شما با <tc>شرایط</tc>، <privacy_policy>سیاست حفظ حریم خصوصی</privacy_policy> و <cookies>استفاده از کوکی‌ها</cookies> موافقت می‌کنید و تأیید می‌کنید که این مشاوره توسط هوش مصنوعی ارائه می‌شود، نه یک حرفه‌ای پزشکی دارای مجوز.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "بستن",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "حذف",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "حذف چت",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "چت “{title}” با موفقیت حذف شد.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "چت را حذف کنید؟",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "علائم شما، خلاصه تشخیص و هرگونه توصیه در این چت حذف خواهد شد.\nاین عمل غیرقابل بازگشت است.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "بزرگنمایی",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "زوم خارج",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "تنظیم مجدد زوم",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "به اشتراک گذاری",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "امروز",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "دیروز",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "فقط صفحه اول. برای دانلود فایل کامل از اشتراک استفاده کنید.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

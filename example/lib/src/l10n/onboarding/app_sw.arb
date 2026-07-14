@@ -1,0 +1,588 @@
+{
+  "@@locale": "sw",
+  "appNameLogo": "doctorina",
+  "@appNameLogo": {
+    "description": "Brand name displayed under the logo on the welcome screen"
+  },
+  "welcomeTagline": "Msaidizi wa Afya wa AI wa Juu",
+  "@welcomeTagline": {
+    "description": "Short tagline describing the product category"
+  },
+  "welcomeScreenTitle": "Karibu",
+  "@welcomeScreenTitle": {
+    "description": "Main headline welcoming the user"
+  },
+  "socialProofTrustedBy": "Trusted by\n<green>48K+ Users</green>",
+  "@socialProofTrustedBy": {
+    "description": "Social proof header with highlighted user count\nNew line should be preserved. 48K+"
+  },
+  "welcomeDescription": "Imeundwa kuchambua dalili kama madaktari wenye uzoefu — kwa kuelewa mifumo, muda, na muktadha.",
+  "@welcomeDescription": {
+    "description": "Short paragraph explaining the value proposition of the app"
+  },
+  "getStartedBtn": "Anza",
+  "@getStartedBtn": {
+    "description": "Primary call-to-action button to begin onboarding"
+  },
+  "alreadyHaveAccount": "Je, una akaunti tayari? <link>Ingiza</link>",
+  "@alreadyHaveAccount": {
+    "description": "Secondary text prompting existing users to sign in with tappable login action"
+  },
+  "termsConsent": "Kwa kuendelea, unakubali <termsOfService>Masharti ya Huduma</termsOfService> | <privacyPolicy>Sera ya Faragha</privacyPolicy> wetu",
+  "@termsConsent": {
+    "description": "Legal consent text with tappable Terms of Service and Privacy Policy\nNew line should be preserved"
+  },
+  "personalizationInterruptionTitle": "Tufanye kuwa wa kibinafsi <brand>Doctorina</brand> kwa ajili yako",
+  "@personalizationInterruptionTitle": {
+    "description": "Headline prompting the user to start personalization with highlighted brand name"
+  },
+  "personalizationSectionLabel": "BINA YA MTUMIAJI",
+  "@personalizationSectionLabel": {
+    "description": "Small section label indicating personalization flow"
+  },
+  "personalizationReasonTitle": "Nini kinakuletea hapa leo?",
+  "@personalizationReasonTitle": {
+    "description": "Question asking why the user opened the app"
+  },
+  "personalizationReasonSymptomsNow": "Ninapata dalili sasa",
+  "@personalizationReasonSymptomsNow": {
+    "description": "Option indicating the user currently has symptoms"
+  },
+  "personalizationReasonUnderstandChange": "Nataka kuelewa mabadiliko ya afya",
+  "@personalizationReasonUnderstandChange": {
+    "description": "Option indicating the user wants to understand a health change"
+  },
+  "personalizationReasonRuleOutSerious": "Nataka kuondoa kitu cha maana",
+  "@personalizationReasonRuleOutSerious": {
+    "description": "Option indicating the user wants to rule out serious issues"
+  },
+  "personalizationReasonMonitoring": "Ninamonitor afya yangu kwa njia ya proaktifu",
+  "@personalizationReasonMonitoring": {
+    "description": "Option indicating proactive health monitoring"
+  },
+  "continueBtn": "Endelea",
+  "@continueBtn": {
+    "description": "Primary button to proceed to next step"
+  },
+  "captionEmpathyText": "Wakati kitu kinabadilika katika afya yako, kujua kinachohusika ni kigumu zaidi.",
+  "@captionEmpathyText": {
+    "description": "Introductory empathy statement about health uncertainty"
+  },
+  "captionDifferentiatorText": "<em>Doctorina inazingatia mifumo ya dalili na wakati</em> — ishara zile zile ambazo madaktari wanatafuta mapema.",
+  "@captionDifferentiatorText": {
+    "description": "Statement explaining Doctorina's analytical approach with emphasized phrase"
+  },
+  "genderTitle": "Chagua jinsia yako",
+  "@genderTitle": {
+    "description": "Question asking the user to select gender"
+  },
+  "genderSubtitle": "Hii inatusaidia kutafsiri dalili na kutoa mapendekezo kwa usahihi zaidi",
+  "@genderSubtitle": {
+    "description": "Supporting text explaining why gender data is used"
+  },
+  "genderMale": "Mwanaume",
+  "@genderMale": {
+    "description": "Gender selection option male"
+  },
+  "genderFemale": "Mwanamke",
+  "@genderFemale": {
+    "description": "Gender selection option female"
+  },
+  "genderPreferNotSay": "Ningependa kutosema",
+  "@genderPreferNotSay": {
+    "description": "Gender selection option prefer not to disclose"
+  },
+  "ageTitle": "Ni miaka mingapi?",
+  "@ageTitle": {
+    "description": "Question asking the user's age"
+  },
+  "ageSubtitle": "Umri hutusaidia kutathmini mifumo ya afya kwa usahihi zaidi.",
+  "@ageSubtitle": {
+    "description": "Supporting explanation for age usage"
+  },
+  "socialProofLargeTitle": "<green>Zaidi ya watu 48k+</green>\nwamechagua Doctorina",
+  "@socialProofLargeTitle": {
+    "description": "Social proof headline with emphasized number\nNew line should be preserved"
+  },
+  "socialProofDisclaimer": "*Kulingana na takwimu za msingi wa watumiaji wa Doctorina",
+  "@socialProofDisclaimer": {
+    "description": "Small note describing data source"
+  },
+  "developedByDoctors": "Imetengenezwa na\n<b>Madaktari</b>",
+  "@developedByDoctors": {
+    "description": "Badge text indicating medical expertise\nNew line should be preserved"
+  },
+  "quizStepLabel1": "HATUA 1/6",
+  "@quizStepLabel1": {
+    "description": "Progress indicator showing current quiz step"
+  },
+  "quizHealthSituationTitle": "Ungependa vipi hali yako ya afya kwa sasa?",
+  "@quizHealthSituationTitle": {
+    "description": "Question about overall health situation"
+  },
+  "quizHealthHealthy": "Kwa ujumla najihisi mzima",
+  "@quizHealthHealthy": {
+    "description": "Option indicating no major health concerns"
+  },
+  "quizHealthMinorConcerns": "Nina wasiwasi mdogo unaoendelea",
+  "@quizHealthMinorConcerns": {
+    "description": "Option indicating minor ongoing issues"
+  },
+  "quizHealthKnownCondition": "Ninashughulikia hali inayojulikana",
+  "@quizHealthKnownCondition": {
+    "description": "Option indicating an existing diagnosed condition"
+  },
+  "quizHealthUnresolved": "Ninashughulika na jambo lisilo na ufumbuzi",
+  "@quizHealthUnresolved": {
+    "description": "Option indicating unresolved issue"
+  },
+  "quizStepLabel2": "STEP 2/6",
+  "@quizStepLabel2": {
+    "description": "Progress indicator showing second quiz step"
+  },
+  "quizDoctorVisitFrequencyTitle": "Unakutana na daktari mara ngapi kwa kawaida?",
+  "@quizDoctorVisitFrequencyTitle": {
+    "description": "Question about frequency of doctor visits"
+  },
+  "quizDoctorVisitRegular": "Kawaida (uchunguzi / ufuatiliaji)",
+  "@quizDoctorVisitRegular": {
+    "description": "Option indicating regular checkups"
+  },
+  "quizDoctorVisitOccasional": "Wakati mwingine, wakati kuna kitu kibaya",
+  "@quizDoctorVisitOccasional": {
+    "description": "Option indicating occasional visits"
+  },
+  "quizDoctorVisitRare": "Nadhif, tu ikiwa ni lazima",
+  "@quizDoctorVisitRare": {
+    "description": "Option indicating rare visits"
+  },
+  "quizDoctorVisitAvoid": "Epuka kutembelea madaktari",
+  "@quizDoctorVisitAvoid": {
+    "description": "Пользователь говорит, что не любит ходить к врачам и старается\n лишний раз не обращаться к доктору. Итоговая фраза должна быть\n понятной и отражать это поведение, например:\n«Вы не любите обращаться к врачам»"
+  },
+  "quizDoctorVisitNever": "Sijawahi kutembelea daktari",
+  "@quizDoctorVisitNever": {
+    "description": "Option indicating never visited"
+  },
+  "quizStepLabel3": "STEP 3/6",
+  "@quizStepLabel3": {
+    "description": "Progress indicator showing third quiz step"
+  },
+  "quizBiggestChallengeTitle": "Ni changamoto gani kubwa zaidi umekutana nayo katika huduma za afya hadi sasa?",
+  "@quizBiggestChallengeTitle": {
+    "description": "Question about healthcare challenges"
+  },
+  "quizMultiSelectHint": "Chagua kadri unavyotaka",
+  "@quizMultiSelectHint": {
+    "description": "Helper text indicating multiple selection allowed"
+  },
+  "quizChallengeLongWait": "Muda mrefu wa kusubiri kwa miadi",
+  "@quizChallengeLongWait": {
+    "description": "Option indicating long appointment wait times"
+  },
+  "quizChallengeRushedVisits": "Ziara zinaonekana kuwa za haraka",
+  "@quizChallengeRushedVisits": {
+    "description": "Option indicating short or rushed visits"
+  },
+  "quizChallengeCost": "Gharama kubwa au bei isiyoeleweka",
+  "@quizChallengeCost": {
+    "description": "Option indicating cost or pricing clarity issues"
+  },
+  "quizChallengeHardExplain": "Ni vigumu kueleza kila kitu kwa uwazi",
+  "@quizChallengeHardExplain": {
+    "description": "Option indicating difficulty explaining symptoms"
+  },
+  "quizChallengeConflictingAdvice": "Maoni au ushauri unaopingana",
+  "@quizChallengeConflictingAdvice": {
+    "description": "Option indicating conflicting medical opinions"
+  },
+  "quizChallengeNone": "Hakuna matatizo makubwa",
+  "@quizChallengeNone": {
+    "description": "Option indicating no major issues"
+  },
+  "quizStepLabel4": "STEP 4/6",
+  "@quizStepLabel4": {
+    "description": "Progress indicator showing fourth quiz step"
+  },
+  "quizConfidenceAfterAppointmentTitle": "Baada ya miadi, unajisikiaje kuhusu kile ulichosema?",
+  "@quizConfidenceAfterAppointmentTitle": {
+    "description": "Question about clarity after doctor appointments"
+  },
+  "quizConfidenceNoRightAnswer": "Hakuna jibu sahihi au la",
+  "@quizConfidenceNoRightAnswer": {
+    "description": "Helper note clarifying subjective nature"
+  },
+  "quizConfidenceVeryClear": "Niko wazi kuhusu kinachoendelea",
+  "@quizConfidenceVeryClear": {
+    "description": "Option indicating full understanding"
+  },
+  "quizConfidenceSomewhatClear": "Kidogo wazi",
+  "@quizConfidenceSomewhatClear": {
+    "description": "Option indicating partial clarity"
+  },
+  "quizConfidenceStillUncertain": "Bado si wazi",
+  "@quizConfidenceStillUncertain": {
+    "description": "Option indicating ongoing uncertainty"
+  },
+  "quizConfidenceMoreConfused": "Zaidi ya kuch kabla",
+  "@quizConfidenceMoreConfused": {
+    "description": "Option indicating increased confusion"
+  },
+  "captionDiagnosisVsChange": "Watu wengi <green>wanakumbana na shida si baada ya utambuzi</green> bali wakati dalili zinabadilika kwa muda.",
+  "@captionDiagnosisVsChange": {
+    "description": "Образовательная подпись, подчеркивающая развитие симптомов.\n Подпись должна объяснять, что многие люди сталкиваются с трудностями\n не сразу после постановки диагноза, а когда симптомы меняются со временем."
+  },
+  "quizStepLabel5": "STEP 5/6",
+  "@quizStepLabel5": {
+    "description": "Progress indicator showing fifth quiz step"
+  },
+  "quizConcernsAddressedTitle": "Unajisikiaje kuhusu jinsi wasiwasi wako unavyoshughulikiwa?",
+  "@quizConcernsAddressedTitle": {
+    "description": "Question about how well concerns are addressed"
+  },
+  "quizConcernsAddressedSubtitle": "Kulingana na hisia zako binafsi",
+  "@quizConcernsAddressedSubtitle": {
+    "description": "Clarifies answers are subjective"
+  },
+  "quizConcernsVeryWell": "Vizuri",
+  "@quizConcernsVeryWell": {
+    "description": "Option indicating strong satisfaction"
+  },
+  "quizConcernsFairlyWell": "Vizuri kidogo",
+  "@quizConcernsFairlyWell": {
+    "description": "Option indicating moderate satisfaction"
+  },
+  "quizConcernsNotVeryWell": "Sijafanya vizuri",
+  "@quizConcernsNotVeryWell": {
+    "description": "Option indicating low satisfaction"
+  },
+  "quizConcernsVaries": "Inatofautiana sana",
+  "@quizConcernsVaries": {
+    "description": "Option indicating inconsistent experience"
+  },
+  "quizStepLabel6": "STEP 6/6",
+  "@quizStepLabel6": {
+    "description": "Progress indicator showing sixth quiz step"
+  },
+  "quizSelfResearchTitle": "Kabla ya kumuona daktari, je, kawaida unajaribu kuelewa dalili mwenyewe?",
+  "@quizSelfResearchTitle": {
+    "description": "Question about pre-visit self-research behavior"
+  },
+  "quizSelfResearchYes": "Ndio, ninatafuta na kufuatilia mambo",
+  "@quizSelfResearchYes": {
+    "description": "Option indicating proactive research"
+  },
+  "quizSelfResearchSometimes": "Wakati mwingine",
+  "@quizSelfResearchSometimes": {
+    "description": "Option indicating occasional research"
+  },
+  "quizSelfResearchRarely": "Nadhara",
+  "@quizSelfResearchRarely": {
+    "description": "Option indicating rare research"
+  },
+  "quizSelfResearchNo": "Hapana, nategemea kabisa wataalamu",
+  "@quizSelfResearchNo": {
+    "description": "Option indicating full reliance on professionals"
+  },
+  "captionAvailabilityTitle": "Maswali ya afya <green>hayafuati</green> masaa ya ofisi.",
+  "@captionAvailabilityTitle": {
+    "description": "Statement about healthcare accessibility with highlighted phrase"
+  },
+  "captionAvailabilitySupport": "Doctorina <green>inapatikana 24/7.</green>",
+  "@captionAvailabilitySupport": {
+    "description": "Statement about continuous availability"
+  },
+  "captionAvailabilityDescription": "Uwazi haupaswi kusubiri hadi kuteuliwa kwa pili.",
+  "@captionAvailabilityDescription": {
+    "description": "Supporting line reinforcing immediate clarity"
+  },
+  "notificationTitle": "Je, unataka tuangalie dalili zako za afya?",
+  "@notificationTitle": {
+    "description": "Question asking about permission for notifications"
+  },
+  "notificationDescription": "AI inaweza kufuatilia dalili zako na kukujulisha ikiwa kuna kitu kinachohitaji umakini",
+  "@notificationDescription": {
+    "description": "Explanation about why better to enable notification"
+  },
+  "notificationYes": "Ndio — fuatilia afya yangu",
+  "@notificationYes": {
+    "description": "Option indicating yes to all notifications"
+  },
+  "notificationOnlyImportant": "Ndio — tu ikiwa kuna mabadiliko muhimu",
+  "@notificationOnlyImportant": {
+    "description": "Option indicating yes only for important notification"
+  },
+  "notificationNo": "Sijajua bado",
+  "@notificationNo": {
+    "description": "Option indicating user don't want to enable notification now"
+  },
+  "referralSourceTitle": "Je, umesikia kuhusu Doctorina kutoka kwa daktari?",
+  "@referralSourceTitle": {
+    "description": "Question asking whether a doctor recommended Doctorina"
+  },
+  "referralSourceYes": "Ndio",
+  "@referralSourceYes": {
+    "description": "Yes option"
+  },
+  "referralSourceNo": "Hapana",
+  "@referralSourceNo": {
+    "description": "No option"
+  },
+  "processingSectionLabel": "KUCHAMBUA MATOKEO YAKO",
+  "@processingSectionLabel": {
+    "description": "Small label indicating analysis phase"
+  },
+  "processingTitle": "Kuboresha uzoefu wako",
+  "@processingTitle": {
+    "description": "Title on the results processing screen"
+  },
+  "processingPercentValue": "{percent}%",
+  "@processingPercentValue": {
+    "description": "Progress percentage value during processing",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "99",
+        "description": "Current processing percentage"
+      }
+    }
+  },
+  "paywallHeadline": "Uzoefu usio na mipaka na <brand>Doctorina Pro</brand>",
+  "@paywallHeadline": {
+    "description": "Main paywall headline with highlighted product tier"
+  },
+  "paywallAssistantTagline": "ASSISTANT WAKO AMBAE YUKO KARIBU DAIMA",
+  "@paywallAssistantTagline": {
+    "description": "Supporting tagline under logo"
+  },
+  "paywallEnableTrialToggle": "Hujui bado? Washa jaribio la bure.",
+  "@paywallEnableTrialToggle": {
+    "description": "Toggle label offering free trial"
+  },
+  "paywallPlanYear": "Mwaka",
+  "@paywallPlanYear": {
+    "description": "Yearly subscription plan title"
+  },
+  "paywallPlanMonthly": "Kila mwezi",
+  "@paywallPlanMonthly": {
+    "description": "Monthly subscription plan title"
+  },
+  "paywallPlanWeek": "Wiki",
+  "@paywallPlanWeek": {
+    "description": "Weekly subscription plan title"
+  },
+  "paywallPlanDaily": "Kila siku",
+  "@paywallPlanDaily": {
+    "description": "Daily subscription plan title"
+  },
+  "paywallPlanYearPrice": "$39.99 (tu $3.34/kwanza)",
+  "@paywallPlanYearPrice": {
+    "description": "Yearly subscription price with weekly equivalent"
+  },
+  "paywallPlanWeekPrice": "$3.99",
+  "@paywallPlanWeekPrice": {
+    "description": "Weekly subscription price"
+  },
+  "paywallSaveBadge": "Hifadhi 58%",
+  "@paywallSaveBadge": {
+    "description": "Discount badge label"
+  },
+  "paywallContinueBtn": "Endelea",
+  "@paywallContinueBtn": {
+    "description": "Continue purchase without trial"
+  },
+  "paywallStartTrialBtn": "Anza majaribio ya bure",
+  "@paywallStartTrialBtn": {
+    "description": "Start free trial CTA"
+  },
+  "paywallSubscriptionDisclaimer": "Usajili unajirudia kiotomatiki. Ghairi wakati wowote",
+  "@paywallSubscriptionDisclaimer": {
+    "description": "Legal renewal disclaimer"
+  },
+  "paywallTermsPrivacy": "<termsOfService>Masharti ya Huduma</termsOfService> | <privacyPolicy>Sera ya Faragha</privacyPolicy>",
+  "@paywallTermsPrivacy": {
+    "description": "Links to legal documents"
+  },
+  "paywallPerWeek": "wiki",
+  "@paywallPerWeek": {
+    "description": "Week, in context per week, e.g. \"$3,99/week\""
+  },
+  "processingLabel": "Inachambua matokeo yako",
+  "@processingLabel": {
+    "description": "Section label on the results processing screen"
+  },
+  "paywallCloseTooltip": "Funga kuanzisha",
+  "@paywallCloseTooltip": {
+    "description": "Tooltip for the paywall close button"
+  },
+  "paywallRestoreTooltip": "Rejesha Ununuzi",
+  "@paywallRestoreTooltip": {
+    "description": "Tooltip for the restore purchases button"
+  },
+  "paywallRestoreBtn": "Rejesha",
+  "@paywallRestoreBtn": {
+    "description": "Restore purchases button text"
+  },
+  "paywallRestoreNoneFound": "Hakuna usajili wa kazi uliopatikana ili kurejesha.",
+  "@paywallRestoreNoneFound": {
+    "description": "Message when no active subscription found to restore"
+  },
+  "paywallRestoreError": "Imeshindikana kurejesha ununuzi. Tafadhali jaribu tena baadaye.",
+  "@paywallRestoreError": {
+    "description": "Error message when restore purchases fails"
+  },
+  "paywallPurchaseError": "Imeshindikana kukamilisha ununuzi. Tafadhali jaribu tena baadaye.",
+  "@paywallPurchaseError": {
+    "description": "Error message when subscription purchase fails"
+  },
+  "paywallTrialStep1Title": "Leo: Pata ufikiaji wa haraka",
+  "@paywallTrialStep1Title": {
+    "description": "Заголовок 1-го шага в таймлайне триала на пейволле v2 (доступ открывается сегодня)"
+  },
+  "paywallTrialStep1Description": "Fungua ufikiaji kamili, pata majibu ya afya ya AI, wakati wowote.",
+  "@paywallTrialStep1Description": {
+    "description": "Описание 1-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep2Title": "Siku ya 2: Kumbusho la majaribio",
+  "@paywallTrialStep2Title": {
+    "description": "Заголовок 2-го шага таймлайна триала (напоминание о завершении триала)"
+  },
+  "paywallTrialStep2Description": "Tutakasa ujumbe wa kukukumbusha kwamba majaribio yako yanakaribia kumalizika",
+  "@paywallTrialStep2Description": {
+    "description": "Описание 2-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep3Title": "Siku ya 3: Upya",
+  "@paywallTrialStep3Title": {
+    "description": "Заголовок 3-го шага таймлайна триала (списание после окончания триала)"
+  },
+  "paywallTrialStep3Description": "Utatozwa tarehe {date}, ghairi wakati wowote kabla.",
+  "@paywallTrialStep3Description": {
+    "description": "Описание 3-го шага таймлайна с датой ближайшего списания",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "April 30, 2026"
+      }
+    }
+  },
+  "paywallBenefitsHeader": "NINI KILICHOMO?",
+  "@paywallBenefitsHeader": {
+    "description": "Заголовок таблицы с фичами Free/Pro на пейволле v2"
+  },
+  "paywallBenefitsBadgeFree": "FREE",
+  "@paywallBenefitsBadgeFree": {
+    "description": "Бейдж колонки \"Free\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitsBadgePro": "PRO",
+  "@paywallBenefitsBadgePro": {
+    "description": "Бейдж колонки \"Pro\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitPrivateSecure": "Binafsi na salama",
+  "@paywallBenefitPrivateSecure": {
+    "description": "Пункт списка фич на пейволле v2 — приватность и безопасность"
+  },
+  "paywallBenefitAiAssistant": "Msaidizi wa AI, 24/7",
+  "@paywallBenefitAiAssistant": {
+    "description": "Пункт списка фич на пейволле v2 — AI-ассистент 24/7"
+  },
+  "paywallBenefitInstantAnswers": "Majibu ya afya ya haraka",
+  "@paywallBenefitInstantAnswers": {
+    "description": "Пункт списка фич на пейволле v2 — мгновенные ответы"
+  },
+  "paywallBenefitScienceInsights": "Mawasiliano wazi, yanayotokana na sayansi",
+  "@paywallBenefitScienceInsights": {
+    "description": "Пункт списка фич на пейволле v2 — научно обоснованные инсайты"
+  },
+  "paywallBenefitAutoSummaries": "Muhtasari wa mazungumzo ya otomatiki",
+  "@paywallBenefitAutoSummaries": {
+    "description": "Пункт списка фич на пейволле v2 — автоматические резюме консультаций"
+  },
+  "paywallBenefitAnyLanguage": "Lugha yoyote, wakati wowote",
+  "@paywallBenefitAnyLanguage": {
+    "description": "Пункт списка фич на пейволле v2 — поддержка любого языка"
+  },
+  "paywallPriceUnitPerWeek": "kwa wiki",
+  "@paywallPriceUnitPerWeek": {
+    "description": "Подпись \"per week\" под ценой подписки в плитке выбора плана на пейволле v2"
+  },
+  "paywallOfferTitle": "Ofa ya mara moja",
+  "@paywallOfferTitle": {
+    "description": "Заголовок шита одноразового оффера после онбординга. Для языков русского, белорусского, украинского - слово \"одноразовый\" применимо к поссуде, а не к предложению. One time offer лучше перевести как \"Разовое предложение\""
+  },
+  "paywallOfferDiscountPercent": "{percent}% OFF",
+  "@paywallOfferDiscountPercent": {
+    "description": "Процент скидки на белой карточке шита одноразового оффера",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "40"
+      }
+    }
+  },
+  "paywallOfferForeverBadge": "DAIMA",
+  "@paywallOfferForeverBadge": {
+    "description": "Подпись \"FOREVER\" под процентом скидки.  Для языков русского, белорусского, украинского - слово FOREVER лучше перевести  как \"НАВСЕГДА\" (не так пафосно , как \"навечно\")"
+  },
+  "paywallOfferDisclaimer": "Unapofunga ofa yako ya mara moja, imepotea!",
+  "@paywallOfferDisclaimer": {
+    "description": "Дисклеймер о том, что предложение исчезнет после закрытия шита. лучше на русский/белорусский и украинский переводить по смыслу так: \"У вас только один шанс воспользоваться этим предложением\""
+  },
+  "paywallOfferPricePerMonth": "{price}/mwezi",
+  "@paywallOfferPricePerMonth": {
+    "description": "Цена за месяц для годовой подписки на карточке одноразового оффера",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "$1.99"
+      }
+    }
+  },
+  "paywallOfferLowestPriceBadge": "BEI YA CHINI ZAIDI",
+  "@paywallOfferLowestPriceBadge": {
+    "description": "Бейдж \"LOWEST PRICE EVER\" над карточкой годовой подписки. лучше на русский/белорусский и украинский переводить по смыслу так: \"САМАЯ НИЗКАЯ ЦЕНА\""
+  },
+  "paywallOfferCancelAnytime": "Ghairi wakati wowote",
+  "@paywallOfferCancelAnytime": {
+    "description": "Подпись \"Cancel anytime\" между карточкой подписки и CTA. \"Отмена в любой момент\" - хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferClaimButton": "Dai ofa yako",
+  "@paywallOfferClaimButton": {
+    "description": "CTA-кнопка для активации одноразового оффера. \"Получить предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferAutoRenewable": "Usajili unaoendelea kiotomatiki",
+  "@paywallOfferAutoRenewable": {
+    "description": "Футер шита одноразового оффера — текст про автопродление подписки"
+  },
+  "paywallGiftBoxTitle": "Zawadi maalum ndani",
+  "@paywallGiftBoxTitle": {
+    "description": "Заголовок шита подарка перед одноразовым оффером"
+  },
+  "paywallGiftBoxSubtitle": "Gusa kwa kugusa kufichua ofa yako maalum",
+  "@paywallGiftBoxSubtitle": {
+    "description": "Подзаголовок шита подарка с приглашением открыть оффер. \"Нажмите, чтобы открыть специальное предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallGiftBoxOpenButton": "Fungua sasa",
+  "@paywallGiftBoxOpenButton": {
+    "description": "CTA-кнопка для открытия шита подарка. \"Открыть\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallRetryLoadPricesError": "Imeshindikana kupakia chaguzi za usajili. Tafadhali jaribu tena baadaye.",
+  "@paywallRetryLoadPricesError": {
+    "description": "Тост-ошибка при неудачной повторной загрузке цен подписок на пейволле"
+  },
+  "paywallPricesUnavailableTitle": "Haiwezi kupakia bei za usajili",
+  "@paywallPricesUnavailableTitle": {
+    "description": "Заголовок фолбэка на пейволле, когда RevenueCat не отдал цены подписок"
+  },
+  "paywallPricesUnavailableMessage": "Angalia muunganisho wako na ujaribu tena.",
+  "@paywallPricesUnavailableMessage": {
+    "description": "Подзаголовок фолбэка на пейволле с просьбой проверить соединение и повторить"
+  },
+  "paywallPricesUnavailableRetryButton": "Jaribu tena",
+  "@paywallPricesUnavailableRetryButton": {
+    "description": "Текст кнопки повторной загрузки цен в фолбэке пейволла"
+  },
+  "skipOnboardingButton": "Skip",
+  "@skipOnboardingButton": {
+    "description": "Кнопка для пропуска онбординга, должна быть записана емко и кратко. Например: \"Пр-ть\""
+  }
+}

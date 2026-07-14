@@ -1,3 +1,25 @@
+## 0.5.0
+
+- **BREAKING**: `localize` now only writes to a sheet whose header matches `label | description | meta | en | <locale> ...`. A sheet whose fourth column is not the English source is skipped with a warning — reference tables kept in the same spreadsheet were previously "translated", overwriting their data.
+- **FIX**: `localize` wrote nothing back to Google Sheets — the row stream introduced in 0.4.3 never emitted the localized rows.
+- **FIX**: `localize` failed every request with `400 Unsupported parameter: 'temperature'` on the default `gpt-5-mini` model. Reasoning models (`gpt-5*`, `o*`) now get `reasoning: {effort: low}` instead of the sampling parameters, and a token budget with headroom for their reasoning tokens.
+- **FIX**: Placeholder validation rejected every correctly translated ICU plural, and accepted translations that had flattened the directive away. Placeholders are now parsed by brace depth.
+- **FIX**: A reasoning item carrying the model's thinking is no longer mistaken for the answer payload.
+- **FIX**: A sheet title containing a space or an apostrophe produced an invalid A1 range, so the row could not be written.
+- **FIX**: Two columns whose headers sanitize to the same locale (`pt-BR` and `pt_BR`) left the second one empty forever; the duplicate column is now skipped.
+- **CHANGED**: Failed writes to Google Sheets are retried only when retrying can help (429, 5xx, network) — a malformed range or a missing scope no longer costs 60s of sleeping per row.
+- **CHANGED**: A single OpenAI request now has a hard timeout (`--timeout`, default 120s), and retries are limited to transient failures; an unusable payload is answered by splitting the batch instead of re-sending the same prompt.
+- **CHANGED**: An invalid numeric option (`--workers=abc`, `--batch=99`) is reported instead of being silently replaced by the default.
+- **CHANGED**: The pipeline moved to `lib/`, behind interfaces for both the model (`LocalizationClient`) and the spreadsheet (`SheetsGateway`), and is covered by unit tests — including the sheet-write path that used to be reachable only through a live Google account.
+- **ADDED**: Per-language fallback: a failed batch of languages is split and each language is retried on its own instead of being re-sent as a whole, so one rare language the model chokes on no longer breaks its neighbours.
+- **ADDED**: Translation validation before writing: ICU placeholders and markup tags must survive, no empty values, no leaked markdown fences, no runaway output. A rejected translation is retried alone.
+- **ADDED**: Language hints in the prompt and in the JSON schema — English name, native endonym and an explicit disambiguation note for codes models misread (`uk` is Ukrainian, not "United Kingdom").
+- **ADDED**: `--timeout` option (default `120s`) — a request the model never finishes is aborted instead of stalling a worker.
+- **CHANGED**: Retries are limited to transient failures (network, timeout, 429, 5xx). Unusable payloads are never re-sent with the same prompt.
+- **CHANGED**: `max_output_tokens` scales with the number of requested languages, so a large batch is no longer truncated into invalid JSON.
+- **CHANGED**: A row that cannot be written to the sheet is skipped instead of aborting the whole run.
+- **CHANGED**: The localization pipeline moved to `lib/` and is covered by unit tests.
+
 ## 0.4.3
 
 - **CHANGED**: `localize` now writes translated cells to Google Sheets via batch updates per row instead of one request per cell.

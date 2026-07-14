@@ -1,0 +1,227 @@
+{
+  "@@locale": "zu",
+  "exampleButton": "Isibonelo sebhathini",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Yebo, konke kulungile!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Yonke iminikelo iyaphilisa!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Ukuphakela kwakho kusiza ukuxhasa izeluleko zamahhala kwabanye abadinga.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Khuluma lokho okukhuluma,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "noma uqhubeke usebenzisa uDoctorina mahhala, ngenxa kwabanye abakhethe ukuba banike.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Okwesikhathi",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Ngamaviki",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Khetha inani lesibonelelo sokuqala ngenyanga",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Uzozokubhalisela kuhlelo lwamaviki.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Uthenga uhlelo lwamaviki oluhamba phambili lwe {amount}/inyanga.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Imali izokwehliswa kwi-akhawunti yakho uma uqinisekiswa kokuthenga. Ukubhalisela ukuvuselelwa ngokuzenzakalelayo njalo ngenyanga ngaphandle kokuthi ukuvuselelwa okuzenzakalelayo kukhanseliwe okungenani amahora angama-24 ngaphambi kokuphela kwesikhathi samanje. Ungaphatha noma ukhansele ukubhalisela kwakho nganoma yisiphi isikhathi kuzilungiselelo ze-akhawunti yakho. Ngokuhamba phambili, uvuma {termsOfService} kanye {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Khetha inani lesipho esisodwa",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Abantu abaningi banika u-$7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Khetha imali",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Ukucubungula ukukhokha",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Processing one-time payment of {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Processing monthly payment of {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Ngiyabonga!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Manje abantu bazothola izeluleko zamahhala — ukwesekwa kwakho kubalulekile.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Uphumelele:",
+  "@youContributedLabel": {},
+  "perMonth": "/ inyanga",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Buyela esikrinini esiyinhloko",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Imigomo Yesevisi",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Umthetho Wokuphepha Kwedatha",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Phakela",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Kusebenza",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Khanjwa",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Kumisiwe",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Kuphendulwa",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Dale",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Isikhathi sokuphelelwa",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Ayazi",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina umnikazi",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Iphinda",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Khansela ubhaliso",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Uqinisekile?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Ukuxhaswa kwakho kwenyanga kwenza uDoctorina atholakale mahhala kubantu abathembela kuwo kodwa abangakwazi ukukhokha.\n\nUhlelo lwakho luhlinzeka ngokuqinisekile ngama-consultation angama-10 mahhala nyangazonke.\nUma uhamba, abanye abaguli bazothola usizo oluncane.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Gcina ubhaliso",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Khansela kanjalo",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Ukusekela kwenyanga yakho kuphumelele.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Imininingwane yokubhalisela engalungile",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Bhalisela ukwesekwa kwenyanga ukuze kubonakale lapha.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Akukho okubhalisile okwamanje",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Usuku lokubhalisela",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Uphuma",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "I-ID yokubhalisela",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Umkhiqizo ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Kulungile",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Asikwazanga ukuqhubeka nekhokhelo lakho",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Kwenzi okuthile ngekhadi. Sicela uzame futhi.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Phinda",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Ukucubungula ukukhokha",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Uzokhuluma ukuthenga kwakho ekhasini eliphephile le-Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ isonto",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ unyaka",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Okudumile kakhulu",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Vala",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Okuthola ngePremium:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Ukuxhumana ngaphandle kwezikhangiso",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Impendulo ezisheshayo",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Ukufinyelela kwangaphambili ezici ezintsha",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/iviki",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Ungakwazi ukuhoxisa nganoma yisiphi isikhathi. Akukho ukuzibophezela.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "ISIKHATHI EHLANGANISEKILE",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Iyaqhubeka njalo ngesonto. Ungayicisha nganoma yisiphi isikhathi kuzilungiselelo. Ngok继续, uyavuma <t>Imigomo</t> yethu kanye <p>Inqubomgomo Yezimfihlo</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Qhubeka nePremium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Ukusekela kwakho kusiza ukugcina ukunakekelwa kutholakala",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Sicela ubhalise noma ungene ukuze uqedele ukuthenga.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

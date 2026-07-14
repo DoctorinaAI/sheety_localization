@@ -1,0 +1,15 @@
+{
+  "@@locale": "ms",
+  "error": "Ralat berlaku",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Ralat yang tidak dijangka berlaku",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Laporan bug telah dihantar dengan jayanya.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

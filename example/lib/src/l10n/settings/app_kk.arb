@@ -1,0 +1,283 @@
+{
+  "@@locale": "kk",
+  "sectionClearAllChatsTitle": "Барлық чаттарды тазалау",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "Бұл сіздің чат тарихыңызды тұрақты түрде жояды.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "Барлық чаттарды тазалау",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "Барлық чаттарды тазалау",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "Есепті жою",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "Есептік жазбаңызды жою - бұл тұрақты әрекет және оны қайтару мүмкін емес.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "Жою",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "Есепті жою",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "Шығу",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "Сіз өз есептік жазбаңыздан шығып кетесіз.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "Шығу",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "Бұзушылық туралы есеп жіберу",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "Хабарламаны [⏎ Enter] арқылы жіберіңіз",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "Хабарламаны [⏎ Enter] арқылы жіберіңіз, ал жаңа жолды [Shift] + [⏎ Enter] арқылы жасаңыз",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "Жіберу [⏎ Enter] арқылы",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "Жекелік саясат",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "Тіл",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "Қосымша интерфейсі үшін қалаған тіліңізді таңдаңыз",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "Қара режим",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "Төмен жарықта ыңғайлы көру тәжірибесі үшін қара режимді қосыңыз",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "Журналдар",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "Қателерді жою үшін қолданба журналдарын қарау және басқару",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "Дайын",
+  "@doneButton": {},
+  "bugReportDialogTitle": "Қате туралы есеп",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "Кездескен қателікті сипаттаңыз",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "Файлдарды тіркеу",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "Файлдарды таңдау сәтсіз аяқталды",
+  "@filePickerError": {},
+  "emptyBugReportError": "Алдымен қате туралы есеп енгізіңіз",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "Қате туралы есеп жіберу сәтсіз аяқталды",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "Жазылымды басқару",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "Жазылым параметрлеріңізді басқару",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "Діріл",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "Қолдау көрсететін құрылғыларда тактильді кері байланысты (діріл) қосу немесе өшіру",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "Хабарландыруларды қосу",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "Докторина сіздің чаттарыңызда, есептеріңізде немесе симптомдарыңызда маңызды нәрселерді тапқанда хабардар болыңыз.",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "Аккаунт",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "Қосымша",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "Туралы",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "Хабарландырулар",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "Бейне сабақтар",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "Телефон",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "Электрондық пошта",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "Аты",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "Барлық файлдармен дубликатқа байланысты {count} файл өткізіліп кетті",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "Тип",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "Сипаттама",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "Қосымшалар",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "Бұқа",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "Құлау",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "UI мәселесі",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "Басқа",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "Есептік жазбаңызды жою сіздің деректеріңізді Doctorina-дан мәңгілікке жояды.",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "Жоюдан бұрын",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "Сізде {store} арқылы белсенді жазылым бар. Аккаунтыңызды жою оны тоқтатпайды.",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "{store} жазылымын тоқтату",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "Жалғастыру",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "Сізді кетіп бара жатқанымызға өкінішті. Сіздің аккаунтыңызды жоюға сенімдісіз бе? Сіз растағаннан кейін, деректеріңіз жойылады.",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "Мен енді қосымшаны пайдаланбаймын",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "Жақсырақ нұсқа таптым",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "Техникалық мәселелер",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "Пайдалану қиындықтары",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "Функциялар жетіспейді",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "Жеке өмір туралы алаңдаушылық",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "Мен тек деректерімді тазалағым келді",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "Басқа",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "Пікіріңізбен бөлісіңіз",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "Аккаунтыңызды жою...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "Жою",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "Кері қайтару",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "Сіздің аккаунтыңыз жойылды.",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "Аккаунтты жою мүмкін болмады. Қайтадан әрекет жасап көріңіз.",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "Бұл құрылғыда электрондық пошта қосымшасы жоқ. Қолдау қызметіне қолмен хабарласыңыз: support@doctorina.com.",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

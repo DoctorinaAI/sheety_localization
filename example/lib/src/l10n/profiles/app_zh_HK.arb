@@ -1,0 +1,425 @@
+{
+  "@@locale": "zh_HK",
+  "chatDrawerTitle": "健康記錄",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "新",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "建立您的健康記錄",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "在諮詢結束時，添加您的個人資料。",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "添加更多個人資料",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "為其他人開始諮詢以創建他們的個人資料。",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "註冊以創建您的健康記錄",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "重試",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "刪除個人資料失敗",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "無法加載個人資料摘要",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "查看完整記錄",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "分享",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "刪除",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "年齡",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} 年} other{{value} 年}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "體重",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "高度",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} 厘米",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "過敏",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "慢性",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "藥物",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "設備",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "諮詢",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "文件",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "刪除健康記錄？",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "這將永久刪除您的健康數據，無法恢復。您將失去我們用來指導您的背景。",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "取消",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "刪除",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "正在刪除您的健康記錄...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "刪除個人資料失敗",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "健康記錄已刪除",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "您可以隨時通過與助手聊天來創建新的。",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "返回聊天",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "編輯",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "無法加載個人資料數據",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "變更已儲存",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "您的信息已成功更新。",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "返回個人資料",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "無法更新個人資料",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "放棄更改嗎？",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "您對您的個人資料做了一些更改。在離開之前請保存它們，或放棄它們。",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "繼續編輯",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "捨棄",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "編輯",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "添加記錄",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "搜尋",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "未找到結果",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "下載",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "分享",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "刪除",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "未找到文件",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "要刪除這份文件嗎？",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "此文件將被永久刪除",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "取消",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "刪除",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "更多操作",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "搜尋",
+  "@profilesSearch": {},
+  "profilesEmptyList": "找不到個人檔案",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "查看更多",
+  "@profilesViewMore": {},
+  "profilesMore": "更多",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina 現在記得你的健康",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "您的諮詢現在會自動建立和更新您的健康紀錄。",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "你的健康紀錄，你的規則",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "隨時查看、編輯或添加症狀、藥物、病史或文件。",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "照顧您全家",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "為您的摯愛、孩子、父母或伴侶創建健康記錄。",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "準備好保存您的健康記錄了嗎？",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "在諮詢後，點擊「新增檔案」以保存。",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "下一步",
+  "@profilesNextButton": {},
+  "profilesStartButton": "開始諮詢",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "稍後再說",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "關閉",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "健康記錄",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "健康記錄 — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...更多",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...少",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "新增個人檔案",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "創建一個檔案以保存此諮詢的詳細信息。",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "您可隨時在健康記錄中查看",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "如果你對這件事或任何相關問題有更多疑問，歡迎隨時繼續與我對話。我在這裡幫助你",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "一般資料",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "姓名",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "名字",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "約翰",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "姓氏",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "性別",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "請選擇",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "男",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "女性",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "其他",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "出生日期",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "年齡",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "例如 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "電話號碼",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "電郵",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "地點",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "例如 城市，國家",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "身體與飲食",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "身高",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "例如 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "體重",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "例如 75 公斤",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "月經週期",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "例如 規律、不規律",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "飲食限制",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "請選擇",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "告訴我們您吃什麼以及您有任何限制",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "無",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "素食",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "純素",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "無麩質",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "身體質量指數 (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "例如 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "健康檔案",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "慢性疾病",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "例如. 二型糖尿病",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "請列出所有慢性疾病，並包括診斷時間及任何併發症。",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "既往疾病",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "例如：經常感冒",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "請列出您過去曾經患過的重大疾病，即使您已經康復。",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "手術史",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "例如 闌尾切除術",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "請列出所有手術，並包括年份及是否有任何併發症。",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "偶爾使用的藥物",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "例如：布洛芬",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "請列出您偶爾服用的藥物（例如：止痛藥、過敏藥物），包括劑量和使用原因。",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "常用藥物",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "例如：二甲雙胍",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "請列出您定期服用的所有藥物，包括名稱、劑量、每天服用的次數以及用於什麼病症。",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "過敏",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "例如：青黴素 – 會引起皮疹",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "請列出所有過敏源（藥物、食物、環境），並描述您有什麼反應（例如：皮疹、腫脹、呼吸問題）。",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "特殊情況",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "例如：懷孕、殘疾",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "如果您有任何重要的醫療狀況，醫生應該始終知道（例如：懷孕、植入裝置、殘疾、抗凝治療），請描述它們。如果沒有，您可以留空。",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "家族病史",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "例如心臟病、癌症",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "請描述您家族中的重要疾病（例如：糖尿病、高血壓、心臟病、癌症、遺傳疾病），並指明哪位家庭成員曾患有該病。",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "社交及生活方式因素",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "例如：吸煙、飲酒",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "請描述可能影響您健康的生活方式因素，例如吸煙、飲酒、身體活動、飲食、睡眠和職業。",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "醫療器材",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "例如：心臟起搏器、助聽器、胰島素泵",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "請列出您使用或植入的任何醫療設備，例如心臟起搏器、胰島素泵、助聽器、義肢或其他輔助或監測設備。如適用，請包括相關細節。",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "雜食",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "快餐",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "魚素食者",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "無乳糖",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "低鈉飲食",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "低糖飲食",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "心臟病飲食",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "腎臟飲食",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "其他",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

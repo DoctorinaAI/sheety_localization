@@ -1,0 +1,283 @@
+{
+  "@@locale": "pa",
+  "sectionClearAllChatsTitle": "ਸਾਰੇ ਗੱਲਾਂ ਸਾਫ਼ ਕਰੋ",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "ਇਹ ਤੁਹਾਡੇ ਚੈਟ ਇਤਿਹਾਸ ਨੂੰ ਸਦਾ ਲਈ ਮਿਟਾ ਦੇਵੇਗਾ.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "ਸਾਰੇ ਗੱਲਾਂ ਸਾਫ਼ ਕਰੋ",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "ਸਾਰੇ ਗੱਲਾਂ ਸਾਫ਼ ਕਰੋ",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "ਖਾਤਾ ਹਟਾਓ",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "ਤੁਹਾਡਾ ਖਾਤਾ ਹਟਾਉਣਾ ਇੱਕ ਸਥਾਈ ਕਾਰਵਾਈ ਹੈ ਅਤੇ ਇਸਨੂੰ ਵਾਪਸ ਨਹੀਂ ਲਿਆ ਜਾ ਸਕਦਾ.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "ਹਟਾਓ",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "ਖਾਤਾ ਹਟਾਓ",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "ਸਾਈਨ ਆਉਟ",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "ਤੁਸੀਂ ਆਪਣੇ ਖਾਤੇ ਤੋਂ ਸਾਈਨ ਆਉਟ ਹੋ ਜਾਓਗੇ।",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "ਸਾਈਨ ਆਉਟ",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "ਬੱਗ ਰਿਪੋਰਟ ਭੇਜੋ",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "ਸੁਨੇਹਾ ਭੇਜੋ [⏎ Enter] ਨਾਲ",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "ਸੁਨੇਹਾ ਭੇਜੋ [⏎ Enter] ਨਾਲ ਅਤੇ ਨਵੀਂ ਲਾਈਨ [Shift] + [⏎ Enter] ਨਾਲ",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "ਭੇਜੋ [⏎ Enter] ਨਾਲ",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "ਗੋਪਨੀਯਤਾ ਨੀਤੀ",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "ਭਾਸ਼ਾ",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "ਆਪਣੇ ਐਪ ਇੰਟਰਫੇਸ ਲਈ ਆਪਣੀ ਪਸੰਦ ਦੀ ਭਾਸ਼ਾ ਚੁਣੋ",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "ਗੂੜ੍ਹਾ ਮੋਡ",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "ਗੋਤਕਾ ਮੋਡ ਨੂੰ ਚਾਲੂ ਕਰੋ ਤਾਂ ਜੋ ਘੱਟ ਰੋਸ਼ਨੀ ਵਿੱਚ ਆਰਾਮਦਾਇਕ ਦੇਖਣ ਦਾ ਅਨੁਭਵ ਹੋ ਸਕੇ",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "ਲੌਗ",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "ਐਪਲੀਕੇਸ਼ਨ ਲੌਗ ਨੂੰ ਦੇਖੋ ਅਤੇ ਪ੍ਰਬੰਧਿਤ ਕਰੋ ਜੇਹੜਾ ਡਿਬੱਗਿੰਗ ਲਈ",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "ਹੋ ਗਿਆ",
+  "@doneButton": {},
+  "bugReportDialogTitle": "ਬੱਗ ਰਿਪੋਰਟ",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "ਕਿਰਪਾ ਕਰਕੇ ਉਸ ਬੱਗ ਦਾ ਵਰਣਨ ਕਰੋ ਜਿਸਨੂੰ ਤੁਸੀਂ ਸਾਹਮਣਾ ਕੀਤਾ",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "ਫਾਈਲਾਂ ਜੋੜੋ",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "ਫਾਈਲਾਂ ਚੁਣਨ ਵਿੱਚ ਅਸਫਲ",
+  "@filePickerError": {},
+  "emptyBugReportError": "ਕਿਰਪਾ ਕਰਕੇ ਪਹਿਲਾਂ ਬੱਗ ਰਿਪੋਰਟ ਦਿਓ",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "ਬੱਗ ਰਿਪੋਰਟ ਭੇਜਣ ਵਿੱਚ ਅਸਫਲ",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਪ੍ਰਬੰਧਿਤ ਕਰੋ",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "ਆਪਣੇ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਸੈਟਿੰਗਜ਼ ਦਾ ਪ੍ਰਬੰਧ ਕਰੋ",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "ਕੰਪਨ",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "ਹੈਪਟਿਕ ਫੀਡਬੈਕ (ਕੰਪਨ) ਨੂੰ ਸਮਰਥਿਤ ਡਿਵਾਈਸਾਂ 'ਤੇ ਚਾਲੂ ਜਾਂ ਬੰਦ ਕਰੋ",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "ਨੋਟੀਫਿਕੇਸ਼ਨ ਚਾਲੂ ਕਰੋ",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "ਡਾਕਟਰਿਨਾ ਤੁਹਾਡੇ ਚੈਟ, ਰਿਪੋਰਟਾਂ ਜਾਂ ਲੱਛਣਾਂ ਵਿੱਚ ਕੁਝ ਮਹੱਤਵਪੂਰਨ ਲੱਭਣ 'ਤੇ ਅਪਡੇਟ ਰਹੋ.",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "खाता",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "ਐਪ",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "ਬਾਰੇ",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "ਸੂਚਨਾਵਾਂ",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "ਵੀਡੀਓ ਟਿਊਟੋਰੀਅਲ",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "ਫੋਨ",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "ਈਮੇਲ",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "ਨਾਮ",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "{count} ਫਾਈਲਾਂ ਨੂੰ ਮੌਜੂਦ ਫਾਈਲਾਂ ਨਾਲ ਦੁਹਰਾਉਣ ਕਾਰਨ ਛੱਡ ਦਿੱਤਾ ਗਿਆ",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "ਕਿਸਮ",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "ਵਰਣਨ",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "ਅਟੈਚਮੈਂਟ",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "ਬੱਗ",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "ਕ੍ਰੈਸ਼",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "ਯੂਆਈ ਸਮੱਸਿਆ",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "ਹੋਰ",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "ਤੁਹਾਡੀ ਖਾਤਾ ਮਿਟਾਉਣ ਨਾਲ Doctorina ਤੋਂ ਤੁਹਾਡਾ ਡੇਟਾ ਸਦਾ ਲਈ ਹਟਾਇਆ ਜਾਵੇਗਾ.",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "ਤੁਸੀਂ ਮਿਟਾਉਣ ਤੋਂ ਪਹਿਲਾਂ",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "ਤੁਹਾਡੇ ਕੋਲ {store} ਰਾਹੀਂ ਇੱਕ ਸਰਵਿਸ ਹੈ। ਤੁਹਾਡਾ ਖਾਤਾ ਮਿਟਾਉਣਾ ਇਸਨੂੰ ਰੱਦ ਨਹੀਂ ਕਰੇਗਾ.",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "{store} ਵਿੱਚ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਰੱਦ ਕਰੋ",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "ਜਾਰੀ ਰੱਖੋ",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "ਸਾਨੂੰ ਦੁੱਖ ਹੈ ਕਿ ਤੁਸੀਂ ਜਾ ਰਹੇ ਹੋ। ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਹੋ ਕਿ ਤੁਸੀਂ ਆਪਣਾ ਖਾਤਾ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ? ਜਦੋਂ ਤੁਸੀਂ ਪੁਸ਼ਟੀ ਕਰਦੇ ਹੋ, ਤੁਹਾਡਾ ਡੇਟਾ ਗਾਇਬ ਹੋ ਜਾਵੇਗਾ.",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "ਮੈਂ ਐਪ ਦਾ ਇਸਤੇਮਾਲ ਨਹੀਂ ਕਰਦਾ",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "ਕੁਝ ਬਿਹਤਰ ਮਿਲਿਆ",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "ਤਕਨੀਕੀ ਸਮੱਸਿਆਵਾਂ",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "ਉਪਯੋਗ ਵਿੱਚ ਮੁਸ਼ਕਲਾਂ",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "ਫੀਚਰਾਂ ਦੀ ਘਾਟ",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "ਪਰਾਈਵੇਸੀ ਦੇ ਚਿੰਤਾਵਾਂ",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "ਮੈਂ ਸਿਰਫ ਆਪਣਾ ਡੇਟਾ ਸਾਫ਼ ਕਰਨਾ ਚਾਹੁੰਦਾ ਸੀ",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "ਹੋਰ",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "ਆਪਣਾ ਫੀਡਬੈਕ ਸਾਂਝਾ ਕਰੋ",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "ਤੁਹਾਡਾ ਖਾਤਾ ਹਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "ਹਟਾਉਣਾ",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "ਵਾਪਸ ਲੈਣਾ",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "ਤੁਹਾਡਾ ਖਾਤਾ ਮਿਟਾ ਦਿੱਤਾ ਗਿਆ ਹੈ।",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "ਖਾਤਾ ਮਿਟਾਉਣ ਵਿੱਚ ਅਸਫਲ. ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "ਇਸ ਡਿਵਾਈਸ 'ਤੇ ਕੋਈ ਈਮੇਲ ਐਪ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ support@doctorina.com ਨਾਲ ਹੱਥੋਂ ਸੰਪਰਕ ਕਰੋ.",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "@@locale": "vi",
+  "error": "Đã xảy ra lỗi",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Đã xảy ra lỗi bất ngờ",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Báo cáo lỗi đã được gửi thành công.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

@@ -1,0 +1,742 @@
+{
+  "@@locale": "el",
+  "drawerTooltipNotifications": "Ειδοποιήσεις",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "Βοήθεια",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "Κλείσιμο",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "Λογαριασμός",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "Προφίλ",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "Ρυθμίσεις Λογαριασμού",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "Δωρεά για υποστήριξη",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "Συνδρομή",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "Συνομιλίες",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "Ιστορικό συνομιλιών",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "Συνημμένα Έγγραφα",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "Πώς να χρησιμοποιήσετε",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "Βίντεο Μαθήματα",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "Νομικό",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "Επικοινωνήστε μαζί μας",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "Αναφορά σφάλματος",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "Όροι και Προϋποθέσεις",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "Πολιτική Απορρήτου",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "Ανατροφοδότηση",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "Βαθμολογήστε την εφαρμογή",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "Μοιραστείτε με φίλους",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "Αποσύνδεση",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "Βοηθήστε άλλους να λάβουν ιατρική φροντίδα",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "Χρήστης",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "Προνομιακά Χαρακτηριστικά\nμε την Doctorina",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "Αποκτήστε",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "Ελάτε μαζί μας",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "Έκδοση εφαρμογής:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "Πρόσφατες Συνομιλίες",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "Προφίλ",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "Πρόσφατη συνομιλία",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "Κατεβάστε εφαρμογές",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "Εισάγετε μήνυμα",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "Επισυνάψτε αρχείο",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "Δικτάτω",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "Ολοκλήρωση & Μεταγραφή",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "Στείλτε μήνυμα",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "Αποτυχία λήψης μηνυμάτων",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "Αποτυχία λήψης μηνυμάτων. Παρακαλώ δοκιμάστε ξανά.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "Ανακτήστε μηνύματα",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "Δεν υπάρχουν διαθέσιμα μηνύματα\nΣτείλτε ένα μήνυμα για να ξεκινήσετε τη συνομιλία.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "Συνδεδεμένο",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "Καμία σύνδεση",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "Αναζήτηση",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "Αγαπημένα",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "Λήψη",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "Εκτύπωση PDF",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "Μοιραστείτε με φίλους",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "Νέα συνομιλία",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "Συνομιλία",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "Επιλέξτε Συνομιλία",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "Εμφάνιση συρταριού",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "Δεν υπάρχουν διαθέσιμες συνομιλίες. Παρακαλώ ανανεώστε ή δημιουργήστε μια νέα συνομιλία.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "Ανανέωση συνομιλιών",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "Δημιουργία νέας συνομιλίας",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "Αντιγραφή κειμένου",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "Πληκτρολογώντας",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "Ενημέρωση...\nΕλέγξτε τη σύνδεση στο διαδίκτυο",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "Το μήνυμα επεξεργάζεται ήδη αυτή τη στιγμή.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "Το μήνυμα είναι πολύ μεγάλο.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "Αφαίρεση συνημμένου",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "Αποτυχία επεξεργασίας μηνύματος",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "Εξαγωγή σε PDF",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "Φωτογραφίες",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "Κάμερα",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "Αρχεία",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "Φωτογραφίες και Αρχεία",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "Ελπίζω να βοήθησε! Ήταν αυτή η εξήγηση χρήσιμη για εσάς;",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "Ναι, όλα είναι καλά!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "Αποτυχία ανάκτησης περιλήψεως συνομιλίας",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "Η περίληψη συνομιλίας αντιγράφηκε στο πρόχειρο",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "Δοκιμάστε το Doctorina στην κινητή εφαρμογή!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "Κατεβάστε στο",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "Πάρτε το",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "Κατεβάστε από το App Store",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "Αποκτήστε το στο Google Play",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "Αναφορά Μηνύματος",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "Γιατί αναφέρετε αυτό το μήνυμα;",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "Προαιρετικά: Περιγράψτε τι είναι λάθος με αυτό το μήνυμα...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "Αυτό θα μας βοηθήσει να βελτιώσουμε τις απαντήσεις της AI μας.",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "Ακύρωση",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "Αναφορά",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "Σας ευχαριστούμε για την ανατροφοδότηση! Η αναφορά έχει υποβληθεί.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "Αποτυχία υποβολής αναφοράς",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "Αντιγράφηκε στο πρόχειρο",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "Αποτυχία αντιγραφής μηνύματος",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "Αναφορά Μηνύματος",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "Ανεβάστε στο chat του Doctorina",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "Σύρετε και αποθέστε αρχεία εδώ για να προσθέσετε στη συνομιλία",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "Μπορείτε να προσθέσετε έως 15 αρχεία σε ένα μήνυμα",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "Θα θέλατε να σας ενημερώσω αν προκύψει κάτι σημαντικό σχετικά με την υγεία σας;",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "Ναι, ειδοποίησέ με",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "Ίσως αργότερα",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "Κλείσιμο",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "Οι ειδοποιήσεις είναι αποκλεισμένες σε επίπεδο συστήματος. Ενεργοποιήστε τις στις ρυθμίσεις του συστήματος πριν ενεργοποιήσετε τις ειδοποιήσεις του Doctorina.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "Οι ειδοποιήσεις είναι αποκλεισμένες σε επίπεδο συστήματος. Ενεργοποιήστε τις στις ρυθμίσεις του προγράμματος περιήγησης πριν ενεργοποιήσετε τις ειδοποιήσεις του Doctorina.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "Μείνετε ενημερωμένοι για τη συμβουλή σας",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Η Doctorina μπορεί να σας ειδοποιήσει όταν είναι διαθέσιμες νέες πληροφορίες ή ενημερώσεις σχετικά με την υγεία σας.",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "Ενεργοποίηση ειδοποιήσεων",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "Ίσως αργότερα",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "Συνεχίζοντας, συμφωνείτε με την επεξεργασία προσωπικών δεδομένων, τη χρήση των <c>cookies</c>, αποδέχεστε τους <t>όρους και τις προϋποθέσεις</t> και αναγνωρίζετε την <p>πολιτική απορρήτου</p>. Επίσης, αναγνωρίζετε πως η συμβουλευτική σας παρέχεται από AI και όχι από αδειοδοτημένο ιατρικό εμπειρογνώμονα",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "Απόρριψη",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "Αποθήκευση αυτής της συνομιλίας πρώτα;",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "Εγγραφείτε δωρεάν για να αποθηκεύσετε αυτή τη διαβούλευση πριν ξεκινήσετε μια νέα",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "Έναρξη χωρίς αποθήκευση",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "Εγγραφή",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "Για να συνεχίσετε τη συνομιλία, επιλέξτε μια επιλογή παραπάνω",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "Κλείσε",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "Αφαίρεση συνημμένου",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "Αποτυχία επιλογής αρχείων από την περιοχή αποθέσεως",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "Παρακαλώ εισάγετε ένα μήνυμα ή επισυνάψτε ένα αρχείο",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "Παρακαλώ περιμένετε να ολοκληρωθούν οι μεταφορτώσεις",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "Το μήνυμα επεξεργάζεται",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "Το μήνυμα είναι πολύ μεγάλο",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "Το μήνυμα επεξεργάζεται ήδη αυτή τη στιγμή.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "Η σύνδεση έχει κλείσει μόνιμα",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "Καμία σύνδεση με τον διακομιστή",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "Αποτυχία επιλογής αρχείων",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "Αποτυχία επιλογής εικόνων",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "Αποτυχία λήψης φωτογραφίας από την κάμερα",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "Μπορείτε να επισυνάψετε έως {count} αρχεία ταυτόχρονα.",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "Καθαρίστε το αναγνωρισμένο κείμενο",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "Το μήνυμα είναι πολύ μεγάλο.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "Παρακαλώ περιμένετε να ολοκληρωθούν οι μεταφορτώσεις.",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "Το {kind} \"{name}\" είναι ήδη συνημμένο και δεν προστέθηκε ξανά.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "Το {kind} \"{name}\" είναι αντίγραφο του {exist} και δεν προστέθηκε.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "Το {kind} \"{name}\" δεν προστέθηκε επειδή έχει ξεπεραστεί ο μέγιστος αριθμός συνημμένων.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "Το αρχείο \"{name}\" είναι κενό.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "Το αρχείο είναι κενό",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "Το αρχείο \"{name}\" υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος.",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "Το αρχείο υπερβαίνει το μέγιστο επιτρεπόμενο μέγεθος.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "Παρουσιάστηκε σφάλμα κατά την επεξεργασία του αρχείου \"{name}\".",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "Παρουσιάστηκε σφάλμα κατά την επεξεργασία του αρχείου.",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "Το αρχείο \"{name}\" δεν προστέθηκε επειδή έχει ξεπεραστεί ο μέγιστος αριθμός συνημμένων.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "Ένα αρχείο(α) δεν προστέθηκε επειδή έχει ξεπεραστεί ο μέγιστος αριθμός συνημμένων.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "Ένα αρχείο δεν προστέθηκε επειδή έχει ξεπεραστεί ο μέγιστος αριθμός συνημμένων.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "Ένα αρχείο χωρίς όνομα επιχειρήθηκε να προστεθεί.",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "Ένα αρχείο με μη υποστηριζόμενη επέκταση επιχειρήθηκε να προστεθεί: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "Έγινε προσπάθεια προσθήκης αρχείου με μη υποστηριζόμενη επέκταση.",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "Αδύνατη η προσθήκη αρχείου.",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "Το αρχείο \"{name}\" είναι μη έγκυρο και δεν μπορεί να προστεθεί",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "Ένα αρχείο είναι μη έγκυρο και δεν μπορεί να προστεθεί",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "Το στοιχείο \"{name}\" δεν είναι έγκυρο αρχείο",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "Ένα στοιχείο δεν είναι έγκυρο αρχείο.",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "Παρουσιάστηκε σφάλμα κατά την επεξεργασία ενός στοιχείου.",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "Παρουσιάστηκε σφάλμα κατά την επεξεργασία ενός αντικειμένου(ων).",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "Δεν προστέθηκαν αρχεία.",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "Ορισμένα αρχεία παραλείφθηκαν λόγω διπλοτύπων με υπάρχοντα αρχεία.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "Παρουσιάστηκε ένα άγνωστο σφάλμα.",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "Τα παρακάτω σφάλματα προέκυψαν κατά την επισύναψη αρχείων:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "Αποτυχία κοινής χρήσης αρχείου: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "Κλείσιμο",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "Μοιραστείτε",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "Φόρτωση αρχείου...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "Αποτυχία φόρτωσης αρχείου",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "Συνέβη άγνωστο σφάλμα",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "Δοκιμάστε ξανά",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "Μη υποστηριζόμενος τύπος αρχείου",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "Δεν μπορεί να γίνει προεπισκόπηση {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "Κοινοποίηση αρχείου",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "Αποτυχία εμφάνισης εικόνας",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "Επαναφορά ζουμ",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "Αποτυχία φόρτωσης PDF",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "Αποτυχία αποκωδικοποίησης περιεχομένου κειμένου",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "Και {count} περισσότερα σφάλματα.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "Το αρχείο είναι κατεστραμμένο",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "Απαιτείται συγκατάθεση",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "Συνεχίζοντας, συμφωνείτε με τους <tc>Όρους</tc>, την <privacy_policy>Πολιτική Απορρήτου</privacy_policy> και τη <cookies>χρήση cookies</cookies> μας, και επιβεβαιώνετε ότι αυτή η συμβουλή παρέχεται από AI, όχι από αδειοδοτημένο ιατρικό επαγγελματία.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "Κλείσιμο",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "Διαγραφή",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "Διαγραφή συνομιλίας",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "Η συνομιλία “{title}” διαγράφηκε με επιτυχία.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "Διαγραφή συνομιλίας;",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "Τα συμπτώματά σας, η περίληψη διάγνωσης και οποιεσδήποτε συστάσεις σε αυτή τη συνομιλία θα διαγραφούν.\nΑυτή η ενέργεια δεν μπορεί να αναιρεθεί.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "Μεγέθυνση",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "Μείωση",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "Επαναφορά Ζουμ",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "Μοιραστείτε",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "Σήμερα",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "Χθες",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "Μόνο η πρώτη σελίδα. Χρησιμοποιήστε το Share για να κατεβάσετε το πλήρες αρχείο.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "@@locale": "zh_HK",
+  "lang": "廣東話",
+  "@lang": {},
+  "langEn": "Cantonese",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "即刻更新",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "可能遲啲",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "新更新可用",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "需要更新",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "新的版本 (v{version}) 嘅應用程式已可用. 請更新以繼續獲得最佳體驗",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "要繼續，請更新應用程式。此更新包括重要的修正及改進。",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "下載",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "如果您已經擁有 Doctorina 帳戶，請登錄，或註冊以開始。",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "登錄",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "註冊",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "繼續以訪客身份",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "登入",
+  "@titleLogin": {},
+  "titleLogout": "登出",
+  "@titleLogout": {},
+  "titleSignIn": "登入",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "對話",
+  "@titleDialog": {},
+  "titleChat": "傾偈",
+  "@titleChat": {},
+  "titleSettings": "帳戶設定",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "聊天記錄",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "付款",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "管理訂閱",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "每月訂閱",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "入門",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "歡迎回來",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "健康紀錄檔案",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "個人資料公告",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "健康記錄",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "完整記錄",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "文件",
+  "@titleDocuments": {},
+  "titleConsultations": "諮詢",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "付費牆",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "刪除嗎？告訴我們為什麼！",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "開始新的健康對話",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "分享一個想法或報告一個問題",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "告訴我們 Doctorina 如何改進",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

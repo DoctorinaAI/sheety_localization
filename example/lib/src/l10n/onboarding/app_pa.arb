@@ -1,0 +1,588 @@
+{
+  "@@locale": "pa",
+  "appNameLogo": "doctorina",
+  "@appNameLogo": {
+    "description": "Brand name displayed under the logo on the welcome screen"
+  },
+  "welcomeTagline": "ADVANCED AI HEALTH ASSISTANT",
+  "@welcomeTagline": {
+    "description": "Short tagline describing the product category"
+  },
+  "welcomeScreenTitle": "ਡਾਕਟਰਿਨਾ ਵਿੱਚ ਸੁਆਗਤ ਹੈ",
+  "@welcomeScreenTitle": {
+    "description": "Main headline welcoming the user"
+  },
+  "socialProofTrustedBy": "Trusted by\n<green>48K+ Users</green>",
+  "@socialProofTrustedBy": {
+    "description": "Social proof header with highlighted user count\nNew line should be preserved. 48K+"
+  },
+  "welcomeDescription": "ਅਨੁਭਵੀ ਡਾਕਟਰਾਂ ਵਾਂਗ ਲੱਛਣਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਨ ਲਈ ਡਿਜ਼ਾਈਨ ਕੀਤਾ ਗਿਆ ਹੈ - ਪੈਟਰਨ, ਸਮਾਂ ਅਤੇ ਸੰਦਰਭ ਨੂੰ ਸਮਝ ਕੇ.",
+  "@welcomeDescription": {
+    "description": "Short paragraph explaining the value proposition of the app"
+  },
+  "getStartedBtn": "ਸ਼ੁਰੂ ਕਰੋ",
+  "@getStartedBtn": {
+    "description": "Primary call-to-action button to begin onboarding"
+  },
+  "alreadyHaveAccount": "ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਹੀ ਖਾਤਾ ਹੈ? <link>ਲੌਗ ਇਨ</link>",
+  "@alreadyHaveAccount": {
+    "description": "Secondary text prompting existing users to sign in with tappable login action"
+  },
+  "termsConsent": "ਜਾਰੀ ਰੱਖਣ ਨਾਲ, ਤੁਸੀਂ ਸਾਡੇ <termsOfService>ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ</termsOfService> | <privacyPolicy>ਗੋਪਨੀਯਤਾ ਨੀਤੀ</privacyPolicy> ਨਾਲ ਸਹਿਮਤ ਹੋ ਜਾਂਦੇ ਹੋ",
+  "@termsConsent": {
+    "description": "Legal consent text with tappable Terms of Service and Privacy Policy\nNew line should be preserved"
+  },
+  "personalizationInterruptionTitle": "ਆਓ <brand>ਡਾਕਟਰੀਨਾ</brand> ਨੂੰ ਤੁਹਾਡੇ ਲਈ ਵਿਅਕਤੀਗਤ ਕਰੀਏ",
+  "@personalizationInterruptionTitle": {
+    "description": "Headline prompting the user to start personalization with highlighted brand name"
+  },
+  "personalizationSectionLabel": "ਵੈਯਕਤੀਕਰਨ",
+  "@personalizationSectionLabel": {
+    "description": "Small section label indicating personalization flow"
+  },
+  "personalizationReasonTitle": "ਤੁਹਾਨੂੰ ਅੱਜ ਇੱਥੇ ਕੀ ਲਿਆਇਆ ਹੈ?",
+  "@personalizationReasonTitle": {
+    "description": "Question asking why the user opened the app"
+  },
+  "personalizationReasonSymptomsNow": "ਮੈਂ ਹੁਣ ਲੱਛਣਾਂ ਦਾ ਅਨੁਭਵ ਕਰ ਰਿਹਾ ਹਾਂ",
+  "@personalizationReasonSymptomsNow": {
+    "description": "Option indicating the user currently has symptoms"
+  },
+  "personalizationReasonUnderstandChange": "ਮੈਂ ਸਿਹਤ ਵਿੱਚ ਬਦਲਾਅ ਨੂੰ ਸਮਝਣਾ ਚਾਹੁੰਦਾ ਹਾਂ",
+  "@personalizationReasonUnderstandChange": {
+    "description": "Option indicating the user wants to understand a health change"
+  },
+  "personalizationReasonRuleOutSerious": "ਮੈਂ ਕੁਝ ਗੰਭੀਰ ਨੂੰ ਰੱਦ ਕਰਨਾ ਚਾਹੁੰਦਾ ਹਾਂ",
+  "@personalizationReasonRuleOutSerious": {
+    "description": "Option indicating the user wants to rule out serious issues"
+  },
+  "personalizationReasonMonitoring": "ਮੈਂ ਆਪਣੀ ਸਿਹਤ ਨੂੰ ਪ੍ਰੋਐਕਟਿਵ ਤਰੀਕੇ ਨਾਲ ਨਿਗਰਾਨੀ ਕਰ ਰਿਹਾ ਹਾਂ",
+  "@personalizationReasonMonitoring": {
+    "description": "Option indicating proactive health monitoring"
+  },
+  "continueBtn": "ਜਾਰੀ ਰੱਖੋ",
+  "@continueBtn": {
+    "description": "Primary button to proceed to next step"
+  },
+  "captionEmpathyText": "ਜਦੋਂ ਤੁਹਾਡੇ ਸਿਹਤ ਵਿੱਚ ਕੁਝ ਬਦਲਦਾ ਹੈ, ਤਾਂ ਇਹ ਜਾਣਨਾ ਸਭ ਤੋਂ ਮੁਸ਼ਕਲ ਹੁੰਦਾ ਹੈ ਕਿ ਕੀ ਮਹੱਤਵਪੂਰਨ ਹੈ।",
+  "@captionEmpathyText": {
+    "description": "Introductory empathy statement about health uncertainty"
+  },
+  "captionDifferentiatorText": "<em>ਡਾਕਟੋਰੀਨਾ ਲੱਛਣਾਂ ਦੇ ਪੈਟਰਨ ਅਤੇ ਸਮੇਂ 'ਤੇ ਧਿਆਨ ਕੇਂਦਰਿਤ ਕਰਦੀ ਹੈ</em> — ਉਹੀ ਸੰਕੇਤ ਜੋ ਡਾਕਟਰ ਪਹਿਲਾਂ ਦੇਖਦੇ ਹਨ.",
+  "@captionDifferentiatorText": {
+    "description": "Statement explaining Doctorina's analytical approach with emphasized phrase"
+  },
+  "genderTitle": "ਆਪਣਾ ਲਿੰਗ ਚੁਣੋ",
+  "@genderTitle": {
+    "description": "Question asking the user to select gender"
+  },
+  "genderSubtitle": "ਇਹ ਸਾਨੂੰ ਲੱਛਣਾਂ ਦੀ ਵਿਆਖਿਆ ਕਰਨ ਅਤੇ ਸਿਫਾਰਸ਼ਾਂ ਨੂੰ ਹੋਰ ਸਹੀ ਢੰਗ ਨਾਲ ਦੇਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ.",
+  "@genderSubtitle": {
+    "description": "Supporting text explaining why gender data is used"
+  },
+  "genderMale": "ਮਰਦ",
+  "@genderMale": {
+    "description": "Gender selection option male"
+  },
+  "genderFemale": "ਮਹਿਲਾ",
+  "@genderFemale": {
+    "description": "Gender selection option female"
+  },
+  "genderPreferNotSay": "ਕਹਿਣਾ ਨਹੀਂ ਚਾਹੁੰਦਾ",
+  "@genderPreferNotSay": {
+    "description": "Gender selection option prefer not to disclose"
+  },
+  "ageTitle": "ਤੁਹਾਡੀ ਉਮਰ ਕੀ ਹੈ?",
+  "@ageTitle": {
+    "description": "Question asking the user's age"
+  },
+  "ageSubtitle": "ਉਮਰ ਸਾਨੂੰ ਸਿਹਤ ਦੇ ਪੈਟਰਨਾਂ ਦਾ ਜ਼ਿਆਦਾ ਸਹੀ ਮੁਲਾਂਕਣ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ.",
+  "@ageSubtitle": {
+    "description": "Supporting explanation for age usage"
+  },
+  "socialProofLargeTitle": "<green>48k+ ਲੋਕਾਂ</green>\nਨੇ ਡਾਕਟਰਿਨਾ ਚੁਣਿਆ ਹੈ",
+  "@socialProofLargeTitle": {
+    "description": "Social proof headline with emphasized number\nNew line should be preserved"
+  },
+  "socialProofDisclaimer": "*ਡਾਕਟਰਿਨਾ ਉਪਭੋਗਤਾ ਆਧਾਰ ਅੰਕੜਿਆਂ ਦੇ ਆਧਾਰ 'ਤੇ",
+  "@socialProofDisclaimer": {
+    "description": "Small note describing data source"
+  },
+  "developedByDoctors": "ਵਿਕਸਿਤ ਕੀਤਾ ਗਿਆ\n<b>ਡਾਕਟਰਾਂ</b>",
+  "@developedByDoctors": {
+    "description": "Badge text indicating medical expertise\nNew line should be preserved"
+  },
+  "quizStepLabel1": "ਕਦਮ 1/6",
+  "@quizStepLabel1": {
+    "description": "Progress indicator showing current quiz step"
+  },
+  "quizHealthSituationTitle": "ਤੁਸੀਂ ਆਪਣੀ ਮੌਜੂਦਾ ਸਿਹਤ ਦੀ ਸਥਿਤੀ ਨੂੰ ਕਿਵੇਂ ਵਰਣਨ ਕਰੋਗੇ?",
+  "@quizHealthSituationTitle": {
+    "description": "Question about overall health situation"
+  },
+  "quizHealthHealthy": "ਮੈਂ ਆਮ ਤੌਰ 'ਤੇ ਸਿਹਤਮੰਦ ਮਹਿਸੂਸ ਕਰਦਾ ਹਾਂ",
+  "@quizHealthHealthy": {
+    "description": "Option indicating no major health concerns"
+  },
+  "quizHealthMinorConcerns": "ਮੇਰੇ ਕੋਲ ਚੱਲਦੀਆਂ ਛੋਟੀਆਂ ਚਿੰਤਾਵਾਂ ਹਨ",
+  "@quizHealthMinorConcerns": {
+    "description": "Option indicating minor ongoing issues"
+  },
+  "quizHealthKnownCondition": "ਮੈਂ ਜਾਣੀ ਪਛਾਣੀ ਬਿਮਾਰੀ ਦਾ ਪ੍ਰਬੰਧ ਕਰ ਰਿਹਾ ਹਾਂ",
+  "@quizHealthKnownCondition": {
+    "description": "Option indicating an existing diagnosed condition"
+  },
+  "quizHealthUnresolved": "ਮੈਂ ਕੁਝ ਅਣਸੁਝਿਆ ਦਾ ਸਾਹਮਣਾ ਕਰ ਰਿਹਾ ਹਾਂ",
+  "@quizHealthUnresolved": {
+    "description": "Option indicating unresolved issue"
+  },
+  "quizStepLabel2": "ਕਦਮ 2/6",
+  "@quizStepLabel2": {
+    "description": "Progress indicator showing second quiz step"
+  },
+  "quizDoctorVisitFrequencyTitle": "ਤੁਸੀਂ ਆਮ ਤੌਰ 'ਤੇ ਡਾਕਟਰ ਨੂੰ ਕਿੰਨੀ ਵਾਰੀ ਮਿਲਦੇ ਹੋ?",
+  "@quizDoctorVisitFrequencyTitle": {
+    "description": "Question about frequency of doctor visits"
+  },
+  "quizDoctorVisitRegular": "ਨਿਯਮਤ (ਜਾਂਚਾਂ / ਫਾਲੋ-ਅਪ)",
+  "@quizDoctorVisitRegular": {
+    "description": "Option indicating regular checkups"
+  },
+  "quizDoctorVisitOccasional": "ਕਦੇ-ਕਦੇ, ਜਦੋਂ ਕੁਝ ਗਲਤ ਹੁੰਦਾ ਹੈ",
+  "@quizDoctorVisitOccasional": {
+    "description": "Option indicating occasional visits"
+  },
+  "quizDoctorVisitRare": "ਬਹੁਤ ਹੀ ਕਮ, ਸਿਰਫ ਜਰੂਰਤ ਹੋਣ 'ਤੇ",
+  "@quizDoctorVisitRare": {
+    "description": "Option indicating rare visits"
+  },
+  "quizDoctorVisitAvoid": "ਡਾਕਟਰਾਂ ਕੋਲ ਜਾਣ ਤੋਂ ਬਚੋ",
+  "@quizDoctorVisitAvoid": {
+    "description": "Пользователь говорит, что не любит ходить к врачам и старается\n лишний раз не обращаться к доктору. Итоговая фраза должна быть\n понятной и отражать это поведение, например:\n«Вы не любите обращаться к врачам»"
+  },
+  "quizDoctorVisitNever": "ਮੈਂ ਕਦੇ ਵੀ ਡਾਕਟਰ ਨੂੰ ਨਹੀਂ ਮਿਲਿਆ",
+  "@quizDoctorVisitNever": {
+    "description": "Option indicating never visited"
+  },
+  "quizStepLabel3": "ਕਦਮ 3/6",
+  "@quizStepLabel3": {
+    "description": "Progress indicator showing third quiz step"
+  },
+  "quizBiggestChallengeTitle": "ਤੁਹਾਡੇ ਲਈ ਹੁਣ ਤੱਕ ਸਿਹਤ ਸੇਵਾਵਾਂ ਨਾਲ ਸਭ ਤੋਂ ਵੱਡੀ ਚੁਣੌਤੀ ਕੀ ਰਹੀ ਹੈ?",
+  "@quizBiggestChallengeTitle": {
+    "description": "Question about healthcare challenges"
+  },
+  "quizMultiSelectHint": "ਜਿੰਨਾ ਚਾਹੋ ਚੁਣੋ",
+  "@quizMultiSelectHint": {
+    "description": "Helper text indicating multiple selection allowed"
+  },
+  "quizChallengeLongWait": "ਲੰਬੇ ਸਮੇਂ ਦੀ ਉਡੀਕ ਲਈ ਨਿਯੁਕਤੀਆਂ",
+  "@quizChallengeLongWait": {
+    "description": "Option indicating long appointment wait times"
+  },
+  "quizChallengeRushedVisits": "ਦੌਰੇ ਤੇਜ਼ ਹਨ",
+  "@quizChallengeRushedVisits": {
+    "description": "Option indicating short or rushed visits"
+  },
+  "quizChallengeCost": "ਉੱਚ ਖਰਚ ਜਾਂ ਅਸਪਸ਼ਟ ਕੀਮਤ",
+  "@quizChallengeCost": {
+    "description": "Option indicating cost or pricing clarity issues"
+  },
+  "quizChallengeHardExplain": "ਸਭ ਕੁਝ ਸਾਫ਼ ਸਪਸ਼ਟ ਕਰਨ ਵਿੱਚ ਮੁਸ਼ਕਲ ਹੈ",
+  "@quizChallengeHardExplain": {
+    "description": "Option indicating difficulty explaining symptoms"
+  },
+  "quizChallengeConflictingAdvice": "ਵਿਰੋਧੀ ਰਾਏ ਜਾਂ ਸਲਾਹਾਂ",
+  "@quizChallengeConflictingAdvice": {
+    "description": "Option indicating conflicting medical opinions"
+  },
+  "quizChallengeNone": "ਕੋਈ ਵੱਡੀ ਸਮੱਸਿਆ ਨਹੀਂ",
+  "@quizChallengeNone": {
+    "description": "Option indicating no major issues"
+  },
+  "quizStepLabel4": "ਕਦਮ 4/6",
+  "@quizStepLabel4": {
+    "description": "Progress indicator showing fourth quiz step"
+  },
+  "quizConfidenceAfterAppointmentTitle": "ਮੁਲਾਕਾਤਾਂ ਤੋਂ ਬਾਅਦ, ਤੁਸੀਂ ਜੋ ਕੁਝ ਦੱਸਿਆ ਗਿਆ ਉਸ ਬਾਰੇ ਤੁਸੀਂ ਕਿੰਨਾ ਵਿਸ਼ਵਾਸੀ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?",
+  "@quizConfidenceAfterAppointmentTitle": {
+    "description": "Question about clarity after doctor appointments"
+  },
+  "quizConfidenceNoRightAnswer": "ਕੋਈ ਸਹੀ ਜਾਂ ਗਲਤ ਜਵਾਬ ਨਹੀਂ ਹੈ।",
+  "@quizConfidenceNoRightAnswer": {
+    "description": "Helper note clarifying subjective nature"
+  },
+  "quizConfidenceVeryClear": "ਬਹੁਤ ਸਪਸ਼ਟ ਹੈ ਕਿ ਕੀ ਹੋ ਰਿਹਾ ਹੈ",
+  "@quizConfidenceVeryClear": {
+    "description": "Option indicating full understanding"
+  },
+  "quizConfidenceSomewhatClear": "ਕੁਝ ਸਾਫ਼",
+  "@quizConfidenceSomewhatClear": {
+    "description": "Option indicating partial clarity"
+  },
+  "quizConfidenceStillUncertain": "ਅਜੇ ਵੀ ਅਣਨਿਸ਼ਚਿਤ",
+  "@quizConfidenceStillUncertain": {
+    "description": "Option indicating ongoing uncertainty"
+  },
+  "quizConfidenceMoreConfused": "ਪਿਛਲੇ ਨਾਲੋਂ ਵੱਧ ਗੁੰਝਲਦਾਰ",
+  "@quizConfidenceMoreConfused": {
+    "description": "Option indicating increased confusion"
+  },
+  "captionDiagnosisVsChange": "ਬਹੁਤ ਸਾਰੇ <green>ਲੋਕ ਨਿਧਾਰਨ ਦੇ ਬਾਅਦ ਪਰੇਸ਼ਾਨ ਨਹੀਂ ਹੁੰਦੇ</green> ਪਰ ਜਦੋਂ ਲੱਛਣ ਸਮੇਂ ਦੇ ਨਾਲ ਬਦਲਦੇ ਹਨ।",
+  "@captionDiagnosisVsChange": {
+    "description": "Образовательная подпись, подчеркивающая развитие симптомов.\n Подпись должна объяснять, что многие люди сталкиваются с трудностями\n не сразу после постановки диагноза, а когда симптомы меняются со временем."
+  },
+  "quizStepLabel5": "ਕਦਮ 5/6",
+  "@quizStepLabel5": {
+    "description": "Progress indicator showing fifth quiz step"
+  },
+  "quizConcernsAddressedTitle": "ਤੁਸੀਂ ਆਪਣੇ ਚਿੰਤਾਵਾਂ ਨੂੰ ਆਮ ਤੌਰ 'ਤੇ ਕਿੰਨਾ ਚੰਗਾ ਸਮਝਦੇ ਹੋ?",
+  "@quizConcernsAddressedTitle": {
+    "description": "Question about how well concerns are addressed"
+  },
+  "quizConcernsAddressedSubtitle": "ਤੁਹਾਡੇ ਵਿਅਕਤੀਗਤ ਭਾਵਨਾਵਾਂ ਦੇ ਆਧਾਰ 'ਤੇ",
+  "@quizConcernsAddressedSubtitle": {
+    "description": "Clarifies answers are subjective"
+  },
+  "quizConcernsVeryWell": "ਬਹੁਤ ਚੰਗਾ",
+  "@quizConcernsVeryWell": {
+    "description": "Option indicating strong satisfaction"
+  },
+  "quizConcernsFairlyWell": "ਕਾਫੀ ਚੰਗਾ",
+  "@quizConcernsFairlyWell": {
+    "description": "Option indicating moderate satisfaction"
+  },
+  "quizConcernsNotVeryWell": "ਬਹੁਤ ਚੰਗਾ ਨਹੀਂ",
+  "@quizConcernsNotVeryWell": {
+    "description": "Option indicating low satisfaction"
+  },
+  "quizConcernsVaries": "ਇਹ ਬਹੁਤ ਵੱਖਰਾ ਹੈ",
+  "@quizConcernsVaries": {
+    "description": "Option indicating inconsistent experience"
+  },
+  "quizStepLabel6": "ਕਦਮ 6/6",
+  "@quizStepLabel6": {
+    "description": "Progress indicator showing sixth quiz step"
+  },
+  "quizSelfResearchTitle": "ਡਾਕਟਰ ਨੂੰ ਦੇਖਣ ਤੋਂ ਪਹਿਲਾਂ, ਕੀ ਤੁਸੀਂ ਆਮ ਤੌਰ 'ਤੇ ਲੱਛਣਾਂ ਨੂੰ ਆਪਣੇ ਆਪ ਸਮਝਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੇ ਹੋ?",
+  "@quizSelfResearchTitle": {
+    "description": "Question about pre-visit self-research behavior"
+  },
+  "quizSelfResearchYes": "ਹਾਂ, ਮੈਂ ਖੋਜ ਕਰਦਾ ਹਾਂ ਅਤੇ ਚੀਜ਼ਾਂ ਨੂੰ ਟ੍ਰੈਕ ਕਰਦਾ ਹਾਂ",
+  "@quizSelfResearchYes": {
+    "description": "Option indicating proactive research"
+  },
+  "quizSelfResearchSometimes": "ਕਦੇ-ਕਦੇ",
+  "@quizSelfResearchSometimes": {
+    "description": "Option indicating occasional research"
+  },
+  "quizSelfResearchRarely": "ਕਦੇ-ਕਦੇ",
+  "@quizSelfResearchRarely": {
+    "description": "Option indicating rare research"
+  },
+  "quizSelfResearchNo": "ਨਹੀਂ, ਮੈਂ ਪੂਰੀ ਤਰ੍ਹਾਂ ਪੇਸ਼ੇਵਰਾਂ 'ਤੇ ਨਿਰਭਰ ਹਾਂ",
+  "@quizSelfResearchNo": {
+    "description": "Option indicating full reliance on professionals"
+  },
+  "captionAvailabilityTitle": "ਸਿਹਤ ਦੇ ਸਵਾਲ <green>ਦਫਤਰ ਦੇ ਸਮਿਆਂ ਦਾ ਪਾਲਣ ਨਹੀਂ ਕਰਦੇ</green> .",
+  "@captionAvailabilityTitle": {
+    "description": "Statement about healthcare accessibility with highlighted phrase"
+  },
+  "captionAvailabilitySupport": "Doctorina <green>24/7 ਉਪਲਬਧ ਹੈ.</green>",
+  "@captionAvailabilitySupport": {
+    "description": "Statement about continuous availability"
+  },
+  "captionAvailabilityDescription": "ਸਪਸ਼ਟਤਾ ਅਗਲੇ ਨਿਯੁਕਤੀ ਲਈ ਉਡੀਕ ਨਹੀਂ ਕਰਨੀ ਚਾਹੀਦੀ.",
+  "@captionAvailabilityDescription": {
+    "description": "Supporting line reinforcing immediate clarity"
+  },
+  "notificationTitle": "ਕੀ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਅਸੀਂ ਤੁਹਾਡੇ ਸਿਹਤ ਲੱਛਣਾਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖੀਏ?",
+  "@notificationTitle": {
+    "description": "Question asking about permission for notifications"
+  },
+  "notificationDescription": "ਏ.ਆਈ. ਤੁਹਾਡੇ ਲੱਛਣਾਂ ਦੀ ਨਿਗਰਾਨੀ ਕਰ ਸਕਦਾ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਚੇਤਾਵਨੀ ਦੇ ਸਕਦਾ ਹੈ ਜੇ ਕੁਝ ਧਿਆਨ ਦੀ ਲੋੜ ਹੋਵੇ",
+  "@notificationDescription": {
+    "description": "Explanation about why better to enable notification"
+  },
+  "notificationYes": "ਹਾਂ — ਮੇਰੀ ਸਿਹਤ 'ਤੇ ਨਜ਼ਰ ਰੱਖੋ",
+  "@notificationYes": {
+    "description": "Option indicating yes to all notifications"
+  },
+  "notificationOnlyImportant": "ਹਾਂ — ਸਿਰਫ ਜੇ ਕੁਝ ਮਹੱਤਵਪੂਰਨ ਬਦਲਦਾ ਹੈ",
+  "@notificationOnlyImportant": {
+    "description": "Option indicating yes only for important notification"
+  },
+  "notificationNo": "ਹਜੇ ਯਕੀਨ ਨਹੀਂ",
+  "@notificationNo": {
+    "description": "Option indicating user don't want to enable notification now"
+  },
+  "referralSourceTitle": "ਕੀ ਤੁਸੀਂ ਡਾਕਟਰ ਤੋਂ ਡਾਕਟੋਰੀਨਾ ਬਾਰੇ ਸੁਣਿਆ ਹੈ?",
+  "@referralSourceTitle": {
+    "description": "Question asking whether a doctor recommended Doctorina"
+  },
+  "referralSourceYes": "ਹਾਂ",
+  "@referralSourceYes": {
+    "description": "Yes option"
+  },
+  "referralSourceNo": "ਨਹੀਂ",
+  "@referralSourceNo": {
+    "description": "No option"
+  },
+  "processingSectionLabel": "ਤੁਹਾਡੇ ਨਤੀਜਿਆਂ ਦੀ ਵਿਸ਼ਲੇਸ਼ਣਾ ਕਰ ਰਹੇ ਹਾਂ",
+  "@processingSectionLabel": {
+    "description": "Small label indicating analysis phase"
+  },
+  "processingTitle": "ਤੁਹਾਡੇ ਅਨੁਭਵ ਨੂੰ ਵਿਅਕਤੀਗਤ ਕਰਨਾ",
+  "@processingTitle": {
+    "description": "Title on the results processing screen"
+  },
+  "processingPercentValue": "{percent}%",
+  "@processingPercentValue": {
+    "description": "Progress percentage value during processing",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "99",
+        "description": "Current processing percentage"
+      }
+    }
+  },
+  "paywallHeadline": "ਅਨੰਤ ਅਨੁਭਵ <brand>Doctorina Pro</brand>",
+  "@paywallHeadline": {
+    "description": "Main paywall headline with highlighted product tier"
+  },
+  "paywallAssistantTagline": "ਤੁਹਾਡਾ ਸਹਾਇਕ ਜੋ ਹਮੇਸ਼ਾਂ ਨੇੜੇ ਹੈ",
+  "@paywallAssistantTagline": {
+    "description": "Supporting tagline under logo"
+  },
+  "paywallEnableTrialToggle": "ਕੀ ਤੁਸੀਂ ਅਜੇ ਵੀ ਯਕੀਨੀ ਨਹੀਂ ਹੋ? ਮੁਫਤ ਟ੍ਰਾਇਲ ਨੂੰ ਚਾਲੂ ਕਰੋ.",
+  "@paywallEnableTrialToggle": {
+    "description": "Toggle label offering free trial"
+  },
+  "paywallPlanYear": "ਸਾਲਾਨਾ",
+  "@paywallPlanYear": {
+    "description": "Yearly subscription plan title"
+  },
+  "paywallPlanMonthly": "ਮਾਸਿਕ",
+  "@paywallPlanMonthly": {
+    "description": "Monthly subscription plan title"
+  },
+  "paywallPlanWeek": "ਹਫਤਾਵਾਰੀ",
+  "@paywallPlanWeek": {
+    "description": "Weekly subscription plan title"
+  },
+  "paywallPlanDaily": "ਦਿਨਾਨੁਸਾਰ",
+  "@paywallPlanDaily": {
+    "description": "Daily subscription plan title"
+  },
+  "paywallPlanYearPrice": "₹2,999 (ਕੇਵਲ ₹83.34/ਹਫ਼ਤਾ)",
+  "@paywallPlanYearPrice": {
+    "description": "Yearly subscription price with weekly equivalent"
+  },
+  "paywallPlanWeekPrice": "₹299",
+  "@paywallPlanWeekPrice": {
+    "description": "Weekly subscription price"
+  },
+  "paywallSaveBadge": "58% ਬਚਾਓ",
+  "@paywallSaveBadge": {
+    "description": "Discount badge label"
+  },
+  "paywallContinueBtn": "ਜਾਰੀ ਰੱਖੋ",
+  "@paywallContinueBtn": {
+    "description": "Continue purchase without trial"
+  },
+  "paywallStartTrialBtn": "ਮੁਫਤ ਟ੍ਰਾਇਲ ਸ਼ੁਰੂ ਕਰੋ",
+  "@paywallStartTrialBtn": {
+    "description": "Start free trial CTA"
+  },
+  "paywallSubscriptionDisclaimer": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਆਟੋ-ਨਵੀਨੀਕਰਨਯੋਗ ਹੈ। ਕਿਸੇ ਵੀ ਸਮੇਂ ਰੱਦ ਕਰ ਸਕਦੇ ਹੋ",
+  "@paywallSubscriptionDisclaimer": {
+    "description": "Legal renewal disclaimer"
+  },
+  "paywallTermsPrivacy": "<termsOfService>ਸੇਵਾ ਦੀਆਂ ਸ਼ਰਤਾਂ</termsOfService> | <privacyPolicy>ਗੋਪਨੀਯਤਾ ਨੀਤੀ</privacyPolicy>",
+  "@paywallTermsPrivacy": {
+    "description": "Links to legal documents"
+  },
+  "paywallPerWeek": "ਹਫਤਾ",
+  "@paywallPerWeek": {
+    "description": "Week, in context per week, e.g. \"$3,99/week\""
+  },
+  "processingLabel": "ਤੁਹਾਡੇ ਨਤੀਜਿਆਂ ਦੀ ਵਿਸ਼ਲੇਸ਼ਣਾ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ",
+  "@processingLabel": {
+    "description": "Section label on the results processing screen"
+  },
+  "paywallCloseTooltip": "ਆਰੰਭ ਬੰਦ ਕਰੋ",
+  "@paywallCloseTooltip": {
+    "description": "Tooltip for the paywall close button"
+  },
+  "paywallRestoreTooltip": "ਖਰੀਦਾਂ ਨੂੰ ਦੁਬਾਰਾ ਸਥਾਪਿਤ ਕਰੋ",
+  "@paywallRestoreTooltip": {
+    "description": "Tooltip for the restore purchases button"
+  },
+  "paywallRestoreBtn": "ਬਹਾਲ ਕਰੋ",
+  "@paywallRestoreBtn": {
+    "description": "Restore purchases button text"
+  },
+  "paywallRestoreNoneFound": "ਕੋਈ ਸਰਗਰਮ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ ਮਿਲਿਆ ਜੋ ਮੁੜ ਸਥਾਪਿਤ ਕੀਤਾ ਜਾ ਸਕੇ.",
+  "@paywallRestoreNoneFound": {
+    "description": "Message when no active subscription found to restore"
+  },
+  "paywallRestoreError": "ਖਰੀਦਾਂ ਨੂੰ ਦੁਬਾਰਾ ਸਥਾਪਿਤ ਕਰਨ ਵਿੱਚ ਅਸਫਲ. ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.",
+  "@paywallRestoreError": {
+    "description": "Error message when restore purchases fails"
+  },
+  "paywallPurchaseError": "ਖਰੀਦਾਰੀ ਨੂੰ ਪੂਰਾ ਕਰਨ ਵਿੱਚ ਅਸਫਲ. ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.",
+  "@paywallPurchaseError": {
+    "description": "Error message when subscription purchase fails"
+  },
+  "paywallTrialStep1Title": "ਅੱਜ: ਤੁਰੰਤ ਪਹੁੰਚ ਪ੍ਰਾਪਤ ਕਰੋ",
+  "@paywallTrialStep1Title": {
+    "description": "Заголовок 1-го шага в таймлайне триала на пейволле v2 (доступ открывается сегодня)"
+  },
+  "paywallTrialStep1Description": "ਪੂਰਨ ਪਹੁੰਚ ਖੋਲ੍ਹੋ, ਕਿਸੇ ਵੀ ਸਮੇਂ AI ਸਿਹਤ ਦੇ ਜਵਾਬ ਪ੍ਰਾਪਤ ਕਰੋ.",
+  "@paywallTrialStep1Description": {
+    "description": "Описание 1-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep2Title": "ਦਿਨ 2: ਟ੍ਰਾਇਲ ਯਾਦ ਦਿਵਾਉਣਾ",
+  "@paywallTrialStep2Title": {
+    "description": "Заголовок 2-го шага таймлайна триала (напоминание о завершении триала)"
+  },
+  "paywallTrialStep2Description": "ਅਸੀਂ ਤੁਹਾਨੂੰ ਯਾਦ ਦਿਵਾਂਗੇ ਕਿ ਤੁਹਾਡਾ ਟ੍ਰਾਇਲ ਖਤਮ ਹੋਣ ਵਾਲਾ ਹੈ",
+  "@paywallTrialStep2Description": {
+    "description": "Описание 2-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep3Title": "ਦਿਨ 3: ਨਵੀਨੀਕਰਨ",
+  "@paywallTrialStep3Title": {
+    "description": "Заголовок 3-го шага таймлайна триала (списание после окончания триала)"
+  },
+  "paywallTrialStep3Description": "ਤੁਹਾਨੂੰ {date} ਨੂੰ ਚਾਰਜ ਕੀਤਾ ਜਾਵੇਗਾ, ਕਿਸੇ ਵੀ ਸਮੇਂ ਰੱਦ ਕਰੋ.",
+  "@paywallTrialStep3Description": {
+    "description": "Описание 3-го шага таймлайна с датой ближайшего списания",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "April 30, 2026"
+      }
+    }
+  },
+  "paywallBenefitsHeader": "ਕੀ ਸ਼ਾਮਲ ਹੈ",
+  "@paywallBenefitsHeader": {
+    "description": "Заголовок таблицы с фичами Free/Pro на пейволле v2"
+  },
+  "paywallBenefitsBadgeFree": "FREE",
+  "@paywallBenefitsBadgeFree": {
+    "description": "Бейдж колонки \"Free\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitsBadgePro": "PRO",
+  "@paywallBenefitsBadgePro": {
+    "description": "Бейдж колонки \"Pro\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitPrivateSecure": "ਨਿੱਜੀ ਅਤੇ ਸੁਰੱਖਿਅਤ",
+  "@paywallBenefitPrivateSecure": {
+    "description": "Пункт списка фич на пейволле v2 — приватность и безопасность"
+  },
+  "paywallBenefitAiAssistant": "ਏ.ਆਈ. ਸਹਾਇਕ, 24/7",
+  "@paywallBenefitAiAssistant": {
+    "description": "Пункт списка фич на пейволле v2 — AI-ассистент 24/7"
+  },
+  "paywallBenefitInstantAnswers": "ਤੁਰੰਤ ਸਿਹਤ ਦੇ ਜਵਾਬ",
+  "@paywallBenefitInstantAnswers": {
+    "description": "Пункт списка фич на пейволле v2 — мгновенные ответы"
+  },
+  "paywallBenefitScienceInsights": "ਸਾਫ, ਵਿਗਿਆਨ ਅਧਾਰਿਤ ਜਾਣਕਾਰੀ",
+  "@paywallBenefitScienceInsights": {
+    "description": "Пункт списка фич на пейволле v2 — научно обоснованные инсайты"
+  },
+  "paywallBenefitAutoSummaries": "ਆਟੋ ਗੱਲਬਾਤ ਸੰਖੇਪ",
+  "@paywallBenefitAutoSummaries": {
+    "description": "Пункт списка фич на пейволле v2 — автоматические резюме консультаций"
+  },
+  "paywallBenefitAnyLanguage": "ਕੋਈ ਭਾਸ਼ਾ, ਕਿਸੇ ਵੀ ਸਮੇਂ",
+  "@paywallBenefitAnyLanguage": {
+    "description": "Пункт списка фич на пейволле v2 — поддержка любого языка"
+  },
+  "paywallPriceUnitPerWeek": "ਹਫਤੇ ਵਿੱਚ",
+  "@paywallPriceUnitPerWeek": {
+    "description": "Подпись \"per week\" под ценой подписки в плитке выбора плана на пейволле v2"
+  },
+  "paywallOfferTitle": "ਇੱਕ ਵਾਰੀ ਦਾ ਆਫਰ",
+  "@paywallOfferTitle": {
+    "description": "Заголовок шита одноразового оффера после онбординга. Для языков русского, белорусского, украинского - слово \"одноразовый\" применимо к поссуде, а не к предложению. One time offer лучше перевести как \"Разовое предложение\""
+  },
+  "paywallOfferDiscountPercent": "{percent}% ਛੂਟ",
+  "@paywallOfferDiscountPercent": {
+    "description": "Процент скидки на белой карточке шита одноразового оффера",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "40"
+      }
+    }
+  },
+  "paywallOfferForeverBadge": "ਸਦੀਵੀ",
+  "@paywallOfferForeverBadge": {
+    "description": "Подпись \"FOREVER\" под процентом скидки.  Для языков русского, белорусского, украинского - слово FOREVER лучше перевести  как \"НАВСЕГДА\" (не так пафосно , как \"навечно\")"
+  },
+  "paywallOfferDisclaimer": "ਜਦੋਂ ਤੁਸੀਂ ਆਪਣੀ ਇੱਕ ਵਾਰੀ ਦੀ ਪੇਸ਼ਕਸ਼ ਬੰਦ ਕਰਦੇ ਹੋ, ਇਹ ਚਲੀ ਜਾਂਦੀ ਹੈ!",
+  "@paywallOfferDisclaimer": {
+    "description": "Дисклеймер о том, что предложение исчезнет после закрытия шита. лучше на русский/белорусский и украинский переводить по смыслу так: \"У вас только один шанс воспользоваться этим предложением\""
+  },
+  "paywallOfferPricePerMonth": "{price}/ਮਹੀਨਾ",
+  "@paywallOfferPricePerMonth": {
+    "description": "Цена за месяц для годовой подписки на карточке одноразового оффера",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "$1.99"
+      }
+    }
+  },
+  "paywallOfferLowestPriceBadge": "ਸਭ ਤੋਂ ਘੱਟ ਕੀਮਤ ਕਦੇ",
+  "@paywallOfferLowestPriceBadge": {
+    "description": "Бейдж \"LOWEST PRICE EVER\" над карточкой годовой подписки. лучше на русский/белорусский и украинский переводить по смыслу так: \"САМАЯ НИЗКАЯ ЦЕНА\""
+  },
+  "paywallOfferCancelAnytime": "ਕਦੇ ਵੀ ਰੱਦ ਕਰੋ",
+  "@paywallOfferCancelAnytime": {
+    "description": "Подпись \"Cancel anytime\" между карточкой подписки и CTA. \"Отмена в любой момент\" - хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferClaimButton": "ਆਪਣਾ ਓਫਰ ਦਾਅਵਾ ਕਰੋ",
+  "@paywallOfferClaimButton": {
+    "description": "CTA-кнопка для активации одноразового оффера. \"Получить предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferAutoRenewable": "ਆਟੋ-ਨਵੀਨੀਕਰਨ ਦੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ",
+  "@paywallOfferAutoRenewable": {
+    "description": "Футер шита одноразового оффера — текст про автопродление подписки"
+  },
+  "paywallGiftBoxTitle": "ਖਾਸ ਤੋਹਫਾ ਅੰਦਰ",
+  "@paywallGiftBoxTitle": {
+    "description": "Заголовок шита подарка перед одноразовым оффером"
+  },
+  "paywallGiftBoxSubtitle": "ਇੱਕ ਟੈਪ ਨਾਲ ਆਪਣਾ ਖਾਸ ਆਫਰ ਖੋਲ੍ਹੋ",
+  "@paywallGiftBoxSubtitle": {
+    "description": "Подзаголовок шита подарка с приглашением открыть оффер. \"Нажмите, чтобы открыть специальное предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallGiftBoxOpenButton": "ਹੁਣ ਖੋਲ੍ਹੋ",
+  "@paywallGiftBoxOpenButton": {
+    "description": "CTA-кнопка для открытия шита подарка. \"Открыть\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallRetryLoadPricesError": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਵਿਕਲਪਾਂ ਨੂੰ ਲੋਡ ਕਰਨ ਵਿੱਚ ਅਸਫਲ। ਕਿਰਪਾ ਕਰਕੇ ਬਾਅਦ ਵਿੱਚ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.",
+  "@paywallRetryLoadPricesError": {
+    "description": "Тост-ошибка при неудачной повторной загрузке цен подписок на пейволле"
+  },
+  "paywallPricesUnavailableTitle": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਕੀਮਤਾਂ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕੀਆਂ",
+  "@paywallPricesUnavailableTitle": {
+    "description": "Заголовок фолбэка на пейволле, когда RevenueCat не отдал цены подписок"
+  },
+  "paywallPricesUnavailableMessage": "ਆਪਣੀ ਜੁੜਾਈ ਦੀ ਜਾਂਚ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ.",
+  "@paywallPricesUnavailableMessage": {
+    "description": "Подзаголовок фолбэка на пейволле с просьбой проверить соединение и повторить"
+  },
+  "paywallPricesUnavailableRetryButton": "ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "@paywallPricesUnavailableRetryButton": {
+    "description": "Текст кнопки повторной загрузки цен в фолбэке пейволла"
+  },
+  "skipOnboardingButton": "Skip",
+  "@skipOnboardingButton": {
+    "description": "Кнопка для пропуска онбординга, должна быть записана емко и кратко. Например: \"Пр-ть\""
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "@@locale": "uz",
+  "error": "Xatolik yuz berdi",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Kutilmagan xato yuz berdi",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Xato hisobot muvaffaqiyatli yuborildi.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

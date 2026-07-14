@@ -1,0 +1,129 @@
+{
+  "@@locale": "ta",
+  "lang": "நாகர்",
+  "@lang": {},
+  "langEn": "Tamil",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "இப்போது புதுப்பிக்கவும்",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "இன்னும் பிறகு",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "புதுப்பிப்பு கிடைக்கிறது",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "புதுப்பிப்பு தேவை",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "புதிய பதிப்பு (v{version}) செயலியில் கிடைக்கிறது. சிறந்த அனுபவத்திற்காக தயவுசெய்து புதுப்பிக்கவும்",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "தொடர, தயவுசெய்து செயலியை புதுப்பிக்கவும். இந்த புதுப்பிப்பு முக்கியமான திருத்தங்கள் மற்றும் மேம்படுத்தல்களை உள்ளடக்கியது.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "பதிவிறக்கு",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "நீங்கள் ஏற்கனவே Doctorina கணக்கு வைத்திருந்தால் உள்நுழைக, இல்லையெனில் தொடங்க பதிவு செய்யவும்.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "உள்நுழைய",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "பதிவு செய்யவும்",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "விருந்தினராக தொடர",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "உள்நுழைய",
+  "@titleLogin": {},
+  "titleLogout": "வெளியேறு",
+  "@titleLogout": {},
+  "titleSignIn": "உள்நுழைய",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "உரையாடல்",
+  "@titleDialog": {},
+  "titleChat": "உரையாடல்",
+  "@titleChat": {},
+  "titleSettings": "கணக்கு அமைப்புகள்",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "சேதவியல் வரலாறு",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "கட்டணம்",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "சந்தாவை நிர்வகிக்க",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "மாதாந்திர சந்தா",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "தொடக்கம்",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "மீண்டும் வரவேற்கிறேன்",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "சுகாதார பதிவுகள் சுயவிவரங்கள்",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "சுயவிவரங்கள் அறிவிப்பு",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "ஆரோக்கிய பதிவுகள்",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "முழு பதிவுகள்",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "ஆவணங்கள்",
+  "@titleDocuments": {},
+  "titleConsultations": "கூட்டங்கள்",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "பணம் செலுத்துதல்",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "நீக்குகிறீர்களா? எதற்காக என்பதை எங்களுக்கு சொல்லுங்கள்!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "புதிய சுகாதார உரையாடலை தொடங்கு",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "ஒரு யோசனையைப் பகிரவும் அல்லது ஒரு பிரச்சினையைப் புகாரளிக்கவும்",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Doctorina எவ்வாறு மேம்படுத்தலாம் என்பதை எங்களுக்கு சொல்லுங்கள்",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

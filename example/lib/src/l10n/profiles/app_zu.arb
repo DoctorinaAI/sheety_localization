@@ -1,0 +1,425 @@
+{
+  "@@locale": "zu",
+  "chatDrawerTitle": "Irekhodi Zempilo",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "OKUSHAYAYO",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Dala irekhodi yakho yezempilo",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Ekupheleni kokubonisana kwakho, engeza iphrofayela yakho.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Engeza emaphrofini",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Qala ukuxhumana nomunye umuntu ukuze akhe iphrofayela yakhe.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Bhalisela ukuze udale irekhodi yakho yezempilo",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Phinda",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Ukwenza kube nephutha ukususa iphrofayela",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Ukuphuma kwephrofayela akuphumelelanga",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Buka iRekhodi Ephelele",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Yabelana",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Susa",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Iminyaka",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} unyaka} other{{value} iminyaka}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Isisindo",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Ukuphakama",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Izifo",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Okhula",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Imithi",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Izinsiza",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Izinkulumo",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Amadokhumenti",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Susa irekhodi yezempilo?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Lokhu kuzokhipha idatha yakho yezempilo ngokuqhubekayo futhi akukwazi ukubuyiselwa. Uzolahlekelwa umongo esiwusebenzisa ukukuhola.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Khansela",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Susa",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Ukususa irekhodi yakho yezempilo...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Ukwenza kube nephutha ukususa iphrofayela",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Irekhodi yezempilo isuswe",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Ungakwazi ukudala entsha nganoma yisiphi isikhathi ngokukhuluma nomsizi.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Buyela ku-Chat",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Ukuhlela",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Uphrofayili bokhwejwe",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Izinguquko zigciniwe",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Ulwazi lwakho luphumelele ukuvuselelwa.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Buyela kuprofayela",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Ukwenza kube nephutha ukuvuselela idatha yephrofayela",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Uphumelele izinguquko?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Uwenze ezinye izinguquko kuphrofayela lwakho. Gcina ngaphambi kokuhamba, noma uphume.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Qhubeka uhlela",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Phuma",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Hlela",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Engeza irekhodi",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Sesha",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Ayikho imiphumela",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Landa",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Yabelana",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Susa",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Ayikho imibhalo etholakale",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Ufunani ukususa lo mbhalo?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Le-fayela lezozokhuluma kuzokhishwa ngokuphelele",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Khansela",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Susa",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Ezinye izenzo",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Sesha",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Awekho amaphrofayela atholakele",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Buka okwengeziwe",
+  "@profilesViewMore": {},
+  "profilesMore": "Okwengeza",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "IDoctorina manje remembers impilo yakho",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Izinkulumo zakho manje zakha futhi zihlaziya iRekhodi leMpilo yakho ngokuzenzakalelayo.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Irekhodi yakho yokwelashwa, imithetho yakho",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Bheka, hlela, noma ungeze izimpawu, imishanguzo, umlando, noma imibhalo nganoma yisiphi isikhathi.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Care for your whole family",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Dala irekhodi yeMpilo yabathandiwe, izingane zakho, abazali, noma umlingani wakho.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Usebenzisa ukugcina iHealth Record yakho?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Ngemuva kokubonisana, cindezela “Engeza iphrofayela” ukuze uyigcine.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Okulandelayo",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Qala ukuxhumana",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Maybe later",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Vala",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Irekhodi Yezempilo",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Irekhodi Yezempilo — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...okuningi",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...okuncane",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Engeza iphrofayili entsha",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Dala iphrofayili ukuze ugcine imininingwane yalolu xhumano.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Ungakuhlola noma kunini ku-Health Records yakho",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Uma unemibuzo eyengeziwe ngale nto noma nganoma yini ehlobene nayo, uzizwe ukhululekile ukuqhubeka ukhuluma nami. Ngilapha ukuze ngikusize",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Ulwazi Jikelele",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Igama",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Igama lokuqala",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Isibongo",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Ubulili",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Sicela ukhethe",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Owesilisa",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Owesifazane",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Okunye",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Usuku lokuzalwa",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Ubudala",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "e.g. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Inombolo yocingo",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "Imeyili",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Indawo",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "isb. Idolobha, Izwe",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Umzimba & Ukudla",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Ubude",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "e.g. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Isisindo",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "e.g. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Umjikelezo Wokuya Esikhathini",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "e.g. Okuvamile, Okungavamile",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Imikhawulo Yokudla",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Sicela ukhethe",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Sazise ukuthi udla ini kanye nezithiyo onazo",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Akukho",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Odla imifino",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Vegan",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Ayikho gluten",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Inkomba Yesisindo Somzimba (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "isb. 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Iphrofayili Yezempilo",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Izifo ezihlala isikhathi eside",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "isb. Uhlobo 2 lweDiabetes",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Sicela uhluze zonke izifo ezinzima futhi ufake isikhathi sokuthi zatholakala nini kanye nanoma yiziphi izinkinga.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Izifo Zangaphambilini",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "isb. Ukhuhlwa okujwayelekile",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Sicela uhluze izifo ezinzima obekade unazo esikhathini esedlulelayo, noma usuphile.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Umlando Wokuhlinzwa",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "e.g. Appendectomy",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Sicela uhluze zonke izinqubo zokuhlinzwa futhi ufake unyaka kanye nokuthi kube khona izinkinga.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Imithi Esetshenziswa Ngezikhathi Ezithile",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "isb. Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Sicela uhluze imishanguzo oyithathayo ngezikhathi ezithile (isibonelo: imishanguzo yokwehlisa ubuhlungu, imishanguzo yokwelapha izifo zokuhlunguza), kuhlanganise nomthamo kanye nesizathu sokusetshenziswa.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Imithi Ejwayelekile",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "isb. Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Sicela uhluze zonke izidakamizwa ozithathayo njalo, kuhlanganise negama, umthamo, ukuthi uthatha kangaki ngosuku, nokuthi iyini isimo esiyinhloko.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Ukuzwela",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "isb. Penicillin – kubangela umkhuhlane",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Sicela uhluze zonke izifo zokuhlasela (imithi, ukudla, imvelo), futhi uchaze ukuthi yisiphi isenzo osithola (isibonelo: umkhuhlane, ukuvuvukala, izinkinga zokuphefumula).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Izimo Ezikhethekile",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "ngokwesibonelo Ukukhulelwa, Ukukhubazeka",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Uma unazo izimo ezibalulekile zempilo okufanele zaziwe ngodokotela (isibonelo: ukukhulelwa, amadivayisi afakwe, ukungasebenzi kahle, ukwelashwa kwe-anticoagulation), sicela uchaze lezi zimo. Uma ungenazo, ungashiya lokhu kungcolile.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Umlando womndeni",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "e.g. Isifo senhliziyo, Umdlavuza",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Sicela uchaze ngempilo ebalulekile emndenini wakho (isibonelo: ushukela, ukucindezeleka, isifo senhliziyo, umdlavuza, izifo ezithathelwana) futhi uchaze ukuthi ubani emndenini onale msebenzi.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Izici Zenhlalo Nezindlela Zokuphila",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "isb. Ukubhema, Ukusetshenziswa Kotshwala",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Sicela uchaze ngezici zokuphila ezingathinta impilo yakho, ezifana nokubhema, utshwala, imisebenzi yomzimba, ukudla, ukulala, kanye nomsebenzi.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Amadivayisi Wezokwelapha",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "e.g. Pacemaker, Ithuluzi lokuzwa, Iphampu ye-insulini",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Sicela uhluze noma yiziphi izinsiza zezokwelapha ozisebenzisayo noma ozifakile, njengezikhwama zokuphila, amapompo e-insulin, izinsiza zokuzwa, ama-prosthetics, noma ezinye izinsiza zokweseka noma zokubheka. Faka imininingwane efanele uma ikhona.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Udla zombili",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Ukudla Okusheshayo",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Udla inhlanzi",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Ingenalo i-lactose",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Idayethi enesodium ephansi",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Ukudla okunoshukela ophansi",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Ukudla kwenhliziyo",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Uhlelo lokudla lwezitho zomzimba",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Okunye",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

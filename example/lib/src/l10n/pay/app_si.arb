@@ -1,0 +1,227 @@
+{
+  "@@locale": "si",
+  "exampleButton": "බොත්තම උදාහරණය",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "ඔව්, සියල්ල හොඳයි!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "සෑම දායකත්වයක්ම සුවය ලබා දෙයි!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "ඔබගේ දායකත්වය අනවශ්‍යයින්ට නිදහස් උපදෙස් ලබා දීමට මූල්‍ය සහය වශයෙන් උපකාරී වේ.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "ඔබට හොඳින් හැඟෙන පරිදි ගෙවන්න,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "හෝ ඩොක්ටරිනාව නොමිලේ භාවිතා කරමින් සිටින්න, ලබා දීමට තෝරා ගත් අය thanks.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "එක් වරක්",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "මාසික",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "මාසික දායකත්ව මුදල තෝරන්න",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "ඔබ මාසික සැලැස්මකට සාමාජිකත්වය ලබා ගැනීමට යන්නෙහි.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "ඔබ {amount}/මාසිකය සඳහා මාසික සැලැස්මකට සම්බන්ධ වෙමින් සිටී.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "ගෙවීම් ඔබේ ගිණුමට මිලදී ගැනීමේ තහවුරු කිරීමේදී අය කරනු ලැබේ. සාමාජිකත්වය සෑම මාසයකම ස්වයංක්‍රීයව නැවත නවීකරණය වේ, වර්තමාන කාලය අවසන් වීමට අවම වශයෙන් පැය 24 කින් පෙර ස්වයංක්‍රීය නැවත නවීකරණය අක්‍රිය කර නොමැතිනම්. ඔබට ඔබේ ගිණුම් සැකසුම් තුළ ඕනෑම වේලාවක ඔබේ සාමාජිකත්වය කළමනාකරණය කිරීමට හෝ අවලංගු කිරීමට හැක. ඉදිරියට යන විට, ඔබ අපගේ {termsOfService} සහ {privacyPolicy} සමඟ එකඟ වෙයි.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "එක්වර දායකත්ව මුදල තෝරන්න",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "බොහෝ මිනිසුන් $7–$15 දෙනවා",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "මුදල් තෝරන්න",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "ගෙවීම් සැකසීම",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "එකවර ගෙවීමක් සකස් කරමින් {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "{amount} මාසික ගෙවීමක් සැකසීම",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "ස්තූතියි!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "දැන් තවත් බොහෝ දෙනෙකුට නොමිලේ උපදෙස් ලැබෙනු ඇත - ඔබගේ සහය වටිනාකමක් වේ.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "ඔබ දායක විය:",
+  "@youContributedLabel": {},
+  "perMonth": "/ මාසය",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "ප්‍රධාන තිරයට ආපසු යන්න",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "සේවා කොන්දේසි",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "රහස්‍යතා ප්‍රතිපත්තිය",
+  "@privacyPolicyLabel": {},
+  "donateButton": "දෙනුම් කරන්න",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "සක්‍රීය",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "අවලංගු කරන ලදී",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "අත්හිටුවා ඇත",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "පැමිණිල්ලක්",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "නිර්මාණය කරන ලදී",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "කාලය අවසන්",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "අදහස් නැත",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina දායකයා",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "නවීකරණය",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "අභෝෂණය කරන්න",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "ඔබට විශ්වාසද?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "ඔබගේ මාසික සහයෝගය ඩොක්ටර්නාව එයට යටත් වන, නමුත් ගෙවීමට නොහැකි පුද්ගලයන් සඳහා නොමිලේ තබා ගන්නා බවයි. ඔබගේ සාමාජිකත්වය මාසිකව අවම වශයෙන් 10 නොමිලේ උපදේශන සඳහා අරමුදල් සපයයි. ඔබ පිටවන්නේ නම්, අඩු රෝගීන්ට අවශ්‍ය ආධාරය ලැබෙන්නේ නැත.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "අභිජනනය තබා ගන්න",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "අවශ්‍ය නම් අවලංගු කරන්න",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "ඔබගේ මාසික සහය සාර්ථකව අවලංගු කර ඇත.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "අසත්‍ය සභාපති දත්ත",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "මාසික සහය සඳහා ලියාපදිංචි වන්න එය මෙහි පෙනී යාමට.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "ඉතින් කිසිදු සභාපතිත්වයක් නැත",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "අභිජනන දිනය",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "අවසන් වේ",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "අභිජනන ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "නිෂ්පාදන හැඳුනුම්පත",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "හරි",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "අපි ඔබගේ ගෙවීම ක්‍රියාත්මක කර නොහැක",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "ගෙවීම් වලින් කුමක් හෝ වැරදි විය. කරුණාකර නැවත උත්සාහ කරන්න.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "නැවත උත්සාහ කරන්න",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "ගෙවීම් සැකසීම",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "ඔබට Stripe හි ආරක්ෂිත ගෙවීම් පිටුවේ ඔබේ මිලදී ගැනීම සම්පූර්ණ කරනු ඇත.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ සතිය",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ වසර",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Najpopularniji",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Zapri",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Kaj dobite s Premium:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Rekli nevidljive konsultacije",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Hitra odgovora",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Hitra na novim funkcijama",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/teden",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Prekliči kadarkoli. Brez obveznosti.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "OMEJENO ČAS",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Automatski se obnavlja svake nedelje. Otkaži u bilo kojem trenutku u postavkama. Nastavljanjem se slažeš s našim <t>Uslovima</t> i <p>Politikom privatnosti</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Nastavi s Premium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Tava podpora pomaga ohranjati dostopno oskrbo",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "කරුණාකර මිලදී ගැනීම සම්පූර්ණ කිරීමට ලියාපදිංචි වන්න හෝ පිවිසෙන්න.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

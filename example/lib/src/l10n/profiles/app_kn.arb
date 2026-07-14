@@ -1,0 +1,425 @@
+{
+  "@@locale": "kn",
+  "chatDrawerTitle": "ಆರೋಗ್ಯ ದಾಖಲೆಗಳು",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "ಹೊಸದು",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "ನಿಮ್ಮ ಆರೋಗ್ಯ ದಾಖಲೆ ರಚಿಸಿ",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "ನಿಮ್ಮ ಸಲಹೆಯ ಕೊನೆಯಲ್ಲಿ, ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಅನ್ನು ಸೇರಿಸಿ.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "ಹೆಚ್ಚು ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು ಸೇರಿಸಿ",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "ಇತರರಿಗಾಗಿ ಅವರ ಪ್ರೊಫೈಲ್ ರಚಿಸಲು ಸಮಾಲೋಚನೆ ಪ್ರಾರಂಭಿಸಿ.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "ನಿಮ್ಮ ಆರೋಗ್ಯ ದಾಖಲೆ ರಚಿಸಲು ಸೈನ್ ಅಪ್ ಮಾಡಿ",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "ಮರು ಪ್ರಯತ್ನಿಸಿ",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "ಪ್ರೊಫೈಲ್ ಅಳಿಸಲು ವಿಫಲವಾಗಿದೆ",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "ಪ್ರೊಫೈಲ್ ಸಾರಾಂಶವನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "ಪೂರ್ಣ ದಾಖಲೆ ನೋಡಿ",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "ಹಂಚಿಕೊಳ್ಳಿ",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "ಅಳಿಸಿ",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "ವಯಸ್ಸು",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} ವರ್ಷ} other{{value} ವರ್ಷ}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "ತೂಕ",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} ಕಿ.ಗ್ರಾ.",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "ಎತ್ತರ",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} ಸೆಂ.ಮೀ",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "ಆಲರ್ಜಿಗಳು",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "ಕ್ರೋನಿಕ್",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "ಮದ್ದು",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "ಉಪಕರಣಗಳು",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "ಸಲಹೆಗಳು",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "ದಾಖಲೆಗಳು",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "ಆರೋಗ್ಯ ದಾಖಲೆ ಅಳಿಸಲು?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "ಇದು ನಿಮ್ಮ ಆರೋಗ್ಯದ ಮಾಹಿತಿಯನ್ನು ಶಾಶ್ವತವಾಗಿ ತೆಗೆದು ಹಾಕುತ್ತದೆ ಮತ್ತು ಇದನ್ನು ಹಿಂದಿರುಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ನೀವು ನಿಮ್ಮನ್ನು ಮಾರ್ಗದರ್ಶನ ಮಾಡಲು ಬಳಸುವ ಸಂದರ್ಭವನ್ನು ಕಳೆದುಕೊಳ್ಳುತ್ತೀರಿ.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "ರದ್ದು ಮಾಡಿ",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "ಅಳಿಸಿ",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "ನಿಮ್ಮ ಆರೋಗ್ಯ ದಾಖಲೆ ಅಳಿಸುತ್ತಿದೆ...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "ಪ್ರೊಫೈಲ್ ಅಳಿಸಲು ವಿಫಲವಾಗಿದೆ",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "ಆರೋಗ್ಯ ದಾಖಲೆ ಅಳಿಸಲಾಗಿದೆ",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "ನೀವು ಸಹಾಯಕರೊಂದಿಗೆ ಮಾತನಾಡಿ ಯಾವಾಗ ಬೇಕಾದರೂ ಹೊಸದನ್ನು ರಚಿಸಬಹುದು",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "ಚಾಟ್ ಗೆ ಹಿಂತಿರುಗಿ",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "ಸಂಪಾದನೆ",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "ಪ್ರೊಫೈಲ್ ಡೇಟಾ ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಲಾಗಿದೆ",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "ನಿಮ್ಮ ಮಾಹಿತಿಯನ್ನು ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "ಪ್ರೊಫೈಲ್ ಗೆ ಹಿಂತಿರುಗಿ",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "ಪ್ರೊಫೈಲ್ ಡೇಟಾವನ್ನು ನವೀಕರಿಸಲು ವಿಫಲವಾಗಿದೆ",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "ಬದಲಾವಣೆಗಳನ್ನು ತಿರಸ್ಕರಿಸಬೇಕೆ?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "ನೀವು ನಿಮ್ಮ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿ ಕೆಲವು ಬದಲಾವಣೆಗಳನ್ನು ಮಾಡಿದ್ದೀರಿ. ನೀವು ಹೋಗುವ ಮೊದಲು ಅವುಗಳನ್ನು ಉಳಿಸಿ ಅಥವಾ ತ್ಯಜಿಸಿ.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "ಸಂಪಾದನೆ ಮುಂದುವರಿಯಿರಿ",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "ಅಳಿಸು",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "ತಿದ್ದು",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "ರಿಕಾರ್ಡ್ ಸೇರಿಸಿ",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "ಹುಡುಕಿ",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ದೊರಕಲಿಲ್ಲ",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "ಡೌನ್‌ಲೋಡ್",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "ಹಂಚಿಕೊಳ್ಳಿ",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "ಅಳಿಸಿ",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "ದಸ್ತಾವೇಜುಗಳು ದೊರಕಲಿಲ್ಲ",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "ಈ ದಾಖಲೆ ಅಳಿಸಲು ಬಯಸುತ್ತೀರಾ?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "ಈ ಫೈಲ್ ಶಾಶ್ವತವಾಗಿ ಅಳಿಸಲಾಗುತ್ತದೆ",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "ರದ್ದು ಮಾಡಿ",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "ಅಳಿಸಿ",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "ಇನ್ನಷ್ಟು ಕ್ರಿಯೆಗಳು",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "ಹುಡುಕಿ",
+  "@profilesSearch": {},
+  "profilesEmptyList": "ಯಾವುದೇ ಪ್ರೊಫೈಲ್‌ಗಳು ಕಂಡುಬಂದಿಲ್ಲ",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "ಇನ್ನಷ್ಟು ನೋಡಿ",
+  "@profilesViewMore": {},
+  "profilesMore": "ಹೆಚ್ಚು",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina ಈಗ ನಿಮ್ಮ ಆರೋಗ್ಯವನ್ನು ನೆನೆಸುತ್ತದೆ",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "ನಿಮ್ಮ ಸಮಾಲೋಚನೆಗಳು ಈಗ ನಿಮ್ಮ ಆರೋಗ್ಯ ದಾಖಲೆವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ನಿರ್ಮಿಸುತ್ತವೆ ಮತ್ತು ನವೀಕರಿಸುತ್ತವೆ.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "ನಿಮ್ಮ ಆರೋಗ್ಯ ದಾಖಲೆ, ನಿಮ್ಮ ನಿಯಮಗಳು",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "ಯಾವಾಗ ಬೇಕಾದರೂ ಲಕ್ಷಣಗಳು, ಔಷಧಿಗಳು, ಇತಿಹಾಸ ಅಥವಾ ದಾಖಲೆಗಳನ್ನು ನೋಡಿ, ಸಂಪಾದಿಸಿ ಅಥವಾ ಸೇರಿಸಿ.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಕುಟುಂಬದ ಆರೈಕೆ ಮಾಡಿ",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "ನಿಮ್ಮ ಪ್ರಿಯ ವ್ಯಕ್ತಿಗಳು, ನಿಮ್ಮ ಮಕ್ಕಳಿಗೆ, ಪೋಷಕರಿಗೆ ಅಥವಾ ಸಂಗಾತಿಗೆ ಆರೋಗ್ಯ ದಾಖಲೆ ರಚಿಸಿ",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "ನಿಮ್ಮ ಆರೋಗ್ಯ ದಾಖಲೆ ಉಳಿಸಲು ಸಿದ್ಧವೇ?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "ನಿಮ್ಮ ಸಲಹೆಯ ನಂತರ, ಅದನ್ನು ಉಳಿಸಲು \"ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ\" ಮೇಲೆ ಟ್ಯಾಪ್ ಮಾಡಿ.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "ಮುಂದೆ",
+  "@profilesNextButton": {},
+  "profilesStartButton": "ಸಲಹೆ ಆರಂಭಿಸಿ",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "ಬೇರೆ ಸಮಯದಲ್ಲಿ",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "ಮುಚ್ಚು",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "ಆರೋಗ್ಯ ದಾಖಲೆ",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "ಆರೋಗ್ಯ ದಾಖಲೆ — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...ಹೆಚ್ಚು",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...ಕಡಿಮೆ",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "ಹೊಸ ಪ್ರೊಫೈಲ್ ಸೇರಿಸಿ",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "ಈ ಸಮಾಲೋಚನೆಯ ವಿವರಗಳನ್ನು ಉಳಿಸಲು ಪ್ರೊಫೈಲ್ ರಚಿಸಿ.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "ನೀವು ಅದನ್ನು ಯಾವಾಗ ಬೇಕಾದರೂ ನಿಮ್ಮ ಆರೋಗ್ಯ ದಾಖಲೆಗಳಲ್ಲಿ ನೋಡಬಹುದು",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "ಈ ವಿಷಯದ ಬಗ್ಗೆ ಅಥವಾ ಇದಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ವಿಷಯಗಳ ಬಗ್ಗೆ ನಿಮಗೆ ಇನ್ನಷ್ಟು ಪ್ರಶ್ನೆಗಳಿದ್ದರೆ, ಮುಕ್ತವಾಗಿ ನನ್ನೊಂದಿಗೆ ಮಾತುಕತೆ ಮುಂದುವರೆಸಿ. ನಾನು ಸಹಾಯ ಮಾಡಲು ಇಲ್ಲಿದ್ದೇನೆ",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "ಸಾಮಾನ್ಯ ಮಾಹಿತಿ",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "ಹೆಸರು",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "ಮೊದಲ ಹೆಸರು",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "ಉಪನಾಮ",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "ಲಿಂಗ",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "ದಯವಿಟ್ಟು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "ಪುರುಷ",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "ಹೆಣ್ಣು",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "ಇತರೆ",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "ಜನ್ಮದಿನಾಂಕ",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "ವಯಸ್ಸು",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "ಉದಾ. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "ಇಮೇಲ್",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "ಸ್ಥಳ",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "ಉದಾ. ನಗರ, ದೇಶ",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "ದೇಹ ಮತ್ತು ಆಹಾರ",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "ಎತ್ತರ",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "ಉದಾ. 180 ಸೆಂ.ಮೀ",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "ತೂಕ",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "ಉದಾ. 75 ಕೆಜಿ",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "ಮಾಸಿಕ ಚಕ್ರ",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "ಉದಾ. ನಿಯಮಿತ, ಅನಿಯಮಿತ",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "ಆಹಾರ ನಿರ್ಬಂಧಗಳು",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "ದಯವಿಟ್ಟು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "ನೀವು ಏನು ತಿನ್ನುತ್ತೀರಿ ಮತ್ತು ನಿಮ್ಮ ಬಳಿ ಯಾವುದೇ ನಿರ್ಬಂಧಗಳಿದ್ದರೆ ನಮಗೆ ತಿಳಿಸಿ",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "ಯಾವುದೂ ಇಲ್ಲ",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "ಶಾಕಾಹಾರಿ",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "ವೀಗನ್",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "ಗ್ಲುಟೆನ್ ರಹಿತ",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "ದೇಹದ ತೂಕ ಸೂಚ್ಯಂಕ (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "ಉದಾ. 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "ಆರೋಗ್ಯ ಪ್ರೊಫೈಲ್",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "ದೀರ್ಘಕಾಲಿಕ ರೋಗಗಳು",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "ಉದಾಹರಣೆಗೆ, ಡಯಾಬಿಟಿಸ್ ಪ್ರಕಾರ 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "ದಯವಿಟ್ಟು ಎಲ್ಲಾ ಕ್ರೋನಿಕ್ ಕಾಯಿಲೆಗಳ ಪಟ್ಟಿಯನ್ನು ನೀಡಿರಿ ಮತ್ತು ಅವುಗಳನ್ನು ಯಾವಾಗ ನಿರ್ಧಾರ ಮಾಡಲಾಗಿದೆ ಮತ್ತು ಯಾವುದೇ ಸಂಕಷ್ಟಗಳನ್ನು ಒಳಗೊಂಡಿರಬೇಕು.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "ಹಿಂದಿನ ರೋಗಗಳು",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "ಉದಾಹರಣೆಗೆ, ಸಾಮಾನ್ಯ ಶೀತವು ಹೆಚ್ಚು",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "ದಯವಿಟ್ಟು ನೀವು ಹಿಂದಿನ ಕಾಲದಲ್ಲಿ ಹೊಂದಿದ್ದ ಗಂಭೀರ ಕಾಯಿಲೆಗಳ ಪಟ್ಟಿಯನ್ನು ನೀಡಿರಿ, ನೀವು ಗುಣಮುಖರಾಗಿದ್ದರೂ ಸಹ.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "ಶಸ್ತ್ರಚಿಕಿತ್ಸಾ ಇತಿಹಾಸ",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "ಉದಾ. ಅಪೆಂಡೆಕ್ಟಮಿ",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "ದಯವಿಟ್ಟು ಎಲ್ಲಾ ಶಸ್ತ್ರಚಿಕಿತ್ಸೆಗಳ ಪಟ್ಟಿಯನ್ನು ನೀಡಿರಿ ಮತ್ತು ವರ್ಷ ಮತ್ತು ಯಾವುದೇ ಸಂಕಷ್ಟಗಳಿದ್ದರೆ ಸೇರಿಸಿ",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "ಕೆಲವೊಮ್ಮೆ ಬಳಸುವ ಔಷಧಿಗಳು",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "ಉದಾಹರಣೆಗೆ, ಐಬುಪ್ರೊಫೆನ್",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "ದಯವಿಟ್ಟು ನೀವು ಕೆಲವೊಮ್ಮೆ ತೆಗೆದುಕೊಳ್ಳುವ ಔಷಧಿಗಳನ್ನು (ಉದಾಹರಣೆಗೆ: ನೋವುನಿವಾರಕ, ಅಲರ್ಜಿಯ ಔಷಧಿಗಳು) ಪಟ್ಟಿ ಮಾಡಿ, ಡೋಸ್ ಮತ್ತು ಬಳಸುವ ಕಾರಣವನ್ನು ಒಳಗೊಂಡಂತೆ.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "ನಿಯಮಿತ ಔಷಧಿಗಳು",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "ಉದಾಹರಣೆಗೆ ಮೆಟ್ಫಾರ್ಮಿನ್",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "ದಯವಿಟ್ಟು ನೀವು ನಿಯಮಿತವಾಗಿ ತೆಗೆದುಕೊಳ್ಳುವ ಎಲ್ಲಾ ಔಷಧಿಗಳನ್ನು, ಹೆಸರು, ಡೋಸ್, ನೀವು ದಿನಕ್ಕೆ ಎಷ್ಟು ಬಾರಿ ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಿ ಮತ್ತು ಅದು ಯಾವ ಸ್ಥಿತಿಗೆ ಬಳಸಲಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ಪಟ್ಟಿ ಮಾಡಿ.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "ಅಲರ್ಜಿಗಳು",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "ಉದಾಹರಣೆಗೆ ಪೆನಿಸಿಲಿನ್ – ಚರ್ಮದ ಮೇಲೆ ಪುಟಕಗಳು ಉಂಟುಮಾಡುತ್ತದೆ",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "ದಯವಿಟ್ಟು ಎಲ್ಲಾ ಅಲರ್ಜಿಗಳನ್ನು (ಔಷಧಿಗಳು, ಆಹಾರ, ಪರಿಸರ) ಪಟ್ಟಿ ಮಾಡಿ ಮತ್ತು ನೀವು ಹೊಂದಿರುವ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ವಿವರಿಸಿ (ಉದಾಹರಣೆಗೆ: ಚರ್ಮದ ಉರಿಯು, ಉಬ್ಬರ, ಉಸಿರಾಟದ ಸಮಸ್ಯೆಗಳು).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "ವಿಶೇಷ ಪರಿಸ್ಥಿತಿಗಳು",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "ಉದಾ. ಗರ್ಭಾವಸ್ಥೆ, ಅಂಗವಿಕಲತೆ",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "ನೀವು ವೈದ್ಯರು ಯಾವಾಗಲೂ ತಿಳಿಯಬೇಕಾದ ಯಾವುದೇ ಪ್ರಮುಖ ವೈದ್ಯಕೀಯ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ಹೊಂದಿದ್ದರೆ (ಉದಾಹರಣೆಗೆ: ಗರ್ಭಾವಸ್ಥೆ, ಇಂಪ್ಲಾಂಟೆಡ್ ಸಾಧನಗಳು, ಅಂಗವಿಕಲತೆ, ಆಂಟಿಕೋಆಗ್ಯುಲೇಶನ್ ಥೆರಪಿ), ದಯವಿಟ್ಟು ಅವುಗಳನ್ನು ವಿವರಿಸಿ. ಇಲ್ಲದಿದ್ದರೆ, ನೀವು ಇದನ್ನು ಖಾಲಿ ಬಿಡಬಹುದು.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "ಕುಟುಂಬದ ವೈದ್ಯಕೀಯ ಇತಿಹಾಸ",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "ಉದಾ. ಹೃದಯರೋಗ, ಕ್ಯಾನ್ಸರ್",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಕುಟುಂಬದಲ್ಲಿ ಪ್ರಮುಖ ರೋಗಗಳನ್ನು ವಿವರಿಸಿ (ಉದಾಹರಣೆಗೆ: ಶರೀರದ ಸಕ್ಕರೆ, ಉನ್ನತ ರಕ್ತದ ಒತ್ತಡ, ಹೃದಯರೋಗ, ಕ್ಯಾನ್ಸರ್, ಜನನಜಾತ ರೋಗಗಳು) ಮತ್ತು ಯಾವ ಕುಟುಂಬದ ಸದಸ್ಯನಿಗೆ ಈ ಸ್ಥಿತಿ ಇದೆ ಎಂದು ವಿವರಿಸಿ.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "ಸಾಮಾಜಿಕ ಮತ್ತು ಜೀವನಶೈಲಿ ಅಂಶಗಳು",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "e.g. ಧೂಮಪಾನ, ಮದ್ಯ ಸೇವನೆ",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆರೋಗ್ಯವನ್ನು ಪ್ರಭಾವಿತ ಮಾಡುವ ಜೀವನಶೈಲಿ ಅಂಶಗಳನ್ನು ವಿವರಿಸಿ, ಉದಾಹರಣೆಗೆ ಧೂಮಪಾನ, ಮದ್ಯಪಾನ, ಶಾರೀರಿಕ ಚಟುವಟಿಕೆ, ಆಹಾರ, ನಿದ್ರೆ ಮತ್ತು ಉದ್ಯೋಗ.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "ವೈದ್ಯಕೀಯ ಸಾಧನಗಳು",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "e.g. ಪೇಸ್‌ಮೇಕರ್, ಶ್ರವಣ ಸಹಾಯಕ, ಇನ್ಸುಲಿನ್ ಪಂಪ್",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "ದಯವಿಟ್ಟು ನೀವು ಬಳಸುವ ಅಥವಾ ಇಂಪ್ಲಾಂಟ್ ಮಾಡಿದ ಯಾವುದೇ ವೈದ್ಯಕೀಯ ಸಾಧನಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಿ, ಉದಾಹರಣೆಗೆ ಪೇಸ್‌ಮೇಕರ್‌ಗಳು, ಇನ್ಸುಲಿನ್ ಪಂಪ್‌ಗಳು, ಕೇಳುವ ಸಾಧನಗಳು, ಪ್ರೋಸ್ಥೆಟಿಕ್‌ಗಳು ಅಥವಾ ಇತರ ಸಹಾಯಕ ಅಥವಾ ಮೋನಿಟರಿಂಗ್ ಸಾಧನಗಳು. ಅನ್ವಯಿಸಿದರೆ ಸಂಬಂಧಿತ ವಿವರಗಳನ್ನು ಸೇರಿಸಿ.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "ಸರ್ವಾಹಾರಿ",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "ಫಾಸ್ಟ್ ಫುಡ್",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "ಮತ್ಸ್ಯಾಹಾರಿ",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "ಲ್ಯಾಕ್ಟೋಸ್ ರಹಿತ",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "ಕಡಿಮೆ ಉಪ್ಪಿನ ಆಹಾರ",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "ಕಡಿಮೆ ಸಕ್ಕರೆ ಆಹಾರ",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "ಹೃದಯ ಆಹಾರ",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "ಕಿಡ್ನಿ ಆಹಾರ",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "ಇತರೆ",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

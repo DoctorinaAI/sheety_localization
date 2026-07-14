@@ -1,0 +1,742 @@
+{
+  "@@locale": "lo",
+  "drawerTooltipNotifications": "ການແຈ້ງເຕືອນ",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "ຊ່ວຍ",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "ປິດ",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "ບັດຊິນ",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "Профил",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "ການຕັ້ງຄ່າບັດຊິບ",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "Donate to Support",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "Abonament",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "ສົນທະນາ",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "ປະຫວັດການສົນທະນາ",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "Dokumente angehängt",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "ວິທີໃຊ້",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "Video Tutorials",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "Закон",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "ຕິດຕໍ່ພວກເຮົາ",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "ລາຍງານບັກ",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "Termini & Condizioni",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "ນະແບບຄວາມລັບ",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "Feedback",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "Rate App",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "ບ່ອນແບ່ງກັບເພື່ອນ",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "Log Out",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "ຊ່ວຍຄົນອື່ນໃຫ້ໄດ້ຮັບການແພດ",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "User",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "Premium Features\nwith Doctorina",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "Get",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "ມາຮ່ວມກັນ",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "App version:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "ສົນທະນາລ່າສຸດ",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "ບັນທຶກ",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "ສົນທະນາລ່າສຸດ",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "ດາວ໌ໂຫລດແອບ",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "ໃສ່ຂໍ້ຄວາມ",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "ແນບເອກສາ",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "ສຽງດິກທີ່ຈະສົ່ງ",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "Finish & Transcribe",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "ສົ່ງຂໍ້ຄວາມ",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "ບໍ່ສາມາດເອົາຂໍໍ່າສຽງ",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "ບໍ່ສາມາດເອົາຂໍໍ່າສົ່ງ. ກະລຸນາລອງໃໝ່.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "Fetch messages",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "ບໍ່ມີຂໍໍ່ສົ່ງ.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "Conectado",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "ບໍ່ມີການເຊື່ອມຕໍ່",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "ຄົ້ນຫາ",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "ລາຍການທີ່ຮັກ",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "ດາວໂລດ",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "ປິ່ນ PDF",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "ບ່ອນແບ່ງກັບແຟນ",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "ໃສ່ສົນທະນາໃໝ່",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "ສົນທະນາ",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "ເລືອກສົນທະນາ",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "ສະແດງສະຖານທີ່",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "ບໍ່ມີການສົນທະນາ. ກະລຸນາປ່ອນໃໝ່ຫຼືສ້າງການສົນທະນາໃໝ່.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "ປ່ອນສົກສົດ",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "Создать новый чат",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "ຄັອບ ຂໍໍ່ອນ",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "Typing Just a moment",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "ກຳລັງອັບເດດ...\nກະລຸນາກວດເບິ່ງການເຊື່ອມຕໍ່ອິນເຕີເນດຂອງທ່ານ",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "ຂໍໍ່ສະຖານທີ່ກຳລັງຖືກປະຕິບັດ.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "ຂໍໍ່ສະຖານທີ່ຍາວເກີນໄປ.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "ລົບແນບແບບ",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "ບໍ່ສາມາດປະຕິບັດຂໍ້ຄວາມ",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "Export to PDF",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "Photos",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "Kamera",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "Fajlovi",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "ຮູບ໖ອງແລະໄຟລ໌",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "Hope that helped! Was this explanation useful to you?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "ແມ່ນ, ທຸກຢ່າງດີ!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "ບໍ່ສາມາດເພີ່ມສະຖານທີ່ສົນທະນາ",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "Chat summary copied to clipboard",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "Try Doctorina in the mobile app!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "Download on the",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "ຮັບໃຊ້ໃນ",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "Download on the App Store",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "ຮັບໃນ Google Play",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "ລາຍງານຂໍແຈ້ງ",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "ເທົ່າໃດທ່ານຈະລາຍງານຂໍ້ຄວາມນີ້?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "ເລືອກ: ອະທິບາຍວ່າມີອະໄພອະໄພອັນໃດກັບຂໍໍ່ນີ້...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "ນີ້ຈະຊ່ວຍໃຫ້ເຮົາປັບປຸງການຕອບສະຖານທີ່ AI ຂອງເຮົາ",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "ຍົກເລີກ",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "ລາຍງານ",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "ຂອບໃຈສໍາລັບຄວາມເພີ່ມເຕີມ! ລາຍງານໄດ້ຖືກສົ່ງແລ້ວ.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "ລົ້ມເລີຍໃນການສົ່ງລາຍງານ",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "ສຳເລັດໃນການຄັອບແບບ",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "ລົ້ມເລີຍໃນການຄັອບຂໍ້ມູນເຊິ່ງສະຖານທີ່",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "ລາຍງານຂໍແຈ້ງ",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "ອັບໂຫລດເຂົ້າໃນບັນທຶກສົນທະນາກັບຄູ່ສຽງ",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "ດິນແລະດອບໄຟລ໌ທີ່ນີ້ເພື່ອເພີ່ມໃນສົນທະນາ",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "ທ່ານສາมາດເພີ່ມໄຟລໄດ້ສູງສຸດ 15 ໄຟລເຂົ້າໃນສຽງໃດໜຶ່ງ",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "ທ່ານຕ້ອງການໃຫ້ຂ້ອຍແຈ້ງເຕືອນທ່ານ ຫາກເກີດເຫດການສຳຄັນໃນສຸຂະພາບຂອງທ່ານ?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "ແມ່ນ, ບອກຂໍແລ້ວ",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "ອາດຈະພາຍຫຼັງ",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "ປິດ",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "ການແຈ້ງເຕືອນຖືກບລອກທີ່ລະບົບ. ກະລຸນາເປີດໃນການຕັ້ງຄ່າລະບົບກ່ຽວກັບການແຈ້ງເຕືອນຂອງ Doctorina.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "ການແຈ້ງເຕືອນຖືກບລອກທີ່ລະບົບ. ກະລຸນາເປິດໃນການຕັ້ງຄ່າໃນເວບໄຊກ່ຽວກັບການແຈ້ງເຕືອນຂອງ Doctorina.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "ອັບເດດກ່ຽວກັບການປຶກສາຂອງທ່ານ",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Doctorina ສາມາດແຈ້ງເຕືອນທ່ານເມື່ອມີຂໍໍ່ມູນໃໝ່ ຫຼື ອັບເດດເກີນກ່ຽວກັບສຸຂະພາບຂອງທ່ານ.",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "ເປີດການແຈ້ງເຕືອນ",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "ອາດຈະພາຍຫຼັງ",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "ການຕໍ່ໄປ, ທ່ານຍອມຮັບການດໍາເນີນການຂໍ້ມູນສ່ວນຕົວ, ການໃຊ້ <c>cookies</c>, ຍອມຮັບ <t>terms and conditions</t>, ແລະຮັບຮູ້ <p>privacy policy</p>. ນອກຈາກນັ້ນ, ທ່ານຮັບຮູ້ວ່າການປຶກສາຂອງທ່ານເຮັດໂດຍ AI ແລະບໍ່ເປັນນັກພັດທະນາແພດ",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "ປິດ",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "ບັນທຶກຫນ້າສົນທະນານີ້ກ່ອນ?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "ລົງທະບຽນຟຣີເພື່ອບັນທຶກການປຶກສານີ້ກ່ອນເລີ່ມຕົ້ນການປຶກສາໃໝ່",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "ເລີ່ມໂດຍບໍ່ບັນທຶກ",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "ລົງທະບຽນ",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "ເພື່ອດຳເນີນສົນທະນາ ໃຫ້ເລືອກເລືອກສິ່ງທີ່ຢູ່ເທິງ",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "ປິດ",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "ລົບເນື້ອໃນອະທິບາຍ",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "ບໍ່ສາມາດເລືອກໄຟລ໌ຈາກສະຖານທີ່ດອດ",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "ກະລຸນາໃສ່ຂໍ້ຄວາมຫຼືແນບໄຟລ໌",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "ກະລຸນາລໍຖ້າການນຳເສີມສົມບູນ",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "ຂໍໍາລຽງຂໍ້ມູນກຳລັງຖືກປ່ອນອອກ",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "ຂໍໍ່ອຍແມ່ນຍາວເກີນໄປ",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "ຂໍໍາລະບຽບຂອງຂໍໍາລະບຽບກໍ່ກັບສະຖານທີ່.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "ການເຊື່ອມຕໍ່ຖືກປິດຢ່າງສະຖານທີ່",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "ບໍ່ມີການເຊື່ອມຕໍ່ກັບເຊິ່ອນ",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "ບໍ່ສາมາດເລືອກໄຟລ໌",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "ບໍ່ສາມາດເລືອກຮູບພາບ",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "ບໍ່ສາມາດບັນທຶກຮູບຈາກກໍ່ມື",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "ທ່ານສາมາດແນບເອກະສານໄດ້ສູງສຸດ {count} ລາຍການ.",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "ລົບຂໍໍ່ທີ່ຖືກລະບົບ",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "ຂໍໍ່ສະຖານທີ່ຍາວເກີນໄປ.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "ກະລຸນາລໍຖ້າໃຫ້ການນຳເສີມສົມບູນ.",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "ສະຖານທີ່ {kind} \"{name}\" ແມ່ນແລ້ວຖືກແບບແລ້ວ ແລະບໍ່ໄດ້ເພີ່ມເຂົ້າໄປ.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "ໄຟล์ {kind} \"{name}\" ແມ່ນສິ່ງທີ່ຊໍາຊ່ອນກັບ {exist} ແລະບໍ່ໄດ້ເພີ່ມເຂົ້າ.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "ບັນທຶກ \"{name}\" ປະເພດ {kind} ບໍ່ໄດ້ເພີ່ມເຂົ້າໄປເພາະຈຳນວນສູງສຸດຂອງບັນທຶກໄດ້ຖືກປ່ອນ.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "ຟາຍ \"{name}\" ແມ່ນປ່າ.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "ແຟ້ມປ່າຍ.",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "Файл \"{name}\" превышает максимальный допустимый размер.",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "ຟາຍບັນທຶກເກີນຂະບວນການອະນຸຍາດສູງສຸດ.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "ມີບັດສະບັດໃນການປະຕິບັດໃສ່ແຟ້ມ \"{name}\".",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "ມີບັດສະບັດໃນການປະຕິເສດໃສ່ໄຟລ໌.",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "ຟາຍ \"{name}\" ບໍ່ໄດ້ເພີ່ມເຂົ້າໄປເພາະຈຳນວນສູງສຸດຂອງແນບໄດ້ຖືກປ່ອນ.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "ຟາຍ(ບໍ່) ບໍ່ໄດ້ເພີ່ມເຂົ້າໄປເພາະຈຳນວນສູງສຸດຂອງໄຟລ໌ປ່ອນບັດຖືກປະກອບ.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "ບັນທຶກບໍ່ໄດ້ເພີ່ມເພາະຈຳນວນສູງສຸດຂອງໄຟລ໌ທີ່ແນບໄວ້ໄດ້ຖືກເກີນ.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "ມີການພະຍາຍາມເພີ່ມເອກະສານທີ່ບໍ່ມີຊື່",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "ມີການພະຍາຍາມເພີ່ມໄຟລ໌ທີ່ມີສິດສະຖານບໍ່ສະດວກ: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "ມີການ versບັດສະຖານທີ່ບໍ່ສາມາດໃສ່ໄຟລເຊີນທີ່ບໍ່ສະຖານທີ່ບໍ່ສາມາດໃສ່",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "ບໍ່ສາມາດເພີ່ມໄຟລ໌ໄດ້.",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "ຟາຍ \"{name}\" ບໍ່ແມ່ນບັນທຶກ ແລະບໍ່ສາມາດເພີ່ມໄດ້.",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "ຟາຍເປັນບໍ່ຖືກແລະບໍ່ສາມາດເພີ່ມໄດ້.",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "ລາຍການ \"{name}\" ບໍ່ແມ່ນໄຟລ໌ທີ່ຖືກຕ້ອງ.",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "ລາຍການບໍ່ແມ່ນໄຟລ໌ທີ່ຖືກຕ້ອງ",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "ມີຄວາມຜິດພາດໃນການປະຕິເສດລາຍການ.",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "ມີບັດສະກິດໃນການປະຕິບັດລາຍການ.",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "ບໍ່ມີໄຟລ໌ໃດເທົ່ານັ້ນ",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "ໄຟລ໌ບາງໄຟລ໌ຖືກຂ້າມໄປເນື່ອງຈາກຊໍ້າກັນກັບໄຟລ໌ທີ່ມີຢູ່ແລ້ວ.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "ມີບັດທິດທີ່ບໍ່ຮູ້",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "ມີບັດສະກິດຕ່າງໆໃນການເພີ່ມໄຟລ໌:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "ບໍ່ສາມາດແບ່ງປັນໄຟລ໌: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "ປິດ",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "ແບ່ງປັນ",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "ກຳລັງໂອນໄຟລ໌...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "ບໍ່ສາມາດໂອນໄຟລ໌",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "ເກິດບັດທິດທີ່ບໍ່ຮູ້",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "ລອງໃໝ່",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "ປະເພດໄຟລ໌ທີ່ບໍ່ເຮັດວຽກ",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "ບໍ່ສາມາດເບິ່ງ {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "ແບ່ງປັນໄຟລ໌",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "ບໍ່ສາມາດເປີດຮູບພາບ",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "ກັບໄປສູ່ຄວາມເພີ່ມຂະບວນ",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "ບໍ່ສາມາດເຂົ້າໃຈ PDF",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "ບໍ່ສາມາດເປັນສິ່ງທີ່ສະຖິດໃນຂໍ້ມູນຂອງຂໍ້ມູນ",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "ແລະ {count} ຄວາມຜິດພາດອື່ນ.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "ຟາຍແມ່ນບໍ່ຖືກຕ້ອງ",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "ຕ໭ອບຮັບສະຖານທີ່ຕ້ອງການ",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "By continuing, you agree to our <tc>Terms</tc>, <privacy_policy>Privacy Policy</privacy_policy>, and <cookies>use of cookies</cookies>, and confirm that this consultation is provided by AI, not a licensed medical professional.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "Close",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "ລົບ",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "ລົບສົນທະນາ",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "Chat “{title}” ຖືກລົບແລ້ວ.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "ລົບບົດສົນທະນາບໍ?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "ອາການ, ສະຖານທີ່ປ່ອນລະບົບ, ແລະຄໍາແນະນຳໃນສົກສົດນີ້ຈະຖອນອອກ.\nການດຳເນີນການນີ້ບໍ່ສາມາດກັບຄືນ.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "ເພີ່ມເຂດ",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "ລົດຂະບວນ",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "ກັບໄປສູ່ຂະບວນການບັນທຶກສະຖານທີ່",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "ແບ່ງປັນ",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "ມື້ນີ້",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "ວັນທີ່ຜ່ານມາ",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "ສໍາລັບສໍາລັບສ່ວນທີ່ສອງ. ໃຊ້ແບ່ງປັນເພື່ອດາວໂຫລດໄຟລເຕັມ.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

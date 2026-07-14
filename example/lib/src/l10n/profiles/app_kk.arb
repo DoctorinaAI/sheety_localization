@@ -1,0 +1,425 @@
+{
+  "@@locale": "kk",
+  "chatDrawerTitle": "Денсаулық жазбалары",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "ЖАҢА",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Денсаулық жазбаңызды жасаңыз",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Консультацияңыздың соңында профиліңізді қосыңыз.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Көбірек профиль қосу",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Басқа біреудің профилін жасау үшін консультация бастаңыз.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Денсаулық жазбаңызды жасау үшін тіркеліңіз",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Қайтадан әрекет етіңіз",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Профильді жою мүмкін болмады",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Профильдің қысқаша мазмұнын жүктеу сәтсіз аяқталды",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Толық жазбаны қарау",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Бөлісу",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Жою",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Жас",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} жыл} other{{value} жыл}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Салмақ",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} кг",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Биіктік",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} см",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Аллергиялар",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Созылмалы",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Дәрі-дәрмек",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Құрылғылар",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Консультациялар",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Құжаттар",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Денсаулық жазбасын жою ма?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Бұл сіздің денсаулық деректеріңізді тұрақты түрде жояды және қайтарылмайды. Біз сізді бағыттау үшін қолданатын контексті жоғалтасыз.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Бас тарту",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Жою",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Сіздің денсаулық жазбаңызды жою...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Профильді жою мүмкін болмады",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Денсаулық жазбасы жойылды",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Сіз көмекшіден сөйлесіп, кез келген уақытта жаңа жазба жасай аласыз.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Чатқа оралу",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Редактирование",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Профиль деректерін жүктеу сәтсіз аяқталды",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Өзгерістер сақталды",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Сіздің ақпараттарыңыз сәтті жаңартылды.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Профильге оралу",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Профиль деректерін жаңарту сәтсіз аяқталды",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Өзгерістерді жою ма?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Сіз профиліңізде кейбір өзгерістер жасадыңыз. Кетпес бұрын оларды сақтаңыз немесе жойыңыз.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Редакциялауды жалғастыру",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Жою",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Өңдеу",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Жазба қосу",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Іздеу",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Нәтижелер табылмады",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Жүктеу",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Бөлісу",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Жою",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Құжаттар табылмады",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Бұл құжатты жою керек пе?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Бұл файл тұрақты түрде жойылады",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Бас тарту",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Жою",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Қосымша әрекеттер",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Іздеу",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Профильдер табылмады",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Көбірек көру",
+  "@profilesViewMore": {},
+  "profilesMore": "Көбірек",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina енді сіздің денсаулығыңызды есте сақтайды",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Сіздің консультацияларыңыз автоматты түрде Денсаулық жазбаңызды құрастырады және жаңартады.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Сіздің денсаулық жазбаңыз, сіздің ережелеріңіз",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Симптомдарды, дәрілерді, тарихты немесе құжаттарды кез келген уақытта қараңыз, өңдеңіз немесе қосыңыз.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Отбасыңыздың барлық мүшелеріне қамқорлық жасаңыз",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Сүйікті адамдар, балаларыңыз, ата-анаңыз немесе серіктесіңіз үшін Денсаулық жазбасын жасаңыз.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Денсаулығыңызды сақтау үшін дайынсыз ба?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Консультациядан кейін \"Профиль қосу\" батырмасын басыңыз.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Келесі",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Консультация бастау",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Кейінірек",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Жабу",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Денсаулық картасы",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Денсаулық картасы — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...көп",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...аз",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Жаңа профиль қосу",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Бұл консультацияның мәліметтерін сақтау үшін профиль жасаңыз.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Сіз оны Денсаулық жазбаларыңызда кез келген уақытта бағалай аласыз",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Егер сізде осы немесе оған қатысты қосымша сұрақтар болса, менімен сөйлесуді жалғастырудан тартынбаңыз. Мен көмектесуге дайынмын",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Жалпы ақпарат",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Аты",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Аты",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Тегі",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Жыныс",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Таңдаңыз",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Ер",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Әйел",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Басқа",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Туған күні",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Жасы",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "мысалы, 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Телефон нөмірі",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "Электрондық пошта",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Орналасқан жер",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "мысалы: Қала, Ел",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Дене және тамақтану",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Бой",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "мысалы 180 см",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Салмақ",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "мысалы, 75 кг",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Менструалдық цикл",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "мысалы. Тұрақты, Ретсіз",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Диеталық шектеулер",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Таңдаңыз",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Сіз не жейтініңізді және қандай шектеулеріңіз бар екенін бізге хабарлаңыз",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Жоқ",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Вегетариандық",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Веган",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Глютенсіз",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Дене массасының индексі (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "мысалы 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Денсаулық профилі",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Созылмалы аурулар",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "мысалы, 2 типті қант диабеті",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Барлық созылмалы ауруларды тізіп, олардың қашан диагноз қойылғанын және кез келген асқынуларын қосыңыз.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Өткен аурулар",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "мысалы, жиі суық тию",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Өтініш, өткен кезеңде болған ауыр ауруларды тізіп шығыңыз, тіпті егер сіз жазылып кетсеңіз де.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Операция тарихы",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "мысалы: аппендэктомия",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Барлық операцияларды тізіп, жылын және қандай да бір асқынулар болғанын көрсетіңіз.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Ара-тұра қолданылатын дәрі-дәрмектер",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "мысалы, Ибупрофен",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Уақытша қабылдайтын дәрілеріңізді (мысалы: ауырсынуды басатын дәрілер, аллергияға қарсы дәрілер) дозасымен және қолдану себебімен бірге жазыңыз.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Тұрақты қабылданатын дәрілер",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "мысалы, Метформин",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Тұрақты қабылдайтын барлық дәрілерді, оның атауын, дозасын, күніне қанша рет қабылдайтыныңызды және қандай жағдай үшін екенін жазыңыз.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Аллергиялар",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "мысалы, Пенициллин – бөртпе тудырады",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Барлық аллергияларды (дәрілер, тағам, қоршаған орта) тізіп, қандай реакция болғанын сипаттаңыз (мысалы: бөртпе, ісіну, тыныс алу проблемалары).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Арнайы жағдайлар",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "мысалы: Жүктілік, Мүгедектік",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Егер дәрігерлер әрқашан білуі тиіс маңызды медициналық жағдайларыңыз болса (мысалы: жүктілік, имплантталған құрылғылар, мүгедектік, антикоагулянттық терапия), оларды сипаттаңыз. Егер жоқ болса, оны бос қалдыра аласыз.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Отбасылық анамнез",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "мысалы: жүрек ауруы, қатерлі ісік",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Отбасыңыздағы маңызды ауруларды сипаттаңыз (мысалы: қант диабеті, гипертония, жүрек ауруы, рак, генетикалық аурулар) және қай отбасы мүшесінің осы аурумен ауырғанын көрсетіңіз.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Әлеуметтік & Өмір салты факторлары",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "Мысалы: темекі шегу, алкоголь тұтыну",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Денсаулығыңызға әсер ететін өмір салты факторларын сипаттаңыз, мысалы, темекі шегу, алкоголь, физикалық белсенділік, диета, ұйқы және мамандық.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Медициналық құрылғылар",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "мысалы: пейсмейкер, есту аппараты, инсулин сорғысы",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Сіз пайдаланатын немесе имплантацияланған медициналық құрылғыларды, мысалы, жүрек ритмінің реттегіштері, инсулин помпалары, есту аппараттары, протездер немесе басқа да көмекші немесе мониторингтік құрылғыларды тізіп беріңіз. Қажет болса, тиісті мәліметтерді қосыңыз.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Өсімдік пен жануар өнімдерін тұтынатын",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Фастфуд",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Пескатариан",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Лактозасыз",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Тұзды азайтылған диета",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Төмен қантты диета",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Жүрекке арналған диета",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Бүйрекке арналған диета",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Басқа",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

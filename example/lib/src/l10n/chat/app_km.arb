@@ -1,0 +1,742 @@
+{
+  "@@locale": "km",
+  "drawerTooltipNotifications": "ការជូនដំណឹង",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "ជំនួយ",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "បិទ",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "គណនី",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "ប្រវត្តិ",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "ការកំណត់គណនី",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "Donate to Support",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "ការជាវ",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "ការសន្ទនា",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "ប្រវត្តិការជជែក",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "ឯកសារដែលភ្ជាប់",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "របៀបប្រើ",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "វីដេអូបង្រៀន",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "ច្បាប់",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "ទំនាក់ទំនង",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "របាយការណ៍កំហុស",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "កិច្ចព្រមព្រៀង និងល័ក្ខខ័ណ្ឌ",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "គោលការណ៍ភាពឯកជន",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "មតិយោបល់",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "អត្រាកម្មវិធី",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "ចែករំលែកជាមួយមិត្តភក្តិ",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "ចេញ",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "ជួយអ្នកដទៃទទួលបានការថែទាំសុខភាព",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "អ្នកប្រើប្រាស់",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "លក្ខណៈពិសេសព្រីម្យូម<br>ជាមួយ Doctorina",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "ទទួលបាន",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "ចូលរួមជាមួយយើង",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "កំណែកម្មវិធី:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "ការសន្ទនាថ្មី",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "ប្រវត្តិ",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "ការសន្ទនាថ្មី",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "ទាញយកកម្មវិធី",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "បញ្ចូលសារ",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "ភ្ជាប់ឯកសារ",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "បញ្ជូនសារដោយសំឡេង",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "Finish & Transcribe",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "ផ្ញើសារ",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "មិនអាចទាញយកសារបានទេ",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "មិនអាចទាញយកសារបានទេ។ សូមព្យាយាមម្តងទៀត។",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "ទាញយកសារនៅ",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "មិនមានសារទេ។ សូមផ្ញើសារដើម្បីចាប់ផ្តើមការពិភាក្សា។",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "បានភ្ជាប់",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "គ្មានការតភ្ជាប់",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "ស្វែងរក",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "ចំណូលចិត្ត",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "ទាញយក",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "បោះពុម្ព PDF",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "ចែករំលែកជាមួយមិត្តភក្តិ",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "សន្ទនាថ្មី",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "សន្ទនា",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "ជ្រើសរើសសន្ទនា",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "បង្ហាញកាបូប",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "មិនមានការសន្ទនាឡើយ។ សូមធ្វើការកែសម្រួលឬបង្កើតការសន្ទនាថ្មី។",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "ធ្វើឱ្យជួបជុំឡើងវិញ",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "បង្កើតការសន្ទនាថ្មី",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "ចម្លងអត្ថបទ",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "កំពុងវាយ",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "កំពុងអាប់ដេត...\nសូមពិនិត្យការតភ្ជាប់អ៊ីនធឺណិតរបស់អ្នក",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "សារនេះកំពុងត្រូវបានដំណើរការហើយ។",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "សារមានប្រវែងលើស។",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "លុបភ្ជាប់",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "មិនអាចដំណើរការប្រយោគបាន",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "នាំចេញទៅ PDF",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "រូបភាព",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "កាមេរ៉ា",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "ឯកសារ",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "រូបថត និងឯកសារ",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "សង្ឃឹមថាវានឹងជួយ! ការពន្យល់នេះមានប្រយោជន៍សម្រាប់អ្នកទេ?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "បាទ វាហើយ គ្រប់យ៉ាងល្អ!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "មិនអាចទាញយកសេចក្តីសង្ខេបនៃការសន្ទនាបានទេ",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "សេចក្តីសង្ខេបនៃការសន្ទនាត្រូវបានចម្លងទៅកាន់ក្តារចុច",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "សូមព្យាយាម Doctorina នៅក្នុងកម្មវិធីចល័ត!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "ទាញយកនៅលើ",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "ទាញយក",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "ទាញយកនៅលើ App Store",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "ទទួលបាននៅលើ Google Play",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "រាយការណ៍សារនេះ",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "អ្នកកំពុងរាយការណ៍សារនេះហេតុអ្វី?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "ជ្រើសរើស: ពិពណ៌នាអំពីអ្វីដែលមិនត្រឹមត្រូវជាមួយសារនេះ...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "នេះនឹងជួយឱ្យយើងកែលម្អការឆ្លើយតបAI របស់យើង។",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "បោះបង់",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "រាយការណ៍",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "សូមអរគុណសម្រាប់មតិយោបល់របស់អ្នក! របាយការណ៍ត្រូវបានដាក់ស្នើ។",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "មិនអាចដាក់របាយការណ៍បានទេ",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "បានចម្លងទៅកាន់ប៊ូហ្វ័រ",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "សារដែលបានចម្លងមិនបានជោគជ័យ",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "រាយការណ៍សារនេះ",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "បញ្ចូលទៅក្នុងការជជែក Doctorina",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "ទាញនិងទុកឯកសារនៅទីនេះដើម្បីបន្ថែមទៅក្នុងការសន្ទនា",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "អ្នកអាចបន្ថែមឯកសារទៅក្នុងសារមួយបានដល់ 15 ឯកសារ",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "ប្រសិនបើមានអ្វីសំខាន់កើតឡើងអំពីសុខភាពរបស់អ្នក តើអ្នកចង់ឲ្យខ្ញុំជូនដំណឹងដែរឬទេ?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "បាទ, សូមជូនដំណឹងខ្ញុំ",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "ពេលក្រោយ",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "បិទ",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "ការជូនដំណឹងត្រូវបានបិទនៅកម្រិតប្រព័ន្ធ។ សូមបើកវានៅក្នុងការកំណត់ប្រព័ន្ធមុនពេលបើកការជូនដំណឹងរបស់ Doctorina។",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "ការជូនដំណឹងត្រូវបានបិទនៅកម្រិតប្រព័ន្ធ។ សូមបើកវានៅក្នុងការកំណត់របស់កម្មវិធីមុនពេលបើកការជូនដំណឹងរបស់ Doctorina។",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "នៅតែទាន់សម័យអំពីការពិគ្រោះយោបល់របស់អ្នក",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Doctorina អាចជូនដំណឹងអ្នកពេលមានការបញ្ចេញព័ត៌មានថ្មីៗ ឬកំណែប្រែអំពីសុខភាពរបស់អ្នក។",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "បើកការជូនដំណឹង",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "ពេលក្រោយ",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "ដោយបន្ត អ្នកកំពុងយល់ព្រមការប្រើប្រាស់ទិន្នន័យផ្ទាល់ខ្លួន, ការប្រើប្រាស់ <c>cookies</c>, យល់ព្រមលើ <t>លក្ខខណ្ឌ និងលក្ខប័ន</t> និងទទួលស្គាល់ <p>គោលការណ៍ភាពឯកជន</p>. ក៏ដូចជាអ្នកទទួលស្គាល់ថាការប្រឹក្សារបស់អ្នកគឺជាមួយ AI មិនមែនជាមួយជំនាញវេជ្ជសាស្រ្តដែលមានអាជ្ញាបណ្ណ",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "បោះបង់",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "រក្សាទុកជជែកទូរស័ព្ទនេះជាមុន?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "ចុះឈ្មោះឥតគិតថ្លៃដើម្បីរក្សាទុកការពិគ្រោះព្រមនេះ មុនពេលចាប់ផ្តើមការពិគ្រោះថ្មី",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "ចាប់ផ្តើមដោយមិនរក្សាទុក",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "ចុះឈ្មោះ",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "ដើម្បីបន្តការពិភាក្សា សូមជ្រើសរើសជម្រើសខាងលើ",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "បិទ",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "លុបភ្ជាប់",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "មិនអាចជ្រើសឯកសារពីតំបន់ទាញបាន",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "សូមបញ្ចូលសារឬភ្ជាប់ឯកសារ",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "សូមរង់ចាំឱ្យការបញ្ចូលបញ្ចប់",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "សារនេះកំពុងត្រូវបានដំណើរការ",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "សារមានប្រវែងលើស",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "សារនេះកំពុងត្រូវបានដំណើរការ។",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "ការតភ្ជាប់ត្រូវបានបិទយ៉ាងស្ថាពរ",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "មិនមានការតភ្ជាប់ទៅម៉ាស៊ីនមេ",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "មិនអាចជ្រើសឯកសារបាន",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "មិនអាចជ្រើសរូបភាពបាន",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "មិនអាចចាប់រូបភាពពីកាមេរ៉ាបានទេ",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "អ្នកអាចភ្ជាប់ឯកសារបានរហូតដល់ {count} ឯកសារក្នុងមួយពេល។",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "សម្អាតអត្ថបទដែលបានស្គាល់",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "សារមានប្រវែងលើស។",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "សូមរង់ចាំឱ្យការបញ្ចូលបញ្ចប់។",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "ឯកសារ {kind} \"{name}\" ត្រូវបានភ្ជាប់រួចហើយ ហើយមិនត្រូវបានបន្ថែមឡើងវិញទេ",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "ឯកសារ {kind} \"{name}\" គឺជាការបំភ្លឺនៃ {exist} ហើយមិនត្រូវបានបន្ថែមទេ",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "ឯកសារ {kind} \"{name}\" មិនត្រូវបានបន្ថែមទេ ពីព្រោះចំនួនអត្ថបទភ្ជាប់អតិបរិមាដែលបានលើសកំណត់។",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "ឯកសារ \"{name}\" គឺទទេ។",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "ឯកសារមិនមានអ្វីទេ",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "ឯកសារ \"{name}\" ធ្វើឲ្យមានទំហំលើសកំណត់។",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "ឯកសារនេះលើសទំហំអតិបរិមាដែលអនុញ្ញាត។",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "មានកំហុសកើតឡើងក្នុងការប្រតិបត្តិឯកសារ \"{name}\".",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "មានកំហុសកើតឡើងក្នុងការប្រតិបត្តិឯកសារ។",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "ឯកសារ \"{name}\" មិនត្រូវបានបន្ថែមទេ ពីព្រោះចំនួនអត្ថបទអភិវឌ្ឍន៍អតិបរិមាដែលបានលើសកំណត់។",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "ឯកសារមួយ(ៗ) មិនត្រូវបានបន្ថែមព្រោះចំនួនអត្ថបទអភិវឌ្ឍន៍បានលើសកំណត់។",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "មិនអាចបន្ថែមឯកសារមួយបានទេ ពីព្រោះចំនួនភ្ជាប់អតិបរិមាបានឆ្លងកាត់។",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "ឯកសារមួយដែលគ្មានឈ្មោះត្រូវបានព្យាយាមបន្ថែម។",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "ឯកសារដែលមានបន្ថែមមិនគាំទ្រត្រូវបានព្យាយាមបន្ថែម: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "ឯកសារដែលមានបន្ថែមមិនគាំទ្រត្រូវបានព្យាយាមបន្ថែម។",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "មិនអាចបន្ថែមឯកសារបានទេ។",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "ឯកសារ \"{name}\" មិនត្រឹមត្រូវ ហើយមិនអាចបន្ថែមបានទេ",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "ឯកសារមិនត្រឹមត្រូវ ហើយមិនអាចបន្ថែមបានទេ",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "អត្ថបទ \"{name}\" មិនមែនជាឯកសារដែលមានសុពលភាពទេ",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "មួយធាតុមិនមែនជាឯកសារពិតទេ",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "មានកំហុសកើតឡើងក្នុងការប្រតិបត្តិធាតុមួយ។",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "មានកំហុសកើតឡើងក្នុងការប្រតិបត្តិធាតុ(ៗ)។",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "មិនមានឯកសារណាមួយបានបន្ថែមទេ",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "ឯកសារខ្លះត្រូវបានរំលងដោយសារតែមានឯកសារដែលមានស្រាប់។",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "មានកំហុសមិនស្គាល់។",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "កំហុសដូចខាងក្រោមបានកើតឡើងនៅពេលភ្ជាប់ឯកសារ:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "បរាជ័យក្នុងការចែករំលែកឯកសារ: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "បិទ",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "ចែករំលែក",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "កំពុងផ្ទុកឯកសារ...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "បរាជ័យក្នុងការផ្ទុកឯកសារ",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "កំហុសមិនស្គាល់កើតឡើង",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "ម្តងទៀត",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "ប្រភេទឯកសារមិនគាំទ្រ",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "មិនអាចមើលមុន {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "ចែករំលែកឯកសារ",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "បរាជ័យក្នុងការបង្ហាញរូបភាព",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "កំណត់មើលឡើងវិញ",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "បរាជ័យក្នុងការផ្ទុក PDF",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "មិនអាចបកស្រាយមាតិកាអត្ថបទបានទេ",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "និង {count} កំហុសបន្ថែមទៀត។",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "ឯកសារមិនត្រឹមត្រូវ",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "ត្រូវការព្រមព្រៀង",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "ដោយបន្ត អ្នកយល់ព្រមទៅនឹង <tc>ល័ក្ខខ័ណ្ឌ</tc> របស់យើង <privacy_policy>គោលការណ៍ឯកជនភាព</privacy_policy> និង <cookies>ការប្រើប្រាស់គុយគី</cookies> ហើយបញ្ជាក់ថាការពិគ្រោះយោបល់នេះត្រូវបានផ្តល់ដោយ AI មិនមែនជាអ្នកជំនាញវេជ្ជសាស្ត្រដែលមានអាជ្ញាប័ណ្ណ។",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "បិទ",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "លុប",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "លុបសន្ទនា",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "ការជជែក “{title}” ត្រូវបានលុបចោលដោយជោគជ័យ។",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "លុបសន្ទនាដែរឬ?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "រោគសញ្ញា សង្ខេបវិនិច្ឆ័យ និងណែនាំណាមួយក្នុងការជជែកនេះនឹងត្រូវលុបចេញ។\nសកម្មភាពនេះមិនអាចត្រឡប់មកវិញបានទេ។",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "ពង្រីក",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "ចុះក្រោម",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "កំណត់ឡើងវិញការពង្រីក",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "ចែករំលែក",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "ថ្ងៃនេះ",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "ម្សិលមិញ",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "ទំព័រដំបូងប៉ុណ្ណោះ។ ប្រើ Share ដើម្បីទាញយកឯកសារពេញលេញ។",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

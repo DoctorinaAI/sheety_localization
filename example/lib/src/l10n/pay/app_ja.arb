@@ -1,0 +1,227 @@
+{
+  "@@locale": "ja",
+  "exampleButton": "ボタン例",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "はい、大丈夫です!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "すべての貢献が癒しをもたらす！",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "あなたのご支援は、困っている他の方への無料相談の資金に役立ちます。",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "お好きな金額でお支払いください,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "または、寄付を選んだ他の方々のおかげでDoctorinaを無料で使い続ける",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "一回限り",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "毎月",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "毎月の寄付金額を選択",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "あなたは今、月額プランに加入しようとしています.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "あなたは月額プランに{amount}/月で加入しています.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "決済が購入確定時にお客様のアカウントに請求されます。現在の期間終了の少なくとも24時間前に自動更新がオフにされない限り、サブスクリプションは毎月自動的に更新されます。アカウント設定でいつでもサブスクリプションを管理またはキャンセルできます。続行することで、{termsOfService}と{privacyPolicy}に同意したとみなされます",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "一度限りの寄付金額を選択",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "ほとんどの人は$7–$15を寄付する",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "通貨を選択",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "支払い処理中",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "一度限りの支払い {currency} {amount} を処理中",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "{amount}の月額支払いを処理中",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "ありがとうございます!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "さらに多くの人が無料のアドバイスを受けられるようになりました — あなたのサポートは本当にかけがえのないものです.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "あなたの貢献:",
+  "@youContributedLabel": {},
+  "perMonth": "/月",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "メイン画面に戻る",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "利用規約",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "プライバシーポリシー",
+  "@privacyPolicyLabel": {},
+  "donateButton": "寄付する",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "有効",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "キャンセル済み",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "一時停止",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "保留中",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "作成済み",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "タイムアウト",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "不明",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina 貢献者",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "更新",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "サブスクリプションをキャンセル",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "本当ですか？",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "あなたの月額サポートにより、支払いが難しい方でも Doctorina を無料で利用できるようになります. あなたのサブスクリプションにより、毎月最低10回の無料相談が提供されます. 退会すると、必要な支援を受ける患者さんが減少します",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "定期購読を継続",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "とにかくキャンセル",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "あなたの月間サポートは正常にキャンセルされました。",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "サブスクリプションデータが正しくありません",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "月間サポートに登録すると、ここに表示されます。",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "まだサブスクリプションはありません",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "契約日",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "有効期限",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "サブスクリプションID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "製品ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "お支払いを処理できませんでした",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "支払いに問題が発生しました。\nもう一度お試しください。",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "再試行",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "支払い処理中",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Stripeの安全なチェックアウトページでご購入を完了します.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ 週",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ 年",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "最も人気",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "閉じる",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "プレミアムで得られるもの:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "広告なしの相談",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "より速い返信",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "新機能への早期アクセス",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/週",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "いつでもキャンセルできます。コミットメントはありません。",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "期間限定",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "毎週自動更新されます。設定でいつでもキャンセルできます。続行することで、<t>利用規約</t>および<p>プライバシーポリシー</p>に同意したことになります。",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 プレミアムで続ける",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 あなたのサポートがケアのアクセスを維持します",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "購入を完了するにはサインアップまたはログインしてください。",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

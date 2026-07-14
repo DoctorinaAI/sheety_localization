@@ -1,0 +1,15 @@
+{
+  "@@locale": "zu",
+  "error": "Kwenzekile iphutha",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Kwenzekile iphutha elingalindelekile",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Umbiko wephutha uthunyelwe ngempumelelo.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

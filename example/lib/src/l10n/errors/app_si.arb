@@ -1,0 +1,15 @@
+{
+  "@@locale": "si",
+  "error": "දෝෂයක් සිදු විය",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "අනපේක්ෂිත දෝෂයක් සිදුවිය",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "බග් වාර්තාව සාර්ථකව යවා ඇත.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

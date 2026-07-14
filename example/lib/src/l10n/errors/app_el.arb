@@ -1,0 +1,15 @@
+{
+  "@@locale": "el",
+  "error": "Παρουσιάστηκε σφάλμα",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Παρουσιάστηκε ένα απροσδόκητο σφάλμα",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Η αναφορά σφάλματος στάλθηκε με επιτυχία.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

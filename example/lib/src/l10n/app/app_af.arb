@@ -1,0 +1,129 @@
+{
+  "@@locale": "af",
+  "lang": "Afrikaans",
+  "@lang": {},
+  "langEn": "Afrikaans",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Werk Nou Op",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Miskien later",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Nuwe opdatering beskikbaar",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Opdatering Vereis",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "‘n Nuwe weergawe (v{version}) van die aansoek is beskikbaar. Asseblief, werk op om voort te gaan met die beste ervaring.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Om voort te gaan, werk asseblief die aansoek op. Hierdie opdatering bevat belangrike regstellings en verbeterings.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Laai af",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Teken in as jy reeds 'n Doctorina-rekening het, of teken aan om te begin.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Teken in",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Teken in",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Gaan voort as gas",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Teken In",
+  "@titleLogin": {},
+  "titleLogout": "Teken uit",
+  "@titleLogout": {},
+  "titleSignIn": "Teken In",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Dialoog",
+  "@titleDialog": {},
+  "titleChat": "Klets",
+  "@titleChat": {},
+  "titleSettings": "Rekeninginstellings",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Geselskapgeskiedenis",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Betaling",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Bestuur intekening",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Maandelikse Intekening",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Inleiding",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Welkom terug",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Profiele van gesondheidsrekords",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Profiele aankondiging",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Gesondheidsrekords",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Volledige rekord",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Dokumente",
+  "@titleDocuments": {},
+  "titleConsultations": "Konsultasies",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Betaalmuur",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Verwyder? Laat weet ons hoekom!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Begin 'n nuwe gesondheidsgesprek",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Deel 'n idee of rapporteer 'n probleem",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Laat weet hoe Doctorina kan verbeter",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

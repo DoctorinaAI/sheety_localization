@@ -1,0 +1,129 @@
+{
+  "@@locale": "es",
+  "lang": "Español",
+  "@lang": {},
+  "langEn": "Spanish",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Actualizar ahora",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Tal vez más tarde",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Nueva actualización disponible",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": " Se requiere actualización",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Hay una nueva versión (v{version}) de la aplicación disponible. Por favor, actualízala para continuar y disfrutar de la mejor experiencia.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Para continuar, actualiza la aplicación. Esta actualización incluye correcciones e mejoras importantes.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Descargar",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Inicia sesión si ya tienes una cuenta de Doctorina, o regístrate para comenzar.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Iniciar sesión",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Registrarse",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Continuar como invitado",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Iniciar sesión",
+  "@titleLogin": {},
+  "titleLogout": "Cerrar sesión",
+  "@titleLogout": {},
+  "titleSignIn": "Iniciar sesión",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Diálogo",
+  "@titleDialog": {},
+  "titleChat": "Chat",
+  "@titleChat": {},
+  "titleSettings": "Ajustes",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Historial de chats",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Pago",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Administrar suscripción",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Suscripción mensual",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Onboarding",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Bienvenido de nuevo",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Perfiles de historiales médicos",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Anuncio de perfiles",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Registros de salud",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Registro completo",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Documentos",
+  "@titleDocuments": {},
+  "titleConsultations": "Consultas",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Muro de pago",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "¿Eliminando? ¡Díganos por qué!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Iniciar una nueva conversación sobre salud",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Comparte una idea o informa de un problema",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Díganos cómo puede mejorar Doctorina",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

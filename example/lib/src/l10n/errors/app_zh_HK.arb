@@ -1,0 +1,15 @@
+{
+  "@@locale": "zh_HK",
+  "error": "發生咗錯誤",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "發生咗意外嘅錯誤",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "錯誤報告已成功發送.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

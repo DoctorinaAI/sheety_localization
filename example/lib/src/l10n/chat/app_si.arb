@@ -1,0 +1,742 @@
+{
+  "@@locale": "si",
+  "drawerTooltipNotifications": "ඇතුල් කිරීම්",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "ආධාරය",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "අවසන් කරන්න",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "ගිණුම",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "පැතිකඩ",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "ගිණුම් සැකසුම්",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "සහාය වීමට දායක වන්න",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "අභිප්‍රාය",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "කතාබහ",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "චැට් ඉතිහාසය",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "අමුණා ඇති ලේඛන",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "කෙසේ භාවිතා කරන්න",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "වීඩියෝ උපදෙස්",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "නීති",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "අපට සම්බන්ධ වන්න",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "බග් වාර්තාව",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "නියමයන් සහ කොන්දේසි",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "රහස්‍යතා ප්‍රතිපත්ති",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "ප්‍රතිචාරය",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "අයදුම්පත අගය කරන්න",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "මිතුරන්ට බෙදා ගන්න",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "ලොග් ආවුට්",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "අනෙක් අයෙකුට වෛද්‍ය සේවාවක් ලබා ගැනීමට උදව් කරන්න",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "User",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "පෙරළි විශේෂාංග\nඩොක්ටරිනාව සමඟ",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "ලබන්න",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "අප හා එකතු වන්න",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "ඇප් සංස්කරණය:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "අලුත්ම කතාබහ",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "පැතිකඩ",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "අලුත්ම කතාබහ",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "අයදුම්පත් බාගත කරන්න",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "පණිවිඩය ඇතුළත් කරන්න",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "ගොනුවක් අමුණන්න",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "ඉදිරිපත් කරන්න",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "අවසන් කරන්න සහ පරිවර්තනය කරන්න",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "පණිවිඩය යවන්න",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "පණිවිඩ ලබා ගැනීමට අසමත්",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "පණිවිඩ ලබා ගැනීමට අසමත් විය. කරුණාකර නැවත උත්සාහ කරන්න.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "පණිවිඩ ලබා ගන්න",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "පණිවිඩ නොමැත. සංවාදය ආරම්භ කිරීමට පණිවිඩයක් යවන්න.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "සම්බන්ධයි",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "සම්බන්ධතාවයක් නැත",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "සොයන්න",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "ප්‍රියතම",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "බාගත කරන්න",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "PDF මුද්‍රණය කරන්න",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "මිතුරන්ට බෙදා ගන්න",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "නව කතාබස්",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "චැට්",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "චැට් තෝරන්න",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "දැක්මක් කරන්න",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "චැට් ලබා ගත නොහැක. කරුණාකර යාවත්කාලීන කරන්න හෝ නව චැට් එකක් සාදන්න.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "සංවාද යාවත්කාලීන කරන්න",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "නව කතාබස් සාදන්න",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "පණිවිඩය පිටපත් කරන්න",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "ටයිප් කරමින්",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "අලුත් කරමින්...\nකරුණාකර ඔබේ අන්තර්ජාල සම්බන්ධතාවය පරීක්ෂා කරන්න",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "පණිවිඩය දැන්ම සැකසෙමින් පවතී.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "පණිවුඩය දිගු වේ.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "අමුණුව ඉවත් කරන්න",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "පණිවිඩය සැකසීමට අසාර්ථකයි",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "PDF වෙත අපනයනය කරන්න",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "පින්තූර",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "කැමරාව",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "ගොනු",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "Fotografije i Datoteke",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "ආශා කරමි, එය උපකාරී විය! මෙම විස්තරය ඔබට ප්‍රයෝජනවත්ද?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "ඔව්, සියල්ල හොඳයි!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "චැට් සාරාංශය ලබා ගැනීමට අසාර්ථකයි",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "චැට් සාරාංශය ක්ලිප්බෝඩ්ට පිටපත් කරන ලදි",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "මොබයිල් යෙදුමෙන් Doctorina උත්සාහ කරන්න!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "ඇතුළත් කරන්න",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "ගෙට් ඉට් ඔන්",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "App Store හි බාගත කරන්න",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "ගූගල් ප්ලේ හි ලබා ගන්න",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "පණිවිඩය වාර්තා කරන්න",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "ඔබ මෙම පණිවිඩය ඇසුරු කරන්නේ ඇයි?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "අවශ්‍ය: මෙම පණිවිඩය ගැන කුමක් වැරදිද කියන්න...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "මෙය අපට අපගේ AI ප්‍රතිචාර වර්ධනය කිරීමට උපකාරී වේ.",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "අවලංගු කරන්න",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "වාර්තා කරන්න",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "ඔබගේ ප්‍රතිචාරය සඳහා ස්තූතියි! වාර්තාව ඉදිරිපත් කර ඇත.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "වාර්තා ඉදිරිපත් කිරීමට අසාර්ථකයි",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "පිටපත් කරනු ලැබීය",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "පණිවුඩය පිටපත් කිරීමට අසාර්ථකයි",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "පණිවිඩය වාර්තා කරන්න",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "ඩොක්ටර්නාවට චැට් එකට උඩුගත කරන්න",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "මෙහි ගොනු ඇදීමෙන් කතාබහට එක් කරන්න",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "ඔබට පණිවිඩයක් සඳහා ගොනු 15ක් දක්වා එකතු කළ හැක",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "ඔබගේ සෞඛ්‍යය පිළිබඳ වැදගත් දෙයක් සිදුවන විට මට ඔබට දැනුම් දිය යුතුද?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "ඔව්, මට දැනුම් දෙන්න",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "පසුව",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "අවසන් කරන්න",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "Obvestila so blokirana na ravni sistema. Omogočite jih v sistemskih nastavitvah, preden aktivirate obvestila Doctorina.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "Obvestila so blokirana na sistemski ravni. Omogočite jih v nastavitvah brskalnika, preden aktivirate obvestila Doctorina.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "ඔබේ උපදේශනය පිළිබඳ යාවත්කාලීන වන්න",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Doctorina ඔබට ඔබේ සෞඛ්‍යය පිළිබඳ නව දැනුම් සහ යාවත්කාලීන කිරීම් ලබා දිය හැකි වේ.",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "සන්නිවේදන සක්‍රීය කරන්න",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "පසුව",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "ඉදිරියට පියවර ගන්නේ ඔබට පුද්ගල දත්ත සැකසීම, <c>cookies</c> භාවිතය, <t>නියම හා කොන්දේසි</t> පිළිබඳ එකඟතාවය සහ <p>පෞද්ගලිකත්ව ප්‍රතිපත්තිය</p> අනුමත කිරීමයි. එසේම, ඔබගේ උපදෙස් AI සමඟ වන අතර බලය ලත් වෛද්‍ය විශේෂඥයකු සමඟ නොවන බවත් පිළිගැනීමයි",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "Zanemariti",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "පළමුව මෙම චැට් සුරක්ෂිත කරන්න?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "නව කන්සල්ටේෂන් ආරම්භ කිරීමට පෙර මෙම කන්සල්ටේෂන් සුරක්ෂිත කිරීමට නොමිලේ ලියාපදිංචි වන්න",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "සුරැකුම් නොකර ආරම්භ කරන්න",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "ලියාපදිංචි කරන්න",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "Da bi nastavili razgovor, odaberite opciju iznad",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "වසන්න",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "Odstrani priponko",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "Fail to pick files from drop zone",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "කරුණාකර පණිවිඩයක් ඇතුළත් කරන්න හෝ ගොනුවක් අමුණන්න",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "ඉදිරිපත් කිරීම් සම්පූර්ණ වීමට කුමාරාත්මක වන්න",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "Sporočilo se obdeluje",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "Sporočilo je predolgo",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "Sporazum se već obrađuje.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "Povezava je trajno zaprta.",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "Nema veze sa serverom",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "Fail to pick files",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "පින්තූර තෝරා ගැනීමට අසමත් විය",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "Kameradan fotografi çekme başarısız oldu",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "Lahko pripnete do {count} datotek hkrati.",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "Clear recognized text",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "Sporazum je predug.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "ඉදිරියට යාමට පෙර උඩුගත කිරීම් සම්පූර්ණ වීමට බලා සිටින්න.",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "Tip {kind} \"{name}\" je već priložen i nije ponovo dodan.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "The {kind} \"{name}\" is a duplicate of {exist} and was not added.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "The {kind} \"{name}\" was not added because the maximum number of attachments has been exceeded.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "Datoteka \"{name}\" je prazna.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "Datoteka je prazna.",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "Datoteka \"{name}\" premašuje maksimalno dopuštenu veličinu.",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "ගොනුව උපරිම ඉඩ ප්‍රමාණය ඉක්මවා ගියෙයි.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "Pri obdelavi datoteke \"{name}\" je prišlo do napake.",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "Datoteka se nije mogla obraditi.",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "Datoteka \"{name}\" nije dodana jer je prekoračen maksimalni broj privitaka.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "Fail(e) nije dodan(a) jer je prekoračen maksimalni broj privitaka.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "Datoteka nije dodana jer je prekoračen maksimalni broj privitaka.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "A file without a name was attempted to be added.",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "Poskušali ste dodati datoteko z nepodprto pripono: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "A file with an unsupported extension was attempted to be added.",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "Impossible to add a file.",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "Datoteka \"{name}\" je nevalidna i ne može biti dodana.",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "Faili එකක් වලංගු නොවේ සහ එකතු කළ නොහැක.",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "Predmet \"{name}\" nije važeća datoteka.",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "Predmet nije važeća datoteka.",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "An error occurred while processing an item.",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "Prihvatili smo grešku prilikom obrade stavke(a).",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "ගොනු එකතු කර නැත.",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "Nekateri datoteki so bile preskočene zaradi podvajanja z obstoječimi datotekami.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "අනියම් දෝෂයක් සිදුවිය.",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "Užfiksuota klaidų, kai bandėte pridėti failus:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "Datoteka nije mogla biti deljena: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "Zapri",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "Deli",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "ගොනුව පූර්ණ කරමින්...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "Datoteka nije učitana",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "Nepoznata greška se dogodila",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "Ponovno pokušajte",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "අනුමත නොකෙරෙන ගොනුවේ වර්ගය",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "Cannot preview {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "Deli datoteku",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "පින්තූරය පෙන්වීම අසාර්ථක විය",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "Ponovno postavi zoom",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "PDF එක ආරම්භ කිරීමට අසමත් විය",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "Tekst sadržaj nije moguće dešifrovati",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "හා {count} තවත් දෝෂ.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "Datoteka je neispravna",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "Potrebna suglasnost",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "S nadaljevanjem se strinjate z našimi <tc>pogoji</tc>, <privacy_policy>politiko o zasebnosti</privacy_policy> in <cookies>uporabo piškotkov</cookies> ter potrjujete, da to svetovanje zagotavlja AI, ne licencirani zdravstveni delavec.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "Zapri",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "මකන්න",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "කතාබහ මකන්න",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "චැට් “{title}” සාර්ථකව මකන ලදී.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "චැට් මකන්නද?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "ඔබගේ ලක්ෂණ, රෝග විශේෂණය සාරාංශය සහ මෙම කතාබස්යේ යෝජනා කිසිවක් මකා දැමිය හැක.\nමෙම ක්‍රියාව නැවත කිරීමට නොහැක.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "ඉහලට විශාල කරන්න",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "Zoom Out",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "සැකසුම් නැවත සකසන්න",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "බෙදා ගන්න",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "අද",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "ඊයේ",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "පළමු පිටුව පමණි. සම්පූර්ණ ගොනුව බාගත කිරීමට Share භාවිතා කරන්න.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}
