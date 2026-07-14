@@ -415,7 +415,7 @@ dart pub global run sheety_localization:localize \
 - `--timeout`:
   Hard timeout of a single OpenAI request, in seconds. Defaults to `120`, range 10–900. A request that the model never finishes is aborted instead of stalling a worker forever.
 - `--ignore` (or `-i`):
-  Comma-separated list of RegExp patterns to skip sheets whose titles match (e.g. `help,backend-.*,temp-.*`).
+  Comma-separated list of **regular expressions** — not globs — matched against sheet titles; a sheet whose title matches any of them is skipped (e.g. `^help$,^backend,^temp-`). The match is unanchored, so `backend` also skips `backend-monetization`; anchor with `^`/`$` when you want an exact title. A glob-looking `temp-*` means "temp followed by any number of dashes" and will not do what you expect.
 - `--prompt` (or `-p`):
   Path to a custom system prompt file for the AI model.
 
