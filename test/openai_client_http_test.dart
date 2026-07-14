@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io' as io;
 
-import 'package:sheety_localization/localize.dart';
+import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
 /// Local stand-in for the OpenAI Responses API.

@@ -1,7 +1,8 @@
-/// Localization pipeline used by the `localize` executable.
+/// Localization pipeline behind the `localize` and `generate` executables.
 ///
-/// Everything here is pure Dart with no Google Sheets dependency, so it can be
-/// unit-tested without network access.
+/// The model (`LocalizationClient`) and the spreadsheet (`SheetsGateway`) sit
+/// behind interfaces, so the pipeline can be unit-tested without network
+/// access.
 library;
 
 export 'src/localize/client.dart';

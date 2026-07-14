@@ -1,3 +1,18 @@
-.vscode/
-example/lib/
+# NOTE: when this file exists, pub ignores .gitignore entirely — anything that
+# must stay out of the published archive has to be listed HERE as well, even if
+# git already ignores it.
+
+# Secrets — never publish
 credentials.json
+openai.key
+*.key
+*.pem
+
+# Local configuration
+.vscode/
+.claude/
+prompt.txt
+tool/
+
+# Generated example output
+example/lib/

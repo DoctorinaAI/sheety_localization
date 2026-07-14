@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:sheety_localization/localize.dart';
+import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
 /// Scripted [SheetsGateway] that records what was written.

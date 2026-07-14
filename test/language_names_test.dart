@@ -1,4 +1,4 @@
-import 'package:sheety_localization/localize.dart';
+import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
 void main() => group('language_names', () {
