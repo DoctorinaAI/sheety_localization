@@ -167,7 +167,7 @@
       },
       "type": "shell",
       "command": [
-        "dart format --fix -l 80 lib test"
+        "dart format --fix -l 80 bin lib test"
       ],
       "dependsOn": [],
       "args": [],

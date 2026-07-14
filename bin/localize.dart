@@ -50,12 +50,26 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
                 .map(RegExp.new)
                 .toList(growable: false) ??
             const <RegExp>[];
-        final workers =
-            int.tryParse(excludeQuotes(args.option('workers')) ?? '6') ?? 6;
-        final batch =
-            int.tryParse(excludeQuotes(args.option('batch')) ?? '3') ?? 3;
-        final timeout =
-            int.tryParse(excludeQuotes(args.option('timeout')) ?? '120') ?? 120;
+        // Parse a numeric option, telling the user when their value was not a
+        // number or had to be clamped — a silent fallback to the default makes
+        // a typo indistinguishable from an intentional omission.
+        int number(String name, int fallback, int min, int max) {
+          final raw = excludeQuotes(args.option(name));
+          final value = raw == null ? fallback : int.tryParse(raw);
+          if (value == null) {
+            $err('Warning: --$name="$raw" is not a number, using $fallback');
+            return fallback;
+          }
+          final clamped = value.clamp(min, max);
+          if (clamped != value)
+            $err('Warning: --$name=$value is out of range '
+                '[$min..$max], using $clamped');
+          return clamped;
+        }
+
+        final workers = number('workers', 6, 1, 14);
+        final batch = number('batch', 3, 1, 20);
+        final timeout = number('timeout', 120, 10, 900);
         String? systemPrompt;
 
         // Validate required arguments
@@ -125,9 +139,9 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         final client = OpenAIClient(
           apiKey: openaiApiKey,
           model: openaiModel ?? 'gpt-5-mini',
-          workers: workers.clamp(1, 14),
+          workers: workers,
           systemPrompt: systemPrompt,
-          timeout: Duration(seconds: timeout.clamp(10, 900)),
+          timeout: Duration(seconds: timeout),
         );
 
         // Process each sheet
@@ -146,7 +160,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
             await for (final row in localizeRows(
               rows: rows,
               client: client,
-              cellsPerBatch: batch.clamp(1, 20),
+              cellsPerBatch: batch,
             )) {
               if (row.isEmpty) continue;
               await updateSheet(
@@ -200,7 +214,7 @@ ArgParser buildArgumentsParser() => ArgParser()
       'source',
       'id',
     ],
-    mandatory: true,
+    mandatory: false,
     valueHelp: 'spreadsheet-id',
     help: 'Google Spreadsheet ID',
   )
@@ -500,12 +514,16 @@ Future<void> updateSheet({
   // Collect every non-empty cell into a single batch so the whole row is
   // written in ONE API request instead of one request per cell. This keeps us
   // well under the Google Sheets write quota (60 requests/min).
+  // A title with a space or an apostrophe ("App Strings", "Don't") is not a
+  // valid bare A1 range — it has to be quoted, with inner quotes doubled.
+  final title = "'${sheetTitle.replaceAll("'", "''")}'";
+
   final data = <ValueRange>[];
   for (final cell in row.cells) {
     if (cell.isEmpty) continue;
     data.add(
       ValueRange(
-        range: '$sheetTitle!${columnFromIndex(cell.column)}${row.row + 1}',
+        range: '$title!${columnFromIndex(cell.column)}${row.row + 1}',
         values: [
           [cell.text]
         ],
@@ -527,9 +545,15 @@ Future<void> updateSheet({
         ),
         sheetId,
       );
-      break; // Success, exit retry loop
+      return; // Success
     } on Object catch (e) {
-      if (attempt == attempts) {
+      // A malformed range, a missing scope or a deleted sheet will fail exactly
+      // the same way on every attempt. Sleeping 30s three times over it only
+      // stalls every row queued behind this one.
+      final status = e is DetailedApiRequestError ? e.status : null;
+      final retryable =
+          status == null || status == 429 || (status >= 500 && status < 600);
+      if (!retryable || attempt == attempts) {
         // Do not abort the whole run because of one unwritable row.
         $err(
           'Error updating sheet "$sheetTitle" '
@@ -542,7 +566,7 @@ Future<void> updateSheet({
         'row [${row.row + 1}] '
         '(attempt $attempt/$attempts) due to error: $e',
       );
-      await Future<void>.delayed(const Duration(seconds: 30));
+      await Future<void>.delayed(Duration(seconds: 5 * (1 << (attempt - 1))));
     }
   }
 }

@@ -1,6 +1,13 @@
 ## 0.5.0
 
+- **BREAKING**: `localize` now only writes to a sheet whose header matches `label | description | meta | en | <locale> ...`. A sheet whose fourth column is not the English source is skipped with a warning — reference tables kept in the same spreadsheet were previously "translated", overwriting their data.
 - **FIX**: `localize` wrote nothing back to Google Sheets — the row stream introduced in 0.4.3 never emitted the localized rows.
+- **FIX**: `localize` failed every request with `400 Unsupported parameter: 'temperature'` on the default `gpt-5-mini` model. Reasoning models (`gpt-5*`, `o*`) now get `reasoning: {effort: low}` instead of the sampling parameters, and a token budget with headroom for their reasoning tokens.
+- **FIX**: Placeholder validation rejected every correctly translated ICU plural, and accepted translations that had flattened the directive away. Placeholders are now parsed by brace depth.
+- **FIX**: A reasoning item carrying the model's thinking is no longer mistaken for the answer payload.
+- **FIX**: A sheet title containing a space or an apostrophe produced an invalid A1 range, so the row could not be written.
+- **FIX**: Two columns whose headers sanitize to the same locale (`pt-BR` and `pt_BR`) left the second one empty forever; the duplicate column is now skipped.
+- **CHANGED**: Failed writes to Google Sheets are retried only when retrying can help (429, 5xx, network) — a malformed range or a missing scope no longer costs 60s of sleeping per row.
 - **ADDED**: Per-language fallback: a failed batch of languages is split and each language is retried on its own instead of being re-sent as a whole, so one rare language the model chokes on no longer breaks its neighbours.
 - **ADDED**: Translation validation before writing: ICU placeholders and markup tags must survive, no empty values, no leaked markdown fences, no runaway output. A rejected translation is retried alone.
 - **ADDED**: Language hints in the prompt and in the JSON schema — English name, native endonym and an explicit disambiguation note for codes models misread (`uk` is Ukrainian, not "United Kingdom").

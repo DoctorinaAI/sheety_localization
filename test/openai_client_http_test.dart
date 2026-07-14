@@ -30,13 +30,20 @@ class FakeOpenAI {
 
   Future<void> _serve() async {
     await for (final request in _server) {
-      attempts++;
-      bodies.add(
-        jsonDecode(await utf8.decodeStream(request)) as Map<String, Object?>,
-      );
-      await handler(request, attempts);
-      await request.response.close();
+      // Each request is served concurrently: awaiting the handler here would
+      // serialize the server, and a serialized server cannot observe a client
+      // that ignores its own concurrency limit.
+      unawaited(_handle(request));
     }
+  }
+
+  Future<void> _handle(io.HttpRequest request) async {
+    final attempt = ++attempts;
+    bodies.add(
+      jsonDecode(await utf8.decodeStream(request)) as Map<String, Object?>,
+    );
+    await handler(request, attempt);
+    await request.response.close();
   }
 
   Future<void> close() => _server.close(force: true);
@@ -45,10 +52,15 @@ class FakeOpenAI {
 String okBody(Map<String, String> texts) => jsonEncode({
       'status': 'completed',
       'output': [
-        // A reasoning model puts its thinking in front of the answer.
+        // A reasoning model puts its thinking in front of the answer — and it
+        // may carry that thinking in a `content` list of its very own, which
+        // must not be mistaken for the payload.
         {
           'type': 'reasoning',
           'summary': <Object?>[],
+          'content': [
+            {'type': 'reasoning_text', 'text': 'Thinking about the target...'}
+          ],
         },
         {
           'type': 'message',
@@ -229,7 +241,8 @@ void main() {
     );
   });
 
-  test('never runs more than `workers` requests at once', () async {
+  test('runs exactly `workers` requests at once, no more and no fewer',
+      () async {
     var inFlight = 0, peak = 0;
     final server = await FakeOpenAI.start((request, _) async {
       inFlight++;
@@ -254,6 +267,87 @@ void main() {
     ]);
 
     expect(server.attempts, 6);
+    // Upper bound: the semaphore holds the line at `workers`.
     expect(peak, lessThanOrEqualTo(2));
+    // Lower bound: requests really do overlap. Without it, a client that ran
+    // everything sequentially — or one whose semaphore leaked slots until it
+    // deadlocked at one worker — would still satisfy the bound above.
+    expect(peak, 2);
+  });
+
+  test('releases its slot after a failed request', () async {
+    // A leaked slot starves the pool: `workers` failures and the run hangs
+    // forever with no output. Fail the first `workers` requests, then succeed —
+    // the later calls can only get through if the slots came back.
+    final server = await FakeOpenAI.start((request, attempt) async {
+      if (attempt <= 2) {
+        request.response.statusCode =
+            401; // non-retryable, throws out of call()
+        return;
+      }
+      request.response
+        ..statusCode = 200
+        ..write(okBody({'uk': 'Привіт'}));
+    });
+    addTearDown(server.close);
+
+    final client = OpenAIClient(
+      apiKey: 'sk-test',
+      endpoint: server.endpoint,
+      workers: 2,
+    );
+    final (:prompt, :schema) = request(['uk']);
+
+    for (var i = 0; i < 2; i++)
+      await expectLater(
+        client(prompt: prompt, schema: schema),
+        throwsA(isA<OpenAIApiException>()),
+      );
+
+    final response = await client(prompt: prompt, schema: schema)
+        .timeout(const Duration(seconds: 5));
+    expect(response.label, 'greeting');
+  });
+
+  test('sends the system prompt as `instructions`', () async {
+    final server = await FakeOpenAI.start((request, _) async {
+      request.response
+        ..statusCode = 200
+        ..write(okBody({'uk': 'Привіт'}));
+    });
+    addTearDown(server.close);
+
+    final (:prompt, :schema) = request(['uk']);
+    await OpenAIClient(
+      apiKey: 'sk-test',
+      endpoint: server.endpoint,
+      systemPrompt: 'You are a medical localization engine.',
+    )(prompt: prompt, schema: schema);
+
+    expect(
+      server.bodies.single['instructions'],
+      'You are a medical localization engine.',
+    );
+  });
+
+  test('does not retry an error delivered inside a 200 body', () async {
+    final server = await FakeOpenAI.start((request, _) async {
+      request.response
+        ..statusCode = 200
+        ..write(jsonEncode({
+          'error': {'message': 'content filter', 'type': 'invalid_request'}
+        }));
+    });
+    addTearDown(server.close);
+
+    final client = OpenAIClient(apiKey: 'sk-test', endpoint: server.endpoint);
+    final (:prompt, :schema) = request(['uk']);
+
+    await expectLater(
+      client(prompt: prompt, schema: schema),
+      throwsA(isA<OpenAIApiException>()),
+    );
+    // The API already judged this exact prompt; re-sending it only repeats it.
+    expect(server.attempts, 1);
   });
 }
