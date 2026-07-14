@@ -112,7 +112,8 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
 
         // Create Google Sheets API client
         $log('Creating Google Sheets API client...');
-        final sheetsApi = await createSheetsApiClient(
+        final (api: sheetsApi, client: sheetsClient) =
+            await createSheetsApiClient(
           credentialsPath,
         );
 
@@ -125,6 +126,7 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
         ).toList();
 
         if (sheets.isEmpty) {
+          sheetsClient.close();
           $err('No valid sheets found to process.');
           io.exit(1);
         }
@@ -139,29 +141,37 @@ void main(List<String>? $arguments) => runZonedGuarded<void>(
 
         // Process each sheet
         $log('Processing ${sheets.length} sheets...');
-        for (final (:sheet, :values) in sheets) {
-          final title = sheet.properties?.title ?? 'Unknown';
-          $log('Processing sheet: $title');
-          final rows = await extractEmptyCells(
-            sheet: sheet,
-            values: values,
-          );
-          if (rows.isEmpty) continue;
-
-          $log('Found ${rows.length} rows to localize in sheet: $title');
-          await for (final row in localizeRows(
-            rows: rows,
-            client: client,
-            cellsPerBatch: batch.clamp(1, 20),
-          )) {
-            if (row.isEmpty) continue;
-            await updateSheet(
-              api: sheetsApi,
-              sheetId: sheetId,
-              sheetTitle: title,
-              row: row,
+        try {
+          for (final (:sheet, :values) in sheets) {
+            final title = sheet.properties?.title ?? 'Unknown';
+            $log('Processing sheet: $title');
+            final rows = await extractEmptyCells(
+              sheet: sheet,
+              values: values,
             );
+            if (rows.isEmpty) continue;
+
+            $log('Found ${rows.length} rows to localize in sheet: $title');
+            await for (final row in localizeRows(
+              rows: rows,
+              client: client,
+              cellsPerBatch: batch.clamp(1, 20),
+            )) {
+              if (row.isEmpty) continue;
+              await updateSheet(
+                api: sheetsApi,
+                sheetId: sheetId,
+                sheetTitle: title,
+                row: row,
+              );
+            }
           }
+          $log('Localization completed successfully '
+              'for ${sheets.length} sheets.');
+        } finally {
+          // Close the auth client so its token-refresh timer and keep-alive
+          // sockets are released and the process can exit.
+          sheetsClient.close();
         }
       },
       (error, stackTrace) {
@@ -326,7 +336,8 @@ Usage: dart run bin/localize.dart [options]
 ''';
 
 /// Create Google Sheets API client
-Future<SheetsApi> createSheetsApiClient(
+Future<({SheetsApi api, AutoRefreshingAuthClient client})>
+    createSheetsApiClient(
   String credentialsPath,
 ) async {
   $log('Credentials path: $credentialsPath');
@@ -351,18 +362,16 @@ Future<SheetsApi> createSheetsApiClient(
   }
 
   $log('Creating Google Sheets API client...');
-  SheetsApi sheetsApi;
   try {
     final client = await clientViaServiceAccount(credentials, [
       // SheetsApi.spreadsheetsReadonlyScope,
       SheetsApi.spreadsheetsScope,
     ]);
-    sheetsApi = SheetsApi(client);
+    return (api: SheetsApi(client), client: client);
   } on Object catch (e) {
     $err('Error creating Google Sheets API client: $e');
     io.exit(1);
   }
-  return sheetsApi;
 }
 
 /// Fetch spreadsheets from Google Sheets API
@@ -702,13 +711,16 @@ Stream<LocalizeRow> localizeRows({
   required List<LocalizeRow> rows,
   required OpenAIClient client,
   int cellsPerBatch = 3,
-}) async* {
-  for (final row in rows) {
+}) {
+  // Localize a single row: split its target locales into batches and call the
+  // OpenAI API for each batch. Batches within a row run sequentially, but many
+  // rows are dispatched concurrently below — the client's internal semaphore
+  // caps the number of simultaneous requests at [OpenAIClient.workers].
+  Future<void> localizeOne(LocalizeRow row) async {
     final cells = row.cells.map((e) => e.code).toList(growable: false);
-    for (var i = 0; i <= cells.length; i += cellsPerBatch) {
+    for (var i = 0; i < cells.length; i += cellsPerBatch) {
       try {
         // Get the next batch of languages to process
-        if (i >= cells.length) break;
         final languages =
             cells.skip(i).take(cellsPerBatch).toList(growable: false);
         if (languages.isEmpty) break;
@@ -751,8 +763,25 @@ Stream<LocalizeRow> localizeRows({
         continue;
       }
     }
-    yield row;
   }
+
+  // Dispatch every row concurrently and emit each one as soon as it finishes.
+  if (rows.isEmpty) return const Stream.empty();
+  final controller = StreamController<LocalizeRow>();
+  var pending = rows.length;
+  for (final row in rows) {
+    Future<void>(() async {
+      try {
+        await localizeOne(row);
+      } on Object catch (e, _) {
+        $err('Error localizing row: $e');
+      } finally {
+        pending--;
+        if (pending == 0) controller.close().ignore();
+      }
+    });
+  }
+  return controller.stream;
 }
 
 class OpenAIClient {
@@ -762,7 +791,7 @@ class OpenAIClient {
     this.workers = 6,
     this.retries = 3,
     this.systemPrompt,
-  });
+  }) : _available = workers < 1 ? 1 : workers;
 
   final String apiKey;
   final String model;
@@ -770,11 +799,31 @@ class OpenAIClient {
   final int retries;
   final String? systemPrompt;
 
-  final Queue<Future<void> Function()> _taskQueue =
-      Queue<Future<void> Function()>();
+  /// Counting semaphore limiting the number of concurrent in-flight
+  /// OpenAI requests to [workers].
+  int _available;
+  final Queue<Completer<void>> _waiters = Queue<Completer<void>>();
 
-  bool _isProcessing = false;
-  bool get isProcessing => _isProcessing;
+  /// Acquire a slot before performing a request, waiting if [workers] requests
+  /// are already in flight.
+  Future<void> _acquire() {
+    if (_available > 0) {
+      _available--;
+      return Future<void>.value();
+    }
+    final completer = Completer<void>();
+    _waiters.add(completer);
+    return completer.future;
+  }
+
+  /// Release a slot, waking the next waiter if any.
+  void _release() {
+    if (_waiters.isNotEmpty) {
+      _waiters.removeFirst().complete();
+    } else {
+      _available++;
+    }
+  }
 
   Future<({String label, Map<String, Object?> localization})> _request({
     required io.HttpClient client,
@@ -862,61 +911,37 @@ class OpenAIClient {
     throw Exception('Invalid response format from OpenAI API');
   }
 
-  void _processQueue() {
-    if (_isProcessing) return;
-    if (_taskQueue.isEmpty) return;
-    _isProcessing = true;
-    Future<void>(() async {
-      while (_taskQueue.isNotEmpty) {
-        try {
-          final task = _taskQueue.removeFirst();
-          await task();
-        } on Object {
-          // Ignore errors in the queue processing
-        }
-      }
-      _isProcessing = false;
-    }).ignore();
-  }
-
   Future<({String label, Map<String, Object?> localization})> call({
     required String prompt,
     required Map<String, Object?> schema,
   }) async {
-    final completer =
-        Completer<({String label, Map<String, Object?> localization})>();
-    _taskQueue.add(() async {
-      io.HttpClient client = io.HttpClient();
-      try {
-        for (var i = 0; i < retries; i++) {
-          try {
-            final response = await _request(
-              client: client,
-              prompt: prompt,
-              schema: schema,
-            );
-            if (!completer.isCompleted) completer.complete(response);
-            return;
-          } on FormatException catch (e) {
-            if (i == retries - 1) rethrow;
-            $err('OpenAI API returned invalid JSON '
-                '(attempt ${i + 1}/$retries): $e');
-            await Future<void>.delayed(const Duration(milliseconds: 250));
-          } on Object catch (e) {
-            if (i == retries - 1) rethrow;
-            $err('OpenAI API call failed ' '(attempt ${i + 1}/$retries): $e');
-            await Future<void>.delayed(const Duration(milliseconds: 250));
-          }
+    // Throttle to at most [workers] concurrent in-flight requests.
+    await _acquire();
+    final client = io.HttpClient();
+    try {
+      for (var i = 0; i < retries; i++) {
+        try {
+          return await _request(
+            client: client,
+            prompt: prompt,
+            schema: schema,
+          );
+        } on FormatException catch (e) {
+          if (i == retries - 1) rethrow;
+          $err('OpenAI API returned invalid JSON '
+              '(attempt ${i + 1}/$retries): $e');
+          await Future<void>.delayed(const Duration(milliseconds: 250));
+        } on Object catch (e) {
+          if (i == retries - 1) rethrow;
+          $err('OpenAI API call failed ' '(attempt ${i + 1}/$retries): $e');
+          await Future<void>.delayed(const Duration(milliseconds: 250));
         }
-      } on Object catch (e, s) {
-        if (!completer.isCompleted) completer.completeError(e, s);
-        $err('OpenAI API call failed: $e');
-      } finally {
-        client.close();
       }
-    });
-    _processQueue();
-    return completer.future;
+      throw Exception('OpenAI API call failed after $retries attempts');
+    } finally {
+      client.close();
+      _release();
+    }
   }
 }
 
@@ -970,40 +995,51 @@ Future<void> updateSheet({
 }) async {
   if (row.isEmpty) return;
 
+  // Collect every non-empty cell into a single batch so the whole row is
+  // written in ONE API request instead of one request per cell. This keeps us
+  // well under the Google Sheets write quota (60 requests/min).
+  final data = <ValueRange>[];
   for (final cell in row.cells) {
     if (cell.isEmpty) continue;
-    final text = cell.text;
-    const attempts = 3;
+    data.add(
+      ValueRange(
+        range: '$sheetTitle!${columnFromIndex(cell.column)}${row.row + 1}',
+        values: [
+          [cell.text]
+        ],
+      ),
+    );
+  }
+  if (data.isEmpty) return;
 
-    for (var attempt = 1; attempt <= attempts; attempt++) {
-      try {
-        // Wait for rate limiter before making API call
-        await _sheetsRateLimiter.waitIfNeeded();
+  const attempts = 3;
+  for (var attempt = 1; attempt <= attempts; attempt++) {
+    try {
+      // Wait for rate limiter before making API call
+      await _sheetsRateLimiter.waitIfNeeded();
 
-        await api.spreadsheets.values.update(
-          ValueRange(values: [
-            [text]
-          ]),
-          sheetId,
-          '$sheetTitle!${columnFromIndex(cell.column)}${row.row + 1}',
+      await api.spreadsheets.values.batchUpdate(
+        BatchUpdateValuesRequest(
           valueInputOption: 'RAW',
-        );
-        break; // Success, exit retry loop
-      } on Object catch (e) {
-        if (attempt == attempts) {
-          $err(
-            'Error updating sheet "$sheetTitle" '
-            'cell [${columnFromIndex(cell.column)}${row.row + 1}]: $e',
-          );
-          rethrow;
-        }
+          data: data,
+        ),
+        sheetId,
+      );
+      break; // Success, exit retry loop
+    } on Object catch (e) {
+      if (attempt == attempts) {
         $err(
-          'Retrying update for sheet "$sheetTitle" '
-          'cell [${columnFromIndex(cell.column)}${row.row + 1}] '
-          '(attempt $attempt/$attempts) due to error: $e',
+          'Error updating sheet "$sheetTitle" '
+          'row [${row.row + 1}]: $e',
         );
-        await Future<void>.delayed(const Duration(seconds: 30));
+        rethrow;
       }
+      $err(
+        'Retrying update for sheet "$sheetTitle" '
+        'row [${row.row + 1}] '
+        '(attempt $attempt/$attempts) due to error: $e',
+      );
+      await Future<void>.delayed(const Duration(seconds: 30));
     }
   }
 }
