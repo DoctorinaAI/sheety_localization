@@ -1,0 +1,15 @@
+{
+  "@@locale": "az",
+  "error": "Xəta baş verdi",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Gözlənilməz bir xəta baş verdi",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Baq reportu uğurla göndərildi.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

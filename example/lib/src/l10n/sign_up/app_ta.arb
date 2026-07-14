@@ -1,0 +1,390 @@
+{
+  "@@locale": "ta",
+  "logIn": "உள்நுழைய",
+  "@logIn": {
+    "description": "Надпись \"логин\""
+  },
+  "password": "கடவுச்சொல்",
+  "@password": {
+    "description": "Надпись \"пароль\""
+  },
+  "changeNumber": "எண்ணை மாற்றவும்",
+  "@changeNumber": {},
+  "forgotPassword": "கடவுச்சொல்லை மறந்தீர்களா?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "உங்கள் மின்னஞ்சல் முகவரியை உள்ளிடவும், மற்றும் உங்கள் கடவுச்சொல்லை மீட்டமைக்க இணைப்பை அனுப்புவோம்",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "உங்கள் கடவுச்சொல்லை நினைவில் வைத்துள்ளீர்களா?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "எனக்கு கடவுச்சொல் உள்ளது",
+  "@backToLoginButton": {},
+  "continueButton": "தொடர்",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "கடவுச்சொல் மீட்டமைப்பு மின்னஞ்சல் அனுப்பப்பட்டது",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "கடவுச்சொல்லை மீட்டமைக்கவும்",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "குறியீட்டை உறுதிப்படுத்துக",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "இன்று Doctorina ஐப் பயன்படுத்தத் தொடங்குங்கள்",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "அல்லது",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "உங்கள் கடவுச்சொல்லை உள்ளிடவும்",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "கடவுச்சொல்லை காட்டு",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "கடவுச்சொல்லை மறைக்க",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "உள்நுழைவு அழி",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "ஈமெயில் அல்லது தொலைபேசி",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com அல்லது +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "மின்னஞ்சல் அல்லது தொலைபேசி எண்ணை உள்ளிடவும்",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "தயவு செய்து ஒப்பந்தங்களை ஏற்றுக்கொள்ளவும், தொடர.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "நான் தனிப்பட்ட தரவுகளை செயலாக்கத்திற்கு ஒப்புக் கொள்கிறேன்,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "பயன்பாட்டின்",
+  "@consentTheUseOf": {},
+  "consentCookies": "குக்கீஸ்",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", ஒப்புக்கொள்கிறேன்",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "விதிகள் மற்றும் நிபந்தனைகள்",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", மற்றும் அங்கீகரிக்கவும்",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "தனியுரிமைக் கொள்கை",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "எனது ஆலோசனை ஒரு செயற்கை நுண்ணறிவுடன் நடைபெறுகிறது, உரிமம் பெற்ற மருத்துவ நிபுணர் அல்ல என்று நான் ஒப்புக்கொள்கிறேன்.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "வெளியேறு",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "நீங்கள் வெளியேறுவது உறுதியா?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "ரத்து செய்",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "ஆம், வெளியேறு",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "குறியீட்டை மீண்டும் அனுப்பு",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "குறியீட்டை மீண்டும் அனுப்பு ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  },
+  "consentFull": "நான் தனிப்பட்ட தரவுகளை செயலாக்குவதற்கு ஒப்புக்கொள்கிறேன், <c>குக்கீஸ்</c> பயன்படுத்துவதற்கு, <t>விதிமுறைகள் மற்றும் நிபந்தனைகள்</t>க்கு ஒப்புக்கொள்கிறேன், மற்றும் <p>தனியுரிமை கொள்கை</p>ஐ ஒப்புக்கொள்கிறேன்.",
+  "@consentFull": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <c> <t> <p> указаны кликабельные спаны, они должны присутсвовать во всех языках."
+  },
+  "emailLabel": "உங்கள் மின்னஞ்சலை உள்ளிடவும்",
+  "@emailLabel": {
+    "description": "Email input field label."
+  },
+  "signUpWithEmailTitle": "மின்னஞ்சலால் பதிவு செய்யவும்",
+  "@signUpWithEmailTitle": {
+    "description": "AppBar title for email signup overlay"
+  },
+  "logInWithEmailTitle": "மின்னஞ்சலுடன் உள்நுழைக",
+  "@logInWithEmailTitle": {
+    "description": "AppBar title for email login overlay"
+  },
+  "phoneLabel": "உங்கள் தொலைபேசியை உள்ளிடவும்",
+  "@phoneLabel": {
+    "description": "Phone input field label"
+  },
+  "confirmPhoneTitle": "உங்கள் ஃபோனை உறுதிப்படுத்தவும்",
+  "@confirmPhoneTitle": {
+    "description": "AppBar title for phone confirmation screen"
+  },
+  "signUpText": "பதிவு செய்யவும்",
+  "@signUpText": {
+    "description": "Standalone \"Sign up\" text for buttons and tabs"
+  },
+  "emailHintShort": "மின்னஞ்சலை உள்ளிடவும்",
+  "@emailHintShort": {
+    "description": "Short email hint text in login dialog"
+  },
+  "buttonTextSignUpWithGoogle": "Google உடன் பதிவு செய்",
+  "@buttonTextSignUpWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextSignUpWithApple": "Apple உடன் பதிவு செய்யவும்",
+  "@buttonTextSignUpWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextSignUpWithPhone": "தொலைபேசியில் பதிவு செய்யவும்",
+  "@buttonTextSignUpWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "buttonTextLoginWithGoogle": "Google உடன் உள்நுழையவும்",
+  "@buttonTextLoginWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextLoginWithApple": "Apple-ல் உள்நுழைய",
+  "@buttonTextLoginWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextLoginWithPhone": "தொலைபேசியில் உள்நுழைக",
+  "@buttonTextLoginWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "youAreLoggedOutMessage": "நீங்கள் வெளியேறிவிட்டீர்கள்",
+  "@youAreLoggedOutMessage": {
+    "description": "Message displayed on logout screen"
+  },
+  "reloadButtonText": "மீட்டமைக்கவும்",
+  "@reloadButtonText": {
+    "description": "Reload button text on logout screen"
+  },
+  "emailErrorText": "தவறான மின்னஞ்சல் முகவரி",
+  "@emailErrorText": {
+    "description": "Error message for invalid email address"
+  },
+  "passwordErrorText": "கடவுச்சொல் குறைந்தது 6 எழுத்துக்கள் கொண்டதாக இருக்க வேண்டும்",
+  "@passwordErrorText": {
+    "description": "Error message for password validation (minimum length)"
+  },
+  "invalidPhoneNumberError": "தவறான தொலைபேசி எண்: {phoneNumber}",
+  "@invalidPhoneNumberError": {
+    "description": "Error message for invalid phone number format"
+  },
+  "resendCodeWaitError": "புதிய குறியீட்டை கோருவதற்கு முன் {seconds} விநாடிகள் காத்திருங்கள்.",
+  "@resendCodeWaitError": {
+    "description": "Error message when trying to resend code too soon"
+  },
+  "invalidPhoneCodeError": "தவறான தொலைபேசி குறியீடு: {phoneCode}",
+  "@invalidPhoneCodeError": {
+    "description": "Error message for invalid phone verification code"
+  },
+  "termsAndConditionsText": "விதிமுறைகள் மற்றும் நிபந்தனைகள்",
+  "@termsAndConditionsText": {
+    "description": "Terms and conditions link text in login dialog"
+  },
+  "continueAsGuestBtn": "விருந்தினர் ஆக தொடரவும்",
+  "@continueAsGuestBtn": {
+    "description": "Btn to continue as guest on sign up screen"
+  },
+  "noAccountYetPromptText": "இன்னும் ஒரு கணக்கு இல்லையா? <p>பதிவு செய்யவும்</p>",
+  "@noAccountYetPromptText": {
+    "description": "Login tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Sign up” link."
+  },
+  "alreadyHaveAccountPromptText": "ஏற்கனவே கணக்கு உள்ளதா? <p>உள்நுழையுங்கள்</p>",
+  "@alreadyHaveAccountPromptText": {
+    "description": "Sign up tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Log in” link."
+  },
+  "beforeSubscribeYouNeedSignUpLoginDialogSubtitle": "நீங்கள் பிரீமியத்தை தொடர்வதற்கு முன் பதிவு செய்ய வேண்டும்",
+  "@beforeSubscribeYouNeedSignUpLoginDialogSubtitle": {
+    "description": "Subtitle for login dialog"
+  },
+  "loginSubtitle": "தனிப்பட்ட உள்ளடக்கம் பெறவும், உங்கள் சமூகத்துடன் தொடர்பில் இருங்கள்!",
+  "@loginSubtitle": {
+    "description": "Подзаголовок на экране входа, мотивирующий пользователя авторизоваться"
+  },
+  "emailFieldLabel": "மின்னஞ்சல்",
+  "@emailFieldLabel": {
+    "description": "Метка поля ввода email в форме"
+  },
+  "emailPlaceholder": "username@gmail.com",
+  "@emailPlaceholder": {
+    "description": "Пример email в поле ввода"
+  },
+  "recoverPasswordTooltip": "உங்கள் கடவுச்சொல்லை மீட்டெடுக்கவும்",
+  "@recoverPasswordTooltip": {
+    "description": "Тултип кнопки восстановления пароля когда email валиден"
+  },
+  "createAccountTitle": "ஒரு கணக்கு உருவாக்கவும்",
+  "@createAccountTitle": {
+    "description": "Заголовок экрана регистрации"
+  },
+  "createAccountSubtitle": "உங்கள் ஆரோக்கிய தரவுகளை பாதுகாப்பாக சேமிக்க மற்றும் உங்கள் மதிப்பீட்டை தொடர்வதற்காக கணக்கு தேவை.",
+  "@createAccountSubtitle": {
+    "description": "Подзаголовок экрана регистрации, объясняет зачем нужен аккаунт"
+  },
+  "repeatLabel": "மீண்டும்",
+  "@repeatLabel": {
+    "description": "Метка поля повторного ввода пароля"
+  },
+  "repeatPasswordHint": "உங்கள் கடவுச்சொல்லை மீண்டும் உள்ளிடவும்",
+  "@repeatPasswordHint": {
+    "description": "Подсказка в поле повторного ввода пароля"
+  },
+  "confirmButton": "உறுதிப்படுத்தவும்",
+  "@confirmButton": {
+    "description": "Кнопка подтверждения регистрации с паролем"
+  },
+  "noAccountPrompt": "உங்களிடம் கணக்கு இல்லைவா?",
+  "@noAccountPrompt": {
+    "description": "Текст перед ссылкой на регистрацию на экране входа"
+  },
+  "alreadyHaveAccountPrompt": "ஏற்கனவே ஒரு கணக்கு உள்ளதா?",
+  "@alreadyHaveAccountPrompt": {
+    "description": "Текст перед ссылкой на вход на экране регистрации"
+  },
+  "createPasswordHeader": "ஒரு கடவுச்சொல் உருவாக்கவும்",
+  "@createPasswordHeader": {
+    "description": "Заголовок шага создания пароля в хедере диалога"
+  },
+  "phoneHeader": "தொலைபேசி",
+  "@phoneHeader": {
+    "description": "Заголовок шага ввода телефона в хедере диалога"
+  },
+  "verifyPhoneHeader": "தொலைபேசி சரிபார்க்கவும்",
+  "@verifyPhoneHeader": {
+    "description": "Заголовок шага верификации телефона в хедере диалога"
+  },
+  "phoneTitle": "உங்கள் எண்ணிக்கை என்ன?",
+  "@phoneTitle": {
+    "description": "Заголовок экрана ввода номера телефона"
+  },
+  "phoneSubtitle": "உங்கள் தொலைபேசிக்கு உறுதிப்படுத்த ஒரு குறியீட்டை நாங்கள் உரை அனுப்புவோம்",
+  "@phoneSubtitle": {
+    "description": "Подзаголовок экрана ввода телефона"
+  },
+  "phoneNumberLabel": "எண்",
+  "@phoneNumberLabel": {
+    "description": "Метка поля ввода номера телефона"
+  },
+  "enterPhoneNumber": "தொலைபேசி எண்ணை உள்ளிடவும்",
+  "@enterPhoneNumber": {
+    "description": "Подсказка в поле ввода телефона"
+  },
+  "phonePlaceholder": "+1 (201) 555-01-23",
+  "@phonePlaceholder": {
+    "description": "Пример номера телефона в поле ввода"
+  },
+  "waitCountdownButton": "காத்திருங்கள் {countdown} விநாடிகள்",
+  "@waitCountdownButton": {
+    "description": "Текст кнопки во время ожидания повторной отправки OTP",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next OTP can be sent"
+      }
+    }
+  },
+  "enterCodeTitle": "உங்கள் குறியீட்டை உள்ளிடவும்",
+  "@enterCodeTitle": {
+    "description": "Заголовок экрана ввода OTP кода"
+  },
+  "codeSentToPhone": "நாங்கள் {phone}க்கு ஒரு குறியீட்டை அனுப்பினோம்",
+  "@codeSentToPhone": {
+    "description": "Текст с информацией куда отправлен код",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+1234567890",
+        "description": "Phone number where code was sent"
+      }
+    }
+  },
+  "didntReceiveCode": "கோடுகளைப் பெறவில்லைவா?",
+  "@didntReceiveCode": {
+    "description": "Текст перед ссылкой на повторную отправку кода"
+  },
+  "clickToResend": "மீண்டும் அனுப்ப கிளிக் செய்க",
+  "@clickToResend": {
+    "description": "Текст ссылки повторной отправки кода"
+  },
+  "requestNewCodeCountdown": "நீங்கள் {countdown} விநாடிகளில் புதிய குறியீட்டை கேட்கலாம்",
+  "@requestNewCodeCountdown": {
+    "description": "Текст с обратным отсчётом до возможности повторной отправки кода",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next code request"
+      }
+    }
+  },
+  "closeTooltip": "மூடு",
+  "@closeTooltip": {
+    "description": "Тултип кнопки закрытия диалога"
+  },
+  "backTooltip": "மீண்டும்",
+  "@backTooltip": {
+    "description": "Тултип кнопки назад"
+  },
+  "termsOfServiceLink": "சேவையின் விதிமுறைகள்",
+  "@termsOfServiceLink": {
+    "description": "Текст ссылки на условия использования в футере"
+  },
+  "privacyPolicyLink": "தனியுரிமை கொள்கை",
+  "@privacyPolicyLink": {
+    "description": "Текст ссылки на политику конфиденциальности в футере"
+  },
+  "welcomeBackTitle": "மீண்டும் வரவேற்கிறேன்",
+  "@welcomeBackTitle": {
+    "description": "Заголовок экрана приветствия при возвращении пользователя"
+  },
+  "welcomeBackSubtitle": "நீங்கள் ஏற்கனவே Doctorina கணக்கு வைத்திருந்தால் உள்நுழைக, இல்லையெனில் தொடங்க பதிவு செய்யவும்.",
+  "@welcomeBackSubtitle": {
+    "description": "Подзаголовок экрана приветствия, предлагающий войти или зарегистрироваться"
+  },
+  "passwordRuleLength": "8 முதல் 128 எழுத்துகள்",
+  "@passwordRuleLength": {
+    "description": "Правило валидации пароля: длина от 8 до 128 символов"
+  },
+  "passwordRuleNumber": "குறைந்தது 1 எண்",
+  "@passwordRuleNumber": {
+    "description": "Правило валидации пароля: минимум 1 цифра"
+  },
+  "passwordRuleUppercase": "குறைந்தது 1 பெரிய எழுத்து",
+  "@passwordRuleUppercase": {
+    "description": "Правило валидации пароля: минимум 1 заглавная буква"
+  },
+  "passwordRuleMatch": "கடவுச்சொற்கள் பொருந்துகின்றன",
+  "@passwordRuleMatch": {
+    "description": "Правило валидации пароля: пароли совпадают"
+  },
+  "phoneOtpVerificationFailed": "OTP சரிபார்ப்பு தோல்வியடைந்தது. மீண்டும் முயற்சிக்கவும்.",
+  "@phoneOtpVerificationFailed": {},
+  "referralCodeLabel": "முறையீட்டு குறியீடு",
+  "@referralCodeLabel": {
+    "description": "Заголовок поля ввода реферального кода на экране регистрации"
+  },
+  "enterReferralCodeHint": "உங்கள் பரிந்துரை குறியீட்டை உள்ளிடவும்",
+  "@enterReferralCodeHint": {
+    "description": "Подсказка (labelText) в поле ввода реферального кода"
+  },
+  "referralCodeExampleHint": "உள்ளீட்டு புலத்தில் பரிந்துரை குறியீட்டின் எடுத்துக்காட்டு",
+  "@referralCodeExampleHint": {
+    "description": "Пример реферального кода в поле ввода (hintText)"
+  },
+  "haveReferralCodeQuestion": "உங்களிடம் பரிந்துரை குறியீடு உள்ளதா?",
+  "@haveReferralCodeQuestion": {
+    "description": "Ссылка-вопрос, раскрывающая поле ввода реферального кода"
+  }
+}

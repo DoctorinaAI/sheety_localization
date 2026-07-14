@@ -1,0 +1,742 @@
+{
+  "@@locale": "kn",
+  "drawerTooltipNotifications": "ಅಧಿಸೂಚನೆಗಳು",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "ಸಹಾಯ",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "ಮುಚ್ಚು",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "ಖಾತೆ",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "Profile",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "ಖಾತೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "ಸಹಾಯ ಮಾಡಲು ದಾನ ಮಾಡಿ",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "Subscription",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "ಚಾಟ್‌ಗಳು",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "ಚಾಟ್ ಇತಿಹಾಸ",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "ಜೋಡಣೆ ದಾಖಲೆಗಳು",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "ಹೆಚ್ಚು ಬಳಸುವುದು",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "ವಿಡಿಯೋ ಟ್ಯುಟೋರಿಯಲ್ಸ್",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "ಕಾನೂನು",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "ಬಗ್ ವರದಿ",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "ನಿಯಮಗಳು ಮತ್ತು ಶರತ್ತುಗಳು",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "ಗೋಪ್ಯತಾ ನೀತಿ",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "ಪ್ರತಿಕ್ರಿಯೆ",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಅಂಕಿತ ಮಾಡಿ",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "ಮಿತ್ರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "ಲಾಗ್ ಔಟ್",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "ಇತರರಿಗೆ ವೈದ್ಯಕೀಯ ಆರೈಕೆ ಪಡೆಯಲು ಸಹಾಯ ಮಾಡಿ",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "ಬಳಕೆದಾರ",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "ಪ್ರಿಮಿಯಂ ವೈಶಿಷ್ಟ್ಯಗಳು\nಡಾಕ್ಟರಿನಾ ಜೊತೆ",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "ಪಡೆಯಿರಿ",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "ನಮ್ಮೊಂದಿಗೆ ಸೇರಿ",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "ಆಪ್ಲಿಕೇಶನ್ ಆವೃತ್ತಿ:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "ಇತ್ತೀಚಿನ ಚಾಟ್‌ಗಳು",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "ಪ್ರೊಫೈಲ್",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "ಇತ್ತೀಚಿನ ಚಾಟ್",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "ಆಪ್ಸ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "ಸಂದೇಶವನ್ನು ನಮೂದಿಸಿ",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "ಫೈಲ್ ಅಟಾಚ್ ಮಾಡಿ",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "ಉಲ್ಲೇಖಿಸಿ",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "ಮುಗಿಯಿಸಿ & ಪಠ್ಯಗೊಳಿಸಿ",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "ಸಂದೇಶ ಕಳುಹಿಸಿ",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "ಸಂದೇಶಗಳನ್ನು ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "ಸಂದೇಶಗಳನ್ನು ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "ಸಂದೇಶಗಳನ್ನು ಪಡೆಯಿರಿ",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "ಸಂದೇಶಗಳಿಲ್ಲ. ದಯವಿಟ್ಟು ಸಂಭಾಷಣೆಯನ್ನು ಪ್ರಾರಂಭಿಸಲು ಸಂದೇಶವನ್ನು ಕಳುಹಿಸಿ.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "ಸಂಪರ್ಕಿತ",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "ಹೋಗಿಲ್ಲ",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "ಹುಡುಕು",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "ಆಕರ್ಷಣೆಗಳು",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "ಡೌನ್‌ಲೋಡ್",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "ಪಿಡಿಎಫ್ ಮುದ್ರಿಸಿ",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "ಮಿತ್ರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "ಹೊಸ ಚಾಟ್",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "ಚಾಟ್",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "ಚಾಟ್ ಆಯ್ಕೆ ಮಾಡಿ",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "ಡ್ರಾಯರ್ ತೋರಿಸಿ",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "ಚಾಟ್ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ಪುನಃ ತಾಜಾ ಅಥವಾ ಹೊಸ ಚಾಟ್ ರಚಿಸಿ.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "ಚಾಟ್ ನವೀಕರಿಸಿ",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "ಹೊಸ ಚಾಟ್ ರಚಿಸಿ",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "ಪಠ್ಯವನ್ನು ನಕಲಿಸಿ",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "ಟೈಪಿಂಗ್ ಕ್ಷಣಕಾಲ",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "ಅಪ್ಡೇಟಿಂಗ್...\nದಯವಿಟ್ಟು ನಿಮ್ಮ ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕವನ್ನು ಪರಿಶೀಲಿಸಿ",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "ಸಂದೇಶವನ್ನು ಈಗಾಗಲೇ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "ಸಂದೇಶವು ಹೆಚ್ಚು ಉದ್ದವಾಗಿದೆ.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "ಅಟ್ಯಾಚ್‌ಮೆಂಟ್ ಅನ್ನು ತೆಗೆದುಹಾಕಿ",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "ಸಂದೇಶವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ವಿಫಲವಾಗಿದೆ",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "ಪಿಡಿಎಫ್ ಗೆ ರಫ್ತು ಮಾಡಿ",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "ಫೋಟೋಗಳು",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "ಕ್ಯಾಮೆರಾ",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "Files",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "ಫೋಟೋಗಳು ಮತ್ತು ಫೈಲ್‌ಗಳು",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "ನೀವು ಸಹಾಯವಾಗಿದೆಯೆಂದು ಭಾವಿಸುತ್ತೇನೆ! ಈ ವಿವರಣೆ ನಿಮಗೆ ಉಪಯುಕ್ತವಾಗಿದೆಯೆ?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "ಹೌದು, ಎಲ್ಲವೂ ಚೆನ್ನಾಗಿದೆ!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "ಚಾಟ್ ಸಾರಾಂಶವನ್ನು ಪಡೆಯಲು ವಿಫಲವಾಗಿದೆ",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "ಚಾಟ್ ಸಾರಾಂಶ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "ಡಾಕ್ಟರಿನಾ ಮೊಬೈಲ್ ಆಪ್‌ನಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "ಗೇಟ್ನಲ್ಲಿ",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "Download on the App Store",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "ಗೂಗಲ್ ಪ್ಲೇನಲ್ಲಿ ಪಡೆಯಿರಿ",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "ಸಂದೇಶ ವರದಿ ಮಾಡಿ",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "ನೀವು ಈ ಸಂದೇಶವನ್ನು ಏಕೆ ವರದಿ ಮಾಡುತ್ತಿದ್ದೀರಿ?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "ಐಚ್ಛಿಕ: ಈ ಸಂದೇಶದಲ್ಲಿ ಏನು ತಪ್ಪಾಗಿದೆ ಎಂಬುದನ್ನು ವಿವರಿಸಿ...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "ಇದು ನಮ್ಮ AI ಪ್ರತಿಸ್ಪಂದನೆಗಳನ್ನು ಸುಧಾರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "ರದ್ದು ಮಾಡಿ",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "ರಿಪೋರ್ಟ್",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "ನಿಮ್ಮ ಪ್ರತಿಕ್ರಿಯೆಗೆ ಧನ್ಯವಾದಗಳು! ವರದಿ ಸಲ್ಲಿಸಲಾಗಿದೆ.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "ರಿಪೋರ್ಟ್ ಸಲ್ಲಿಸಲು ವಿಫಲ",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "ಸಂದೇಶವನ್ನು ನಕಲಿಸಲು ವಿಫಲವಾಗಿದೆ",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "ಸಂದೇಶ ವರದಿ ಮಾಡಿ",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "ಡಾಕ್ಟರಿನಾ ಚಾಟ್‌ಗೆ ಅಪ್ಲೋಡ್ ಮಾಡಿ",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "ಚಾಟ್‌ಗೆ ಸೇರಿಸಲು ಫೈಲ್‌ಗಳನ್ನು ಇಲ್ಲಿ ಎಳೆಯಿರಿ ಮತ್ತು ಬಿಡಿ",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "ನೀವು ಒಂದು ಸಂದೇಶಕ್ಕೆ 15 ಫೈಲ್‌ಗಳನ್ನು ಸೇರಿಸಬಹುದು",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "ನಿಮ್ಮ ಆರೋಗ್ಯದ ಬಗ್ಗೆ ಏನಾದರೂ ಪ್ರಮುಖವಾಗಿದ್ದರೆ ನಾನು ನಿಮಗೆ ತಿಳಿಸಲು ಬಯಸುತ್ತೀರಾ?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "ಹೌದು, ನನಗೆ ತಿಳಿಸಿ",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "ಮರುಕಳಿಸಲು",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "ಮುಚ್ಚಿ",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "ಅಧಿಕಾರಗಳ ಮಟ್ಟದಲ್ಲಿ ಸೂಚನೆಗಳನ್ನು ತಡೆಹಿಡಿಯಲಾಗಿದೆ. ಡಾಕ್ಟೊರಿನಾ ಸೂಚನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವ ಮೊದಲು ಅವುಗಳನ್ನು ವ್ಯವಸ್ಥೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಸಕ್ರಿಯಗೊಳಿಸಿ.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "ಅಧಿಕಾರಗಳಲ್ಲಿ ಬ್ರೌಸರ್‌ಗಾಗಿ ನೋಟಿಫಿಕೇಶನ್‌ಗಳನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ. ಡಾಕ್ಟೊರಿನಾ ನೋಟಿಫಿಕೇಶನ್‌ಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವ ಮೊದಲು ಬ್ರೌಸರ್ ಸೆಟಿಂಗ್‌ಗಳಲ್ಲಿ ಅವುಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "ನಿಮ್ಮ ಸಲಹೆ ಬಗ್ಗೆ ನವೀಕರಿತವಾಗಿರಿ",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Doctorina ನಿಮ್ಮ ಆರೋಗ್ಯದ ಬಗ್ಗೆ ಹೊಸ ಮಾಹಿತಿಗಳು ಅಥವಾ ನವೀಕರಣಗಳು ಲಭ್ಯವಾಗುವಾಗ ನಿಮಗೆ ತಿಳಿಸಬಹುದು",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "ಅಧಿಕೃತ ಸೂಚನೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "ಮರುಕಳಿಸಲು",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "ಮುಂದುವರಿಸುವುದರಿಂದ, ನೀವು ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯ ಸಂಸ್ಕರಣೆ, <c>cookies</c> ಬಳಕೆ, <t>terms and conditions</t> ಕುರಿತು ಒಪ್ಪಿಗೆಯೊಂದಿಗೆ, ಮತ್ತು <p>privacy policy</p> ಅನ್ನು ಅಂಗೀಕರಿಸುತ್ತೀರಿ. ಜೊತೆಗೆ, ನಿಮ್ಮ ಸಲಹೆ AI ಮೂಲಕವಾಗಿದ್ದು, ಪರವಾನಗಿ ಪಡೆದ ವೈದ್ಯಕೀಯ ವೃತ್ತಿಪರವಲ್ಲ ಎಂಬುದನ್ನು ಖಚಿತಪಡಿಸುತ್ತೀರಿ",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "ಅಳಿಸಿ",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "ಮೊದಲು ಈ ಚಾಟ್ ಅನ್ನು ಉಳಿಸಿ?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "ಹೊಸ ಪರಾಮರ್ಶೆಯನ್ನು ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು ಈ ಪರಾಮರ್ಶೆಯನ್ನು ಉಳಿಸಲು ಉಚಿತವಾಗಿ ಸೈನ್ ಅಪ್ ಮಾಡಿ",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "ಉಳಿಸುವುದಿಲ್ಲದೆ ಆರಂಭಿಸಿ",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "ಸೈನ್ ಅಪ್ ಮಾಡಿ",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "ಸಂವಾದವನ್ನು ಮುಂದುವರಿಸಲು, ಮೇಲಿನ ಆಯ್ಕೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "ಮುಚ್ಚು",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "ಜೋಡಣೆ ತೆಗೆದು ಹಾಕಿ",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "ಡ್ರಾಪ್ ಜೋನ್‌ನಿಂದ ಫೈಲ್‌ಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ವಿಫಲ",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "ದಯವಿಟ್ಟು ಸಂದೇಶವನ್ನು ನಮೂದಿಸಿ ಅಥವಾ ಫೈಲ್ ಅನ್ನು ಅಟ್ಯಾಚ್ ಮಾಡಿ",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "ದಯವಿಟ್ಟು ಅಪ್ಲೋಡ್‌ಗಳನ್ನು ಪೂರ್ಣಗೊಳಿಸಲು ಕಾಯಿರಿ",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "ಸಂದೇಶವನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "ಸಂದೇಶವು ತುಂಬಾ ದೀರ್ಘವಾಗಿದೆ",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "ಸಂದೇಶವು ಈಗಾಗಲೇ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲಾಗುತ್ತಿದೆ.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "ಸಂಪರ್ಕ ಶಾಶ್ವತವಾಗಿ ಮುಚ್ಚಲಾಗಿದೆ",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "ಸರ್ವರ್ ಗೆ ಸಂಪರ್ಕ ಇಲ್ಲ",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "ಫೈಲ್ ಆಯ್ಕೆ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "ಚಿತ್ರಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಲು ವಿಫಲ",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "ಕ್ಯಾಮೆರಾದಿಂದ ಫೋಟೋ ಹಿಡಿಯಲು ವಿಫಲ",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "ನೀವು ಒಂದೇ ಬಾರಿಗೆ {count} ಫೈಲ್‌ಗಳನ್ನು ಜೋಡಿಸಬಹುದು",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "ಅನುಮೋದಿತ ಪಠ್ಯವನ್ನು ಅಳಿಸಿ",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "ಸಂದೇಶವು ತುಂಬಾ ದೀರ್ಘವಾಗಿದೆ.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "ದಯವಿಟ್ಟು ಅಪ್ಲೋಡ್‌ಗಳನ್ನು ಪೂರ್ಣಗೊಳ್ಳಲು ಕಾಯಿರಿ",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "The {kind} \"{name}\" is already attached and was not added again.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "The {kind} \"{name}\" is a duplicate of {exist} and was not added.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "{kind} \"{name}\" ಅನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಅಟ್ಯಾಚ್ಮೆಂಟ್‌ಗಳ ಗರಿಷ್ಠ ಸಂಖ್ಯೆಯನ್ನು ಮೀರಿಸಲಾಗಿದೆ.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "\"{name}\" ಫೈಲ್ ಖಾಲಿ ಇದೆ",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "ಫೈಲ್ ಖಾಲಿ ಇದೆ",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "\"{name}\" ಫೈಲ್ ಗರಿಷ್ಠ ಅನುಮತಿತ ಗಾತ್ರವನ್ನು ಮೀರಿಸುತ್ತದೆ",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "ಫೈಲ್ ಗರಿಷ್ಠ ಅನುಮತಿತ ಗಾತ್ರವನ್ನು ಮೀರಿಸುತ್ತದೆ.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "\"{name}\" ಫೈಲ್ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವಾಗ ದೋಷ ಉಂಟಾಯಿತು.",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "ಫೈಲ್ ಪ್ರಕ್ರಿಯೆ ಮಾಡುವಾಗ ದೋಷ ಉಂಟಾಯಿತು",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "\"{name}\" ಫೈಲ್ ಸೇರಿಸಲಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಅಟ್ಯಾಚ್ಮೆಂಟ್‌ಗಳ ಗರಿಷ್ಠ ಸಂಖ್ಯೆಯನ್ನು ಮೀರಿಸಲಾಗಿದೆ.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "ಫೈಲ್(ಗಳು) ಸೇರಿಸಲಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಅಟ್ಯಾಚ್ಮೆಂಟ್‌ಗಳ ಗರಿಷ್ಠ ಸಂಖ್ಯೆಯನ್ನು ಮೀರಿಸಲಾಗಿದೆ.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "ಒಂದು ಫೈಲ್ ಸೇರಿಸಲಾಗಿಲ್ಲ ಏಕೆಂದರೆ ಅಟ್ಯಾಚ್ಮೆಂಟ್‌ಗಳ ಗರಿಷ್ಠ ಸಂಖ್ಯೆಯನ್ನು ಮೀರಿಸಲಾಗಿದೆ.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "ಹೆಸರು ಇಲ್ಲದ ಫೈಲ್ ಸೇರಿಸಲು ಪ್ರಯತ್ನಿಸಲಾಗಿದೆ",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "ಅನುದಾನಿತ ವಿಸ್ತರಣೆಯೊಂದಿಗೆ ಫೈಲ್ ಸೇರಿಸಲು ಪ್ರಯತ್ನಿಸಲಾಗಿದೆ: \"{name}\"",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "ಅನ್ವಯಿತ ವಿಸ್ತರಣೆ ಹೊಂದಿರುವ ಫೈಲ್ ಸೇರಿಸಲು ಪ್ರಯತ್ನಿಸಲಾಗಿದೆ",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "ಫೈಲ್ ಸೇರಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "ಫೈಲ್ \"{name}\" ಅಮಾನ್ಯವಾಗಿದೆ ಮತ್ತು ಸೇರಿಸಲಾಗುವುದಿಲ್ಲ",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "ಫೈಲ್ ಅಮಾನ್ಯವಾಗಿದೆ ಮತ್ತು ಸೇರಿಸಲಾಗುವುದಿಲ್ಲ",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "\"{name}\" ಐಟಮ್ ಮಾನ್ಯ ಫೈಲ್ ಅಲ್ಲ.",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "ಒಂದು ಐಟಮ್ ಮಾನ್ಯ ಫೈಲ್ ಅಲ್ಲ.",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "ಐಟಂ ಅನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವಾಗ ದೋಷ ಉಂಟಾಯಿತು",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "ಐಟಮ್‌ಗಳನ್ನು ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವಾಗ ದೋಷ ಉಂಟಾಯಿತು",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "ಯಾವುದೇ ಫೈಲ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ.",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "ಕೆಲವು ಫೈಲ್‌ಗಳನ್ನು ಇತ್ತೀಚಿನ ಫೈಲ್‌ಗಳೊಂದಿಗೆ ನಕಲಾಗಿ ಬಿಟ್ಟುಹೋಗಿವೆ.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "ಅಜ್ಞಾತ ದೋಷ ಸಂಭವಿಸಿದೆ",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "ಫೈಲ್‌ಗಳನ್ನು ಜೋಡಿಸುವಾಗ ಈ ಕೆಳಗಿನ ದೋಷಗಳು ಸಂಭವಿಸಿದವು:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "ಫೈಲ್ ಹಂಚಲು ವಿಫಲವಾಗಿದೆ: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "ಮುಚ್ಚಿ",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "ಹಂಚಿಕೊಳ್ಳಿ",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "ಫೈಲ್ ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "ಫೈಲ್ ಲೋಡ್ ಮಾಡಲು ವಿಫಲ",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "ಅಜ್ಞಾತ ದೋಷ ಸಂಭವಿಸಿದೆ",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "ಮರು ಪ್ರಯತ್ನಿಸಿ",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "ಅಸಮರ್ಥಿತ ಫೈಲ್ ಪ್ರಕಾರ",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "Cannot preview {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "ಫೈಲ್ ಹಂಚಿಕೊಳ್ಳಿ",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "ಚಿತ್ರವನ್ನು ತೋರಿಸಲು ವಿಫಲವಾಗಿದೆ",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "ಜೂಮ್ ಪುನಃ ಸೆಟ್ ಮಾಡಿ",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "PDF ಅನ್ನು ಲೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "ಪಠ್ಯ ವಿಷಯವನ್ನು ಡಿಕೋಡ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "ಮತ್ತು {count} ಹೆಚ್ಚು ದೋಷಗಳಿವೆ.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "ಫೈಲ್ ತಪ್ಪಾಗಿದೆ",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "ಅನುಮತಿ ಅಗತ್ಯವಿದೆ",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "ಮುಂದುವರಿಯಲು, ನೀವು ನಮ್ಮ <tc>ನಿಯಮಗಳು</tc>, <privacy_policy>ಗೋಪ್ಯತಾ ನೀತಿ</privacy_policy>, ಮತ್ತು <cookies>ಕೂಕೀಸ್ ಬಳಕೆ</cookies> ಗೆ ಒಪ್ಪುತ್ತೀರಿ ಮತ್ತು ಈ ಸಲಹೆ AI ಮೂಲಕ ನೀಡಲಾಗುತ್ತದೆ, ಲೈಸೆನ್ಸ್ ಹೊಂದಿರುವ ವೈದ್ಯರ ಮೂಲಕ ಅಲ್ಲ ಎಂದು ದೃಢೀಕರಿಸುತ್ತೀರಿ.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "ಮುಚ್ಚಿ",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "ಅಳಿಸಿ",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "ಚಾಟ್ ಅಳಿಸಿ",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "ಚಾಟ್ \"{title}\" ಯಶಸ್ವಿಯಾಗಿ ಅಳಿಸಲಾಗಿದೆ.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "ಚಾಟ್ ಅಳಿಸಲು?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "ನಿಮ್ಮ ಲಕ್ಷಣಗಳು, ನಿರ್ಣಯ ಸಾರಾಂಶ ಮತ್ತು ಈ ಚಾಟ್‌ನಲ್ಲಿ ಯಾವುದೇ ಶಿಫಾರಸುಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ.\nಈ ಕ್ರಿಯೆಯನ್ನು ಹಿಂದಿರುಗಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "ಊರ್ತ್",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "ಊರ ಕಡಿಮೆ ಮಾಡಿ",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "ಜೂಮ್ ಪುನಃ ಸೆಟ್ ಮಾಡಿ",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "ಹಂಚಿಕೊಳ್ಳಿ",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "ಇಂದು",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "ನಿನ್ನೆ",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "ಮಾತ್ರ ಮೊದಲ ಪುಟ. ಸಂಪೂರ್ಣ ಫೈಲ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಹಂಚಿಕೊಳ್ಳಿ.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

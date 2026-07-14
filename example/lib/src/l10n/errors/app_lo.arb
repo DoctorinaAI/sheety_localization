@@ -1,0 +1,15 @@
+{
+  "@@locale": "lo",
+  "error": "ມີບັດສະບັດ",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "ເກິດບັດທີ່ບໍ່ຄາດຄິດ",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Bug report sent successfully.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

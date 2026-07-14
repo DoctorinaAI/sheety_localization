@@ -1,0 +1,227 @@
+{
+  "@@locale": "da",
+  "exampleButton": "Eksempel på knap",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Ja, det er alt godt!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Hver bidrag heler!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Dit bidrag hjælper med at finansiere gratis rådgivning til andre i nød",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Betal hvad der føles rigtigt,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "eller bliv ved med at bruge Doctorina gratis, takket være andre der har valgt at give",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Én gang",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Månedligt",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Vælg månedligt donationsbeløb",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Du er ved at abonnere på en månedlig plan",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Du abonnerer på en månedlig plan for {amount}/måned.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Betalingen vil blive trukket fra din konto ved bekræftelse af køb. Abonnementet fornyes automatisk hver måned, medmindre auto-fornyelse er slået fra mindst 24 timer før slutningen af den nuværende periode. Du kan administrere eller annullere dit abonnement når som helst i dine kontoindstillinger. Ved at fortsætte accepterer du vores {termsOfService} og {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Vælg engangs donationsbeløb",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "De fleste mennesker giver $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Vælg valuta",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Behandler betaling",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Behandler engangsbetaling på {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Behandler månedlig betaling af {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Tak!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Nu vil endnu flere mennesker modtage gratis rådgivning — din støtte er virkelig uvurderlig.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Du har bidraget:",
+  "@youContributedLabel": {},
+  "perMonth": "/ måned",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Returner til hovedskærmen",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Vilkår for service",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Privatlivspolitik",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Donér",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Aktiv",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Annulleret",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Paus",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Afventende",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Oprettet",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Timeout",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Ukendt",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina bidragyder",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Forny",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Annuller abonnement",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Er du sikker?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Din månedlige støtte holder Doctorina gratis for folk, der er afhængige af det, men ikke har råd til at betale. Dit abonnement finansierer mindst 10 gratis konsultationer hver måned. Hvis du forlader, vil færre patienter få den hjælp, de har brug for.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Behold abonnement",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Annuller alligevel",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Dit månedlige støtte er blevet annulleret.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Forkerte abonnementsdata",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Tilmeld dig månedlig support for at få det til at vises her",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Ingen abonnementer endnu",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Abonnementsdato",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Udløber",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Abonnements-ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Produkt-ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Vi kunne ikke gennemføre din betaling",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Noget gik galt med betalingen. Prøv venligst igen.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Prøv igen",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Behandler betaling",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Du afslutter dit køb på Stripes sikre betalingsside.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ uge",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ år",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Mest populær",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Luk",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Hvad du får med Premium:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Annoncefri konsultationer",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Hurtigere svar",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Tidlig adgang til nye funktioner",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/uge",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Afbestil når som helst. Ingen forpligtelse.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "BEGRÆNSET TID",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Fornyelse hver uge. Annuller når som helst i indstillingerne. Ved at fortsætte accepterer du vores <t>Vilkår</t> og <p>Privatlivspolitik</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Fortsæt med Premium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Din støtte hjælper med at holde pleje tilgængelig",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Venligst tilmeld dig eller log ind for at fuldføre købet.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

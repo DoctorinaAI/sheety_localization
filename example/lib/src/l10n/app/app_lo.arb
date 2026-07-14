@@ -1,0 +1,129 @@
+{
+  "@@locale": "lo",
+  "lang": "ລາວ",
+  "@lang": {},
+  "langEn": "Lao",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "ອັບເດດດຽວນີ້",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "ອີກຄັ້ງບໍ່",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "ມີການອັບເດດໃໝ່ທີ່ສາມາດໃຊ້ໄດ້",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "ຕ໭ດສະຖານທີ່ຈະອັບເດດ",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "ມີແອບໃໝ່ (v{version}) ສໍາລັບການໃຊ້ງານ. ກະລຸນາອັບເດດເພື່ອສຽງດີທີ່ສຸດ.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "ສໍາລັບການດຳເນີນການ, ກະລຸນາອັບເດດແອັບ. ການອັບເດດນີ້ລວມກັບການແກ້ໄຂແລະການປັບປຸງສຳຄັນ.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "ດາວໂຫຼດ",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "ສະແດງການເຂົ້າໃຊ້ຖ້າທ່ານມີບັດບັດ Doctorina ຢູ່ແລ້ວ ຫຼື ເຂົ້າໃຊ້ເພື່ອເລີ່ມຕົ້ນ.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "ເຂົ້າສູ່ລະບົບ",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "ລົງບັດທະບຽນ",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "ເບີ່ງຕໍ່ໄປເປັນຜູ້ເຂົ້າຊົມ",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "ເຂົ້າສູ່ລະບົບ",
+  "@titleLogin": {},
+  "titleLogout": "ອອກ",
+  "@titleLogout": {},
+  "titleSignIn": "ເຂົ້າສູ່ລະບົບ",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "ສົນທະນາ",
+  "@titleDialog": {},
+  "titleChat": "ສົນທະນາ",
+  "@titleChat": {},
+  "titleSettings": "ການຕັ້ງຄ່າບັນຊີ",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "ປະຫວັດການໃຊ້ງານສົນທະນາ",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "ການຊໍາລະ",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Manage subscription",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "ການສະໜອງເດືອນ",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "ການເປີດຕົວ",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "ຍິນດີກັບຄືນ",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "ໂປຣໄຟລ໌ບັນທຶກສຸຂະພາບ",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "ການແຈ້ງເຖິງບັນທຶກ",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "ບັນທຶກສຸຂະພາບ",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "ບັນທຶກທັງໝົດ",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "ເອກະສານ",
+  "@titleDocuments": {},
+  "titleConsultations": "ການປຶກສາ",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Paywall",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "ກຳລັງລົບ? ບອກເຮົາເຖິງສາເຫດ!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "ເລີ່ມສົນທະນາສຸຂະພາບໃໝ່",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "ແບ່ງປັນໃບແນະນຳຫຼືລາຍງານບັດບາດ",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "ບອກເຮົາວ່າ Doctorina ສາມາດປັບປຸງໄດ້ແນວໃດ",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

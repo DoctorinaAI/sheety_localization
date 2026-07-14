@@ -1,0 +1,425 @@
+{
+  "@@locale": "af",
+  "chatDrawerTitle": "Gesondheidsrekords",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "NUWE",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Skep jou Gesondheidsrekord",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Aan die einde van jou konsultasie, voeg jou profiel by.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Voeg meer profiele by",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Begin 'n konsultasie vir iemand anders om hul profiel te skep",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Teken in om jou Gesondheidsrekord te skep",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Probeer weer",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Kon nie profiel verwyder nie",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Kon nie profielopsomming laai nie",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Blaai Volledige Rekord",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Deel",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Verwyder",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": " ouderdom",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} jaar} other{{value} jare}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Gewig",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Hoogte",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Allergieë",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Chronies",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Medikasie",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Toestelle",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Konsultasies",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Dokumente",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Verwyder Gesondheidsrekord?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Dit sal jou gesondheidsdata permanent verwyder en kan nie ongedaan gemaak word nie. Jy sal die konteks verloor wat ons gebruik om jou te lei.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Kanselleer",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Verwyder",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Verwydering van jou gesondheidsrekord...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Kon nie profiel verwyder nie",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Gesondheidsrekord verwyder",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Jy kan enige tyd 'n nuwe een skep deur met die assistent te gesels.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Terug na Klets",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Wysig",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Kon nie profieldata laai",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Veranderinge gestoor",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Jou inligting is suksesvol opgedateer.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Terug na profiel",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Kon nie profieldata opdateer nie",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Veranderings verwerp?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "U het 'n paar veranderinge aan u profiel gemaak. Stoor dit voordat u gaan, of verwerp dit.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Hou aan om te redigeer",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Verwerp",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Wysig",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Voeg rekord by",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Soek",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Geen resultate gevind",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Aflaai",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Deel",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Verwyder",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Geen dokumente gevind",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Verwyder hierdie dokument?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Hierdie lêer sal permanent verwyder word",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Kanselleer",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Verwyder",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Meer aksies",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Soek",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Geen profiele gevind",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Bekyk meer",
+  "@profilesViewMore": {},
+  "profilesMore": "Meer",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina onthou nou jou gesondheid",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Jou konsultasies bou en werk nou jou Gesondheidsrekord outomaties op.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Jou Gesondheidsrekord, jou reëls",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Beskou, wysig of voeg simptome, medikasie, geskiedenis of dokumente enige tyd by.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Versorging vir jou hele gesin",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Skep 'n Gesondheidsrekord vir jou geliefdes, jou kinders, ouers of maat.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Gereed om jou Gesondheidsrekord te stoor?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Na u konsultasie, tik op “Voeg profiel by” om dit te stoor.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Volgende",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Begin 'n konsultasie",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Miskien later",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Sluit",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Gesondheidsrekord",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Gesondheidsrekord — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...meer",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...minder",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Voeg nuwe profiel by",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Skep 'n profiel om die besonderhede van hierdie konsultasie te stoor",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Jy kan dit te eniger tyd in jou Gesondheidsrekords besigtig",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "As jy meer vrae het oor dit of iets daaraan verwant, voel vry om voort te gesels met my. Ek is hier om te help",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Algemene inligting",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Naam",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Voornaam",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Familienaam",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Geslag",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Kies asseblief",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Man",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Vrou",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Ander",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Geboortedatum",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Ouderdom",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "bv. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Telefoonnommer",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "E-pos",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Ligging",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "bv. Stad, Land",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Liggaam & Dieet",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Lengte",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "bv. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Gewig",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "bv. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Menstruele Siklus",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "bv. Gereeld, Ongereeld",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Dieetbeperkings",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Kies asseblief",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Laat weet wat jy eet en enige beperkings wat jy het",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Geen",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Vegetaries",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Vegan",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Glutenvry",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Liggaamsmassa-indeks (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "bv. 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Gesondheidsprofiel",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Kroniese Siektes",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "bv. Diabetes Tipe 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Lys al die chroniese siektes en sluit in wanneer hulle gediagnoseer is en enige komplikasies.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Eerdere siektes",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "bv. Gereelde verkoues",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Gee asseblief 'n lys van ernstige siektes wat jy in die verlede gehad het, selfs al het jy herstel.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Chirurgiese geskiedenis",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "bv. Appendektomie",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Verskaf asseblief 'n lys van alle operasies en sluit die jaar in en of daar enige komplikasies was.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Sporadies Gebruikte Medikasie",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "bv. Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Gee asseblief 'n lys van medikasie wat u van tyd tot tyd neem (byvoorbeeld: pynstillers, allergiemedikasie), insluitend die dosis en rede vir gebruik.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Gereelde Medikasie",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "bv. Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Gee asseblief 'n lys van alle medikasie wat jy gereeld neem, insluitend die naam, dosis, hoeveel keer per dag jy dit neem, en waarvoor dit is.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Allergieë",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "bv. Penisillien – veroorsaak uitslag",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Gee asseblief 'n lys van alle allergieë (medikasie, kos, omgewings), en beskryf watter reaksie jy het (byvoorbeeld: uitslag, swelling, asemhalingsprobleme).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Spesiale Toestande",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "bv. Swangerskap, Gestremdheid",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "As u enige belangrike mediese toestande het wat dokters altyd moet weet (byvoorbeeld: swangerskap, ingeplante toestelle, gestremdhede, antikoagulasieterapie), beskryf dit asseblief. As daar geen is nie, kan u dit leeg laat.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Familiegeskiedenis",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "bv. hartsiekte, kanker",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Beskryf asseblief belangrike siektes in jou gesin (byvoorbeeld: diabetes, hipertensie, hartsiektes, kanker, genetiese siektes) en spesifiseer watter familielid die toestand gehad het.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Sosiale & Leefstylfaktore",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "bv. Rook, Alkoholgebruik",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Beskryf asseblief lewenstylfaktore wat jou gesondheid kan beïnvloed, soos rook, alkohol, fisiese aktiwiteit, dieet, slaap en beroep.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Mediese Toestelle",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "bv. hartstimulator, hoortoestel, insulienpomp",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Gee asseblief 'n lys van enige mediese toestelle wat u gebruik of geïmplanteer het, soos pacemakers, insulienpompe, gehoorapparate, prostetika of ander assistiewe of moniteringstoestelle. Sluit relevante besonderhede in indien van toepassing.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Alleseter",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Vinnigkos",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Pescatarian",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Laktosevry",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Lae-natriumdieet",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Lae-suikerdieet",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Hartdieet",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Nierdieet",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Ander",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

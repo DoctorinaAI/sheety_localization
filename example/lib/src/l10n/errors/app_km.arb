@@ -1,0 +1,15 @@
+{
+  "@@locale": "km",
+  "error": "មានកំហុសមួយកើតឡើង",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "មានកំហុសមិនគ្រាន់កន្លែងមួយ",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "របាយការណ៍កំហុសត្រូវបានផ្ញើដោយជោគជ័យ។",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

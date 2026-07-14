@@ -1,0 +1,742 @@
+{
+  "@@locale": "am",
+  "drawerTooltipNotifications": "ማስታወቂያዎች",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "እርዳታ",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "ዝግጅት",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "አካውንት",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "ፕሮፋይል",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "አካውንት ማስተካከያ",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "ድጋፍ ለማቅረብ ይስጡ",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "እቅፍ",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "ውይይት",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "የውይይት ታሪክ",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "የተያያዘ ሰነዶች",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "እንዴት እንደሚጠቀሙ",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "ቪዲዮ እንቅስቃሴዎች",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "ሕግ",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "እባኮት ያነጋግሩን",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "በግልጽ የተሳሳተ ይዘት",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "የውል እና የአዋጅ አንቀጽ",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "የግለሰቦች የግለሰብ ደንብ",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "እንቅስቃሴ",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "Rate App",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "ከጓደኞች ጋር አጋር",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "ውጣ",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "ሌላውን ወይም ሌላ ሰው ወደ ሕክምና እንዲደርስ እገዛ አድርጉ",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "ተጠቃሚ",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "ፕሪምየም ባለቤት ባለው ዶክተርና",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "ግንዛቤ",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "ተቀላቅሉ እናንተ",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "መለዕክት አፕሊኬሽን:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "የቅርብ ውይይቶች",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "ፕሮፋይል",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "የቅርብ ውይይት",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "መተግበሪያዎችን ይውሰዱ",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "መልእክት አስገባ",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "ፋይል ያክሉ",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "አስተያየት",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "ጨርስ & ትርጉም",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "መልእክት ላክ",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "መልእክቶችን ማውጣት አልቻልኩም",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "መልእክቶችን ማግኘት አልቻልኩም። እባኮትን ይሞክሩ ድጋፍ ይደርስ.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "መልእክቶችን ይወስዱ",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "አንድ መልእክት የለም። ውይይት መጀመር ይችላሉ።",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "ያገናኝ",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "አልተገናኙም",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "ፈልግ",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "የተመረጡ",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "ወደ ውስጥ ይውሰዱ",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "PDF እንደ ማቅረብ ይታይ",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "ከጓደኞች ጋር አጋር",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "አዲስ ውይይት",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "ጫት",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "ውይይት ይምረጡ",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "ዳር አሳይ",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "አንድ ውይይት የለም። እባኮትን ይዘምኑ ወይም አዲስ ውይይት ይፍጠሩ።",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "ወደ ውይይቶች ይቀይሩ",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "አዲስ ውይይት ፈጥር",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "ጽሑፍ ይቅርታ",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "እባክህ ገና",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "እቅፍ እንደሚያደርግ...\nእባኮትን የኢንተርኔት ግንኙነትዎን ይፈትሹ",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "መልእክቱ አሁን በሂደት ላይ ነው.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "መልእክት በጣም  긴 ነው.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "አባል ይወጣ",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "መልእክት ማስተካከል አልቻልኩም",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "እንደ PDF ወደ ውስጥ ይዘው ይውሰዱ",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "ፎቶ",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "ካሜራ",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "ፋይል",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "ፎቶዎች እና ፋይሎች",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "እቅፍ ይህ ይረዳዎታል! ይህ መግለጫ ይህ ይረዳዎታል?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "አዎን ሁሉም ጥሩ ነው!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "እቅፍ ማስታወቂያ ማግኘት አልቻልኩም",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "የውይይት ማጠቃለያ ወደ ክሊፕቦርድ ተቀይሯል",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "እባኮትን ዶክተርኢና በሞባይል አፕ ይሞክሩ!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "ወደ ድርጅቱ ይግቡ",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "ይዘው ይሂዱ",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "Download on the App Store",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "እባክዎ በGoogle Play ይውሰዱ",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "መረጃ ይዘው ይወዳድሩ",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "ለዚህ መልእክት ለምን እንደምታስተውሉ?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "አማራጭ: ይህን መልእክት ምን እንደሚሆን ይገልጹ...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "This will help us improve our AI responses.",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "ማቋረጥ",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "ይዘው ይወዳድሩ",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "Thank you for your feedback! Report has been submitted.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "የሪፖርት ማቅረብ አልተሳካም",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "በክልክል ወደ ቅርጸ ቁልፍ ተቀይሯል",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "መልእክት ማቅረብ አልቻልኩም",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "መረጃ ይዘው ይወዳድሩ",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "ወደ ዶክተሪና ቻት ይስጡ",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "ወደ ውይይት ለመጨመር ፋይሎችን እዚህ ይዘልቁ",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "እባኮትን ወደ አንድ መልዕዓት 15 ፋይሎች ይጨምሩ",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "እባኮትን ስለ ጤናዎ አስፈላጊ ነገር እንደሚኖር እንዲያውቁኝ ይፈልጋሉ?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "አዎን እንደዚህ እንደሚያውቁኝ",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "ምንም እንኳን ወዲያው ይህ ይህ ነው",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "ዝግጁ",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "እቅፍ በስርዓት  level ውስጥ ተከልክሏል። ወደ ስርዓት ቅንብሮች ይሂዱ እና የDoctorina ማስታወቂያዎችን አንቀሳቅሱ።",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "እቅፍ በስርዓት  level ውስጥ ተከልክሏል። የድር መተግበሪያ በማስተካከል ውስጥ እንደ ወንጌል እንዲቀጥሉ እቅፍ ይስጡ።",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "ከእንቅስቃሴዎ ዝርዝር ይወቁ",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "ዶክተሪና ስለ ጤናዎ አዲስ መረጃዎች ወይም እንደገና ዝርዝር ሲኖር ይነግራል።",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "እባክዎ ማስታወቂያዎችን አንቀሳቅስ",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "ምንም እንኳን ወዲያው ይህ ይህ ነው",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "በመቀጠል በግል መረጃ ስር መሆን፣ የ <c>cookies</c> አጠቃቀም፣ <t>የአገልግሎት መመሪያዎች</t> ላይ ተስማሚ መሆን እና <p>የግል መረጃ ፖሊሲ</p> መቀበል ይጠቀማል። በተጨማሪም ምክንያትዎ ከ AI ጋር መካሄድ እና ከተፈቀደ የሕክምና ባለሞያ ጋር እንዳይሆን ይፈቀዳል",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "አስወግድ",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "ይህ ውይይት በመጀመሪያ ያስቀምጡ?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "አዲስ መመኪያ መጀመር በፊት ይህን ምክር ለመቆጣጠር በነፃ ይመዝገቡ",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "ሳይያስቀመጥ ጀምር",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "ይመዝገቡ",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "ውይይቱን ለመቀጠል ከላይ አማራጭ ይምረጡ",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "ዝጋ",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "አባል እንደ ማስወግድ",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "የፋይል መረጃ ከድርብ አካባቢ ማስተናገድ አልቻልኩም",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "እባክዎ መልእክት ይጻፉ ወይም ፋይል ይጨምሩ",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "እባክዎ ማስታወቂያዎች ይጨርሱ",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "መልእክት በሂደት ላይ ነው",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "መልእክት በጣም ረጅም ነው",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "መልእክቱ አሁን በሂደት ላይ ነው.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "መገናኛው በቀዳሚ የተዘግቷል",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "ከአገልግሎት ጋር የለውጥ አለመኖር",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "ፋይሎችን ማሰባሰብ አልቻልኩም",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "የምስል መረጃ ማሰባሰብ አልቻልኩም",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "ከካሜራ ፎቶ ማውጣት አልተቻለም",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "እባኮትን በአንድ ጊዜ {count} ፋይሎች መያዝ ይቻላል።",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "የተረጋገጠ ጽሁፍ አጽዳ",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "መልእክት በጣም ረጅም ነው.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "እባክዎ ለማስተካከል ይጠብቁ.",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "የ{kind} \"{name}\" እንደ ተያያዘ አስቀድሞ ተያይዞ አልተጨምረም.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "The {kind} \"{name}\" is a duplicate of {exist} and was not added.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "የ{kind} \"{name}\" አንደኛ በመጨመር የተወሰነ ቁጥር በማለፍ አልተጨመረም.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "ፋይሉ \"{name}\" ይቅርታ እንደሆነ ይታወቃል.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "ፋይሉ ያልተሞላ ነው.",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "ፋይል  \"{name}\" የተፈቀደውን ከተገኘው ከፍተኛ መጠን ይበልጣል።",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "ፋይሉ የተፈቀደ ከፍተኛ መጠን ይበልጥ ነው.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "በፋይሉ \"{name}\" ላይ ስህተት አደረገ።",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "ፋይሉን ማስተካከል ወቅታዊ ስህተት አደረገ።",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "ፋይሉ \"{name}\" አልተጨምረም ምክንያቱም የተጨማሪ ፋይሎች በማለት ወርድ ተደርሷል.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "ፋይል(ዎች) አልተጨምሩም ምክንያቱም የተጨማሪ ፋይል ቁጥር ተወስኗል.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "ፋይል አልተጨምረም ምክንያቱ የተጨማሪ ፋይሎች በተጠቃሚ ደረጃ ተወው ነበር።",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "ስም የለውም ፋይል ማከል ተሞክሮ ተደርጎ ነበር.",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "የማይደገፍ እንደሆነ ፋይል ተጨማሪ ለማከል ተሞክሮ ተደርጎ ነበር: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "የማይደገፍ ፋይል እንደ ማስተካከያ ተገኝቷል።",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "ፋይል ማከል አልቻልኩም.",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "ፋይሉ \"{name}\" ውስጥ የለም እና ማከል አልቻልኩም.",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "ፋይል ወይም ይህ አልተቀበለም።",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "እቅፍ የለም \"{name}\" የተሳካ ፋይል አይደለም.",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "አንድ እቃ ትክክለኛ ፋይል አይደለም.",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "አንድ እቃ ላይ ሂደት ላይ እንደተከሰተ እርምጃ ተከስቷል.",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "አንድ እትም ላይ ስህተት አደረገ።",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "ፋይሎች አልተጨምሩም.",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "አንዳንድ ፋይሎች ከአስቀድሞ ያሉ ፋይሎች ጋር የሚያዛዙ የተመሳሳይ ፋይሎች ምክንያት ተወው ተቀባይነት ተወው ተቀባይነት ተወው.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "ያልተቀየረ እርምጃ ተከስቷል።",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "ከፋይሎች ጋር የተያያዘ የሚኖሩ ስህተቶች እንደሚኖሩ ተነግሯል:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "ፋይል ማግኘት አልተቻለም: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "ዝግጅት",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "አጋራ",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "ፋይል በማስተካከል ነው...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "ፋይል ማስገባት አልቻልኩም",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "ያልተቀየረ እርምጃ ተከስቷል",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "እንደገና ይሞክሩ",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "የተደገፈ ፋይል ዓይነት",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "አይቻልም ማስታወቂያ {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "ፋይል አጋራ",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "ምስል ማሳያ ማድረግ አልቻልኩም",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "ዝርዝር ይቀይሩ",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "PDF መገናኛ አልተሳካም",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "መጽሐፍ ይዘት ወይም ይዘት መረጃ ማስተካከል አልቻልኩም",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "እና {count} ተጨማሪ ስህተቶች አሉ።",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "ፋይል ወይም የተሳሳተ ነው",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "ፈቃድ ያስፈልጋል",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "በመቀጠልዎ ወደ <tc>የእንደነበር የስርዓት</tc>፣ <privacy_policy>የግለሰቦች የደህንነት ፖሊሲ</privacy_policy>፣ እና <cookies>የኩኪዎች እንደነበር</cookies> ይህ ኮንስልታሽን በAI ይታወቃል፣ እና የተመዘገበ የሕክምና ሙያ ሰው አይደለም።",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "ዝግጅት",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "አጥፍ",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "ውይይት አጥፍት",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "በተሳካ ሁኔታ የተሰረዘ ውይይት \"{title}\".",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "የቻት ማጥፊያ እቅፍ?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "የእርግጥ ምልክቶችዎ፣ የምርመራ ማጠቃለያ እና በዚህ ቻት ውስጥ ያለው ማንኛውም ምክር ይሰረዝ። ይህ እርምጃ አይታወቅም.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "ይዞም ወይም ይዞም ይዞም",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "ወደ ታች ይዘል",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "ዝርዝር ይቀይሩ",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "አጋራ",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "ዛሬ",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "እንቁላል",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "የመጀመሪያ ገጽ ብቻ። ሙሉ ፋይሉን ለመውረድ እባኮትን አጋር ይጠቀሙ።",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

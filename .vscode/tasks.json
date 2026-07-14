@@ -89,6 +89,76 @@
       }
     },
     {
+      "label": "sheety:localize",
+      "detail": "Translate the empty cells of the spreadsheet with OpenAI",
+      "icon": {
+        "color": "terminal.ansiMagenta",
+        "id": "globe"
+      },
+      "type": "shell",
+      "command": [
+        "flutter pub global run sheety_localization:localize --credentials=credentials.json ",
+        "--sheet=1QgD5i0U-va3VrljXw8I3o8FxtMJAqrhk3ybbJ9O5mA4 ",
+        "--token-path=\"openai.key\" ",
+        "--ignore=\"help,backend,backend-*,telegram-*,locales\" ",
+        "--prompt=\"prompt.txt\" ",
+        "--model=\"gpt-4o-mini\""
+      ],
+      "dependsOn": [],
+      "args": [],
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true,
+        "group": "sheety"
+      }
+    },
+    {
+      "label": "sheety:generate",
+      "detail": "Generate ARB and Dart localization files from the spreadsheet",
+      "icon": {
+        "color": "terminal.ansiMagenta",
+        "id": "file-code"
+      },
+      "type": "shell",
+      "command": [
+        "flutter pub global run sheety_localization:generate --credentials=credentials.json ",
+        "--sheet=1QgD5i0U-va3VrljXw8I3o8FxtMJAqrhk3ybbJ9O5mA4 ",
+        "--lib=lib --arb=src/l10n --gen=src/generated --prefix=app --format --no-last-modified ",
+        "--ignore=\"help,backend,backend-*,telegram-*,locales\""
+      ],
+      "dependsOn": [],
+      "args": [],
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      },
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": false,
+      "presentation": {
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true,
+        "group": "sheety"
+      }
+    },
+    {
       "label": "dart:format",
       "detail": "Format all files in the project",
       "icon": {

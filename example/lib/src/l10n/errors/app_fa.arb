@@ -1,0 +1,15 @@
+{
+  "@@locale": "fa",
+  "error": "خطایی رخ داده است",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "یک خطای غیرمنتظره رخ داد",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "گزارش باگ با موفقیت ارسال شد.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

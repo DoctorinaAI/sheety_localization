@@ -1,0 +1,15 @@
+{
+  "@@locale": "be",
+  "error": "Адбылася памылка",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Адбылася непрадбачаная памылка",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Баг-рэпарт паспяхова адпраўлены.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

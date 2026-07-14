@@ -1,0 +1,390 @@
+{
+  "@@locale": "uz",
+  "logIn": "Kirish",
+  "@logIn": {
+    "description": "Надпись \"логин\""
+  },
+  "password": "Parol",
+  "@password": {
+    "description": "Надпись \"пароль\""
+  },
+  "changeNumber": "Raqamni o'zgartirish",
+  "@changeNumber": {},
+  "forgotPassword": "Parolni unutdingiz?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "Email manzilingizni kiriting va biz sizga parolni tiklash uchun havola yuboramiz.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "Parolingizni eslaysizmi?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "Menda parol bor",
+  "@backToLoginButton": {},
+  "continueButton": "Davom eting",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "Parolni tiklash elektron pochta yuborildi",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "Parolni tiklash",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "Kodni tasdiqlang",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "Bugun Doctorina-dan foydalanishni boshlang",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "Yoki",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "Parolingizni kiriting",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "Parolni ko'rsatish",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "Parolni yashirish",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "Loginni tozalash",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "Email yoki telefon",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com yoki +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "Elektron pochta yoki telefon raqamini kiriting",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "Davom etish uchun iltimos, kelishuvlarni qabul qiling.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "Men shaxsiy ma'lumotlarni qayta ishlashga roziman,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "foydalanish",
+  "@consentTheUseOf": {},
+  "consentCookies": "cookies",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", roziman",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "shartlar va qoidalar",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", va tasdiqlang",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "maxfiylik siyosati",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "Men tasdiqlayman, maslahatim sun'iy intellekt bilan berilayotganini va litsenziyaga ega tibbiy mutaxassis bilan emasligini.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "Chiqish",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "Chindan ham tizimdan chiqishni xohlaysizmi?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "Bekor qilish",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "Ha, chiqish",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "Kodni qayta yuborish",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "Kodni qayta yuborish ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  },
+  "consentFull": "Men shaxsiy ma'lumotlarni qayta ishlashga, <c>cookie</c>lardan foydalanishga, <t>shartlar va shartlarga</t> rozi bo'lishga va <p>maxfiylik siyosatini</p> tan olishga roziman",
+  "@consentFull": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <c> <t> <p> указаны кликабельные спаны, они должны присутсвовать во всех языках."
+  },
+  "emailLabel": "Elektron pochtangizni kiriting",
+  "@emailLabel": {
+    "description": "Email input field label."
+  },
+  "signUpWithEmailTitle": "Elektron pochta orqali roʻyxatdan oʻtish",
+  "@signUpWithEmailTitle": {
+    "description": "AppBar title for email signup overlay"
+  },
+  "logInWithEmailTitle": "Elektron pochta bilan kirish",
+  "@logInWithEmailTitle": {
+    "description": "AppBar title for email login overlay"
+  },
+  "phoneLabel": "Telefoningizni kiriting",
+  "@phoneLabel": {
+    "description": "Phone input field label"
+  },
+  "confirmPhoneTitle": "Telefoningizni tasdiqlang",
+  "@confirmPhoneTitle": {
+    "description": "AppBar title for phone confirmation screen"
+  },
+  "signUpText": "Ro'yxatdan o'tish",
+  "@signUpText": {
+    "description": "Standalone \"Sign up\" text for buttons and tabs"
+  },
+  "emailHintShort": "Elektron pochtani kiriting",
+  "@emailHintShort": {
+    "description": "Short email hint text in login dialog"
+  },
+  "buttonTextSignUpWithGoogle": "Google bilan ro'yxatdan o'ting",
+  "@buttonTextSignUpWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextSignUpWithApple": "Apple bilan ro'yxatdan o'ting",
+  "@buttonTextSignUpWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextSignUpWithPhone": "Telefon orqali ro'yxatdan o'ting",
+  "@buttonTextSignUpWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "buttonTextLoginWithGoogle": "Google orqali kirish",
+  "@buttonTextLoginWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextLoginWithApple": "Apple bilan kirish",
+  "@buttonTextLoginWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextLoginWithPhone": "Telefon bilan kirish",
+  "@buttonTextLoginWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "youAreLoggedOutMessage": "Siz tizimdan chiqqansiz",
+  "@youAreLoggedOutMessage": {
+    "description": "Message displayed on logout screen"
+  },
+  "reloadButtonText": "Qayta yuklash",
+  "@reloadButtonText": {
+    "description": "Reload button text on logout screen"
+  },
+  "emailErrorText": "Noto'g'ri elektron pochta manzili",
+  "@emailErrorText": {
+    "description": "Error message for invalid email address"
+  },
+  "passwordErrorText": "Parol kamida 6 ta belgidan iborat bo'lishi kerak",
+  "@passwordErrorText": {
+    "description": "Error message for password validation (minimum length)"
+  },
+  "invalidPhoneNumberError": "Noto‘g‘ri telefon raqami: {phoneNumber}",
+  "@invalidPhoneNumberError": {
+    "description": "Error message for invalid phone number format"
+  },
+  "resendCodeWaitError": "Yangi kod so'rashdan oldin {seconds} soniya kuting.",
+  "@resendCodeWaitError": {
+    "description": "Error message when trying to resend code too soon"
+  },
+  "invalidPhoneCodeError": "Noto'g'ri telefon kodi: {phoneCode}",
+  "@invalidPhoneCodeError": {
+    "description": "Error message for invalid phone verification code"
+  },
+  "termsAndConditionsText": "Shartlar va qoidalar",
+  "@termsAndConditionsText": {
+    "description": "Terms and conditions link text in login dialog"
+  },
+  "continueAsGuestBtn": "Mehmon sifatida davom etish",
+  "@continueAsGuestBtn": {
+    "description": "Btn to continue as guest on sign up screen"
+  },
+  "noAccountYetPromptText": "Hali akkauntingiz yo‘qmi? <p>Ro‘yxatdan o‘ting</p>",
+  "@noAccountYetPromptText": {
+    "description": "Login tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Sign up” link."
+  },
+  "alreadyHaveAccountPromptText": "Allaqachon akkauntingiz bormi? <p>Kirish</p>",
+  "@alreadyHaveAccountPromptText": {
+    "description": "Sign up tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Log in” link."
+  },
+  "beforeSubscribeYouNeedSignUpLoginDialogSubtitle": "Premium bilan davom etishdan oldin ro'yxatdan o'tishingiz kerak",
+  "@beforeSubscribeYouNeedSignUpLoginDialogSubtitle": {
+    "description": "Subtitle for login dialog"
+  },
+  "loginSubtitle": "Shaxsiylashtirilgan kontent oling va jamoangiz bilan aloqada bo'ling!",
+  "@loginSubtitle": {
+    "description": "Подзаголовок на экране входа, мотивирующий пользователя авторизоваться"
+  },
+  "emailFieldLabel": "E-mail",
+  "@emailFieldLabel": {
+    "description": "Метка поля ввода email в форме"
+  },
+  "emailPlaceholder": "username@gmail.com",
+  "@emailPlaceholder": {
+    "description": "Пример email в поле ввода"
+  },
+  "recoverPasswordTooltip": "Parolingizni tiklang",
+  "@recoverPasswordTooltip": {
+    "description": "Тултип кнопки восстановления пароля когда email валиден"
+  },
+  "createAccountTitle": "Hisob oching",
+  "@createAccountTitle": {
+    "description": "Заголовок экрана регистрации"
+  },
+  "createAccountSubtitle": "Biz sizning sog'liq ma'lumotlaringizni xavfsiz saqlash va baholashingizni davom ettirish uchun hisob kerak.",
+  "@createAccountSubtitle": {
+    "description": "Подзаголовок экрана регистрации, объясняет зачем нужен аккаунт"
+  },
+  "repeatLabel": "Takrorlash",
+  "@repeatLabel": {
+    "description": "Метка поля повторного ввода пароля"
+  },
+  "repeatPasswordHint": "Parolingizni takrorlang",
+  "@repeatPasswordHint": {
+    "description": "Подсказка в поле повторного ввода пароля"
+  },
+  "confirmButton": "Tasdiqlash",
+  "@confirmButton": {
+    "description": "Кнопка подтверждения регистрации с паролем"
+  },
+  "noAccountPrompt": "Hisobingiz yo'qmi?",
+  "@noAccountPrompt": {
+    "description": "Текст перед ссылкой на регистрацию на экране входа"
+  },
+  "alreadyHaveAccountPrompt": "Allaqachon hisobingiz bormi?",
+  "@alreadyHaveAccountPrompt": {
+    "description": "Текст перед ссылкой на вход на экране регистрации"
+  },
+  "createPasswordHeader": "Parol yarating",
+  "@createPasswordHeader": {
+    "description": "Заголовок шага создания пароля в хедере диалога"
+  },
+  "phoneHeader": "Telefon",
+  "@phoneHeader": {
+    "description": "Заголовок шага ввода телефона в хедере диалога"
+  },
+  "verifyPhoneHeader": "Telefonni tasdiqlash",
+  "@verifyPhoneHeader": {
+    "description": "Заголовок шага верификации телефона в хедере диалога"
+  },
+  "phoneTitle": "Sizning raqamingiz nima?",
+  "@phoneTitle": {
+    "description": "Заголовок экрана ввода номера телефона"
+  },
+  "phoneSubtitle": "Biz telefon raqamingizni tasdiqlash uchun kod yuboramiz",
+  "@phoneSubtitle": {
+    "description": "Подзаголовок экрана ввода телефона"
+  },
+  "phoneNumberLabel": "Raqam",
+  "@phoneNumberLabel": {
+    "description": "Метка поля ввода номера телефона"
+  },
+  "enterPhoneNumber": "Telefon raqamini kiriting",
+  "@enterPhoneNumber": {
+    "description": "Подсказка в поле ввода телефона"
+  },
+  "phonePlaceholder": "+998 (201) 555-01-23",
+  "@phonePlaceholder": {
+    "description": "Пример номера телефона в поле ввода"
+  },
+  "waitCountdownButton": "{countdown} soniya kuting",
+  "@waitCountdownButton": {
+    "description": "Текст кнопки во время ожидания повторной отправки OTP",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next OTP can be sent"
+      }
+    }
+  },
+  "enterCodeTitle": "Kodingizni kiriting",
+  "@enterCodeTitle": {
+    "description": "Заголовок экрана ввода OTP кода"
+  },
+  "codeSentToPhone": "{phone} raqamiga kod yubordik",
+  "@codeSentToPhone": {
+    "description": "Текст с информацией куда отправлен код",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+1234567890",
+        "description": "Phone number where code was sent"
+      }
+    }
+  },
+  "didntReceiveCode": "Kodni olmadingizmi?",
+  "@didntReceiveCode": {
+    "description": "Текст перед ссылкой на повторную отправку кода"
+  },
+  "clickToResend": "Qayta yuborish uchun bosing",
+  "@clickToResend": {
+    "description": "Текст ссылки повторной отправки кода"
+  },
+  "requestNewCodeCountdown": "Siz {countdown} soniyadan keyin yangi kod so'rashingiz mumkin",
+  "@requestNewCodeCountdown": {
+    "description": "Текст с обратным отсчётом до возможности повторной отправки кода",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next code request"
+      }
+    }
+  },
+  "closeTooltip": "Yopish",
+  "@closeTooltip": {
+    "description": "Тултип кнопки закрытия диалога"
+  },
+  "backTooltip": "Orqaga",
+  "@backTooltip": {
+    "description": "Тултип кнопки назад"
+  },
+  "termsOfServiceLink": "Foydalanish shartlari",
+  "@termsOfServiceLink": {
+    "description": "Текст ссылки на условия использования в футере"
+  },
+  "privacyPolicyLink": "Maxfiylik siyosati",
+  "@privacyPolicyLink": {
+    "description": "Текст ссылки на политику конфиденциальности в футере"
+  },
+  "welcomeBackTitle": "Xush kelibsiz qaytadan",
+  "@welcomeBackTitle": {
+    "description": "Заголовок экрана приветствия при возвращении пользователя"
+  },
+  "welcomeBackSubtitle": "Agar sizda allaqachon Doctorina hisobingiz bo'lsa, kiring yoki boshlash uchun ro'yxatdan o'ting.",
+  "@welcomeBackSubtitle": {
+    "description": "Подзаголовок экрана приветствия, предлагающий войти или зарегистрироваться"
+  },
+  "passwordRuleLength": "8 dan 128 gacha belgi",
+  "@passwordRuleLength": {
+    "description": "Правило валидации пароля: длина от 8 до 128 символов"
+  },
+  "passwordRuleNumber": "Kamida 1 raqam",
+  "@passwordRuleNumber": {
+    "description": "Правило валидации пароля: минимум 1 цифра"
+  },
+  "passwordRuleUppercase": "Kamida 1 katta harf",
+  "@passwordRuleUppercase": {
+    "description": "Правило валидации пароля: минимум 1 заглавная буква"
+  },
+  "passwordRuleMatch": "Parollar mos keladi",
+  "@passwordRuleMatch": {
+    "description": "Правило валидации пароля: пароли совпадают"
+  },
+  "phoneOtpVerificationFailed": "Bir martalik parolni tekshirish amalga oshmadi. Qaytadan urinib ko'ring.",
+  "@phoneOtpVerificationFailed": {},
+  "referralCodeLabel": "Yo'naltirish kodi",
+  "@referralCodeLabel": {
+    "description": "Заголовок поля ввода реферального кода на экране регистрации"
+  },
+  "enterReferralCodeHint": "Referal kodingizni kiriting",
+  "@enterReferralCodeHint": {
+    "description": "Подсказка (labelText) в поле ввода реферального кода"
+  },
+  "referralCodeExampleHint": "Masalan: CREATOR2026",
+  "@referralCodeExampleHint": {
+    "description": "Пример реферального кода в поле ввода (hintText)"
+  },
+  "haveReferralCodeQuestion": "Tavsiya kodi bormi?",
+  "@haveReferralCodeQuestion": {
+    "description": "Ссылка-вопрос, раскрывающая поле ввода реферального кода"
+  }
+}

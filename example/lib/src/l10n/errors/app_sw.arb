@@ -1,0 +1,15 @@
+{
+  "@@locale": "sw",
+  "error": "Hitilafu imetokea",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Hitilafu isiyotarajiwa imetokea",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Ripoti ya hitilafu imetumwa kwa mafanikio.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

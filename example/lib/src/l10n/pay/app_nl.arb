@@ -1,0 +1,227 @@
+{
+  "@@locale": "nl",
+  "exampleButton": "Knopvoorbeeld",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Ja, het is allemaal goed!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Elke bijdrage geneest!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Uw bijdrage helpt om gratis advies voor anderen in nood te financieren.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Betaal wat goed voelt",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "of blijf Doctorina gratis gebruiken, dankzij anderen die ervoor hebben gekozen om te geven.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Eenmalig",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Maandelijks",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Kies het maandelijkse donatiebedrag",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Je staat op het punt je in te schrijven voor een maandplan.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "U abonneert zich op een maandplan voor {amount}/maand.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Betaling wordt in rekening gebracht op uw account bij bevestiging van aankoop. Het abonnement wordt automatisch elke maand verlengd, tenzij de automatische verlenging ten minste 24 uur voor het einde van de huidige periode is uitgeschakeld. U kunt uw abonnement op elk moment beheren of annuleren in uw accountinstellingen. Door door te gaan, gaat u akkoord met onze {termsOfService} en {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Kies eenmalig donatiebedrag",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "De meeste mensen geven $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Selecteer valuta",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Betaling verwerken",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Verwerkt een eenmalige betaling van {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Verwerking van maandelijkse betaling van {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Dank je!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Nu zullen nog meer mensen gratis advies ontvangen — uw steun is echt onschatbaar.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Je hebt bijgedragen:",
+  "@youContributedLabel": {},
+  "perMonth": "/ maand",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Terug naar het hoofdscherm",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Algemene Voorwaarden",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Privacybeleid",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Doneren",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Actief",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Geannuleerd",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Pauze",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "In afwachting",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Aangemaakt",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Timeout",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Onbekend",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina contributor",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Verlengt",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Abonnement annuleren",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Weet je het zeker?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Jouw maandelijkse ondersteuning houdt Doctorina gratis voor mensen die erop vertrouwen maar het zich niet kunnen veroorloven om te betalen. Jouw abonnement financiert minstens 10 gratis consulten per maand. Als je vertrekt, krijgen minder patiënten de hulp die ze nodig hebben.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Houd abonnement",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Toch annuleren",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Uw maandelijkse ondersteuning is succesvol geannuleerd",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Onjuiste abonnementsgegevens",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Meld je aan voor maandelijkse ondersteuning om het hier te laten verschijnen.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Nog geen abonnementen",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Abonnementsdatum",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Verloopt",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Abonnements-ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Product ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "We konden uw betaling niet verwerken",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Er is iets misgegaan met de betaling. Probeer het alstublieft opnieuw.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Opnieuw proberen",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Betaling verwerken",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "U voltooit uw aankoop op de veilige afrekenpagina van Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ week",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ jaar",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Meest Populair",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Sluiten",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Wat u krijgt met Premium:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Advertentievrije consultaties",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Snellere antwoorden",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Vroeg toegang tot nieuwe functies",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/week",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Annuleer op elk moment. Geen verplichtingen.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "BEPERKTE TIJD",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Auto-renews wekelijks. Annuleer op elk moment in de instellingen. Door door te gaan, stemt u in met onze <t>Voorwaarden</t> en <p>Privacybeleid</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Doorgaan met Premium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Jouw steun helpt de zorg toegankelijk te houden",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Gelieve u aan te melden of in te loggen om de aankoop te voltooien.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

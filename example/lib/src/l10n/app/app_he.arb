@@ -1,0 +1,129 @@
+{
+  "@@locale": "he",
+  "lang": "עִברִית",
+  "@lang": {},
+  "langEn": "Hebrew",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "עדכן עכשיו",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "אולי מאוחר יותר",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "עדכון חדש זמין",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "עדכון נדרש",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "גרסה חדשה (v{version}) של האפליקציה זמינה. נא לעדכן לקבלת החוויה הטובה ביותר.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "להמשך, נא לעדכן את האפליקציה. העדכון כולל תיקונים ושיפורים חשובים.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "הורדה",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "היכנס אם כבר יש לך חשבון Doctorina, או הירשם כדי להתחיל.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "התחבר",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "הרשמה",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "המשך כאורח",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "התחברות",
+  "@titleLogin": {},
+  "titleLogout": "התנתק",
+  "@titleLogout": {},
+  "titleSignIn": "התחברות",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "שיחה",
+  "@titleDialog": {},
+  "titleChat": "צ'אט",
+  "@titleChat": {},
+  "titleSettings": "הגדרות חשבון",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "היסטוריית צ'אט",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "תשלום",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "נהל מנוי",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "מנוי חודשי",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "הדרכה",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "ברוך שובך",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "פרופילי רשומות בריאות",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "הודעת פרופילים",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "רשומות בריאות",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "רשומה מלאה",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "מסמכים",
+  "@titleDocuments": {},
+  "titleConsultations": "התייעצויות",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "חומת תשלום",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "מוחק? ספר לנו למה!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "התחל שיחה חדשה על בריאות",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "שתף רעיון או דווח על בעיה",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "ספרו לנו איך דוקטורינה יכולה להשתפר",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "@@locale": "da",
+  "error": "Der opstod en fejl",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Der opstod en uventet fejl",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Fejlrapport sendt succesfuldt.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

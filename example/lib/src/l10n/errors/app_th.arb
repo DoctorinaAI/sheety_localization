@@ -1,0 +1,15 @@
+{
+  "@@locale": "th",
+  "error": "เกิดข้อผิดพลาด",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "เกิดข้อผิดพลาดที่ไม่คาดคิด",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "ส่งรายงานข้อผิดพลาดเรียบร้อยแล้ว.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

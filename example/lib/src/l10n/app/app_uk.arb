@@ -1,0 +1,129 @@
+{
+  "@@locale": "uk",
+  "lang": "українська",
+  "@lang": {},
+  "langEn": "Ukrainian",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Оновити зараз",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Можливо пізніше",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Новий оновлення доступне",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Оновлення необхідне",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Доступна нова версія (v{version}) додатку. Будь ласка, оновіть, щоб продовжити та отримати найкращий досвід.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Щоб продовжити, будь ласка, оновіть додаток. Це оновлення містить важливі виправлення та покращення.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Завантажити",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Увійдіть, якщо у вас вже є обліковий запис Doctorina, або зареєструйтесь, щоб почати.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Увійти",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Зареєструватися",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Продовжити як гість",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Увійти",
+  "@titleLogin": {},
+  "titleLogout": "Вийти",
+  "@titleLogout": {},
+  "titleSignIn": "Увійти",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Діалог",
+  "@titleDialog": {},
+  "titleChat": "Чат",
+  "@titleChat": {},
+  "titleSettings": "Налаштування акаунта",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Історія чатів",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Оплата",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Керувати підпискою",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Щомісячна підписка",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Онбординг",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "З поверненням",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Профілі медичних записів",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Оголошення профілів",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Медичні записи",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Повний запис",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Документи",
+  "@titleDocuments": {},
+  "titleConsultations": "Консультації",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Платний доступ",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Видаляєте? Скажіть нам чому!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Почати нову розмову про здоров'я",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Поділіться ідеєю або повідомте про проблему",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Скажіть нам, як Doctorina може покращитися",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

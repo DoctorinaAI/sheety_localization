@@ -1,0 +1,129 @@
+{
+  "@@locale": "ms",
+  "lang": "Bahasa Melayu",
+  "@lang": {},
+  "langEn": "Malay",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Kemas Kini Sekarang",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Mungkin Nanti",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Kemas kini baru tersedia",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Kemaskini Diperlukan",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Versi baru (v{version}) aplikasi tersedia. Sila kemas kini untuk pengalaman terbaik.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Untuk meneruskan, sila kemas kini aplikasi. Kemas kini ini termasuk pembetulan dan penambahbaikan penting.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Muat turun",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Log masuk jika anda sudah mempunyai akaun Doctorina, atau daftar untuk memulakan.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Log masuk",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Daftar",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Teruskan sebagai tetamu",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Log Masuk",
+  "@titleLogin": {},
+  "titleLogout": "Log Keluar",
+  "@titleLogout": {},
+  "titleSignIn": "Log Masuk",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Dialog",
+  "@titleDialog": {},
+  "titleChat": "Sembang",
+  "@titleChat": {},
+  "titleSettings": "Tetapan Akaun",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Sejarah Sembang",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Pembayaran",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Urus langganan",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Langganan Bulanan",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Onboarding",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Selamat datang kembali",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Profil rekod kesihatan",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Pengumuman profil",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Rekod Kesihatan",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Rekod penuh",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Dokumen",
+  "@titleDocuments": {},
+  "titleConsultations": "Konsultasi",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Dinding Bayaran",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Menghapus? Beritahu kami mengapa!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Mulakan perbualan kesihatan baharu",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Kongsi idea atau laporkan masalah",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Beritahu kami bagaimana Doctorina boleh diperbaiki",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

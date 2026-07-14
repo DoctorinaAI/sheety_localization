@@ -1,0 +1,15 @@
+{
+  "@@locale": "id",
+  "error": "Terjadi kesalahan",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Terjadi kesalahan yang tidak terduga",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Laporan bug berhasil dikirim.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

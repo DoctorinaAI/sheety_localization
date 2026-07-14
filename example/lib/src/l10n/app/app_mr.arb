@@ -1,0 +1,129 @@
+{
+  "@@locale": "mr",
+  "lang": "मराठी",
+  "@lang": {},
+  "langEn": "Marathi",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "आता अपडेट करा",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "कदाचित नंतर",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "नवीन अद्यतन उपलब्ध",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "अपडेट आवश्यक आहे",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "अ‍ॅपची नवीन आवृत्ती (v{version}) उपलब्ध आहे. सर्वोत्तम अनुभवासाठी कृपया अपडेट करा",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "सुरू ठेवण्यासाठी, कृपया अ‍ॅप अपडेट करा. या अद्ययावतमध्ये महत्त्वाच्या दुरुस्ती आणि सुधारणा आहेत.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "डाउनलोड करा",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "जर तुम्हाला आधीच Doctorina खाते असेल तर लॉगिन करा, किंवा सुरू करण्यासाठी साइन अप करा.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "लॉग इन करा",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "साइन अप",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "महमान म्हणून सुरू ठेवा",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "लॉग इन",
+  "@titleLogin": {},
+  "titleLogout": "लॉगआउट",
+  "@titleLogout": {},
+  "titleSignIn": "साइन इन",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "संवाद",
+  "@titleDialog": {},
+  "titleChat": "चॅट",
+  "@titleChat": {},
+  "titleSettings": "खाते सेटिंग्ज",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "चॅट इतिहास",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "पेमेंट",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "सदस्यता व्यवस्थापित करा",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "महिन्याचा सदस्यता",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "ऑनबोर्डिंग",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "तुमचं स्वागत आहे",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "आरोग्य नोंदी प्रोफाइल",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "प्रोफाइल्स घोषणा",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "आरोग्य नोंदी",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "पूर्ण रेकॉर्ड",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "कागदपत्रे",
+  "@titleDocuments": {},
+  "titleConsultations": "सल्ला",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "पेवाल",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "काढत आहात? आम्हाला सांगा का!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "नवीन आरोग्य संवाद सुरू करा",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "आयडिया शेअर करा किंवा समस्या रिपोर्ट करा",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "डॉक्टरिना कशी सुधारू शकते ते आम्हाला सांगा",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

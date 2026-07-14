@@ -1,0 +1,15 @@
+{
+  "@@locale": "ml",
+  "error": "ഒരു പിശക് സംഭവിച്ചു",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "അപ്രതീക്ഷിതമായ ഒരു പിശക് സംഭവിച്ചു",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "ബഗ് റിപ്പോർട്ട് വിജയകരമായി അയച്ചു.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

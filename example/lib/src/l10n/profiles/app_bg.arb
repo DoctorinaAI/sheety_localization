@@ -1,0 +1,425 @@
+{
+  "@@locale": "bg",
+  "chatDrawerTitle": "Медицински записи",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "НОВ",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Създайте своя здравен запис",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "В края на консултацията добавете профила си.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Добави още профили",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Започнете консултация за някой друг, за да създадете профила му.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Регистрирайте се, за да създадете здравния си запис",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Опитай отново",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Неуспешно изтриване на профила",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Неуспешно зареждане на резюме на профила",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Преглед на пълния запис",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Сподели",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Изтрий",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Възраст",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} година} other{{value} години}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Тегло",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Височина",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Алергии",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Хроничен",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Лекарства",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Устройства",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Консултации",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Документи",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Изтриване на здравен запис?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Това ще премахне трайно вашите здравни данни и не може да бъде отменено. Ще загубите контекста, който използваме, за да ви водим.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Отмяна",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Изтрий",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Изтривам вашия здравен запис...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Неуспешно изтриване на профил",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Здравният запис е изтрит",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Можете да създадете нов по всяко време, като разговаряте с асистента.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Върнете се в чата",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Редактиране",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Неуспешно зареждане на данни за профила",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Промените са запазени",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Вашата информация беше успешно актуализирана.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Върнете се в профила",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Неуспешно обновяване на данните за профила",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Отказване на промените?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Направихте някои промени в профила си. Запазете ги, преди да си тръгнете, или ги отхвърлете.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Продължете да редактирате",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Изтрий",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Редактиране",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Добави запис",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Търсене",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Не са намерени резултати",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Изтегли",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Сподели",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Изтрий",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Не са намерени документи",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Да изтрием ли този документ?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Този файл ще бъде трайно премахнат",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Отмяна",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Изтрий",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Още действия",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Търсене",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Не са намерени профили",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Виж още",
+  "@profilesViewMore": {},
+  "profilesMore": "Още",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina вече помни вашето здраве",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Вашите консултации сега автоматично изграждат и актуализират вашата Здравна карта.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Вашата здравна карта, вашите правила",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Прегледайте, редактирайте или добавяйте симптоми, лекарства, история или документи по всяко време.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Грижа за цялото семейство",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Създайте здравен запис за вашите близки, деца, родители или партньор.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Готови ли сте да запазите здравния си запис?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "След консултацията натиснете „Добави профил“, за да го запазите.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Напред",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Започнете консултация",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Може би по-късно",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Затвори",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Медицинска карта",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Медицинска карта — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...повече",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...по-малко",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Добави нов профил",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Създайте профил, за да запазите детайлите на тази консултация",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Можете да го прегледате по всяко време в здравните си записи",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Ако имате още въпроси за това или за нещо свързано, не се колебайте да продължите да говорите с мен. Аз съм тук, за да помогна",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Обща информация",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Име",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "Иван Иванов",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Име",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "Иван",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Фамилия",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Пол",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Моля, изберете",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Мъж",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Жена",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Друго",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Дата на раждане",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "ГГГГ-ММ-ДД",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Възраст",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "напр. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Телефонен номер",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "Имейл",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Местоположение",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "напр. Град, Държава",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Тяло & Хранене",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Височина",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "напр. 180 см",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Тегло",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "напр. 75 кг",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Менструален цикъл",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "напр. Редовен, Нередовен",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Диетични ограничения",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Моля, изберете",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Кажете ни какво ядете и какви ограничения имате",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Няма ограничения",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Вегетарианска диета",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Веган",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Без глутен",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Индекс на телесна маса (ИТМ)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "напр. 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Здравен профил",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Хронични заболявания",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "напр. Диабет тип 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Моля, посочете всички хронични заболявания и включете кога са били диагностицирани и всякакви усложнения.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Предишни заболявания",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "напр. Чести настинки",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Моля, посочете сериозни заболявания, които сте имали в миналото, дори и да сте се възстановили.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Хирургична анамнеза",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "напр. апендектомия",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Моля, изброите всички операции и включете годината и дали е имало усложнения.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Понякога използвани лекарства",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "напр. Ибупрофен",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Моля, посочете медикаменти, които приемате от време на време (например: болкоуспокояващи, медикаменти за алергия), включително дозата и причината за употреба.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Редовни лекарства",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "напр. Метформин",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Моля, посочете всички лекарства, които приемате редовно, включително името, дозата, колко пъти на ден ги приемате и за какво състояние са.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Алергии",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "напр. Пеницилин – причинява обрив",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Моля, посочете всички алергии (медикаменти, храни, околна среда) и опишете каква реакция имате (например: обрив, подуване, проблеми с дишането).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Специални състояния",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "напр. Бременност, Инвалидност",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Ако имате важни медицински състояния, за които лекарите винаги трябва да знаят (например: бременност, имплантирани устройства, увреждания, антикоагулантна терапия), моля, опишете ги. Ако нямате, можете да оставите това поле празно.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Семейна анамнеза",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "напр. сърдечни заболявания, рак",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Моля, опишете важни заболявания в семейството си (например: диабет, хипертония, сърдечни заболявания, рак, генетични заболявания) и посочете кой член на семейството е имал състоянието.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Социални и фактори, свързани с начина на живот",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "напр. Пушене, Консумация на алкохол",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Моля, опишете факторите на начина на живот, които могат да повлияят на вашето здраве, като пушене, алкохол, физическа активност, диета, сън и професия.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Медицински устройства",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "напр. Пейсмейкър, Слухов апарат, Инсулинова помпа",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Моля, посочете всички медицински устройства, които използвате или имате имплантирани, като пейсмейкъри, инсулинови помпи, слухови апарати, протези или други помощни или мониторингови устройства. Включете съответните детайли, ако е приложимо.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Всеяден",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Бърза храна",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Пескатарианец",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Без лактоза",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Диета с ниско съдържание на сол",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Диета с ниско съдържание на захар",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Сърдечна диета",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Бъбречна диета",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Друго",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

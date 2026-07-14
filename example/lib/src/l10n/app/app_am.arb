@@ -1,0 +1,129 @@
+{
+  "@@locale": "am",
+  "lang": "አማርኛ",
+  "@lang": {},
+  "langEn": "Amharic",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "አዘምን አሁን",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "እንደ አሁን ይቅርታ",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "አዲስ እንደሚያገኝ የሚያሳይ እንደሚያገኝ",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "እንደ ወቅታዊ ዝርዝር ይወዳድሩ",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "አዲስ ትርጉም (v{version}) የመተግበሪያው አለ። እባኮትን ወደ ቀጣይ ይዘው ለማሻሻል ይዘው ይቀጥሉ።",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "እባክዎ ይዘው ይቀጥሉ፣ እባክዎ አፕ ይዘው ይዘው። ይህ እቅፍ አስፈላጊ እና የሚሻሻል እንደሆነ ይዘው ይዘው።",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "አውርድ",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "እባኮትን ወደ ዶክተሪና መለያዎ እንደተገናኙ ግባ ወይም ለመጀመር ይመዝገቡ.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "ገብተው ይግቡ",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "ይመዝገቡ",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "እንግድ ሆኖ ይቀጥሉ",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "ገባ",
+  "@titleLogin": {},
+  "titleLogout": "ውጣ",
+  "@titleLogout": {},
+  "titleSignIn": "ገብስ ወይም ይግቡ",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "ውይይት",
+  "@titleDialog": {},
+  "titleChat": "ውይይት",
+  "@titleChat": {},
+  "titleSettings": "አካውንት ቅንብር",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "የውይይት ታሪክ",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "ክፍያ",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "እቅፍ አስተዳደር",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "ወርሃዊ እቅፍ",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "ኦንቦርዲንግ",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "እንኳን ወደ ቤት መጡ",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "የጤና መዝገብ መገለጫዎች",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "የፕሮፋይል ማስታወቂያ",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "የጤና መዝገቦች",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "ሙሉ መዝገብ",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "ሰነዶች",
+  "@titleDocuments": {},
+  "titleConsultations": "ኮንስልታሽን",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "የክፍያ ግድብ",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "እቅፍ ነው? ለእቅፍ ምን እንደሆነ ንገርልን!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "አዲስ የጤና ውይይት ይጀምሩ",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "አስተያየት ወይም ችግኝ ሪፖርት ይስጡ",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "እባክዎን ዶክተሪና እንዴት ማሻሻል እንደሚቻል ንገሩን",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

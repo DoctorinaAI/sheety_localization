@@ -1,0 +1,15 @@
+{
+  "@@locale": "uk",
+  "error": "Сталася помилка",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Сталася несподівана помилка",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Баг-репорт надіслано успішно.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

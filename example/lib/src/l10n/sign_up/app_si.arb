@@ -1,0 +1,390 @@
+{
+  "@@locale": "si",
+  "logIn": "ඇතුල් වන්න",
+  "@logIn": {
+    "description": "Надпись \"логин\""
+  },
+  "password": "මුරපදය",
+  "@password": {
+    "description": "Надпись \"пароль\""
+  },
+  "changeNumber": "අංකය වෙනස් කරන්න",
+  "@changeNumber": {},
+  "forgotPassword": "මතකය අමතක වුණාද?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "Vnesite svoj e-poštni naslov in poslali vam bomo povezavo za ponastavitev gesla.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "ඔබේ මුරපදය මතකද?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "මට මුරපදයක් ඇත",
+  "@backToLoginButton": {},
+  "continueButton": "Nadaljuj",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "Email za ponastavitev gesla poslan",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "Ponastavi geslo",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "Potvrdi kod",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "Začnite koristiti Doctorinu danas",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "ALI",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "Vnesite svojo geslo",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "Prikaži lozinku",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "Obscure password",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "පුරනය වීම මකා දැමීම",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "Email ali telefon",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com හෝ +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "Vnesite e-pošto ali telefonsko številko",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "Prosimo, sprejmite dogovore, da nadaljujete.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "Strinjam se za obdelavo osebnih podatkov,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "upotrebu",
+  "@consentTheUseOf": {},
+  "consentCookies": "piškoti",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", එකඟයි",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "නියමයන් සහ කොන්දේසි",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", සහ පිළිගන්න",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "ගෝපනීයතා ප්‍රතිපත්තිය",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "මගේ උපදේශනය AI සමඟ සහ බලපත්‍රය ඇති වෛද්‍ය වෘත්තීයවේදීන් සමඟ නොවන බව මම පිළිගනිමි.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "ඉවත් වන්න",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "ඔබ පිටවීමට සහතිකද?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "අවලංගු කරන්න",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "ඔව්, පිටවන්න",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "කේතය නැවත යවන්න",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "කේතය නැවත යවන්න ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  },
+  "consentFull": "මම පුද්ගලික දත්ත සැකසීමට, <c>කුකී</c> භාවිතයට, <t>නියම සහ කොන්දේසි</t> පිළිගැනීමට සහ <p>රහස්‍යතා ප්‍රතිපත්ති</p> පිළිගැනීමට එකඟයි.",
+  "@consentFull": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <c> <t> <p> указаны кликабельные спаны, они должны присутсвовать во всех языках."
+  },
+  "emailLabel": "ඔබේ ඊමේල් ඇතුළත් කරන්න",
+  "@emailLabel": {
+    "description": "Email input field label."
+  },
+  "signUpWithEmailTitle": "ඊ-මේල් සමඟ ලියාපදිංචි වන්න",
+  "@signUpWithEmailTitle": {
+    "description": "AppBar title for email signup overlay"
+  },
+  "logInWithEmailTitle": "ඊමේල් සමඟ පිවිසෙන්න",
+  "@logInWithEmailTitle": {
+    "description": "AppBar title for email login overlay"
+  },
+  "phoneLabel": "ඔබගේ දුරකථනය ඇතුළත් කරන්න",
+  "@phoneLabel": {
+    "description": "Phone input field label"
+  },
+  "confirmPhoneTitle": "ඔබේ දුරකථනය තහවුරු කරන්න",
+  "@confirmPhoneTitle": {
+    "description": "AppBar title for phone confirmation screen"
+  },
+  "signUpText": "ලියාපදිංචි වන්න",
+  "@signUpText": {
+    "description": "Standalone \"Sign up\" text for buttons and tabs"
+  },
+  "emailHintShort": "ඊමේල් ඇතුල් කරන්න",
+  "@emailHintShort": {
+    "description": "Short email hint text in login dialog"
+  },
+  "buttonTextSignUpWithGoogle": "Google සමඟ ලියාපදිංචි වන්න",
+  "@buttonTextSignUpWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextSignUpWithApple": "Apple සමඟ ලියාපදිංචි වන්න",
+  "@buttonTextSignUpWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextSignUpWithPhone": "දුරකථනයෙන් ලියාපදිංචි වන්න",
+  "@buttonTextSignUpWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "buttonTextLoginWithGoogle": "Google සමඟ ලොගින් වන්න",
+  "@buttonTextLoginWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextLoginWithApple": "Apple සමඟ ලොගින් වන්න",
+  "@buttonTextLoginWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextLoginWithPhone": "දුරකථනයෙන් ලොගින් වන්න",
+  "@buttonTextLoginWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "youAreLoggedOutMessage": "ඔබ පිටව ගොස් ඇත",
+  "@youAreLoggedOutMessage": {
+    "description": "Message displayed on logout screen"
+  },
+  "reloadButtonText": "නැවත ලෝඩ් කරන්න",
+  "@reloadButtonText": {
+    "description": "Reload button text on logout screen"
+  },
+  "emailErrorText": "අවලංගු විද්‍යුත් තැපැල් ලිපිනය",
+  "@emailErrorText": {
+    "description": "Error message for invalid email address"
+  },
+  "passwordErrorText": "මුරපදය අවම වශයෙන් අකුරු 6 ක් විය යුතුය",
+  "@passwordErrorText": {
+    "description": "Error message for password validation (minimum length)"
+  },
+  "invalidPhoneNumberError": "අවලංගු දුරකථන අංකය: {phoneNumber}",
+  "@invalidPhoneNumberError": {
+    "description": "Error message for invalid phone number format"
+  },
+  "resendCodeWaitError": "කරුණාකර නව කේතයක් ඉල්ලා සිටීමට පෙර {seconds} තත්පර රැඳී සිටින්න.",
+  "@resendCodeWaitError": {
+    "description": "Error message when trying to resend code too soon"
+  },
+  "invalidPhoneCodeError": "අවලංගු දුරකථන කේතය: {phoneCode}",
+  "@invalidPhoneCodeError": {
+    "description": "Error message for invalid phone verification code"
+  },
+  "termsAndConditionsText": "නියම සහ කොන්දේසි",
+  "@termsAndConditionsText": {
+    "description": "Terms and conditions link text in login dialog"
+  },
+  "continueAsGuestBtn": "අමුත්තෙක් ලෙස ඉදිරියට යන්න",
+  "@continueAsGuestBtn": {
+    "description": "Btn to continue as guest on sign up screen"
+  },
+  "noAccountYetPromptText": "ගිණුමක් නැද්ද? <p>ලියාපදිංචි වන්න</p>",
+  "@noAccountYetPromptText": {
+    "description": "Login tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Sign up” link."
+  },
+  "alreadyHaveAccountPromptText": "ඔබට දැනටමත් ගිණුමක් තිබේද? <p>ඇතුල්වන්න</p>",
+  "@alreadyHaveAccountPromptText": {
+    "description": "Sign up tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Log in” link."
+  },
+  "beforeSubscribeYouNeedSignUpLoginDialogSubtitle": "Premium-ом даље наставити, морате се пријавити",
+  "@beforeSubscribeYouNeedSignUpLoginDialogSubtitle": {
+    "description": "Subtitle for login dialog"
+  },
+  "loginSubtitle": "අපගේ පෞද්ගලික අන්තර්ගතය ලබා ගන්න සහ ඔබේ සමාජය සමඟ සම්බන්ධ වන්න!",
+  "@loginSubtitle": {
+    "description": "Подзаголовок на экране входа, мотивирующий пользователя авторизоваться"
+  },
+  "emailFieldLabel": "ඊ-මේල්",
+  "@emailFieldLabel": {
+    "description": "Метка поля ввода email в форме"
+  },
+  "emailPlaceholder": "username@gmail.com",
+  "@emailPlaceholder": {
+    "description": "Пример email в поле ввода"
+  },
+  "recoverPasswordTooltip": "ඔබගේ මුරපදය නැවත ලබා ගන්න",
+  "@recoverPasswordTooltip": {
+    "description": "Тултип кнопки восстановления пароля когда email валиден"
+  },
+  "createAccountTitle": "ගිණුමක් සාදන්න",
+  "@createAccountTitle": {
+    "description": "Заголовок экрана регистрации"
+  },
+  "createAccountSubtitle": "අපට ඔබගේ සෞඛ්‍ය දත්ත ආරක්ෂිතව සුරකින්න සහ ඔබේ ඇගයීම දිගටම ගෙන යන්න ගිණුමක් අවශ්‍යයි.",
+  "@createAccountSubtitle": {
+    "description": "Подзаголовок экрана регистрации, объясняет зачем нужен аккаунт"
+  },
+  "repeatLabel": "නැවත",
+  "@repeatLabel": {
+    "description": "Метка поля повторного ввода пароля"
+  },
+  "repeatPasswordHint": "ඔබගේ මුරපදය නැවත කරන්න",
+  "@repeatPasswordHint": {
+    "description": "Подсказка в поле повторного ввода пароля"
+  },
+  "confirmButton": "අනුමත කරන්න",
+  "@confirmButton": {
+    "description": "Кнопка подтверждения регистрации с паролем"
+  },
+  "noAccountPrompt": "ඔබට ගිණුමක් නැද්ද?",
+  "@noAccountPrompt": {
+    "description": "Текст перед ссылкой на регистрацию на экране входа"
+  },
+  "alreadyHaveAccountPrompt": "ඔබට දැනටමත් ගිණුමක් තිබේද?",
+  "@alreadyHaveAccountPrompt": {
+    "description": "Текст перед ссылкой на вход на экране регистрации"
+  },
+  "createPasswordHeader": "මුරපදයක් සාදන්න",
+  "@createPasswordHeader": {
+    "description": "Заголовок шага создания пароля в хедере диалога"
+  },
+  "phoneHeader": "දුරකථනය",
+  "@phoneHeader": {
+    "description": "Заголовок шага ввода телефона в хедере диалога"
+  },
+  "verifyPhoneHeader": "දුරකථන තහවුරු කිරීම",
+  "@verifyPhoneHeader": {
+    "description": "Заголовок шага верификации телефона в хедере диалога"
+  },
+  "phoneTitle": "ඔබගේ අංකය කුමක්ද?",
+  "@phoneTitle": {
+    "description": "Заголовок экрана ввода номера телефона"
+  },
+  "phoneSubtitle": "ඔබගේ දුරකථනය තහවුරු කිරීමට අපි කේතයක් පණිවිඩයක් ලෙස යවන්නෙමු",
+  "@phoneSubtitle": {
+    "description": "Подзаголовок экрана ввода телефона"
+  },
+  "phoneNumberLabel": "අංකය",
+  "@phoneNumberLabel": {
+    "description": "Метка поля ввода номера телефона"
+  },
+  "enterPhoneNumber": "දුරකථන අංකය ඇතුළත් කරන්න",
+  "@enterPhoneNumber": {
+    "description": "Подсказка в поле ввода телефона"
+  },
+  "phonePlaceholder": "+1 (201) 555-01-23",
+  "@phonePlaceholder": {
+    "description": "Пример номера телефона в поле ввода"
+  },
+  "waitCountdownButton": "ඉන්න {countdown} තත්පර",
+  "@waitCountdownButton": {
+    "description": "Текст кнопки во время ожидания повторной отправки OTP",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next OTP can be sent"
+      }
+    }
+  },
+  "enterCodeTitle": "ඔබගේ කේතය ඇතුළත් කරන්න",
+  "@enterCodeTitle": {
+    "description": "Заголовок экрана ввода OTP кода"
+  },
+  "codeSentToPhone": "අපි {phone} වෙත කේතයක් යවා ඇත",
+  "@codeSentToPhone": {
+    "description": "Текст с информацией куда отправлен код",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+1234567890",
+        "description": "Phone number where code was sent"
+      }
+    }
+  },
+  "didntReceiveCode": "කේතය ලැබුනේ නැද්ද?",
+  "@didntReceiveCode": {
+    "description": "Текст перед ссылкой на повторную отправку кода"
+  },
+  "clickToResend": "නැවත යැවීමට ක්ලික් කරන්න",
+  "@clickToResend": {
+    "description": "Текст ссылки повторной отправки кода"
+  },
+  "requestNewCodeCountdown": "ඔබට නව කේතයක් ඉල්ලා ගැනීමට {countdown} තත්පර තිබේ",
+  "@requestNewCodeCountdown": {
+    "description": "Текст с обратным отсчётом до возможности повторной отправки кода",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next code request"
+      }
+    }
+  },
+  "closeTooltip": "වසන්න",
+  "@closeTooltip": {
+    "description": "Тултип кнопки закрытия диалога"
+  },
+  "backTooltip": "පසුබැසීම",
+  "@backTooltip": {
+    "description": "Тултип кнопки назад"
+  },
+  "termsOfServiceLink": "සේවා කොන්දේසි",
+  "@termsOfServiceLink": {
+    "description": "Текст ссылки на условия использования в футере"
+  },
+  "privacyPolicyLink": "පෞද්ගලිකත්ව ප්‍රතිපත්ති",
+  "@privacyPolicyLink": {
+    "description": "Текст ссылки на политику конфиденциальности в футере"
+  },
+  "welcomeBackTitle": "ආයුබෝවන්",
+  "@welcomeBackTitle": {
+    "description": "Заголовок экрана приветствия при возвращении пользователя"
+  },
+  "welcomeBackSubtitle": "ඔබට දැනටමත් Doctorina ගිණුමක් ඇත්නම් පිවිසෙන්න, නැතහොත් ආරම්භ කිරීමට ලියාපදිංචි වන්න.",
+  "@welcomeBackSubtitle": {
+    "description": "Подзаголовок экрана приветствия, предлагающий войти или зарегистрироваться"
+  },
+  "passwordRuleLength": "අක්ෂර 8 සිට 128 දක්වා",
+  "@passwordRuleLength": {
+    "description": "Правило валидации пароля: длина от 8 до 128 символов"
+  },
+  "passwordRuleNumber": "අවම වශයෙන් 1 අංකයක්",
+  "@passwordRuleNumber": {
+    "description": "Правило валидации пароля: минимум 1 цифра"
+  },
+  "passwordRuleUppercase": "අවම වශයෙන් අකුරු 1ක්",
+  "@passwordRuleUppercase": {
+    "description": "Правило валидации пароля: минимум 1 заглавная буква"
+  },
+  "passwordRuleMatch": "මූලපද එකට ගැලපේ",
+  "@passwordRuleMatch": {
+    "description": "Правило валидации пароля: пароли совпадают"
+  },
+  "phoneOtpVerificationFailed": "OTP සත්‍යාපනය අසාර්ථක විය. කරුණාකර නැවත උත්සාහ කරන්න.",
+  "@phoneOtpVerificationFailed": {},
+  "referralCodeLabel": "රෙෆරල් කේතය",
+  "@referralCodeLabel": {
+    "description": "Заголовок поля ввода реферального кода на экране регистрации"
+  },
+  "enterReferralCodeHint": "ඔබේ යොමු කේතය ඇතුළත් කරන්න",
+  "@enterReferralCodeHint": {
+    "description": "Подсказка (labelText) в поле ввода реферального кода"
+  },
+  "referralCodeExampleHint": "E.G. CREATOR2026",
+  "@referralCodeExampleHint": {
+    "description": "Пример реферального кода в поле ввода (hintText)"
+  },
+  "haveReferralCodeQuestion": "ඔබට යොමුකිරීමේ කේතයක් තිබේද?",
+  "@haveReferralCodeQuestion": {
+    "description": "Ссылка-вопрос, раскрывающая поле ввода реферального кода"
+  }
+}

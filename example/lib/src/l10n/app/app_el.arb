@@ -1,0 +1,129 @@
+{
+  "@@locale": "el",
+  "lang": "ελληνικά",
+  "@lang": {},
+  "langEn": "Greek",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Update Now",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Ίσως αργότερα",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Διαθέσιμη νέα ενημέρωση",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Απαιτείται ενημέρωση",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Μια νέα έκδοση (v{version}) της εφαρμογής είναι διαθέσιμη. Παρακαλώ ενημερώστε για να συνεχίσετε με την καλύτερη εμπειρία.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Για να συνεχίσετε, παρακαλώ ενημερώστε την εφαρμογή. Αυτή η ενημέρωση περιλαμβάνει σημαντικές διορθώσεις και βελτιώσεις.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Λήψη",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Συνδεθείτε αν έχετε ήδη λογαριασμό Doctorina ή εγγραφείτε για να ξεκινήσετε.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Σύνδεση",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Εγγραφή",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Συνεχίστε ως επισκέπτης",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Σύνδεση",
+  "@titleLogin": {},
+  "titleLogout": "Αποσύνδεση",
+  "@titleLogout": {},
+  "titleSignIn": "Σύνδεση",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Διάλογος",
+  "@titleDialog": {},
+  "titleChat": "Συνομιλία",
+  "@titleChat": {},
+  "titleSettings": "Ρυθμίσεις Λογαριασμού",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Ιστορικό συνομιλιών",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Πληρωμή",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Διαχείριση συνδρομής",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Μηνιαία Συνδρομή",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Εκπαίδευση",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Καλώς ήρθατε πίσω",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Προφίλ αρχείων υγείας",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Ανακοίνωση προφίλ",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Ιατρικά Αρχεία",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Πλήρης καταγραφή",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Έγγραφα",
+  "@titleDocuments": {},
+  "titleConsultations": "Συμβουλές",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Πληρωμή",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Διαγραφή; Πείτε μας γιατί!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Ξεκινήστε μια νέα υγειονομική συνομιλία",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Μοιραστείτε μια ιδέα ή αναφέρετε ένα πρόβλημα",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Πείτε μας πώς μπορεί να βελτιωθεί η Doctorina",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

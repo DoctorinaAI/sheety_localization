@@ -1,0 +1,227 @@
+{
+  "@@locale": "zh_HK",
+  "exampleButton": "按鈕示例",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "係，一切都好！",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "每一份貢獻都能治癒!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "你嘅捐助有助籌款提供免費建議畀有需要嘅人.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "隨心付費,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "或者繼續免費使用Doctorina，多虧其他人選擇捐助.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "一次性",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "每月",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "揀選每月捐款金額",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "你即將訂閱每月計劃.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "你而家訂閱每月計劃，費用 {amount}/月.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "確認購買時，付款將會從你嘅帳戶扣款。除非喺本期結束前至少24小時關閉自動續訂，否則訂閱會每個月自動續訂。你可隨時喺你嘅帳戶設定入面管理或取消訂閱。繼續操作即表示你同意我哋嘅 {termsOfService} 同 {privacyPolicy}",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "揀一次性捐款金額",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "大部分人俾 $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "選擇貨幣",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "處理付款",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "處理一次性付款 {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "緊處理每月 {amount} 嘅付款",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "多謝!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "而家有更多人會獲得免費建議 — 你嘅支持真係無價",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "你嘅貢獻:",
+  "@youContributedLabel": {},
+  "perMonth": "/月",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "返回主畫面",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "服務條款",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "私隱政策",
+  "@privacyPolicyLabel": {},
+  "donateButton": "捐款",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "使用中",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "已取消",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "暫停",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "待處理",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "已創建",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "逾時",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "未知",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina 貢獻者",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "續訂",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "取消訂閱",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "你確定？",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "你每月嘅支持令Doctorina可以免費俾有需要但負擔唔起費用嘅人用。你嘅訂閱每個月至少資助10次免費諮詢。如果你停止訂閱，會有較少病人可以得到佢哋所需嘅幫助",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "保留訂閱",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "仍然取消",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "你嘅每月支援已成功取消.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "訂閱資料錯誤",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "登記每月支援，即可喺呢度出現",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "未有訂閱",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "訂閱日期",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "到期",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "訂閱編號",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "產品編號",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "好",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "我哋未能處理你嘅付款",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "付款出咗問題。請再試一次。",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "重試",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "處理付款",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "你會喺Stripe嘅安全結賬頁完成購買.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ 星期",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ 年",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "最受歡迎",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "關閉",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "您在Premium中獲得的內容：",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "無廣告諮詢",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "更快的回覆",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "提前獲得新功能",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/週",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "隨時取消。無需承諾。",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "限時",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "每週自動續訂。隨時在設置中取消。繼續即表示您同意我們的<t>條款</t>和<p>隱私政策</p>。",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 繼續使用高級版",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 你的支持有助於保持醫療服務的可及性",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "請註冊或登入以完成購買。",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

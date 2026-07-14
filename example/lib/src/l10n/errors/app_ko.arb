@@ -1,0 +1,15 @@
+{
+  "@@locale": "ko",
+  "error": "오류가 발생했습니다",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "예기치 않은 오류가 발생했습니다",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "버그 신고가 성공적으로 전송되었습니다.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "@@locale": "ro",
+  "error": "A apărut o eroare",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "A apărut o eroare neașteptată",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Raportul de eroare a fost trimis cu succes.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

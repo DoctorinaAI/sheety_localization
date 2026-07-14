@@ -1,0 +1,227 @@
+{
+  "@@locale": "pa",
+  "exampleButton": "ਬਟਨ ਉਦਾਹਰਨ",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "ਹਾਂ, ਇਹ ਸਭ ਠੀਕ ਹੈ!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "ਹਰ ਯੋਗਦਾਨ ਠੀਕ ਕਰਦਾ ਹੈ!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "ਤੁਹਾਡੀ ਯੋਗਦਾਨ ਦੂਜਿਆਂ ਦੀ ਲੋੜ ਵਿੱਚ ਮੁਫ਼ਤ ਸਲਾਹ ਦੇਣ ਲਈ ਫੰਡ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "ਜੋ ਸਹੀ ਮਹਿਸੂਸ ਹੁੰਦਾ ਹੈ, ਉਸਦਾ ਭੁਗਤਾਨ ਕਰੋ",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "ਜਾਂ ਡਾਕਟਰਿਨਾ ਨੂੰ ਮੁਫਤ ਵਰਤਣਾ ਜਾਰੀ ਰੱਖੋ, ਉਹਨਾਂ ਦਾ ਧੰਨਵਾਦ ਜੋ ਦੇਣ ਦੀ ਚੋਣ ਕੀਤੀ.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "ਇੱਕ ਵਾਰੀ",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "ਮਾਸਿਕ",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "ਮਹੀਨਾਵਾਰ ਦਾਨ ਦੀ ਰਕਮ ਚੁਣੋ",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "ਤੁਸੀਂ ਇੱਕ ਮਹੀਨਾਵਾਰ ਯੋਜਨਾ ਲਈ ਸਬਸਕ੍ਰਾਈਬ ਕਰਨ ਵਾਲੇ ਹੋ.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "ਤੁਸੀਂ {amount}/ਮਹੀਨੇ ਲਈ ਇੱਕ ਮਹੀਨਾਵਾਰ ਯੋਜਨਾ ਲਈ ਸਬਸਕ੍ਰਾਈਬ ਕਰ ਰਹੇ ਹੋ.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "ਭੁਗਤਾਨ ਤੁਹਾਡੇ ਖਾਤੇ 'ਤੇ ਖਰੀਦ ਦੀ ਪੁਸ਼ਟੀ 'ਤੇ ਚਾਰਜ ਕੀਤਾ ਜਾਵੇਗਾ। ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਹਰ ਮਹੀਨੇ ਆਪਣੇ ਆਪ ਨਵੀਨੀਕਰਨ ਕਰਦਾ ਹੈ ਜੇਕਰ ਆਟੋ-ਨਵੀਨੀਕਰਨ ਮੌਜੂਦਾ ਸਮੇਂ ਦੇ ਅੰਤ ਤੋਂ ਘੱਟ ਤੋਂ ਘੱਟ 24 ਘੰਟੇ ਪਹਿਲਾਂ ਬੰਦ ਨਹੀਂ ਕੀਤਾ ਗਿਆ। ਤੁਸੀਂ ਆਪਣੇ ਖਾਤੇ ਦੀ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਕਿਸੇ ਵੀ ਸਮੇਂ ਆਪਣੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਦਾ ਪ੍ਰਬੰਧ ਜਾਂ ਰੱਦ ਕਰ ਸਕਦੇ ਹੋ। ਅੱਗੇ ਵਧਣ ਨਾਲ, ਤੁਸੀਂ ਸਾਡੇ {termsOfService} ਅਤੇ {privacyPolicy} ਨਾਲ ਸਹਿਮਤ ਹੋ ਜਾਂਦੇ ਹੋ.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "ਇੱਕ ਵਾਰੀ ਦੀ ਦਾਨ ਦੀ ਰਕਮ ਚੁਣੋ",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "ਜ਼ਿਆਦਾਤਰ ਲੋਕ $7–$15 ਦਿੰਦੇ ਹਨ",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "ਮੁਦਰਾ ਚੁਣੋ",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "ਭੁਗਤਾਨ ਪ੍ਰਕਿਰਿਆ",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "ਇੱਕ ਵਾਰੀ ਦੇ ਭੁਗਤਾਨ ਦੀ ਪ੍ਰਕਿਰਿਆ {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "ਮਹੀਨਾਵਾਰ ਭੁਗਤਾਨ {amount} ਦੀ ਪ੍ਰਕਿਰਿਆ ਕਰ ਰਹੇ ਹਾਂ",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "ਧੰਨਵਾਦ!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "ਹੁਣ ਹੋਰ ਲੋਕ ਮੁਫਤ ਸਲਾਹ ਪ੍ਰਾਪਤ ਕਰਨਗੇ — ਤੁਹਾਡਾ ਸਮਰਥਨ ਸੱਚਮੁੱਚ ਬੇਮਿਸਾਲ ਹੈ.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "ਤੁਸੀਂ ਯੋਗਦਾਨ ਦਿੱਤਾ:",
+  "@youContributedLabel": {},
+  "perMonth": "/ ਮਹੀਨਾ",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "ਮੁੱਖ ਸਕ੍ਰੀਨ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "ਸੇਵਾ ਦੇ ਨਿਯਮ",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "ਗੋਪਨੀਯਤਾ ਨੀਤੀ",
+  "@privacyPolicyLabel": {},
+  "donateButton": "ਦਾਨ ਕਰੋ",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "ਸਰਗਰਮ",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "ਰੱਦ",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "ਰੁਕਿਆ",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "ਲੰਬਿਤ",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "ਬਣਾਇਆ",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Timeout",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "ਅਣਜਾਣ",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina ਸਹਿਯੋਗੀ",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "ਨਵੀਨੀਕਰਨ",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਰੱਦ ਕਰੋ",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਹੋ?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "ਤੁਹਾਡੀ ਮਹੀਨਾਵਾਰੀ ਸਹਾਇਤਾ ਡਾਕਟਰਿਨਾ ਨੂੰ ਉਹਨਾਂ ਲੋਕਾਂ ਲਈ ਮੁਫਤ ਰੱਖਦੀ ਹੈ ਜੋ ਇਸ 'ਤੇ ਨਿਰਭਰ ਹਨ ਪਰ ਭੁਗਤਾਨ ਕਰਨ ਦੀ ਸਮਰੱਥਾ ਨਹੀਂ ਰੱਖਦੇ। ਤੁਹਾਡੀ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਹਰ ਮਹੀਨੇ ਘੱਟੋ-ਘੱਟ 10 ਮੁਫਤ ਸਲਾਹ-ਮਸ਼ਵਰੇ ਨੂੰ ਫੰਡ ਕਰਦੀ ਹੈ। ਜੇ ਤੁਸੀਂ ਛੱਡ ਦਿੰਦੇ ਹੋ, ਤਾਂ ਘੱਟ ਮਰੀਜ਼ਾਂ ਨੂੰ ਉਹ ਸਹਾਇਤਾ ਮਿਲੇਗੀ ਜਿਸ ਦੀ ਉਨ੍ਹਾਂ ਨੂੰ ਲੋੜ ਹੈ.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਰੱਖੋ",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "ਕੈਂਸਲ ਕਰੋ",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "ਤੁਹਾਡੀ ਮਹੀਨਾਵਾਰੀ ਸਹਾਇਤਾ ਸਫਲਤਾਪੂਰਵਕ ਰੱਦ ਕੀਤੀ ਗਈ ਹੈ",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "ਗਲਤ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਡੇਟਾ",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "ਮਹੀਨਾਵਾਰ ਸਹਾਇਤਾ ਲਈ ਸਾਈਨ ਅਪ ਕਰੋ ਤਾਂ ਜੋ ਇਹ ਇੱਥੇ ਦਿਖਾਈ ਦੇਵੇ.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "ਕੋਈ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਨਹੀਂ",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਦੀ ਤਾਰੀਖ",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "ਮਿਆਦ ਖਤਮ ਹੋ ਰਹੀ ਹੈ",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਆਈਡੀ",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Product ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "ਅਸੀਂ ਤੁਹਾਡਾ ਭੁਗਤਾਨ ਅੱਗੇ ਨਹੀਂ ਵਧਾ ਸਕੇ",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "ਭੁਗਤਾਨ ਵਿੱਚ ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ।",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "ਭੁਗਤਾਨ ਪ੍ਰਕਿਰਿਆ",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "ਤੁਸੀਂ ਸਟ੍ਰਾਈਪ ਦੇ ਸੁਰੱਖਿਅਤ ਚੈਕਆਉਟ ਪੇਜ 'ਤੇ ਆਪਣੀ ਖਰੀਦਾਰੀ ਪੂਰੀ ਕਰੋਗੇ।",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ ਹਫਤਾ",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ ਸਾਲ",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "ਸਭ ਤੋਂ ਪ੍ਰਸਿੱਧ",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "ਬੰਦ ਕਰੋ",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "ਤੁਹਾਨੂੰ ਪ੍ਰੀਮੀਅਮ ਨਾਲ ਕੀ ਮਿਲਦਾ ਹੈ:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "ਬਿਨਾ ਵਿਗਿਆਪਨ ਦੇ ਸਲਾਹ-ਮਸ਼ਵਰੇ",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "ਜ਼ਿਆਦਾ ਤੇਜ਼ ਜਵਾਬ",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "ਨਵੇਂ ਫੀਚਰਾਂ ਲਈ ਜਲਦੀ ਪਹੁੰਚ",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/ਹਫ਼ਤਾ",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "ਕਦੇ ਵੀ ਰੱਦ ਕਰੋ। ਕੋਈ ਵਚਨਬੱਧਤਾ ਨਹੀਂ।",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "LIMITED TIME",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "ਹਫ਼ਤੇ ਵਿੱਚ ਆਟੋ-ਨਵੀਨੀਕਰਨ ਹੁੰਦਾ ਹੈ। ਸੈਟਿੰਗਜ਼ ਵਿੱਚ ਕਿਸੇ ਵੀ ਸਮੇਂ ਰੱਦ ਕਰੋ। ਜਾਰੀ ਰੱਖਣ ਨਾਲ, ਤੁਸੀਂ ਸਾਡੇ <t>ਨਿਯਮ</t> ਅਤੇ <p>ਗੋਪਨੀਯਤਾ ਨੀਤੀ</p> ਨਾਲ ਸਹਿਮਤ ਹੋ।",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 ਪ੍ਰੀਮੀਅਮ ਨਾਲ ਜਾਰੀ ਰੱਖੋ",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 ਤੁਹਾਡਾ ਸਹਿਯੋਗ ਸਿਹਤ ਸੇਵਾਵਾਂ ਨੂੰ ਪਹੁੰਚਯੋਗ ਰੱਖਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "ਕਿਰਪਾ ਕਰਕੇ ਖਰੀਦ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ ਸਾਈਨ ਅਪ ਜਾਂ ਲੌਗ ਇਨ ਕਰੋ.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

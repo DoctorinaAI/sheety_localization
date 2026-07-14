@@ -1,0 +1,129 @@
+{
+  "@@locale": "da",
+  "lang": "Dansk",
+  "@lang": {},
+  "langEn": "Danish",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Opdater nu",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Måske senere",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Ny opdatering tilgængelig",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Opdatering påkrævet",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "En ny version (v{version}) af appen er tilgængelig. Opdater venligst for at fortsætte med den bedste oplevelse.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "For at fortsætte, opdater venligst appen. Denne opdatering inkluderer vigtige rettelser og forbedringer.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Hent",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Log ind, hvis du allerede har en Doctorina-konto, eller tilmeld dig for at komme i gang.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Log ind",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Tilmeld dig",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Fortsæt som gæst",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Log ind",
+  "@titleLogin": {},
+  "titleLogout": "Log ud",
+  "@titleLogout": {},
+  "titleSignIn": "Log ind",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Dialog",
+  "@titleDialog": {},
+  "titleChat": "Chat",
+  "@titleChat": {},
+  "titleSettings": "Kontoindstillinger",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Chat-historik",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Betaling",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Administrer abonnement",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Månedligt Abonnement",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Introduktion",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Velkommen tilbage",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Profiler for sundhedsjournaler",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Profilerklæring",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Sundhedsoptegnelser",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Fuld optegnelse",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Dokumenter",
+  "@titleDocuments": {},
+  "titleConsultations": "Konsultationer",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Betalingsmur",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Sletter du? Fortæl os hvorfor!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Start en ny sundhedssamtale",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Del en idé eller rapporter et problem",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Fortæl os, hvordan Doctorina kan forbedres",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

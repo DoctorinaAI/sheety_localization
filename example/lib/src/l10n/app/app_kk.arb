@@ -1,0 +1,129 @@
+{
+  "@@locale": "kk",
+  "lang": "Қазақ",
+  "@lang": {},
+  "langEn": "Kazakh",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Қазір жаңарту",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Кейінірек",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Жаңа жаңарту қолжетімді",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Жаңарту қажет",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Қолданбаның жаңа нұсқасы (v{version}) қолжетімді. Ең жақсы тәжірибе үшін жаңартыңыз.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Жалғастыру үшін, қосымшаны жаңартыңыз. Бұл жаңарту маңызды түзетулер мен жақсартуларды қамтиды.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Жүктеу",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Егер сізде Doctorina аккаунты болса, кіріңіз немесе бастау үшін тіркеліңіз.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Кіру",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Тіркелу",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Қонақ ретінде жалғастырыңыз",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Кіру",
+  "@titleLogin": {},
+  "titleLogout": "Шығу",
+  "@titleLogout": {},
+  "titleSignIn": "Кіру",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Диалог",
+  "@titleDialog": {},
+  "titleChat": "Чат",
+  "@titleChat": {},
+  "titleSettings": "Есеп параметрлері",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Чат тарихы",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Төлем",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Жазылымды басқару",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Айлық жазылым",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Бастапқы",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Қайта келдіңіз",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Денсаулық жазбаларының профильдері",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Профильдер туралы хабарландыру",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Денсаулық жазбалары",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Толық жазба",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Құжаттар",
+  "@titleDocuments": {},
+  "titleConsultations": "Консультациялар",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Төлем қабырғасы",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Жою? Неге екенін айтыңыз!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Жаңа денсаулық әңгімесін бастаңыз",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Идея бөлісіңіз немесе мәселені хабарлаңыз",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Doctorina қалай жақсара алатынын айтыңыз",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

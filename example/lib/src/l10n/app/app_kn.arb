@@ -1,0 +1,129 @@
+{
+  "@@locale": "kn",
+  "lang": "ಕನ್ನಡ",
+  "@lang": {},
+  "langEn": "Kannada",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "ಈಗ ನವೀಕರಿಸಿ",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "ಮರುಕಳಿಸಿ",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "ಹೊಸ ನವೀಕರಣ ಲಭ್ಯವಿದೆ",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "ಅಪ್ಡೇಟ್ ಅಗತ್ಯವಿದೆ",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "ಹೊಸ ಆವೃತ್ತಿ (v{version}) ಲಭ್ಯವಿದೆ. ಉತ್ತಮ ಅನುಭವಕ್ಕಾಗಿ ದಯವಿಟ್ಟು ನವೀಕರಿಸಿ.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "ಮುಂದುವರಿಸಲು, ದಯವಿಟ್ಟು ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ನವೀಕರಿಸಿ. ಈ ನವೀಕರಣವು ಪ್ರಮುಖ ದೋಷಗಳನ್ನು ಮತ್ತು ಸುಧಾರಣೆಗಳನ್ನು ಒಳಗೊಂಡಿದೆ.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "ಡೌನ್ಲೋಡ್",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "ನೀವು ಈಗಾಗಲೇ Doctorina ಖಾತೆ ಹೊಂದಿದ್ದರೆ ಲಾಗಿನ್ ಮಾಡಿ, ಅಥವಾ ಪ್ರಾರಂಭಿಸಲು ಸೈನ್ ಅಪ್ ಮಾಡಿ.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "ಲಾಗ್ ಇನ್",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "ಸೈನ್ ಅಪ್",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "ಅತಿಥಿಯಾಗಿ ಮುಂದುವರಿಸಿ",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "ಲಾಗಿನ್",
+  "@titleLogin": {},
+  "titleLogout": "ಲಾಗ್ ಔಟ್",
+  "@titleLogout": {},
+  "titleSignIn": "ಸೈನ್ ಇನ್",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "ಸಂವಾದ",
+  "@titleDialog": {},
+  "titleChat": "ಚಾಟ್",
+  "@titleChat": {},
+  "titleSettings": "ಖಾತೆ ಸೆಟಿಂಗ್‌ಗಳು",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "ಚಾಟ್ ಇತಿಹಾಸ",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "ಪಾವತಿ",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "ಚಂದಾ ನಿರ್ವಹಣೆ",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "ಮಾಸಿಕ ಚಂದಾ",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "ಆರಂಭ",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "ಮರುಸ್ವಾಗತ",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "ಆರೋಗ್ಯ ದಾಖಲೆಗಳ ಪ್ರೊಫೈಲ್‌ಗಳು",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "ಪ್ರೊಫೈಲ್ ಘೋಷಣೆ",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "ಆರೋಗ್ಯ ದಾಖಲೆಗಳು",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "ಪೂರ್ಣ ದಾಖಲೆ",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "ದಾಖಲೆಗಳು",
+  "@titleDocuments": {},
+  "titleConsultations": "ಸಲಹೆಗಳು",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "ಪೇವಾಲ್",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "ಅಳಿಸುತ್ತಿದ್ದೀರಾ? ನಮಗೆ ಏಕೆ ಎಂದು ತಿಳಿಸಿ!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "ಹೊಸ ಆರೋಗ್ಯ ಸಂವಾದವನ್ನು ಪ್ರಾರಂಭಿಸಿ",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "ಆಯ್ಕೆ ಹಂಚಿಕೊಳ್ಳಿ ಅಥವಾ ಸಮಸ್ಯೆ ವರದಿ ಮಾಡಿ",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "ಡಾಕ್ಟರಿನಾ ಹೇಗೆ ಸುಧಾರಿಸಬಹುದು ಎಂದು ನಮಗೆ ತಿಳಿಸಿ",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

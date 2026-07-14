@@ -1,0 +1,15 @@
+{
+  "@@locale": "te",
+  "error": "లోపం సంభవించింది",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "అనుకోని లోపం సంభవించింది",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "బగ్ నివేదిక విజయవంతంగా పంపబడింది.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

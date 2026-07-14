@@ -1,0 +1,15 @@
+{
+  "@@locale": "pa_PK",
+  "error": "ایک غلطی پیش آئی",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "ایک غیر متوقع غلطی پیش آئی",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "بگ رپورٹ کامیابی نال بھیج دتی گئی.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

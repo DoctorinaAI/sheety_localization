@@ -1,0 +1,588 @@
+{
+  "@@locale": "km",
+  "appNameLogo": "doctorina",
+  "@appNameLogo": {
+    "description": "Brand name displayed under the logo on the welcome screen"
+  },
+  "welcomeTagline": "ជំនួយសុខភាព AI កម្រិតខ្ពស់",
+  "@welcomeTagline": {
+    "description": "Short tagline describing the product category"
+  },
+  "welcomeScreenTitle": "សូមស្វាគមន៍\nទៅកាន់ Doctorina!",
+  "@welcomeScreenTitle": {
+    "description": "Main headline welcoming the user"
+  },
+  "socialProofTrustedBy": "Trusted by\n<green>48K+ Users</green>",
+  "@socialProofTrustedBy": {
+    "description": "Social proof header with highlighted user count\nNew line should be preserved. 48K+"
+  },
+  "welcomeDescription": "រចនាឡើងដើម្បីវិភាគរោគសញ្ញាដូចជាអ្នកវេជ្ជបណ្ឌិតដែលមានបទពិសោធន៍ — ដោយយល់ដឹងអំពីលំនាំ, ពេលវេលា, និងបរិបទ។",
+  "@welcomeDescription": {
+    "description": "Short paragraph explaining the value proposition of the app"
+  },
+  "getStartedBtn": "ចាប់ផ្តើម",
+  "@getStartedBtn": {
+    "description": "Primary call-to-action button to begin onboarding"
+  },
+  "alreadyHaveAccount": "មានគណនីរួចហើយឬ? <link>ចូល</link>",
+  "@alreadyHaveAccount": {
+    "description": "Secondary text prompting existing users to sign in with tappable login action"
+  },
+  "termsConsent": "ដោយបន្ត អ្នកយល់ព្រមទៅនឹង",
+  "@termsConsent": {
+    "description": "Legal consent text with tappable Terms of Service and Privacy Policy\nNew line should be preserved"
+  },
+  "personalizationInterruptionTitle": "មកផ្ទៀងផ្ទាត់ឱ្យបានផ្ទាល់ <brand>Doctorina</brand> សម្រាប់អ្នក",
+  "@personalizationInterruptionTitle": {
+    "description": "Headline prompting the user to start personalization with highlighted brand name"
+  },
+  "personalizationSectionLabel": "ការបុគ្គលិកភាព",
+  "@personalizationSectionLabel": {
+    "description": "Small section label indicating personalization flow"
+  },
+  "personalizationReasonTitle": "អ្វីដែលនាំឱ្យអ្នកមកទីនេះថ្ងៃនេះ?",
+  "@personalizationReasonTitle": {
+    "description": "Question asking why the user opened the app"
+  },
+  "personalizationReasonSymptomsNow": "ខ្ញុំកំពុងមានរោគសញ្ញាឥឡូវនេះ",
+  "@personalizationReasonSymptomsNow": {
+    "description": "Option indicating the user currently has symptoms"
+  },
+  "personalizationReasonUnderstandChange": "ខ្ញុំចង់យល់អំពីការផ្លាស់ប្តូរពីសុខភាព",
+  "@personalizationReasonUnderstandChange": {
+    "description": "Option indicating the user wants to understand a health change"
+  },
+  "personalizationReasonRuleOutSerious": "ខ្ញុំចង់រំលាយអ្វីមួយដែលធ្ងន់ធ្ងរ",
+  "@personalizationReasonRuleOutSerious": {
+    "description": "Option indicating the user wants to rule out serious issues"
+  },
+  "personalizationReasonMonitoring": "ខ្ញុំកំពុងតែតាមដានសុខភាពរបស់ខ្ញុំយ៉ាងប្រកបដោយប្រសិទ្ធភាព",
+  "@personalizationReasonMonitoring": {
+    "description": "Option indicating proactive health monitoring"
+  },
+  "continueBtn": "បន្ត",
+  "@continueBtn": {
+    "description": "Primary button to proceed to next step"
+  },
+  "captionEmpathyText": "ពេលមានអ្វីមួយផ្លាស់ប្តូរនៅក្នុងសុខភាពរបស់អ្នក ការដឹងថាអ្វីដែលសំខាន់គឺពិបាកបំផុត",
+  "@captionEmpathyText": {
+    "description": "Introductory empathy statement about health uncertainty"
+  },
+  "captionDifferentiatorText": "<em>Doctorina ផ្តោតលើលំនាំនៃរោគសញ្ញា និងពេលវេលា</em> — សញ្ញាដូចគ្នាដែលគ្រូពេទ្យស្វែងរកនៅដំបូង។",
+  "@captionDifferentiatorText": {
+    "description": "Statement explaining Doctorina's analytical approach with emphasized phrase"
+  },
+  "genderTitle": "ជ្រើសរើសភេទរបស់អ្នក",
+  "@genderTitle": {
+    "description": "Question asking the user to select gender"
+  },
+  "genderSubtitle": "នេះជួយឱ្យយើងអាចបកស្រាយរោគសញ្ញានិងផ្តល់អនុសាសន៍បានយ៉ាងត្រឹមត្រូវ។",
+  "@genderSubtitle": {
+    "description": "Supporting text explaining why gender data is used"
+  },
+  "genderMale": "ប្រុស",
+  "@genderMale": {
+    "description": "Gender selection option male"
+  },
+  "genderFemale": "ស្រី",
+  "@genderFemale": {
+    "description": "Gender selection option female"
+  },
+  "genderPreferNotSay": "មិនចង់ប្រាប់",
+  "@genderPreferNotSay": {
+    "description": "Gender selection option prefer not to disclose"
+  },
+  "ageTitle": "អាយុរបស់អ្នកគឺប៉ុន្មាន?",
+  "@ageTitle": {
+    "description": "Question asking the user's age"
+  },
+  "ageSubtitle": "អាយុជួយឱ្យយើងវាយតម្លៃលំនាំសុខភាពបានយ៉ាងត្រឹមត្រូវ។",
+  "@ageSubtitle": {
+    "description": "Supporting explanation for age usage"
+  },
+  "socialProofLargeTitle": "<green>មានមនុស្សជាង 48k+</green>\nបានជ្រើសរើស Doctorina",
+  "@socialProofLargeTitle": {
+    "description": "Social proof headline with emphasized number\nNew line should be preserved"
+  },
+  "socialProofDisclaimer": "*ផ្អែកលើស្ថិតិមូលដ្ឋានអ្នកប្រើប្រាស់ Doctorina",
+  "@socialProofDisclaimer": {
+    "description": "Small note describing data source"
+  },
+  "developedByDoctors": "បង្កើតដោយ\n<b>វេជ្ជបណ្ឌិត</b>",
+  "@developedByDoctors": {
+    "description": "Badge text indicating medical expertise\nNew line should be preserved"
+  },
+  "quizStepLabel1": "ជំហាន ១/៦",
+  "@quizStepLabel1": {
+    "description": "Progress indicator showing current quiz step"
+  },
+  "quizHealthSituationTitle": "អ្នកនឹងពិពណ៌នាអំពីស្ថានភាពសុខភាពបច្ចុប្បន្នរបស់អ្នកយ៉ាងដូចម្តេច?",
+  "@quizHealthSituationTitle": {
+    "description": "Question about overall health situation"
+  },
+  "quizHealthHealthy": "ខ្ញុំមានអារម្មណ៍ថាសុខភាពល្អ",
+  "@quizHealthHealthy": {
+    "description": "Option indicating no major health concerns"
+  },
+  "quizHealthMinorConcerns": "ខ្ញុំមានការព្រួយបារម្ភតិចតួចដែលបន្ត",
+  "@quizHealthMinorConcerns": {
+    "description": "Option indicating minor ongoing issues"
+  },
+  "quizHealthKnownCondition": "ខ្ញុំកំពុងគ្រប់គ្រងស្ថានភាពដែលបានដឹង",
+  "@quizHealthKnownCondition": {
+    "description": "Option indicating an existing diagnosed condition"
+  },
+  "quizHealthUnresolved": "ខ្ញុំកំពុងប្រឈមមុខនឹងអ្វីមួយដែលមិនបានដោះស្រាយ",
+  "@quizHealthUnresolved": {
+    "description": "Option indicating unresolved issue"
+  },
+  "quizStepLabel2": "ជំហាន 2/6",
+  "@quizStepLabel2": {
+    "description": "Progress indicator showing second quiz step"
+  },
+  "quizDoctorVisitFrequencyTitle": "អ្នកទៅឃ្លាំងវេជ្ជបណ្ឌិតប៉ុន្មានដង?",
+  "@quizDoctorVisitFrequencyTitle": {
+    "description": "Question about frequency of doctor visits"
+  },
+  "quizDoctorVisitRegular": "ជាប្រចាំ (ការត្រួតពិនិត្យ / ការតាមដាន)",
+  "@quizDoctorVisitRegular": {
+    "description": "Option indicating regular checkups"
+  },
+  "quizDoctorVisitOccasional": "ជាអាទិភាពពេលណាមួយមានអ្វីមិនត្រឹមត្រូវ",
+  "@quizDoctorVisitOccasional": {
+    "description": "Option indicating occasional visits"
+  },
+  "quizDoctorVisitRare": "កម្រិតទាប, តែបើចាំបាច់",
+  "@quizDoctorVisitRare": {
+    "description": "Option indicating rare visits"
+  },
+  "quizDoctorVisitAvoid": "ជៀសវាងការទស្សនាគ្រូពេទ្យ",
+  "@quizDoctorVisitAvoid": {
+    "description": "Пользователь говорит, что не любит ходить к врачам и старается\n лишний раз не обращаться к доктору. Итоговая фраза должна быть\n понятной и отражать это поведение, например:\n«Вы не любите обращаться к врачам»"
+  },
+  "quizDoctorVisitNever": "ខ្ញុំមិនដែលបានទៅឱសថស្ថានទេ",
+  "@quizDoctorVisitNever": {
+    "description": "Option indicating never visited"
+  },
+  "quizStepLabel3": "ជំហាន 3/6",
+  "@quizStepLabel3": {
+    "description": "Progress indicator showing third quiz step"
+  },
+  "quizBiggestChallengeTitle": "អ្វីដែលជាបញ្ហាធំបំផុតរបស់អ្នកជាមួយសុខាភិបាលរហូតមកដល់ពេលនេះ?",
+  "@quizBiggestChallengeTitle": {
+    "description": "Question about healthcare challenges"
+  },
+  "quizMultiSelectHint": "ជ្រើសរើសបានច្រើនតាមដែលអ្នកចង់",
+  "@quizMultiSelectHint": {
+    "description": "Helper text indicating multiple selection allowed"
+  },
+  "quizChallengeLongWait": "ការរង់ចាំយូរ​សម្រាប់​ការណាត់ជួប",
+  "@quizChallengeLongWait": {
+    "description": "Option indicating long appointment wait times"
+  },
+  "quizChallengeRushedVisits": "ការទស្សនាដូចជាបន្ទាន់",
+  "@quizChallengeRushedVisits": {
+    "description": "Option indicating short or rushed visits"
+  },
+  "quizChallengeCost": "តម្លៃខ្ពស់ ឬតម្លៃមិនច្បាស់",
+  "@quizChallengeCost": {
+    "description": "Option indicating cost or pricing clarity issues"
+  },
+  "quizChallengeHardExplain": "អត់អាចពន្យល់អ្វីៗទាំងអស់បានយ៉ាងច្បាស់",
+  "@quizChallengeHardExplain": {
+    "description": "Option indicating difficulty explaining symptoms"
+  },
+  "quizChallengeConflictingAdvice": "ការបញ្ចេញមតិ ឬ ការប្រឹក្សាដែលមានការប្រកួតប្រជែង",
+  "@quizChallengeConflictingAdvice": {
+    "description": "Option indicating conflicting medical opinions"
+  },
+  "quizChallengeNone": "គ្មានបញ្ហាធំទូលាយ",
+  "@quizChallengeNone": {
+    "description": "Option indicating no major issues"
+  },
+  "quizStepLabel4": "ជំហាន 4/6",
+  "@quizStepLabel4": {
+    "description": "Progress indicator showing fourth quiz step"
+  },
+  "quizConfidenceAfterAppointmentTitle": "បន្ទាប់ពីការប្រជុំ អ្នកមានការតាំងចិត្តយ៉ាងដូចម្តេចចំពោះអ្វីដែលបាននិយាយ?",
+  "@quizConfidenceAfterAppointmentTitle": {
+    "description": "Question about clarity after doctor appointments"
+  },
+  "quizConfidenceNoRightAnswer": "គ្មានចម្លើយត្រឹមត្រូវឬខុសទេ។",
+  "@quizConfidenceNoRightAnswer": {
+    "description": "Helper note clarifying subjective nature"
+  },
+  "quizConfidenceVeryClear": "អំពីអ្វីកំពុងកើតឡើងយ៉ាងច្បាស់",
+  "@quizConfidenceVeryClear": {
+    "description": "Option indicating full understanding"
+  },
+  "quizConfidenceSomewhatClear": "មានភាពច្បាស់ខ្លះ",
+  "@quizConfidenceSomewhatClear": {
+    "description": "Option indicating partial clarity"
+  },
+  "quizConfidenceStillUncertain": "មិនប្រាកដទេ",
+  "@quizConfidenceStillUncertain": {
+    "description": "Option indicating ongoing uncertainty"
+  },
+  "quizConfidenceMoreConfused": "ច្របូកច្របល់ជាងមុន",
+  "@quizConfidenceMoreConfused": {
+    "description": "Option indicating increased confusion"
+  },
+  "captionDiagnosisVsChange": "មនុស្ស <green>ជាច្រើនប្រឈមមុខនឹងការលំបាកមិនមែនក្រោយពីការបញ្ជាក់ជំងឺ</green> ប៉ុន្តែពេលដែលរោគសញ្ញាប្រែប្រួលក្នុងអំឡុងពេល។",
+  "@captionDiagnosisVsChange": {
+    "description": "Образовательная подпись, подчеркивающая развитие симптомов.\n Подпись должна объяснять, что многие люди сталкиваются с трудностями\n не сразу после постановки диагноза, а когда симптомы меняются со временем."
+  },
+  "quizStepLabel5": "ជំហាន 5/6",
+  "@quizStepLabel5": {
+    "description": "Progress indicator showing fifth quiz step"
+  },
+  "quizConcernsAddressedTitle": "អ្នកមានអារម្មណ៍យ៉ាងដូចម្តេចចំពោះការពិចារណារបស់អ្នកដែលត្រូវបានដោះស្រាយ? ",
+  "@quizConcernsAddressedTitle": {
+    "description": "Question about how well concerns are addressed"
+  },
+  "quizConcernsAddressedSubtitle": "ផ្អែកលើអារម្មណ៍ផ្ទាល់ខ្លួនរបស់អ្នក",
+  "@quizConcernsAddressedSubtitle": {
+    "description": "Clarifies answers are subjective"
+  },
+  "quizConcernsVeryWell": "ល្អណាស់",
+  "@quizConcernsVeryWell": {
+    "description": "Option indicating strong satisfaction"
+  },
+  "quizConcernsFairlyWell": "ល្អប្រសើរ",
+  "@quizConcernsFairlyWell": {
+    "description": "Option indicating moderate satisfaction"
+  },
+  "quizConcernsNotVeryWell": "មិនបានល្អទេ",
+  "@quizConcernsNotVeryWell": {
+    "description": "Option indicating low satisfaction"
+  },
+  "quizConcernsVaries": "វាប្រែប្រួលច្រើន",
+  "@quizConcernsVaries": {
+    "description": "Option indicating inconsistent experience"
+  },
+  "quizStepLabel6": "ជំហាន 6/6",
+  "@quizStepLabel6": {
+    "description": "Progress indicator showing sixth quiz step"
+  },
+  "quizSelfResearchTitle": "ពេលមុននឹងទៅឱសថសាស្ត្រ អ្នកធម្មតាដែលព្យាយាមយល់អំពីរោគសញ្ញាដោយខ្លួនឯងទេ?",
+  "@quizSelfResearchTitle": {
+    "description": "Question about pre-visit self-research behavior"
+  },
+  "quizSelfResearchYes": "បាទ/ចាស ខ្ញុំស្រាវជ្រាវ និងតាមដានរឿង",
+  "@quizSelfResearchYes": {
+    "description": "Option indicating proactive research"
+  },
+  "quizSelfResearchSometimes": "ពេលខ្លះ",
+  "@quizSelfResearchSometimes": {
+    "description": "Option indicating occasional research"
+  },
+  "quizSelfResearchRarely": "កម្រិតតិច",
+  "@quizSelfResearchRarely": {
+    "description": "Option indicating rare research"
+  },
+  "quizSelfResearchNo": "មិនទេ ខ្ញុំអាស្រ័យលើអ្នកជំនាញទាំងស្រុង",
+  "@quizSelfResearchNo": {
+    "description": "Option indicating full reliance on professionals"
+  },
+  "captionAvailabilityTitle": "សំណួរសុខភាព <green>មិនអនុវត្ត</green> ម៉ោងការិយាល័យ។",
+  "@captionAvailabilityTitle": {
+    "description": "Statement about healthcare accessibility with highlighted phrase"
+  },
+  "captionAvailabilitySupport": "Doctorina <green>មានស្រាប់ 24/7។</green>",
+  "@captionAvailabilitySupport": {
+    "description": "Statement about continuous availability"
+  },
+  "captionAvailabilityDescription": "ភាពច្បាស់លាស់មិនគួរត្រូវរង់ចាំសម្រាប់ការណាត់ជួបក្រោយទេ។",
+  "@captionAvailabilityDescription": {
+    "description": "Supporting line reinforcing immediate clarity"
+  },
+  "notificationTitle": "តើអ្នកចង់ឱ្យយើងពិនិត្យសុខភាពរបស់អ្នកទេ?",
+  "@notificationTitle": {
+    "description": "Question asking about permission for notifications"
+  },
+  "notificationDescription": "AI អាចតាមដានរោគសញ្ញារបស់អ្នក និងជូនដំណឹងអ្នកប្រសិនបើអ្វីមួយត្រូវការការយកចិត្តទុកដាក់",
+  "@notificationDescription": {
+    "description": "Explanation about why better to enable notification"
+  },
+  "notificationYes": "បាទ — តាមដានសុខភាពរបស់ខ្ញុំ",
+  "@notificationYes": {
+    "description": "Option indicating yes to all notifications"
+  },
+  "notificationOnlyImportant": "បាទ — តែបើមានអ្វីសំខាន់ផ្លាស់ប្តូរ",
+  "@notificationOnlyImportant": {
+    "description": "Option indicating yes only for important notification"
+  },
+  "notificationNo": "មិនប្រាកដទេ",
+  "@notificationNo": {
+    "description": "Option indicating user don't want to enable notification now"
+  },
+  "referralSourceTitle": "តើអ្នកបានឮអំពី Doctorina ពីគ្រូពេទ្យទេ?",
+  "@referralSourceTitle": {
+    "description": "Question asking whether a doctor recommended Doctorina"
+  },
+  "referralSourceYes": "បាទ",
+  "@referralSourceYes": {
+    "description": "Yes option"
+  },
+  "referralSourceNo": "មិនមាន",
+  "@referralSourceNo": {
+    "description": "No option"
+  },
+  "processingSectionLabel": "កំពុងវិភាគលទ្ធផលរបស់អ្នក",
+  "@processingSectionLabel": {
+    "description": "Small label indicating analysis phase"
+  },
+  "processingTitle": "បុគ្គលភាពបទពិសោធន៍របស់អ្នក",
+  "@processingTitle": {
+    "description": "Title on the results processing screen"
+  },
+  "processingPercentValue": "{percent}%",
+  "@processingPercentValue": {
+    "description": "Progress percentage value during processing",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "99",
+        "description": "Current processing percentage"
+      }
+    }
+  },
+  "paywallHeadline": "<brand>Doctorina Pro</brand> ជាមួយបទពិសោធន៍អសীম",
+  "@paywallHeadline": {
+    "description": "Main paywall headline with highlighted product tier"
+  },
+  "paywallAssistantTagline": "អ្នកជំនួយរបស់អ្នកដែលតែងតែជិតស្និទ្ធ",
+  "@paywallAssistantTagline": {
+    "description": "Supporting tagline under logo"
+  },
+  "paywallEnableTrialToggle": "មិនប្រាកដទេ? បើកសាកល្បងឥតគិតថ្លៃ។",
+  "@paywallEnableTrialToggle": {
+    "description": "Toggle label offering free trial"
+  },
+  "paywallPlanYear": "ប្រចាំឆ្នាំ",
+  "@paywallPlanYear": {
+    "description": "Yearly subscription plan title"
+  },
+  "paywallPlanMonthly": "ប្រចាំខែ",
+  "@paywallPlanMonthly": {
+    "description": "Monthly subscription plan title"
+  },
+  "paywallPlanWeek": "ប្រចាំសប្តាហ៍",
+  "@paywallPlanWeek": {
+    "description": "Weekly subscription plan title"
+  },
+  "paywallPlanDaily": "ប្រចាំថ្ងៃ",
+  "@paywallPlanDaily": {
+    "description": "Daily subscription plan title"
+  },
+  "paywallPlanYearPrice": "$39.99 (តែ $3.34/សប្តាហ៍)",
+  "@paywallPlanYearPrice": {
+    "description": "Yearly subscription price with weekly equivalent"
+  },
+  "paywallPlanWeekPrice": "$3.99",
+  "@paywallPlanWeekPrice": {
+    "description": "Weekly subscription price"
+  },
+  "paywallSaveBadge": "រក្សាទុក 58%",
+  "@paywallSaveBadge": {
+    "description": "Discount badge label"
+  },
+  "paywallContinueBtn": "បន្ត",
+  "@paywallContinueBtn": {
+    "description": "Continue purchase without trial"
+  },
+  "paywallStartTrialBtn": "ចាប់ផ្តើមសាកល្បងឥតគិតថ្លៃ",
+  "@paywallStartTrialBtn": {
+    "description": "Start free trial CTA"
+  },
+  "paywallSubscriptionDisclaimer": "ការជាវគឺអាចធ្វើការបន្ថែមឡើងវិញដោយស្វ័យប្រវត្តិ។ អាចបោះបង់បានគ្រប់ពេល",
+  "@paywallSubscriptionDisclaimer": {
+    "description": "Legal renewal disclaimer"
+  },
+  "paywallTermsPrivacy": "<termsOfService>ល័ក្ខខ័ណ្ឌសេវាកម្ម</termsOfService> | <privacyPolicy>គោលការណ៍ឯកជនភាព</privacyPolicy>",
+  "@paywallTermsPrivacy": {
+    "description": "Links to legal documents"
+  },
+  "paywallPerWeek": "សប្តាហ៍",
+  "@paywallPerWeek": {
+    "description": "Week, in context per week, e.g. \"$3,99/week\""
+  },
+  "processingLabel": "កំពុងវិភាគលទ្ធផលរបស់អ្នក",
+  "@processingLabel": {
+    "description": "Section label on the results processing screen"
+  },
+  "paywallCloseTooltip": "បិទការបណ្តុះបណ្តាល",
+  "@paywallCloseTooltip": {
+    "description": "Tooltip for the paywall close button"
+  },
+  "paywallRestoreTooltip": "ស្ដារការទិញ",
+  "@paywallRestoreTooltip": {
+    "description": "Tooltip for the restore purchases button"
+  },
+  "paywallRestoreBtn": "ស្ដារឡើងវិញ",
+  "@paywallRestoreBtn": {
+    "description": "Restore purchases button text"
+  },
+  "paywallRestoreNoneFound": "មិនមានការជាវសកម្មណាមួយសម្រាប់កំណត់ឡើងវិញ។",
+  "@paywallRestoreNoneFound": {
+    "description": "Message when no active subscription found to restore"
+  },
+  "paywallRestoreError": "មិនអាចស្ដារទិញបានទេ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។",
+  "@paywallRestoreError": {
+    "description": "Error message when restore purchases fails"
+  },
+  "paywallPurchaseError": "មិនអាចបញ្ចប់ការទិញបានទេ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ",
+  "@paywallPurchaseError": {
+    "description": "Error message when subscription purchase fails"
+  },
+  "paywallTrialStep1Title": "ថ្ងៃនេះ: ទទួលបានការចូលដំណើរការបន្ទាន់",
+  "@paywallTrialStep1Title": {
+    "description": "Заголовок 1-го шага в таймлайне триала на пейволле v2 (доступ открывается сегодня)"
+  },
+  "paywallTrialStep1Description": "បើកចំហការចូលដំណើរការពេញលេញ ទទួលបានចម្លើយសុខភាព AI នៅពេលណាក៏ដោយ។",
+  "@paywallTrialStep1Description": {
+    "description": "Описание 1-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep2Title": "ថ្ងៃទី ២: ការរំលឹកសាកល្បង",
+  "@paywallTrialStep2Title": {
+    "description": "Заголовок 2-го шага таймлайна триала (напоминание о завершении триала)"
+  },
+  "paywallTrialStep2Description": "យើងនឹងផ្ញើការចងក្រងឲ្យអ្នកថា ការសាកល្បងរបស់អ្នកកំពុងនឹងបញ្ចប់",
+  "@paywallTrialStep2Description": {
+    "description": "Описание 2-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep3Title": "ថ្ងៃទី ៣: ការបន្ត",
+  "@paywallTrialStep3Title": {
+    "description": "Заголовок 3-го шага таймлайна триала (списание после окончания триала)"
+  },
+  "paywallTrialStep3Description": "អ្នកនឹងត្រូវបានគិតថ្លៃនៅថ្ងៃ {date} អ្នកអាចបោះបង់បានគ្រប់ពេល។",
+  "@paywallTrialStep3Description": {
+    "description": "Описание 3-го шага таймлайна с датой ближайшего списания",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "April 30, 2026"
+      }
+    }
+  },
+  "paywallBenefitsHeader": "អ្វីដែលមានក្នុងនេះ",
+  "@paywallBenefitsHeader": {
+    "description": "Заголовок таблицы с фичами Free/Pro на пейволле v2"
+  },
+  "paywallBenefitsBadgeFree": "FREE",
+  "@paywallBenefitsBadgeFree": {
+    "description": "Бейдж колонки \"Free\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitsBadgePro": "PRO",
+  "@paywallBenefitsBadgePro": {
+    "description": "Бейдж колонки \"Pro\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitPrivateSecure": "ឯកជន និងសុវត្ថិភាព",
+  "@paywallBenefitPrivateSecure": {
+    "description": "Пункт списка фич на пейволле v2 — приватность и безопасность"
+  },
+  "paywallBenefitAiAssistant": "ជំនួយ AI, 24/7",
+  "@paywallBenefitAiAssistant": {
+    "description": "Пункт списка фич на пейволле v2 — AI-ассистент 24/7"
+  },
+  "paywallBenefitInstantAnswers": "ចម្លើយសុខភាពភ្លាមៗ",
+  "@paywallBenefitInstantAnswers": {
+    "description": "Пункт списка фич на пейволле v2 — мгновенные ответы"
+  },
+  "paywallBenefitScienceInsights": "ចំណេះដឹងដែលមានមូលដ្ឋានលើវិទ្យាសាស្ត្រ",
+  "@paywallBenefitScienceInsights": {
+    "description": "Пункт списка фич на пейволле v2 — научно обоснованные инсайты"
+  },
+  "paywallBenefitAutoSummaries": "សេចក្តីសង្ខេបសន្ទនាអូតូ",
+  "@paywallBenefitAutoSummaries": {
+    "description": "Пункт списка фич на пейволле v2 — автоматические резюме консультаций"
+  },
+  "paywallBenefitAnyLanguage": "ភាសាណាមួយ នៅពេលណាក៏បាន",
+  "@paywallBenefitAnyLanguage": {
+    "description": "Пункт списка фич на пейволле v2 — поддержка любого языка"
+  },
+  "paywallPriceUnitPerWeek": "ក្នុងមួយសប្តាហ៍",
+  "@paywallPriceUnitPerWeek": {
+    "description": "Подпись \"per week\" под ценой подписки в плитке выбора плана на пейволле v2"
+  },
+  "paywallOfferTitle": "ការផ្តល់ជូនមួយដង",
+  "@paywallOfferTitle": {
+    "description": "Заголовок шита одноразового оффера после онбординга. Для языков русского, белорусского, украинского - слово \"одноразовый\" применимо к поссуде, а не к предложению. One time offer лучше перевести как \"Разовое предложение\""
+  },
+  "paywallOfferDiscountPercent": "{percent}% បញ្ចុះតម្លៃ",
+  "@paywallOfferDiscountPercent": {
+    "description": "Процент скидки на белой карточке шита одноразового оффера",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "40"
+      }
+    }
+  },
+  "paywallOfferForeverBadge": "ជានិច្ច",
+  "@paywallOfferForeverBadge": {
+    "description": "Подпись \"FOREVER\" под процентом скидки.  Для языков русского, белорусского, украинского - слово FOREVER лучше перевести  как \"НАВСЕГДА\" (не так пафосно , как \"навечно\")"
+  },
+  "paywallOfferDisclaimer": "ពេលអ្នកបិទការផ្តល់ជូនមួយដងរបស់អ្នក វានឹងបាត់ទៅ!",
+  "@paywallOfferDisclaimer": {
+    "description": "Дисклеймер о том, что предложение исчезнет после закрытия шита. лучше на русский/белорусский и украинский переводить по смыслу так: \"У вас только один шанс воспользоваться этим предложением\""
+  },
+  "paywallOfferPricePerMonth": "{price}/ខែ",
+  "@paywallOfferPricePerMonth": {
+    "description": "Цена за месяц для годовой подписки на карточке одноразового оффера",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "$1.99"
+      }
+    }
+  },
+  "paywallOfferLowestPriceBadge": "តម្លៃទាបបំផុត",
+  "@paywallOfferLowestPriceBadge": {
+    "description": "Бейдж \"LOWEST PRICE EVER\" над карточкой годовой подписки. лучше на русский/белорусский и украинский переводить по смыслу так: \"САМАЯ НИЗКАЯ ЦЕНА\""
+  },
+  "paywallOfferCancelAnytime": "បោះបង់បានគ្រប់ពេល",
+  "@paywallOfferCancelAnytime": {
+    "description": "Подпись \"Cancel anytime\" между карточкой подписки и CTA. \"Отмена в любой момент\" - хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferClaimButton": "ទាមទារប្រម៉ូសិនរបស់អ្នក",
+  "@paywallOfferClaimButton": {
+    "description": "CTA-кнопка для активации одноразового оффера. \"Получить предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferAutoRenewable": "ការជាវដែលអាចធ្វើឲ្យមានការបន្តដោយស្វ័យប្រវត្តិ",
+  "@paywallOfferAutoRenewable": {
+    "description": "Футер шита одноразового оффера — текст про автопродление подписки"
+  },
+  "paywallGiftBoxTitle": "អំណោយពិសេសនៅខាងក្នុង",
+  "@paywallGiftBoxTitle": {
+    "description": "Заголовок шита подарка перед одноразовым оффером"
+  },
+  "paywallGiftBoxSubtitle": "ចុចមួយដងដើម្បីបង្ហាញអំពីការផ្តល់ជូនពិសេសរបស់អ្នក",
+  "@paywallGiftBoxSubtitle": {
+    "description": "Подзаголовок шита подарка с приглашением открыть оффер. \"Нажмите, чтобы открыть специальное предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallGiftBoxOpenButton": "បើកឥឡូវនេះ",
+  "@paywallGiftBoxOpenButton": {
+    "description": "CTA-кнопка для открытия шита подарка. \"Открыть\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallRetryLoadPricesError": "មិនអាចផ្ទុកជម្រើសការជាវបានទេ។ សូមព្យាយាមម្តងទៀតនៅពេលក្រោយ។",
+  "@paywallRetryLoadPricesError": {
+    "description": "Тост-ошибка при неудачной повторной загрузке цен подписок на пейволле"
+  },
+  "paywallPricesUnavailableTitle": "មិនអាចផ្ទុកតម្លៃការជាវបាន",
+  "@paywallPricesUnavailableTitle": {
+    "description": "Заголовок фолбэка на пейволле, когда RevenueCat не отдал цены подписок"
+  },
+  "paywallPricesUnavailableMessage": "ពិនិត្យការតភ្ជាប់របស់អ្នក ហើយព្យាយាមម្តងទៀត។",
+  "@paywallPricesUnavailableMessage": {
+    "description": "Подзаголовок фолбэка на пейволле с просьбой проверить соединение и повторить"
+  },
+  "paywallPricesUnavailableRetryButton": "សាកល្បងម្តងទៀត",
+  "@paywallPricesUnavailableRetryButton": {
+    "description": "Текст кнопки повторной загрузки цен в фолбэке пейволла"
+  },
+  "skipOnboardingButton": "Skip",
+  "@skipOnboardingButton": {
+    "description": "Кнопка для пропуска онбординга, должна быть записана емко и кратко. Например: \"Пр-ть\""
+  }
+}

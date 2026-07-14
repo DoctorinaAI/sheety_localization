@@ -1,0 +1,15 @@
+{
+  "@@locale": "ta",
+  "error": "தவற் ஏற்பட்டது",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "எதிர்பாராத பிழை ஏற்பட்டது",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "பிழை அறிக்கை வெற்றிகரமாக அனுப்பப்பட்டது.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

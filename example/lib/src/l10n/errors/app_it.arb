@@ -1,0 +1,15 @@
+{
+  "@@locale": "it",
+  "error": "Si è verificato un errore",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Si è verificato un errore imprevisto",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Bug report inviato con successo.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

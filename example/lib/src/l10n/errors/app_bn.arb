@@ -1,0 +1,15 @@
+{
+  "@@locale": "bn",
+  "error": "একটি ত্রুটি ঘটেছে",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "একটি অপ্রত্যাশিত ত্রুটি ঘটেছে",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "বাগ রিপোর্ট সফলভাবে পাঠানো হয়েছে।",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

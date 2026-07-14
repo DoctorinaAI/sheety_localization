@@ -1,0 +1,425 @@
+{
+  "@@locale": "az",
+  "chatDrawerTitle": "Sağlıq qeydləri",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "YENİ",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Sağlıq Qeydinizi Yaradın",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Müsahibənizin sonunda profilinizi əlavə edin.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Daha çox profil əlavə et",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Başqa biri üçün profilini yaratmaq üçün konsultasiyaya başlayın.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Sağlıq Qeydinizi yaratmaq üçün qeydiyyatdan keçin",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Təkrar cəhd et",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Profili silmək mümkün olmadı",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Profil xülasəsini yükləmək mümkün olmadı",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Tam qeydiyyatı görün",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Paylaş",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Sil",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Yaş",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} il} other{{value} il}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Çəki",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Hündürlük",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} sm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Alergiyalar",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Xroniki",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Dərmanlar",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Cihazlar",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Müsahibələr",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Sənədlər",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Tibb qeydini silmək? ",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Bu, sağlamlıq məlumatlarınızı daimi olaraq siləcək və geri qaytarmaq mümkün olmayacaq. Sizi yönləndirmək üçün istifadə etdiyimiz konteksti itirəcəksiniz.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "İmtina et",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Sil",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Sizin sağlamlıq qeydinizi silmək...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Profil silinmədi",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Sağlamlıq qeydi silindi",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Asistentlə söhbət edərək istənilən vaxt yeni birini yarada bilərsiniz.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Çat'a qayıt",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Redaktə",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Profil məlumatları yüklənmədi",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Dəyişikliklər saxlanıldı",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Məlumatlarınız müvəffəqiyyətlə yeniləndi.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Profilə qayıt",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Profil məlumatlarını yeniləmək mümkün olmadı",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Dəyişiklikləri ləğv edəsiniz? ",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Profilinizdə bəzi dəyişikliklər etmisiniz. Getməzdən əvvəl onları yadda saxlayın, ya da ləğv edin.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Düzəliş etməyə davam et",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Atmaq",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Redaktə et",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Qeyd əlavə et",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Axtar",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Heç bir nəticə tapılmadı",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Yüklə",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Paylaş",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Sil",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Heç bir sənəd tapılmadı",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Bu sənədi silmək istəyirsiniz?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Bu fayl daimi olaraq silinəcək",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "İmtina et",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Sil",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Digər əməliyyatlar",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Axtar",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Heç bir profil tapılmadı",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Daha çox bax",
+  "@profilesViewMore": {},
+  "profilesMore": "Daha",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina artıq sağlamlığınızı xatırlayır",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Müsahibələriniz indi Sizin Sağlamlıq Qeydinizi avtomatik olaraq yaradır və yeniləyir.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Sizin Sağlıq Qeydin, sizin qaydalarınız",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Simptomları, dərmanları, tarixi və ya sənədləri istənilən vaxt görün, redaktə edin və ya əlavə edin.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Bütün ailəniz üçün qayğı",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Sevdikləriniz, uşaqlarınız, valideynləriniz və ya tərəfdaşınız üçün Sağlamlıq Qeydi yaradın.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Sağlamlıq Qeydini saxlamağa hazırsınız? ",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Müsahibənizdən sonra \"Profil əlavə et\" düyməsini basın.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Növbəti",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Müsahibəyə başlayın",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Bəlkə sonra",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Bağla",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Tibbî qeyd",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Tibb qeyd — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...daha çox",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...daha az",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Yeni profil əlavə et",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Bu konsultasiyanın detalları üçün profil yaradın.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Sağlamlıq qeydlərinizdə onu istənilən vaxt qiymətləndirə bilərsiniz",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Əgər bu barədə və ya əlaqəli hər hansı başqa sualınız varsa, mənimlə danışmağa davam etməkdən çəkinməyin. Mən kömək üçün buradayam",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Ümumi məlumat",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Ad",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "Ad Soyad",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Ad",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Soyad",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Cinsiyyət",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Zəhmət olmasa seçin",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Kişi",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Qadın",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Digər",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Doğum tarixi",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Yaş",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "məsələn 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Telefon nömrəsi",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "E-poçt",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Yer",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "məsələn Şəhər, Ölkə",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Bədən & Qidalanma",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Boy",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "məsələn 180 sm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Çəki",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "məsələn 75 kq",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Menstruasiya Dövrü",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "məsələn: Müntəzəm, Nizamsız",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Qida məhdudiyyətləri",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Zəhmət olmasa seçin",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Nə yediyinizi və hər hansı məhdudiyyətlərinizi bizə bildirin",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Heç biri",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Vegetarian",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Veqan",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Glutensiz",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Bədən Kütləsi İndeksi (BKİ)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "məsələn 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Sağlamlıq Profili",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Xroniki Xəstəliklər",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "məsələn, Tip 2 diabet",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Zəhmət olmasa, bütün xroniki xəstəlikləri siyahıya alın və onların nə vaxt diaqnoz edildiyini və hər hansı bir komplikasiyanı daxil edin.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Keçmiş Xəstəliklər",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "məsələn, tez-tez baş verən soyuqdəymə",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Zəhmət olmasa, keçmişdə yaşadığınız ciddi xəstəlikləri qeyd edin, bərpa olsanız belə.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Cərrahi tarixçə",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "məsələn Apendektomiya",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Zəhmət olmasa, bütün cərrahiyyələri siyahıya alın və ilini və hər hansı bir komplikasiyanın olub-olmadığını daxil edin.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Bəzən istifadə olunan dərmanlar",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "İbuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Zaman-zaman qəbul etdiyiniz dərmanları (məsələn: ağrı kəsicilər, allergiya dərmanları) siyahıya alın, dozasını və istifadənin səbəbini daxil edin.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Müntəzəm Dərmanlar",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "məsələn: Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Zəhmət olmasa, müntəzəm qəbul etdiyiniz bütün dərmanları, adını, dozasını, gündə neçə dəfə qəbul etdiyinizi və hansı xəstəlik üçün olduğunu qeyd edin.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Allergiyalar",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "məsələn: Penisilin - döküntü yaradır",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Zəhmət olmasa, bütün allergiyaları (dərmanlar, qida, ətraf mühit) qeyd edin və hansı reaksiya verdiyinizi təsvir edin (məsələn: səpmə, şişmə, nəfəs alma problemləri).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Xüsusi Vəziyyətlər",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "məsələn Hamiləlik, Əlillik",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Həkimlərin həmişə bilməli olduğu hər hansı vacib tibbi vəziyyətiniz varsa (məsələn: hamiləlik, implantasiya olunmuş cihazlar, əlillik, antikoaqulyant terapiya), xahiş edirik, onları təsvir edin. Heç biri yoxdursa, bunu boş qoya bilərsiniz.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Ailə tarixçəsi",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "məsələn, Ürək xəstəliyi, Xərçəng",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Zəhmət olmasa, ailənizdəki vacib xəstəlikləri təsvir edin (məsələn: şəkərli diabet, hipertoniya, ürək xəstəliyi, xərçəng, irsi xəstəliklər) və hansı ailə üzvünün bu xəstəlikdən əziyyət çəkdiyini qeyd edin.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Sosial & Həyat Tərzi Amilləri",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "məsələn Siqaret çəkmə, Alkoqol istehlakı",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Sağlığınıza təsir edə biləcək həyat tərzi amillərini, məsələn, siqaret çəkmə, spirt, fiziki fəaliyyət, pəhriz, yuxu və peşə kimi təsvir edin.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Tibbi Cihazlar",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "məs. Ürək stimulyatoru, Eşitmə cihazı, İnsulin nasosu",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "İstifadə etdiyiniz və ya implantasiya olunmuş hər hansı tibbi cihazları, məsələn, ürək stimulyatorları, insulin pompaları, eşitmə cihazları, protezlər və ya digər köməkçi və ya monitorinq cihazlarını qeyd edin. Əgər uyğun gəlirsə, müvafiq detalları daxil edin.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Hər şeyi yeyən",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Fast Food",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Pescatarian",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Laktozsuz",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Az duzlu pəhriz",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Az şəkərli pəhriz",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Ürək pəhrizi",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Böyrək pəhrizi",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Digər",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

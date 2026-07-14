@@ -1,0 +1,15 @@
+{
+  "@@locale": "ar_EG",
+  "error": "حدث خطأ",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "حدث خطأ غير متوقع",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "تم إرسال تقرير الخطأ بنجاح.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}
