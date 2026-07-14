@@ -1,0 +1,230 @@
+{
+  "@@locale": "ar",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "مثال الزر",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "نعم، كل شيء على ما يرام!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "كل مساهمة تشفي!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "مساهمتك تساعد في تمويل تقديم المشورة المجانية للآخرين المحتاجين.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "ادفع ما تراه مناسباً,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "أو استمر في استخدام Doctorina مجانًا، بفضل الآخرين الذين اختاروا التبرع",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "مرة واحدة",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "شهري",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "اختر مبلغ التبرع الشهري",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "أنت على وشك الاشتراك في خطة شهرية.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "أنت تشترك في خطة شهرية مقابل {amount}/الشهر.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "سيتم خصم المبلغ من حسابك عند تأكيد الشراء. يتم تجديد الاشتراك تلقائيًا كل شهر ما لم يتم تعطيل التجديد التلقائي قبل 24 ساعة على الأقل من نهاية الفترة الحالية. يمكنك إدارة أو إلغاء اشتراكك في أي وقت من خلال إعدادات حسابك. بالمتابعة، فإنك توافق على {termsOfService} و{privacyPolicy}",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "اختر مبلغ التبرع لمرة واحدة",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "معظم الناس يعطون $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "اختر العملة",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "جارٍ معالجة الدفع",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "جاري معالجة دفعة لمرة واحدة بقيمة {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "جاري معالجة الدفعة الشهرية بمبلغ {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "شكراً لك!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "الآن سيحصل المزيد من الناس على نصيحة مجانية — دعمك لا يقدر بثمن.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "أنت ساهمت:",
+  "@youContributedLabel": {},
+  "perMonth": "/شهر",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "العودة إلى الشاشة الرئيسية",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "شروط الخدمة",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "سياسة الخصوصية",
+  "@privacyPolicyLabel": {},
+  "donateButton": "تبرع",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "نشط",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "ملغى",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "متوقف",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "قيد الانتظار",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "تم الإنشاء",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "انتهاء المهلة",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "غير معروف",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "مساهم Doctorina",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "يجدد",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "إلغاء الاشتراك",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "هل أنت متأكد؟",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "دعمك الشهري يجعل Doctorina مجانية للأشخاص الذين يعتمدون عليها ولكن لا يستطيعون تحمل تكاليفها. اشتراكك يمول ما لا يقل عن 10 استشارات مجانية كل شهر. إذا قمت بالإلغاء، سيحصل عدد أقل من المرضى على المساعدة التي يحتاجونها",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "الاحتفاظ بالاشتراك",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "إلغاء على أي حال",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "تم إلغاء دعمك الشهري بنجاح.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "بيانات الاشتراك غير صحيحة",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "اشترك للحصول على الدعم الشهري ليظهر هنا.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "لا توجد اشتراكات حتى الآن",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "تاريخ الاشتراك",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "تنتهي",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "معرّف الاشتراك",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "معرّف المنتج",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "موافق",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "لم نتمكن من إتمام عملية الدفع",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "حدث خطأ في عملية الدفع.\nيرجى المحاولة مرة أخرى.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "إعادة المحاولة",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "معالجة الدفع",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "ستُكمل عملية الشراء عبر صفحة الدفع الآمنة الخاصة بـ Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ أسبوع",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ سنة",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "الأكثر شعبية",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "إغلاق",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "دوكتورينا بريميوم",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "ما ستحصل عليه مع البريميوم:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "استشارات بدون إعلانات",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "ردود أسرع",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "الوصول المبكر إلى ميزات جديدة",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/أسبوع",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "يمكنك الإلغاء في أي وقت. لا التزام.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "عرض محدود الوقت",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "تتجدد تلقائيًا أسبوعيًا. يمكنك الإلغاء في أي وقت من الإعدادات. بالاستمرار، فإنك توافق على <t>الشروط</t> و <p>سياسة الخصوصية</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 متابعة مع البريميوم",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 دعمك يساعد في الحفاظ على الوصول إلى الرعاية",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "يرجى التسجيل أو تسجيل الدخول لإكمال عملية الشراء",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

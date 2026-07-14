@@ -1,0 +1,18 @@
+{
+  "@@locale": "az",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "Xəta baş verdi",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Gözlənilməz bir xəta baş verdi",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Baq reportu uğurla göndərildi.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

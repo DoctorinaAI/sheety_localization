@@ -1,0 +1,286 @@
+{
+  "@@locale": "pa_PK",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "sectionClearAllChatsTitle": "تمام چیٹس صاف کریں",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "ایہ توہاڈی چیٹ ہسٹری نوں مستقل طور تے حذف کر دے گا.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "تمام چیٹس مٹاؤ",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "تمام چیٹس صاف کریں",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "اکاؤنٹ حذف کریں",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "ਤੁਹਾਡਾ ਖਾਤਾ ਮਿਟਾਉਣਾ ਇੱਕ ਸਥਾਈ ਕਾਰਵਾਈ ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਮੁੜ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "حذف کریں",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "اکاؤنٹ حذف کریں",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "سائن آؤٹ",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "تُسیں اپنے کھاتے توں سائن آؤٹ ہو جاؤ گے.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "سائن آؤٹ",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "بگ رپورٹ بھیجو",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "پیغام بھیجیں [⏎ Enter]",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "پیغام بھیجیں [⏎ Enter] اور نئی لائن [Shift] + [⏎ Enter] کے ساتھ",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "[⏎ Enter] ਨਾਲ ਭੇਜੋ",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "رازداری کی پالیسی",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "زبان",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "اپنے ایپ انٹرفیس کے لیے اپنی پسندیدہ زبان منتخب کریں",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "ڈارک موڈ",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "کم روشنی میں آرام دہ دیکھنے کے تجربے کے لیے ڈارک موڈ فعال کریں",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "لاگز",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "ڈیبگنگ کے لیے درخواست کے لاگز دیکھیں اور انتظام کریں",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "مکمل",
+  "@doneButton": {},
+  "bugReportDialogTitle": "بگ رپورٹ",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "براہ مہربانی اس بگ کی تفصیل بیان کریں جس کا آپ نے سامنا کیا",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "فائلیں منسلک کریں",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "فائلیں منتخب کرنے میں ناکام",
+  "@filePickerError": {},
+  "emptyBugReportError": "براہ کرم پہلے بگ رپورٹ درج کریں",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "بگ رپورٹ بھیجنے میں ناکام",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "سبسکرپشن کا انتظام کریں",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "اپنی رکنیت کی ترتیبات کو منظم کریں",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "ہیپٹک فیڈبیک",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "سپورٹڈ ڈیوائسز تے ہپٹک فیڈبیک (وائبریشن) نوں چالو یا بند کرو",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "نوٹیفکیشنز آن کریں",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "ڈاکٹرینا آپ کے چیٹس، رپورٹس، یا علامات میں کچھ اہم تلاش کرنے پر اپ ڈیٹ رہیں۔",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "اکاؤنٹ",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "ایپ",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "بارے میں",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "نوٹیفیکیشنز",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "ویڈیو ٹیوٹوریلز",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "فون",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "ای میل",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "نام",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "موجودہ فائلوں کے ساتھ نقل کی وجہ سے {count} فائلیں چھوڑ دی گئیں",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "قسم",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "تفصیل",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "منسلکات",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "بگ",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "کریش",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "یو آئی مسئلہ",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "دوسرا",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "اپنا اکاؤنٹ حذف کرنے سے آپ کا ڈیٹا Doctorina سے مستقل طور پر ہٹا دیا جائے گا.",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "حذف کرنے سے پہلے",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "تُہاڈے کول {store} دے ذریعے اک فعال سبسکرپشن ہے۔ اپنے اکاؤنٹ نوں حذف کرنا ایہنوں منسوخ نئیں کرے گا۔",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "{store} ਵਿੱਚ ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਰੱਦ ਕਰੋ",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "جاری رکھیں",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "ہمیں افسوس ہے کہ آپ جا رہے ہیں۔ کیا آپ واقعی اپنا اکاؤنٹ حذف کرنا چاہتے ہیں؟ ایک بار جب آپ تصدیق کریں گے، آپ کا ڈیٹا ختم ہو جائے گا.",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "میں اب ایپ استعمال نہیں کرتا",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "بہتر چیز ملی",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "تکنیکی مسائل",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "استعمال میں مسائل",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "خصوصیات کی کمی",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "پرائیویسی کے خدشات",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "میں صرف اپنے ڈیٹا کو صاف کرنا چاہتا تھا",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "دوسرا",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "اپنی رائے کا اظہار کریں",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "ਤੁਹਾਡਾ ਖਾਤਾ ਮਿਟਾਇਆ ਜਾ ਰਿਹਾ ਹੈ...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "مٹانا",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "ਰੱਦ ਕਰੋ",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "تُہاڈا اکاؤنٹ حذف کر دیا گیا ہے۔",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "اکاؤنٹ حذف کرنے میں ناکامی ہوئی۔ براہ کرم دوبارہ کوشش کریں۔",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "اس ڈیوائس پر کوئی ای میل ایپ دستیاب نہیں ہے۔ براہ کرم support@doctorina.com پر دستی طور پر رابطہ کریں۔",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

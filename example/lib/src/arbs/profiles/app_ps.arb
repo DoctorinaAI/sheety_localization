@@ -1,0 +1,428 @@
+{
+  "@@locale": "ps",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "د روغتیا ریکارډونه",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "نوې",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "خپل روغتیایی ریکارډ جوړ کړئ",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "د خپلې مشورې په پای کې، خپل پروفایل اضافه کړئ.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "نور پروفایلونه اضافه کړئ",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "د بل چا لپاره مشوره پیل کړئ ترڅو خپل پروفایل جوړ کړي.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "د خپل روغتیایی ریکارډ د جوړولو لپاره ثبت نام وکړئ",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "دوباره هڅه وکړئ",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "د پروفایل حذف کول ناکام شول",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "د پروفایل لنډیز بار کولو کې ناکامي",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "د بشپړ ریکارډ لیدل",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "شریک کړئ",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "لرې کول",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "عمر",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} کال} other{{value} کاله}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "وزن",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} کیلوگرام",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "لوړوالی",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} سانتي متر",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "الرجی",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "مزمن",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "درمل",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "د آلو",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "مشورې",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "اسناد",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "د روغتیا ریکارډ حذف کړئ؟",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "دا به ستاسو د روغتیا معلومات په تل لپاره له منځه یوسي او نه شي بیرته راوستلی. تاسو به هغه سیاق له لاسه ورکړئ چې موږ یې د لارښوونې لپاره کاروو.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "لغو",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "لرې کول",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "ستاسو د روغتیا ریکارډ حذف کول...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "د پروفایل حذف کولو کې ناکامي",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "د روغتیا ریکارډ حذف شو",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "تاسې هر وخت کولی شئ چې د مرستې سره خبرې کولو له لارې نوې جوړه کړئ.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "بېرته چټ ته لاړ شئ",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "سمون",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "د پروفایل معلومات بارول ناکام شول",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "بدلونونه خوندي شول",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "ستاسو معلومات په بریالیتوب سره تازه شوي دي.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "پروفایل ته ستانه شئ",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "د پروفایل معلومات تازه کول ناکام شول",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "بدلونونه له منځه یوسي؟",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "تاسو په خپل پروفایل کې ځینې بدلونونه کړي دي. مخکې له دې چې لاړ شئ، دوی وساتئ، یا یې له منځه یوسئ.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "ادامه ورکړئ",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "له منځه وړل",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "سمون",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "ریکارډ اضافه کړئ",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "لټون",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "هیڅ نتیجه نه ده موندل شوې",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "ډاونلوډ",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "شریک کړئ",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "لرې کول",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "هیڅ اسناد نه دي موندل شوي",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "دا سند حذف کړئ؟",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "دا فایل به تلپاتې توګه لیرې شي",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "لغو",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "لرې کول",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "نور اقدامات",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "لټون",
+  "@profilesSearch": {},
+  "profilesEmptyList": "هېڅ پروفایل ونه موندل شو",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "نور وګورئ",
+  "@profilesViewMore": {},
+  "profilesMore": "نور",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina اوس ستاسو روغتیا یادوي",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "ستاسو مشورې اوس ستاسو د روغتیا ریکارډ په اوتومات ډول جوړوي او تازه کوي.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "ستاسو د روغتیا ریکارډ، ستاسو قواعد",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "د نښو، درملو، تاریخ، یا اسنادو هر وخت لیدل، سمول یا اضافه کول.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "د خپلې ټولې کورنۍ خیال وساتئ",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "د خپلو عزیزانو، خپلو ماشومانو، والدینو یا ملګري لپاره د روغتیا ریکارډ جوړ کړئ.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "آیا تاسو د خپل روغتیایی ریکارډ د خوندي کولو لپاره چمتو یاست؟",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "د مشورې وروسته، \"پروفایل اضافه کړئ\" باندې ټک وکړئ ترڅو دا وساتئ.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "راتلونکی",
+  "@profilesNextButton": {},
+  "profilesStartButton": "مشوره پیل کړئ",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "شاید وروسته",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "بندول",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "د روغتیا ریکارډ",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "د روغتیا ریکارډ — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...نور",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...کمه",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "نوې پروفایل اضافه کړئ",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "یو پروفایل جوړ کړئ ترڅو د دې مشورې تفصیلات وساتئ.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "تاسو کولی شئ دا هر وخت په خپلو روغتیايي ریکارډونو کې ارزونه وکړئ",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "که تاسو د دې یا د دې پورې اړوند هر څه په اړه نورې پوښتنې لرئ، کولی شئ زما سره خبرې ته دوام ورکړئ. زه دلته د مرستې لپاره یم",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "عمومي معلومات",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "نوم",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "لومړی نوم",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "جان",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "تخلص",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "جنس",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "مهرباني وکړئ وټاکئ",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "نارینه",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "ښځه",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "نور",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "د زېږېدو نېټه",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "عمر",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "مثلاً 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "د تلیفون شمېره",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "بریښنالیک",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "ځای",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "مثلاً ښار، هېواد",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "بدن او تغذیه",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "قد",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "لکه 180 سم",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "وزن",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "لکه 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "د حیض دوره",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "مثلاً منظم، غیر منظم",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "د خوړو محدودیتونه",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "مهرباني وکړئ انتخاب کړئ",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "موږ ته ووایاست چې تاسو څه خورئ او کوم محدودیتونه لرئ",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "هیڅ",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "سبزي خوړونکی",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "ویګن",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "د ګلوټین څخه پاک",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "د بدن د کتلې شاخص (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "مثلاً 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "د روغتیا پروفایل",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "مزمنې ناروغۍ",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "لکه: د شکر ناروغي ډول ۲",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "مهرباني وکړئ ټول مزمن ناروغۍ وليکئ او د تشخيص وخت او هر ډول پيچلتياوې شامل کړئ.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "پخوانۍ ناروغۍ",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "لکه: د عام زکام تکرار",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "مهرباني وکړئ جدي ناروغۍ چې تاسو په تېر کې لرئ، حتی که تاسو روغ شوي یاست، لیست کړئ.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "د جراحي سابقه",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "د بېلګې په توګه اپنډېکټومي",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "مهرباني وکړئ ټول جراحي عملیات لیست کړئ او کال او که کومې پیچلتیاوې وې، شامل کړئ.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "کله نا کله کارېدونکي درمل",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "لکه Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "مهرباني وکړئ هغه درمل چې تاسو کله نا کله کاروئ (لکه: درد کمونکي، د الرژي درمل) لیست کړئ، د دوز او د کارونې دلیل سره.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "دوامداره درمل",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "لکه: Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "مهرباني وکړئ ټول درمل چې تاسو په منظم ډول کاروئ، د نوم، دوز، په ورځ کې څو ځله یې کاروئ، او د کوم حالت لپاره دی، لیست کړئ.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "حساسیتونه",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "لکه: پینسلین - خارش رامنځته کوي",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "مهرباني وکړئ ټول حساسیتونه (درمل، خواړه، چاپیریال) لیست کړئ، او تشریح کړئ چې تاسو څه ډول غبرګون لرئ (لکه: د پوستکي خارش، پړسوب، د تنفس ستونزې).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "ځانګړي حالتونه",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "مثلاً حاملګي، معذوري",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "که تاسو کومې مهمې طبي حالتونه لرئ چې ډاکټران باید تل پرې پوه شي (لکه: حمل، د ایمپلانټ شوي وسایل، معذوریتونه، د انټيکوګولیشن درملنه)، مهرباني وکړئ تشریح یې کړئ. که هیڅ نه وي، تاسو کولی شئ دا خالي پریږدئ.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "د کورنۍ تاریخ",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "لکه د زړه ناروغي، سرطان",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "مهرباني وکړئ په خپل کورنۍ کې مهمې ناروغۍ تشریح کړئ (لکه: شکر، لوړ فشار، د زړه ناروغي، سرطان، جینیاتي ناروغۍ) او مشخص کړئ چې کوم کورنی غړی دغه حالت درلود.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "ټولنیز او د ژوند طرز عوامل",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "لکه سګرټ څکول، الکول څښل",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "مهرباني وکړئ د ژوند طرز عوامل بیان کړئ چې ستاسو روغتیا باندې اغیزه کولی شي، لکه سګرټ څکول، الکول، فزیکي فعالیت، رژیم، خوب، او مسلک.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "طبي وسایل",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "مثلاً پیسمیکر، د اورېدو مرسته کوونکې آله، د انسولین پمپ",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "مهرباني وکړئ هر ډول طبي وسایل چې تاسو کاروئ یا درلودل یې، لکه د زړه د پيسو، انسولین پمپونه، د اوریدو وسایل، پروستیتیکونه، یا نور مرستندویه یا څارونکي وسایل، لیست کړئ. که اړوند تفصیلات وي، شامل کړئ.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "هرڅه خوړونکی",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "فاسټ فوډ",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "پیسکاتاریان",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "د لاکتوز څخه پاک",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "د لږ مالګې رژیم",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "د کمې بوري رژیم",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "د زړه رژیم",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "د ګردو رژیم",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "نور",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

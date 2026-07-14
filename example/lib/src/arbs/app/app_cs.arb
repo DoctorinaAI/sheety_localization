@@ -1,0 +1,132 @@
+{
+  "@@locale": "cs",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "čeština",
+  "@lang": {},
+  "langEn": "Czech",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Aktualizovat nyní",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Možná později",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Nová aktualizace je k dispozici",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Aktualizace vyžadována",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Nová verze (v{version}) aplikace je k dispozici. Prosím, aktualizujte, abyste mohli pokračovat v nejlepší zkušenosti.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Pro pokračování prosím aktualizujte aplikaci. Tato aktualizace obsahuje důležité opravy a vylepšení.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Stáhnout",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Přihlaste se, pokud již máte účet Doctorina, nebo se zaregistrujte a začněte.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Přihlásit se",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Zaregistrovat se",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Pokračovat jako host",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Přihlásit se",
+  "@titleLogin": {},
+  "titleLogout": "Odhlásit se",
+  "@titleLogout": {},
+  "titleSignIn": "Přihlásit se",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Dialog",
+  "@titleDialog": {},
+  "titleChat": "Chat",
+  "@titleChat": {},
+  "titleSettings": "Nastavení účtu",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Historie chatů",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Platba",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Spravovat předplatné",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Měsíční předplatné",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Úvod",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Vítejte zpět",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Profily zdravotních záznamů",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Oznámení o profilech",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Zdravotní záznamy",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Úplný záznam",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Dokumenty",
+  "@titleDocuments": {},
+  "titleConsultations": "Konzultace",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Paywall",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Mazání? Řekněte nám proč!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Začněte novou zdravotní konverzaci",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Sdílejte nápad nebo nahlaste problém",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Řekněte nám, jak může Doctorina zlepšit",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

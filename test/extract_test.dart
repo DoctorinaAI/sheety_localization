@@ -96,6 +96,60 @@ void main() {
       expect(extractEmptyCells(title: 'app', values: const []), isEmpty);
       expect(extractEmptyCells(title: '', values: const []), isEmpty);
     });
+
+    test('refuses to localize a sheet that is not a localization table', () {
+      // A reference table living in the same spreadsheet: its columns are
+      // data, not locales. Translating it would overwrite the data.
+      final rows = extractEmptyCells(
+        title: 'locales',
+        values: <List<Object?>>[
+          [
+            'Language',
+            'Total Speakers',
+            'Native Speakers',
+            'Language Family',
+            'Primary Countries/Regions',
+            'ISO 639-3',
+          ],
+          ['Polish', null, null, null, null, null],
+        ],
+      );
+      expect(rows, isEmpty);
+    });
+  });
+
+  group('isLocalizationHeader', () {
+    test('accepts the documented layout', () {
+      expect(
+        isLocalizationHeader(
+          const ['label', 'description', 'meta', 'en', 'uk'],
+        ),
+        isTrue,
+      );
+      expect(
+        isLocalizationHeader(
+          const ['key', 'desc', 'placeholders', 'en_US', 'ru'],
+        ),
+        isTrue,
+      );
+    });
+
+    test('rejects a sheet whose fourth column is not English', () {
+      expect(
+        isLocalizationHeader(
+          const ['Language', 'Total', 'Native', 'Family', 'Regions'],
+        ),
+        isFalse,
+      );
+    });
+
+    test('rejects a header without locale columns', () {
+      expect(
+        isLocalizationHeader(const ['label', 'description', 'meta', 'en']),
+        isFalse,
+      );
+      expect(isLocalizationHeader(const []), isFalse);
+    });
   });
 
   group('columnFromIndex', () {

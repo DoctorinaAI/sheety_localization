@@ -1,0 +1,230 @@
+{
+  "@@locale": "vi",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "Nút ví dụ",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Vâng, mọi thứ đều ổn!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Mỗi đóng góp đều chữa lành!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Sự đóng góp của bạn giúp tài trợ cho lời khuyên miễn phí cho những người cần giúp đỡ.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Trả số tiền mà bạn cảm thấy hợp lý,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "hoặc tiếp tục sử dụng Doctorina miễn phí, nhờ những người khác đã chọn đóng góp",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Một lần",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Hàng tháng",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Chọn số tiền quyên góp hàng tháng",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Bạn sắp đăng ký gói hàng tháng.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Bạn đang đăng ký gói hàng tháng với {amount}/tháng.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Khi xác nhận mua hàng, khoản thanh toán sẽ được tính vào tài khoản của bạn. Đăng ký tự động gia hạn mỗi tháng trừ khi tính năng tự động gia hạn bị tắt ít nhất 24 giờ trước khi kết thúc kỳ hiện tại. Bạn có thể quản lý hoặc hủy đăng ký bất cứ lúc nào trong cài đặt tài khoản. Bằng cách tiếp tục, bạn đồng ý với {termsOfService} và {privacyPolicy}",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Chọn số tiền quyên góp một lần",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Hầu hết mọi người cho $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Chọn loại tiền tệ",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Đang xử lý thanh toán",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Đang xử lý thanh toán một lần {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Đang xử lý thanh toán hàng tháng với {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Cảm ơn bạn!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Bây giờ, càng nhiều người sẽ nhận được tư vấn miễn phí — sự hỗ trợ của bạn thật vô giá.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Bạn đã đóng góp:",
+  "@youContributedLabel": {},
+  "perMonth": "/tháng",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Trở về màn hình chính",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Điều khoản dịch vụ",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Chính sách bảo mật",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Quyên góp",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Hoạt động",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Đã hủy",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Tạm dừng",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Chờ xử lý",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Đã tạo",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Hết thời gian",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Không xác định",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Người đóng góp Doctorina",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Gia hạn",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Hủy đăng ký",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Bạn có chắc không?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Hỗ trợ hàng tháng của bạn giúp Doctorina miễn phí cho những người dựa vào nó nhưng không đủ khả năng chi trả. Đăng ký của bạn tài trợ ít nhất 10 buổi tư vấn miễn phí mỗi tháng. Nếu bạn rời đi, sẽ có ít bệnh nhân nhận được sự giúp đỡ cần thiết",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Giữ đăng ký",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Dù sao cũng hủy",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Hỗ trợ hàng tháng của bạn đã được hủy thành công.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Dữ liệu đăng ký không chính xác",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Đăng ký nhận hỗ trợ hàng tháng để nó xuất hiện ở đây",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Chưa có đăng ký nào",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Ngày đăng ký",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Hết hạn",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Mã đăng ký",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Mã sản phẩm",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Đồng ý",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Chúng tôi không thể xử lý thanh toán của bạn",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Đã xảy ra sự cố với thanh toán. Vui lòng thử lại.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Thử lại",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Đang xử lý thanh toán",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Bạn sẽ hoàn tất giao dịch mua hàng trên trang thanh toán bảo mật của Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ tuần",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ năm",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Phổ biến nhất",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Đóng",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Những gì bạn nhận được với Premium:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Tư vấn không có quảng cáo",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Phản hồi nhanh hơn",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Truy cập sớm vào các tính năng mới",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/tuần",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Hủy bất cứ lúc nào. Không cam kết.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "THỜI GIAN CÓ HẠN",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Tự động gia hạn hàng tuần. Hủy bất cứ lúc nào trong cài đặt. Bằng cách tiếp tục, bạn đồng ý với <t>Điều khoản</t> và <p>Chính sách Bảo mật</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Tiếp tục với Premium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Sự hỗ trợ của bạn giúp giữ cho dịch vụ chăm sóc dễ tiếp cận",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Vui lòng đăng ký hoặc đăng nhập để hoàn tất việc mua hàng",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

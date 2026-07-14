@@ -97,6 +97,39 @@ void main() {
     expect(jsonEncode(body), contains('Ukrainian'));
   });
 
+  test('omits the sampling parameters a gpt-5 model rejects', () async {
+    final server = await FakeOpenAI.start((request, _) async {
+      request.response
+        ..statusCode = 200
+        ..write(okBody({'uk': 'Привіт'}));
+    });
+    addTearDown(server.close);
+
+    final (:prompt, :schema) = request(['uk']);
+    await OpenAIClient(
+      apiKey: 'sk-test',
+      endpoint: server.endpoint,
+      model: 'gpt-5-mini',
+    )(prompt: prompt, schema: schema);
+    await OpenAIClient(
+      apiKey: 'sk-test',
+      endpoint: server.endpoint,
+      model: 'gpt-4o-mini',
+    )(prompt: prompt, schema: schema);
+
+    // gpt-5 answers `400 Unsupported parameter` to `temperature`.
+    final reasoning = server.bodies.first;
+    expect(reasoning, isNot(contains('temperature')));
+    expect(reasoning, isNot(contains('top_p')));
+    expect(reasoning['reasoning'], {'effort': 'low'});
+
+    // Classic models keep the deterministic sampling.
+    final classic = server.bodies.last;
+    expect(classic['temperature'], 0);
+    expect(classic['top_p'], 1);
+    expect(classic, isNot(contains('reasoning')));
+  });
+
   test('retries a 500 and succeeds', () async {
     final server = await FakeOpenAI.start((request, attempt) async {
       if (attempt == 1) {

@@ -1,0 +1,132 @@
+{
+  "@@locale": "te",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "తెలుగు",
+  "@lang": {},
+  "langEn": "Telugu",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "ఇప్పుడు అప్‌డేట్ చేయండి",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "తర్వాత",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "కొత్త నవీకరణ అందుబాటులో ఉంది",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "అప్‌డేట్ అవసరం",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "కొత్త వెర్షన్ (v{version}) ఆప్ అందుబాటులో ఉంది. ఉత్తమ అనుభవం కోసం దయచేసి నవీకరించండి",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "కొనసాగాలంటే, దయచేసి యాప్‌ను అప్‌డేట్ చేయండి. ఈ అప్‌డేట్ కీలకమైన సవరణలు మరియు మెరుగుదలలను కలిగి ఉంది.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "డౌన్లోడ్",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "మీకు ఇప్పటికే Doctorina ఖాతా ఉంటే లాగిన్ అవ్వండి, లేదా ప్రారంభించడానికి సైన్ అప్ చేయండి.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "లాగిన్",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "సైన్ అప్",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "అతిథిగా కొనసాగించండి",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "లాగిన్",
+  "@titleLogin": {},
+  "titleLogout": "లాగ్ అవుట్",
+  "@titleLogout": {},
+  "titleSignIn": "సైన్ ఇన్",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "సంభాషణ",
+  "@titleDialog": {},
+  "titleChat": "చాట్",
+  "@titleChat": {},
+  "titleSettings": "ఖాతా సెట్టింగ్స్",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "చాట్ చరిత్ర",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "చెల్లింపు",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "సబ్‌స్క్రిప్షన్ నిర్వహించండి",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "మాసిక సభ్యత్వం",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "ఆన్‌బోర్డింగ్",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "మళ్లీ స్వాగతం",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "ఆరోగ్య రికార్డుల ప్రొఫైల్స్",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "ప్రొఫైల్స్ ప్రకటన",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "ఆరోగ్య రికార్డులు",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "పూర్తి రికార్డు",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "పత్రాలు",
+  "@titleDocuments": {},
+  "titleConsultations": "సలహాలు",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "పే వాల్",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "తొలగిస్తున్నారా? మాకు చెప్పండి ఎందుకు!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "కొత్త ఆరోగ్య చర్చ ప్రారంభించండి",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "ఒక ఆలోచనను పంచుకోండి లేదా సమస్యను నివేదించండి",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "డాక్టర్‌నా మెరుగుపరచడానికి మాకు చెప్పండి",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

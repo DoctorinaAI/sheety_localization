@@ -1,0 +1,132 @@
+{
+  "@@locale": "ne",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "नेपाली",
+  "@lang": {},
+  "langEn": "Nepali",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "अहिले अपडेट गर्नुहोस्",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "शायद पछि",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "नयाँ अपडेट उपलब्ध छ",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "अद्यावधिक आवश्यक छ",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "नयाँ संस्करण (v{version}) अनुप्रयोगको लागि उपलब्ध छ। कृपया सर्वोत्तम अनुभवको लागि अपडेट गर्नुहोस्।",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "आगे बढ्नको लागि, कृपया एप अपडेट गर्नुहोस्। यस अपडेटमा महत्त्वपूर्ण सुधार र सुधारहरू समावेश छन्।",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "डाउनलोड",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "यदि तपाईंसँग पहिले नै Doctorina खाता छ भने लग इन गर्नुहोस्, वा सुरु गर्न साइन अप गर्नुहोस्।",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "लगइन गर्नुहोस्",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "साइन अप गर्नुहोस्",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "अतिथि रूपमा जारी राख्नुहोस्",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "लगइन गर्नुहोस्",
+  "@titleLogin": {},
+  "titleLogout": "लगआउट",
+  "@titleLogout": {},
+  "titleSignIn": "साइन इन",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "संवाद",
+  "@titleDialog": {},
+  "titleChat": "च्याट",
+  "@titleChat": {},
+  "titleSettings": "खाता सेटिङहरू",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "च्याट इतिहास",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "भुक्तानी",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "सदस्यता व्यवस्थापन",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "महिनावारी सदस्यता",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Onboarding",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "फेरि स्वागत छ",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "स्वास्थ्य अभिलेख प्रोफाइलहरू",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "प्रोफाइलको घोषणा",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "स्वास्थ्य रेकर्ड",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "पूर्ण रेकर्ड",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "कागजात",
+  "@titleDocuments": {},
+  "titleConsultations": "परामर्श",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "भुक्तानी भित्ता",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "हटाउँदै? हामीलाई किन भनेर बताउनुहोस्!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "नयाँ स्वास्थ्य वार्ता सुरु गर्नुहोस्",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "विचार साझा गर्नुहोस् वा समस्या रिपोर्ट गर्नुहोस्",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "हामीलाई बताउनुहोस् कि Doctorina कसरी सुधार गर्न सक्छ",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

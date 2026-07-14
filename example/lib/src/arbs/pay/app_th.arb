@@ -1,0 +1,230 @@
+{
+  "@@locale": "th",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "ปุ่มตัวอย่าง",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "ใช่, ทุกอย่างเรียบร้อย!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "ทุกการมีส่วนร่วมเยียวยา!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "การสนับสนุนของคุณช่วยจัดสรรทุนสำหรับคำแนะนำฟรีแก่ผู้ที่ต้องการความช่วยเหลือ.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "จ่ายตามที่คุณรู้สึกว่าเหมาะสม,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "หรือใช้ Doctorina ได้ฟรีต่อไป, ขอบคุณคนอื่นที่เลือกที่จะให้.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "ครั้งเดียว",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "รายเดือน",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "เลือกจำนวนเงินบริจาครายเดือน",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "คุณกำลังจะสมัครแผนรายเดือน.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "คุณกำลังสมัครแผนรายเดือนในราคา {amount}/เดือน",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "การชำระเงินจะถูกเรียกเก็บจากบัญชีของคุณเมื่อยืนยันการซื้อ การสมัครสมาชิกจะต่ออายุอัตโนมัติทุกเดือน เว้นแต่จะปิดการต่ออายุอัตโนมัติอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบปัจจุบัน คุณสามารถจัดการหรือยกเลิกการสมัครสมาชิกของคุณได้ทุกเมื่อในตั้งค่าบัญชีของคุณ โดยการดำเนินการต่อ คุณยอมรับ {termsOfService} และ {privacyPolicy} ของเรา.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "เลือกจำนวนเงินบริจาคครั้งเดียว",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "คนส่วนใหญ่ให้ $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "เลือกสกุลเงิน",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "กำลังดำเนินการชำระเงิน",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "กำลังดำเนินการชำระเงินเพียงครั้งเดียว {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "กำลังดำเนินการชำระเงินรายเดือน {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "ขอบคุณ!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "ตอนนี้ผู้คนมากขึ้นจะได้รับคำแนะนำฟรี — การสนับสนุนของคุณมีค่ามหาศาล.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "คุณมีส่วนร่วม:",
+  "@youContributedLabel": {},
+  "perMonth": "ต่อเดือน",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "กลับไปยังหน้าหลัก",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "ข้อกำหนดการให้บริการ",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "นโยบายความเป็นส่วนตัว",
+  "@privacyPolicyLabel": {},
+  "donateButton": "บริจาค",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "ใช้งานอยู่",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "ถูกยกเลิก",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "หยุดชั่วคราว",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "รอดำเนินการ",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "สร้างแล้ว",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "หมดเวลา",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "ไม่ทราบ",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "ผู้มีส่วนร่วม Doctorina",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "ต่ออายุ",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "ยกเลิกการสมัคร",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "คุณแน่ใจหรือ?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "การสนับสนุนรายเดือนของคุณทำให้ Doctorina เป็นบริการฟรีสำหรับผู้ที่พึ่งพาแต่ไม่สามารถจ่ายได้. การสมัครสมาชิกของคุณสนับสนุนอย่างน้อย 10 ครั้งปรึกษาฟรีในแต่ละเดือน. หากคุณออกไป ผู้ป่วยจะได้รับความช่วยเหลือน้อยลง.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "คงการสมัครสมาชิก",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "ยกเลิกอยู่ดี",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "การสนับสนุนรายเดือนของคุณถูกยกเลิกเรียบร้อยแล้ว.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "ข้อมูลการสมัครไม่ถูกต้อง",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "ลงทะเบียนรับการสนับสนุนรายเดือนเพื่อให้ปรากฏที่นี่",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "ยังไม่มีการสมัครสมาชิก",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "วันที่สมัครสมาชิก",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "หมดอายุ",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "รหัสการสมัคร",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "รหัสผลิตภัณฑ์",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "ตกลง",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "ไม่สามารถดำเนินการชำระเงินของคุณ",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "มีบางอย่างผิดพลาดกับการชำระเงิน. กรุณาลองใหม่อีกครั้ง.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "ลองใหม่",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "กำลังดำเนินการชำระเงิน",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "คุณจะทำการซื้อของคุณให้เสร็จสิ้นบนหน้าชำระเงินที่ปลอดภัยของ Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ สัปดาห์",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ ปี",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "ยอดนิยมที่สุด",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "ปิด",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "สิ่งที่คุณจะได้รับจากพรีเมียม:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "การปรึกษาที่ไม่มีโฆษณา",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "การตอบกลับที่รวดเร็วขึ้น",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "การเข้าถึงฟีเจอร์ใหม่ก่อนใคร",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/สัปดาห์",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "ยกเลิกได้ตลอดเวลา ไม่มีข้อผูกพัน",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "ข้อเสนอจำกัดเวลา",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "ต่ออายุอัตโนมัติทุกสัปดาห์ ยกเลิกได้ทุกเมื่อในการตั้งค่า โดยการดำเนินการต่อ คุณยอมรับ <t>ข้อกำหนด</t> และ <p>นโยบายความเป็นส่วนตัว</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 ดำเนินการต่อด้วยพรีเมียม",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 การสนับสนุนของคุณช่วยให้การดูแลเข้าถึงได้",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "กรุณาลงทะเบียนหรือเข้าสู่ระบบเพื่อทำการซื้อให้เสร็จสิ้น",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

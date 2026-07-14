@@ -1,0 +1,132 @@
+{
+  "@@locale": "pa",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "ਪੰਜਾਬੀ",
+  "@lang": {},
+  "langEn": "Punjabi",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "ਹੁਣ ਅੱਪਡੇਟ ਕਰੋ",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "ਸ਼ਾਇਦ ਬਾਅਦ ਵਿੱਚ",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "ਨਵਾਂ ਅੱਪਡੇਟ ਉਪਲਬਧ ਹੈ",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "ਅਪਡੇਟ ਦੀ ਲੋੜ ਹੈ",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "ਇੱਕ ਨਵਾਂ ਸੰਸਕਰਣ (v{version}) ਉਪਲਬਧ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਅੱਪਡੇਟ ਕਰੋ ਤਾਂ ਜੋ ਸਭ ਤੋਂ ਵਧੀਆ ਅਨੁਭਵ ਲਈ ਜਾਰੀ ਰੱਖ ਸਕੀਏ.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "ਜਾਰੀ ਰੱਖਣ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਐਪ ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ। ਇਸ ਅੱਪਡੇਟ ਵਿੱਚ ਮਹੱਤਵਪੂਰਨ ਠੀਕ ਕਰਨਾ ਅਤੇ ਸੁਧਾਰ ਸ਼ਾਮਲ ਹਨ.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "ਡਾਊਨਲੋਡ",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਪਹਿਲਾਂ ਤੋਂ ਡਾਕਟਰਿਨਾ ਖਾਤਾ ਹੈ ਤਾਂ ਲੌਗ ਇਨ ਕਰੋ, ਜਾਂ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਸਾਈਨ ਅਪ ਕਰੋ.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "ਲੌਗ ਇਨ",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "ਸਾਈਨ ਅਪ ਕਰੋ",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "ਗੈਸਟ ਵਜੋਂ ਜਾਰੀ ਰੱਖੋ",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "ਲੌਗ ਇਨ",
+  "@titleLogin": {},
+  "titleLogout": "ਲੌਗ ਆਉਟ",
+  "@titleLogout": {},
+  "titleSignIn": "ਸਾਈਨ ਇਨ",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "ਗੱਲਬਾਤ",
+  "@titleDialog": {},
+  "titleChat": "Chat",
+  "@titleChat": {},
+  "titleSettings": "ਖਾਤਾ ਸੈਟਿੰਗਸ",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "ਚੈਟ ਇਤਿਹਾਸ",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "ਭੁਗਤਾਨ",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "ਸਬਸਕ੍ਰਿਪਸ਼ਨ ਪ੍ਰਬੰਧਿਤ ਕਰੋ",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "ਮਾਸਿਕ ਸਬਸਕ੍ਰਿਪਸ਼ਨ",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Onboarding",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "ਵਾਪਸ ਆਉਣ 'ਤੇ ਸੁਆਗਤ ਹੈ",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "ਸਿਹਤ ਰਿਕਾਰਡ ਪ੍ਰੋਫ਼ਾਈਲਾਂ",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "ਪ੍ਰੋਫਾਈਲਾਂ ਦਾ ਐਲਾਨ",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "ਸਿਹਤ ਰਿਕਾਰਡ",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "ਪੂਰਾ ਰਿਕਾਰਡ",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "ਦਸਤਾਵੇਜ਼",
+  "@titleDocuments": {},
+  "titleConsultations": "ਸਲਾਹ-ਮਸ਼ਵਰਾ",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Paywall",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "ਹਟਾਉਂਦੇ? ਸਾਨੂੰ ਦੱਸੋ ਕਿ ਕਿਉਂ!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "ਨਵਾਂ ਸਿਹਤ ਗੱਲਬਾਤ ਸ਼ੁਰੂ ਕਰੋ",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "ਇੱਕ ਵਿਚਾਰ ਸਾਂਝਾ ਕਰੋ ਜਾਂ ਸਮੱਸਿਆ ਦੀ ਰਿਪੋਰਟ ਕਰੋ",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "ਸਾਨੂੰ ਦੱਸੋ ਕਿ ਡਾਕਟਰਿਨਾ ਕਿਵੇਂ ਸੁਧਾਰ ਸਕਦੀ ਹੈ",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

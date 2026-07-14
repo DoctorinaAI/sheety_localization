@@ -1,0 +1,428 @@
+{
+  "@@locale": "ja",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "健康記録",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "新しい",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "健康記録を作成する",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "相談の最後に、プロフィールを追加してください。",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "プロフィールを追加",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "他の人のために相談を始めて、彼らのプロフィールを作成します。",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "健康記録を作成するためにサインアップしてください",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "再試行",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "プロフィールの削除に失敗しました",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "プロフィールの概要の読み込みに失敗しました",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "フルレコードを見る",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "共有する",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "削除",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "年齢",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} 年} other{{value} 年}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "体重",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "身長",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "-",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "アレルギー",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "慢性",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "薬",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "デバイス",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "相談",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "ドキュメント",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "健康記録を削除しますか？",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "これにより、あなたの健康データが永久に削除され、元に戻すことはできません。あなたが私たちのガイドに使用するコンテキストを失います。",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "キャンセル",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "削除",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "健康記録を削除しています...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "プロフィールの削除に失敗しました",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "健康記録が削除されました",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "アシスタントとチャットすることで、いつでも新しいものを作成できます。",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "チャットに戻る",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "編集中",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "プロフィールデータの読み込みに失敗しました",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "変更が保存されました",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "あなたの情報は正常に更新されました。",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "プロフィールに戻る",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "プロフィールデータの更新に失敗しました",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "変更を破棄しますか？",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "プロフィールにいくつかの変更を加えました。行く前に保存するか、破棄してください。",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "編集を続ける",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "破棄",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "編集",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "レコードを追加",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "検索",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "結果が見つかりませんでした",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "ダウンロード",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "共有する",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "削除",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "ドキュメントが見つかりませんでした",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "この文書を削除しますか？",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "このファイルは永久に削除されます",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "キャンセル",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "削除",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "その他の操作",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "検索",
+  "@profilesSearch": {},
+  "profilesEmptyList": "プロフィールが見つかりません",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "もっと見る",
+  "@profilesViewMore": {},
+  "profilesMore": "もっと",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "ドクターリナはあなたの健康を覚えています",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "あなたの相談は、健康記録を自動的に構築し更新します。",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "あなたの健康記録、あなたのルール",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "いつでも症状、薬、履歴、または文書を表示、編集、または追加できます。",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "家族全体のケアをする",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "愛する人、子供、親、またはパートナーのために健康記録を作成します。",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "健康記録を保存する準備はできていますか？",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "相談後、「プロフィールを追加」をタップして保存します。",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "次へ",
+  "@profilesNextButton": {},
+  "profilesStartButton": "相談を始める",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "後で",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "閉じる",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "健康記録",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "健康記録 — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...もっと",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...少",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "新しいプロフィールを追加",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "この相談の詳細を保存するためにプロフィールを作成します",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "健康記録でいつでも確認できます",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "この件や関連することでさらに質問があれば、遠慮なく引き続き話しかけてください。お手伝いします",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "基本情報",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "名前",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "山田 太郎",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "名",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "姓",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "山田",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "性別",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "選択してください",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "男性",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "女性",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "その他",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "生年月日",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "年齢",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "例：30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "電話番号",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "メールアドレス",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "居住地",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "例：市、国",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "体と食事",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "身長",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "例：180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "体重",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "例：75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "月経周期",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "例：規則的、不規則",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "食事制限",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "選択してください",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "あなたが食べるものと、持っている制限について教えてください",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "なし",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "ベジタリアン",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "ビーガン",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "グルテンフリー",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "体格指数（BMI）",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "例: 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "健康プロフィール",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "慢性疾患",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "例えば2型糖尿病",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "すべての慢性疾患をリストし、診断された時期と合併症を含めてください。",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "既往症",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "例えば、頻繁な風邪",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "過去にかかった重い病気をリストしてください、たとえ回復したとしても。",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "手術歴",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "例：虫垂切除術",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "すべての手術をリストし、年と合併症があったかどうかを含めてください。",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "時々使用する薬",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "例えば、イブプロフェン",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "時々服用する薬（例：鎮痛剤、アレルギー薬）を、用量と使用理由を含めてリストしてください。",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "常用薬",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "例：メトホルミン",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "定期的に服用しているすべての薬について、名前、用量、1日に何回服用するか、そしてその薬がどの病状のためであるかを記載してください。",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "アレルギー",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "例：ペニシリン – 発疹を引き起こす",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "すべてのアレルギー（薬、食べ物、環境）をリストし、どのような反応があるかを説明してください（例：発疹、腫れ、呼吸の問題）。",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "特記事項",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "例：妊娠、障害",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "医師が常に知っておくべき重要な医療条件がある場合（例：妊娠、埋め込みデバイス、障害、抗凝固療法）、それについて説明してください。ない場合は、空白のままにしておいても構いません。",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "家族歴",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "例：心臓病、がん",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "ご家族における重要な病気について説明してください（例：糖尿病、高血圧、心臓病、癌、遺伝性疾患）そして、どの家族のメンバーがその病気にかかったかを指定してください。",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "社会的・生活習慣要因",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "例：喫煙、飲酒",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "喫煙、アルコール、身体活動、食事、睡眠、職業など、健康に影響を与えるライフスタイル要因について説明してください。",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "医療機器",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "例：ペースメーカー、補聴器、インスリンポンプ",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "ペースメーカー、インスリンポンプ、補聴器、義肢、またはその他の支援または監視デバイスなど、使用しているまたは埋め込まれている医療機器をリストしてください。該当する場合は、関連する詳細を含めてください。",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "雑食",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "ファストフード",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "ペスカタリアン",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "乳糖フリー",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "減塩食",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "低糖質の食事",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "心臓病食",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "腎臓の食事",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "その他",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

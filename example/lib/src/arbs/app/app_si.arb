@@ -1,0 +1,132 @@
+{
+  "@@locale": "si",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "සිංහල",
+  "@lang": {},
+  "langEn": "Sinhala",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "අදහස් යාවත්කාලීන කරන්න",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "පසුව",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "නව යාවත්කාලීන කිරීමක් ලබා ගත හැක",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "අලුත් කිරීම අවශ්‍යයි",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "අලුත්ම අනුවාදයක් (v{version}) යෙදුම සඳහා ලබා ගත හැක. හොඳම අත්දැකීම සඳහා යාවත්කාලීන කරන්න.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "ඉදිරියට යාමට, කරුණාකර යෙදුම යාවත්කාලීන කරන්න. මෙම යාවත්කාලීන කිරීමේදී වැදගත් අලුත්කම් සහ සංශෝධන ඇතුළත් වේ.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "බාගත කරන්න",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Prijavite se ako već imate Doctorina račun, ili se registrujte da biste započeli.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Prijavite se",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Prijavite se",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "අමුත්තා ලෙස ඉදිරියට යන්න",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "ඇතුල් වන්න",
+  "@titleLogin": {},
+  "titleLogout": "ඉවත් වන්න",
+  "@titleLogout": {},
+  "titleSignIn": "ඇතුල්වන්න",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "සංවාදය",
+  "@titleDialog": {},
+  "titleChat": "චැට්",
+  "@titleChat": {},
+  "titleSettings": "ගිණුම් සැකසුම්",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "චැට් ඉතිහාසය",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "ගෙවීම්",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "අභිජනන කළමනාකරණය",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "මාසික සාමාජිකත්වය",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "ආරම්භය",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Dobrodošli nazad",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "සෞඛ්‍ය වාර්තා පැතිකඩ",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "ප්‍රොෆයිල් නිවේදනය",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "සෞඛ්‍ය වාර්තා",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "සම්පූර්ණ වාර්තාව",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "เอกสาร",
+  "@titleDocuments": {},
+  "titleConsultations": "සම්මුඛ සාකච්ඡා",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Paywall",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "මකන්නද? අපට කීයක් කියන්න!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "අලුත් සෞඛ්‍ය සංවාදයක් ආරම්භ කරන්න",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "කාරණයක් හෝ ගැටලුවක් වාර්තා කරන්න",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "ඩොක්ටර්නා යහපත් කරගැනීමට අපට කෙසේද කියන්න",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

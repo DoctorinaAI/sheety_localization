@@ -5,15 +5,32 @@ import 'dart:async';
 import 'dart:collection';
 
 import 'client.dart';
+import 'language_names.dart';
 import 'models.dart';
 import 'prompt.dart';
 import 'utils.dart';
 import 'validation.dart';
 
+/// Whether [header] describes a localization sheet.
+///
+/// The expected layout is `label | description | meta | en | <locale> ...`, so
+/// the fourth column must be the English source. A spreadsheet usually holds
+/// other sheets too — reference tables, notes — whose columns are ordinary
+/// data. Localizing those would overwrite them with translations, so a sheet
+/// that does not match the layout is left alone.
+bool isLocalizationHeader(List<Object?> header) {
+  if (header.length < 5) return false;
+  final en = header[3];
+  if (en is! String) return false;
+  final code = normalizeLanguageCode(en);
+  return code == 'en' || code.startsWith('en_');
+}
+
 /// Extract cells to be localized from the raw [values] of a sheet.
 ///
 /// [title] is the sheet title, used for diagnostics only.
 /// Column layout: `label | description | meta | en | <locale> ...`.
+/// A sheet whose header does not match that layout is skipped entirely.
 List<LocalizeRow> extractEmptyCells({
   required String title,
   required List<List<Object?>> values,
@@ -28,6 +45,14 @@ List<LocalizeRow> extractEmptyCells({
   if (values.isEmpty) return const [];
 
   final header = values.first;
+  if (!isLocalizationHeader(header)) {
+    $err(
+      'Sheet "$bucket" is not a localization sheet '
+      '(expected "label | description | meta | en | <locale> ..." header, '
+      'got ${header.take(4).toList()}), skipping sheet...',
+    );
+    return const [];
+  }
 
   // Fill locales
   final locales = List.filled(header.length, '', growable: false);

@@ -1,0 +1,591 @@
+{
+  "@@locale": "ml",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "appNameLogo": "doctorina",
+  "@appNameLogo": {
+    "description": "Brand name displayed under the logo on the welcome screen"
+  },
+  "welcomeTagline": "അവസാനമായ AI ആരോഗ്യ സഹായി",
+  "@welcomeTagline": {
+    "description": "Short tagline describing the product category"
+  },
+  "welcomeScreenTitle": "ഡോക്ടറിനയിലേക്ക് സ്വാഗതം",
+  "@welcomeScreenTitle": {
+    "description": "Main headline welcoming the user"
+  },
+  "socialProofTrustedBy": "Trusted by\n<green>48K+ Users</green>",
+  "@socialProofTrustedBy": {
+    "description": "Social proof header with highlighted user count\nNew line should be preserved. 48K+"
+  },
+  "welcomeDescription": "ലക്ഷണങ്ങളെ പരിചയസമ്പന്നമായ ക്ലിനീഷ്യന്മാരുടെ രീതിയിൽ വിശകലനം ചെയ്യാൻ രൂപകൽപ്പന ചെയ്തതാണ് — മാതൃകകൾ, സമയക്രമം, സാന്ദർഭം എന്നിവയെ മനസ്സിലാക്കുന്നതിലൂടെ.",
+  "@welcomeDescription": {
+    "description": "Short paragraph explaining the value proposition of the app"
+  },
+  "getStartedBtn": "ആരംഭിക്കുക",
+  "@getStartedBtn": {
+    "description": "Primary call-to-action button to begin onboarding"
+  },
+  "alreadyHaveAccount": "ഇതിനകം ഒരു അക്കൗണ്ട് ഉണ്ടോ? <link>ലോഗിൻ ചെയ്യുക</link>",
+  "@alreadyHaveAccount": {
+    "description": "Secondary text prompting existing users to sign in with tappable login action"
+  },
+  "termsConsent": "തുടരുന്നതിലൂടെ, നിങ്ങൾ ഞങ്ങളുടെ\n<termsOfService>സേവനത്തിന്റെ നിബന്ധനകൾ</termsOfService> | <privacyPolicy>സ്വകാര്യതാ നയം</privacyPolicy> എന്നതിൽ സമ്മതിക്കുന്നു",
+  "@termsConsent": {
+    "description": "Legal consent text with tappable Terms of Service and Privacy Policy\nNew line should be preserved"
+  },
+  "personalizationInterruptionTitle": "നമുക്ക് <brand>Doctorina</brand> നിന്റെ ആവശ്യങ്ങൾക്കനുസരിച്ച് വ്യക്തിഗതമാക്കാം",
+  "@personalizationInterruptionTitle": {
+    "description": "Headline prompting the user to start personalization with highlighted brand name"
+  },
+  "personalizationSectionLabel": "വ്യക്തിഗതവത്കരണം",
+  "@personalizationSectionLabel": {
+    "description": "Small section label indicating personalization flow"
+  },
+  "personalizationReasonTitle": "നിങ്ങൾക്ക് ഇന്ന് ഇവിടെ എത്താൻ എന്താണ് കാരണം?",
+  "@personalizationReasonTitle": {
+    "description": "Question asking why the user opened the app"
+  },
+  "personalizationReasonSymptomsNow": "ഞാൻ ഇപ്പോൾ ലക്ഷണങ്ങൾ അനുഭവിക്കുന്നു",
+  "@personalizationReasonSymptomsNow": {
+    "description": "Option indicating the user currently has symptoms"
+  },
+  "personalizationReasonUnderstandChange": "ഞാൻ ആരോഗ്യ മാറ്റം മനസ്സിലാക്കാൻ ആഗ്രഹിക്കുന്നു",
+  "@personalizationReasonUnderstandChange": {
+    "description": "Option indicating the user wants to understand a health change"
+  },
+  "personalizationReasonRuleOutSerious": "ഞാൻ ഗുരുതരമായ എന്തെങ്കിലും ഒഴിവാക്കാൻ ആഗ്രഹിക്കുന്നു",
+  "@personalizationReasonRuleOutSerious": {
+    "description": "Option indicating the user wants to rule out serious issues"
+  },
+  "personalizationReasonMonitoring": "ഞാൻ എന്റെ ആരോഗ്യത്തെ മുൻകൂട്ടി നിരീക്ഷിക്കുന്നു",
+  "@personalizationReasonMonitoring": {
+    "description": "Option indicating proactive health monitoring"
+  },
+  "continueBtn": "തുടരുക",
+  "@continueBtn": {
+    "description": "Primary button to proceed to next step"
+  },
+  "captionEmpathyText": "നിങ്ങളുടെ ആരോഗ്യത്തിൽ എന്തെങ്കിലും മാറ്റം വന്നാൽ, എന്താണ് പ്രധാനമെന്ന് അറിയുന്നത് ഏറ്റവും കഠിനമാണ്.",
+  "@captionEmpathyText": {
+    "description": "Introductory empathy statement about health uncertainty"
+  },
+  "captionDifferentiatorText": "<em>ഡോക്ടറിനാ ലക്ഷണങ്ങളുടെ മാതൃകകളും സമയവും ശ്രദ്ധിക്കുന്നു</em> — ഇത് പ്രാരംഭത്തിൽ ഡോക്ടർമാർ അന്വേഷിക്കുന്ന സമാനമായ സൂചനകളാണ്.",
+  "@captionDifferentiatorText": {
+    "description": "Statement explaining Doctorina's analytical approach with emphasized phrase"
+  },
+  "genderTitle": "നിങ്ങളുടെ ലിംഗം തിരഞ്ഞെടുക്കുക",
+  "@genderTitle": {
+    "description": "Question asking the user to select gender"
+  },
+  "genderSubtitle": "ഇത് ഞങ്ങൾക്ക് ലക്ഷണങ്ങളെ വ്യാഖ്യാനിക്കാൻ സഹായിക്കുന്നു, കൂടാതെ ശുപാർശകൾ കൂടുതൽ കൃത്യമായി നൽകുന്നു.",
+  "@genderSubtitle": {
+    "description": "Supporting text explaining why gender data is used"
+  },
+  "genderMale": "പുരുഷൻ",
+  "@genderMale": {
+    "description": "Gender selection option male"
+  },
+  "genderFemale": "സ്ത്രീ",
+  "@genderFemale": {
+    "description": "Gender selection option female"
+  },
+  "genderPreferNotSay": "ചൊല്ലാൻ ഇഷ്ടപ്പെടുന്നില്ല",
+  "@genderPreferNotSay": {
+    "description": "Gender selection option prefer not to disclose"
+  },
+  "ageTitle": "നിങ്ങളുടെ പ്രായം എന്താണ്?",
+  "@ageTitle": {
+    "description": "Question asking the user's age"
+  },
+  "ageSubtitle": "പ്രായം ആരോഗ്യ മാതൃകകളെ കൂടുതൽ കൃത്യമായി വിലയിരുത്താൻ സഹായിക്കുന്നു.",
+  "@ageSubtitle": {
+    "description": "Supporting explanation for age usage"
+  },
+  "socialProofLargeTitle": "<green>48k+ ആളുകൾ</green>\nഡോക്ടറിനയെ തിരഞ്ഞെടുക്കുകയും ചെയ്തു",
+  "@socialProofLargeTitle": {
+    "description": "Social proof headline with emphasized number\nNew line should be preserved"
+  },
+  "socialProofDisclaimer": "*ഡോക്ടറിനയുടെ ഉപയോക്തൃ അടിസ്ഥാനത്തിന്റെ സ്ഥിതിവിവരക്കണക്കുകൾ അടിസ്ഥാനമാക്കി",
+  "@socialProofDisclaimer": {
+    "description": "Small note describing data source"
+  },
+  "developedByDoctors": "ഡോക്ടർമാർക്കാൽ വികസിപ്പിച്ച",
+  "@developedByDoctors": {
+    "description": "Badge text indicating medical expertise\nNew line should be preserved"
+  },
+  "quizStepLabel1": "പടി 1/6",
+  "@quizStepLabel1": {
+    "description": "Progress indicator showing current quiz step"
+  },
+  "quizHealthSituationTitle": "നിങ്ങളുടെ നിലവിലെ ആരോഗ്യസ്ഥിതിയെ നിങ്ങൾ എങ്ങനെ വിവരണപ്പെടുത്തും?",
+  "@quizHealthSituationTitle": {
+    "description": "Question about overall health situation"
+  },
+  "quizHealthHealthy": "ഞാൻ സാധാരണയായി ആരോഗ്യവത്താണ്",
+  "@quizHealthHealthy": {
+    "description": "Option indicating no major health concerns"
+  },
+  "quizHealthMinorConcerns": "എനിക്ക് തുടർച്ചയായ ചെറിയ ആശങ്കകൾ ഉണ്ട്",
+  "@quizHealthMinorConcerns": {
+    "description": "Option indicating minor ongoing issues"
+  },
+  "quizHealthKnownCondition": "ഞാൻ അറിയപ്പെടുന്ന ഒരു രോഗം കൈകാര്യം ചെയ്യുന്നു",
+  "@quizHealthKnownCondition": {
+    "description": "Option indicating an existing diagnosed condition"
+  },
+  "quizHealthUnresolved": "ഞാൻ പരിഹരിക്കാത്ത എന്തോ നേരിടുന്നു",
+  "@quizHealthUnresolved": {
+    "description": "Option indicating unresolved issue"
+  },
+  "quizStepLabel2": "പടി 2/6",
+  "@quizStepLabel2": {
+    "description": "Progress indicator showing second quiz step"
+  },
+  "quizDoctorVisitFrequencyTitle": "നിങ്ങൾ സാധാരണയായി എത്ര തവണ ഡോക്ടറെ കാണുന്നു?",
+  "@quizDoctorVisitFrequencyTitle": {
+    "description": "Question about frequency of doctor visits"
+  },
+  "quizDoctorVisitRegular": "നിയമിതമായി (ചികിത്സാ പരിശോധനകൾ / പിന്തുടർച്ചകൾ)",
+  "@quizDoctorVisitRegular": {
+    "description": "Option indicating regular checkups"
+  },
+  "quizDoctorVisitOccasional": "അവസരവശാൽ, എന്തെങ്കിലും തെറ്റായപ്പോൾ",
+  "@quizDoctorVisitOccasional": {
+    "description": "Option indicating occasional visits"
+  },
+  "quizDoctorVisitRare": "അവസരമായാൽ മാത്രം, വളരെ കുറച്ച്",
+  "@quizDoctorVisitRare": {
+    "description": "Option indicating rare visits"
+  },
+  "quizDoctorVisitAvoid": "ഡോക്ടർമാരെ സന്ദർശിക്കാൻ ഇഷ്ടമല്ല",
+  "@quizDoctorVisitAvoid": {
+    "description": "Пользователь говорит, что не любит ходить к врачам и старается\n лишний раз не обращаться к доктору. Итоговая фраза должна быть\n понятной и отражать это поведение, например:\n«Вы не любите обращаться к врачам»"
+  },
+  "quizDoctorVisitNever": "ഞാൻ ഒരിക്കലും ഡോക്ടറെ സന്ദർശിച്ചിട്ടില്ല",
+  "@quizDoctorVisitNever": {
+    "description": "Option indicating never visited"
+  },
+  "quizStepLabel3": "പടി 3/6",
+  "@quizStepLabel3": {
+    "description": "Progress indicator showing third quiz step"
+  },
+  "quizBiggestChallengeTitle": "ഇപ്പോൾ വരെ ആരോഗ്യപരിചരണത്തിൽ നിങ്ങളുടെ ഏറ്റവും വലിയ വെല്ലുവിളി എന്താണ്?",
+  "@quizBiggestChallengeTitle": {
+    "description": "Question about healthcare challenges"
+  },
+  "quizMultiSelectHint": "നിങ്ങൾക്ക് ഇഷ്ടമുള്ളവയെല്ലാം തിരഞ്ഞെടുക്കുക",
+  "@quizMultiSelectHint": {
+    "description": "Helper text indicating multiple selection allowed"
+  },
+  "quizChallengeLongWait": "അവസാനത്തിനായി നീണ്ട കാത്തിരിപ്പുകൾ",
+  "@quizChallengeLongWait": {
+    "description": "Option indicating long appointment wait times"
+  },
+  "quizChallengeRushedVisits": "സന്ദർശനങ്ങൾ വേഗത്തിൽ അനുഭവപ്പെടുന്നു",
+  "@quizChallengeRushedVisits": {
+    "description": "Option indicating short or rushed visits"
+  },
+  "quizChallengeCost": "ഉയർന്ന ചെലവ് അല്ലെങ്കിൽ വ്യക്തതയില്ലാത്ത വില",
+  "@quizChallengeCost": {
+    "description": "Option indicating cost or pricing clarity issues"
+  },
+  "quizChallengeHardExplain": "എല്ലാം വ്യക്തമായി വിശദീകരിക്കാൻ ബുദ്ധിമുട്ടാണ്",
+  "@quizChallengeHardExplain": {
+    "description": "Option indicating difficulty explaining symptoms"
+  },
+  "quizChallengeConflictingAdvice": "വ്യത്യസ്തമായ അഭിപ്രായങ്ങൾ അല്ലെങ്കിൽ ഉപദേശം",
+  "@quizChallengeConflictingAdvice": {
+    "description": "Option indicating conflicting medical opinions"
+  },
+  "quizChallengeNone": "പ്രധാനമായ പ്രശ്നങ്ങൾ ഇല്ല",
+  "@quizChallengeNone": {
+    "description": "Option indicating no major issues"
+  },
+  "quizStepLabel4": "പടി 4/6",
+  "@quizStepLabel4": {
+    "description": "Progress indicator showing fourth quiz step"
+  },
+  "quizConfidenceAfterAppointmentTitle": "അവസാനിച്ച ഡോക്ടർ സന്ദർശനത്തിന് ശേഷം, നിങ്ങൾക്ക് പറയപ്പെട്ട കാര്യങ്ങളെക്കുറിച്ച് എത്ര വിശ്വാസമുണ്ട്?",
+  "@quizConfidenceAfterAppointmentTitle": {
+    "description": "Question about clarity after doctor appointments"
+  },
+  "quizConfidenceNoRightAnswer": "ശരിയല്ലാത്ത അല്ലെങ്കിൽ തെറ്റായ ഉത്തരമില്ല.",
+  "@quizConfidenceNoRightAnswer": {
+    "description": "Helper note clarifying subjective nature"
+  },
+  "quizConfidenceVeryClear": "എന്താണ് നടക്കുന്നത് എന്നതിൽ വളരെ വ്യക്തമാണ്",
+  "@quizConfidenceVeryClear": {
+    "description": "Option indicating full understanding"
+  },
+  "quizConfidenceSomewhatClear": "കുറച്ച് വ്യക്തമായ",
+  "@quizConfidenceSomewhatClear": {
+    "description": "Option indicating partial clarity"
+  },
+  "quizConfidenceStillUncertain": "ഇനിയും സംശയത്തിലാണ്",
+  "@quizConfidenceStillUncertain": {
+    "description": "Option indicating ongoing uncertainty"
+  },
+  "quizConfidenceMoreConfused": "മുമ്പത്തെതിനെക്കാൾ കൂടുതൽ ആശങ്കിതനാണ്",
+  "@quizConfidenceMoreConfused": {
+    "description": "Option indicating increased confusion"
+  },
+  "captionDiagnosisVsChange": "ബഹുഭൂരിപക്ഷം <green>മനുഷ്യർ രോഗനിർണ്ണയത്തിന് ശേഷം</green> അല്ലെങ്കിൽ ലക്ഷണങ്ങൾ കാലക്രമേണ മാറുമ്പോൾ ബുദ്ധിമുട്ടുന്നു.",
+  "@captionDiagnosisVsChange": {
+    "description": "Образовательная подпись, подчеркивающая развитие симптомов.\n Подпись должна объяснять, что многие люди сталкиваются с трудностями\n не сразу после постановки диагноза, а когда симптомы меняются со временем."
+  },
+  "quizStepLabel5": "പടി 5/6",
+  "@quizStepLabel5": {
+    "description": "Progress indicator showing fifth quiz step"
+  },
+  "quizConcernsAddressedTitle": "നിങ്ങളുടെ ആശങ്കകൾ സാധാരണയായി എങ്ങനെ പരിഹരിക്കപ്പെടുന്നു എന്ന് നിങ്ങൾ എങ്ങനെ അനുഭവിക്കുന്നു?",
+  "@quizConcernsAddressedTitle": {
+    "description": "Question about how well concerns are addressed"
+  },
+  "quizConcernsAddressedSubtitle": "നിങ്ങളുടെ വ്യക്തിഗത അനുഭവങ്ങളെ അടിസ്ഥാനമാക്കി",
+  "@quizConcernsAddressedSubtitle": {
+    "description": "Clarifies answers are subjective"
+  },
+  "quizConcernsVeryWell": "നന്നായി",
+  "@quizConcernsVeryWell": {
+    "description": "Option indicating strong satisfaction"
+  },
+  "quizConcernsFairlyWell": "ശരാശരി നല്ലത്",
+  "@quizConcernsFairlyWell": {
+    "description": "Option indicating moderate satisfaction"
+  },
+  "quizConcernsNotVeryWell": "ശരിയായില്ല",
+  "@quizConcernsNotVeryWell": {
+    "description": "Option indicating low satisfaction"
+  },
+  "quizConcernsVaries": "ഇത് വളരെ വ്യത്യാസമാണ്",
+  "@quizConcernsVaries": {
+    "description": "Option indicating inconsistent experience"
+  },
+  "quizStepLabel6": "പടി 6/6",
+  "@quizStepLabel6": {
+    "description": "Progress indicator showing sixth quiz step"
+  },
+  "quizSelfResearchTitle": "ഡോക്ടറെ കാണുന്നതിന് മുമ്പ്, നിങ്ങൾ സാധാരണയായി ലക്ഷണങ്ങളെ സ്വയം മനസ്സിലാക്കാൻ ശ്രമിക്കുന്നുണ്ടോ?",
+  "@quizSelfResearchTitle": {
+    "description": "Question about pre-visit self-research behavior"
+  },
+  "quizSelfResearchYes": "അതെ, ഞാൻ ഗവേഷണം നടത്തുകയും കാര്യങ്ങൾ നിരീക്ഷിക്കുകയും ചെയ്യുന്നു",
+  "@quizSelfResearchYes": {
+    "description": "Option indicating proactive research"
+  },
+  "quizSelfResearchSometimes": "എപ്പോഴും",
+  "@quizSelfResearchSometimes": {
+    "description": "Option indicating occasional research"
+  },
+  "quizSelfResearchRarely": "അവസരമായി",
+  "@quizSelfResearchRarely": {
+    "description": "Option indicating rare research"
+  },
+  "quizSelfResearchNo": "ഇല്ല, ഞാൻ മുഴുവനും പ്രൊഫഷണലുകളെ ആശ്രയിക്കുന്നു",
+  "@quizSelfResearchNo": {
+    "description": "Option indicating full reliance on professionals"
+  },
+  "captionAvailabilityTitle": "ആരോഗ്യ ചോദ്യങ്ങൾ <green>ഓഫീസ് മണിക്കൂറുകൾ</green> പിന്തുടരുന്നില്ല.",
+  "@captionAvailabilityTitle": {
+    "description": "Statement about healthcare accessibility with highlighted phrase"
+  },
+  "captionAvailabilitySupport": "Doctorina <green>24/7 ലഭ്യമാണ്.</green>",
+  "@captionAvailabilitySupport": {
+    "description": "Statement about continuous availability"
+  },
+  "captionAvailabilityDescription": "സൂക്ഷ്മതയ്ക്ക് അടുത്ത നിയമനത്തിനായി കാത്തിരിക്കേണ്ടതില്ല.",
+  "@captionAvailabilityDescription": {
+    "description": "Supporting line reinforcing immediate clarity"
+  },
+  "notificationTitle": "നിങ്ങളുടെ ആരോഗ്യ ലക്ഷണങ്ങളെക്കുറിച്ച് ഞങ്ങൾ പരിശോധിക്കണമോ?",
+  "@notificationTitle": {
+    "description": "Question asking about permission for notifications"
+  },
+  "notificationDescription": "എ.ഐ. നിങ്ങളുടെ ലക്ഷണങ്ങളെ നിരീക്ഷിച്ച്, ശ്രദ്ധ ആവശ്യമായ എന്തെങ്കിലും ഉണ്ടെങ്കിൽ നിങ്ങളെ അറിയിക്കാം",
+  "@notificationDescription": {
+    "description": "Explanation about why better to enable notification"
+  },
+  "notificationYes": "അതെ — എന്റെ ആരോഗ്യത്തെ ശ്രദ്ധിക്കുക",
+  "@notificationYes": {
+    "description": "Option indicating yes to all notifications"
+  },
+  "notificationOnlyImportant": "അതെ — എന്തെങ്കിലും പ്രധാനമായ മാറ്റങ്ങൾ ഉണ്ടാകുമ്പോൾ മാത്രം",
+  "@notificationOnlyImportant": {
+    "description": "Option indicating yes only for important notification"
+  },
+  "notificationNo": "ഇനിയും ഉറപ്പല്ല",
+  "@notificationNo": {
+    "description": "Option indicating user don't want to enable notification now"
+  },
+  "referralSourceTitle": "നിങ്ങൾ ഡോക്ടറിൽ നിന്ന് ഡോക്ടറിനയെക്കുറിച്ച് കേട്ടോ?",
+  "@referralSourceTitle": {
+    "description": "Question asking whether a doctor recommended Doctorina"
+  },
+  "referralSourceYes": "അതെ",
+  "@referralSourceYes": {
+    "description": "Yes option"
+  },
+  "referralSourceNo": "ഇല്ല",
+  "@referralSourceNo": {
+    "description": "No option"
+  },
+  "processingSectionLabel": "നിങ്ങളുടെ ഫലങ്ങൾ വിശകലനം ചെയ്യുന്നു",
+  "@processingSectionLabel": {
+    "description": "Small label indicating analysis phase"
+  },
+  "processingTitle": "നിങ്ങളുടെ അനുഭവം വ്യക്തിഗതമാക്കുന്നു",
+  "@processingTitle": {
+    "description": "Title on the results processing screen"
+  },
+  "processingPercentValue": "{percent}%",
+  "@processingPercentValue": {
+    "description": "Progress percentage value during processing",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "99",
+        "description": "Current processing percentage"
+      }
+    }
+  },
+  "paywallHeadline": "അപരിമിത അനുഭവം <brand>Doctorina Pro</brand>",
+  "@paywallHeadline": {
+    "description": "Main paywall headline with highlighted product tier"
+  },
+  "paywallAssistantTagline": "നിങ്ങളുടെ അടുത്തുള്ള സഹായി",
+  "@paywallAssistantTagline": {
+    "description": "Supporting tagline under logo"
+  },
+  "paywallEnableTrialToggle": "ശരിക്കും ഉറപ്പില്ലേ? സൗജന്യ പരീക്ഷണം സജീവമാക്കുക.",
+  "@paywallEnableTrialToggle": {
+    "description": "Toggle label offering free trial"
+  },
+  "paywallPlanYear": "വാർഷികം",
+  "@paywallPlanYear": {
+    "description": "Yearly subscription plan title"
+  },
+  "paywallPlanMonthly": "മാസിക",
+  "@paywallPlanMonthly": {
+    "description": "Monthly subscription plan title"
+  },
+  "paywallPlanWeek": "ആഴ്ചയിൽ",
+  "@paywallPlanWeek": {
+    "description": "Weekly subscription plan title"
+  },
+  "paywallPlanDaily": "ദിവസം",
+  "@paywallPlanDaily": {
+    "description": "Daily subscription plan title"
+  },
+  "paywallPlanYearPrice": "$39.99 (മാത്രം $3.34/ആഴ്ച)",
+  "@paywallPlanYearPrice": {
+    "description": "Yearly subscription price with weekly equivalent"
+  },
+  "paywallPlanWeekPrice": "$3.99",
+  "@paywallPlanWeekPrice": {
+    "description": "Weekly subscription price"
+  },
+  "paywallSaveBadge": "സേവ് 58%",
+  "@paywallSaveBadge": {
+    "description": "Discount badge label"
+  },
+  "paywallContinueBtn": "തുടരുക",
+  "@paywallContinueBtn": {
+    "description": "Continue purchase without trial"
+  },
+  "paywallStartTrialBtn": "മുക്ത പരീക്ഷണം ആരംഭിക്കുക",
+  "@paywallStartTrialBtn": {
+    "description": "Start free trial CTA"
+  },
+  "paywallSubscriptionDisclaimer": "സബ്സ്ക്രിപ്ഷൻ സ്വയം പുതുക്കപ്പെടുന്നു. എപ്പോഴും റദ്ദാക്കാം",
+  "@paywallSubscriptionDisclaimer": {
+    "description": "Legal renewal disclaimer"
+  },
+  "paywallTermsPrivacy": "<termsOfService>സേവനത്തിന്റെ നിബന്ധനകൾ</termsOfService> | <privacyPolicy>സ്വകാര്യതാ നയം</privacyPolicy>",
+  "@paywallTermsPrivacy": {
+    "description": "Links to legal documents"
+  },
+  "paywallPerWeek": "ആഴ്ച",
+  "@paywallPerWeek": {
+    "description": "Week, in context per week, e.g. \"$3,99/week\""
+  },
+  "processingLabel": "നിങ്ങളുടെ ഫലങ്ങൾ വിശകലനം ചെയ്യുന്നു",
+  "@processingLabel": {
+    "description": "Section label on the results processing screen"
+  },
+  "paywallCloseTooltip": "ഓൺബോർഡിംഗ് അടയ്ക്കുക",
+  "@paywallCloseTooltip": {
+    "description": "Tooltip for the paywall close button"
+  },
+  "paywallRestoreTooltip": "പുതുക്കിയ വാങ്ങലുകൾ",
+  "@paywallRestoreTooltip": {
+    "description": "Tooltip for the restore purchases button"
+  },
+  "paywallRestoreBtn": "പുനഃസ്ഥാപിക്കുക",
+  "@paywallRestoreBtn": {
+    "description": "Restore purchases button text"
+  },
+  "paywallRestoreNoneFound": "പുനഃസ്ഥാപിക്കാൻ സജീവമായ സബ്സ്ക്രിപ്ഷൻ കണ്ടെത്തിയില്ല.",
+  "@paywallRestoreNoneFound": {
+    "description": "Message when no active subscription found to restore"
+  },
+  "paywallRestoreError": "വാങ്ങലുകൾ പുനഃസ്ഥാപിക്കാൻ പരാജയപ്പെട്ടു. ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.",
+  "@paywallRestoreError": {
+    "description": "Error message when restore purchases fails"
+  },
+  "paywallPurchaseError": "വാങ്ങൽ പൂർത്തിയാക്കാൻ പരാജയപ്പെട്ടു. ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.",
+  "@paywallPurchaseError": {
+    "description": "Error message when subscription purchase fails"
+  },
+  "paywallTrialStep1Title": "ഇന്ന്: തത്സമയം പ്രവേശനം നേടുക",
+  "@paywallTrialStep1Title": {
+    "description": "Заголовок 1-го шага в таймлайне триала на пейволле v2 (доступ открывается сегодня)"
+  },
+  "paywallTrialStep1Description": "പൂർണ്ണ ആക്സസ് തുറക്കുക, എപ്പോഴും AI ആരോഗ്യ ഉത്തരങ്ങൾ നേടുക.",
+  "@paywallTrialStep1Description": {
+    "description": "Описание 1-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep2Title": "ദിവസം 2: ട്രയൽ ഓർമ്മപ്പെടുത്തൽ",
+  "@paywallTrialStep2Title": {
+    "description": "Заголовок 2-го шага таймлайна триала (напоминание о завершении триала)"
+  },
+  "paywallTrialStep2Description": "നിങ്ങളുടെ ട്രയൽ അവസാനിക്കാനിരിക്കുന്നതായി ഞങ്ങൾ നിങ്ങളെ ഓർമ്മിപ്പിക്കും",
+  "@paywallTrialStep2Description": {
+    "description": "Описание 2-го шага таймлайна триала на пейволле v2"
+  },
+  "paywallTrialStep3Title": "ദിവസം 3: പുതുക്കൽ",
+  "@paywallTrialStep3Title": {
+    "description": "Заголовок 3-го шага таймлайна триала (списание после окончания триала)"
+  },
+  "paywallTrialStep3Description": "{date} ന് നിങ്ങൾക്ക് ചാർജ് ചെയ്യപ്പെടും, എപ്പോഴും റദ്ദാക്കാം.",
+  "@paywallTrialStep3Description": {
+    "description": "Описание 3-го шага таймлайна с датой ближайшего списания",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "April 30, 2026"
+      }
+    }
+  },
+  "paywallBenefitsHeader": "എന്താണ് ഉൾപ്പെടുന്നത്",
+  "@paywallBenefitsHeader": {
+    "description": "Заголовок таблицы с фичами Free/Pro на пейволле v2"
+  },
+  "paywallBenefitsBadgeFree": "FREE",
+  "@paywallBenefitsBadgeFree": {
+    "description": "Бейдж колонки \"Free\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitsBadgePro": "PRO",
+  "@paywallBenefitsBadgePro": {
+    "description": "Бейдж колонки \"Pro\" в таблице фич на пейволле v2"
+  },
+  "paywallBenefitPrivateSecure": "സ്വകാര്യവും സുരക്ഷിതവും",
+  "@paywallBenefitPrivateSecure": {
+    "description": "Пункт списка фич на пейволле v2 — приватность и безопасность"
+  },
+  "paywallBenefitAiAssistant": "എ.ഐ. സഹായി, 24/7",
+  "@paywallBenefitAiAssistant": {
+    "description": "Пункт списка фич на пейволле v2 — AI-ассистент 24/7"
+  },
+  "paywallBenefitInstantAnswers": "തത്സമയം ആരോഗ്യ ഉത്തരങ്ങൾ",
+  "@paywallBenefitInstantAnswers": {
+    "description": "Пункт списка фич на пейволле v2 — мгновенные ответы"
+  },
+  "paywallBenefitScienceInsights": "സ്പഷ്ടമായ, ശാസ്ത്രം അടിസ്ഥാനമാക്കിയുള്ള അറിവുകൾ",
+  "@paywallBenefitScienceInsights": {
+    "description": "Пункт списка фич на пейволле v2 — научно обоснованные инсайты"
+  },
+  "paywallBenefitAutoSummaries": "ഓട്ടോ സംഭാഷണ സംഗ്രഹങ്ങൾ",
+  "@paywallBenefitAutoSummaries": {
+    "description": "Пункт списка фич на пейволле v2 — автоматические резюме консультаций"
+  },
+  "paywallBenefitAnyLanguage": "ഏത് ഭാഷ, എപ്പോഴും",
+  "@paywallBenefitAnyLanguage": {
+    "description": "Пункт списка фич на пейволле v2 — поддержка любого языка"
+  },
+  "paywallPriceUnitPerWeek": "ആഴ്ചയ്ക്ക്",
+  "@paywallPriceUnitPerWeek": {
+    "description": "Подпись \"per week\" под ценой подписки в плитке выбора плана на пейволле v2"
+  },
+  "paywallOfferTitle": "ഒരിക്കൽ മാത്രം ഓഫർ",
+  "@paywallOfferTitle": {
+    "description": "Заголовок шита одноразового оффера после онбординга. Для языков русского, белорусского, украинского - слово \"одноразовый\" применимо к поссуде, а не к предложению. One time offer лучше перевести как \"Разовое предложение\""
+  },
+  "paywallOfferDiscountPercent": "{percent}% ഓഫർ",
+  "@paywallOfferDiscountPercent": {
+    "description": "Процент скидки на белой карточке шита одноразового оффера",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "40"
+      }
+    }
+  },
+  "paywallOfferForeverBadge": "ശാശ്വതമായി",
+  "@paywallOfferForeverBadge": {
+    "description": "Подпись \"FOREVER\" под процентом скидки.  Для языков русского, белорусского, украинского - слово FOREVER лучше перевести  как \"НАВСЕГДА\" (не так пафосно , как \"навечно\")"
+  },
+  "paywallOfferDisclaimer": "നിങ്ങൾ നിങ്ങളുടെ ഒരു തവണത്തെ ഓഫർ അടച്ചാൽ, അത് പോയി!",
+  "@paywallOfferDisclaimer": {
+    "description": "Дисклеймер о том, что предложение исчезнет после закрытия шита. лучше на русский/белорусский и украинский переводить по смыслу так: \"У вас только один шанс воспользоваться этим предложением\""
+  },
+  "paywallOfferPricePerMonth": "{price}/മാസം",
+  "@paywallOfferPricePerMonth": {
+    "description": "Цена за месяц для годовой подписки на карточке одноразового оффера",
+    "placeholders": {
+      "price": {
+        "type": "String",
+        "example": "$1.99"
+      }
+    }
+  },
+  "paywallOfferLowestPriceBadge": "എപ്പോഴും ഏറ്റവും കുറഞ്ഞ വില",
+  "@paywallOfferLowestPriceBadge": {
+    "description": "Бейдж \"LOWEST PRICE EVER\" над карточкой годовой подписки. лучше на русский/белорусский и украинский переводить по смыслу так: \"САМАЯ НИЗКАЯ ЦЕНА\""
+  },
+  "paywallOfferCancelAnytime": "എപ്പോഴും റദ്ദാക്കാം",
+  "@paywallOfferCancelAnytime": {
+    "description": "Подпись \"Cancel anytime\" между карточкой подписки и CTA. \"Отмена в любой момент\" - хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferClaimButton": "നിങ്ങളുടെ ഓഫർ ക്ലെയിം ചെയ്യുക",
+  "@paywallOfferClaimButton": {
+    "description": "CTA-кнопка для активации одноразового оффера. \"Получить предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallOfferAutoRenewable": "ഓട്ടോ-നവീകരണ സബ്സ്ക്രിപ്ഷൻ",
+  "@paywallOfferAutoRenewable": {
+    "description": "Футер шита одноразового оффера — текст про автопродление подписки"
+  },
+  "paywallGiftBoxTitle": "പ്രത്യേക സമ്മാനം ഉള്ളത്",
+  "@paywallGiftBoxTitle": {
+    "description": "Заголовок шита подарка перед одноразовым оффером"
+  },
+  "paywallGiftBoxSubtitle": "ഒരു ടാപ്പിൽ നിങ്ങളുടെ പ്രത്യേക ഓഫർ വെളിപ്പെടുത്തുക",
+  "@paywallGiftBoxSubtitle": {
+    "description": "Подзаголовок шита подарка с приглашением открыть оффер. \"Нажмите, чтобы открыть специальное предложение\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallGiftBoxOpenButton": "ഇപ്പോൾ തുറക്കുക",
+  "@paywallGiftBoxOpenButton": {
+    "description": "CTA-кнопка для открытия шита подарка. \"Открыть\" -  хороший ориентир для перевода на русский, украинский и белорусский"
+  },
+  "paywallRetryLoadPricesError": "സബ്സ്ക്രിപ്ഷൻ ഓപ്ഷനുകൾ ലോഡ് ചെയ്യാൻ പരാജയപ്പെട്ടു. ദയവായി പിന്നീട് വീണ്ടും ശ്രമിക്കുക.",
+  "@paywallRetryLoadPricesError": {
+    "description": "Тост-ошибка при неудачной повторной загрузке цен подписок на пейволле"
+  },
+  "paywallPricesUnavailableTitle": "സബ്സ്ക്രിപ്ഷൻ വിലകൾ ലോഡ് ചെയ്യാൻ കഴിയുന്നില്ല",
+  "@paywallPricesUnavailableTitle": {
+    "description": "Заголовок фолбэка на пейволле, когда RevenueCat не отдал цены подписок"
+  },
+  "paywallPricesUnavailableMessage": "നിങ്ങളുടെ കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.",
+  "@paywallPricesUnavailableMessage": {
+    "description": "Подзаголовок фолбэка на пейволле с просьбой проверить соединение и повторить"
+  },
+  "paywallPricesUnavailableRetryButton": "മറുപടി നൽകുക",
+  "@paywallPricesUnavailableRetryButton": {
+    "description": "Текст кнопки повторной загрузки цен в фолбэке пейволла"
+  },
+  "skipOnboardingButton": "Skip",
+  "@skipOnboardingButton": {
+    "description": "Кнопка для пропуска онбординга, должна быть записана емко и кратко. Например: \"Пр-ть\""
+  }
+}

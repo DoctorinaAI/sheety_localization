@@ -1,0 +1,230 @@
+{
+  "@@locale": "hu",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "Gomb példa",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Igen, minden rendben van!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Minden hozzájárulás gyógyít!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "A hozzájárulása segít ingyenes tanácsokat finanszírozni mások számára.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Fizess, ami jól esik,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "vagy továbbra is ingyen használhatod a Doctorinát, köszönhetően másoknak, akik úgy döntöttek, hogy adnak.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Egyszeri",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Havi",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Válassza ki a havi adomány összegét",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Ön most egy havi tervre kíván előfizetni.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Havi előfizetést vásárolsz {amount}/hó.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "A díjat a vásárlás megerősítésekor terheljük a fiókjára. A előfizetés automatikusan megújul minden hónapban, hacsak az automatikus megújítást nem kapcsolja ki legalább 24 órával a jelenlegi időszak vége előtt. Bármikor kezelheti vagy lemondhatja előfizetését a fiókbeállításokban. A folytatással elfogadja {termsOfService} és {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Válasszon egy összegű egyszeri adományt",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "A legtöbb ember $7–$15-t ad",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Válassza ki a valutát",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Fizetés feldolgozása",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Egyszeri {currency} {amount} összegű kifizetés feldolgozása",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Havi {amount} összegű kifizetés feldolgozása",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Köszönöm!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Most még több ember kap ingyenes tanácsot — a támogatása valóban felbecsülhetetlen.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Hozzájárultál:",
+  "@youContributedLabel": {},
+  "perMonth": "/ hónap",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Vissza a főképernyőre",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Szolgáltatási feltételek",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Adatvédelmi irányelvek",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Adományozás",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Aktív",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Lemondva",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Szüneteltetve",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Függő",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Létrehozva",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Időkorlát",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Ismeretlen",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina hozzájáruló",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Megújítja",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Előfizetés lemondása",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Biztos benne?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "A havi támogatásod ingyenessé teszi a Doctorinát azok számára, akik rá vannak utalva, de nem engedhetik meg maguknak, hogy fizessenek.\n\nA te előfizetésed legalább 10 ingyenes konzultációt finanszíroz havonta.\nHa elmész, kevesebb beteg kapja meg a szükséges segítséget.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Előfizetés megtartása",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Mégis törlés",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "A havi támogatás sikeresen lemondva.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Hibás előfizetési adatok",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Iratkozzon fel havi támogatásra, hogy itt megjelenjen.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Még nincsenek előfizetések",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Előfizetés dátuma",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Lejár",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Előfizetési azonosító",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Termékazonosító",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Rendben",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Nem tudtuk feldolgozni a kifizetését",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Hiba történt a fizetéssel. Kérjük, próbálja újra.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Újrapróbálkozás",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Fizetés feldolgozása",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "A vásárlását a Stripe biztonságos pénztári oldalán fejezheti be.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ hét",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ év",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Legnépszerűbb",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Bezárás",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "A prémium szolgáltatások, amiket kap:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Hirdetésmentes konzultációk",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Gyorsabb válaszok",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Korai hozzáférés az új funkciókhoz",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/hét",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Bármikor lemondhatja. Nincs kötelezettség.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "KORLÁTOZOTT IDŐ",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Hetente automatikusan megújul. Bármikor lemondhatja a beállításokban. A folytatással elfogadja <t>Felhasználási feltételeinket</t> és <p>Adatvédelmi irányelveinket</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Folytatás Prémium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 A támogatása segít, hogy a gondozás elérhető maradjon",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "A vásárlás befejezéséhez kérjük, regisztráljon vagy jelentkezzen be.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "@@locale": "tr",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "Türkçe",
+  "@lang": {},
+  "langEn": "Turkish",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Şimdi Güncelle",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Belki Sonra",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Yeni güncelleme mevcut",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Güncelleme Gerekli",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Uygulamanın yeni bir sürümü (v{version}) mevcut. En iyi deneyim için lütfen güncelleyin",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Devam etmek için, lütfen uygulamayı güncelleyin. Bu güncelleme önemli düzeltmeler ve iyileştirmeler içeriyor.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "İndir",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Zaten bir Doctorina hesabınız varsa giriş yapın veya başlamak için kaydolun.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Giriş yap",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Kaydol",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Misafir olarak devam et",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Giriş Yap",
+  "@titleLogin": {},
+  "titleLogout": "Çıkış Yap",
+  "@titleLogout": {},
+  "titleSignIn": "Giriş Yap",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Diyalog",
+  "@titleDialog": {},
+  "titleChat": "Sohbet",
+  "@titleChat": {},
+  "titleSettings": "Hesap Ayarları",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Sohbet Geçmişi",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Ödeme",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Aboneliği yönet",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Aylık Abonelik",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Eğitim",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Hoş geldiniz",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Sağlık kayıtları profilleri",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Profiller duyurusu",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Sağlık Kayıtları",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Tam kayıt",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Belgeler",
+  "@titleDocuments": {},
+  "titleConsultations": "Danışmanlıklar",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Ödeme Duvarı",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Silmek mi? Nedenini bize söyle!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Yeni bir sağlık sohbeti başlat",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Bir fikir paylaşın veya bir sorun bildirin",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Doctorina'nın nasıl gelişebileceğini bize söyleyin",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "@@locale": "te",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "లోపం సంభవించింది",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "అనుకోని లోపం సంభవించింది",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "బగ్ నివేదిక విజయవంతంగా పంపబడింది.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

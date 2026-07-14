@@ -1,0 +1,428 @@
+{
+  "@@locale": "el",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "Ιατρικά Αρχεία",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "ΝΕΟ",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Δημιουργήστε το Ιατρικό σας Αρχείο",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Στο τέλος της συμβουλής σας, προσθέστε το προφίλ σας.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Προσθέστε περισσότερα προφίλ",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Ξεκινήστε μια συμβουλή για κάποιον άλλο για να δημιουργήσει το προφίλ του.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Εγγραφείτε για να δημιουργήσετε το Ιατρικό σας Αρχείο",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Δοκιμάστε ξανά",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Αποτυχία διαγραφής προφίλ",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Αποτυχία φόρτωσης περιλήψεως προφίλ",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Δείτε το Πλήρες Ρεκόρ",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Μοιραστείτε",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Διαγραφή",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Ηλικία",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} χρόνος} other{{value} χρόνια}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Βάρος",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} κιλά",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Ύψος",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} εκ. ",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Αλλεργίες",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Χρόνια",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Φάρμακο",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Συσκευές",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Συμβουλές",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Έγγραφα",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Διαγραφή Ιατρικού Ρεκόρ;",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Αυτό θα αφαιρέσει μόνιμα τα δεδομένα υγείας σας και δεν μπορεί να αναιρεθεί. Θα χάσετε το πλαίσιο που χρησιμοποιούμε για να σας καθοδηγήσουμε.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Ακύρωση",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Διαγραφή",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Διαγραφή του ιατρικού σας αρχείου...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Αποτυχία διαγραφής προφίλ",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Η ιατρική εγγραφή διαγράφηκε",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Μπορείτε να δημιουργήσετε ένα νέο οποιαδήποτε στιγμή συνομιλώντας με τον βοηθό.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Επιστροφή στη συνομιλία",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Επεξεργασία",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Αποτυχία φόρτωσης δεδομένων προφίλ",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Οι αλλαγές αποθηκεύτηκαν",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Οι πληροφορίες σας έχουν ενημερωθεί με επιτυχία.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Επιστροφή στο προφίλ",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Αποτυχία ενημέρωσης δεδομένων προφίλ",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Θέλετε να απορρίψετε τις αλλαγές;",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Έχετε κάνει κάποιες αλλαγές στο προφίλ σας. Αποθηκεύστε τις πριν φύγετε ή απορρίψτε τις.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Συνέχισε την επεξεργασία",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Απόρριψη",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Επεξεργασία",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Προσθήκη καταγραφής",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Αναζήτηση",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Δεν βρέθηκαν αποτελέσματα",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Λήψη",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Μοιραστείτε",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Διαγραφή",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Δεν βρέθηκαν έγγραφα",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Διαγράψτε αυτό το έγγραφο;",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Αυτό το αρχείο θα αφαιρεθεί μόνιμα",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Ακύρωση",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Διαγραφή",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Περισσότερες ενέργειες",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Αναζήτηση",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Δεν βρέθηκαν προφίλ",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Δείτε περισσότερα",
+  "@profilesViewMore": {},
+  "profilesMore": "Περισσότερα",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Η Doctorina τώρα θυμάται την υγεία σας",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Οι συμβουλές σας τώρα δημιουργούν και ενημερώνουν αυτόματα το Ιατρικό σας Φάκελο.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Το Ιατρικό σας Αρχείο, οι κανόνες σας",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Δείτε, επεξεργαστείτε ή προσθέστε συμπτώματα, φάρμακα, ιστορικό ή έγγραφα οποιαδήποτε στιγμή.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Φροντίστε για ολόκληρη την οικογένειά σας",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Δημιουργήστε ένα Ιατρικό Φάκελο για τους αγαπημένους σας, τα παιδιά σας, τους γονείς σας ή τον σύντροφό σας.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Έτοιμοι να αποθηκεύσετε το Ιατρικό σας Αρχείο;",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Μετά τη συμβουλή σας, πατήστε «Προσθήκη προφίλ» για να το αποθηκεύσετε.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Επόμενο",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Ξεκινήστε μια συμβουλή",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Ίσως αργότερα",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Κλείσιμο",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Ιατρικό Ιστορικό",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Ιατρικό αρχείο — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...περισσότερα",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...λιγότερο",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Προσθήκη νέου προφίλ",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Δημιουργήστε ένα προφίλ για να αποθηκεύσετε τις λεπτομέρειες αυτής της συμβουλής.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Μπορείτε να το αξιολογήσετε οποιαδήποτε στιγμή στα Αρχεία Υγείας σας",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Αν έχετε περισσότερες ερωτήσεις για αυτό ή οτιδήποτε σχετικό, μην διστάσετε να συνεχίσετε να μιλάτε μαζί μου. Είμαι εδώ για να βοηθήσω",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Γενικές πληροφορίες",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Όνομα",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Όνομα",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "Γιάννης",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Επώνυμο",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Φύλο",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Επιλέξτε",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Άνδρας",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Γυναίκα",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Άλλο",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Ημερομηνία γέννησης",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Ηλικία",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "π.χ. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Αριθμός τηλεφώνου",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "Ηλεκτρονικό ταχυδρομείο",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Τοποθεσία",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "π.χ. Πόλη, Χώρα",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Σώμα & Διατροφή",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Ύψος",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "π.χ. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Βάρος",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "π.χ. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Κύκλος περιόδου",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "π.χ. Τακτική, Ακανόνιστη",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Διατροφικοί Περιορισμοί",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Παρακαλώ επιλέξτε",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Ενημερώστε μας τι τρώτε και τυχόν περιορισμούς που έχετε",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Κανένα",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Χορτοφάγος",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Βίγκαν",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Χωρίς γλουτένη",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Δείκτης Μάζας Σώματος (ΔΜΣ)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "π.χ. 24,5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Προφίλ Υγείας",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Χρόνιες Παθήσεις",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "π.χ. Διαβήτης Τύπου 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Παρακαλώ καταγράψτε όλες τις χρόνιες ασθένειες και συμπεριλάβετε πότε διαγνώστηκαν και τυχόν επιπλοκές.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Προηγούμενα νοσήματα",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "π.χ. Συχνό κοινό κρυολόγημα",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Παρακαλώ καταγράψτε σοβαρές ασθένειες που είχατε στο παρελθόν, ακόμη και αν αναρρώσατε.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Χειρουργικό ιστορικό",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "π.χ. Σκωληκοειδεκτομή",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Παρακαλώ καταγράψτε όλες τις χειρουργικές επεμβάσεις και συμπεριλάβετε το έτος και αν υπήρξαν επιπλοκές.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Φάρμακα που χρησιμοποιούνται περιστασιακά",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "π.χ. Ιβουπροφαίνη",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Παρακαλώ καταγράψτε τα φάρμακα που παίρνετε από καιρό σε καιρό (για παράδειγμα: παυσίπονα, φάρμακα αλλεργίας), συμπεριλαμβανομένης της δόσης και του λόγου χρήσης.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Τακτικά φάρμακα",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "π.χ. Μετφορμίνη",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Παρακαλώ καταγράψτε όλα τα φάρμακα που παίρνετε τακτικά, συμπεριλαμβανομένου του ονόματος, της δόσης, πόσες φορές την ημέρα το παίρνετε και για ποια κατάσταση είναι.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Αλλεργίες",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "π.χ. Πενικιλίνη – προκαλεί εξάνθημα",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Παρακαλώ καταγράψτε όλες τις αλλεργίες (φάρμακα, τρόφιμα, περιβάλλον) και περιγράψτε ποια αντίδραση έχετε (για παράδειγμα: εξάνθημα, πρήξιμο, προβλήματα αναπνοής).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Ειδικές παθήσεις",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "π.χ. Εγκυμοσύνη, Αναπηρία",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Εάν έχετε οποιεσδήποτε σημαντικές ιατρικές καταστάσεις που οι γιατροί θα πρέπει πάντα να γνωρίζουν (για παράδειγμα: εγκυμοσύνη, εμφυτευμένες συσκευές, αναπηρίες, θεραπεία αντιπηκτικών), παρακαλώ περιγράψτε τις. Αν δεν έχετε, μπορείτε να το αφήσετε κενό.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Οικογενειακό Ιστορικό",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "π.χ. Καρδιακή νόσος, Καρκίνος",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Παρακαλώ περιγράψτε σημαντικές ασθένειες στην οικογένειά σας (για παράδειγμα: διαβήτης, υπέρταση, καρδιοπάθεια, καρκίνος, γενετικές ασθένειες) και προσδιορίστε ποιο μέλος της οικογένειας είχε την κατάσταση.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Κοινωνικοί παράγοντες και παράγοντες τρόπου ζωής",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "π.χ. Κάπνισμα, Κατανάλωση αλκοόλ",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Παρακαλώ περιγράψτε παράγοντες τρόπου ζωής που μπορούν να επηρεάσουν την υγεία σας, όπως το κάπνισμα, το αλκοόλ, τη σωματική δραστηριότητα, τη διατροφή, τον ύπνο και το επάγγελμα.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Ιατρικές Συσκευές",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "π.χ. Βηματοδότης, Ακουστικό βαρηκοΐας, Αντλία ινσουλίνης",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Παρακαλώ αναφέρετε οποιαδήποτε ιατρική συσκευή χρησιμοποιείτε ή έχετε εμφυτευμένη, όπως βηματοδότες, αντλίες ινσουλίνης, ακουστικά, προσθετικά ή άλλες βοηθητικές ή παρακολουθητικές συσκευές. Συμπεριλάβετε σχετικές λεπτομέρειες αν υπάρχουν.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Παμφάγος",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Γρήγορο Φαγητό",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Ψαρο-χορτοφάγος",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Χωρίς λακτόζη",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Δίαιτα με χαμηλή πρόσληψη νατρίου",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Δίαιτα χαμηλής περιεκτικότητας σε ζάχαρη",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Δίαιτα για την καρδιά",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Νεφρική δίαιτα",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Άλλο",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

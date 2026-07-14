@@ -1,0 +1,286 @@
+{
+  "@@locale": "ml",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "sectionClearAllChatsTitle": "എല്ലാ ചാറ്റുകളും ക്ലിയർ ചെയ്യുക",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "ഇത് നിങ്ങളുടെ ചാറ്റ് ചരിത്രം സ്ഥിരമായി ഇല്ലാതാക്കും.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "എല്ലാ ചാറ്റുകളും ക്ലിയർ ചെയ്യുക",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "എല്ലാ ചാറ്റുകളും ക്ലിയർ ചെയ്യുക",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "അക്കൗണ്ട് നീക്കം ചെയ്യുക",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "നിങ്ങളുടെ അക്കൗണ്ട് നീക്കം ചെയ്യുന്നത് ഒരു സ്ഥിരമായ പ്രവർത്തനമാണ്, ഇത് തിരികെ എടുക്കാൻ കഴിയില്ല.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "മാറ്റി",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "അക്കൗണ്ട് നീക്കം ചെയ്യുക",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "സൈൻ ഔട്ട്",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "നിങ്ങൾ നിങ്ങളുടെ അക്കൗണ്ടിൽ നിന്ന് സൈൻ ഔട്ട് ആകും.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "സൈൻ ഔട്ട്",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "ബഗ് റിപ്പോർട്ട് അയയ്ക്കുക",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "സന്ദേശം അയക്കുക [⏎ Enter] ഉപയോഗിച്ച്",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "സന്ദേശം അയക്കാൻ [⏎ Enter] ഉപയോഗിക്കുക, പുതിയ വരി [Shift] + [⏎ Enter] ഉപയോഗിച്ച്",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "[⏎ Enter] ഉപയോഗിച്ച് അയക്കുക",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "ഗോപ്പനീയത നയം",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "ഭാഷ",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "ആപ്പിന്റെ ഇന്റർഫേസിന് നിങ്ങളുടെ ഇഷ്ടഭാഷ തിരഞ്ഞെടുക്കുക",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "കറുത്ത മോഡ്",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "കുറഞ്ഞ വെളിച്ചത്തിൽ സുഖകരമായ കാഴ്ചക്കായി ഇരുണ്ട മോഡ് സജീവമാക്കുക",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "ലോഗുകൾ",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "ഡിബഗ് ചെയ്യുന്നതിനായി ആപ്ലിക്കേഷൻ ലോഗുകൾ കാണുക ಮತ್ತು കൈകാര്യം ചെയ്യുക",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "ചെയ്തു",
+  "@doneButton": {},
+  "bugReportDialogTitle": "ബഗ് റിപ്പോർട്ട്",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "ദയവായി നിങ്ങൾ നേരിടുന്ന പിശക് വിവരിക്കുക",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "ഫയലുകൾ ചേർക്കുക",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "ഫയലുകൾ തിരഞ്ഞെടുക്കാൻ പരാജയപ്പെട്ടു",
+  "@filePickerError": {},
+  "emptyBugReportError": "ദയവായി ആദ്യം ഒരു ബഗ് റിപ്പോർട്ട് നൽകുക",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "ബഗ് റിപ്പോർട്ട് അയയ്ക്കാൻ പരാജയപ്പെട്ടു",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "സബ്സ്ക്രിപ്ഷൻ കൈകാര്യം ചെയ്യുക",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ ക്രമീകരണങ്ങൾ കൈകാര്യം ചെയ്യുക",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "Haptic Feedback",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "സഹായിക്കുന്ന ഉപകരണങ്ങളിൽ ഹാപ്റ്റിക് ഫീഡ്ബാക്ക് (കമ്പനം) സജീവമാക്കുക അല്ലെങ്കിൽ നിർത്തുക",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "അറിയിപ്പുകൾ ഓണാക്കുക",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "ഡോക്ടറിന നിങ്ങളുടെ ചാറ്റുകൾ, റിപ്പോർട്ടുകൾ, അല്ലെങ്കിൽ ലക്ഷണങ്ങളിൽ എന്തെങ്കിലും പ്രധാനപ്പെട്ടത് കണ്ടെത്തുമ്പോൾ അപ്ഡേറ്റ് ആയിരിക്കുക.",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "Account",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "ആപ്പ്",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "കുറിച്ച്",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "അറിയിപ്പുകൾ",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "വീഡിയോ ട്യൂട്ടോറിയലുകൾ",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "ഫോൺ",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "ഇമെയിൽ",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "പേര്",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "{count} ഫയലുകൾ നിലവിലുള്ള ഫയലുകളുമായി പുനരാവൃതമായതിനാൽ ഒഴിവാക്കി",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "തരം",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "വിവരണം",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "അറ്റാച്ച്മെന്റുകൾ",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "ബഗ്",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "ക്രാഷ്",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "യൂഐ പ്രശ്നം",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "മറ്റു",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കുന്നത് ഡോക്ടറിനയിൽ നിന്നുള്ള നിങ്ങളുടെ ഡാറ്റ സ്ഥിരമായി നീക്കം ചെയ്യും.",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "നിങ്ങൾ ഇല്ലാതാക്കുന്നതിന് മുമ്പ്",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "{store} വഴി നിങ്ങൾക്ക് ഒരു സബ്സ്ക്രിപ്ഷൻ സജീവമാണ്. നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കുന്നത് അത് റദ്ദാക്കുകയില്ല.",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "{store} ൽ സബ്സ്ക്രിപ്ഷൻ റദ്ദാക്കുക",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "തുടരുക",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "നിങ്ങളെ പോകുന്നത് കാണാൻ ഞങ്ങൾ ദുഖിതരാണ്. നിങ്ങൾ നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കാൻ ഉറപ്പാണോ? നിങ്ങൾ സ്ഥിരീകരിച്ചാൽ, നിങ്ങളുടെ ഡാറ്റ ഇല്ലാതാകും.",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "ഞാൻ ആപ്പ് ഇനി ഉപയോഗിക്കുന്നില്ല",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "മികച്ചതൊന്നാണ് കണ്ടെത്തിയത്",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "താങ്കളുടെ അക്കൗണ്ട് നീക്കം ചെയ്യാനുള്ള കാരണം: സാങ്കേതിക പ്രശ്നങ്ങൾ",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "ഉപയോഗത്തിലെ പ്രശ്നങ്ങൾ",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "സവിശേഷതകളുടെ കുറവ്",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "സ്വകാര്യത സംബന്ധമായ ആശങ്കകൾ",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "ഞാൻ എന്റെ ഡാറ്റ മാത്രം ക്ലിയർ ചെയ്യാൻ ആഗ്രഹിച്ചിരുന്നു",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "മറ്റത്",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "നിങ്ങളുടെ ഫീഡ്ബാക്ക് പങ്കിടുക",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "നിങ്ങളുടെ അക്കൗണ്ട് നീക്കം ചെയ്യുന്നു...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "മാറ്റുന്നു",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "തിരിച്ചെടുക്കുക",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കി.",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "അക്കൗണ്ട് ഇല്ലാതാക്കാൻ പരാജയപ്പെട്ടു. ദയവായി വീണ്ടും ശ്രമിക്കുക.",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "ഈ ഉപകരണത്തിൽ ഇമെയിൽ ആപ്പ് ലഭ്യമല്ല. ദയവായി support@doctorina.com എന്ന വിലാസത്തിൽ കൈമാറുക.",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

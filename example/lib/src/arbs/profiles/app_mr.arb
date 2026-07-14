@@ -1,0 +1,428 @@
+{
+  "@@locale": "mr",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "आरोग्य नोंदी",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "नवीन",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "तुमचा आरोग्य रेकॉर्ड तयार करा",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "तुमच्या सल्ल्यानंतर, तुमचा प्रोफाइल जोडा",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "अधिक प्रोफाइल जोडा",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "कोणीतरी दुसऱ्यासाठी त्यांचा प्रोफाइल तयार करण्यासाठी सल्ला सुरू करा",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "तुमचा आरोग्य रेकॉर्ड तयार करण्यासाठी साइन अप करा",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "पुन्हा प्रयत्न करा",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "प्रोफाइल हटवण्यात अयशस्वी",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "प्रोफाइल सारांश लोड करण्यात अयशस्वी",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "पूर्ण रेकॉर्ड पहा",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "सामायिक करा",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "हटवा",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "वय",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} वर्ष} other{{value} वर्षे}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "वजन",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} किग्रॅ",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "उंचाई",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} सेंटीमीटर",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "-",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "अलर्जी",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "दीर्घकालीन",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "औषधे",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "उपकरण",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "सल्ला",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "कागदपत्रे",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "आरोग्य रेकॉर्ड हटवायचा का?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "हे तुमच्या आरोग्य डेटा कायमचा हटवेल आणि ते पूर्ववत केले जाऊ शकत नाही. तुम्हाला आम्ही तुम्हाला मार्गदर्शन करण्यासाठी वापरतो त्या संदर्भाची हानी होईल.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "रद्द करा",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "हटवा",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "तुमचा आरोग्य रेकॉर्ड हटविला जात आहे...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "प्रोफाइल हटवण्यात अयशस्वी",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "आरोग्य नोंदणी हटवली",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "तुम्ही सहायकाशी चॅट करून कधीही नवीन एक तयार करू शकता.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "चॅटवर परत जा",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "संपादन",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "प्रोफाइल डेटा लोड करण्यात अयशस्वी",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "बदल जतन केले",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "तुमची माहिती यशस्वीरित्या अद्यतनित करण्यात आली आहे",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "प्रोफाइलवर परत जा",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "प्रोफाइल डेटा अद्यतन करण्यात अयशस्वी",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "बदलांना काढून टाकायचे का?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "तुम्ही तुमच्या प्रोफाइलमध्ये काही बदल केले आहेत. तुम्ही जाण्यापूर्वी त्यांना जतन करा, किंवा त्यांना काढून टाका.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "संपादन सुरू ठेवा",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "काढा",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "संपादित करा",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "रेकॉर्ड जोडा",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "शोधा",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "कोणतीही परिणामे सापडली नाहीत",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "डाउनलोड",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "सामायिक करा",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "हटवा",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "कोणतेही दस्तऐवज सापडले नाहीत",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "या दस्तऐवजाला हटवायचे का?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "हा फाइल कायमचा हटवला जाईल",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "रद्द करा",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "हटवा",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "आणखी कृती",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "शोधा",
+  "@profilesSearch": {},
+  "profilesEmptyList": "कोणतेही प्रोफाइल आढळले नाहीत",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "आणखी पहा",
+  "@profilesViewMore": {},
+  "profilesMore": "अधिक",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "डॉक्टरिना आता तुमच्या आरोग्याची आठवण ठेवते",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "तुमच्या सल्लामसलती आता तुमचा आरोग्य रेकॉर्ड स्वयंचलितपणे तयार आणि अद्यतनित करतात.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "तुमचा आरोग्य रेकॉर्ड, तुमचे नियम",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "कधीही लक्षणे, औषधे, इतिहास किंवा दस्तऐवज पहा, संपादित करा किंवा जोडा",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "तुमच्या संपूर्ण कुटुंबाची काळजी घ्या",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "तुमच्या प्रियजनांसाठी, तुमच्या मुलांसाठी, पालकांसाठी किंवा भागीदारासाठी आरोग्य रेकॉर्ड तयार करा.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "तुमचा आरोग्य रेकॉर्ड जतन करण्यास तयार आहात का?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "तुमच्या सल्ल्यानंतर, ते जतन करण्यासाठी \"प्रोफाइल जोडा\" वर टॅप करा.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "आगामी",
+  "@profilesNextButton": {},
+  "profilesStartButton": "सल्ला सुरू करा",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "कदाचित नंतर",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "बंद करा",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "आरोग्य नोंद",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "आरोग्य नोंद — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...अधिक",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "कमी",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "नवीन प्रोफाइल जोडा",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "या सल्ल्याचे तपशील जतन करण्यासाठी एक प्रोफाइल तयार करा.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "आपण ते कधीही आपल्या आरोग्य नोंदींमध्ये पाहू शकता",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "याबद्दल किंवा त्यासंबंधित काही प्रश्न असतील, तर मोकळेपणाने माझ्याशी बोलत राहा. मी मदत करण्यासाठी येथे आहे",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "सामान्य माहिती",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "नाव",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "पहिला नाव",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "जॉन",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "आडनाव",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "लिंग",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "कृपया निवडा",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "पुरुष",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "महिला",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "इतर",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "जन्मतारीख",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "वय",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "उदा. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "फोन नंबर",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "ईमेल",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "स्थान",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "उदा. शहर, देश",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "शरीर आणि आहार",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "उंची",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "उदा. 180 सेमी",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "वजन",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "उदा. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "महिनावारीचा चक्र",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "उदा. नियमित, अनियमित",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "आहार निर्बंध",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "कृपया निवडा",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "तुम्ही काय खातात आणि तुमच्याकडे कोणतेही निर्बंध आहेत का ते आम्हाला सांगा",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "काहीही नाही",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "शाकाहारी",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "व्हेगन",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "ग्लूटेनमुक्त",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "शरीर द्रव्यमान निर्देशांक (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "उदा. 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "आरोग्य प्रोफाइल",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "दीर्घकालीन आजार",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "उदाहरणार्थ, मधुमेह प्रकार 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "कृपया सर्व दीर्घकालीन आजारांची यादी करा आणि ते कधी निदान झाले आणि कोणत्याही गुंतागुंतांचा समावेश करा.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "पूर्वीचे आजार",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "उदाहरण: वारंवार सामान्य सर्दी",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "कृपया तुम्हाला भूतकाळात झालेल्या गंभीर आजारांची यादी करा, अगदी तुम्ही बरे झालात तरी.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "शस्त्रक्रियांचा इतिहास",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "उदा. अपेंडेक्टॉमी",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "कृपया सर्व शस्त्रक्रिया सूचीबद्ध करा आणि वर्ष आणि कोणत्याही गुंतागुंतांचा समावेश करा.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "कधीकधी वापरली जाणारी औषधे",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "उदाहरणार्थ, आयबुप्रोफेन",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "कृपया तुम्ही वेळोवेळी घेतलेल्या औषधांची यादी करा (उदाहरणार्थ: वेदनाशामक, एलर्जी औषधे), त्यात डोस आणि वापराचा कारण समाविष्ट करा.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "नियमित औषधे",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "उदाहरणार्थ मेटफॉर्मिन",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "कृपया तुम्ही नियमितपणे घेत असलेल्या सर्व औषधांची यादी करा, त्यात नाव, डोस, तुम्ही दिवसातून किती वेळा ते घेतात आणि ते कोणत्या स्थितीसाठी आहे.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "अलर्जी",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "उदाहरण: पेनिसिलिन - चकत्या येतात",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "कृपया सर्व अॅलर्जी (औषधे, अन्न, पर्यावरण) सूचीबद्ध करा आणि तुम्हाला काय प्रतिक्रिया होते हे वर्णन करा (उदाहरणार्थ: पुरळ, सूज, श्वास घेण्यास समस्या).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "विशेष परिस्थिती",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "उदा. गर्भावस्था, दिव्यांगता",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "तुमच्याकडे कोणत्याही महत्त्वाच्या वैद्यकीय परिस्थिती असल्यास ज्या डॉक्टरांना नेहमी माहित असणे आवश्यक आहे (उदाहरणार्थ: गर्भधारण, इम्प्लांट केलेले उपकरण, अपंगत्व, अँटीकोआग्युलेशन थेरपी), कृपया त्यांचे वर्णन करा. जर काही नसेल, तर तुम्ही हे रिकामे ठेवू शकता.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "कौटुंबिक इतिहास",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "उदा. हृदयविकार, कर्करोग",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "कृपया आपल्या कुटुंबातील महत्त्वाच्या रोगांचे वर्णन करा (उदाहरणार्थ: मधुमेह, उच्च रक्तदाब, हृदय रोग, कर्करोग, आनुवंशिक रोग) आणि कोणत्या कुटुंबाच्या सदस्याला ही स्थिती होती ते निर्दिष्ट करा.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "सामाजिक व जीवनशैली घटक",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "उदा. धूम्रपान, मद्यपान",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "कृपया आपल्या आरोग्यावर प्रभाव टाकणाऱ्या जीवनशैलीच्या घटकांचे वर्णन करा, जसे की धूम्रपान, मद्यपान, शारीरिक क्रियाकलाप, आहार, झोप, आणि व्यवसाय.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "वैद्यकीय उपकरणे",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "उदा. पेसमेकर, श्रवणयंत्र, इन्सुलिन पंप",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "कृपया तुम्ही वापरत असलेल्या किंवा इम्प्लांट केलेल्या कोणत्याही वैद्यकीय उपकरणांची यादी करा, जसे की पेसमेकर, इन्सुलिन पंप, ऐकण्याचे यंत्र, कृत्रिम अंग, किंवा इतर सहाय्यक किंवा निरीक्षण उपकरणे. लागू असल्यास संबंधित तपशील समाविष्ट करा.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "सर्वाहारी",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "फास्ट फूड",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "पेस्काटेरियन",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "लॅक्टोज-मुक्त",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "कमी सोडियम आहार",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "कमी साखरेचा आहार",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "हृदय आहार",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "मूत्रपिंड आहार",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "इतर",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

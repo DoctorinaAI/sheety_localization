@@ -1,0 +1,393 @@
+{
+  "@@locale": "lo",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "logIn": "ເຂົ້າສູ່ລະບົບ",
+  "@logIn": {
+    "description": "Надпись \"логин\""
+  },
+  "password": "ລະຫັດ",
+  "@password": {
+    "description": "Надпись \"пароль\""
+  },
+  "changeNumber": "ປ່ອນເລກ",
+  "@changeNumber": {},
+  "forgotPassword": "ລືມລະຫັດຜ່ານບໍ?",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "ໃສ່ອີເມວຂອງທ່ານ ແລະພວກເຮົາຈະສົ່ງລິ້ງເພື່ອປ່ອນລະຫັດຜ່ານຂອງທ່ານ.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "ຈົ່ງຈືດບັດລະຫັດຂອງທ່ານບໍ?",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "ຂໍໃຫ້ມີລະຫັດຜ່ານ",
+  "@backToLoginButton": {},
+  "continueButton": "ດຳເນີນຕໍ່",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "ອີເມວການຕັ້ງລະຫັດຜ່ານແລ້ວ",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "ປ່ອນລະຫັດໃໝ່",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "ຢືນຢັນລະຫັດ",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "ເລີ່ມໃຊ້ Doctorina ມື້ນີ້",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "OR",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "ໃສ່ລະຫັດຜ່ານຂອງທ່ານ",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "ແສດສະບັດ",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "ປິດບັດລະຫັດ",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "ລົບການເຂົ້າໃຊ້",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "Email ຫ或者 ໂທລະສັບ",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com or +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "ໃສ່ອີເມວ ຫຼື ບັດເທັດເບີ",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "ກະລຸນາຍອມຮັບຂໍແອກເພື່ອດຳເນີນຕໍ່",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "ຂ້າພະເຈົ້າຍອມຮັບການດໍາເນີນງານຂໍ້ມູນສ່ວນຕົວ,",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "ການໃຊ້ງານຂອງ",
+  "@consentTheUseOf": {},
+  "consentCookies": "cookies",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", ຍອມຮັບ",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "terms and conditions",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", ແລະຍອມຮັບ",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "niti za privatnost",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "ຂໍອະໄພວ່າການປຶກສາຂອງຂໍ້ມູນແມ່ນກັບ AI ແລະບໍ່ແມ່ນຜູ້ໃຊ້ບັດທະບຽນ.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "ອອກ",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "ທ່ານແນ່ໃຈບໍ່ວ່າຈະອອກຈາກລະບົບ?",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "ຍົກເລີກ",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "Yes, log out",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "ສົ່ງລະຫັດອີກ",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "Reenviar código ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  },
+  "consentFull": "ຂ້ອຍຍອມຮັບການຈັດການຂໍ້ມູນສ່ວນຕົວ, ການໃຊ້ <c>cookies</c>, ຍອມຮັບ <t>ເງື່ອນໄຂແລະຂໍ້ຕົກລົງ</t>, ແລະຢືນຢັນ <p>ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</p>",
+  "@consentFull": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <c> <t> <p> указаны кликабельные спаны, они должны присутсвовать во всех языках."
+  },
+  "emailLabel": "ໃສ່ອີເມວຂອງທ່ານ",
+  "@emailLabel": {
+    "description": "Email input field label."
+  },
+  "signUpWithEmailTitle": "ລົງຮ່ວມຜ່ານອີເມວ",
+  "@signUpWithEmailTitle": {
+    "description": "AppBar title for email signup overlay"
+  },
+  "logInWithEmailTitle": "ເຂົ້າລະບົບດ້ວຍອີເມວ",
+  "@logInWithEmailTitle": {
+    "description": "AppBar title for email login overlay"
+  },
+  "phoneLabel": "ໃສ່ເບີໂທຂອງທ່ານ",
+  "@phoneLabel": {
+    "description": "Phone input field label"
+  },
+  "confirmPhoneTitle": "ຢືນຢັນໂທລະສັບຂອງທ່ານ",
+  "@confirmPhoneTitle": {
+    "description": "AppBar title for phone confirmation screen"
+  },
+  "signUpText": "ລົງທະບຽນ",
+  "@signUpText": {
+    "description": "Standalone \"Sign up\" text for buttons and tabs"
+  },
+  "emailHintShort": "ໃສ່ອີເມວ",
+  "@emailHintShort": {
+    "description": "Short email hint text in login dialog"
+  },
+  "buttonTextSignUpWithGoogle": "ລົງທະບຽນດ້ວຍ Google",
+  "@buttonTextSignUpWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextSignUpWithApple": "ລົງທະບຽນດ້ວຍ Apple",
+  "@buttonTextSignUpWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextSignUpWithPhone": "ລົງທະບຽນຜ່ານໂທລະສັບ",
+  "@buttonTextSignUpWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "buttonTextLoginWithGoogle": "ເຂົ້າລະບົບຜ່ານ Google",
+  "@buttonTextLoginWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextLoginWithApple": "ເຂົ້າລະບົບດ້ວຍ Apple",
+  "@buttonTextLoginWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextLoginWithPhone": "ເຂົ້າລະບົບຜ່ານໂທລະສັບ",
+  "@buttonTextLoginWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "youAreLoggedOutMessage": "ທ່ານໄດ້ອອກຈາກລະບົບ",
+  "@youAreLoggedOutMessage": {
+    "description": "Message displayed on logout screen"
+  },
+  "reloadButtonText": "ຄືນລົงໂຫຼດ",
+  "@reloadButtonText": {
+    "description": "Reload button text on logout screen"
+  },
+  "emailErrorText": "ອີເມວບໍ່ຖືກຕ້ອງ",
+  "@emailErrorText": {
+    "description": "Error message for invalid email address"
+  },
+  "passwordErrorText": "ລະຫັດຜ່ານຕ້ອງມີຢ່າງນ້ອຍ 6 ຕົວອັກສອນ",
+  "@passwordErrorText": {
+    "description": "Error message for password validation (minimum length)"
+  },
+  "invalidPhoneNumberError": "ເບີໂທລະສັບບໍ່ຖືກຕ້ອງ: {phoneNumber}",
+  "@invalidPhoneNumberError": {
+    "description": "Error message for invalid phone number format"
+  },
+  "resendCodeWaitError": "ກະລຸນາລໍຖ້ວຍ {seconds} ວິນາທີກ່ອນຂໍເລກລະຫັດໃໝ່.",
+  "@resendCodeWaitError": {
+    "description": "Error message when trying to resend code too soon"
+  },
+  "invalidPhoneCodeError": "ລະຫັດໂທລະສັບບໍ່ຖືກຕ້ອງ: {phoneCode}",
+  "@invalidPhoneCodeError": {
+    "description": "Error message for invalid phone verification code"
+  },
+  "termsAndConditionsText": "ເງື່ອນໄຂແລະຂໍ້ກຳນົด",
+  "@termsAndConditionsText": {
+    "description": "Terms and conditions link text in login dialog"
+  },
+  "continueAsGuestBtn": "ດຳເນີນຕໍ່ເປັນຜູ້ເຂົ້າຊົມ",
+  "@continueAsGuestBtn": {
+    "description": "Btn to continue as guest on sign up screen"
+  },
+  "noAccountYetPromptText": "ຍັງບໍ່ມີບັນຊີ? <p>ລົງທະບຽນ</p>",
+  "@noAccountYetPromptText": {
+    "description": "Login tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Sign up” link."
+  },
+  "alreadyHaveAccountPromptText": "ທ່ານມີບັນຊີແລ້ວບໍ? <p>ເຂົ້າລະບົບ</p>",
+  "@alreadyHaveAccountPromptText": {
+    "description": "Sign up tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Log in” link."
+  },
+  "beforeSubscribeYouNeedSignUpLoginDialogSubtitle": "ທ່ານຕ້ອງລົງທະບຽນກ່ຽວກັບກ່ຽວກັບ Premium",
+  "@beforeSubscribeYouNeedSignUpLoginDialogSubtitle": {
+    "description": "Subtitle for login dialog"
+  },
+  "loginSubtitle": "ເພີ່ມເລື່ອງສໍາລັບບຸກຄົນແລະຮັກສາສິດສະຖານທີ່ຂອງທ່ານ!",
+  "@loginSubtitle": {
+    "description": "Подзаголовок на экране входа, мотивирующий пользователя авторизоваться"
+  },
+  "emailFieldLabel": "E-mail",
+  "@emailFieldLabel": {
+    "description": "Метка поля ввода email в форме"
+  },
+  "emailPlaceholder": "username@gmail.com",
+  "@emailPlaceholder": {
+    "description": "Пример email в поле ввода"
+  },
+  "recoverPasswordTooltip": "ກູ້ຄືນລະຫັດຜ່ານຂອງເຈົ້າ",
+  "@recoverPasswordTooltip": {
+    "description": "Тултип кнопки восстановления пароля когда email валиден"
+  },
+  "createAccountTitle": "ສ້າງບັດທະບຽນ",
+  "@createAccountTitle": {
+    "description": "Заголовок экрана регистрации"
+  },
+  "createAccountSubtitle": "ພວກເຮົາຕ້ອງການບັດທະບຽນເພື່ອບັນທຶກຂໍ້ມູນສຸຂະພາບຂອງເຈົ້າແລະດຳເນີນການປ່ອນບັດທະບຽນ.",
+  "@createAccountSubtitle": {
+    "description": "Подзаголовок экрана регистрации, объясняет зачем нужен аккаунт"
+  },
+  "repeatLabel": "ປະກອບກັນ",
+  "@repeatLabel": {
+    "description": "Метка поля повторного ввода пароля"
+  },
+  "repeatPasswordHint": "ກະລຸນາຊໍາລວນລະຫັດຜ່ານຂອງເທັດ",
+  "@repeatPasswordHint": {
+    "description": "Подсказка в поле повторного ввода пароля"
+  },
+  "confirmButton": "ຢືນຢັນ",
+  "@confirmButton": {
+    "description": "Кнопка подтверждения регистрации с паролем"
+  },
+  "noAccountPrompt": "ຍັງບໍ່ມີບັນຊີບໍ?",
+  "@noAccountPrompt": {
+    "description": "Текст перед ссылкой на регистрацию на экране входа"
+  },
+  "alreadyHaveAccountPrompt": "ມີບັນຊີແລ້ວບໍ?",
+  "@alreadyHaveAccountPrompt": {
+    "description": "Текст перед ссылкой на вход на экране регистрации"
+  },
+  "createPasswordHeader": "ສ້າງລະຫັດຜ່ານ",
+  "@createPasswordHeader": {
+    "description": "Заголовок шага создания пароля в хедере диалога"
+  },
+  "phoneHeader": "ໂທລະສັບ",
+  "@phoneHeader": {
+    "description": "Заголовок шага ввода телефона в хедере диалога"
+  },
+  "verifyPhoneHeader": "ຢືນຢັນເບີໂທລະສັບ",
+  "@verifyPhoneHeader": {
+    "description": "Заголовок шага верификации телефона в хедере диалога"
+  },
+  "phoneTitle": "ເບີໂທຂອງເຈົ້າແມ່ນຫຍັງ?",
+  "@phoneTitle": {
+    "description": "Заголовок экрана ввода номера телефона"
+  },
+  "phoneSubtitle": "ພວກເຮົາຈະສົ່ງຂໍ້ຄວາມລະຫັດເພື່ອຢືນຢັນໂທລະສັບຂອງທ່ານ",
+  "@phoneSubtitle": {
+    "description": "Подзаголовок экрана ввода телефона"
+  },
+  "phoneNumberLabel": "ຕົວເລກ",
+  "@phoneNumberLabel": {
+    "description": "Метка поля ввода номера телефона"
+  },
+  "enterPhoneNumber": "ໃສ່ເບີໂທລະສັບ",
+  "@enterPhoneNumber": {
+    "description": "Подсказка в поле ввода телефона"
+  },
+  "phonePlaceholder": "+1 (201) 555-01-23",
+  "@phonePlaceholder": {
+    "description": "Пример номера телефона в поле ввода"
+  },
+  "waitCountdownButton": "ລໍຖ້າ {countdown} ວິນາທີ",
+  "@waitCountdownButton": {
+    "description": "Текст кнопки во время ожидания повторной отправки OTP",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next OTP can be sent"
+      }
+    }
+  },
+  "enterCodeTitle": "ໃສ່ລະຫັດຂອງເຈົ້າ",
+  "@enterCodeTitle": {
+    "description": "Заголовок экрана ввода OTP кода"
+  },
+  "codeSentToPhone": "ເຮັດສົ່ງລະຫັດໄປທີ່ {phone}",
+  "@codeSentToPhone": {
+    "description": "Текст с информацией куда отправлен код",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+1234567890",
+        "description": "Phone number where code was sent"
+      }
+    }
+  },
+  "didntReceiveCode": "ບໍ່ໄດ້ຮັບລະຫັດບໍ?",
+  "@didntReceiveCode": {
+    "description": "Текст перед ссылкой на повторную отправку кода"
+  },
+  "clickToResend": "ຄລິກເພື່ອສົ່ງຄືນໃໝ່",
+  "@clickToResend": {
+    "description": "Текст ссылки повторной отправки кода"
+  },
+  "requestNewCodeCountdown": "ທ່ານສາมາດຂໍລະຫັດໃໝ່ໃນ {countdown} ວິນາທີ",
+  "@requestNewCodeCountdown": {
+    "description": "Текст с обратным отсчётом до возможности повторной отправки кода",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next code request"
+      }
+    }
+  },
+  "closeTooltip": "ປິດ",
+  "@closeTooltip": {
+    "description": "Тултип кнопки закрытия диалога"
+  },
+  "backTooltip": "ກັບຄືນ",
+  "@backTooltip": {
+    "description": "Тултип кнопки назад"
+  },
+  "termsOfServiceLink": "ເງື່ອນໄຂການໃຫ້ບໍລິການ",
+  "@termsOfServiceLink": {
+    "description": "Текст ссылки на условия использования в футере"
+  },
+  "privacyPolicyLink": "ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ",
+  "@privacyPolicyLink": {
+    "description": "Текст ссылки на политику конфиденциальности в футере"
+  },
+  "welcomeBackTitle": "ຍິນດີກັບຄືນ",
+  "@welcomeBackTitle": {
+    "description": "Заголовок экрана приветствия при возвращении пользователя"
+  },
+  "welcomeBackSubtitle": "ເຂົ້າສູ່ລະບົບຖ້າທ່ານມີບັດທີ່ Doctorina ຢູ່ແລ້ວ ຫຼື ເຂົ້າລົງທະບຽນເພື່ອເລີ່ມຕົ້ນ.",
+  "@welcomeBackSubtitle": {
+    "description": "Подзаголовок экрана приветствия, предлагающий войти или зарегистрироваться"
+  },
+  "passwordRuleLength": "ຈາກ 8 ຖຶງ 128 ອັກສອນ",
+  "@passwordRuleLength": {
+    "description": "Правило валидации пароля: длина от 8 до 128 символов"
+  },
+  "passwordRuleNumber": "ມີເລກໃນລະຫັດຜ່ານຢ່າງນໍາທີ່ 1",
+  "@passwordRuleNumber": {
+    "description": "Правило валидации пароля: минимум 1 цифра"
+  },
+  "passwordRuleUppercase": "ມີສະຕິດສະດວກ 1 ອັກສອນໃຫຍ່",
+  "@passwordRuleUppercase": {
+    "description": "Правило валидации пароля: минимум 1 заглавная буква"
+  },
+  "passwordRuleMatch": "ລະຫັດຜ່ານສອດກັນ",
+  "@passwordRuleMatch": {
+    "description": "Правило валидации пароля: пароли совпадают"
+  },
+  "phoneOtpVerificationFailed": "ການຢືນຢັນ OTP ລົ້ມເຫຼວ. ກະລຸນາລອງໃໝ່ອີກຄັ້ງ.",
+  "@phoneOtpVerificationFailed": {},
+  "referralCodeLabel": "Referral code",
+  "@referralCodeLabel": {
+    "description": "Заголовок поля ввода реферального кода на экране регистрации"
+  },
+  "enterReferralCodeHint": "ໃສ່ລະຫັດອໍ່ອິງຂອງທ່ານ",
+  "@enterReferralCodeHint": {
+    "description": "Подсказка (labelText) в поле ввода реферального кода"
+  },
+  "referralCodeExampleHint": "ຕົວຢ່າງ CREATOR2026",
+  "@referralCodeExampleHint": {
+    "description": "Пример реферального кода в поле ввода (hintText)"
+  },
+  "haveReferralCodeQuestion": "ມີລະຫັດອໍ່ນຳສູງບໍ?",
+  "@haveReferralCodeQuestion": {
+    "description": "Ссылка-вопрос, раскрывающая поле ввода реферального кода"
+  }
+}

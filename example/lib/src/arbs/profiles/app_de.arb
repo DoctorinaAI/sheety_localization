@@ -1,0 +1,428 @@
+{
+  "@@locale": "de",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "Gesundheitsakten",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "NEU",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Erstellen Sie Ihre Gesundheitsakte",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Fügen Sie am Ende Ihrer Beratung Ihr Profil hinzu.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Weitere Profile hinzufügen",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Starten Sie eine Beratung für jemand anderen, um dessen Profil zu erstellen.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Melden Sie sich an, um Ihre Gesundheitsakte zu erstellen",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Erneut versuchen",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Profil konnte nicht gelöscht werden",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Fehler beim Laden der Profilübersicht",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Vollständigen Datensatz anzeigen",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Teilen",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Löschen",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Alter",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} Jahr} other{{value} Jahre}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Gewicht",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Höhe",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Allergien",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Chronisch",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Medikament",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Geräte",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Konsultationen",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Dokumente",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Gesundheitsakte löschen?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Dies wird Ihre Gesundheitsdaten dauerhaft entfernen und kann nicht rückgängig gemacht werden. Sie verlieren den Kontext, den wir verwenden, um Sie zu leiten.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Abbrechen",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Löschen",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Löschen Ihres Gesundheitsdatensatzes...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Profil konnte nicht gelöscht werden",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Gesundheitsakte gelöscht",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Sie können jederzeit einen neuen erstellen, indem Sie mit dem Assistenten chatten.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Zurück zum Chat",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Bearbeiten",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Profildaten konnten nicht geladen werden",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Änderungen gespeichert",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Ihre Informationen wurden erfolgreich aktualisiert.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Zurück zum Profil",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Fehler beim Aktualisieren der Profildaten",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Änderungen verwerfen?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Sie haben einige Änderungen an Ihrem Profil vorgenommen. Speichern Sie sie, bevor Sie gehen, oder verwerfen Sie sie.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Weiter bearbeiten",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Verwerfen",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Bearbeiten",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Aufzeichnung hinzufügen",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Suche",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Keine Ergebnisse gefunden",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Herunterladen",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Teilen",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Löschen",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Keine Dokumente gefunden",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Dieses Dokument löschen?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Diese Datei wird dauerhaft entfernt",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Abbrechen",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Löschen",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Weitere Aktionen",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Suche",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Keine Profile gefunden",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Mehr anzeigen",
+  "@profilesViewMore": {},
+  "profilesMore": "Mehr",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina erinnert sich jetzt an Ihre Gesundheit",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Ihre Konsultationen erstellen und aktualisieren jetzt automatisch Ihre Gesundheitsakte.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Ihr Gesundheitsbericht, Ihre Regeln",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Symptome, Medikamente, Vorgeschichte oder Dokumente jederzeit anzeigen, bearbeiten oder hinzufügen.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Kümmern Sie sich um Ihre ganze Familie",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Erstellen Sie eine Gesundheitsakte für Ihre Angehörigen, Ihre Kinder, Eltern oder Partner.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Bereit, Ihre Gesundheitsakte zu speichern?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Tippen Sie nach Ihrer Beratung auf „Profil hinzufügen“, um es zu speichern.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Weiter",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Eine Beratung starten",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Vielleicht später",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Schließen",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Gesundheitsakte",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Gesundheitsakte — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...mehr",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...weniger",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Neues Profil hinzufügen",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Erstellen Sie ein Profil, um die Details dieser Konsultation zu speichern.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Sie können es jederzeit in Ihren Gesundheitsakten einsehen",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Wenn Sie weitere Fragen dazu oder zu etwas anderem haben, können Sie gerne weiter mit mir sprechen. Ich bin hier, um zu helfen",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Allgemeine Informationen",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Name",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Vorname",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Nachname",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Geschlecht",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Bitte auswählen",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Männlich",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Weiblich",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Andere",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Geburtsdatum",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "JJJJ-MM-TT",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Alter",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "z.B. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Telefonnummer",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "E-Mail",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "beispiel@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Standort",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "z.B. Stadt, Land",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Körper & Ernährung",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Höhe",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "z.B. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Gewicht",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "z.B. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Menstruationszyklus",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "z.B. Regelmäßig, Unregelmäßig",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Diätetische Einschränkungen",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Bitte auswählen",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Lassen Sie uns wissen, was Sie essen und welche Einschränkungen Sie haben",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Keine",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Vegetarisch",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Vegan",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Glutenfrei",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Body-Mass-Index (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "z.B. 24,5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Gesundheitsprofil",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Chronische Krankheiten",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "z.B. Diabetes Typ 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Bitte listen Sie alle chronischen Krankheiten auf und geben Sie an, wann sie diagnostiziert wurden und ob es Komplikationen gab.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Frühere Erkrankungen",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "z.B. Häufige Erkältungen",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Bitte listen Sie ernsthafte Krankheiten auf, die Sie in der Vergangenheit hatten, auch wenn Sie sich erholt haben.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Chirurgische Vorgeschichte",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "z.B. Appendektomie",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Bitte listen Sie alle Operationen auf und geben Sie das Jahr sowie eventuelle Komplikationen an.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Gelegentlich verwendete Medikamente",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "z.B. Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Bitte listen Sie Medikamente auf, die Sie von Zeit zu Zeit einnehmen (zum Beispiel: Schmerzmittel, Allergiemedikamente), einschließlich der Dosis und des Verwendungszwecks.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Regelmäßige Medikamente",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "z.B. Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Bitte listen Sie alle Medikamente auf, die Sie regelmäßig einnehmen, einschließlich des Namens, der Dosis, wie oft Sie es täglich einnehmen und wofür es bestimmt ist.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Allergien",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "z.B. Penicillin – verursacht Ausschlag",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Bitte listen Sie alle Allergien (Medikamente, Lebensmittel, Umwelt) auf und beschreiben Sie, welche Reaktion Sie haben (zum Beispiel: Ausschlag, Schwellung, Atemprobleme).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Besondere Bedingungen",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "z.B. Schwangerschaft, Behinderung",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Wenn Sie wichtige medizinische Bedingungen haben, die Ärzte immer wissen sollten (zum Beispiel: Schwangerschaft, implantierte Geräte, Behinderungen, Antikoagulationstherapie), beschreiben Sie diese bitte. Wenn keine vorhanden sind, können Sie dies leer lassen.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Familiengeschichte",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "z.B. Herzkrankheit, Krebs",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Bitte beschreiben Sie wichtige Krankheiten in Ihrer Familie (zum Beispiel: Diabetes, Bluthochdruck, Herzkrankheiten, Krebs, genetische Erkrankungen) und geben Sie an, welches Familienmitglied die Erkrankung hatte.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Soziale und Lebensstilfaktoren",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "z. B. Rauchen, Alkoholkonsum",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Bitte beschreiben Sie Lebensstilfaktoren, die Ihre Gesundheit beeinflussen können, wie Rauchen, Alkohol, körperliche Aktivität, Ernährung, Schlaf und Beruf.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Medizinische Geräte",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "z.B. Herzschrittmacher, Hörgerät, Insulinpumpe",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Bitte listen Sie alle medizinischen Geräte auf, die Sie verwenden oder implantiert haben, wie z.B. Herzschrittmacher, Insulinpumpen, Hörgeräte, Prothesen oder andere Hilfs- oder Überwachungsgeräte. Fügen Sie relevante Details hinzu, falls zutreffend.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Omnivor",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Fast Food",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Pescetarier",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Laktosefrei",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Natriumarme Ernährung",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Zuckerarme Ernährung",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Kardiale Diät",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Nierendiät",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Andere",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

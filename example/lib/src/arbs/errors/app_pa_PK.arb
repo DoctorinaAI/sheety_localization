@@ -1,0 +1,18 @@
+{
+  "@@locale": "pa_PK",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "ایک غلطی پیش آئی",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "ایک غیر متوقع غلطی پیش آئی",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "بگ رپورٹ کامیابی نال بھیج دتی گئی.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

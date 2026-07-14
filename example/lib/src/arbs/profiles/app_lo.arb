@@ -1,0 +1,428 @@
+{
+  "@@locale": "lo",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "ບັນທຶກສຸຂະພາບ",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "ໃໝ່",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "ສ້າງບັນທຶກສຸຂະພາບຂອງທ່ານ",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "ທ່ານເພີ່ມແບບປະຈຸບັນຂອງທ່ານໃນສິ່ງທີ່ປ່ອນສິນຄ້າ.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "ເພີ່ມບັນທຶກເພີ່ມ",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "ເລີ່ມຕົ້ນການປຶກສາສໍາລັບຄົນອື່ນເພື່ອສ້າງແບບປະຈຸບັນຂອງເຂົ້າ.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "ລົງບັດເພື່ອສ້າງບັດສຸຂະພາບຂອງເອງ",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "ລອງໃໝ່",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "ບໍ່ສາມາດລົບໂປຣໄຟລ໌",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "ບໍ່ສາມາດເອົາສະລະບົບຂອງບັນຊີມາໃສ່",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "ເບິ່ງບັນທຶກສົກສິດສົດ",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "ແບ່ງປັນ",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "ລົບ",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "ອາຍຸ",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} ປີ} other{{value} ປີ}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "ນໍ້າ໫ະລັດ",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "ສູງ",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "ອາລະຈິ",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "ອາການບໍ່ປົກກະຕິ",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "ຢາ",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "ອຸປະກອນ",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "ການປຶກສາ",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "ເອກະສານ",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "ລົບບັນທຶກສຸຂະພາບບໍ?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "ນີ້ຈະລົບຂໍໍ່ສຸດທ້າຍຂອງທ່ານແລະບໍ່ສາມາດກັບຄືນໄດ້. ທ່ານຈະສາມາດສູນເສຍບັນດາທີ່ເຮົາໃຊ້ເພື່ອນຳທ່ານ.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "ຍົກເລີກ",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "ລົບ",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "ກຳລັງລົບບັນທຶກສຸຂະພາບຂອງທ່ານ...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "ບໍ່ສາມາດລົບໂປຣໄຟລ໌",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "ບັນທຶກສຸຂະພາບໄດ້ຖອນອອກ",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "ທ່ານສາมາດສ້າງໃໝ່ໃນເວລາໃດກໍໄດ້ໂດຍການສົນທະນາກັບຜູ້ຊ່ອຍ.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "ກັບໄປສູ່ບັນທຶກ",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "ແກ້ໄຂ",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "ບໍ່ສາມາດເອົາຂໍໍ່າບັດຂອງປະເພດບັນທຶກ",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "ການປ່ອນບັດບັດສຳເລັດ",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "ຂໍໍາລະບຽບຂອງທ່ານໄດ້ຖືກອັບເດດແລ້ວ.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "ກັບໄປທີ່ໂປຣໄຟລ",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "ບໍ່ສາມາດອັບເດດຂໍໍ່ຂອງຂໍໍ່ບັນທຶກ",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "ລົບການແກ້ໄຂບໍ?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "`ທ່ານໄດ້ແກ້ໄຂໂປຣໄຟລ໌ຂອງທ່ານບາງຢ່າງແລ້ວ. ບັນທຶກມັນກ່ອນອອກ ຫຼື ຍົກເລີກມັນ.`",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "`ແກ້ໄຂຕໍ່`",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "`ຍົກເລີກ`",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "ແກ້ໄຂ",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "ເພີ່ມບັນທຶກ",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "ຄົ້ນຫາ",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "ບໍ່ມີຜົນລັບສູດ",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "ດາວ໌ໂຫລດ",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "ແບ່ງປັນ",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "ລົບ",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "ບໍ່ມີເອກະສານທີ່ພົບໃນລາຍການ",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "`ລົບເອກະສານນີ້ບໍ?`",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "`ໄຟລ໌ນີ້ຈະຖືກລົບຢ່າງຖາວອນ`",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "ຍົກເລີກ",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "ລົບ",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "ການດໍາເນີນການເພີ່ມເຕີມ",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "ຄົ້ນຫາ",
+  "@profilesSearch": {},
+  "profilesEmptyList": "ບໍ່ພົບໂປຣໄຟລ໌",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "ເບິ່ງເພີ່ມເຕີມ",
+  "@profilesViewMore": {},
+  "profilesMore": "ຕິດເພີ່ມ",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina ຈະຈື່ບັນທຶກສຸຂະພາບຂອງທ່ານ",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "ການປຶກສາຂອງທ່ານດຽວນີ້ສ່ອມແປງແລະອັບເດດບັນທຶກສຸຂະພາບຂອງທ່ານໃຫ້ເອົາໃຈ.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "ບັນທຶກສຸຂະພາບຂອງທ່ານ, ກົດແນວທາງຂອງທ່ານ",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "ເບິ່ງ, ແກ້ໄຂ, ຫຼືເພີ່ມອາການ, ຢາ, ປະຫວັດ, ຫຼືເອກະສານໃດໆ.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "ການດູແລສໍາລັບຄອບຄົວທັງໝົດ",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "ສ້າງບັນທຶກສຸຂະພາບສຳລັບຄົນທີ່ທ່ານຮັກ, ລູກ, ພໍ່ແມ່ ຫຼື ຄູ່ນອນຂອງທ່ານ.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "ພ້ອມທີ່ຈະບັນທຶກບັນທຶກສຸຂະພາບຂອງທ່ານແລ້ວບໍ?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "ຫຼັງຈາກການປຶກສາຫາລືຂອງທ່ານແລ້ວ, ໃຫ້ແຕະ “ເພີ່ມໂປຣໄຟລ໌” ເພື່ອບັນທຶກມັນ.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "ຕໍ່ໄປ",
+  "@profilesNextButton": {},
+  "profilesStartButton": "ເລີ່ມປຶກສາຫາລື",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "ບາງທີຕໍ່ມາ",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "ປິດ",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "ບັດທະບຽນສຸຂະພາບ",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "ບັດທະບຽນສຸຂະພາບ — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...ຕື່ມເຕີມ",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...ນ້ອຍກວ່າ",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "ເພີ່ມໂປຣໄຟລໃໝ່",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "ສ້າງໂປຣໄຟລ໌ເພື່ອບັນທຶກລາຍລະອຽດຂອງການປຶກສານີ້",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "ທ່ານສາມາດປະເມີນມັນໄດ້ເມື່ອໃດໆໃນບັນທຶກສຸຂະພາບຂອງທ່ານ",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "ຖ້າທ່ານມີຄໍາຖາມເພີ່ມເຕີມ ກ່ຽວກັບເນື້ອຫານີ້ ຫຼື ກ່ຽວຂ້ອງ, ສາມາດສົນທະນາກັບຂ້ອຍໄດ້. ຂ້ອຍຢູ່ນີ້ເພື່ອຊ່ວຍ",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "ຂໍ້ມູນທົ່ວໄປ",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "ຊື່",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "ຊື່",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "ຈອນ",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "ນາມສະກຸນ",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "ເພດ",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "ກະລຸນາເລືອກ",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "ຊາຍ",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "ຍິງ",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "ອື່ນ",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "ວັນເກີດ",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "ອາຍຸ",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "ເຊັ່ນ 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "ເບີໂທ",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "ອີເມວ",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "ສະຖານທີ່",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "ຕົວຢ່າງ ເມືອງ, ປະເທດ",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "ຮ່າງກາຍ & ອາຫານ",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "ຄວາມສູງ",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "ຕົວຢ່າງ 180 ຊມ",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "ນໍ້າໜັກ",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "ຕົວຢ່າງ 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Menstrual Cycle",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "ເຊັ່ນ ປົກກະຕິ, ບໍ່ປົກກະຕິ",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "ข้อจำกัดด้านอาหาร",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "ກະລຸນາເລືອກ",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "ໃຫ້ເຮົາຮູ້ວ່າເຈົ້າກິນອາຫານແນວໃດແລະມີການຈຳກັດໃດແລ້ວ",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "ບໍ່ມີ",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "ມັງສະວິຣັດ",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "ວີແກນ",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Gluten Free",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Body Mass Index (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "ເຊັ່ນ 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "ໂປຣໄຟລ໌ສຸຂະພາບ",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "ພະຍາດຖາວອນ",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "ຕົວຢ່າງ. ເບົາລິດສະບັດປະເພດ 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "ກະລຸນາລະບຸທຸກແບບຂອງເຂດສຸຂະພາບແລະລວມເວລາທີ່ຖືກວິນິຈັດແລະຄວາມສົກສິດ.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "ປະຫວັດການປ່ວຍ",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "ຕົວຢ່າງ ປະຈໍາ ຄວາມເປັນບໍ່ສະດວກ",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "ກະລຸນາແລະລະບຸລາຍການແພດສິດສະລິດທີ່ເຄີຍມີໃນອາດສະຖານທີ່, ແມ່ນວ່າທ່ານຈະກັບຄືນຫຼືບໍ່.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "ປະຫວັດການຜ່າຕັດ",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "เช่น ผ่าตัดไส้ติ่ง",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "ກະລຸນາແລະລະບຸການປ່ອນສິນຄ້າທັງໝົດ ແລະລວມປີ ແລະວ່າມີບັນຫາໃດບໍ່.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "ຢາທີ່ໃຊ້ບາງຄັ້ງ",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "ຕົວຢາທີ່ໃຊ້ບໍ່ປະຈໍາ",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "ກະລຸນາແລະລະບຸຍາດທີ່ທ່ານຮັບປະສົບຈາກເວລາໜຶ່ງ (ຕົວຢ່າງ: ຢາບວດບັດ, ຢາປ່ອນອາການລະດັບ), ລວມທັງຂະບວນແລະເຫດຜົນໃນການໃຊ້.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "ຢາປົກກະຕິ",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "ຕົວຢາຕ່າງໆ ເຊັ່ນ Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "ກະລຸນາແລະລະບຸຍາກອນທັງໝົດທີ່ທ່ານຮັບປະສົບປະຈຸບັນ, ລວມທັງຊື່, ຂະບວນການ, ແລະຈຳນວນທີ່ທ່ານຮັບປະສົບຕໍ່ມື້, ແລະສໍາລັບສະຖານະທີ່ມີຢູ່.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "ອາການແພ່",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "ຕົວຢ່າງ: Penicillin – ເກີດລະດັບ",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "ກະລຸນາແລະລະບຸທຸກອາການແພດ (ຢາ, ອາຫານ, ສິ່ງເລືອກສິ່ງປ່ອນ), ແລະອະທິບາຍວ່າທ່ານມີອາການໃດ (ຕົວຢ່າງ: ລະດັບສູງ, ບວກຂຶ້ນ, ບັນທຸກບັນທຸກ).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "ເງື່ອນໄຂພິເສດ",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "ເຊັ່ນ ການຕັ້ງຄົນ, ພິການ",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "ຖ້າທ່ານມີສະຖານະສຸຂະພາບສຳຄັນໃດໜຶ່ງທີ່ແພດຄວນຮູ້ເພື່ອສະແດງບັດທະຍາຍ (ຕົວຢ່າງ: ການຕິດຕັ້ງ, ອຸປະກອນທີ່ປ່ອນໃສ່, ຄວາມບົກບັດ, ແທບປະສົບຄວາມລົດລະດັບ), ຂໍໃຫ້ອະທິບາຍພວກເຂົ້າ. ຖ້າບໍ່ມີ, ທ່ານສາມາດປ່າຍເປົ່ານີ້.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "ປະຫວັດຄອບຄົວ",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "ເຊັ່ນ ໂລກຫົວໃຈ, ມະເຫດ",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "ກະລຸນາອະທິບາຍເຖິງແບບປ່ອນສຳຄັນໃນຄອບຄົວຂອງທ່ານ (ສໍາລັບຕົວຢ່າງ: ບໍ່ລະດັບນໍ້າຕາ, ຄວາມດັນສູງ, ເປັນເລື່ອງໃຈ, ເປັນເລື່ອງມະເລີດ, ເປັນເລື່ອງສົດສິດສະດິດ) ແລະລະບຸກຄົນສະຖານທີ່ໄດ້ມີສະຖານທີ່.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "ປັດໄຈທາງສັງຄົມ ແລະ ວິທີຊີວິດ",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "ເຊັ່ນ ສູບຢາ, ດື່ມເຫຼືອ",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "ກະລຸນາອະທິບາຍປັດຈຸບັນທີ່ສາມາດສົມພັນກັບສຸຂະພາບຂອງທ່ານ, ເຊັ່ນ ການສູບບິນ, ສິນຄ້າທີ່ມີເຫດຜົນ, ກິລາ, ອາຫານ, ການນອນ, ແລະ ອາຊີບ.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "ອຸປະກອນທາງການແພດ",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "ຕົວຢ່າງ ເຄື່ອງກະຕຸ້ນຫົວໃຈ, ເຄື່ອງຊ່ວຍຟັງ, ປັມອິນຊູລິນ",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "ກະລຸນາແລະລະບຸອຸປະກອນທາງແພດທີ່ທ່ານໃຊ້ຫຼືມີຢູ່ໃນຮ່າງກາຍ, ເຊັ່ນ ບັດດິດ, ປັກສະມາກ, ອຸປະກອນສຽງ, ສິນຄ້າປະເພດສະເພາະ, ຫຼືອຸປະກອນອື່ນໆສໍາລັບການຊ່ວຍເອງ ຫຼືການຕິດຕາມ.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "กินทุกอย่าง",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "ອາຫານໄວ",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Pescatarian",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "គ្មានឡាក់តូស",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "អាហារអំបិលទាប",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "อาหารน้ำตาลต่ำ",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "ອາຫານສຳລັບຫົວໃຈ",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "ອາหารສໍາລັບເສັງສະດວກ",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "ອື່ນ",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

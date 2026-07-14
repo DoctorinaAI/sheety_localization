@@ -131,15 +131,40 @@ class OpenAIClient implements LocalizationClient {
     }
   }
 
-  /// Token budget for the request: the payload grows with the number of
-  /// requested languages, and a truncated answer is unparseable JSON.
-  static int maxOutputTokensFor(Map<String, Object?> schema) {
-    var languages = 1;
+  /// Whether [model] is a reasoning model (the `gpt-5` and `o*` families).
+  ///
+  /// Those models reject the sampling parameters, and their reasoning tokens
+  /// are charged against the same `max_output_tokens` budget as the answer.
+  static bool isReasoningModel(String model) {
+    final name = model.toLowerCase();
+    return name.startsWith('gpt-5') ||
+        name.startsWith('o1') ||
+        name.startsWith('o3') ||
+        name.startsWith('o4');
+  }
+
+  /// Number of languages the [schema] asks for.
+  static int languagesOf(Map<String, Object?> schema) {
     if (schema
         case {
           'properties': {'localization': {'required': List<Object?> required}}
-        }) languages = required.length.clamp(1, 32);
-    return (1024 + 768 * languages).clamp(1024, 16384);
+        }) return required.length.clamp(1, 32);
+    return 1;
+  }
+
+  /// Token budget for the request: the payload grows with the number of
+  /// requested languages, and a truncated answer is unparseable JSON.
+  ///
+  /// On a reasoning model the budget also has to cover the reasoning tokens,
+  /// which are invisible but billed against the very same ceiling — without
+  /// the extra headroom the answer itself gets cut off mid-JSON.
+  static int maxOutputTokensFor(
+    Map<String, Object?> schema, {
+    String model = 'gpt-5-mini',
+  }) {
+    final languages = languagesOf(schema);
+    final reasoning = isReasoningModel(model) ? 4096 : 0;
+    return (1024 + reasoning + 768 * languages).clamp(1024, 32768);
   }
 
   Future<LocalizationResponse> _request({
@@ -179,12 +204,18 @@ class OpenAIClient implements LocalizationClient {
         }
       },
 
-      // Deterministic outputs for pipeline stability
-      'temperature': 0,
-      'top_p': 1,
+      // Deterministic outputs for pipeline stability.
+      // Reasoning models (gpt-5, o*) reject the sampling parameters outright
+      // with `400 Unsupported parameter`, so they get an effort hint instead.
+      if (isReasoningModel(model))
+        'reasoning': {'effort': 'low'}
+      else ...{
+        'temperature': 0,
+        'top_p': 1,
+      },
 
       // Token budget scaled by the number of requested languages
-      'max_output_tokens': maxOutputTokensFor(schema),
+      'max_output_tokens': maxOutputTokensFor(schema, model: model),
     });
     request.add(utf8.encode(body));
     final response = await request.close();

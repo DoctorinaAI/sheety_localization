@@ -98,7 +98,17 @@ void main() {
       );
       expect(six, greaterThan(one));
       expect(one, greaterThanOrEqualTo(1024));
-      expect(six, lessThanOrEqualTo(16384));
+      expect(six, lessThanOrEqualTo(32768));
+    });
+
+    test('reserves headroom for the reasoning tokens of a gpt-5 model', () {
+      final schema = schemaFor(const ['uk']);
+      expect(
+        OpenAIClient.maxOutputTokensFor(schema, model: 'gpt-5-mini'),
+        greaterThan(
+          OpenAIClient.maxOutputTokensFor(schema, model: 'gpt-4o-mini'),
+        ),
+      );
     });
 
     test('falls back to a safe budget for an unexpected schema', () {
@@ -106,6 +116,16 @@ void main() {
         OpenAIClient.maxOutputTokensFor(const <String, Object?>{}),
         greaterThanOrEqualTo(1024),
       );
+    });
+  });
+
+  group('OpenAIClient.isReasoningModel', () {
+    test('recognises the gpt-5 and o-series families', () {
+      expect(OpenAIClient.isReasoningModel('gpt-5-mini'), isTrue);
+      expect(OpenAIClient.isReasoningModel('GPT-5'), isTrue);
+      expect(OpenAIClient.isReasoningModel('o3-mini'), isTrue);
+      expect(OpenAIClient.isReasoningModel('gpt-4o-mini'), isFalse);
+      expect(OpenAIClient.isReasoningModel('gpt-4.1'), isFalse);
     });
   });
 

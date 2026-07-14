@@ -1,0 +1,286 @@
+{
+  "@@locale": "am",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "sectionClearAllChatsTitle": "ሁሉንም ውይይቶች አጽዳ",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "ይህ የእርስዎን የውይይት ታሪክ በደረጃ ይሰርዝ.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "ሁሉንም ውይይቶች አጽዳ",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "Clear All Chats",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "አካውንት ይሰርዝ",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "አካውንትዎን ማጥፋት የቀድሞ እንደሆነ እና አይታወቅም ይሆናል።",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "ማስወግድ",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "አካውንት ይሰርዝ",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "ውጣ",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "እርስዎ ከአካውንትዎ ይወጣሉ።",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "ውጣ",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "ሪፖርት ባግ ላክ",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "መልእክት ላክ በ[⏎ Enter]",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "መልእክት ላክ በ[⏎ Enter] እና አዲስ መስመር በ[Shift] + [⏎ Enter] ይሁን",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "ከ[⏎ Enter] ጋር ላክ",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "የግለሰቦች የግል ዕይታ",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "ቋንቋ",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "እባኮትን የእትም ቋንቋዎን ይምረጡ",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "ጨለማ ሞዴ",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "Enable dark mode for a comfortable viewing experience in low light",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "መዝገቦች",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "View and manage application logs for debugging",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "ጨርስ",
+  "@doneButton": {},
+  "bugReportDialogTitle": "የተሳሳተ ዝርዝር",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "እባክዎ የተገኘውን ባገር ይገልጹ",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "ፋይሎችን ያክሉ",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "ፋይሎችን ማሰባሰብ አልቻልኩም",
+  "@filePickerError": {},
+  "emptyBugReportError": "እባክህ በመጀመሪያ የባገር ሪፖርት አስገባ",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "እቅፍ ማለት የለም የተሳሳተ ሪፖርት ላክ አልቻልኩም",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "እቅፍ አስተዳደር",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "የእርስዎ ተመዝገብ ቅንብሮችን ያስተካክሉ",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "ሐፕቲክ ፍቅር",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "ማስተካከል ወይም ማቋረጥ የሚቻል የሆነ የማስታወቂያ እንቅስቃሴ (እንቅስቃሴ) በድጋፍ መሳሪያዎች ላይ",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "እባክዎ የማስታወቂያ ማስታወቂያዎችን አንቀሳቅስ",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "የዶክተርና በውስጥ ያገኙ አስፈላጊ ነገሮች ላይ ይዘው ይታወቁ፣ የሪፖርቶች ወይም የምልክቶች ይዘው ይታወቁ።",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "አካውንት",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "መተግበሪያ",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "ስለ",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "እንቅስቃሴዎች",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "ቪዲዮ ትምህርቶች",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "ስልክ",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "ኢሜይል",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "ስም",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina በ{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "የተያያዘ ፋይሎች ጋር የተያያዘ ድጋፍ ምክንያት ስለዚህ {count} ፋይሎች ተወውተዋል",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "አይነት",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "መግለጫ",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "አባል ይዘት",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "ባግ",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "እንቅስቃሴ",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "የዩአይ ችግኝ ጉዳይ",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "አማራጭ",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "አካውንትዎን ማስወግድ የሚያደርግ የውሂብዎን መረጃ ከDoctorina ይወገዳል።",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "ከማስወግድ በፊት",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "እቅፍ ያለዎት በ{store} ውስጥ ነው። የእርስዎን አካውንት ማጥፋት እንደዚህ አይደለም።",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "ወይዘር በ{store} ውስጥ ይቅርታ ይውሰዱ",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "ቀጥል",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "ስንሄድ እናዝናለን። መለያዎን መሰረዝ እንደሚፈልጉ እርግጠኛ ነዎት? አንዴ ካረጋገጡ በኋላ፣ ውሂብዎ ይጠፋል።",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "እኔ እንደ አፕ አልጠቀምም",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "የተሻለ ነገር አግኝቻለሁ",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "ቴክኒካዊ ችግኝቶች",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "የእቃ እንቅስቃሴ ችግኝ",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "የተገኘ ባለመኖር ባለመኖር",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "የግል መረጃ ጥያቄዎች",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "እኔ የማስወግድ ዓይነት የማስወግድ ዓይነት ይህ ነው።",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "አማራጭ",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "እባክዎ እንደ እቅፍ ይጋሩ",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "አካውንትዎን እንደሚሰርዝ...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "እንደሚሰርዝ",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "እንደገና ይውሰዱ",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "እቅፍዎ ተወውቷል።",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "አካውንት ማጥፊያ አልተሳካም። እባኮትን ይሞክሩ ድጋፍ ይሁን።",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "ይህ መሳሪያ ላይ አንድ ኢሜይል መተግበሪያ የለም። እባክዎን support@doctorina.com በእግር ይደውሉ።",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

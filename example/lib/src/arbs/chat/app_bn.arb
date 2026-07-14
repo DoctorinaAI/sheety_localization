@@ -1,0 +1,745 @@
+{
+  "@@locale": "bn",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "drawerTooltipNotifications": "বিজ্ঞপ্তি",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "সাহায্য",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "বন্ধ করুন",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "অ্যাকাউন্ট",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "প্রোফাইল",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "অ্যাকাউন্ট সেটিংস",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "সমর্থনের জন্য দান করুন",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "সাবস্ক্রিপশন",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "চ্যাট",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "চ্যাট ইতিহাস",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "সংযুক্ত নথি",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "কিভাবে ব্যবহার করবেন",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "ভিডিও টিউটোরিয়ালস",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "আইনি",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "যোগাযোগ করুন",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "বাগ রিপোর্ট",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "শর্তাবলী",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "গোপনীয়তা নীতি",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "প্রতিক্রিয়া",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "অ্যাপ রেট করুন",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "বন্ধুদের সাথে শেয়ার করুন",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "লগ আউট",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "অন্যদের চিকিৎসা সেবা পাওয়ায় সাহায্য করুন",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "ব্যবহারকারী",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "প্রিমিয়াম বৈশিষ্ট্য\nডক্টোরিনা এর সাথে",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "পাও",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "যোগ দিন",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "অ্যাপ সংস্করণ:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "সাম্প্রতিক চ্যাট",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "প্রোফাইল",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "সাম্প্রতিক চ্যাট",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "অ্যাপ ডাউনলোড করুন",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "বার্তা লিখুন",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "ফাইল সংযুক্ত করুন",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "ডিক্টেট করুন",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "শেষ করুন ও ট্রান্সক্রাইব করুন",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "বার্তা পাঠান",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "বার্তা আনতে ব্যর্থ",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "বার্তা পাওয়া যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "বার্তা আনুন",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "কোনও বার্তা উপলব্ধ নেই।\nআলোচনা শুরু করতে একটি বার্তা পাঠান।",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "সংযুক্ত",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "সংযোগ নেই",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "অনুসন্ধান",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "পছন্দ",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "ডাউনলোড",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "পিডিএফ মুদ্রণ",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "বন্ধুদের সঙ্গে শেয়ার করুন",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "নতুন চ্যাট",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "চ্যাট",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "চ্যাট নির্বাচন",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "ড্রয়ার দেখান",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "কোনো চ্যাট উপলব্ধ নেই। অনুগ্রহ করে রিফ্রেশ করুন বা একটি নতুন চ্যাট শুরু করুন।",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "চ্যাট রিফ্রেশ করুন",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "নতুন চ্যাট তৈরি করুন",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "পাঠ কপি করুন",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "টাইপ হচ্ছে\nএক মুহূর্ত",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "আপডেট হচ্ছে...\nআপনার ইন্টারনেট সংযোগটি পরীক্ষা করুন",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "বার্তাটি ইতিমধ্যেই প্রক্রিয়াধীন।",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "বার্তাটি খুব দীর্ঘ।",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "সংযুক্তি সরান",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "বার্তা প্রক্রিয়া করতে ব্যর্থ",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "পিডিএফ-এ রপ্তানি",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "ছবি",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "ক্যামেরা",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "ফাইল",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "ছবি এবং ফাইল",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "আশা করি এটি সহায়ক ছিল! এই ব্যাখ্যাটি কি আপনার উপকারে আসল?",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "হ্যাঁ, সব ঠিক আছে!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "চ্যাট সারাংশ পুনরুদ্ধারে ব্যর্থ",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "চ্যাট সংক্ষিপ্তসার ক্লিপবোর্ডে অনুলিপি করা হয়েছে",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "মোবাইল অ্যাপে Doctorina চেষ্টা করুন!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "এ ডাউনলোড করুন",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "এখানে উপলব্ধ",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "App Store থেকে ডাউনলোড করুন",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "গুগল প্লে-এ পান",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "বার্তা রিপোর্ট করুন",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "আপনি কেন এই বার্তাটি রিপোর্ট করছেন?",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "ঐচ্ছিক: এই বার্তাটির সাথে কি সমস্যা তা বর্ণনা করুন...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "এটি আমাদের AI প্রতিক্রিয়া উন্নত করতে সাহায্য করবে।",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "বাতিল",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "রিপোর্ট",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "আপনার প্রতিক্রিয়ার জন্য ধন্যবাদ! রিপোর্ট জমা দেওয়া হয়েছে।",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "রিপোর্ট জমা দিতে ব্যর্থ",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "ক্লিপবোর্ডে কপি করা হয়েছে",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "বার্তা কপি করতে ব্যর্থ",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "বার্তা রিপোর্ট করুন",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "ডাক্তারিনার চ্যাটে আপলোড করুন",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "ফাইলগুলি এখানে ড্র্যাগ এবং ড্রপ করুন চ্যাটে যোগ করার জন্য",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "একটি বার্তায় সর্বাধিক 15টি ফাইল যোগ করতে পারেন",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "আপনার স্বাস্থ্যের বিষয়ে কিছু গুরুত্বপূর্ণ হলে কি আপনাকে জানাতে চাইবো?",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "হ্যাঁ, আমাকে জানাও",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "পরে হয়তো",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "বন্ধ করুন",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "নোটিফিকেশনগুলি সিস্টেম স্তরে ব্লক করা হয়েছে। Doctorina-এর নোটিফিকেশন সক্রিয় করার আগে সিস্টেম সেটিংসে সেগুলি সক্ষম করুন।",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "নোটিফিকেশনগুলি সিস্টেম স্তরে ব্লক করা হয়েছে। Doctorina-এর নোটিফিকেশন সক্রিয় করার আগে ব্রাউজারের সেটিংসে সেগুলি সক্ষম করুন।",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "আপনার পরামর্শ সম্পর্কে আপডেট থাকুন",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Doctorina আপনার স্বাস্থ্যের নতুন অন্তর্দৃষ্টি বা আপডেট উপলব্ধ হলে আপনাকে জানাতে পারে।",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "নোটিফিকেশন সক্রিয় করুন",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "পরে হয়তো",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "চালিয়ে যাওয়ার মাধ্যমে আপনি ব্যক্তিগত তথ্য প্রক্রিয়াকরণ, <c>cookies</c> ব্যবহারের সাথে সম্মত হন, <t>terms and conditions</t>-এর সাথে সম্মত হন এবং <p>privacy policy</p> স্বীকার করেন। এছাড়াও, আপনি স্বীকার করেন যে আপনার পরামর্শ একটি AI দ্বারা প্রদান করা হচ্ছেন, লাইসেন্সপ্রাপ্ত চিকিৎসা পেশাদারের মাধ্যমে নয়",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "অবস্থান",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "এই চ্যাটটি আগে সংরক্ষণ করুন?",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "নতুন একটি কনসালটেশন শুরু করার আগে এই কনসালটেশন সংরক্ষণের জন্য ফ্রিতে সাইন আপ করুন",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "সেভ না করে শুরু করুন",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "সাইন আপ করুন",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "আলাপ চালিয়ে যেতে, উপরে একটি বিকল্প নির্বাচন করুন",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "বন্ধ করুন",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "সংযুক্তি মুছুন",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "ড্রপ জোন থেকে ফাইল নির্বাচন করতে ব্যর্থ হয়েছে",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "একটি বার্তা লিখুন বা একটি ফাইল সংযুক্ত করুন",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "আপলোড সম্পন্ন হওয়া পর্যন্ত অপেক্ষা করুন",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "বার্তা প্রক্রিয়াকৃত হচ্ছে",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "বার্তা খুব দীর্ঘ",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "বার্তাটি বর্তমানে প্রক্রিয়াধীন।",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "সংযোগ স্থায়ীভাবে বন্ধ হয়ে গেছে",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "সার্ভারের সাথে সংযোগ নেই",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "ফাইল নির্বাচন করতে ব্যর্থ",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "ছবি নির্বাচন করতে ব্যর্থ",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "ক্যামেরা থেকে ছবি ক্যাপচার করতে ব্যর্থ",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "আপনি একসাথে সর্বাধিক {count}টি ফাইল সংযুক্ত করতে পারেন।",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "স্বীকৃত টেক্সট মুছুন",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "বার্তা খুব দীর্ঘ।",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "আপলোড সম্পন্ন হওয়ার জন্য অপেক্ষা করুন।",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "{kind} \"{name}\" ইতিমধ্যে সংযুক্ত এবং আবার যোগ করা হয়নি।",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "{kind} \"{name}\" {exist} এর একটি অনুলিপি এবং এটি যোগ করা হয়নি।",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "{kind} \"{name}\" সর্বাধিক সংযুক্তির সংখ্যা অতিক্রম করার কারণে যোগ করা হয়নি।",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "\"{name}\" ফাইলটি খালি।",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "ফাইলটি খালি।",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "ফাইল \"{name}\" সর্বাধিক অনুমোদিত আকার অতিক্রম করেছে।",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "ফাইলটি সর্বাধিক অনুমোদিত আকার অতিক্রম করেছে।",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "\"{name}\" ফাইলটি প্রক্রিয়া করার সময় একটি ত্রুটি ঘটেছে।",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "ফাইল প্রক্রিয়াকরণের সময় একটি ত্রুটি ঘটেছে।",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "ফাইল \"{name}\" যোগ করা হয়নি কারণ সংযুক্তির সর্বাধিক সংখ্যা অতিক্রম করা হয়েছে।",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "অতিরিক্ত ফাইল যুক্ত করা হয়নি কারণ সংযুক্তির সর্বাধিক সংখ্যা অতিক্রম করা হয়েছে।",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "সংযুক্তির সর্বাধিক সংখ্যা অতিক্রম করার কারণে একটি ফাইল যোগ করা হয়নি।",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "নামের অভাবযুক্ত একটি ফাইল যোগ করার চেষ্টা করা হয়েছে।",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "সমর্থিত নয় এমন একটি এক্সটেনশন সহ একটি ফাইল যোগ করার চেষ্টা করা হয়েছে: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "সমর্থিত নয় এমন এক্সটেনশনের একটি ফাইল যোগ করার চেষ্টা করা হয়েছে।",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "ফাইল যোগ করা সম্ভব নয়।",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "\"{name}\" ফাইলটি অবৈধ এবং এটি যোগ করা যাবে না।",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "একটি ফাইল অবৈধ এবং এটি যোগ করা যাবে না।",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "আইটেম \"{name}\" একটি বৈধ ফাইল নয়।",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "একটি আইটেম বৈধ ফাইল নয়।",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "একটি আইটেম প্রক্রিয়া করার সময় একটি ত্রুটি ঘটেছে।",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "একটি (গুলি) আইটেম প্রক্রিয়া করার সময় একটি ত্রুটি ঘটেছে।",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "কোনো ফাইল যোগ করা হয়নি",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "কিছু ফাইল বিদ্যমান ফাইলের সাথে ডুপ্লিকেট হওয়ার কারণে বাদ দেওয়া হয়েছে।",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "একটি অজানা ত্রুটি ঘটেছে।",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "ফাইল সংযুক্ত করার সময় নিম্নলিখিত ত্রুটিগুলি ঘটেছে:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "ফাইল শেয়ার করতে ব্যর্থ: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "বন্ধ করুন",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "শেয়ার",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "ফাইল লোড হচ্ছে...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "ফাইল লোড করতে ব্যর্থ",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "অজানা ত্রুটি ঘটেছে",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "পুনরায় চেষ্টা করুন",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "সমর্থিত নয় এমন ফাইলের ধরন",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "{contentType} প্রিভিউ করা যাবে না",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "ফাইল শেয়ার করুন",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "ছবি প্রদর্শনে ব্যর্থ",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "জুম রিসেট করুন",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "PDF লোড করতে ব্যর্থ",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "টেক্সট সামগ্রী ডিকোড করতে ব্যর্থ হয়েছে।",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "এবং {count}টি আরও ত্রুটি রয়েছে।",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "ফাইলটি ভুলভাবে তৈরি হয়েছে",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "অনুমতি প্রয়োজন",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "অগ্রসর হতে, আপনি আমাদের <tc>শর্তাবলী</tc>, <privacy_policy>গোপনীয়তা নীতি</privacy_policy>, এবং <cookies>কুকিজের ব্যবহার</cookies> এর সাথে একমত হন এবং নিশ্চিত করেন যে এই পরামর্শটি একটি লাইসেন্সপ্রাপ্ত চিকিৎসক নয়, AI দ্বারা প্রদান করা হচ্ছে।",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "বন্ধ করুন",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "মুছে ফেলুন",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "চ্যাট মুছুন",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "চ্যাট “{title}” সফলভাবে মুছে ফেলা হয়েছে।",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "চ্যাট মুছে ফেলবেন?",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "এই চ্যাটে আপনার উপসর্গ, নির্ণয়ের সারসংক্ষেপ এবং যেকোনো সুপারিশ মুছে ফেলা হবে।\nএই পদক্ষেপটি পূর্বাবস্থায় ফিরিয়ে আনা যাবে না।",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "জুম ইন",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "জুম আউট",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "জুম রিসেট",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "শেয়ার",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "আজ",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "গতকাল",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "শুধুমাত্র প্রথম পৃষ্ঠা। সম্পূর্ণ ফাইল ডাউনলোড করতে শেয়ার ব্যবহার করুন।",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

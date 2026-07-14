@@ -1,0 +1,132 @@
+{
+  "@@locale": "zu",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "IsiZulu",
+  "@lang": {},
+  "langEn": "Zulu",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Thola Manje",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Maybe Later",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Kukhona ukuvuselelwa okusha",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Uhlolo Lwakho Luyadingeka",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Itholakale inguqulo entsha (v{version}) ye-app. Sicela uvuselele ukuze uqhubeke nokuhlangenwe nakho okuhle.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Ukuqhubeka, sicela uvuselele uhlelo lokusebenza. Le nvuselelo ifaka phakathi ukulungiswa okubalulekile nokuthuthukiswa.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Landa",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Ngena uma unayo i-Doctorina account, noma ubhalise ukuze uqale.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Ngena",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Bhalisela",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Qhubeka njengivakashi",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Ngena",
+  "@titleLogin": {},
+  "titleLogout": "Phuma",
+  "@titleLogout": {},
+  "titleSignIn": "Ngena",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Ingxoxo",
+  "@titleDialog": {},
+  "titleChat": "Ingxoxo",
+  "@titleChat": {},
+  "titleSettings": "Izilungiselelo ze-akhawunti",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Umlando wezingxoxo",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Ukukhokha",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Phatha ubhaliso",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Uhlelo lwemali lweminyaka emithathu",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Ukuqaliswa",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Wamukelekile",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Amaphrofayili amarekhodi ezempilo",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Isaziso zamaphrofayili",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Irekhodi Zempilo",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Irekhodi ephelele",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Amadokhumenti",
+  "@titleDocuments": {},
+  "titleConsultations": "Izinkulumo",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Umgwaqo wokukhokha",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Ukususa? Sitshele ukuthi kungani!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Qala ingxoxo entsha yezempilo",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Yabelana ngemicabango noma ubika inkinga",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Sitshelele ukuthi uDoctorina angathuthukisa kanjani",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "@@locale": "da",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "Der opstod en fejl",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Der opstod en uventet fejl",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Fejlrapport sendt succesfuldt.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

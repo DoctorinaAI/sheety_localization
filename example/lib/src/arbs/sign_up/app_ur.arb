@@ -1,0 +1,393 @@
+{
+  "@@locale": "ur",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "logIn": "لاگ ان",
+  "@logIn": {
+    "description": "Надпись \"логин\""
+  },
+  "password": "پاس ورڈ",
+  "@password": {
+    "description": "Надпись \"пароль\""
+  },
+  "changeNumber": "نمبر تبدیل کریں",
+  "@changeNumber": {},
+  "forgotPassword": "پاس ورڈ بھول گئے؟",
+  "@forgotPassword": {},
+  "forgotPasswordEnterYourEmailAddress": "اپنا ای میل پتہ درج کریں، اور ہم آپ کو اپنا پاس ورڈ ری سیٹ کرنے کے لیے ایک لنک بھیجیں گے.",
+  "@forgotPasswordEnterYourEmailAddress": {},
+  "rememberYourPasswordQuestion": "کیا آپ کو اپنا پاس ورڈ یاد ہے؟",
+  "@rememberYourPasswordQuestion": {},
+  "backToLoginButton": "میرے پاس پاس ورڈ ہے",
+  "@backToLoginButton": {},
+  "continueButton": "جاری رکھیں",
+  "@continueButton": {},
+  "passwordResetEmailSentSnackBar": "پاس ورڈ ری سیٹ ای میل بھیجی گئی",
+  "@passwordResetEmailSentSnackBar": {},
+  "resetPasswordButton": "پاس ورڈ ری سیٹ کریں",
+  "@resetPasswordButton": {},
+  "confirmCodeButton": "کوڈ کی تصدیق",
+  "@confirmCodeButton": {},
+  "startUsingDoctorinaTodaySubtitle": "آج ہی Doctorina استعمال کرنا شروع کریں",
+  "@startUsingDoctorinaTodaySubtitle": {},
+  "orDivider": "یا",
+  "@orDivider": {
+    "description": "Разделитель ---ИЛИ--- между кнопками"
+  },
+  "enterPasswordForEmailHint": "اپنا پاس ورڈ درج کریں",
+  "@enterPasswordForEmailHint": {},
+  "showPasswordHint": "پاس ورڈ دکھائیں",
+  "@showPasswordHint": {},
+  "obscurePasswordHint": "پاس ورڈ چھپائیں",
+  "@obscurePasswordHint": {},
+  "clearLoginTooltip": "لاگ ان صاف کریں",
+  "@clearLoginTooltip": {},
+  "emailOrPhoneLabel": "ای میل یا فون",
+  "@emailOrPhoneLabel": {},
+  "emailOrPhoneLabelExample": "name@gmail.com یا +1234567890",
+  "@emailOrPhoneLabelExample": {},
+  "emailOrPhoneHint": "ای میل یا فون نمبر درج کریں",
+  "@emailOrPhoneHint": {},
+  "pleaseAcceptTheAgreementsToContinueSnackBar": "براہ کرم جاری رکھنے کے لیے معاہدوں کو قبول کریں.",
+  "@pleaseAcceptTheAgreementsToContinueSnackBar": {},
+  "consentToTheProcessingOfPersonalData": "میں ذاتی ڈیٹا کی پراسیسنگ کی رضامندی دیتا ہوں،",
+  "@consentToTheProcessingOfPersonalData": {
+    "description": "На конце запятая"
+  },
+  "consentTheUseOf": "استعمال",
+  "@consentTheUseOf": {},
+  "consentCookies": "کوکیز",
+  "@consentCookies": {},
+  "consentAgreeToThe": ", اتفاق کرنا",
+  "@consentAgreeToThe": {
+    "description": "В начале запятая"
+  },
+  "consentTermsAndConditions": "شرائط و ضوابط",
+  "@consentTermsAndConditions": {},
+  "consentAndAcknowledgeThe": ", اور تسلیم کریں",
+  "@consentAndAcknowledgeThe": {
+    "description": "В начале запятая"
+  },
+  "consentPrivacyPolicy": "رازداری کی پالیسی",
+  "@consentPrivacyPolicy": {},
+  "consentDot": ".",
+  "@consentDot": {
+    "description": "Точка на конце соглашения"
+  },
+  "acknowledgeMyConsultation": "میں اس بات تسلیم کرتا ہوں کہ میری مشاورت AI کے ساتھ ہے اور لائسنس یافتہ طبی پیشہ ور نہیں ہے.",
+  "@acknowledgeMyConsultation": {},
+  "logOutDialogTitle": "لاگ آؤٹ",
+  "@logOutDialogTitle": {
+    "description": "Диалог выхода, заголовок"
+  },
+  "logOutDialogContent": "کیا آپ واقعی لاگ آؤٹ کرنا چاہتے ہیں؟",
+  "@logOutDialogContent": {
+    "description": "Диалог выхода, текст"
+  },
+  "logOutDialogCancelButton": "منسوخ کریں",
+  "@logOutDialogCancelButton": {
+    "description": "Диалог выхода, кнопка отмены"
+  },
+  "logOutDialogLogOutButton": "ہاں، لاگ آؤٹ",
+  "@logOutDialogLogOutButton": {
+    "description": "Диалог выхода, кнопка выйти"
+  },
+  "resendCodeButton": "کوڈ دوبارہ بھیجیں",
+  "@resendCodeButton": {
+    "description": "Кнопка отправить код заного"
+  },
+  "resendCodeTimer": "کوڈ دوبارہ بھیجیں ({timer})",
+  "@resendCodeTimer": {
+    "description": "Таймер для повторной отправки кода",
+    "placeholders": {
+      "timer": {
+        "type": "String",
+        "example": "0:00"
+      }
+    }
+  },
+  "consentFull": "میں ذاتی ڈیٹا کی پروسیسنگ، <c>کوکیز</c> کے استعمال، <t>شرائط و ضوابط</t> سے اتفاق کرتا ہوں، اور <p>رازداری کی پالیسی</p> کو تسلیم کرتا ہوں۔",
+  "@consentFull": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <c> <t> <p> указаны кликабельные спаны, они должны присутсвовать во всех языках."
+  },
+  "emailLabel": "اپنا ای میل درج کریں",
+  "@emailLabel": {
+    "description": "Email input field label."
+  },
+  "signUpWithEmailTitle": "ای میل کے ساتھ سائن اپ کریں",
+  "@signUpWithEmailTitle": {
+    "description": "AppBar title for email signup overlay"
+  },
+  "logInWithEmailTitle": "ای میل سے لاگ ان کریں",
+  "@logInWithEmailTitle": {
+    "description": "AppBar title for email login overlay"
+  },
+  "phoneLabel": "اپنا فون درج کریں",
+  "@phoneLabel": {
+    "description": "Phone input field label"
+  },
+  "confirmPhoneTitle": "اپنا فون تصدیق کریں",
+  "@confirmPhoneTitle": {
+    "description": "AppBar title for phone confirmation screen"
+  },
+  "signUpText": "سائن اپ کریں",
+  "@signUpText": {
+    "description": "Standalone \"Sign up\" text for buttons and tabs"
+  },
+  "emailHintShort": "ای میل درج کریں",
+  "@emailHintShort": {
+    "description": "Short email hint text in login dialog"
+  },
+  "buttonTextSignUpWithGoogle": "Google کے ساتھ سائن اپ کریں",
+  "@buttonTextSignUpWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextSignUpWithApple": "Apple کے ساتھ سائن اپ کریں",
+  "@buttonTextSignUpWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextSignUpWithPhone": "فون سے سائن اپ کریں",
+  "@buttonTextSignUpWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "buttonTextLoginWithGoogle": "Google کے ساتھ لاگ ان کریں",
+  "@buttonTextLoginWithGoogle": {
+    "description": "Button text for Google sign up"
+  },
+  "buttonTextLoginWithApple": "Apple کے ساتھ لاگ ان کریں",
+  "@buttonTextLoginWithApple": {
+    "description": "Button text for Apple login sign up"
+  },
+  "buttonTextLoginWithPhone": "فون کے ذریعے لاگ ان کریں",
+  "@buttonTextLoginWithPhone": {
+    "description": "Button text for phone login sign up"
+  },
+  "youAreLoggedOutMessage": "آپ لاگ آؤٹ ہیں",
+  "@youAreLoggedOutMessage": {
+    "description": "Message displayed on logout screen"
+  },
+  "reloadButtonText": "دوبارہ لوڈ کریں",
+  "@reloadButtonText": {
+    "description": "Reload button text on logout screen"
+  },
+  "emailErrorText": "غلط ای میل پتہ",
+  "@emailErrorText": {
+    "description": "Error message for invalid email address"
+  },
+  "passwordErrorText": "پاس ورڈ کم از کم 6 حروف پر مشتمل ہونا چاہیے",
+  "@passwordErrorText": {
+    "description": "Error message for password validation (minimum length)"
+  },
+  "invalidPhoneNumberError": "غلط فون نمبر: {phoneNumber}",
+  "@invalidPhoneNumberError": {
+    "description": "Error message for invalid phone number format"
+  },
+  "resendCodeWaitError": "براہ کرم نیا کوڈ درخواست کرنے سے پہلے {seconds} سیکنڈ انتظار کریں.",
+  "@resendCodeWaitError": {
+    "description": "Error message when trying to resend code too soon"
+  },
+  "invalidPhoneCodeError": "غیر صحیح فون کوڈ: {phoneCode}",
+  "@invalidPhoneCodeError": {
+    "description": "Error message for invalid phone verification code"
+  },
+  "termsAndConditionsText": "شرائط و ضوابط",
+  "@termsAndConditionsText": {
+    "description": "Terms and conditions link text in login dialog"
+  },
+  "continueAsGuestBtn": "مہمان کے طور پر جاری رکھیں",
+  "@continueAsGuestBtn": {
+    "description": "Btn to continue as guest on sign up screen"
+  },
+  "noAccountYetPromptText": "ابھی تک اکاؤنٹ نہیں ہے؟ <p>سائن اپ کریں</p>",
+  "@noAccountYetPromptText": {
+    "description": "Login tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Sign up” link."
+  },
+  "alreadyHaveAccountPromptText": "کیا آپ کا پہلے سے اکاؤنٹ موجود ہے؟ <p>لاگ ان کریں</p>",
+  "@alreadyHaveAccountPromptText": {
+    "description": "Sign up tab: single line with inline link. &lt;p&gt;…&lt;/p&gt; is the tappable “Log in” link."
+  },
+  "beforeSubscribeYouNeedSignUpLoginDialogSubtitle": "آپ کو پریمیم کے ساتھ جاری رکھنے سے پہلے سائن اپ کرنا ہوگا",
+  "@beforeSubscribeYouNeedSignUpLoginDialogSubtitle": {
+    "description": "Subtitle for login dialog"
+  },
+  "loginSubtitle": "ذاتی مواد حاصل کریں اور اپنی کمیونٹی کے ساتھ رابطے میں رہیں!",
+  "@loginSubtitle": {
+    "description": "Подзаголовок на экране входа, мотивирующий пользователя авторизоваться"
+  },
+  "emailFieldLabel": "ای میل",
+  "@emailFieldLabel": {
+    "description": "Метка поля ввода email в форме"
+  },
+  "emailPlaceholder": "username@gmail.com",
+  "@emailPlaceholder": {
+    "description": "Пример email в поле ввода"
+  },
+  "recoverPasswordTooltip": "اپنا پاس ورڈ بحال کریں",
+  "@recoverPasswordTooltip": {
+    "description": "Тултип кнопки восстановления пароля когда email валиден"
+  },
+  "createAccountTitle": "اکاؤنٹ بنائیں",
+  "@createAccountTitle": {
+    "description": "Заголовок экрана регистрации"
+  },
+  "createAccountSubtitle": "ہمیں آپ کے صحت کے ڈیٹا کو محفوظ طریقے سے محفوظ کرنے اور آپ کی تشخیص کو جاری رکھنے کے لیے ایک اکاؤنٹ کی ضرورت ہے۔",
+  "@createAccountSubtitle": {
+    "description": "Подзаголовок экрана регистрации, объясняет зачем нужен аккаунт"
+  },
+  "repeatLabel": "دہرائیں",
+  "@repeatLabel": {
+    "description": "Метка поля повторного ввода пароля"
+  },
+  "repeatPasswordHint": "اپنا پاس ورڈ دوبارہ درج کریں",
+  "@repeatPasswordHint": {
+    "description": "Подсказка в поле повторного ввода пароля"
+  },
+  "confirmButton": "تصدیق کریں",
+  "@confirmButton": {
+    "description": "Кнопка подтверждения регистрации с паролем"
+  },
+  "noAccountPrompt": "کیا آپ کے پاس اکاؤنٹ نہیں ہے؟",
+  "@noAccountPrompt": {
+    "description": "Текст перед ссылкой на регистрацию на экране входа"
+  },
+  "alreadyHaveAccountPrompt": "کیا آپ کے پاس پہلے سے ہی اکاؤنٹ ہے؟",
+  "@alreadyHaveAccountPrompt": {
+    "description": "Текст перед ссылкой на вход на экране регистрации"
+  },
+  "createPasswordHeader": "پاس ورڈ بنائیں",
+  "@createPasswordHeader": {
+    "description": "Заголовок шага создания пароля в хедере диалога"
+  },
+  "phoneHeader": "فون",
+  "@phoneHeader": {
+    "description": "Заголовок шага ввода телефона в хедере диалога"
+  },
+  "verifyPhoneHeader": "فون کی تصدیق کریں",
+  "@verifyPhoneHeader": {
+    "description": "Заголовок шага верификации телефона в хедере диалога"
+  },
+  "phoneTitle": "آپ کا نمبر کیا ہے؟",
+  "@phoneTitle": {
+    "description": "Заголовок экрана ввода номера телефона"
+  },
+  "phoneSubtitle": "ہم آپ کے فون کی تصدیق کے لیے ایک کوڈ بھیجیں گے",
+  "@phoneSubtitle": {
+    "description": "Подзаголовок экрана ввода телефона"
+  },
+  "phoneNumberLabel": "نمبر",
+  "@phoneNumberLabel": {
+    "description": "Метка поля ввода номера телефона"
+  },
+  "enterPhoneNumber": "فون نمبر درج کریں",
+  "@enterPhoneNumber": {
+    "description": "Подсказка в поле ввода телефона"
+  },
+  "phonePlaceholder": "+92 (201) 555-01-23",
+  "@phonePlaceholder": {
+    "description": "Пример номера телефона в поле ввода"
+  },
+  "waitCountdownButton": "اگلے OTP بھیجنے کے لیے {countdown} سیکنڈ انتظار کریں",
+  "@waitCountdownButton": {
+    "description": "Текст кнопки во время ожидания повторной отправки OTP",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next OTP can be sent"
+      }
+    }
+  },
+  "enterCodeTitle": "اپنا کوڈ درج کریں",
+  "@enterCodeTitle": {
+    "description": "Заголовок экрана ввода OTP кода"
+  },
+  "codeSentToPhone": "ہم نے ایک کوڈ {phone} پر بھیجا",
+  "@codeSentToPhone": {
+    "description": "Текст с информацией куда отправлен код",
+    "placeholders": {
+      "phone": {
+        "type": "String",
+        "example": "+1234567890",
+        "description": "Phone number where code was sent"
+      }
+    }
+  },
+  "didntReceiveCode": "کیا آپ کو کوڈ موصول نہیں ہوا؟",
+  "@didntReceiveCode": {
+    "description": "Текст перед ссылкой на повторную отправку кода"
+  },
+  "clickToResend": "دوبارہ بھیجنے کے لیے کلک کریں",
+  "@clickToResend": {
+    "description": "Текст ссылки повторной отправки кода"
+  },
+  "requestNewCodeCountdown": "آپ {countdown} سیکنڈ میں نیا کوڈ مانگ سکتے ہیں",
+  "@requestNewCodeCountdown": {
+    "description": "Текст с обратным отсчётом до возможности повторной отправки кода",
+    "placeholders": {
+      "countdown": {
+        "type": "int",
+        "example": "25",
+        "description": "Seconds remaining until next code request"
+      }
+    }
+  },
+  "closeTooltip": "بند کریں",
+  "@closeTooltip": {
+    "description": "Тултип кнопки закрытия диалога"
+  },
+  "backTooltip": "پیچھے",
+  "@backTooltip": {
+    "description": "Тултип кнопки назад"
+  },
+  "termsOfServiceLink": "خدمات کے شرائط",
+  "@termsOfServiceLink": {
+    "description": "Текст ссылки на условия использования в футере"
+  },
+  "privacyPolicyLink": "رازداری کی پالیسی",
+  "@privacyPolicyLink": {
+    "description": "Текст ссылки на политику конфиденциальности в футере"
+  },
+  "welcomeBackTitle": "خوش آمدید",
+  "@welcomeBackTitle": {
+    "description": "Заголовок экрана приветствия при возвращении пользователя"
+  },
+  "welcomeBackSubtitle": "اگر آپ کے پاس پہلے سے Doctorina اکاؤنٹ ہے تو لاگ ان کریں، یا شروع کرنے کے لیے سائن اپ کریں۔",
+  "@welcomeBackSubtitle": {
+    "description": "Подзаголовок экрана приветствия, предлагающий войти или зарегистрироваться"
+  },
+  "passwordRuleLength": "8 سے 128 حروف تک",
+  "@passwordRuleLength": {
+    "description": "Правило валидации пароля: длина от 8 до 128 символов"
+  },
+  "passwordRuleNumber": "کم از کم 1 نمبر",
+  "@passwordRuleNumber": {
+    "description": "Правило валидации пароля: минимум 1 цифра"
+  },
+  "passwordRuleUppercase": "کم از کم 1 بڑے حرف",
+  "@passwordRuleUppercase": {
+    "description": "Правило валидации пароля: минимум 1 заглавная буква"
+  },
+  "passwordRuleMatch": "پاس ورڈ ملتے ہیں",
+  "@passwordRuleMatch": {
+    "description": "Правило валидации пароля: пароли совпадают"
+  },
+  "phoneOtpVerificationFailed": "OTP کی توثیق ناکام ہو گئی۔ براہ کرم دوبارہ کوشش کریں۔",
+  "@phoneOtpVerificationFailed": {},
+  "referralCodeLabel": "ریفرل کوڈ",
+  "@referralCodeLabel": {
+    "description": "Заголовок поля ввода реферального кода на экране регистрации"
+  },
+  "enterReferralCodeHint": "اپنا ریفرل کوڈ درج کریں",
+  "@enterReferralCodeHint": {
+    "description": "Подсказка (labelText) в поле ввода реферального кода"
+  },
+  "referralCodeExampleHint": "مثال: CREATOR2026",
+  "@referralCodeExampleHint": {
+    "description": "Пример реферального кода в поле ввода (hintText)"
+  },
+  "haveReferralCodeQuestion": "کیا آپ کے پاس ریفرل کوڈ ہے؟",
+  "@haveReferralCodeQuestion": {
+    "description": "Ссылка-вопрос, раскрывающая поле ввода реферального кода"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "@@locale": "de",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "Deutsch",
+  "@lang": {},
+  "langEn": "German",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "Jetzt aktualisieren",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "Vielleicht später",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "Neue Aktualisierung verfügbar",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "Update erforderlich",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "Eine neue Version (v{version}) der App ist verfügbar. Bitte aktualisieren Sie, um fortzufahren und die beste Erfahrung zu genießen.",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "Um fortzufahren, aktualisieren Sie bitte die App. Dieses Update enthält wichtige Fehlerbehebungen und Verbesserungen.",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "Herunterladen",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "Melden Sie sich an, wenn Sie bereits ein Doctorina-Konto haben, oder registrieren Sie sich, um zu beginnen.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "Einloggen",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "Anmelden",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "Weiter als Gast",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "Einloggen",
+  "@titleLogin": {},
+  "titleLogout": "Abmelden",
+  "@titleLogout": {},
+  "titleSignIn": "Anmelden",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "Dialog",
+  "@titleDialog": {},
+  "titleChat": "Chat",
+  "@titleChat": {},
+  "titleSettings": "Kontoeinstellungen",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "Chatverlauf",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "Zahlung",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "Abonnement verwalten",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "Monatliches Abonnement",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "Einarbeitung",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "Willkommen zurück",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "Profile von Gesundheitsakten",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "Ankündigung der Profile",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "Gesundheitsakten",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "Vollständiger Datensatz",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "Dokumente",
+  "@titleDocuments": {},
+  "titleConsultations": "Konsultationen",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "Zahlungsaufforderung",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "Löschen? Sag uns warum!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "Starten Sie ein neues Gesundheitsgespräch",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "Teilen Sie eine Idee oder melden Sie ein Problem",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "Sagen Sie uns, wie Doctorina sich verbessern kann",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

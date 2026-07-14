@@ -1,0 +1,230 @@
+{
+  "@@locale": "id",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "Contoh tombol",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Ya, semuanya baik-baik saja!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Setiap kontribusi menyembuhkan!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Kontribusimu membantu mendanai saran gratis bagi mereka yang membutuhkan.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Bayar apa yang terasa tepat,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "atau terus menggunakan Doctorina secara gratis, berkat orang lain yang memilih untuk memberi",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Sekali",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Bulanan",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Pilih jumlah donasi bulanan",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Anda akan berlangganan paket bulanan.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Anda berlangganan paket bulanan dengan {amount}/bulan",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Pembayaran akan dikenakan ke akun Anda saat konfirmasi pembelian. Langganan akan diperpanjang secara otomatis setiap bulan kecuali perpanjangan otomatis dimatikan setidaknya 24 jam sebelum akhir periode saat ini. Anda dapat mengelola atau membatalkan langganan Anda kapan saja di pengaturan akun Anda. Dengan melanjutkan, Anda menyetujui {termsOfService} dan {privacyPolicy} kami.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Pilih jumlah donasi satu kali",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Kebanyakan orang memberikan $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Pilih mata uang",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Memproses pembayaran",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Memproses pembayaran satu kali senilai {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Memproses pembayaran bulanan sebesar {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Terima kasih!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Sekarang semakin banyak orang akan menerima saran gratis — dukungan Anda benar-benar tak ternilai",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Anda berkontribusi:",
+  "@youContributedLabel": {},
+  "perMonth": "/ bulan",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Kembali ke layar utama",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Syarat Layanan",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Kebijakan Privasi",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Donasi",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Aktif",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Dibatalkan",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Dijeda",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "Tertunda",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Dibuat",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Waktu habis",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Tidak diketahui",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina kontributor",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Memperbarui",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Batalkan langganan",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Apakah Anda yakin?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Dukungan bulanan Anda membuat Doctorina tetap gratis bagi orang-orang yang mengandalkannya namun tidak mampu membayar. Langganan Anda mendanai setidaknya 10 konsultasi gratis setiap bulan. Jika Anda berhenti, lebih sedikit pasien yang akan mendapatkan bantuan yang mereka butuhkan.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Pertahankan langganan",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Batal saja",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Dukungan bulanan Anda\ntelah berhasil dibatalkan.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Data langganan salah",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Daftar untuk dukungan bulanan agar muncul di sini.",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Belum ada langganan",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Tanggal langganan",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Berakhir",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "ID Langganan",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "ID Produk",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Kami tidak dapat memproses pembayaran Anda",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Terjadi kesalahan pada pembayaran. Silakan coba lagi.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Coba lagi",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Memproses pembayaran",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Anda akan menyelesaikan pembelian Anda di halaman checkout aman Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ minggu",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ tahun",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Paling Populer",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Tutup",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Apa yang Anda dapatkan dengan Premium:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Konsultasi tanpa iklan",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Balasan lebih cepat",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Akses awal ke fitur baru",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/minggu",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Batalkan kapan saja. Tanpa komitmen.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "WAKTU TERBATAS",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Auto-renews setiap minggu. Batalkan kapan saja di pengaturan. Dengan melanjutkan, Anda setuju dengan <t>Ketentuan</t> dan <p>Kebijakan Privasi</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Lanjutkan dengan Premium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Dukungan Anda membantu menjaga aksesibilitas perawatan",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Silakan daftar atau masuk untuk menyelesaikan pembelian.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

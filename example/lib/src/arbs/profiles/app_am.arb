@@ -1,0 +1,428 @@
+{
+  "@@locale": "am",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "የጤና መዝገቦች",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "አዲስ",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "የጤና መዝገብዎን ይፍጠሩ",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "እባኮትን የእርዳታዎን መጨረሻ ላይ የእርስዎን መገኛ ያከብሩ።",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "ተጨማሪ ፕሮፋይሎች አክል",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "ለሌላ ሰው እንዲያወጣ የእርዳታ ሂደት ይጀምሩ.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "የጤና መዝግብ ለማድረግ ይመዝገቡ",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "እንደገና ይሞክሩ",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "መገናኛ መረጃ ማጥፊያ አልተሳካም",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "የፕሮፋይል ማጠቃለያ ማስታወቂያ አልተገኘም",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "ሙሉ መዝገብ እይታ",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "አጋራ",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "አጥፍ",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "እድሜ",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} ዓመት} other{{value} ዓመታት}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "ክብደት",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} ኪ.ግ",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "ከፍታ",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} ሴ.ሜ",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "-",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "አለምም",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "ክሮኒክ",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "መድሃኒት",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "መሣሪያዎች",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "ኮንስልታሽን",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "ሰነዶች",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "የጤና መዝገብ ማጥፋት እባክዎት?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "ይህ የጤና ውሂብዎን በወይዘር ይሰርዝ እና አይታወቅም። እንደ እንደ መመሪያ የምንጠቀምበት አካል ይጠፋል።",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "እንደገና ይቆም",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "አጥፍ",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "የእንክብካቤ መዝገብዎን እንደሚሰርዝ...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "መግለጫ መረጃ ማጥፋት አልቻልኩም",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "የጤና መዝገብ ወይዘር ተሰርዟል",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "እባክዎ ከአስተያየት ጋር በመደወል አዲስ አንዱን መፍጠር ይችላሉ።",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "ወደ ውይይት ተመለስ",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "እንደ እንቅስቃሴ",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "መገናኛ ውስጥ የማይገኝ መረጃ መግኘት አልቻልኩም",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "ለውጦች ተያይዞ ተያይዞ ተያይዞ",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "መረጃዎት በተሳካ ሁኔታ ተዘጋጅቷል።",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "መገናኛ ወደ መገኛ ይመለሱ",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "መገናኛ ውሂብ መረጃ ማዘመን አልቻልኩም",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "ለውጦችን ይወድዱ?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "በመገለጫዎ ላይ አንዳንድ ለውጦችን አድርገዋል። ከመውጣትዎ በፊት ያስቀምጧቸው ወይም ይተዉአቸው።",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "`ማስተካከያውን ይቀጥሉ`",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "`ተወው`",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "አርትዕ",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "መዝግብ ያክል",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "ፈልግ",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "የተገኙ ውጤቶች የለም",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "ዳውንሎድ",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "አጋራ",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "አጥፍ",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "ምንም ሰነዶች አልተገኙም",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "`ይህን ሰነድ ማጥፋት ይፈልጋሉ?`",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "`ይህ ፋይል ለዘላለም ይወገዳል።`",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "እንደገና ይቆም",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "አጥፍ",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "ተጨማሪ እርምጃዎች",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "ፈልግ",
+  "@profilesSearch": {},
+  "profilesEmptyList": "ምንም መገለጫ አልተገኘም",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "ተጨማሪ ይመልከቱ",
+  "@profilesViewMore": {},
+  "profilesMore": "ተጨማሪ",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "ዶክተሪና እንደ ጤናዎት ይወስዳል",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "የእርዳታዎችዎ አሁን የጤና መዝገብዎን በራስ ማዕከል ይገነባል እና ይዘው ይዘው ይዘው ይዘው.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "የእርግጥ መዝገብ፣ የእርስዎ ደንብ",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "ምርመራዎችን፣ መድሃኒቶችን፣ ታሪክን ወይም ሰነዶችን በየጊዜው ይመልከቱ፣ ይሻሽሉ ወይም ይጨምሩ።",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "እርዳታ ለአንድ ቤተሰብ ሁሉ",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "የወዳጆችዎ ጤና መዝገብ ይፍጠሩ፣ ለልጆችዎ፣ እናቶችዎ፣ ወይም ባልዎ።",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "የጤና መዝግብዎን ለመያዝ ዝግጁ ነው?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "ከኮንስልታሽንዎ በኋላ \"ፕሮፋይል አክስት\" ይጫኑ እንዲያውም ይቀመጡ።",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "ቀጣይ",
+  "@profilesNextButton": {},
+  "profilesStartButton": "ኮንስልታሽን ይጀምሩ",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "አሁን አይደለም",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "ዝግጅት",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "የጤና መዝገብ",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "ጤና መዝገብ — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...በተጨማሪ",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...አነሱ",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "አዲስ ፕሮፋይል አክል",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "አንድ ፕሮፋይል ይፍጠሩ እንደዚህ የምንኖር ዝርዝር ይቀመጡ.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "በእርስዎ የጤና መዝገቦች ውስጥ እሱን በማንኛውም ጊዜ ማየት ይችላሉ",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "ይህ ወይም ከዚህ ጋር የተያያዘ ማንኛውም ጥያቄ ካለዎት, ከእኔ ጋር መቀጠል ነፃ ይችላሉ. እርዳታ ለማቅረብ እዚህ ነኝ",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "አጠቃላይ መረጃ",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "ስም",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "የመጀመሪያ ስም",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "ዮሐንስ",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "የቤተሰብ ስም",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "ፆታ",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "እባክዎ ይምረጡ",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "ወንድ",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "ሴት",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "ሌላ",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "የትውልድ ቀን",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "ዕድሜ",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "ለምሳሌ 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "ስልክ ቁጥር",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "ኢሜል",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "ቦታ",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "ለምሳሌ ከተማ, አገር",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "ሰውነት & አመጋገብ",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "ቁመት",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "ለምሳሌ 180 ሴሜ",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "ክብደት",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "ለምሳሌ 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Menstrual Cycle",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "ለምሳሌ መደበኛ, የተለዋዋጭ",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "የምግብ ገደቦች",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "እባክዎን ይምረጡ",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "እባክዎን የምታይ ምግብ እና የሚከበሩ ነገሮች እንዲያውቁን እንደምን እንደምን ይነግሩን",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "የምግብ ገደብ የለም",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "ቬጂታሪያን",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "ቪጋን",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "የግሉቲን ነፃ",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "የአካል ብዛት መጠን (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "ለምሳሌ 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Առողջության պրոֆիլ",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "ቋሚ ሕመሞች",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "የዳይባትስ ዓይነት 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "እባክዎ ሁሉንም የወቅታዊ ሕመሞች ይዘጋጁ እና የተወሰኑትን ወቅታዊ ሕመሞች እና የተከሰቱትን ይጨምሩ።",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "ያለፉ ሕመሶች",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "እንደ አስቀድሞ የተከሰተ የተወሰነ የበሽታ ዝርዝር",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "እባክዎ በአስቀድሞ የነበሩትን ከባድ በሽታዎች ዝርዝር ያቀርቡ፣ ወይም እንኳን እንደተወው እንኳን.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "የቀርጸ-ቀትር ታሪክ",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "ለምሳሌ አፐንደክቶሚ",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "እባኮትን ሁሉንም ቀደም በተከታታይ የተደረጉ ምርመራዎችን ይዘው ዓመቱን እና የሚኖሩትን ችግኝ ይጨምሩ።",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "አንዳንድ ጊዜ የሚጠቀሙ መድሀኒቶች",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "እንደ ኢቡፕሮፍን",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "እባክዎ ከጊዜ ወደ ጊዜ የምንዛሬ የሚወስዱ መድሃኒቶችን ይዘጋጁ (ለምሳሌ፡ የህመም መድሃኒቶች፣ የአለም መድሃኒቶች)፣ የወሰነ መጠን እና የምንዛሬ ምክንያት ጨምር.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "የተደጋጋሚ መድሃኒቶች",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "እንደ ምሳሌ መትፎርሚን",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "እባክዎ በተደጋጋሚ የምንቀበል መድሃኒቶች ዝርዝር ይዘው ይጻፉ፣ የመድሃኒቱን ስም፣ ድምፅ፣ በየቀኑ ምን ጊዜ ይወስዳሉ እና ለምን ነው የሚያገለግል ይጻፉ።",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "አለርጂዎች",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "እንደ ፔኒሲሊን – በረሃብ ይከሰታል",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "እባኮትን ሁሉንም አለማይ የሚያስከትሉ እንደ መድሃኒቶች፣ ምግብ፣ እና አካባቢ ያለው አለማይ ዝርዝር ይዘው ይጻፉ፣ እና የምን እንደ ምልክት ይገልጹ (ለምሳሌ፡ ቀስተ ቀስተ ወይም እንደ መታወቂያ ችግኝ ወይም እንደ መታወቂያ ችግኝ ወይም እንደ መታወቂያ ችግኝ).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "ልዩ ሁኔታዎች",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "ለምሳሌ እርግዝና, እጥረት",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "ዶክተሮች ሁልጊዜ መረጃ ሊያገኙ የሚገባው ከሚኖርዎት አስፈላጊ የሕክምና ሁኔታዎች አንዳንድ ምሳሌዎች እንደ እንቅልፍ ወይም የተገነባ መሳሪያዎች፣ እንደ አንዳንድ የተወሰኑ የሕክምና ሂደቶች ይገኙ። ከሆነ ይቅርታ ይቀርባሉ።",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "የቤተሰብ ታሪክ",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "ለምሳሌ፣ የልብ በሽታ፣ ካንሰር",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "እባኮትን በቤተሰብዎ ውስጥ ያሉ አስፈላጊ 病 ይገልጹ (ለምሳሌ: ዳይቦቲስ, የደም ግፊት, የልብ በሽታ, ካንሰር, የወርሃዊ በሽታዎች) እና ያንን የተለየ ቤተሰብ አባል ይገልጹ.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "ማህበራዊ እና የሕይወት ልማዶች",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "ለምሳሌ መጥላት, የአልኮል ጥቅም",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "እባኮትን ወደ ጤናዎ የሚያወዳድሩ የእንቅስቃሴ አካላት ይግለጹ፣ እንደ መሳሪያ መጠጣት፣ አልኮል፣ አካል እንቅስቃሴ፣ ዳይት፣ እንቅልፍ እና ሥራ.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "የሕክምና መሣሪያዎች",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "ለምሳሌ ፔስመከር, የጆሮ እርዳታ, የኢንስሊን ፓምፕ",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "እባኮትን የምንጭ መሳሪያዎች ወይም የተገነባ መሳሪያዎች ዝርዝር ያቀርቡ፣ እንደ ፓስሜከር፣ የኢንሱሊን ፓም፣ የስም ማስታወቂያዎች፣ ፕሮስቴቲክ ወይም ሌላ የሚያገለግል ወይም የሚከታተል መሳሪያዎች። ከሚገባ ዝርዝር ያካትቱ።",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "ሁሉንም የሚበላ",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "ፈጣን ምግብ",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "ፔስካታሪያን",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "የላክቶዝ ነጻ",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "ዝቅተኛ ጨው ያለ የምግብ ስርዓት",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "ዝቅተኛ ስኳር ያለው የምግብ አመጋገብ",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "የልብ ምግብ",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "የኩስት ምግብ",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "ሌላ",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

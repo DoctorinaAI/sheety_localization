@@ -1,0 +1,230 @@
+{
+  "@@locale": "pa_PK",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "بٹن مثال",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "ہاں، سب ٹھیک ہے!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "ہر شراکت شفا بخشتا ہے!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "تہاڈی شراکت ضرورت مند افراد نوں مفت مشورہ فراہم کرنے وچ مددگار ہے.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "جو مناسب لگے، اوہی رقم ادا کرو,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "یا پھر مفت وچ Doctorina استعمال کردے رہو، اوہناں دا شکریہ جنہاں نے عطیہ دین دا فیصلہ کیتا.",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "اک واری",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "ماہانہ",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "ماہانہ عطیہ کی رقم منتخب کریں",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "تُسیں اک ماہانہ پلان لئی سبسکرائب کرن جا رہے او",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "تُسیں {amount}/مہینہ لئی ماہانہ پلان تے سبسکرائب کر رہے او.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "تصدیق خریداری کے وقت آپ کے اکاؤنٹ سے رقم وصول کی جائے گی. سبسکرپشن خود بخود ہر مہینے تجدید ہو جاتی ہے جب تک کہ موجودہ مدت کے اختتام سے کم از کم 24 گھنٹے قبل خودکار تجدید بند نہ کی جائے. آپ کسی بھی وقت اپنے اکاؤنٹ کی ترتیبات میں اپنی سبسکرپشن کو منظم یا منسوخ کر سکتے ہیں. آگے بڑھ کر آپ ہمارے {termsOfService} اور {privacyPolicy} سے اتفاق کرتے ہیں",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "ایک وقتی عطیہ رقم منتخب کریں",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "اکثر لوگ $7–$15 دیتے ہیں",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "کرنسی منتخب کریں",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "ادائیگی جاری ہے",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "ایک وقتی ادائیگی {currency} {amount} کی پراسیسنگ ہو رہی ہے",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "ماہانہ ادائیگی {amount} کی پراسیسنگ ہو رہی ہے",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "تہاڈا شکریہ!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "ہن ہور لوگ مفت مشورہ حاصل کرنگے — تُہاڈی حمایت واقعی انمول اے",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "تُسی حصہ ڈالا:",
+  "@youContributedLabel": {},
+  "perMonth": "/ مہینہ",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "مین اسکرین ول واپس جائیں",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "سروس دیاں شرائط",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "رازداری پالیسی",
+  "@privacyPolicyLabel": {},
+  "donateButton": "دان کرو",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "فعال",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "منسوخ",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "معطل",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "زیر التواء",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "تخلیق کیا",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "ٹائم آؤٹ",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "نامعلوم",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina ਯੋਗਦਾਨਕਰਤਾ",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "تجدید",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "سبسکرپشن منسوخ کریں",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "تُسی پکے او؟",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "توانڈی ماہانہ مدد ڈاکٹرینا نوں انہاں لوکاں لئی مفت رکھدی اے جڑے اوہ تے منحصر نیں پر خرچ برداشت نئیں کر سکدے۔ توانڈی رکنیت ہر مہینے کم از کم ۱۰ مفت مشاورت فراہم کردی اے۔ جے تسی چھڈ دیو، تاں کٹ مریض اوہ مدد حاصل کر سکن گے جیہڑی اوہناں نوں درکار اے",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "ركنيت برقرار رکھو",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "ਫਿਰ ਵੀ ਰੱਦ ਕਰੋ",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "تہاڈی ماہانہ سپورٹ کامیابی نال منسوخ کیتی گئی اے",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "غلط سبسکرپشن ڈیٹا",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "ماہانہ سپورٹ کے لیے سائن اپ کریں تاکہ یہ یہاں ظاہر ہو",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "ہن تک کوئی سبسکرپشن نہیں",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "سبسکرپشن کی تاریخ",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "ختم",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "رکنیت شناخت",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "پروڈکٹ آئی ڈی",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "ٹھیک",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "اسی تہاڈی ادائیگی جاری نہیں کر سکے",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "ادائیگی میں کچھ غلط ہو گیا. براہ مہربانی دوبارہ کوشش کریں.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "دوبارہ کوشش کریں",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "ادائیگی عمل میں ہے",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "تُسی Stripe دے محفوظ چیک آؤٹ صفحے تے اپنی خریداری مکمل کرنگے.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ ہفتہ",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ سال",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "سب سے مقبول",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "بند کرو",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "ڈاکٹرینا پریمیم",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "پریمیم کے ساتھ آپ کو کیا ملتا ہے:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "اشتہارات سے پاک مشاورت",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "تیز جوابات",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "نئی خصوصیات تک جلد رسائی",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/ہفتہ",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "کسی بھی وقت منسوخ کریں۔ کوئی پابندی نہیں۔",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "محدود وقت",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "ہر ہفتے خودکار تجدید ہوتی ہے۔ سیٹنگز میں کبھی بھی منسوخ کریں۔ جاری رکھنے سے، آپ ہماری <t>شرائط</t> اور <p>رازداری کی پالیسی</p> سے اتفاق کرتے ہیں۔",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 پریمیم کے ساتھ جاری رکھیں",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 آپ کی حمایت صحت کی دیکھ بھال کو قابل رسائی رکھنے میں مدد کرتی ہے",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "ਕਿਰਪਾ ਕਰਕੇ ਖਰੀਦਾਰੀ ਨੂੰ ਪੂਰਾ ਕਰਨ ਲਈ ਸਾਈਨ ਅਪ ਕਰੋ ਜਾਂ ਲਾਗਇਨ ਕਰੋ.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

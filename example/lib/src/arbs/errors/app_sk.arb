@@ -1,0 +1,18 @@
+{
+  "@@locale": "sk",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "Došlo k chybe",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Nastala neočakávaná chyba",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Hlášenie o chybách bolo úspešne odoslané.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

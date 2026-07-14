@@ -1,0 +1,230 @@
+{
+  "@@locale": "km",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "ឧទាហរណ៍ប៊ូតុង",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "បាទ វាធ្វើឱ្យគ្រប់យ៉ាងល្អ!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "ការបរិច្ចាគរាល់យ៉ាងគឺជាសុខភាព!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "ការរួមចំណែករបស់អ្នកជួយផ្តល់ប្រាក់ចំណេញសម្រាប់ការប្រឹក្សាដោយឥតគិតថ្លៃសម្រាប់អ្នកដទៃដែលត្រូវការនោះ។",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "បង់អ្វីដែលមានអារម្មណ៍ត្រឹមត្រូវ,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "ឬរក្សាអោយប្រើDoctorina ដោយឥតគិតថ្លៃ សូមអរគុណដល់អ្នកដទៃដែលបានជ្រើសរើសឲ្យ",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "មួយដង",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "ប្រចាំខែ",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "ជ្រើសរើសចំនួនការបរិច្ចាគប្រចាំខែ",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "អ្នកកំពុងតែចុះឈ្មោះសម្រាប់ផែនការប្រចាំខែ។",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "អ្នកកំពុងជាវផែនការប្រចាំខែសម្រាប់ {amount}/ខែ។",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "ការទូទាត់នឹងត្រូវគេគិតថ្លៃទៅកាន់គណនីរបស់អ្នកនៅពេលដែលបានបញ្ជាក់ការទិញ។ ការជាវនឹងត្រូវបានធ្វើឡើងដោយស្វ័យប្រវត្តិរៀងរាល់ខែ បើមិនមានការបិទការធ្វើឡើងដោយស្វ័យប្រវត្តិយ៉ាងហោចណាស់ 24 ម៉ោងមុនចុងបញ្ចប់រយៈពេលបច្ចុប្បន្ន។ អ្នកអាចគ្រប់គ្រងឬបោះបង់ការជាវរបស់អ្នកនៅក្នុងការកំណត់គណនីរបស់អ្នក។ ដោយបន្ត អ្នកយល់ព្រមទៅនឹង {termsOfService} និង {privacyPolicy}។",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "ជ្រើសរើសចំនួនបរិច្ចាគមួយដង",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "មនុស្សភាគច្រើនផ្តល់ $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "ជ្រើសរើសរូបិយវត្ថុ",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "កំពុងដំណើរការបង់ប្រាក់",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "កំពុងដំណើរការបង់ប្រាក់មួយដង {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "កំពុងដំណើរការការទូទាត់ប្រចាំខែ {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "សូមអរគុណ!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "ឥឡូវនេះមនុស្សច្រើនទៀតនឹងទទួលបានការប្រឹក្សាដោយឥតគិតថ្លៃ — ការគាំទ្ររបស់អ្នកមានតម្លៃពិតៗ។",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "អ្នកបានចូលរួម:",
+  "@youContributedLabel": {},
+  "perMonth": "/ ខែ",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "ត្រឡប់ទៅអេក្រង់សំខាន់",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "លក្ខខណ្ឌនៃសេវាកម្ម",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "គោលការណ៍ឯកជនភាព",
+  "@privacyPolicyLabel": {},
+  "donateButton": "បរិច្ចាគ",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "សកម្ម",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "បានបោះបង់",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "បានបញ្ឈប់",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "កំពុងរង់ចាំ",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "បានបង្កើត",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "ពេលវេលាដំណើរការ",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "មិនដឹង",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina contributor",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "កំណត់ឡើងវិញ",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "បោះបង់ការជាវ",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "តើអ្នកប្រាកដទេ?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "ការគាំទ្រប្រចាំខែរបស់អ្នករក្សា Doctorina ឱ្យឥតគិតថ្លៃសម្រាប់មនុស្សដែលពឹងផ្អែកលើវា ប៉ុន្តែមិនអាចបង់ប្រាក់បានទេ។\n\nការបញ្ជាទិញរបស់អ្នកផ្តល់ថវិកាសម្រាប់ការពិគ្រោះយោបល់ឥតគិតថ្លៃយ៉ាងហោចណាស់ 10 ការពិគ្រោះក្នុងមួយខែ។\nប្រសិនបើអ្នកចាកចេញ អ្នកជំងឺតិចជាងនឹងទទួលបានជំនួយដែលពួកគេត្រូវការ។",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "រក្សាអាណត្តិ",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "បោះបង់ទៅវិញ",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "ការគាំទ្រប្រចាំខែរបស់អ្នកត្រូវបានបោះបង់ដោយជោគជ័យ",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "ទិន្នន័យការជាវមិនត្រឹមត្រូវ",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "ចុះឈ្មោះសម្រាប់ការគាំទ្រប្រចាំខែដើម្បីឱ្យវាបង្ហាញនៅទីនេះ។",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "មិនមានការបញ្ជាទិញទេ",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "ថ្ងៃបង្កើតការជាវ",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Expires",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "លេខសម្គាល់ការជាវ",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "លេខសម្គាល់ផលិតផល",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "យល់ព្រម",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "យើងមិនអាចបន្តការទូទាត់របស់អ្នកបានទេ",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "មានបញ្ហាដែលមិនបានសម្រេចជាមួយការទូទាត់។ សូមព្យាយាមម្តងទៀត។",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Retry",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "កំពុងដំណើរការបង់ប្រាក់",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "អ្នកនឹងបញ្ចប់ការទិញរបស់អ្នកនៅលើទំព័រទិញទំនិញសុវត្ថិភាពរបស់ Stripe។",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ សប្តាហ៍",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ ឆ្នាំ",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "ពេញនិយមបំផុត",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "បិទ",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "អ្វីដែលអ្នកទទួលបានជាមួយ Premium:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "ការពិគ្រោះយោបល់ដោយគ្មានពាណិជ្ជកម្ម",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "ការឆ្លើយតបលឿន",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "ការចូលដំណើរការថ្មី",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/សប្តាហ៍",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "បោះបង់បានគ្រប់ពេល។ គ្មានការប្តេជ្ញា។",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "ពេលវេលាមានកំណត់",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "អាចធ្វើការបន្តដោយស្វ័យប្រវត្តិរៀងរាល់សប្តាហ៍។ បោះបង់បានគ្រប់ពេលនៅក្នុងការកំណត់។ ដោយបន្ត អ្នកយល់ព្រមទៅនឹង <t>ល័ក្ខខ័ណ្ឌ</t> និង <p>គោលការណ៍ឯកជន</p>។",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 បន្តជាមួយ Premium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 ការគាំទ្ររបស់អ្នកជួយរក្សាឱ្យការថែទាំអាចចូលដំណើរការ",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "សូមចុះឈ្មោះឬចូលប្រើដើម្បីបញ្ចប់ការទិញ។",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

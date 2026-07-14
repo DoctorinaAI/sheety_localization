@@ -1,0 +1,18 @@
+{
+  "@@locale": "zh_CN",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "发生错误",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "发生了意外错误",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "错误报告已成功发送。",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

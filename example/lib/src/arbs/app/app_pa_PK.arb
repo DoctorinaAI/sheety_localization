@@ -1,0 +1,132 @@
+{
+  "@@locale": "pa_PK",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "lang": "#VALUE!",
+  "@lang": {},
+  "langEn": "Western Punjabi",
+  "@langEn": {},
+  "title": "Doctorina",
+  "@title": {},
+  "checkVersionUpdateNowButton": "ہن اپ ڈیٹ کرو",
+  "@checkVersionUpdateNowButton": {
+    "description": "Кнопка обновиться"
+  },
+  "checkVersionMaybeLaterButton": "شاید بعد میں",
+  "@checkVersionMaybeLaterButton": {
+    "description": "Кнопка отложить обновление"
+  },
+  "checkVersionUpdateOptionalTitle": "نواں اپڈیٹ دستیاب ہے",
+  "@checkVersionUpdateOptionalTitle": {
+    "description": "Заголовок можешь обновиться"
+  },
+  "checkVersionUpdateRequiredTitle": "اپ ڈیٹ ضروری",
+  "@checkVersionUpdateRequiredTitle": {
+    "description": "Заголовок обязан обновиться"
+  },
+  "checkVersionUpdateOptionalText": "ایپ کا نیا ورژن (v{version}) دستیاب ہے. بہترین تجربے کے لیے براہِ کرم اپ ڈیٹ کریں",
+  "@checkVersionUpdateOptionalText": {
+    "description": "Сообщение о доступности новой версии \nприложения с приглашением обновиться",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "checkVersionUpdateRequiredText": "جاری رکھنے کے لیے، براہ مہربانی ایپ کو اپ ڈیٹ کریں۔ اس اپ ڈیٹ میں اہم اصلاحات اور بہتریاں شامل ہیں۔",
+  "@checkVersionUpdateRequiredText": {
+    "description": "Сообщение с требованием обновиться"
+  },
+  "chatContextMenuDownload": "ڈاؤنلوڈ",
+  "@chatContextMenuDownload": {
+    "description": "Menu item for downloading attachment"
+  },
+  "welcomeBackDialogText": "اگر آپ کے پاس پہلے سے Doctorina اکاؤنٹ ہے تو لاگ ان کریں، یا شروع کرنے کے لیے سائن اپ کریں.",
+  "@welcomeBackDialogText": {
+    "description": "Body text prompting to log in or sign up"
+  },
+  "welcomeBackDialogLogInButton": "لاگ ان کریں",
+  "@welcomeBackDialogLogInButton": {
+    "description": "Primary button to open log in"
+  },
+  "welcomeBackDialogSignUpButton": "سائن اپ",
+  "@welcomeBackDialogSignUpButton": {
+    "description": "Secondary button to open sign up"
+  },
+  "welcomeBackDialogContinueAsGuestButton": "مہمان دے طور تے جاری رکھو",
+  "@welcomeBackDialogContinueAsGuestButton": {
+    "description": "Link to continue as guest"
+  },
+  "titleLogin": "لاگ ان",
+  "@titleLogin": {},
+  "titleLogout": "لاگ آؤٹ",
+  "@titleLogout": {},
+  "titleSignIn": "سائن ان",
+  "@titleSignIn": {
+    "description": "Заголовок экрана"
+  },
+  "titleDialog": "گفتگو",
+  "@titleDialog": {},
+  "titleChat": "چیٹ",
+  "@titleChat": {},
+  "titleSettings": "اکاؤنٹ کی ترتیبات",
+  "@titleSettings": {
+    "description": "Заголовок экрана"
+  },
+  "titleChatHistory": "چیٹ کی تاریخ",
+  "@titleChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "titlePayment": "ادائیگی",
+  "@titlePayment": {
+    "description": "Заголовок экрана"
+  },
+  "titleManageSubscription": "سبسکرپشن کا انتظام کریں",
+  "@titleManageSubscription": {},
+  "titleMonthlySubscription": "ماہانہ رکنیت",
+  "@titleMonthlySubscription": {},
+  "titleOnboarding": "آن بورڈنگ",
+  "@titleOnboarding": {
+    "description": "Заголовок экрана"
+  },
+  "titleWelcomeBack": "خوش آمدید",
+  "@titleWelcomeBack": {
+    "description": "Title of the welcome-back dialog shown when the user had an account before"
+  },
+  "titleProfiles": "صحت ریکارڈ پروفائلز",
+  "@titleProfiles": {},
+  "titleProfilesAnnouncement": "پروفائلز کا اعلان",
+  "@titleProfilesAnnouncement": {},
+  "titleDashboardProfile": "صحت کے ریکارڈ",
+  "@titleDashboardProfile": {
+    "description": "Title for dashboard screen"
+  },
+  "titleFullRecord": "مکمل ریکارڈ",
+  "@titleFullRecord": {
+    "description": "Title for screen with full health records data"
+  },
+  "titleDocuments": "دستاویزات",
+  "@titleDocuments": {},
+  "titleConsultations": "مشاورتیں",
+  "@titleConsultations": {},
+  "titleAppLaunchPaywall": "پے وال",
+  "@titleAppLaunchPaywall": {},
+  "quickActionDeleteFeedback": "ਹਟਾਉਣੇ? ਸਾਨੂੰ ਦੱਸੋ ਕਿਉਂ!",
+  "@quickActionDeleteFeedback": {
+    "description": "Быстрое действие на иконке приложения для обратной связи перед удалением аккаунта"
+  },
+  "quickActionNewChatSubtitle": "نئی صحت کی گفتگو شروع کریں",
+  "@quickActionNewChatSubtitle": {
+    "description": "Подзаголовок быстрого действия для создания нового чата"
+  },
+  "quickActionFeedbackSubtitle": "ایک خیال شیئر کریں یا مسئلہ رپورٹ کریں",
+  "@quickActionFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для отправки обратной связи"
+  },
+  "quickActionDeleteFeedbackSubtitle": "ڈاکٹرینا کو بہتر بنانے کے لیے ہمیں بتائیں",
+  "@quickActionDeleteFeedbackSubtitle": {
+    "description": "Подзаголовок быстрого действия для обратной связи перед удалением приложения"
+  }
+}

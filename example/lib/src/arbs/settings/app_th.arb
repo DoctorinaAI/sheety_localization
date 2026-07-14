@@ -1,0 +1,286 @@
+{
+  "@@locale": "th",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "sectionClearAllChatsTitle": "ล้างแชททั้งหมด",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "สิ่งนี้จะลบประวัติการแชทของคุณอย่างถาวร",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "ล้างการสนทนาทั้งหมด",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "ล้างการแชททั้งหมด",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "ลบบัญชี",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "การลบบัญชีของคุณเป็นการกระทำถาวรและไม่สามารถย้อนกลับได้.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "ลบ",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "ลบบัญชี",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "ออกจากระบบ",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "คุณจะถูกลงชื่อออกจากบัญชีของคุณ.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "ออกจากระบบ",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "ส่งรายงานข้อบกพร่อง",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "ส่งข้อความโดยกด [⏎ Enter]",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "ส่งข้อความโดยกด [⏎ Enter] และขึ้นบรรทัดใหม่โดยกด [Shift] + [⏎ Enter]",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "ส่งด้วย [⏎ Enter]",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "นโยบายความเป็นส่วนตัว",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "ภาษา",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "เลือกภาษาที่คุณต้องการใช้สำหรับส่วนติดต่อผู้ใช้ของแอป",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "โหมดมืด",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "เปิดใช้งานโหมดมืดเพื่อประสบการณ์การรับชมที่สบายตาในที่แสงน้อย",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "บันทึก",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "ดูและจัดการบันทึกแอปพลิเคชันเพื่อการแก้ไขปัญหา",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "เสร็จแล้ว",
+  "@doneButton": {},
+  "bugReportDialogTitle": "รายงานข้อผิดพลาด",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "โปรดอธิบายข้อผิดพลาดที่คุณพบ",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "แนบไฟล์",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "ไม่สามารถเลือกไฟล์ได้",
+  "@filePickerError": {},
+  "emptyBugReportError": "กรุณาส่งรายงานข้อผิดพลาดก่อน",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "ไม่สามารถส่งรายงานข้อผิดพลาดได้",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "จัดการการสมัครสมาชิก",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "จัดการการตั้งค่าการสมัครสมาชิกของคุณ",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "การตอบสนองแบบสัมผัส",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "เปิดหรือปิดการตอบสนองแบบสั่น (การสั่น) บนอุปกรณ์ที่รองรับ",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "เปิดการแจ้งเตือน",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "อัปเดตเมื่อ Doctorina พบสิ่งสำคัญในแชท รายงาน หรืออาการของคุณ",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "บัญชี",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "แอป",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "เกี่ยวกับ",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "การแจ้งเตือน",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "วิดีโอสอน",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "โทรศัพท์",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "อีเมล",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "ชื่อ",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "ข้ามไฟล์ {count} ไฟล์เนื่องจากซ้ำกับไฟล์ที่มีอยู่",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "ประเภท",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "คำอธิบาย",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "ไฟล์แนบ",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "ข้อบกพร่อง",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "การชน",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "ปัญหาจาก UI",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "อื่นๆ",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "การลบบัญชีของคุณจะลบข้อมูลของคุณจาก Doctorina อย่างถาวร",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "ก่อนที่คุณจะลบ",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "คุณมีการสมัครสมาชิกที่ใช้งานอยู่ผ่าน {store} การลบบัญชีของคุณจะไม่ยกเลิกมัน",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "ยกเลิกการสมัครสมาชิกใน {store}",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "ดำเนินการต่อ",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "เราขอโทษที่เห็นคุณไป คุณแน่ใจหรือว่าต้องการลบบัญชีของคุณ? เมื่อคุณยืนยัน ข้อมูลของคุณจะหายไป",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "ฉันไม่ใช้แอปอีกต่อไป",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "พบสิ่งที่ดีกว่า",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "ปัญหาทางเทคนิค",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "ปัญหาเรื่องการใช้งาน",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "ขาดฟีเจอร์",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "ความกังวลเกี่ยวกับความเป็นส่วนตัว",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "ฉันแค่ต้องการลบข้อมูลของฉัน",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "อื่นๆ",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "แชร์ข้อเสนอแนะแบบของคุณ",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "กำลังลบบัญชีของคุณ...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "กำลังลบ",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "ย้อนกลับ",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "บัญชีของคุณถูกลบแล้ว",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "ไม่สามารถลบบัญชีได้ กรุณาลองอีกครั้ง",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "อีเมลแอปไม่พร้อมใช้งานในอุปกรณ์นี้ กรุณาติดต่อ support@doctorina.com ด้วยตนเอง",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

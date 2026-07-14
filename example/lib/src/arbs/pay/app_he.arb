@@ -1,0 +1,230 @@
+{
+  "@@locale": "he",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "כפתור דוגמה",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "כן, הכל בסדר!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "כל תרומה מרפאת!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "התרומה שלך עוזרת לממן ייעוץ חינם למי שזקוקים לו.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "שלמו לפי מה שמרגיש נכון,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "או המשך להשתמש ב-Doctorina בחינם, תודה לאחרים שבחרו לתרום",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "פעם אחת",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "חודשי",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "בחר את סכום התרומה החודשית",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "את/ה עומד/ת להירשם לתוכנית חודשית.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "אתה נרשם לתוכנית חודשית בעלות {amount}/חודש",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "חיוב יתבצע מחשבונך עם אישור הרכישה. המנוי מתחדש אוטומטית כל חודש, אלא אם כן כיבית את החידוש האוטומטי לפחות 24 שעות לפני תום התקופה הנוכחית. באפשרותך לנהל או לבטל את המנוי בכל עת בהגדרות החשבון שלך. בהמשך, אתה מסכים ל-{termsOfService} ו-{privacyPolicy} שלנו.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "בחר סכום תרומה חד-פעמית",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "רוב האנשים נותנים $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "בחר מטבע",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "תשלום בעיבוד",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "מעבד תשלום חד-פעמי של {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "מעבד תשלום חודשי בסכום {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "תודה!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "עכשיו עוד יותר אנשים יקבלו ייעוץ חינמי — התמיכה שלך באמת יקרה מפז.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "תרמת:",
+  "@youContributedLabel": {},
+  "perMonth": "/ חודש",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "חזרה למסך הראשי",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "תנאי שימוש",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "מדיניות פרטיות",
+  "@privacyPolicyLabel": {},
+  "donateButton": "תרום",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "פעיל",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "מבוטל",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "מושהה",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "ממתין",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "נוצר",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "פג הזמן",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "לא ידוע",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "תורם של Doctorina",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "מתחדש",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "בטל מנוי",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "האם אתה בטוח?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "התמיכה החודשית שלך שומרת על Doctorina כחינמית לאלה התלויים בה אך אינם יכולים לשלם.\n\nהמנוי שלך מממן לפחות 10 התייעצויות חינם בכל חודש.\nאם תעזוב, פחות מטופלים יקבלו את העזרה הנדרשת",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "השאר את המנוי",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "בטל בכל זאת",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "התמיכה החודשית שלך בוטלה בהצלחה.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "נתוני מנוי שגוויים",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "הרשם לתמיכה חודשית כדי שתופיע כאן",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "עדיין אין מנויים",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "תאריך מנוי",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "תפוג",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "מזהה מנוי",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "מזהה מוצר",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "אישור",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "לא הצלחנו לעבד את התשלום שלך",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "משהו השתבש בתשלום.\nאנא נסה שוב.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "נסה שוב",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "תשלום בעיבוד",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "תשלים את הרכישה שלך בדף התשלום המאובטח של Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ שבוע",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ שנה",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "הכי פופולרי",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "סגור",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "מה שאתה מקבל עם פרימיום:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "ייעוץ ללא פרסומות",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "תשובות מהירות יותר",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "גישה מוקדמת לתכונות חדשות",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/שבוע",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "בטל בכל עת. אין התחייבות.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "זמן מוגבל",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "מתחדש אוטומטית מדי שבוע. ניתן לבטל בכל עת בהגדרות. בהמשך, אתה מסכים ל<t>תנאים</t> ול<p>מדיניות הפרטיות</p> שלנו.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 המשך עם פרימיום",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 התמיכה שלך עוזרת לשמור על נגישות טיפול",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "אנא הירשם או התחבר כדי להשלים את הרכישה.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

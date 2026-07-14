@@ -1,0 +1,230 @@
+{
+  "@@locale": "it",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "Esempio di pulsante",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Sì, va tutto bene!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Ogni contributo guarisce!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Il tuo contributo aiuta a finanziare consulenze gratuite per chi ne ha bisogno.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Paga quanto ritieni giusto,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "o continua a usare Doctorina gratuitamente, grazie a chi ha scelto di donare",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Una tantum",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Mensile",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Scegli l'importo della donazione mensile",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Stai per iscriverti a un piano mensile.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Ti stai abbonando a un piano mensile per {amount}/mese",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "Il pagamento verrà addebitato sul tuo conto al momento della conferma dell'acquisto. L'abbonamento si rinnova automaticamente ogni mese a meno che il rinnovo automatico non venga disattivato almeno 24 ore prima della fine del periodo corrente. Puoi gestire o annullare il tuo abbonamento in qualsiasi momento nelle impostazioni del tuo account. Procedendo, accetti i nostri {termsOfService} e {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Scegli un importo di donazione una tantum",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "La maggior parte dà $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Seleziona valuta",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Pagamento in elaborazione",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Elaborazione del pagamento una tantum di {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Elaborazione del pagamento mensile di {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Grazie!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Ora ancora più persone riceveranno consigli gratuiti — il tuo supporto è davvero inestimabile.",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Hai contribuito:",
+  "@youContributedLabel": {},
+  "perMonth": "/ mese",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Torna alla schermata principale",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Termini di servizio",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Informativa sulla privacy",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Dona",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Attivo",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Annullato",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "In pausa",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "In attesa",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Creato",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Timeout",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Sconosciuto",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Collaboratore di Doctorina",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Si rinnova",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Annulla abbonamento",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Sei sicuro?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Il tuo supporto mensile mantiene Doctorina gratuita per le persone che ne hanno bisogno ma non possono permettersi di pagare.\n\nIl tuo abbonamento finanzia almeno 10 consulti gratuiti ogni mese.\nSe te ne vai, meno pazienti riceveranno l'aiuto di cui hanno bisogno",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Mantieni abbonamento",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Annulla comunque",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Il tuo supporto mensile è stato annullato con successo.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Dati di abbonamento errati",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Iscriviti per il supporto mensile affinché compaia qui",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Ancora nessun abbonamento",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Data di abbonamento",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Scade",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "ID abbonamento",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "ID prodotto",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "Ok",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Non siamo riusciti ad elaborare il tuo pagamento",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Qualcosa è andato storto con il pagamento.\nPer favore riprova.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Riprova",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Pagamento in elaborazione",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Completerai il tuo acquisto sulla pagina di checkout sicura di Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ settimana",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ anno",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Più Popolare",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Chiudi",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Cosa ottieni con Premium:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Consultazioni senza pubblicità",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Risposte più rapide",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Accesso anticipato a nuove funzionalità",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/settimana",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Annulla in qualsiasi momento. Nessun impegno.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "LIMITATO",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Si rinnova automaticamente ogni settimana. Annulla in qualsiasi momento nelle impostazioni. Continuando, accetti i nostri <t>Termini</t> e <p>Informativa sulla privacy</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Continua con Premium",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Il tuo supporto aiuta a mantenere l'assistenza accessibile",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Per completare l'acquisto, registrati o accedi",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

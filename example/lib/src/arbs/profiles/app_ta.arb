@@ -1,0 +1,428 @@
+{
+  "@@locale": "ta",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "ஆரோக்கிய பதிவுகள்",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "புதியது",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "உங்கள் உடல் பதிவை உருவாக்கவும்",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "உங்கள் ஆலோசனையின் முடிவில், உங்கள் சுயவிவரத்தைச் சேர்க்கவும்.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "மேலும் சுயவிவரங்களைச் சேர்க்கவும்",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "மற்றொருவருக்கான சிகிச்சையை தொடங்கவும், அவர்களின் சுயவிவரத்தை உருவாக்கவும்.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "உங்கள் சுகாதார பதிவை உருவாக்க பதிவு செய்யவும்",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "மீண்டும் முயற்சி",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "சுயவிவரத்தை நீக்க முடியவில்லை",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "சுயவிவர சுருக்கத்தை ஏற்ற முடியவில்லை",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "முழு பதிவைப் பார்வையிடவும்",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "பகிர்",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "அழி",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "வயது",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} ஆண்டு} other{{value} ஆண்டுகள்}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "எடை",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "உயரம்",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} செ.மீ",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "அலர்ஜிகள்",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "நெடிய",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "மருந்து",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "கருவிகள்",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "கூட்டங்கள்",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "ஆவணங்கள்",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "ஆரோக்கிய பதிவை நீக்கவா?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "இது உங்கள் ஆரோக்கிய தரவுகளை நிரந்தரமாக நீக்கும் மற்றும் மீட்டுக்கொள்ள முடியாது. நீங்கள் நாங்கள் உங்களை வழிநடத்த பயன்படுத்தும் சூழ்நிலையை இழக்கிறீர்கள்.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "ரத்து செய்",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "அழி",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "உங்கள் ஆரோக்கிய பதிவை நீக்குகிறது...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "சுயவிவரத்தை நீக்க முடியவில்லை",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "ஆரோக்கிய பதிவுகள் நீக்கப்பட்டது",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "நீங்கள் உதவியாளர் உடன் உரையாடுவதன் மூலம் எப்போது வேண்டுமானாலும் புதியதை உருவாக்கலாம்.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "சந்திப்புக்கு திரும்பவும்",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "திருத்துதல்",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "சுயவிவர தரவுகளை ஏற்ற முடியவில்லை",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "மாற்றங்கள் சேமிக்கப்பட்டன",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "உங்கள் தகவல்கள் வெற்றிகரமாக புதுப்பிக்கப்பட்டது.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "சுயவிவரத்திற்கு திரும்பவும்",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "சுயவிவர தரவுகளை புதுப்பிக்க முடியவில்லை",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "மாற்றங்களை நீக்க வேண்டுமா?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "நீங்கள் உங்கள் சுயவிவரத்தில் சில மாற்றங்களை செய்துள்ளீர்கள். நீங்கள் செல்லும் முன் அவற்றை சேமிக்கவும், அல்லது நீக்கவும்.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "திருத்தத்தை தொடரவும்",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "நீக்கு",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "திருத்து",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "பதிவு சேர்க்கவும்",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "தேடல்",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "எந்த முடிவும் கிடைக்கவில்லை",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "பதிவிறக்கம்",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "பகிர்",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "அழி",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "ஆவணங்கள் கிடைக்கவில்லை",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "இந்த ஆவணத்தை நீக்க வேண்டுமா?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "இந்த கோப்பு நிரந்தரமாக நீக்கப்படும்",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "ரத்து செய்",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "அழி",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "மேலும் செயல்கள்",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "தேடல்",
+  "@profilesSearch": {},
+  "profilesEmptyList": "சுயவிவரங்கள் எதுவும் கிடைக்கவில்லை",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "மேலும் பார்க்க",
+  "@profilesViewMore": {},
+  "profilesMore": "மேலும்",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina இப்போது உங்கள் ஆரோக்கியத்தை நினைவில் வைத்திருக்கிறது",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "உங்கள் ஆலோசனைகள் இப்போது உங்கள் ஆரோக்கிய பதிவை தானாகவே உருவாக்கி புதுப்பிக்கின்றன.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "உங்கள் சுகாதார பதிவுகள், உங்கள் விதிகள்",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "எப்போது வேண்டுமானாலும் அறிகுறிகள், மருந்துகள், வரலாறு அல்லது ஆவணங்களை காண்க, திருத்தவும் அல்லது சேர்க்கவும்.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "உங்கள் முழு குடும்பத்திற்கான பராமரிப்பு",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "உங்கள் அன்பானவர்களுக்கான சுகாதார பதிவை உருவாக்கவும், உங்கள் குழந்தைகள், பெற்றோர் அல்லது துணை.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "உங்கள் சுகாதார பதிவை சேமிக்க தயாரா?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "உங்கள் ஆலோசனையின் பிறகு, அதை சேமிக்க \"சேர் சுயவிவரம்\" என்பதைக் கிளிக் செய்யவும்.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "அடுத்தது",
+  "@profilesNextButton": {},
+  "profilesStartButton": "ஆரம்பிக்கவும்",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "பிறகு இருக்கலாம்",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "மூடு",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "ஆரோக்கியப் பதிவுகள்",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "ஆரோக்கியப் பதிவேடு — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...மேலும்",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...குறைவு",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "புதிய சுயவிவரம் சேர்க்கவும்",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "இந்த ஆலோசனையின் விவரங்களை சேமிக்க ஒரு சுயவிவரம் உருவாக்கவும்.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "நீங்கள் அதை உங்கள் ஆரோக்கிய பதிவுகளில் எப்போதும் மதிப்பாய்வு செய்யலாம்",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "இதோடு அல்லது இதன் தொடர்புடைய ஏதேனும் விஷயங்கள் குறித்து உங்களுக்கு மேலும் கேள்விகள் இருந்தால், என்னுடன் பேசத் தொடர தயங்காதீர்கள். நான் உதவ இங்கே இருக்கிறேன்",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "பொதுத் தகவல்கள்",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "பெயர்",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "முதல் பெயர்",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "ஜான்",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "குடும்பப் பெயர்",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "பாலினம்",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "தயவுசெய்து தேர்ந்தெடுக்கவும்",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "ஆண்",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "பெண்",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "பிற",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "பிறந்த தேதி",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "வயது",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "உதாரணமாக 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "தொலைபேசி எண்",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "மின்னஞ்சல்",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "இடம்",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "உதா. நகரம், நாடு",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "உடல் மற்றும் உணவுமுறை",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "உயரம்",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "எ.கா. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "எடை",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "உதாரணமாக 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "மாதவிடாய் சுழற்சி",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "உதாரணமாக: ஒழுங்கான, ஒழுங்கற்ற",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "உணவு கட்டுப்பாடுகள்",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "தயவுசெய்து தேர்வு செய்யவும்",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "நீங்கள் என்ன சாப்பிடுகிறீர்கள் மற்றும் உங்களிடம் உள்ள எந்த கட்டுப்பாடுகளும் எங்களுக்கு தெரிவிக்கவும்",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "எதுவும் இல்லை",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "சைவம்",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "வீகன்",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "குளூட்டன் இல்லாத",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "உடல் எடை குறியீடு (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "உதா. 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "சுகாதார சுயவிவரம்",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "நீடித்த நோய்கள்",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "எடுத்துக்காட்டு. நீரிழிவு வகை 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "தயவுசெய்து அனைத்து நீண்டகால நோய்களை பட்டியலிடவும், அவை எப்போது கண்டறியப்பட்டன மற்றும் எந்த சிக்கல்களையும் சேர்க்கவும்.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "முந்தைய நோய்கள்",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "எடுத்துக்காட்டாக. அடிக்கடி பொதுவான காய்ச்சல்",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "தயவுசெய்து நீங்கள் கடந்த காலத்தில் இருந்த கடுமையான நோய்களை பட்டியலிடுங்கள், நீங்கள் குணமாகினாலும்.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "அறுவை சிகிச்சை வரலாறு",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "உதா. அப்பெண்டெக்டமி",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "தயவுசெய்து அனைத்து அறுவை சிகிச்சைகளை பட்டியலிடவும், ஆண்டையும், எந்த சிக்கல்களும் இருந்ததா என்பதையும் சேர்க்கவும்.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "சில நேரங்களில் பயன்படுத்தப்படும் மருந்துகள்",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "எடுத்துக்காட்டு. இபுபுரோஃபேன்",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "தயவுசெய்து நீங்கள் சில நேரங்களில் எடுத்துக்கொள்ளும் மருந்துகளை (உதாரணமாக: வலி நிவர்த்தி மருந்துகள், அலர்ஜி மருந்துகள்) பட்டியலிடவும், அதில் அளவும் மற்றும் பயன்படுத்தும் காரணமும் சேர்க்கவும்.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "நிலையான மருந்துகள்",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "எடுத்துக்கொள்ளும் மருந்துகள், உதாரணம்: மெட்ஃபார்மின்",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "தயவுசெய்து நீங்கள் அடிக்கடி எடுத்துக்கொள்கிற அனைத்து மருந்துகளையும், பெயர், அளவு, தினத்திற்கு எத்தனை முறை எடுத்துக்கொள்கிறீர்கள் மற்றும் அது எந்த நிலைக்கு உகந்தது என்பதை பட்டியலிடவும்.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "அலர்ஜிகள்",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "எடுத்துக்காட்டு. பெனிசிலின் – தோலில் உலர்ச்சி",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "எல்லா அலர்ஜிகளை (மருந்துகள், உணவு, சுற்றுச்சூழல்) பட்டியலிடவும், நீங்கள் எவ்வாறு எதிர்வினை அளிக்கிறீர்கள் என்பதை விவரிக்கவும் (உதாரணமாக: தோல் உலர்வு, வீக்கம், மூச்சு பிரச்சினைகள்).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "சிறப்பு நிலைகள்",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "e.g. கர்ப்பம், மாற்றுத்திறன்மை",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "உங்களுக்கு மருத்துவர்களுக்கு எப்போதும் தெரிந்திருக்க வேண்டிய முக்கிய மருத்துவ நிலைகள் இருந்தால் (உதாரணமாக: கர்ப்பம், உடலில் உள்ள சாதனங்கள், மாற்றுத்திறன்கள், இரத்தத்தை உறிஞ்சும் சிகிச்சை), தயவுசெய்து அவற்றைப் பதிவு செய்யவும். இல்லையெனில், இதை காலியாக வைக்கலாம்.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "குடும்ப வரலாறு",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "உதா. இதய நோய், புற்றுநோய்",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "உங்கள் குடும்பத்தில் முக்கியமான நோய்களை விவரிக்கவும் (உதாரணமாக: நீரிழிவு, உயர் இரத்த அழுத்தம், இதய நோய், புற்றுநோய், மரபணு நோய்கள்) மற்றும் அந்த நிலை கொண்ட குடும்ப உறுப்பினரை குறிப்பிடவும்.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "சமூக & வாழ்க்கை முறை காரணிகள்",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "உதா. புகைபிடித்தல், மது அருந்துதல்",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "உங்கள் ஆரோக்கியத்தை பாதிக்கக்கூடிய வாழ்க்கை முறைகளை விவரிக்கவும், உதாரணமாக புகையிலை, மது, உடற்பயிற்சி, உணவு, தூக்கம் மற்றும் தொழில்.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "மருத்துவ சாதனங்கள்",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "உதாரணம்: பேஸ்மேக்கர், கேடுதல் உதவிக்கருவி, இன்சுலின் பம்ப்",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "நீங்கள் பயன்படுத்தும் அல்லது உடலில் உள்ள மருத்துவ சாதனங்களை, உதாரணமாக, பேஸ்மேக்கர்கள், இன்சுலின் பம்ப்கள், கேளிக்கை சாதனங்கள், செயற்கை உறுப்புகள் அல்லது பிற உதவியாளர்கள் அல்லது கண்காணிப்பு சாதனங்களை பட்டியலிடவும். தேவையான விவரங்களை சேர்க்கவும்.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "மாமிசமும் தாவர உணவுகளையும் உட்கொள்ளும்",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "விரைவு உணவு",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "மீன் சாப்பிடுவோர்",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "லக்டோஸ் இல்லாத",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "சோடியம் குறைந்த உணவு",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "சர்க்கரை குறைந்த உணவுமுறை",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "இதயத்திற்கான உணவு",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "சிறுநீரக உணவுமுறை",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "மற்றவை",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

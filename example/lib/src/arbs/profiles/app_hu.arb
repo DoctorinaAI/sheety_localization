@@ -1,0 +1,428 @@
+{
+  "@@locale": "hu",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "Egészségügyi nyilvántartások",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "ÚJ",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Hozza létre egészségügyi nyilvántartását",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "A konzultáció végén adja hozzá a profilját.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "További profilok hozzáadása",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Kezdj el egy konzultációt valaki más számára, hogy létrehozhassa a profilját.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Jelentkezzen be az egészségügyi nyilvántartás létrehozásához",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Újrapróbálkozás",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "A profil törlése nem sikerült",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "A profil összefoglalójának betöltése nem sikerült",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Teljes rekord megtekintése",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Megosztás",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Törlés",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Kor",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} év} other{{value} év}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Súly",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Magasság",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Allergiák",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Krónikus",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Gyógyszer",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Eszközök",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Konzultációk",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Dokumentumok",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Egészségügyi nyilvántartás törlése?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Ez véglegesen eltávolítja az egészségügyi adatait, és nem vonható vissza. El fogja veszíteni a kontextust, amelyet a vezetéshez használunk.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Mégse",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Törlés",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Az egészségügyi nyilvántartás törlése...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "A profil törlése nem sikerült",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Egészségügyi nyilvántartás törölve",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Bármikor létrehozhat egy újat, ha beszélget a segéddel.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Vissza a csevegéshez",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Szerkesztés",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "A profiladatok betöltése nem sikerült",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Változások mentve",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Az Ön adatai sikeresen frissítve lettek.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Vissza a profilhoz",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "A profiladatok frissítése nem sikerült",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Változások elvetése?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Változtatásokat hajtott végre a profilján. Mentse el őket, mielőtt elmegy, vagy dobja el őket.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Szerkesztés folytatása",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Elvetés",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Szerkesztés",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Felvétel hozzáadása",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Keresés",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Nincsenek találatok",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Letöltés",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Megosztás",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Törlés",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Nincsenek dokumentumok",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Törölni szeretné ezt a dokumentumot?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Ez a fájl véglegesen eltávolításra kerül",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Mégse",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Törlés",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "További műveletek",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Keresés",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Nem találhatók profilok",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Továbbiak megtekintése",
+  "@profilesViewMore": {},
+  "profilesMore": "Több",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "A Doctorina most már emlékszik az egészségére",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "A konzultációi most automatikusan építik és frissítik az Egészségügyi Nyilvántartását.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Az Ön egészségügyi nyilvántartása, az Ön szabályai",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Bármikor megtekintheti, szerkesztheti vagy hozzáadhatja a tüneteket, gyógyszereket, a kórtörténetet vagy a dokumentumokat.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Gondoskodjon az egész családjáról",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Hozzon létre egészségügyi nyilvántartást szerettei, gyerekei, szülei vagy partnere számára.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Készen áll a Health Record mentésére?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "A konzultáció után érintse meg az „Profil hozzáadása” gombot a mentéshez.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Következő",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Konzultáció indítása",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Később",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Bezárás",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Egészségügyi nyilvántartás",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Egészségügyi nyilvántartás — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...több",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...kevesebb",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Új profil hozzáadása",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Hozzon létre egy profilt a konzultáció részleteinek mentéséhez.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Ezt bármikor értékelheti az Egészségügyi feljegyzéseiben",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Ha további kérdése van ezzel vagy bármivel kapcsolatban, nyugodtan folytassa a beszélgetést velem. Itt vagyok, hogy segítsek",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Általános információk",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Név",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "János Kovács",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Keresztnév",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "János",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Vezetéknév",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Kovács",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Nem",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Válasszon",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Férfi",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Nő",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Egyéb",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Születési dátum",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Életkor",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "pl. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Telefonszám",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "E-mail",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "példa@példa.hu",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Hely",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "pl. Város, Ország",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Test & Étrend",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Magasság",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "pl. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Testsúly",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "pl. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Menstruációs ciklus",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "pl. Rendszeres, Rendszertelen",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Étrend-korlátozások",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Kérjük, válasszon",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Tudassa velünk, mit eszik, és van-e bármilyen korlátozása",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Nincs",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Vegetáriánus",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Vegán",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Gluténmentes",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Testtömegindex (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "pl. 24,5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Egészségprofil",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Krónikus betegségek",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "pl. 2-es típusú cukorbetegség",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Kérjük, sorolja fel az összes krónikus betegséget, és tüntesse fel, mikor diagnosztizálták őket, valamint bármilyen szövődményt.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Korábbi betegségek",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "pl. Gyakori megfázás",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Kérjük, sorolja fel a múltban előfordult súlyos betegségeket, még akkor is, ha felépült.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Műtéti előzmények",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "pl. vakbélműtét",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Kérjük, sorolja fel az összes műtétet, és adja meg az évet, valamint azt, hogy voltak-e szövődmények.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Időszakosan Használt Gyógyszerek",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "pl. Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Kérjük, sorolja fel azokat a gyógyszereket, amelyeket időnként szed (például: fájdalomcsillapítók, allergiás gyógyszerek), beleértve az adagot és a használat okát.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Rendszeres gyógyszerek",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "pl. Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Kérjük, sorolja fel az összes gyógyszert, amelyet rendszeresen szed, beleértve a nevét, az adagot, hogy hányszor naponta szedi, és hogy milyen állapot kezelésére használja.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Allergiák",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "pl. Penicillin – kiütést okoz",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Kérjük, sorolja fel az összes allergiáját (gyógyszerek, ételek, környezeti), és írja le, milyen reakciót tapasztal (például: kiütés, duzzanat, légzési problémák).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Különleges állapotok",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "pl. terhesség, fogyatékosság",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Ha vannak fontos orvosi állapotai, amelyeket az orvosoknak mindig tudniuk kell (például: terhesség, beültetett eszközök, fogyatékosságok, antikoaguláns terápia), kérjük, írja le őket. Ha nincs, ezt üresen hagyhatja.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Családi anamnézis",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "pl. szívbetegség, rák",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Kérjük, írja le a családjában előforduló fontos betegségeket (például: cukorbetegség, magas vérnyomás, szívbetegség, rák, genetikai betegségek), és adja meg, hogy melyik családtag szenvedett az adott állapotban.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Szociális & Életmódbeli Tényezők",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "pl. dohányzás, alkoholfogyasztás",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Kérjük, írja le azokat az életmódbeli tényezőket, amelyek hatással lehetnek az egészségére, például a dohányzást, alkoholfogyasztást, fizikai aktivitást, étrendet, alvást és foglalkozást.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Orvostechnikai eszközök",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "pl. Pacemaker, Hallókészülék, Inzulinpumpa",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Kérjük, sorolja fel azokat az orvosi eszközöket, amelyeket használ vagy beültettek Önnek, például pacemakerek, inzulinpumpák, hallókészülékek, protézisek vagy egyéb segédeszközök vagy monitorozó eszközök. Ha releváns részletek vannak, kérjük, azokat is tüntesse fel.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Mindenevő",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Gyorséttermi ételek",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Pescetáriánus",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Laktózmentes",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Alacsony nátriumtartalmú étrend",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Alacsony cukortartalmú étrend",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Szívbarát étrend",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Vese diéta",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Egyéb",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

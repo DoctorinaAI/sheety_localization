@@ -1,0 +1,428 @@
+{
+  "@@locale": "si",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "සෞඛ්‍ය වාර්තා",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "නව",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "ඔබේ සෞඛ්‍ය වාර්තාව සාදන්න",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "ඔබේ උපදේශනය අවසන් වූ විට, ඔබේ පැතිකඩ එකතු කරන්න.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "තවත් පැතිකඩ එකතු කරන්න",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "අනෙක් අයෙකුට ඔවුන්ගේ පැතිකඩක් සාදන්න උපදේශනයක් ආරම්භ කරන්න.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "ඔබේ සෞඛ්‍ය වාර්තාව නිර්මාණය කිරීමට ලියාපදිංචි වන්න",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "නැවත උත්සාහ කරන්න",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "පැතිකඩ මකන්න අසාර්ථකයි",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "පැතිකඩ සාරාංශය ලැබීමට අසමත් විය",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "සම්පූර්ණ වාර්තාව බලන්න",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "බෙදා ගන්න",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "මකන්න",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "වයස",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} වසර} other{{value} වසරන්}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "බර",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "ඉස",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "ඇලර්ජි",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "ක්‍රොනික්",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "මැදිරිය",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "උපාංග",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "සම්මුඛ සාකච්ඡා",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "เอกสาร",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "සෞඛ්‍ය වාර්තාව මකන්නද?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "මෙය ඔබගේ සෞඛ්‍ය දත්ත ස්ථිරවම ඉවත් කරනු ඇත සහ නැවත කිරීමට නොහැක. ඔබට අපි ඔබට මාර්ගෝපදේශය ලබා දීමට භාවිතා කරන පසුබැසීම අහිමි වේ.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "අවලංගු කරන්න",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "මකන්න",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "ඔබගේ සෞඛ්‍ය වාර්තාව මකමින්...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "පැතිකඩ මකන්න බැරි විය",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "සෞඛ්‍ය වාර්තාව මකන ලදී",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "ඔබට සහකාරයා සමඟ කතා කිරීමෙන් ඕනෑම වේලාවක නවයක් සාදන්න පුළුවන්.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "චැට්ටට ආපසු යන්න",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "සංස්කරණය",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "පැතිකඩ දත්ත ආරම්භ කිරීමට නොහැකි විය",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "වෙනස්කම් සුරකින්නා ලදී",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "ඔබගේ තොරතුරු සාර්ථකව යාවත්කාලීන කර ඇත.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "පැතිකඩට ආපසු යන්න",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "පැතිකඩ දත්ත යාවත්කාලීන කිරීමට අසමත් විය",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "වෙනස්කම් අහෝසි කරන්නද?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "ඔබේ පැතිකඩට කිහිපයක් වෙනස්කම් කළා. ඔබ යන්නට පෙර ඒවා සුරකින්න, නැතහොත් අහෝසි කරන්න.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "සංස්කරණය කරමින් තබන්න",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "අහෝසි කරන්න",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "සංස්කරණය",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "සටහන එකතු කරන්න",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "සොයන්න",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "ප්‍රතිඵල කිසිවක් නොමැත",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "බාගත කරන්න",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "බෙදා ගන්න",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "මකන්න",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "ලේඛන කිසිවක් හමු වුනේ නැහැ",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "මෙම ලේඛනය මකන්නද?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "මෙම ගොනුව ස්ථිරවම ඉවත් කෙරේ",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "අවලංගු කරන්න",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "මකන්න",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "තවත් ක්‍රියා",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "සොයන්න",
+  "@profilesSearch": {},
+  "profilesEmptyList": "පැතිකඩ කිසිවක් හමු නොවීය",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "තවත් බලන්න",
+  "@profilesViewMore": {},
+  "profilesMore": "තවත්",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "ඩොක්ටර්නා ඔබේ සෞඛ්‍යය මතක තබා ගනී",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "ඔබගේ උපදේශන දැන් ඔබේ සෞඛ්‍ය වාර්තාව ස්වයංක්‍රීයව නිර්මාණය සහ යාවත්කාලීන කරයි.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "ඔබගේ සෞඛ්‍ය වාර්තාව, ඔබගේ නීති",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "සම්පූර්ණ ලක්ෂණ, ඖෂධ, ඉතිහාසය හෝ ලේඛන ඕනෑම වේලාවක බලන්න, සංස්කරණය කරන්න හෝ එක් කරන්න.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "ඔබේ පවුලේ සම්පූර්ණය සඳහා සත්කාරය",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "ඔබේ ආදරණීයයන්, ඔබේ දරුවන්, දෙමාපියන් හෝ සහකරු සඳහා සෞඛ්‍ය වාර්තාවක් සාදන්න.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "ඔබේ සෞඛ්‍ය වාර්තාව සුරක්ෂිත කර ගැනීමට සූදානම්ද?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "ඔබේ උපදේශනයෙන් පසු, එය සුරකින්න \"ප්‍රොෆයිල් එකක් එක් කරන්න\" යන්න ඔබන්න.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "ඊළඟ",
+  "@profilesNextButton": {},
+  "profilesStartButton": "සංවාදයක් ආරම්භ කරන්න",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "පසුව විය හැක",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "අවසන් කරන්න",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "සෞඛ්‍ය වාර්තාව",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "සෞඛ්‍ය වාර්තාව — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...වැඩිදුර",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...අඩු",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "නව පැතිකඩක් එක් කරන්න",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "මෙම උපදේශනයේ විස්තර සුරකින්න පරීක්ෂණයක් සාදන්න.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "ඔබට ඕනෑම වේලාවක ඔබගේ සෞඛ්‍ය වාර්තා තුළ එය ඇගයිය හැක",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "මෙම ගැන හෝ ඒ සම්බන්ධ ඕනෑම දෙයක් පිළිබඳ ඔබට තවත් ප්‍රශ්න තිබේ නම්, නිදහසේ මට සමඟ කතා කරගෙන යන්න. මම උදව් කිරීමට මෙහි සිටිමි",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "සාමාන්‍ය තොරතුරු",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "නම",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "ජෝන් ඩෝ",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "මුල් නම",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "ජෝන්",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "අවසන් නම",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "ලිංගය",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "කරුණාකර තෝරන්න",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "පුරුෂ",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "කාන්තා",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "වෙනත්",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "උපන් දිනය",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "වයස",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "උදාහරණයක්: 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "දුරකථන අංකය",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "ඊමේල්",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "ස්ථානය",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "උදා: නගරය, රට",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "ශරීරය & ආහාරය",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "උස",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "උදා: 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "බර",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "උදාහරණයක්: 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "මාසික චක්‍රය",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "උදා: සාමාන්‍ය, අසාමාන්‍ය",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "ආහාර සීමා",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "කරුණාකර තෝරන්න",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "ඔබ කුමක් කාමැතිද සහ ඔබට ඇති සීමා පිළිබඳ අපට දන්වන්න",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "කිසිවක් නැත",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "ශාකහාරී",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "වීගන්",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "ග්ලූටන් රහිත",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "ශරීර බර දර්ශකය (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "උදාහරණය: 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "සෞඛ්‍ය පැතිකඩ",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "දිගුකාලීන රෝග",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "උදාහරණයක් ලෙස, දියවැඩියාව වර්ගය 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "කරුණාකර සියලුම දීර්ඝකාලීන රෝග ලැයිස්තුගත කරන්න සහ එම රෝග ආසාදනය වූ කාලය සහ ඕනෑම අපහසුතා ඇතුළත් කරන්න.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "පෙර රෝග",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "උදාහරණයක් ලෙස. නිතරම සාමාන්‍ය සීතල",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "කරුණාකර ඔබට තිබූ දැඩි රෝග ලැයිස්තුගත කරන්න, ඔබ සුවය ලබා ගත්වත්.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "ශල්‍ය ඉතිහාසය",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "උදාහරණයක් ලෙස ඇපෙන්ඩික්ස් ඉවත් කිරීම",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "කරුණාකර සියලුම ශල්‍යකර්ම ලැයිස්තුගත කරන්න සහ වසර සහ කිසිදු අපහසුතා තිබේද යන්න ඇතුළත් කරන්න.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "කලකට කලකට භාවිතා කරන ඖෂධ",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "ඉබුප්‍රොෆෙන්",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "කරුණාකර ඔබ භාවිතා කරන ඖෂධ ලැයිස්තුගත කරන්න, සමහර විට (උදාහරණයක් ලෙස: වේදනා නිවාරණ, ආලර්ජි ඖෂධ), ඖෂධයේ මාත්‍රාව සහ භාවිතය සඳහා හේතුව ඇතුළුව.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "නිතර ගන්නා ඖෂධ",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "උදාහරණයක් ලෙස: මැට්ෆෝර්මින්",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "කරුණාකර ඔබ නිතර ගන්නා ඖෂධ සියල්ල ලිස්තුගත කරන්න, නම, ඖෂධ ප්‍රමාණය, දිනයට කී වතාවක් ගන්නා බව සහ එය කුමන රෝගයක් සඳහාද යන්න ඇතුළත් කරන්න.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "ඇලර්ජි",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "උදාහරණයක්: පෙනිසිලින් - රැස්සක් ඇති කරයි",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "කරුණාකර සියලුම ආසාදන (මැදිකම්, ආහාර, පාරිසරික) ලිස්තුගත කරන්න, සහ ඔබට ඇති ප්‍රතික්‍රියාව විස්තර කරන්න (උදාහරණයක් ලෙස: රැස්, පූර්ණත්වය, ශාසන ගැටළු).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "විශේෂ තත්ත්වයන්",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "උදාහරණ: ගැබවීම, විකලතාව",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "ඔබට වෛද්‍යවරුන්ට සෑම විටම දැනුවත් විය යුතු වැදගත් වෛද්‍ය තත්ව කිහිපයක් තිබේ නම් (උදාහරණයක් ලෙස: ගැබිණි බව, ආසන්න උපාංග, අසමත්තා, ඇන්ටිකෝගුලේෂන් ප්‍රතිකාර), කරුණාකර ඒවා විස්තර කරන්න. කිසිවක් නැතිනම්, ඔබට මෙය හිස් තබා ගත හැක.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "පවුල් ඉතිහාසය",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "උදාහරණයක් ලෙස හෘද රෝග, කැන්සර්",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "කරුණාකර ඔබේ පවුලේ වැදගත් රෝග විස්තර කරන්න (උදාහරණයක් ලෙස: සීනි රෝගය, රුධිර පීඩනය, හෘද රෝගය, කාන්සර්, ජානික රෝග) සහ කුමන පවුලේ සාමාජිකයෙකුට මෙම රෝගය තිබුණේද යන්න සඳහන් කරන්න.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "සමාජ හා ජීවන ශෛලී සාධක",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "උදාහරණ ලෙස දුම්පානය, මත්පැන් පරිභෝජනය",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "ඔබගේ සෞඛ්‍යය බලපාන ජීවන රටාවන්, දුම්පානය, මත්පැන්, ශාරීරික ක්‍රියාකාරකම්, ආහාර, නිදා ගැනීම සහ වෘත්තිය වැනි කරුණු විස්තර කරන්න.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "වෛද්‍ය උපකරණ",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "උදාහරණයක් ලෙස Pacemaker, Hearing aid, Insulin pump",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "ඔබ භාවිතා කරන හෝ ආසන්නව ඇති වෛද්‍ය උපකරණ, පේස්මේකර්, ඉන්සුලින් පම්ප්, ඇස සවන් උපකරණ, ප්‍රොස්තිතික් හෝ අනෙකුත් සහයෝගී හෝ නිරීක්ෂණ උපකරණ වැනි දේ ලිස්තුගත කරන්න. අදාළ විස්තර ඇතුළත් කරන්න.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "සියලු ආහාර භක්ෂක",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "ෆාස්ට් ෆුඩ්",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "පෙස්කටේරියන්",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "ලැක්ටෝස් රහිත",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "අඩු සෝඩියම් ආහාර",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "අඩු සීනි ආහාර",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "හෘද ආහාර",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "වෘක්ක ආහාර",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "වෙනත්",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

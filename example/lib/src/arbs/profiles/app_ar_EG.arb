@@ -1,0 +1,428 @@
+{
+  "@@locale": "ar_EG",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "سجلات الصحة",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "جديد",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "أنشئ سجل صحتك",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "في نهاية استشارتك، أضف ملفك الشخصي",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "أضف المزيد من الملفات الشخصية",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "ابدأ استشارة لشخص آخر لإنشاء ملفه الشخصي",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "سجل لإنشاء سجل صحتك",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "إعادة المحاولة",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "فشل حذف الملف الشخصي",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "فشل تحميل ملخص الملف الشخصي",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "عرض السجل الكامل",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "شارك",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "حذف",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "العمر",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} سنة} other{{value} سنوات}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "الوزن",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} كجم",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "الطول",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} سم",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "-",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "الحساسية",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "مزمن",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "الأدوية",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "الأجهزة",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "استشارات",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "المستندات",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "هل تريد حذف السجل الصحي؟",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "سيؤدي ذلك إلى إزالة بيانات صحتك بشكل دائم ولا يمكن التراجع عنه. ستفقد السياق الذي نستخدمه لإرشادك.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "إلغاء",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "حذف",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "جارٍ حذف سجل صحتك...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "فشل في حذف الملف الشخصي",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "تم حذف السجل الصحي",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "يمكنك إنشاء واحدة جديدة في أي وقت من خلال الدردشة مع المساعد.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "العودة إلى الدردشة",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "تعديل",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "فشل تحميل بيانات الملف الشخصي",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "تم حفظ التغييرات",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "تم تحديث معلوماتك بنجاح",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "العودة إلى الملف الشخصي",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "فشل في تحديث بيانات الملف الشخصي",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "هل تريدDiscard التغييرات؟",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "لقد قمت بإجراء بعض التغييرات على ملفك الشخصي. احفظها قبل أن تذهب، أو تخلص منها.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "استمر في التحرير",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "تجاهل",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "تعديل",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "أضف سجل",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "بحث",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "لم يتم العثور على نتائج",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "تحميل",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "شارك",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "حذف",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "لا توجد مستندات",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "هل تريد حذف هذا المستند؟",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "سيتم حذف هذا الملف بشكل دائم",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "إلغاء",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "حذف",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "إجراءات إضافية",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "بحث",
+  "@profilesSearch": {},
+  "profilesEmptyList": "لم يتم العثور على ملفات شخصية",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "عرض المزيد",
+  "@profilesViewMore": {},
+  "profilesMore": "المزيد",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "دوكتورينا الآن تتذكر صحتك",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "استشاراتك الآن تبني وتحدث سجل صحتك تلقائيًا.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "سجل صحتك، قواعدك",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "عرض أو تعديل أو إضافة الأعراض أو الأدوية أو التاريخ أو المستندات في أي وقت",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "اعتنِ بكل عائلتك",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "أنشئ سجل صحي لأحبائك، أطفالك، والديك، أو شريكك.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "هل أنت مستعد لحفظ سجل صحتك؟",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "بعد الاستشارة، اضغط على \"إضافة ملف\" لحفظه.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "التالي",
+  "@profilesNextButton": {},
+  "profilesStartButton": "ابدأ استشارة",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "ربما لاحقًا",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "إغلاق",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "سجل الصحة",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "سجل الصحة — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...المزيد",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "أقل",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "إضافة ملف جديد",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "أنشئ ملفًا لحفظ تفاصيل هذه الاستشارة",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "يمكنك الاطلاع عليه في أي وقت في سجلاتك الصحية",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "إذا كان لديك المزيد من الأسئلة حول هذا أو أي شيء ذي صلة، فلا تتردد في الاستمرار في الحديث معي. أنا هنا للمساعدة",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "معلومات عامة",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "الاسم",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "جون دو",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "الاسم الأول",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "جون",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "اسم العائلة",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "الجنس",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "يرجى الاختيار",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "ذكر",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "أنثى",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "آخر",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "تاريخ الميلاد",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "العمر",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "مثلاً 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "رقم الهاتف",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "البريد الإلكتروني",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "الموقع",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "مثال: المدينة، الدولة",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "الجسم والنظام الغذائي",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "الطول",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "مثال: 180 سم",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "الوزن",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "مثلاً 75 كجم",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "الدورة الشهرية",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "مثلاً منتظمة، غير منتظمة",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "قيود غذائية",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "يرجى الاختيار",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "أخبرنا بما تأكله وأي قيود لديك",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "لا شيء",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "نباتي",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "نباتي صارم",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "خالٍ من الغلوتين",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "مؤشر كتلة الجسم (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "مثلاً 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "الملف الصحي",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "أمراض مزمنة",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "مثل السكري من النوع الثاني",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "يرجى سرد جميع الأمراض المزمنة وذكر متى تم تشخيصها وأي مضاعفات.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "الأمراض السابقة",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "مثل: نزلة برد شائعة متكررة",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "يرجى سرد الأمراض الخطيرة التي عانيت منها في الماضي، حتى لو كنت قد تعافيت.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "التاريخ الجراحي",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "مثال: استئصال الزائدة الدودية",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "يرجى سرد جميع العمليات الجراحية وذكر السنة وما إذا كانت هناك أي مضاعفات",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "الأدوية المستخدمة أحيانًا",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "مثل إيبوبروفين",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "يرجى إدراج الأدوية التي تتناولها من وقت لآخر (على سبيل المثال: مسكنات الألم، أدوية الحساسية)، بما في ذلك الجرعة وسبب الاستخدام.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "الأدوية المنتظمة",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "مثل ميتفورمين",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "يرجى سرد جميع الأدوية التي تتناولها بانتظام، بما في ذلك الاسم، الجرعة، عدد المرات التي تتناولها في اليوم، وما هي الحالة التي تستخدم من أجلها.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "الحساسية",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "مثل: البنسلين - يسبب طفح جلدي",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "يرجى سرد جميع الحساسية (الأدوية، الطعام، البيئة)، ووصف رد الفعل الذي لديك (على سبيل المثال: طفح جلدي، تورم، مشاكل في التنفس).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "الحالات الخاصة",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "مثلاً الحمل، الإعاقة",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "إذا كان لديك أي حالات طبية مهمة يجب أن يعرفها الأطباء دائمًا (على سبيل المثال: الحمل، الأجهزة المزروعة، الإعاقات، العلاج بمضادات التخثر)، يرجى وصفها. إذا لم يكن هناك، يمكنك ترك هذا الحقل فارغًا.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "التاريخ العائلي",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "مثلاً: أمراض القلب، السرطان",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "يرجى وصف الأمراض المهمة في عائلتك (على سبيل المثال: السكري، ارتفاع ضغط الدم، أمراض القلب، السرطان، الأمراض الوراثية) وتحديد أي فرد من العائلة كان لديه الحالة.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "العوامل الاجتماعية ونمط الحياة",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "مثال: التدخين، تناول الكحول",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "يرجى وصف عوامل نمط الحياة التي يمكن أن تؤثر على صحتك، مثل التدخين، الكحول، النشاط البدني، النظام الغذائي، النوم، والمهنة.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "الأجهزة الطبية",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "مثلاً منظم ضربات القلب، جهاز مساعدة السمع، مضخة الإنسولين",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "يرجى إدراج أي أجهزة طبية تستخدمها أو تم زرعها، مثل أجهزة تنظيم ضربات القلب، مضخات الأنسولين، أجهزة السمع، الأطراف الصناعية، أو أي أجهزة مساعدة أو مراقبة أخرى. أدرج التفاصيل ذات الصلة إذا كانت متاحة.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "آكل اللحوم والنباتات",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "الوجبات السريعة",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "بيسكاتاريان",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "خالي من اللاكتوز",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "نظام غذائي منخفض الصوديوم",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "نظام غذائي منخفض السكر",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "حمية قلبية",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "حمية كلوية",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "أخرى",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

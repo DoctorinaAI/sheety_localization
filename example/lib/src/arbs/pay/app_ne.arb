@@ -1,0 +1,230 @@
+{
+  "@@locale": "ne",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "बटन उदाहरण",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "हो, सबै ठीक छ!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "प्रत्येक योगदानले निको पार्छ!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "तपाईंको योगदानले अन्यलाई आवश्यक परामर्शको लागि कोष जुटाउन मद्दत गर्दछ",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "जुन कुरा सही लाग्छ, त्यै तिर्नुहोस्,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "वा डोक्टरिनालाई निःशुल्क प्रयोग गर्न जारी राख्नुहोस्, अरूले दिन रोजेकोमा धन्यवाद।",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "एक पटक",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "मासिक",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "महिनावारी दानको रकम छान्नुहोस्",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "तपाईं मासिक योजनामा सदस्यता लिन जाँदै हुनुहुन्छ।",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "तपाईं {amount}/महिना को लागि मासिक योजनामा सदस्यता लिइरहनु भएको छ।",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "खरिदको पुष्टि गर्दा तपाईंको खातामा भुक्तानी चार्ज गरिनेछ। सदस्यता स्वचालित रूपमा प्रत्येक महिना नवीकरण हुन्छ जबसम्म स्वचालित नवीकरण हालको अवधिको अन्त्य हुनु भन्दा कम्तिमा २४ घण्टा अघि बन्द गरिएको छैन। तपाईं आफ्नो खाता सेटिङमा कुनै पनि समयमा आफ्नो सदस्यता व्यवस्थापन गर्न वा रद्द गर्न सक्नुहुन्छ। अगाडि बढ्नाले, तपाईं हाम्रो {termsOfService} र {privacyPolicy} मा सहमत हुनुहुन्छ।",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "एक पटकको दानको रकम छान्नुहोस्",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "धेरै मानिसहरूले $7–$15 दिन्छन्",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "मुद्रा चयन गर्नुहोस्",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "भुक्तानी प्रक्रिया गर्दै",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "एकल भुक्तानी प्रक्रिया गर्दै {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "महिनाको भुक्तानी {amount} प्रक्रिया गर्दै",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "धन्यवाद!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "अब अझ धेरै मानिसहरूले निःशुल्क सल्लाह प्राप्त गर्नेछन् - तपाईंको समर्थन साँच्चै अमूल्य छ।",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "तपाईंले योगदान दिनुभयो:",
+  "@youContributedLabel": {},
+  "perMonth": "/ महिना",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "मुख्य स्क्रिनमा फर्कनुहोस्",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "सेवाको शर्तहरू",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "गोपनीयता नीति",
+  "@privacyPolicyLabel": {},
+  "donateButton": "दान गर्नुहोस्",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "सक्रिय",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "रद्द गरियो",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "रोकेको",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "विचाराधीन",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "सिर्जना गरियो",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "समय समाप्त",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "अज्ञात",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina योगदानकर्ता",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "नवीकरण",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "सदस्यता रद्द गर्नुहोस्",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "के तपाईँ निश्चित हुनुहुन्छ?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "तपाईंको मासिक समर्थनले डोक्टरिनालाई तिर्न नसक्ने व्यक्तिहरूका लागि निःशुल्क राख्न मद्दत गर्दछ। तपाईंको सदस्यता प्रत्येक महिना कम्तिमा १० निःशुल्क परामर्शको लागि कोष प्रदान गर्दछ। यदि तपाईं जानुहुन्छ भने, कम बिरामीहरूले आवश्यक सहयोग पाउनेछन्।",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "सदस्यता राख्नुहोस्",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "यद्यपि रद्द गर्नुहोस्",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "तपाईंको मासिक समर्थन सफलतापूर्वक रद्द गरिएको छ।",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "गलत सदस्यता डेटा",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "महिनावारी समर्थनको लागि साइन अप गर्नुहोस् ताकि यो यहाँ देखियोस्।",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "अझै कुनै सदस्यता छैन",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "सदस्यता मिति",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "समाप्त हुन्छ",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "सदस्यता ID",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "उत्पादन ID",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "ठीक छ",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "हामी तपाईंको भुक्तानी प्रक्रिया गर्न सक्दैनौं",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "भुक्तानीमा केहि समस्या भयो। कृपया पुनः प्रयास गर्नुहोस्।",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "पुनः प्रयास गर्नुहोस्",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "भुक्तानी प्रक्रिया गर्दै",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "तपाईं स्ट्राइपको सुरक्षित चेकआउट पृष्ठमा आफ्नो खरिद पूरा गर्नुहुनेछ।",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ हप्ता",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ वर्ष",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "सबैभन्दा लोकप्रिय",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "बन्द गर्नुहोस्",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Premium",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "प्रीमियमसँग के पाउनुहुन्छ:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "विज्ञापन-मुक्त परामर्श",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "छिटो जवाफ",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "नयाँ सुविधाहरूमा प्रारम्भिक पहुँच",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/सप्ताह",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "कुनै पनि समयमा रद्द गर्नुहोस्। कुनै प्रतिबद्धता छैन।",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "सीमित समय",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "प्रति हप्ता स्वचालित रूपमा नवीकरण हुन्छ। सेटिङमा कुनै पनि समयमा रद्द गर्नुहोस्। जारी राख्दा, तपाईं हाम्रो <t>शर्तहरू</t> र <p>गोपनीयता नीति</p> सँग सहमत हुनुहुन्छ।",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 प्रीमियमसँग जारी राख्नुहोस्",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 तपाईँको समर्थनले स्वास्थ्य सेवा पहुँचयोग्य राख्न मद्दत गर्दछ",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "कृपया सदस्यता लिनुहोस् वा लग इन गर्नुहोस् किनकि खरिद पूरा गर्न आवश्यक छ.",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

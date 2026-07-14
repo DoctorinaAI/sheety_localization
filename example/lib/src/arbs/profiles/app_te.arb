@@ -1,0 +1,428 @@
+{
+  "@@locale": "te",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "ఆరోగ్య రికార్డులు",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "కొత్త",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "మీ ఆరోగ్య రికార్డు సృష్టించండి",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "మీ సంప్రదింపుల ముగింపులో, మీ ప్రొఫైల్‌ను చేర్చండి.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "మరిన్ని ప్రొఫైల్స్ జోడించండి",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "ఇంకా ఎవరికైనా వారి ప్రొఫైల్ సృష్టించడానికి సంప్రదింపులు ప్రారంభించండి.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "మీ ఆరోగ్య రికార్డు సృష్టించడానికి సైన్ అప్ చేయండి",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "మళ్లీ ప్రయత్నించండి",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "ప్రొఫైల్ తొలగించడంలో విఫలమైంది",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "ప్రొఫైల్ సమ్మరీని లోడ్ చేయడంలో విఫలమైంది",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "పూర్తి రికార్డు చూడండి",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "షేర్",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "తొలగించు",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "వయస్సు",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} సంవత్సరం} other{{value} సంవత్సరాలు}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "బరువు",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} కిలోగ్రాములు",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "ఎత్తు",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} సం.మీ.",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "-",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "అలర్జీలు",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "దీర్ఘకాలిక",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "మందులు",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "ఉపకరణాలు",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "సలహాలు",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "పత్రాలు",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "ఆరోగ్య రికార్డు తొలగించాలా?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "ఇది మీ ఆరోగ్య డేటాను శాశ్వతంగా తొలగిస్తుంది మరియు తిరిగి పొందలేరు. మేము మీకు మార్గనిర్దేశం చేయడానికి ఉపయోగించే సందర్భాన్ని కోల్పోతారు.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "రద్దు",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "తొలగించు",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "మీ ఆరోగ్య రికార్డును తొలగిస్తున్నాము...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "ప్రొఫైల్ తొలగించడంలో విఫలమైంది",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "ఆరోగ్య రికార్డు తొలగించబడింది",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "మీరు సహాయకుడితో చాటింగ్ చేసి ఎప్పుడైనా కొత్తది సృష్టించవచ్చు.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "చాట్‌కు తిరిగి వెళ్ళండి",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "సవరించడం",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "ప్రొఫైల్ డేటా లోడ్ చేయడంలో విఫలమైంది",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "మార్పులు సేవ్ చేయబడ్డాయి",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "మీ సమాచారం విజయవంతంగా నవీకరించబడింది.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "ప్రొఫైల్కు తిరిగి వెళ్ళండి",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "ప్రొఫైల్ డేటాను నవీకరించడంలో విఫలమైంది",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "మార్పులను వదులుతారా?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "మీ ప్రొఫైల్‌లో కొన్ని మార్పులు చేశారు. మీరు వెళ్లే ముందు వాటిని సేవ్ చేయండి లేదా వదిలేయండి.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "సవరించడాన్ని కొనసాగించండి",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "తిరస్కరించు",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "సవరించు",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "రికార్డు జోడించు",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "శోధన",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "ఫలితాలు లేవు",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "డౌన్‌లోడ్",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "షేర్",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "తొలగించు",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "ఏ డాక్యుమెంట్లు లభించలేదు",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "ఈ పత్రాన్ని తొలగించాలా?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "ఈ ఫైల్ శాశ్వతంగా తొలగించబడుతుంది",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "రద్దు",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "తొలగించు",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "మరిన్ని చర్యలు",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "శోధన",
+  "@profilesSearch": {},
+  "profilesEmptyList": "ప్రొఫైల్‌లు ఏవీ కనబడలేదు",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "మరిన్ని చూడండి",
+  "@profilesViewMore": {},
+  "profilesMore": "మరింత",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "డాక్టర్‌నా మీ ఆరోగ్యాన్ని గుర్తుంచుకుంటుంది",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "మీ సంప్రదింపులు ఇప్పుడు మీ ఆరోగ్య రికార్డును ఆటోమేటిక్‌గా నిర్మించు మరియు నవీకరించు.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "మీ ఆరోగ్య రికార్డు, మీ నియమాలు",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "సమయానుకూలంగా లక్షణాలు, మందులు, చరిత్ర లేదా పత్రాలను చూడండి, సవరించండి లేదా జోడించండి.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "మీ మొత్తం కుటుంబానికి సంరక్షణ",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "మీ ప్రియమైన వారికోసం, మీ పిల్లలు, తల్లిదండ్రులు లేదా భాగస్వామి కోసం ఆరోగ్య రికార్డు సృష్టించండి.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "మీ ఆరోగ్య రికార్డును సేవ్ చేయడానికి సిద్ధమా?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "మీ సంప్రదింపుల తర్వాత, దాన్ని సేవ్ చేయడానికి \"ప్రొఫైల్ జోడించు\" పై ట్యాప్ చేయండి.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "తదుపరి",
+  "@profilesNextButton": {},
+  "profilesStartButton": "సలహా ప్రారంభించండి",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "తర్వాత కావచ్చు",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "మూసు",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "ఆరోగ్య రికార్డు",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "ఆరోగ్య రికార్డు — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...మరింత",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...తక్కువ",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "కొత్త ప్రొఫైల్ జోడించండి",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "ఈ సలహా యొక్క వివరాలను సేవ్ చేయడానికి ఒక ప్రొఫైల్ సృష్టించండి.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "మీ ఆరోగ్య రికార్డుల్లో దీన్ని మీరు ఎప్పుడైనా మూల్యాంకనం చేయవచ్చు",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "ఈ విషయం లేదా దీనితో సంబంధం ఉన్న ఏదైనా గురించి మీకు ఇంకా ప్రశ్నలు ఉంటే, సంకోచించకుండా నాతో మాట్లాడుతూనే ఉండండి. నేను సహాయం చేయడానికి ఇక్కడ ఉన్నాను",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "సాధారణ సమాచారం",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "పేరు",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "జాన్ డో",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "మొదటి పేరు",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "జాన్",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "చివరి పేరు",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "లింగం",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "దయచేసి ఎంచుకోండి",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "పురుషుడు",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "స్త్రీ",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "ఇతర",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "పుట్టిన తేదీ",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "వయస్సు",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "ఉదా. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "ఫోన్ నంబర్",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "ఈమెయిల్",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "స్థానం",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "ఉదా. నగరం, దేశం",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "శరీరం & ఆహారం",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "ఎత్తు",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "ఉదా. 180 సెం.మీ",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "బరువు",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "ఉదాహరణకు 75 కిలోలు",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "మాసిక చక్రం",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "ఉదాహరణకు నియమిత, అనియమిత",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "ఆహార పరిమితులు",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "దయచేసి ఎంచుకోండి",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "మీరు ఏమి తింటారో మరియు మీకు ఉన్న పరిమితులు మాకు తెలియజేయండి",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "ఏమీ లేదు",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "శాకాహారి",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "వీగన్",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "గ్లూటెన్ రహితం",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "బాడీ మాస్ ఇండెక్స్ (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "ఉదాహరణకు 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "ఆరోగ్య ప్రొఫైల్",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "దీర్ఘకాలిక రోగాలు",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "ఉదాహరణకు, డయాబెటిస్ టైప్ 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "దయచేసి అన్ని దీర్ఘకాలిక వ్యాధులను జాబితా చేయండి మరియు అవి ఎప్పుడు నిర్ధారించబడ్డాయో మరియు ఏదైనా సంక్లిష్టతలను చేర్చండి.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "గత వ్యాధులు",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "ఉదాహరణకు, తరచుగా సాధారణ జలుబు",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "మీరు గతంలో అనుభవించిన తీవ్రమైన వ్యాధులను జాబితా చేయండి, మీరు కోలుకున్నా కూడా.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "శస్త్రచికిత్సల చరిత్ర",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "ఉదా. అపెండెక్టమీ",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "దయచేసి అన్ని శస్త్రచికిత్సలను జాబితా చేయండి మరియు సంవత్సరాన్ని మరియు ఏవైనా సంక్లిష్టతలు ఉన్నాయా అని చేర్చండి.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "అప్పుడప్పుడు ఉపయోగించే మందులు",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "ఉదాహరణకు: ఐబుప్రోఫెన్",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "మీరు కొన్నిసార్లు తీసుకునే మందులను (ఉదాహరణకు: నొప్పి మందులు, అలర్జీ మందులు) జాబితా చేయండి, డోసు మరియు ఉపయోగం కారణం సహితంగా.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "నియమిత ఔషధాలు",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "ఉదాహరణకు: మెట్ఫార్మిన్",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "మీరు రెగ్యులర్‌గా తీసుకునే అన్ని మందుల పేర్లు, డోసు, రోజుకు ఎంతసార్లు తీసుకుంటారో మరియు అది ఏ పరిస్థితికి సంబంధించినదో జాబితా చేయండి.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "అలర్జీలు",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "ఉదాహరణ: పెనిసిలిన్ - చర్మరాషి కలిగిస్తుంది",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "మీ అన్ని అలర్జీలను (మందులు, ఆహారం, పర్యావరణం) జాబితా చేయండి, మరియు మీరు ఏ రకమైన ప్రతిస్పందనను కలిగి ఉన్నారో వివరించండి (ఉదాహరణకు: చర్మరోగం, వాపు, శ్వాస సమస్యలు).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "ప్రత్యేక పరిస్థితులు",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "ఉదా. గర్భధారణ, దివ్యాంగత",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "మీకు ఎలాంటి ముఖ్యమైన వైద్య పరిస్థితులు ఉన్నాయా, డాక్టర్లు ఎప్పుడూ తెలుసుకోవాలి (ఉదాహరణకు: గర్భధారణ, అమర్చిన పరికరాలు, అంగవైకల్యాలు, యాంటికొగులేషన్ థెరపీ), దయచేసి వాటిని వివరించండి. లేకపోతే, మీరు దీన్ని ఖాళీగా ఉంచవచ్చు.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "కుటుంబ చరిత్ర",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "ఉదా. హృదయ వ్యాధి, క్యాన్సర్",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "మీ కుటుంబంలో ముఖ్యమైన వ్యాధులను వివరించండి (ఉదాహరణకు: మధుమేహం, రక్తపోటు, హృదయ వ్యాధి, కేన్సర్, జన్యు వ్యాధులు) మరియు ఆ పరిస్థితిని కలిగిన కుటుంబ సభ్యుడిని స్పష్టంగా చెప్పండి.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "సామాజిక & జీవనశైలి అంశాలు",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "ఉదాహరణకు పొగాకు, మద్యపానం",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "మీ ఆరోగ్యాన్ని ప్రభావితం చేసే జీవనశైలి అంశాలను వివరించండి, ఉదాహరణకు పొగాకు, మద్యం, శారీరక కార్యకలాపం, ఆహారం, నిద్ర మరియు వృత్తి.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "వైద్య పరికరాలు",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "e.g. పేస్‌మేకర్, శ్రవణ సహాయక పరికరం, ఇన్సులిన్ పంప్",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "మీరు ఉపయోగిస్తున్న లేదా ఇంప్లాంట్ చేసిన ఏదైనా వైద్య పరికరాలను జాబితా చేయండి, ఉదాహరణకు పేస్‌మేకర్లు, ఇన్సులిన్ పంపులు, వినికిడి సహాయ పరికరాలు, ప్రోస్టెటిక్స్ లేదా ఇతర సహాయక లేదా పర్యవేక్షణ పరికరాలు. వర్తించే వివరాలను చేర్చండి.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "సర్వాహారి",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "ఫాస్ట్ ఫుడ్",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "చేపలు తినే శాకాహారి",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "లాక్టోజ్-రహితం",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "తక్కువ సోడియం ఆహారం",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "తక్కువ చక్కర ఆహారం",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "హృదయానికి అనుకూల ఆహారం",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "మూత్రపిండాల ఆహారం",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "ఇతర",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

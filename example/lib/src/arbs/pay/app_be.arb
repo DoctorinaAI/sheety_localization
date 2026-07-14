@@ -1,0 +1,230 @@
+{
+  "@@locale": "be",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "exampleButton": "Прыклад кнопкі",
+  "@exampleButton": {
+    "description": "Пример кнопки"
+  },
+  "donationYesItsAllGoodButton": "Так, усё добра!",
+  "@donationYesItsAllGoodButton": {
+    "description": "Кнопка доната после рекомендаций"
+  },
+  "everyContributionHealsTitle": "Кожны ўнёсак лечыць!",
+  "@everyContributionHealsTitle": {},
+  "ifThisHelpedYouConsiderSupportingSubtitle": "Ваш унёсак дапамагае фінансаваць бясплатныя кансультацыі для тых, хто ў іх мае патрэбу.",
+  "@ifThisHelpedYouConsiderSupportingSubtitle": {},
+  "payWhatFeelsRightLabel": "Плаціце, колькі лічыце правільным,",
+  "@payWhatFeelsRightLabel": {},
+  "orKeepUsingDoctorinaForFreeLabel": "ці працягвайце карыстацца Doctorina бясплатна, дзякуючы тым, хто вырашыў ахвяраваць",
+  "@orKeepUsingDoctorinaForFreeLabel": {},
+  "oneTimeLabel": "Аднаразовы",
+  "@oneTimeLabel": {},
+  "monthlyLabel": "Штомесячна",
+  "@monthlyLabel": {},
+  "chooseMonthlyDonationAmountLabel": "Абярыце суму штомесячнага ахвяравання",
+  "@chooseMonthlyDonationAmountLabel": {},
+  "subscriptionNoAmount": "Вы збіраецеся падпісацца на месячны план.",
+  "@subscriptionNoAmount": {
+    "description": "Сумма подписки еще не выбрана"
+  },
+  "subscriptionAmount": "Вы падпісваецеся на штомесячны план за {amount}/месяц.",
+  "@subscriptionAmount": {
+    "description": "Subscription info text with amount",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly subscription amount"
+      }
+    }
+  },
+  "subscriptionInfo": "З вашага рахунку будзе спісання аплаты пасля пацверджання пакупкі. Падпіска аўтаматычна падаўжаецца кожны месяц, калі аўтапратоўленне не адключана не менш чым за 24 гадзіны да заканчэння бягучага перыяду. Вы можаце кіраваць падпіскай або адмяніць яе ў любы час у наладах уліковага запісу. Працягваючы, вы згаджаецеся з нашымі {termsOfService} і {privacyPolicy}.",
+  "@subscriptionInfo": {
+    "description": "Subscription info text with amount, Terms of Service and Privacy Policy placeholders as tappable spans.",
+    "placeholders": {
+      "termsOfService": {
+        "type": "String",
+        "example": "<Terms of Service>",
+        "description": "Clickable span for Terms of Service"
+      },
+      "privacyPolicy": {
+        "type": "String",
+        "example": "<Privacy Policy>",
+        "description": "Clickable span for Privacy Policy"
+      }
+    }
+  },
+  "chooseOneTimeDonationAmountLabel": "Абярыце суму аднаразовага ахвяравання",
+  "@chooseOneTimeDonationAmountLabel": {},
+  "mostPeopleGiveHint": "Большасць людзей дае $7–$15",
+  "@mostPeopleGiveHint": {},
+  "selectCurrencyTooltip": "Выберыце валюту",
+  "@selectCurrencyTooltip": {},
+  "processingPaymentSemantics": "Апрацоўка аплаты",
+  "@processingPaymentSemantics": {},
+  "processingOneTimePaymentSemantics": "Апрацоўка аднаразовага плацяжу {currency} {amount}",
+  "@processingOneTimePaymentSemantics": {
+    "description": "Shown when processing a one-time payment, with currency code and amount placeholders.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD",
+        "description": "Currency code, e.g. USD, EUR, GBP"
+      },
+      "amount": {
+        "type": "String",
+        "example": "49.99",
+        "description": "Payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "processingMonthlyPaymentSemantics": "Апрацоўваецца штомесячны плацёж на суму {amount}",
+  "@processingMonthlyPaymentSemantics": {
+    "description": "Shown when processing a monthly payment with amount placeholder.",
+    "placeholders": {
+      "amount": {
+        "type": "String",
+        "example": "9.99",
+        "description": "Monthly payment amount formatted to two decimal places"
+      }
+    }
+  },
+  "thankYouTitle": "Дзякуй!",
+  "@thankYouTitle": {},
+  "thankYouSubtitle": "Цяпер яшчэ больш людзей атрымаюць бясплатныя парады — ваша падтрымка сапраўды неацэнная",
+  "@thankYouSubtitle": {},
+  "youContributedLabel": "Ваш ўклад:",
+  "@youContributedLabel": {},
+  "perMonth": "/ месяц",
+  "@perMonth": {},
+  "returnToTheMainScreenButton": "Вярнуцца на галоўны экран",
+  "@returnToTheMainScreenButton": {},
+  "termsOfServiceLabel": "Умовы карыстання",
+  "@termsOfServiceLabel": {},
+  "privacyPolicyLabel": "Палітыка прыватнасці",
+  "@privacyPolicyLabel": {},
+  "donateButton": "Ахвяраваць",
+  "@donateButton": {},
+  "subscriptionStatusActiveLabel": "Актыўны",
+  "@subscriptionStatusActiveLabel": {},
+  "subscriptionStatusCanceledLabel": "Адменена",
+  "@subscriptionStatusCanceledLabel": {},
+  "subscriptionStatusPausedLabel": "Прыпынена",
+  "@subscriptionStatusPausedLabel": {},
+  "subscriptionStatusPendingLabel": "У чаканні",
+  "@subscriptionStatusPendingLabel": {},
+  "subscriptionStatusCreatedLabel": "Створана",
+  "@subscriptionStatusCreatedLabel": {},
+  "subscriptionStatusTimeoutLabel": "Тайм-аут",
+  "@subscriptionStatusTimeoutLabel": {},
+  "subscriptionStatusUnknownLabel": "Невядома",
+  "@subscriptionStatusUnknownLabel": {},
+  "subscriptionDoctorinaContributor": "Doctorina ўкладчык",
+  "@subscriptionDoctorinaContributor": {},
+  "subscriptionRenews": "Прадоўжваецца",
+  "@subscriptionRenews": {},
+  "subscriptionCancelButton": "Скасаваць падпіску",
+  "@subscriptionCancelButton": {},
+  "subscriptionAreYouSureDialogTitle": "Вы ўпэўнены?",
+  "@subscriptionAreYouSureDialogTitle": {},
+  "subscriptionAreYouSureDialogText": "Ваш штомесячны ўнёсак дазваляе Докторына заставацца бясплатнай для людзей, якія на яе спадзяюцца, але не могуць дазволіць сабе плаціць. Ваша падпіска фінансуе не менш за 10 бясплатных кансультацый кожны месяц. Калі вы выйдзеце, менш пацыентаў атрымаюць неабходную дапамогу.",
+  "@subscriptionAreYouSureDialogText": {},
+  "subscriptionAreYouSureDialogKeepButton": "Аставіць падпіску",
+  "@subscriptionAreYouSureDialogKeepButton": {},
+  "subscriptionAreYouSureDialogCancelButton": "Усё роўна скасаваць",
+  "@subscriptionAreYouSureDialogCancelButton": {},
+  "subscriptionYourMonthlySupportCanceledNotification": "Ваша штомесячная падтрымка\nбыла паспяхова скасавана.",
+  "@subscriptionYourMonthlySupportCanceledNotification": {},
+  "subscriptionMalformed": "Няправільныя дадзеныя падпіскі",
+  "@subscriptionMalformed": {},
+  "subscriptionSignUpForMonthlySupportButton": "Запішыцеся на штомесячную падтрымку, каб яна з'яўлялася тут",
+  "@subscriptionSignUpForMonthlySupportButton": {},
+  "subscriptionNoSubscriptionsYet": "Падпіскі пакуль няма",
+  "@subscriptionNoSubscriptionsYet": {},
+  "subscriptionCreatedAtDateLabel": "Дата падпіскі",
+  "@subscriptionCreatedAtDateLabel": {},
+  "subscriptionExpiresAtDateLabel": "Скончаецца",
+  "@subscriptionExpiresAtDateLabel": {},
+  "subscriptionSubscriptionIdLabel": "Ідэнтыфікатар падпіскі",
+  "@subscriptionSubscriptionIdLabel": {},
+  "subscriptionProductIdLabel": "Ідэнтыфікатар прадукта",
+  "@subscriptionProductIdLabel": {},
+  "subscriptionDialogOkButton": "ОК",
+  "@subscriptionDialogOkButton": {},
+  "errorProcessDonationTitle": "Мы не змаглі апрацаваць ваш плацёж",
+  "@errorProcessDonationTitle": {},
+  "errorProcessDonationSubtitle": "Нешта пайшло не так з аплатай. Калі ласка, паспрабуйце зноў.",
+  "@errorProcessDonationSubtitle": {},
+  "errorProcessDonationRetryButton": "Паўтарыць",
+  "@errorProcessDonationRetryButton": {},
+  "processingDonationTitle": "Апрацоўка плацежу",
+  "@processingDonationTitle": {},
+  "processingDonationStripeSubtitle": "Вы завяршыце сваю пакупку на бяспечнай старонцы афармлення замовы Stripe.",
+  "@processingDonationStripeSubtitle": {},
+  "perWeek": "/ тыдзень",
+  "@perWeek": {
+    "description": "Переодичность оплаты"
+  },
+  "perYear": "/ год",
+  "@perYear": {
+    "description": "Переодичность оплаты"
+  },
+  "premiumMostPopularRibbon": "Найлепшы",
+  "@premiumMostPopularRibbon": {
+    "description": "Label for the most popular subscription option ribbon"
+  },
+  "premiumCloseTooltip": "Зачыніць",
+  "@premiumCloseTooltip": {
+    "description": "Tooltip text for close button on premium screen"
+  },
+  "premiumTitle": "Doctorina Прэміум",
+  "@premiumTitle": {
+    "description": "Title of the premium subscription screen"
+  },
+  "premiumWhatYouGetHeader": "Што вы атрымліваеце з Преміум:",
+  "@premiumWhatYouGetHeader": {
+    "description": "Section header describing premium features"
+  },
+  "premiumFeatureAdFree": "Кансультацыі без рэкламы",
+  "@premiumFeatureAdFree": {
+    "description": "Premium feature: ad-free consultations"
+  },
+  "premiumFeatureFasterReplies": "Хуткія адказы",
+  "@premiumFeatureFasterReplies": {
+    "description": "Premium feature: faster response times"
+  },
+  "premiumFeatureEarlyAccess": "Ранній доступ да новых функцый",
+  "@premiumFeatureEarlyAccess": {
+    "description": "Premium feature: early access to new features"
+  },
+  "premiumPricePerWeek": "/тыдзень",
+  "@premiumPricePerWeek": {
+    "description": "Time period suffix for weekly subscription price. Shortcat for \"per week\""
+  },
+  "premiumCancelAnytime": "Скасуйце ў любы час. Без абавязацельстваў.",
+  "@premiumCancelAnytime": {
+    "description": "Text explaining cancellation policy"
+  },
+  "premiumLimitedTimeBadge": "АБМЕЖАВАНЫ ЧАС",
+  "@premiumLimitedTimeBadge": {
+    "description": "Badge text for limited time offers"
+  },
+  "premiumAutoRenewsConsent": "Аўтаабнаўленне раз на тыдзень. Скасуйце ў любы час у наладах. Працягваючы, вы згаджаецеся з нашымі <t>Умовамі</t> і <p>Палітыкай канфідэнцыяльнасці</p>.",
+  "@premiumAutoRenewsConsent": {
+    "description": "Auto-renewal consent text with tagged links for Terms and Privacy Policy"
+  },
+  "premiumContinueButton": "🎁 Працягнуць з Преміум",
+  "@premiumContinueButton": {
+    "description": "Button text to continue with premium subscription"
+  },
+  "premiumSupportMessage": "💚 Ваша падтрымка дапамагае зрабіць медыцынскую дапамогу даступнай",
+  "@premiumSupportMessage": {
+    "description": "Message about supporting accessible healthcare"
+  },
+  "subscriptionLoginRequiredError": "Калі ласка, зарэгіструйцеся або ўвайдзіце, каб завяршыць пакупку",
+  "@subscriptionLoginRequiredError": {
+    "description": "Сообщение об ошибке при попытке оформить подписку анонимным пользователем на вебе"
+  }
+}

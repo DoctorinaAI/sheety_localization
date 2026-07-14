@@ -1,0 +1,428 @@
+{
+  "@@locale": "ms",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "Rekod Kesihatan",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "BARU",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Buat Rekod Kesihatan Anda",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Pada akhir konsultasi anda, tambahkan profil anda.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Tambah lebih banyak profil",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Mulakan konsultasi untuk orang lain bagi membuat profil mereka.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Daftar untuk membuat Rekod Kesihatan anda",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Cuba lagi",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Gagal untuk memadam profil",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Gagal memuat ringkasan profil",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Lihat Rekod Penuh",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Kongsi",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Padam",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Umur",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} tahun} other{{value} tahun}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Berat",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Tinggi",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "-",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Alergi",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Kronik",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Ubat",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Peranti",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Konsultasi",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Dokumen",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Padam Rekod Kesihatan?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Ini akan menghapus data kesihatan anda secara kekal dan tidak boleh dipulihkan. Anda akan kehilangan konteks yang kami gunakan untuk membimbing anda.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Batal",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Padam",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Menghapus rekod kesihatan anda...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Gagal untuk memadam profil",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Rekod kesihatan dipadam",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Anda boleh membuat yang baru bila-bila masa dengan berbual dengan pembantu.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Kembali ke Sembang",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Penyuntingan",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Gagal memuat data profil",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Perubahan disimpan",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Maklumat anda telah berjaya dikemas kini.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Kembali ke profil",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Gagal mengemas kini data profil",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Buang perubahan?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Anda telah membuat beberapa perubahan pada profil anda. Simpan sebelum anda pergi, atau buang.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Teruskan penyuntingan",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Buang",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Edit",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Tambah rekod",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Cari",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Tiada hasil ditemui",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Muat Turun",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Kongsi",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Padam",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Tiada dokumen ditemui",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Padam dokumen ini?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Fail ini akan dipadamkan secara kekal",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Batal",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Padam",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Tindakan lain",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Cari",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Tiada profil ditemui",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Lihat lagi",
+  "@profilesViewMore": {},
+  "profilesMore": "Lebih",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina kini mengingati kesihatan anda",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Konsultasi anda kini membina dan mengemas kini Rekod Kesihatan anda secara automatik.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Rekod Kesihatan Anda, peraturan anda",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Lihat, edit, atau tambah simptom, ubat, sejarah, atau dokumen pada bila-bila masa.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Jaga untuk seluruh keluarga anda",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Buat Rekod Kesihatan untuk orang tersayang anda, anak-anak, ibu bapa, atau pasangan anda.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Sedia untuk menyimpan Rekod Kesihatan anda?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Selepas konsultasi anda, ketik “Tambah profil” untuk menyimpannya.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Seterusnya",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Mulakan konsultasi",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Mungkin kemudian",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Tutup",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Rekod Kesihatan",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Rekod Kesihatan — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...lagi",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...kurang",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Tambah profil baru",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Buat profil untuk menyimpan butiran konsultasi ini.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Anda boleh menilainya bila-bila masa dalam Health Records anda",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Jika anda mempunyai lebih banyak soalan tentang ini atau apa-apa yang berkaitan, jangan ragu untuk terus bercakap dengan saya. Saya di sini untuk membantu",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Maklumat Am",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Nama",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Nama pertama",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Nama keluarga",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Jantina",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Sila pilih",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Lelaki",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Perempuan",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Lain-lain",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Tarikh Lahir",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Umur",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "contohnya 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Nombor telefon",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "E-mel",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Lokasi",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "cth. Bandar, Negara",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Badan & Diet",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Tinggi",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "cth. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Berat",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "cth. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Kitaran Haid",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "cth. Teratur, Tidak teratur",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Sekatan Pemakanan",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Sila pilih",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Beritahu kami apa yang anda makan dan sebarang sekatan yang anda ada",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Tiada",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Vegetarian",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Vegan",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Bebas Gluten",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Indeks Jisim Badan (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "cth. 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Profil Kesihatan",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Penyakit Kronik",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "Contoh: Diabetes Jenis 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Sila senaraikan semua penyakit kronik dan sertakan bila ia didiagnosis serta sebarang komplikasi.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Penyakit Sebelumnya",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "contohnya, Selsema biasa yang kerap",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Sila senaraikan penyakit serius yang anda alami pada masa lalu, walaupun anda telah sembuh.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Sejarah Pembedahan",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "cth. Apendektomi",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Sila senaraikan semua pembedahan dan sertakan tahun serta sama ada terdapat sebarang komplikasi",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Ubat Yang Digunakan Sekali-sekala",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "contoh: Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Sila senaraikan ubat yang anda ambil dari semasa ke semasa (contohnya: ubat penahan sakit, ubat alergi), termasuk dos dan sebab penggunaannya.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Ubat-ubatan Teratur",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "contoh: Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Sila senaraikan semua ubat yang anda ambil secara berkala, termasuk nama, dos, berapa kali sehari anda mengambilnya, dan untuk keadaan apa.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Alahan",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "contoh: Penisilin – menyebabkan ruam",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Sila senaraikan semua alahan (ubat-ubatan, makanan, persekitaran), dan terangkan reaksi yang anda alami (contohnya: ruam, bengkak, masalah pernafasan).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Keadaan Khas",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "cth. Kehamilan, Kurang upaya",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Jika anda mempunyai sebarang keadaan perubatan penting yang perlu diketahui oleh doktor (contohnya: kehamilan, peranti yang ditanam, kecacatan, terapi antikoagulasi), sila huraikan. Jika tiada, anda boleh biarkan ini kosong.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Sejarah Perubatan Keluarga",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "cth. Penyakit Jantung, Kanser",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Sila nyatakan penyakit penting dalam keluarga anda (contohnya: diabetes, hipertensi, penyakit jantung, kanser, penyakit genetik) dan nyatakan ahli keluarga yang menghidap keadaan tersebut.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Faktor Sosial & Gaya Hidup",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "cth. Merokok, Pengambilan Alkohol",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Sila nyatakan faktor gaya hidup yang boleh mempengaruhi kesihatan anda, seperti merokok, alkohol, aktiviti fizikal, diet, tidur, dan pekerjaan.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Alat Perubatan",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "Contoh: alat pacu jantung, alat bantuan pendengaran, pam insulin",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Sila senaraikan sebarang peranti perubatan yang anda gunakan atau telah ditanam, seperti alat pacu jantung, pam insulin, alat pendengar, prostetik, atau peranti bantuan atau pemantauan lain. Sertakan butiran yang relevan jika ada.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Omnivor",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Makanan Segera",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Vegetarian yang makan ikan",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Tanpa Laktosa",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Diet rendah garam",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Diet rendah gula",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Diet jantung",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Diet buah pinggang",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Lain-lain",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

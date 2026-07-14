@@ -1,0 +1,286 @@
+{
+  "@@locale": "te",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "sectionClearAllChatsTitle": "అన్ని చాట్‌లను తొలగించండి",
+  "@sectionClearAllChatsTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionClearAllChatsSubtitle": "ఈ చర్య మీ చాట్ చరిత్రను శాశ్వతంగా తొలగిస్తుంది.",
+  "@sectionClearAllChatsSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionClearAllChatsButton": "అన్ని చాట్లను తొలగించు",
+  "@sectionClearAllChatsButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionClearAllChatsEmailTheme": "అన్ని చాట్‌లను తొలగించు",
+  "@sectionClearAllChatsEmailTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionDeleteAccountTitle": "ఖాతాను తొలగించు",
+  "@sectionDeleteAccountTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionDeleteAccountSubtitle": "మీ ఖాతాను తొలగించడం శాశ్వత చర్య మరియు తిరిగి చేయడం సాధ్యం కాదు.",
+  "@sectionDeleteAccountSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionDeleteAccountButton": "తొలగించు",
+  "@sectionDeleteAccountButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sectionDeleteAccountTheme": "ఖాతాను తొలగించండి",
+  "@sectionDeleteAccountTheme": {
+    "description": "Тема e-mail письма"
+  },
+  "sectionLogOutTitle": "సైన్ అవుట్",
+  "@sectionLogOutTitle": {
+    "description": "Заголовок карточки"
+  },
+  "sectionLogOutSubtitle": "మీరు మీ ఖాతా నుండి సైన్ అవుట్ చేయబడతారు.",
+  "@sectionLogOutSubtitle": {
+    "description": "Подзаголовок карточки"
+  },
+  "sectionLogOutButton": "సైన్ అవుట్",
+  "@sectionLogOutButton": {
+    "description": "Надпись на кнопке"
+  },
+  "sendBugReportButton": "బగ్ నివేదిక పంపండి",
+  "@sendBugReportButton": {},
+  "sectionSendMessageWithEnterTitle": "సందేశం పంపండి [⏎ Enter] తో",
+  "@sectionSendMessageWithEnterTitle": {
+    "description": "Отправить сообщение с [⏎ Enter]"
+  },
+  "sectionSendMessageWithEnterSubtitle": "సందేశాన్ని పంపడానికి [⏎ Enter] వాడండి మరియు కొత్త లైన్ కోసం [Shift] + [⏎ Enter] వాడండి",
+  "@sectionSendMessageWithEnterSubtitle": {
+    "description": "Отправьте сообщение с [⏎ Enter] и новую строку с [Shift] + [⏎ Enter]"
+  },
+  "sectionSendMessageEnter": "సందేశం పంపండి [⏎ Enter]",
+  "@sectionSendMessageEnter": {
+    "description": "Короткий текст для опции отправить сообщение с [⏎ Enter]"
+  },
+  "sectionPrivacyPolicy": "గోప్యతా విధానం",
+  "@sectionPrivacyPolicy": {
+    "description": "Короткий текст для секции политики конфиденциальности"
+  },
+  "sectionSelectLocaleTitle": "భాష",
+  "@sectionSelectLocaleTitle": {},
+  "sectionSelectLocaleSubtitle": "ఆప్ ఇంటర్‌ఫేస్ కోసం మీకు ఇష్టమైన భాషను ఎంచుకోండి",
+  "@sectionSelectLocaleSubtitle": {},
+  "sectionSwitchThemeTitle": "డార్క్ మోడ్",
+  "@sectionSwitchThemeTitle": {},
+  "sectionSwitchThemeSubtitle": "తక్కువ వెలుగులో సౌకర్యవంతమైన వీక్షణ అనుభవం కోసం డార్క్ మోడ్ ప్రారంభించండి",
+  "@sectionSwitchThemeSubtitle": {},
+  "sectionLogsTitle": "లాగ్లు",
+  "@sectionLogsTitle": {},
+  "sectionLogsSubtitle": "డీబగ్గింగ్ కోసం అనువర్తన లాగ్‌లను వీక్షించండి మరియు నిర్వహించండి",
+  "@sectionLogsSubtitle": {},
+  "doneButton": "ముగిసింది",
+  "@doneButton": {},
+  "bugReportDialogTitle": "బగ్ నివేదిక",
+  "@bugReportDialogTitle": {},
+  "bugReportDialogHintText": "మీరు ఎదుర్కొన్న లోపాన్ని వివరించండి",
+  "@bugReportDialogHintText": {},
+  "attachFilesButtonTooltip": "ఫైళ్ళను జోడించండి",
+  "@attachFilesButtonTooltip": {},
+  "filePickerError": "ఫైళ్ళను ఎంచుకోలేకపోయింది",
+  "@filePickerError": {},
+  "emptyBugReportError": "దయచేసి ముందుగా బగ్ నివేదికను నమోదు చేయండి",
+  "@emptyBugReportError": {},
+  "failedToSendBugReportError": "బగ్ రిపోర్ట్ పంపడంలో విఫలమైంది",
+  "@failedToSendBugReportError": {},
+  "sectionManageSubscriptionTitle": "సబ్‌స్క్రిప్షన్ నిర్వహించండి",
+  "@sectionManageSubscriptionTitle": {},
+  "sectionManageSubscriptionSubtitle": "మీ చందా సెట్టింగులను నిర్వహించండి",
+  "@sectionManageSubscriptionSubtitle": {},
+  "sectionHapticFeedbackTitle": "హాప్టిక్ ఫీడ్‌బ్యాక్",
+  "@sectionHapticFeedbackTitle": {},
+  "sectionHapticFeedbackSubtitle": "మద్దతు ఉన్న పరికరాల్లో హాప్‌టిక్ ఫీడ్‌బ్యాక్ (వైబ్రేషన్)ను ప్రారంభించండి లేదా నిలిపివేయండి",
+  "@sectionHapticFeedbackSubtitle": {},
+  "sectionNotificationTitle": "నోటిఫికేషన్లు ఆన్ చేయండి",
+  "@sectionNotificationTitle": {
+    "description": "Включить пуш уведомления"
+  },
+  "sectionNotificationSubtitle": "డాక్టర్‌నా మీ చాట్లలో, నివేదికలలో లేదా లక్షణాలలో ముఖ్యమైనది కనుగొన్నప్పుడు అప్డేట్‌లో ఉండండి.",
+  "@sectionNotificationSubtitle": {
+    "description": "Включить пуш уведомления для приложения"
+  },
+  "sectionAccountTitle": "ఖాతా",
+  "@sectionAccountTitle": {
+    "description": "Заголовок секции аккаунта на экране настроек"
+  },
+  "sectionAppTitle": "అప్",
+  "@sectionAppTitle": {
+    "description": "Заголовок секции приложения на экране настроек"
+  },
+  "sectionAboutTitle": "గురించి",
+  "@sectionAboutTitle": {
+    "description": "Заголовок секции информации на экране настроек"
+  },
+  "sectionNotificationsTitle": "అనుబంధాలు",
+  "@sectionNotificationsTitle": {
+    "description": "Название пункта настроек уведомлений"
+  },
+  "sectionVideoTutorialsTitle": "వీడియో పాఠాలు",
+  "@sectionVideoTutorialsTitle": {
+    "description": "Название пункта с видеоуроками"
+  },
+  "accountPhoneLabel": "ఫోన్",
+  "@accountPhoneLabel": {
+    "description": "Лейбл телефона в информации аккаунта"
+  },
+  "accountEmailLabel": "ఇమెయిల్",
+  "@accountEmailLabel": {
+    "description": "Лейбл email в информации аккаунта"
+  },
+  "accountNameLabel": "పేరు",
+  "@accountNameLabel": {
+    "description": "Лейбл имени в информации аккаунта"
+  },
+  "appVersionLabel": "Doctorina v{version}",
+  "@appVersionLabel": {
+    "description": "Версия приложения на экране настроек",
+    "placeholders": {
+      "version": {
+        "type": "String",
+        "example": "2.3.1"
+      }
+    }
+  },
+  "duplicateAttachmentFilesError": "అనుకరణలతో ఉన్న ఫైళ్లతో {count} ఫైళ్లను మిస్సయ్యాయి",
+  "@duplicateAttachmentFilesError": {
+    "description": "Сообщение о пропущенных дубликатах файлов в диалоге отчета об ошибке",
+    "placeholders": {
+      "count": {
+        "type": "String",
+        "example": "2"
+      }
+    }
+  },
+  "bugReportTypeSectionLabel": "రకం",
+  "@bugReportTypeSectionLabel": {
+    "description": "Заголовок секции выбора типа отчета об ошибке"
+  },
+  "bugReportDescriptionSectionLabel": "వివరణ",
+  "@bugReportDescriptionSectionLabel": {
+    "description": "Заголовок поля описания в диалоге отчета об ошибке"
+  },
+  "bugReportAttachmentsSectionLabel": "అటాచ్‌మెంట్స్",
+  "@bugReportAttachmentsSectionLabel": {
+    "description": "Заголовок секции вложений в диалоге отчета об ошибке"
+  },
+  "bugReportTypeBug": "బగ్",
+  "@bugReportTypeBug": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeCrash": "క్రాష్",
+  "@bugReportTypeCrash": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeUiIssue": "యూఐ సమస్య",
+  "@bugReportTypeUiIssue": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "bugReportTypeOther": "ఇతర",
+  "@bugReportTypeOther": {
+    "description": "Вариант типа отчета об ошибке"
+  },
+  "deleteAccountWarningMessage": "మీ ఖాతాను తొలగించడం మీ డేటాను Doctorina నుండి శాశ్వతంగా తొలగిస్తుంది.",
+  "@deleteAccountWarningMessage": {
+    "description": "Предупреждение на экране удаления аккаунта о безвозвратном удалении данных"
+  },
+  "deleteAccountBeforeYouDeleteTitle": "మీరు తొలగించే ముందు",
+  "@deleteAccountBeforeYouDeleteTitle": {
+    "description": "Подзаголовок блока «Перед удалением» на экране удаления аккаунта"
+  },
+  "deleteAccountActiveSubscriptionNotice": "మీకు {store} ద్వారా ఒక చురుకైన సభ్యత్వం ఉంది. మీ ఖాతాను తొలగించడం దాన్ని రద్దు చేయదు.",
+  "@deleteAccountActiveSubscriptionNotice": {
+    "description": "Уведомление, что удаление аккаунта не отменит активную подписку в сторе",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountCancelSubscriptionLink": "{store}లో సభ్యత్వాన్ని రద్దు చేయండి",
+  "@deleteAccountCancelSubscriptionLink": {
+    "description": "Ссылка отмены подписки в сторе на экране удаления аккаунта",
+    "placeholders": {
+      "store": {
+        "type": "String",
+        "example": "App Store"
+      }
+    }
+  },
+  "deleteAccountContinueButton": "కొనసాగించు",
+  "@deleteAccountContinueButton": {
+    "description": "Кнопка «Continue» на экране удаления аккаунта"
+  },
+  "deleteAccountFormDescription": "మీరు వెళ్ళడం చూసి మాకు బాధగా ఉంది. మీరు మీ ఖాతాను తొలగించాలనుకుంటున్నారా? మీరు నిర్ధారించిన తర్వాత, మీ డేటా పోతుంది.",
+  "@deleteAccountFormDescription": {
+    "description": "Вступительный текст на экране выбора причины удаления аккаунта"
+  },
+  "deleteAccountReasonDontUseAnymore": "నేను ఈ యాప్‌ను ఇక ఉపయోగించడం లేదు",
+  "@deleteAccountReasonDontUseAnymore": {
+    "description": "Причина удаления: больше не пользуюсь приложением"
+  },
+  "deleteAccountReasonFoundBetter": "మంచి ఎంపిక దొరికింది",
+  "@deleteAccountReasonFoundBetter": {
+    "description": "Причина удаления: нашёл вариант лучше"
+  },
+  "deleteAccountReasonTechnicalIssues": "సాంకేతిక సమస్యలు",
+  "@deleteAccountReasonTechnicalIssues": {
+    "description": "Причина удаления: технические проблемы"
+  },
+  "deleteAccountReasonEaseOfUse": "ఉపయోగించడంలో సమస్యలు",
+  "@deleteAccountReasonEaseOfUse": {
+    "description": "Причина удаления: неудобно пользоваться"
+  },
+  "deleteAccountReasonMissingFeatures": "ఫీచర్లు లేవు",
+  "@deleteAccountReasonMissingFeatures": {
+    "description": "Причина удаления: не хватает функций"
+  },
+  "deleteAccountReasonPrivacy": "ప్రైవసీ ఆందోళనలు",
+  "@deleteAccountReasonPrivacy": {
+    "description": "Причина удаления: беспокойство о приватности"
+  },
+  "deleteAccountReasonClearData": "నేను నా డేటాను క్లియర్ చేయాలనుకుంటున్నాను",
+  "@deleteAccountReasonClearData": {
+    "description": "Причина удаления: просто хотел очистить свои данные"
+  },
+  "deleteAccountReasonOther": "ఇతర",
+  "@deleteAccountReasonOther": {
+    "description": "Причина удаления: другое"
+  },
+  "deleteAccountFeedbackHint": "మీ అభిప్రాయాన్ని పంచుకోండి",
+  "@deleteAccountFeedbackHint": {
+    "description": "Плейсхолдер поля обратной связи на экране удаления аккаунта"
+  },
+  "deleteAccountProgressMessage": "మీ ఖాతాను తొలగిస్తున్నాము...",
+  "@deleteAccountProgressMessage": {
+    "description": "Сообщение во время выполнения удаления аккаунта"
+  },
+  "deleteAccountDeletingButton": "తొలగించడం",
+  "@deleteAccountDeletingButton": {
+    "description": "Состояние кнопки во время удаления аккаунта"
+  },
+  "deleteAccountUndoButton": "రద్దు చేయి",
+  "@deleteAccountUndoButton": {
+    "description": "Кнопка отмены удаления во время обратного отсчёта"
+  },
+  "deleteAccountSuccessToast": "మీ ఖాతా తొలగించబడింది.",
+  "@deleteAccountSuccessToast": {
+    "description": "Тост об успешном удалении аккаунта"
+  },
+  "deleteAccountErrorToast": "ఖాతా తొలగించడంలో విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.",
+  "@deleteAccountErrorToast": {
+    "description": "Тост об ошибке удаления аккаунта"
+  },
+  "emailClientUnavailableToast": "ఈ పరికరంలో ఇమెయిల్ యాప్ అందుబాటులో లేదు. దయచేసి support@doctorina.com కు చేతితో సంప్రదించండి.",
+  "@emailClientUnavailableToast": {
+    "description": "Тост, если не удалось открыть почтовый клиент"
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "@@locale": "uz",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "Sog'liqni saqlash yozuvlari",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "YANGI",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Sizning Sog'liq Yozuvingizni Yaratish",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "Maslahat oxirida profilingizni qo'shing.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Batafsil profillar qo'shish",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Boshqa kishi uchun maslahat boshlang, uning profilini yaratish uchun.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Sog'liq yozuvingizni yaratish uchun ro'yxatdan o'ting",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Qayta urinib ko'ring",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Profilni o'chirishda xato",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Profil qisqacha ma'lumotini yuklashda xato",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "To'liq yozuvni ko'rish",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Ulashish",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "O'chirish",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Yosh",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} yil} other{{value} yil}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Og'irlik",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Balandlik",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} sm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "-",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Allergiyalar",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Surunkali",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Dori",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Qurilmalar",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Maslahatlar",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Hujjatlar",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Sog'liq yozuvini o'chirish?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Bu sizning sog'liq ma'lumotlaringizni doimiy ravishda o'chiradi va qaytarib bo'lmaydi. Siz biz sizni yo'naltirish uchun ishlatadigan kontekstni yo'qotasiz.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Bekor qilish",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "O'chirish",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Sizning sog'liq yozuvingiz o'chirilmoqda...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Profilni o'chirishda xato",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Sog'liq yozuvi o'chirildi",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Siz har qanday vaqtda yordamchiga yozish orqali yangi birini yaratishingiz mumkin",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Suhbatga qaytish",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Tahrirlash",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Profil ma'lumotlarini yuklashda xato",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "O'zgarishlar saqlandi",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Ma'lumotlaringiz muvaffaqiyatli yangilandi.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Profilga qaytish",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Profil ma'lumotlarini yangilashda xato",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "O'zgarishlarni bekor qilasizmi?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Siz profilingizda ba'zi o'zgarishlar qildingiz. Ularni ketishdan oldin saqlang yoki bekor qiling.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Tahrirni davom ettirish",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "O'chirish",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Tahrirlash",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Yozuv qo'shish",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Qidirish",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Natija topilmadi",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Yuklab olish",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Ulashish",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "O'chirish",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Hech qanday hujjat topilmadi",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Ushbu hujjatni o'chirishni xohlaysizmi?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Ushbu fayl doimiy ravishda o'chiriladi",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Bekor qilish",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "O'chirish",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Boshqa amallar",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Qidirish",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Hech qanday profil topilmadi",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Ko‘proq ko‘rish",
+  "@profilesViewMore": {},
+  "profilesMore": "Ko'proq",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina endi sizning salomatligingizni eslaydi",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Konsultatsiyalaringiz endi avtomatik ravishda Sog'liq yozuvingizni yaratadi va yangilaydi.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Sizning Sog'liq Yozuvingiz, sizning qoidalaringiz",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Har qanday vaqtda simptomlar, dori-darmonlar, tarix yoki hujjatlarni ko'rish, tahrirlash yoki qo'shishingiz mumkin.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Butun oilangizga g'amxo'rlik qiling",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Sevganlaringiz, bolalaringiz, ota-onalaringiz yoki hamkoringiz uchun Sog'liq yozuvini yarating.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Sizning Sog'liqni Saqlash Hisobotingizni saqlashga tayyormisiz?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "Maslahatingizdan so'ng, uni saqlash uchun \"Profil qo'shish\" tugmasini bosing.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Keyingi",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Maslahatni boshlash",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Keyinroq",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Yopish",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Tibbiy qayd",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Tibbiy ma'lumot — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...ko'proq",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "kamroq",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Yangi profil qo'shish",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Ushbu maslahatning tafsilotlarini saqlash uchun profil yarating.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Sog'liqni saqlash yozuvlaringizda uni istalgan vaqtda baholashingiz mumkin",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Agar buning yoki unga bog'liq boshqa savollaringiz bo'lsa, bemalol men bilan suhbatni davom ettiring. Men yordam berish uchun shu yerdaman",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Umumiy ma'lumot",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Ism",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Ism",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "Ali",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Familiya",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Jins",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Iltimos tanlang",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Erkak",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Ayol",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Boshqa",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Tug'ilgan sana",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Yosh",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "masalan 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Telefon raqami",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "Elektron pochta",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Joylashuv",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "masalan Shahar, Mamlakat",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Tana & Oziqlanish",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Balandlik",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "masalan 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Og'irlik",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "masalan 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Hayz Davri",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "masalan Muntazam, tartibsiz",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Ovqatlanish cheklovlari",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Iltimos tanlang",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Bizga nima iste'mol qilayotganingizni va har qanday cheklovlaringizni ayting",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Yo'q",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Vejetaryan",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Vegan",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Glutensiz",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Tana Massasi Indeksi (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "masalan 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Sog'liq profili",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Surunkali kasalliklar",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "masalan, 2-tur diabet",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Iltimos, barcha surunkali kasalliklarni sanab bering va ularning qachon aniqlanganini va har qanday asoratlarni qo'shing.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "O'tgan kasalliklar",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "masalan: tez-tez oddiy gripp",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Iltimos, o'tmishda bo'lgan jiddiy kasalliklaringizni sanab bering, hatto agar tuzalgan bo'lsangiz ham.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Jarrohlik tarixi",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "masalan Appendektomiya",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Iltimos, barcha jarrohlik amaliyotlarini sanasi va har qanday asoratlar bo'lganligini ko'rsatib ro'yxatlang.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Ba'zan ishlatiladigan dorilar",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "masalan, Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Iltimos, vaqt-vaqti bilan qabul qiladigan dori-darmonlaringizni (masalan: og'riq qoldiruvchi, allergiya dori-darmonlari) dozasi va foydalanish sababi bilan birga sanab o'ting",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Doimiy dori-darmonlar",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "masalan, Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Iltimos, muntazam ravishda qabul qiladigan barcha dori-darmonlaringizni, shu jumladan nomi, dozi, kuniga necha marta qabul qilishingiz va qaysi kasallik uchun ekanligini ro'yxatga oling.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Allergiyalar",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "masalan, Penitsillin – toshma keltiradi",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Iltimos, barcha allergiyalaringizni (dori-darmonlar, ovqat, atrof-muhit) sanab bering va qanday reaktsiya ko'rsatganingizni tasvirlang (masalan: toshma, shish, nafas olish muammolari).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Maxsus holatlar",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "masalan Homiladorlik, Nogironlik",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Agar shifokorlar doimo bilishi kerak bo'lgan muhim tibbiy holatlaringiz bo'lsa (masalan: homiladorlik, implantatsiya qilingan qurilmalar, nogironliklar, antikoagulyatsiya terapiyasi), iltimos, ularni tasvirlang. Agar yo'q bo'lsa, bu joyni bo'sh qoldirishingiz mumkin.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Oilaviy anamnez",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "masalan: yurak kasalligi, saraton",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Iltimos, oilangizdagi muhim kasalliklarni tasvirlang (masalan: diabet, gipertoniya, yurak kasalliklari, saraton, genetik kasalliklar) va qaysi oila a'zosida bu holat borligini ko'rsating.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Ijtimoiy va hayot tarzi omillari",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "masalan Chekish, Spirtli ichimliklar iste'moli",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Iltimos, sog'lig'ingizga ta'sir qilishi mumkin bo'lgan turmush tarzi omillarini, masalan, chekish, spirtli ichimliklar, jismoniy faoliyat, ovqatlanish, uyqu va kasbni tasvirlab bering.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Tibbiy qurilmalar",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "Masalan: Yurak stimulyatori, Eshitish moslamasi, Insulin nasosi",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Iltimos, foydalanayotgan yoki implantatsiya qilingan tibbiy qurilmalarni, masalan, yurak stimulyatorlari, insulin pompalar, eshitish apparatlari, protezlar yoki boshqa yordamchi yoki monitoring qurilmalarini sanab bering. Agar kerak bo'lsa, tegishli tafsilotlarni qo'shing.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Hamma narsani yeyuvchi",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Tez ovqat",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Baliqxor",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Laktozsiz",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Kam tuzli parhez",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Kam shakarli dieta",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Yurak Parhezi",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Buyrak parhezi",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Boshqa",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

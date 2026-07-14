@@ -1,0 +1,18 @@
+{
+  "@@locale": "tr",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "Bir hata oluştu",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "Beklenmedik bir hata oluştu",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "Hata raporu başarıyla gönderildi.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

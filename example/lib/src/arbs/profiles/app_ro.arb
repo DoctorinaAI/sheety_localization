@@ -1,0 +1,428 @@
+{
+  "@@locale": "ro",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "Dosare medicale",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "NOU",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "Creează-ți Dosarul Medical",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "La sfârșitul consultației, adăugați profilul dvs.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "Adaugă mai multe profile",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "Începe o consultație pentru altcineva pentru a crea profilul lor.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "Înscrie-te pentru a-ți crea Dosarul Medical",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "Reîncercați",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "Ștergerea profilului a eșuat",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "Eșec la încărcarea rezumatului profilului",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "Vezi înregistrarea completă",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "Împărtășește",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "Șterge",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "Vârstă",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} an} other{{value} ani}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "Greutate",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} kg",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "Înălțime",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} cm",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "N/A",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "Alergii",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "Cronice",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "Medicamente",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "Dispozitive",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "Consultări",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "Documente",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "Ștergeți dosarul medical?",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "Aceasta va elimina permanent datele dumneavoastră de sănătate și nu poate fi anulată. Veți pierde contextul pe care îl folosim pentru a vă ghida.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "Anulează",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "Șterge",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "Ștergerea dosarului tău medical...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "Nu s-a putut șterge profilul",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "Fișa medicală a fost ștearsă",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "Puteți crea unul nou oricând discutând cu asistentul.",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "Întoarce-te la chat",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "Editare",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "Nu s-a putut încărca datele profilului",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "Modificările au fost salvate",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "Informațiile dumneavoastră au fost actualizate cu succes.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "Întoarceți-vă la profil",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "Actualizarea datelor profilului a eșuat",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "Renunțați la modificări?",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "Ați făcut câteva modificări la profilul dumneavoastră. Salvați-le înainte de a pleca sau renunțați la ele.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "Continuă editarea",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "Aruncă",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "Editează",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "Adaugă înregistrare",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "Caută",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "Nu s-au găsit rezultate",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "Descarcă",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "Împărtășește",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "Șterge",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "Nu au fost găsite documente",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "Șterge acest document?",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "Acest fișier va fi eliminat permanent",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "Anulează",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "Șterge",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "Mai multe acțiuni",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "Caută",
+  "@profilesSearch": {},
+  "profilesEmptyList": "Nu au fost găsite profiluri",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "Vezi mai mult",
+  "@profilesViewMore": {},
+  "profilesMore": "Mai multe",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "Doctorina îți amintește acum de sănătatea ta",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "Consultațiile dumneavoastră acum construiesc și actualizează automat Dosarul de Sănătate.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "Dosarul tău de sănătate, regulile tale",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "Vizualizați, editați sau adăugați simptome, medicamente, istoric sau documente oricând.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "Îngrijire pentru întreaga familie",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "Creează un Dosar Medical pentru cei dragi, copiii tăi, părinți sau partener.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "Ești gata să îți salvezi Dosarul Medical?",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "După consultație, apasă „Adaugă profil” pentru a-l salva.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "Următorul",
+  "@profilesNextButton": {},
+  "profilesStartButton": "Începe o consultație",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "Poate mai târziu",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "Închide",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "Fișa medicală",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "Fișa medicală — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...mai mult",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "...mai puțin",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "Adaugă profil nou",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "Creează un profil pentru a salva detaliile acestei consultații.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "Îl puteți evalua oricând în Health Records",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "Dacă ai mai multe întrebări despre asta sau despre orice legat de acest subiect, simte-te liber să continui să vorbești cu mine. Sunt aici să te ajut",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "Informații generale",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "Nume",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "Ion Popescu",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "Prenume",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "Nume de familie",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Popescu",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "Sex",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "Vă rugăm să selectați",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "Masculin",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "Femeie",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "Altul",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "Data nașterii",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "Vârstă",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "ex. 30",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "Număr de telefon",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "E-mail",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "Locație",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "ex. Oraș, Țară",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "Corp & Dietă",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "Înălțime",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "ex. 180 cm",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "Greutate",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "ex. 75 kg",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "Ciclu Menstrual",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "de ex. Regulat, Neregulat",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "Restricții alimentare",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "Vă rugăm să selectați",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "Spune-ne ce mănânci și orice restricții ai",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "Niciuna",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "Vegetarian",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "Vegan",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "Fără gluten",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "Indicele de masă corporală (IMC)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "de ex. 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "Profil de sănătate",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "Afecțiuni cronice",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "de exemplu, diabet zaharat de tip 2",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "Vă rugăm să listați toate bolile cronice și să includeți când au fost diagnosticate și orice complicații.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "Afecțiuni anterioare",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "de exemplu, Răceală comună frecventă",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "Vă rugăm să listați bolile grave pe care le-ați avut în trecut, chiar dacă v-ați recuperat.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "Antecedente chirurgicale",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "ex. Apendicectomie",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "Vă rugăm să listați toate intervențiile chirurgicale și să includeți anul și dacă au existat complicații.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "Medicamente Utilizate Ocazional",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "de exemplu: Ibuprofen",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "Vă rugăm să listați medicamentele pe care le luați din când în când (de exemplu: analgezice, medicamente pentru alergii), inclusiv doza și motivul utilizării.",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "Medicație regulată",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "de exemplu: Metformin",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "Vă rugăm să listați toate medicamentele pe care le luați regulat, inclusiv numele, doza, de câte ori pe zi le luați și pentru ce afecțiune sunt.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "Alergii",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "de exemplu: Penicilină – cauzează erupție",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "Vă rugăm să listați toate alergiile (medicamente, alimente, mediu) și să descrieți ce reacție aveți (de exemplu: erupție cutanată, umflare, probleme respiratorii).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "Condiții Speciale",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "de ex. Sarcină, Dizabilitate",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "Dacă aveți condiții medicale importante de care medicii ar trebui să știe întotdeauna (de exemplu: sarcină, dispozitive implantate, dizabilități, terapie anticoagulantă), vă rugăm să le descrieți. Dacă nu, puteți lăsa acest câmp gol.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "Antecedente familiale",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "ex. boli cardiace, cancer",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "Vă rugăm să descrieți bolile importante din familia dumneavoastră (de exemplu: diabet, hipertensiune, boli de inimă, cancer, boli genetice) și să specificați ce membru al familiei a avut această afecțiune.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "Factori sociali și de stil de viață",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "de ex. Fumat, Consum de alcool",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "Vă rugăm să descrieți factorii de stil de viață care pot afecta sănătatea dumneavoastră, cum ar fi fumatul, alcoolul, activitatea fizică, dieta, somnul și ocupația.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "Dispozitive medicale",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "de ex. pacemaker, aparat auditiv, pompă de insulină",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "Vă rugăm să listați orice dispozitive medicale pe care le utilizați sau le aveți implantate, cum ar fi stimulatoare cardiace, pompe de insulină, aparate auditive, proteze sau alte dispozitive de asistență sau monitorizare. Includeți detalii relevante, dacă este cazul.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "Omnivor",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "Fast Food",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "Pescetar",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "Fără lactoză",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "Dietă cu conținut scăzut de sodiu",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "Dietă săracă în zahăr",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "Dietă cardiacă",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "Dietă renală",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "Altul",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

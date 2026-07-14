@@ -1,0 +1,428 @@
+{
+  "@@locale": "fa",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "chatDrawerTitle": "سوابق پزشکی",
+  "@chatDrawerTitle": {
+    "description": "Title for side menu section"
+  },
+  "chatDrawerBadgeNew": "جدید",
+  "@chatDrawerBadgeNew": {
+    "description": "Badge that indicates new profile"
+  },
+  "bannerTitle": "سابقه سلامت خود را ایجاد کنید",
+  "@bannerTitle": {
+    "description": "Title for banner on side menu"
+  },
+  "bannerSubtitle": "در پایان مشاوره خود، پروفایل خود را اضافه کنید.",
+  "@bannerSubtitle": {
+    "description": "Description for banner on side menu"
+  },
+  "bannerMoreProfilesTitle": "اضافه کردن پروفایل‌های بیشتر",
+  "@bannerMoreProfilesTitle": {
+    "description": "Title for banner on side menu for add more prfiles"
+  },
+  "bannerMoreProfilesSubtitle": "برای شخص دیگری مشاوره‌ای آغاز کنید تا پروفایل او را ایجاد کنید.",
+  "@bannerMoreProfilesSubtitle": {
+    "description": "Description for banner on side menu for add more profiles"
+  },
+  "bannerSignUp": "برای ایجاد پرونده سلامت خود ثبت نام کنید",
+  "@bannerSignUp": {
+    "description": "Title for banner on side menu for anonymous user"
+  },
+  "errorRetryButton": "مجدد تلاش کنید",
+  "@errorRetryButton": {},
+  "dashboardDeleteError": "حذف پروفایل ناموفق بود",
+  "@dashboardDeleteError": {
+    "description": "Error snackbar shown when profile deletion fails"
+  },
+  "dashboardSummaryLoadError": "بارگذاری خلاصه پروفایل ناموفق بود",
+  "@dashboardSummaryLoadError": {
+    "description": "Error snackbar shown when profile summary loading fails"
+  },
+  "dashboardMenuViewFullRecord": "مشاهده رکورد کامل",
+  "@dashboardMenuViewFullRecord": {
+    "description": "More menu item label to open full profile record"
+  },
+  "dashboardMenuShare": "به اشتراک گذاری",
+  "@dashboardMenuShare": {
+    "description": "More menu item label to share profile"
+  },
+  "dashboardMenuDelete": "حذف",
+  "@dashboardMenuDelete": {
+    "description": "More menu item label to delete profile"
+  },
+  "dashboardMetricAgeLabel": "سن",
+  "@dashboardMetricAgeLabel": {
+    "description": "Health metric label for age"
+  },
+  "dashboardMetricAgeNumLabel": "{value, plural, one{{value} سال} other{{value} سال}}",
+  "@dashboardMetricAgeNumLabel": {
+    "description": "Health metric label for age as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "25 years"
+      }
+    }
+  },
+  "dashboardMetricWeightLabel": "وزن",
+  "@dashboardMetricWeightLabel": {
+    "description": "Health metric label for weight"
+  },
+  "dashboardMetricWeightNumLabel": "{value} کیلوگرم",
+  "@dashboardMetricWeightNumLabel": {
+    "description": "Health metric label for weight as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "54 kg"
+      }
+    }
+  },
+  "dashboardMetricHeightLabel": "قد",
+  "@dashboardMetricHeightLabel": {
+    "description": "Health metric label for height"
+  },
+  "dashboardMetricHeightNumLabel": "{value} سانتی‌متر",
+  "@dashboardMetricHeightNumLabel": {
+    "description": "Health metric label for height as number",
+    "placeholders": {
+      "value": {
+        "type": "num",
+        "example": "180 cm"
+      }
+    }
+  },
+  "dashboardMetricNotAvailable": "-",
+  "@dashboardMetricNotAvailable": {
+    "description": "Fallback text when metric data is missing"
+  },
+  "dashboardInfoAllergiesTitle": "آلرژی‌ها",
+  "@dashboardInfoAllergiesTitle": {
+    "description": "Medical info row title for allergies"
+  },
+  "dashboardInfoChronicTitle": "مزمن",
+  "@dashboardInfoChronicTitle": {
+    "description": "Medical info row title for chronic conditions"
+  },
+  "dashboardInfoMedicationTitle": "دارو",
+  "@dashboardInfoMedicationTitle": {
+    "description": "Medical info row title for medication"
+  },
+  "dashboardInfoDevicesTitle": "دستگاه‌ها",
+  "@dashboardInfoDevicesTitle": {
+    "description": "Medical info row title for devices"
+  },
+  "dashboardNavigationConsultations": "مشاوره‌ها",
+  "@dashboardNavigationConsultations": {
+    "description": "Navigation card label for consultations"
+  },
+  "dashboardNavigationDocuments": "اسناد",
+  "@dashboardNavigationDocuments": {
+    "description": "Navigation card label for documents"
+  },
+  "dashboardDeleteRecordTitle": "حذف پرونده سلامت؟",
+  "@dashboardDeleteRecordTitle": {},
+  "dashboardDeleteRecordSubtitle": "این اطلاعات سلامتی شما را به طور دائمی حذف می‌کند و قابل بازگشت نیست. شما زمینه‌ای را که ما برای راهنمایی شما استفاده می‌کنیم، از دست خواهید داد.",
+  "@dashboardDeleteRecordSubtitle": {},
+  "dashboardDeleteRecordCancel": "لغو",
+  "@dashboardDeleteRecordCancel": {},
+  "dashboardDeleteRecordConfirm": "حذف",
+  "@dashboardDeleteRecordConfirm": {},
+  "dashboardDeleteRecordLoading": "در حال حذف پرونده سلامت شما...",
+  "@dashboardDeleteRecordLoading": {},
+  "dashboardDeleteRecordError": "حذف پروفایل ناموفق بود",
+  "@dashboardDeleteRecordError": {},
+  "dashboardDeleteRecordSuccessTitle": "سابقه سلامت حذف شد",
+  "@dashboardDeleteRecordSuccessTitle": {},
+  "dashboardDeleteRecordSuccessSubtitle": "شما می‌توانید هر زمان که بخواهید با چت کردن با دستیار یک مورد جدید ایجاد کنید",
+  "@dashboardDeleteRecordSuccessSubtitle": {},
+  "dashboardDeleteRecordSuccessButton": "بازگشت به چت",
+  "@dashboardDeleteRecordSuccessButton": {},
+  "dataEditingScreenTitle": "ویرایش",
+  "@dataEditingScreenTitle": {
+    "description": "Title for screen with health records in edit mode"
+  },
+  "dataFailedToLoadError": "بارگذاری داده‌های پروفایل ناموفق بود",
+  "@dataFailedToLoadError": {
+    "description": "Error message on failed load data"
+  },
+  "dataRecordSavedTitle": "تغییرات ذخیره شد",
+  "@dataRecordSavedTitle": {},
+  "dataRecordSavedSubtitle": "اطلاعات شما با موفقیت به‌روزرسانی شد.",
+  "@dataRecordSavedSubtitle": {},
+  "dataRecordSavedButton": "بازگشت به پروفایل",
+  "@dataRecordSavedButton": {},
+  "dataRecordUpdateError": "به‌روزرسانی داده‌های پروفایل ناموفق بود",
+  "@dataRecordUpdateError": {},
+  "dataRecordDiscardTitle": "آیا تغییرات را حذف کنید؟",
+  "@dataRecordDiscardTitle": {},
+  "dataRecordDiscardSubtitle": "شما تغییراتی در پروفایل خود ایجاد کرده‌اید. آنها را قبل از رفتن ذخیره کنید یا کنار بگذارید.",
+  "@dataRecordDiscardSubtitle": {},
+  "dataRecordDiscardCancel": "ادامه ویرایش",
+  "@dataRecordDiscardCancel": {},
+  "dataRecordDiscardConfirm": "حذف",
+  "@dataRecordDiscardConfirm": {},
+  "dataRecordEditTooltip": "ویرایش",
+  "@dataRecordEditTooltip": {},
+  "dataRecordAddTag": "اضافه کردن رکورد",
+  "@dataRecordAddTag": {
+    "description": "Tooltip for add record button"
+  },
+  "consultationsSearch": "جستجو",
+  "@consultationsSearch": {
+    "description": "Search field on consultations screen"
+  },
+  "consultationsSearchEmpty": "نتیجه‌ای یافت نشد",
+  "@consultationsSearchEmpty": {
+    "description": "Nothing was found"
+  },
+  "documentsMenuDownload": "دانلود",
+  "@documentsMenuDownload": {
+    "description": "More menu item label to download document"
+  },
+  "documentsMenuShare": "به اشتراک گذاری",
+  "@documentsMenuShare": {
+    "description": "More menu item label to share document"
+  },
+  "documentsMenuDelete": "حذف",
+  "@documentsMenuDelete": {
+    "description": "More menu item label to delete document"
+  },
+  "documentsEmptyList": "هیچ سندی پیدا نشد",
+  "@documentsEmptyList": {
+    "description": "Placeholder for empty documents list"
+  },
+  "documentsDeleteTitle": "آیا این سند را حذف کنید؟",
+  "@documentsDeleteTitle": {},
+  "documentsDeleteSubtitle": "این فایل به طور دائمی حذف خواهد شد",
+  "@documentsDeleteSubtitle": {},
+  "documentsDeleteCancel": "لغو",
+  "@documentsDeleteCancel": {},
+  "documentsDeleteButton": "حذف",
+  "@documentsDeleteButton": {},
+  "documentsMoreActionsTooltip": "اقدامات بیشتر",
+  "@documentsMoreActionsTooltip": {},
+  "profilesSearch": "جستجو",
+  "@profilesSearch": {},
+  "profilesEmptyList": "هیچ پروفایلی یافت نشد",
+  "@profilesEmptyList": {},
+  "profilesViewMore": "مشاهده بیشتر",
+  "@profilesViewMore": {},
+  "profilesMore": "بیشتر",
+  "@profilesMore": {},
+  "profilesAnnouncementTitle1": "داکترینا حالا سلامتی شما را به خاطر می‌سپارد",
+  "@profilesAnnouncementTitle1": {},
+  "profilesAnnouncementSubtitle1": "مشاوره‌های شما اکنون به‌طور خودکار پرونده سلامت شما را ایجاد و به‌روزرسانی می‌کند.",
+  "@profilesAnnouncementSubtitle1": {},
+  "profilesAnnouncementTitle2": "سابقه سلامت شما، قوانین شما",
+  "@profilesAnnouncementTitle2": {},
+  "profilesAnnouncementSubtitle2": "هر زمان که بخواهید، می‌توانید علائم، داروها، تاریخچه یا مدارک را مشاهده، ویرایش یا اضافه کنید.",
+  "@profilesAnnouncementSubtitle2": {},
+  "profilesAnnouncementTitle3": "به خانواده‌تان رسیدگی کنید",
+  "@profilesAnnouncementTitle3": {},
+  "profilesAnnouncementSubtitle3": "یک پرونده سلامت برای عزیزانتان، فرزندان، والدین یا شریک خود ایجاد کنید.",
+  "@profilesAnnouncementSubtitle3": {},
+  "profilesAnnouncementTitle4": "آیا آماده‌اید تا سابقه سلامت خود را ذخیره کنید؟",
+  "@profilesAnnouncementTitle4": {},
+  "profilesAnnouncementSubtitle4": "پس از مشاوره، روی \"افزودن پروفایل\" ضربه بزنید تا آن را ذخیره کنید.",
+  "@profilesAnnouncementSubtitle4": {},
+  "profilesNextButton": "بعدی",
+  "@profilesNextButton": {},
+  "profilesStartButton": "مشاوره را شروع کنید",
+  "@profilesStartButton": {},
+  "profilesLaterButton": "شاید بعداً",
+  "@profilesLaterButton": {},
+  "profileSuccessCloseButton": "بستن",
+  "@profileSuccessCloseButton": {
+    "description": "Кнопка «Закрыть» на диалогах успеха (сохранение / удаление профиля)"
+  },
+  "pdfHeaderTitle": "سابقه پزشکی",
+  "@pdfHeaderTitle": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента (без имени)"
+  },
+  "pdfHeaderTitleWithName": "سابقه پزشکی — {name}",
+  "@pdfHeaderTitleWithName": {
+    "description": "Заголовок шапки PDF-файла с медицинской картой пациента, включая имя пациента",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "John Doe"
+      }
+    }
+  },
+  "expandableFieldMore": "...بیشتر",
+  "@expandableFieldMore": {
+    "description": "text button for show more text"
+  },
+  "expandableFieldLess": "کمتر",
+  "@expandableFieldLess": {
+    "description": "text button for show less text"
+  },
+  "profiles_button_addnew": "افزودن پروفایل جدید",
+  "@profiles_button_addnew": {},
+  "profiles_label_addnew": "یک پروفایل ایجاد کنید تا جزئیات این مشاوره را ذخیره کنید.",
+  "@profiles_label_addnew": {},
+  "profiles_label_health_records_hint": "می‌توانید هر زمان آن را در سوابق سلامت خود ارزیابی کنید",
+  "@profiles_label_health_records_hint": {},
+  "profiles_label_keep_talking_hint": "اگر دربارهٔ این یا هر موضوع مرتبط دیگری سوال بیشتری دارید، می‌توانید گفت‌وگو را با من ادامه دهید. من اینجا هستم تا کمک کنم",
+  "@profiles_label_keep_talking_hint": {},
+  "profile_section_basic_title": "اطلاعات عمومی",
+  "@profile_section_basic_title": {},
+  "profile_section_basic_name_label": "نام",
+  "@profile_section_basic_name_label": {},
+  "profile_section_basic_name_placeholder": "John Doe",
+  "@profile_section_basic_name_placeholder": {},
+  "profile_section_basic_first_name_label": "نام",
+  "@profile_section_basic_first_name_label": {},
+  "profile_section_basic_first_name_placeholder": "John",
+  "@profile_section_basic_first_name_placeholder": {},
+  "profile_section_basic_last_name_label": "نام خانوادگی",
+  "@profile_section_basic_last_name_label": {},
+  "profile_section_basic_last_name_placeholder": "Doe",
+  "@profile_section_basic_last_name_placeholder": {},
+  "profile_section_basic_sex_label": "جنسیت",
+  "@profile_section_basic_sex_label": {},
+  "profile_section_basic_sex_placeholder": "لطفاً انتخاب کنید",
+  "@profile_section_basic_sex_placeholder": {},
+  "profile_section_basic_sex_options_male": "مرد",
+  "@profile_section_basic_sex_options_male": {},
+  "profile_section_basic_sex_options_female": "زن",
+  "@profile_section_basic_sex_options_female": {},
+  "profile_section_basic_sex_options_other": "سایر",
+  "@profile_section_basic_sex_options_other": {},
+  "profile_section_basic_date_of_birth_label": "تاریخ تولد",
+  "@profile_section_basic_date_of_birth_label": {},
+  "profile_section_basic_date_of_birth_placeholder": "YYYY-MM-DD",
+  "@profile_section_basic_date_of_birth_placeholder": {},
+  "profile_section_basic_age_str_label": "سن",
+  "@profile_section_basic_age_str_label": {},
+  "profile_section_basic_age_str_placeholder": "مثلاً ۳۰",
+  "@profile_section_basic_age_str_placeholder": {},
+  "profile_section_basic_phonenumber_label": "شماره تلفن",
+  "@profile_section_basic_phonenumber_label": {},
+  "profile_section_basic_phonenumber_placeholder": "+xxx xxx xxx xxx",
+  "@profile_section_basic_phonenumber_placeholder": {},
+  "profile_section_basic_email_label": "ایمیل",
+  "@profile_section_basic_email_label": {},
+  "profile_section_basic_email_placeholder": "example@example.com",
+  "@profile_section_basic_email_placeholder": {},
+  "profile_section_basic_location_label": "موقعیت",
+  "@profile_section_basic_location_label": {},
+  "profile_section_basic_location_placeholder": "مثلاً شهر، کشور",
+  "@profile_section_basic_location_placeholder": {},
+  "profile_section_body_diet_title": "بدن و رژیم غذایی",
+  "@profile_section_body_diet_title": {},
+  "profile_section_body_diet_height_str_label": "قد",
+  "@profile_section_body_diet_height_str_label": {},
+  "profile_section_body_diet_height_str_placeholder": "مثلاً 180 سانتی‌متر",
+  "@profile_section_body_diet_height_str_placeholder": {},
+  "profile_section_body_diet_weight_str_label": "وزن",
+  "@profile_section_body_diet_weight_str_label": {},
+  "profile_section_body_diet_weight_str_placeholder": "مثلاً 75 کیلوگرم",
+  "@profile_section_body_diet_weight_str_placeholder": {},
+  "profile_section_body_diet_menstrual_cycle_label": "چرخه قاعدگی",
+  "@profile_section_body_diet_menstrual_cycle_label": {},
+  "profile_section_body_diet_menstrual_cycle_placeholder": "مثلاً منظم، نامنظم",
+  "@profile_section_body_diet_menstrual_cycle_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_label": "محدودیت‌های غذایی",
+  "@profile_section_body_diet_dietary_restrictions_label": {},
+  "profile_section_body_diet_dietary_restrictions_placeholder": "لطفاً انتخاب کنید",
+  "@profile_section_body_diet_dietary_restrictions_placeholder": {},
+  "profile_section_body_diet_dietary_restrictions_hint": "به ما بگویید چه می‌خورید و هر گونه محدودیتی که دارید",
+  "@profile_section_body_diet_dietary_restrictions_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_none": "هیچ‌کدام",
+  "@profile_section_body_diet_dietary_restrictions_options_none": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegetarian": "گیاه‌خوار",
+  "@profile_section_body_diet_dietary_restrictions_options_vegetarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_vegan": "وگان",
+  "@profile_section_body_diet_dietary_restrictions_options_vegan": {},
+  "profile_section_body_diet_dietary_restrictions_options_gluten_free": "بدون گلوتن",
+  "@profile_section_body_diet_dietary_restrictions_options_gluten_free": {},
+  "profile_section_body_diet_bmi_label": "شاخص توده بدنی (BMI)",
+  "@profile_section_body_diet_bmi_label": {},
+  "profile_section_body_diet_bmi_placeholder": "مثلاً 24.5",
+  "@profile_section_body_diet_bmi_placeholder": {},
+  "profile_section_health_profile_title": "پروفایل سلامت",
+  "@profile_section_health_profile_title": {},
+  "profile_section_health_profile_chronic_illnesses_label": "بیماری‌های مزمن",
+  "@profile_section_health_profile_chronic_illnesses_label": {},
+  "profile_section_health_profile_chronic_illnesses_placeholder": "به عنوان مثال، دیابت نوع ۲",
+  "@profile_section_health_profile_chronic_illnesses_placeholder": {},
+  "profile_section_health_profile_chronic_illnesses_hint": "لطفاً تمام بیماری‌های مزمن را فهرست کنید و زمان تشخیص و هرگونه عارضه را شامل کنید.",
+  "@profile_section_health_profile_chronic_illnesses_hint": {},
+  "profile_section_health_profile_past_illnesses_label": "سابقه بیماری‌ها",
+  "@profile_section_health_profile_past_illnesses_label": {},
+  "profile_section_health_profile_past_illnesses_placeholder": "به عنوان مثال: سرماخوردگی مکرر",
+  "@profile_section_health_profile_past_illnesses_placeholder": {},
+  "profile_section_health_profile_past_illnesses_hint": "لطفاً بیماری‌های جدی که در گذشته داشتید را فهرست کنید، حتی اگر بهبود یافته‌اید.",
+  "@profile_section_health_profile_past_illnesses_hint": {},
+  "profile_section_health_profile_surgical_history_label": "سوابق جراحی",
+  "@profile_section_health_profile_surgical_history_label": {},
+  "profile_section_health_profile_surgical_history_placeholder": "مثلاً آپاندکتومی",
+  "@profile_section_health_profile_surgical_history_placeholder": {},
+  "profile_section_health_profile_surgical_history_hint": "لطفاً تمام جراحی‌ها را فهرست کنید و سال و اینکه آیا عوارضی وجود داشته است را شامل کنید.",
+  "@profile_section_health_profile_surgical_history_hint": {},
+  "profile_section_health_profile_occasional_medications_label": "داروهای مصرف گاه‌به‌گاه",
+  "@profile_section_health_profile_occasional_medications_label": {},
+  "profile_section_health_profile_occasional_medications_placeholder": "به عنوان مثال، ایبوپروفن",
+  "@profile_section_health_profile_occasional_medications_placeholder": {},
+  "profile_section_health_profile_occasional_medications_hint": "لطفاً داروهایی را که گاه به گاه مصرف می‌کنید (برای مثال: مسکن‌ها، داروهای آلرژی) به همراه دوز و دلیل مصرف ذکر کنید",
+  "@profile_section_health_profile_occasional_medications_hint": {},
+  "profile_section_health_profile_regular_medications_label": "داروهای منظم",
+  "@profile_section_health_profile_regular_medications_label": {},
+  "profile_section_health_profile_regular_medications_placeholder": "به عنوان مثال، متفورمین",
+  "@profile_section_health_profile_regular_medications_placeholder": {},
+  "profile_section_health_profile_regular_medications_hint": "لطفاً تمام داروهایی را که به طور منظم مصرف می‌کنید، شامل نام، دوز، تعداد دفعات در روز و اینکه برای چه بیماری است، لیست کنید.",
+  "@profile_section_health_profile_regular_medications_hint": {},
+  "profile_section_health_profile_allergies_label": "حساسیت‌ها",
+  "@profile_section_health_profile_allergies_label": {},
+  "profile_section_health_profile_allergies_placeholder": "مثلاً پنی‌سیلین – باعث راش می‌شود",
+  "@profile_section_health_profile_allergies_placeholder": {},
+  "profile_section_health_profile_allergies_hint": "لطفاً تمام آلرژی‌ها (داروها، غذا، محیطی) را فهرست کنید و توصیف کنید که چه واکنشی دارید (برای مثال: راش، ورم، مشکلات تنفسی).",
+  "@profile_section_health_profile_allergies_hint": {},
+  "profile_section_health_profile_special_conditions_label": "شرایط ویژه",
+  "@profile_section_health_profile_special_conditions_label": {},
+  "profile_section_health_profile_special_conditions_placeholder": "مثلاً بارداری، ناتوانی",
+  "@profile_section_health_profile_special_conditions_placeholder": {},
+  "profile_section_health_profile_special_conditions_hint": "اگر شرایط پزشکی مهمی دارید که پزشکان باید همیشه از آن مطلع باشند (برای مثال: بارداری، دستگاه‌های کاشته شده، ناتوانی‌ها، درمان ضد انعقاد)، لطفاً آن‌ها را توصیف کنید. اگر هیچ‌کدام نیست، می‌توانید این قسمت را خالی بگذارید.",
+  "@profile_section_health_profile_special_conditions_hint": {},
+  "profile_section_health_profile_family_history_label": "سابقه خانوادگی",
+  "@profile_section_health_profile_family_history_label": {},
+  "profile_section_health_profile_family_history_placeholder": "مثلاً بیماری قلبی، سرطان",
+  "@profile_section_health_profile_family_history_placeholder": {},
+  "profile_section_health_profile_family_history_hint": "لطفاً بیماری‌های مهم خانواده‌تان را توصیف کنید (برای مثال: دیابت، فشار خون، بیماری قلبی، سرطان، بیماری‌های ژنتیکی) و مشخص کنید کدام عضو خانواده این بیماری را داشته است.",
+  "@profile_section_health_profile_family_history_hint": {},
+  "profile_section_health_profile_social_lifestyle_factors_label": "عوامل اجتماعی و سبک زندگی",
+  "@profile_section_health_profile_social_lifestyle_factors_label": {},
+  "profile_section_health_profile_social_lifestyle_factors_placeholder": "مثلاً سیگار کشیدن، مصرف الکل",
+  "@profile_section_health_profile_social_lifestyle_factors_placeholder": {},
+  "profile_section_health_profile_social_lifestyle_factors_hint": "لطفاً عوامل سبک زندگی که می‌توانند بر سلامت شما تأثیر بگذارند، مانند سیگار کشیدن، الکل، فعالیت بدنی، رژیم غذایی، خواب و شغل را توصیف کنید.",
+  "@profile_section_health_profile_social_lifestyle_factors_hint": {},
+  "profile_section_health_profile_devices_label": "دستگاه‌های پزشکی",
+  "@profile_section_health_profile_devices_label": {},
+  "profile_section_health_profile_devices_placeholder": "مثلاً ضربان‌ساز، سمعک، پمپ انسولین",
+  "@profile_section_health_profile_devices_placeholder": {},
+  "profile_section_health_profile_devices_hint": "لطفاً هر دستگاه پزشکی که استفاده می‌کنید یا در بدن شما کاشته شده است، مانند پیس‌میکرها، پمپ‌های انسولین، سمعک‌ها، پروتزها یا سایر دستگاه‌های کمکی یا نظارتی را فهرست کنید. در صورت لزوم جزئیات مربوطه را شامل کنید.",
+  "@profile_section_health_profile_devices_hint": {},
+  "profile_section_body_diet_dietary_restrictions_options_omnivorous": "همه‌چیزخوار",
+  "@profile_section_body_diet_dietary_restrictions_options_omnivorous": {},
+  "profile_section_body_diet_dietary_restrictions_options_fast_food": "فست فود",
+  "@profile_section_body_diet_dietary_restrictions_options_fast_food": {},
+  "profile_section_body_diet_dietary_restrictions_options_pescatarian": "پسکاتاریان",
+  "@profile_section_body_diet_dietary_restrictions_options_pescatarian": {},
+  "profile_section_body_diet_dietary_restrictions_options_lactose_free": "بدون لاکتوز",
+  "@profile_section_body_diet_dietary_restrictions_options_lactose_free": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sodium": "رژیم کم‌نمک",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sodium": {},
+  "profile_section_body_diet_dietary_restrictions_options_low_sugar": "رژیم کم‌قند",
+  "@profile_section_body_diet_dietary_restrictions_options_low_sugar": {},
+  "profile_section_body_diet_dietary_restrictions_options_cardiac": "رژیم قلبی",
+  "@profile_section_body_diet_dietary_restrictions_options_cardiac": {},
+  "profile_section_body_diet_dietary_restrictions_options_renal": "رژیم کلیوی",
+  "@profile_section_body_diet_dietary_restrictions_options_renal": {},
+  "profile_section_body_diet_dietary_restrictions_options_other": "سایر",
+  "@profile_section_body_diet_dietary_restrictions_options_other": {}
+}

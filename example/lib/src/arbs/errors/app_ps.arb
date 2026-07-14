@@ -1,0 +1,18 @@
+{
+  "@@locale": "ps",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "An error occurred",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "یو ناڅاپي تېروتنه رامنځته شوه",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "د خطا راپور په بریالیتوب سره لیږل شوی.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}

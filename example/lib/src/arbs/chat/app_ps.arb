@@ -1,0 +1,745 @@
+{
+  "@@locale": "ps",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "drawerTooltipNotifications": "خبرتیاوې",
+  "@drawerTooltipNotifications": {},
+  "drawerTooltipHelp": "مرسته",
+  "@drawerTooltipHelp": {},
+  "drawerTooltipClose": "بندول",
+  "@drawerTooltipClose": {},
+  "drawerSectionTitleAccount": "حساب",
+  "@drawerSectionTitleAccount": {},
+  "drawerSectionProfile": "پروفایل",
+  "@drawerSectionProfile": {},
+  "drawerSectionAccountSettings": "د حساب ترتیبات",
+  "@drawerSectionAccountSettings": {},
+  "drawerSectionDonateToSupport": "مرسته وکړئ",
+  "@drawerSectionDonateToSupport": {},
+  "drawerSectionSubscription": "د ګډون",
+  "@drawerSectionSubscription": {},
+  "drawerSectionTitleChats": "چټکې",
+  "@drawerSectionTitleChats": {},
+  "drawerSectionChatHistory": "د خبرو تاریخ",
+  "@drawerSectionChatHistory": {
+    "description": "История чатов, имеется ввиду список чатов пользователя"
+  },
+  "drawerSectionAttachedDocuments": "ضمیمه اسناد",
+  "@drawerSectionAttachedDocuments": {},
+  "drawerSectionTitleHowToUse": "څنګه وکاروئ",
+  "@drawerSectionTitleHowToUse": {},
+  "drawerSectionVideoTutorials": "ویډیو ټیوټوریلونه",
+  "@drawerSectionVideoTutorials": {},
+  "drawerSectionTitleLegal": "قانوني",
+  "@drawerSectionTitleLegal": {},
+  "drawerSectionContactUs": "موږ سره اړیکه ونیسئ",
+  "@drawerSectionContactUs": {},
+  "drawerSectionBugReport": "د تېروتنې راپور",
+  "@drawerSectionBugReport": {},
+  "drawerSectionTermsAndConditions": "شرایط و ضوابط",
+  "@drawerSectionTermsAndConditions": {},
+  "drawerSectionPrivacyPolicy": "د پټتیا پالیسي",
+  "@drawerSectionPrivacyPolicy": {},
+  "drawerSectionTitleFeedback": "فیډبیک",
+  "@drawerSectionTitleFeedback": {},
+  "drawerSectionRateApp": "اپلیکیشن نرخ کړئ",
+  "@drawerSectionRateApp": {},
+  "drawerSectionShareWithFriends": "د ملګرو سره شریک کړئ",
+  "@drawerSectionShareWithFriends": {},
+  "drawerButtonLogOut": "بیرون لاړ شئ",
+  "@drawerButtonLogOut": {},
+  "drawerBannerHelpOthersReceiveMedicalCare": "د نورو لپاره طبي پاملرنه ترلاسه کولو کې مرسته وکړئ",
+  "@drawerBannerHelpOthersReceiveMedicalCare": {},
+  "drawerPlaceholderUser": "کاربر",
+  "@drawerPlaceholderUser": {
+    "description": "Если нет имени пользователя, емейла, телефона - по умолчанию."
+  },
+  "drawerSubscriptionLabelPremiumFeaturesWithDoctorina": "پریمیئم ځانګړتیاوې\nد Doctorina سره",
+  "@drawerSubscriptionLabelPremiumFeaturesWithDoctorina": {},
+  "drawerSubscriptionButtonGetPremiumFeatures": "ترلاسه کړئ",
+  "@drawerSubscriptionButtonGetPremiumFeatures": {},
+  "drawerLabelJoinUs": "زموږ سره یوځای شئ",
+  "@drawerLabelJoinUs": {
+    "description": "Надпись перед иконками социальных сетей"
+  },
+  "drawerTooltipVersion": "د غوښتنلیک نسخه:",
+  "@drawerTooltipVersion": {
+    "description": "Подсказка при наведении на версию приложения"
+  },
+  "drawerSectionRecentChats": "تازه خبرې",
+  "@drawerSectionRecentChats": {
+    "description": "Заголовок секции недавних чатов в боковом меню"
+  },
+  "drawerPlaceholderProfile": "پروفایل",
+  "@drawerPlaceholderProfile": {
+    "description": "Плейсхолдер профиля в боковом меню"
+  },
+  "drawerPlaceholderRecentChat": "تازه خبرې",
+  "@drawerPlaceholderRecentChat": {
+    "description": "Плейсхолдер недавнего чата в боковом меню"
+  },
+  "drawerSectionDownloadApps": "اپلیکیشنونه ډاونلوډ کړئ",
+  "@drawerSectionDownloadApps": {
+    "description": "Заголовок секции скачивания приложений в боковом меню"
+  },
+  "chatInputHintEnterMessage": "پیغام داخل کړئ",
+  "@chatInputHintEnterMessage": {
+    "description": "Подсказка в поле ввода чата"
+  },
+  "chatInputTooltipAttachFile": "فایل ضمیمه کړئ",
+  "@chatInputTooltipAttachFile": {},
+  "chatInputTooltipDictateMessage": "دیکته",
+  "@chatInputTooltipDictateMessage": {
+    "description": "Надиктовать голосовое сообщение"
+  },
+  "chatInputTooltipDictateFinishMessage": "پایان او د متن په توګه ثبتول",
+  "@chatInputTooltipDictateFinishMessage": {
+    "description": "Закончить запись голосового сообщения и распознать в текст"
+  },
+  "chatInputTooltipSendMessage": "پیغام واستول",
+  "@chatInputTooltipSendMessage": {},
+  "chatListSnackBarErrorFailedToFetchMessages": "پیغامونه ترلاسه کولو کې ناکامي",
+  "@chatListSnackBarErrorFailedToFetchMessages": {},
+  "chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": "پیغامونه ترلاسه کولو کې ناکامي. مهرباني وکړئ بیا هڅه وکړئ.",
+  "@chatListLabelErrorFailedToFetchMessagesPleaseTryAgain": {},
+  "chatListTooltipFetchMessages": "پیغامونه راټول کړئ",
+  "@chatListTooltipFetchMessages": {},
+  "chatListLabelNoMessagesAvailable": "هیڅ پیغامونه شتون نلري\nمهرباني وکړئ د خبرو اترو پیل کولو لپاره پیغام واستوئ.",
+  "@chatListLabelNoMessagesAvailable": {},
+  "chatListHasConnection": "وصل شو",
+  "@chatListHasConnection": {},
+  "chatListNoConnection": "هیڅ اړیکه نشته",
+  "@chatListNoConnection": {},
+  "chatActionButtonTooltipSearch": "لټون",
+  "@chatActionButtonTooltipSearch": {},
+  "chatActionButtonTooltipFavorites": "مخفی",
+  "@chatActionButtonTooltipFavorites": {},
+  "chatActionButtonTooltipDownload": "ډاونلوډ",
+  "@chatActionButtonTooltipDownload": {},
+  "chatActionButtonTooltipPrintPdf": "پی‌دی‌اف چاپ کړئ",
+  "@chatActionButtonTooltipPrintPdf": {},
+  "chatActionButtonTooltipShareWithFriends": "د ملګرو سره شریک کړئ",
+  "@chatActionButtonTooltipShareWithFriends": {},
+  "chatActionButtonTooltipNewChat": "نوې خبرې",
+  "@chatActionButtonTooltipNewChat": {},
+  "chatActionButtonNewChat": "چت",
+  "@chatActionButtonNewChat": {},
+  "chatActionButtonTooltipChatList": "چت انتخاب کړئ",
+  "@chatActionButtonTooltipChatList": {},
+  "chatActionButtonTooltipShowDrawer": "دراور وښایاست",
+  "@chatActionButtonTooltipShowDrawer": {
+    "description": "Leading кнопка AppBar открывающая панель Drawer'а"
+  },
+  "chatLabelNoChatAvailableRefresh": "هیڅ چټونه شتون نلري. مهرباني وکړئ تازه کړئ یا نوې چټ جوړ کړئ.",
+  "@chatLabelNoChatAvailableRefresh": {},
+  "chatButtonRefreshChats": "چټکۍ تازه کړئ",
+  "@chatButtonRefreshChats": {},
+  "chatButtonCreateNewChat": "نوې خبرې اترې جوړ کړئ",
+  "@chatButtonCreateNewChat": {},
+  "chatContextMenuCopyMessage": "متن کاپی کریں",
+  "@chatContextMenuCopyMessage": {
+    "description": "Контекстное меню \"скопировать текст сообщения\""
+  },
+  "chatStatusProcessingMessages": "لیکوالۍ",
+  "@chatStatusProcessingMessages": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что ответ задерживается. ⚠️⚠️⚠️ "
+  },
+  "chatNoConnectionLabel": "د تازه کولو په حال کې...\nمهرباني وکړئ د خپل انټرنیټ اړیکه چیک کړئ",
+  "@chatNoConnectionLabel": {
+    "description": "⚠️⚠️⚠️ Каждая новая строка - следующее сообщение,\nо том что интернета все еще нет. ⚠️⚠️⚠️ "
+  },
+  "chatErrorMessageAlreadyProcessed": "پیغام همدا اوس پروسس کیږي.",
+  "@chatErrorMessageAlreadyProcessed": {},
+  "chatErrorMessageTooLong": "پیغام ډیر اوږد دی.",
+  "@chatErrorMessageTooLong": {},
+  "chatRemoveAttachmentTooltip": "ضمیمه لیرې کړئ",
+  "@chatRemoveAttachmentTooltip": {},
+  "chatStatusFailedMessage": "پیغام پروسس کولو کې ناکامي",
+  "@chatStatusFailedMessage": {
+    "description": "Сообщение отображаемое на статус-ошибку с BE."
+  },
+  "chatActionButtonTooltipExportSummary": "PDF ته صادر کړئ",
+  "@chatActionButtonTooltipExportSummary": {
+    "description": "Подсказка для кнопки открывающей боттом шит по экспорту саммари в PDF"
+  },
+  "chatActionExportToPdfTitle": "PDF",
+  "@chatActionExportToPdfTitle": {},
+  "chatPickerPhotos": "عکسونه",
+  "@chatPickerPhotos": {
+    "description": "Надпись в меню для выбора из галлереи"
+  },
+  "chatPickerCamera": "کامره",
+  "@chatPickerCamera": {
+    "description": "Надпись в меню для прикрепления фото с помощью камеры"
+  },
+  "chatPickerFiles": "فایلونه",
+  "@chatPickerFiles": {
+    "description": "Надпись в меню для выбора файлов"
+  },
+  "chatPickerPhotosFiles": "عکسونه او فایلونه",
+  "@chatPickerPhotosFiles": {
+    "description": "Надпись в меню для выбора фотографий и файлов"
+  },
+  "chatRecommendationYIAG": "هیله لرم چې مرسته وکړه! آیا دا تشریح تاسو ته ګټوره وه؟",
+  "@chatRecommendationYIAG": {},
+  "chatRecommendationButtonDonate": "هو، هر څه ښه دي!",
+  "@chatRecommendationButtonDonate": {
+    "description": "Кнопка отображаемая после финальных рекомендаций, для пользователей без подписки"
+  },
+  "failedToRetrieveChatSummary": "د چټ بحث لنډیز ترلاسه کولو کې ناکامي",
+  "@failedToRetrieveChatSummary": {},
+  "chatSummaryCopiedToClipboard": "د چټ خبرې لنډیز د کلیپ بورډ ته کاپي شو",
+  "@chatSummaryCopiedToClipboard": {},
+  "tryDoctorinaInTheMobileApp": "د موبایل اپلیکیشن کې Doctorina وازمویئ!",
+  "@tryDoctorinaInTheMobileApp": {
+    "description": "Надпись предлагающая попробывать нейтивные мобильные приложения вместо веба"
+  },
+  "getAppStoreLogoLabel": "د اپ سټور په",
+  "@getAppStoreLogoLabel": {
+    "description": "Лейбл как часть надписи \"Download on the App Store\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getGooglePlayLogoLabel": "دا ترلاسه کړئ",
+  "@getGooglePlayLogoLabel": {
+    "description": "Лейбл как часть надписи \"GET IT ON Google Play\", должен быть емким, чтоб помещаться в кнопку."
+  },
+  "getAppStoreLogoTooltip": "د اپ سټور څخه ډاونلوډ کړئ",
+  "@getAppStoreLogoTooltip": {
+    "description": "Подсказка к кнопке \"Download on the App Store\""
+  },
+  "getGooglePlayLogoTooltip": "دا په Google Play کې ترلاسه کړئ",
+  "@getGooglePlayLogoTooltip": {
+    "description": "Подсказка к кнопке \"Get it on Google Play\""
+  },
+  "reportMessageDialogTitle": "پیغام راپور کړئ",
+  "@reportMessageDialogTitle": {
+    "description": "Заголовок диалога жалобы на сообщение"
+  },
+  "reportMessageDialogSubtitle": "تاسو ولې دا پیغام راپور کوئ؟",
+  "@reportMessageDialogSubtitle": {
+    "description": "Диалог жалобы на сообщение, текст вопроса"
+  },
+  "reportMessageDialogTextFieldHint": "اختیاری: د دې پیغام سره څه غلط دی تشریح کړئ...",
+  "@reportMessageDialogTextFieldHint": {
+    "description": "Хинт поля ввода в диалоге жалобы на сообщение"
+  },
+  "reportMessageDialogWhyImportant": "دا به موږ سره مرسته وکړي چې زموږ د AI ځوابونه ښه کړو.",
+  "@reportMessageDialogWhyImportant": {
+    "description": "Диалог жалобы на сообщение, почему это важно"
+  },
+  "reportMessageDialogCancelButton": "لغو",
+  "@reportMessageDialogCancelButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отмены"
+  },
+  "reportMessageDialogReportButton": "رپوټ",
+  "@reportMessageDialogReportButton": {
+    "description": "Диалог жалобы на сообщение, кнопка отправить жалобу"
+  },
+  "reportMessageSnackbarSuccess": "ستاسو د نظریې لپاره مننه! راپور وړاندې شوی دی.",
+  "@reportMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешной отправке жалобы"
+  },
+  "reportMessageSnackbarFailed": "د راپور وړاندې کولو کې ناکامي",
+  "@reportMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешной отправке жалобы"
+  },
+  "copyMessageSnackbarSuccess": "په کلیپ بورډ کې کاپي شو",
+  "@copyMessageSnackbarSuccess": {
+    "description": "Снэкбар об успешном копировании в буфер обмена"
+  },
+  "copyMessageSnackbarFailed": "پیغام کا کاپی کرنا ناکام ہوگیا",
+  "@copyMessageSnackbarFailed": {
+    "description": "Снэкбар о не успешном копировании в буфер обмена"
+  },
+  "chatContextMenuReportMessage": "پیغام راپور کړئ",
+  "@chatContextMenuReportMessage": {
+    "description": "Контекстное меню \"пожаловаться на сообщение\""
+  },
+  "chatDropZoneTitle": "ډاکټرینا چټ ته پورته کړئ",
+  "@chatDropZoneTitle": {},
+  "chatDropZoneSubtitle": "فایلونه دلته راکش کړئ ترڅو چټ ته اضافه شي",
+  "@chatDropZoneSubtitle": {},
+  "chatDropZoneText": "تاسو کولی شئ په یوه پیغام کې تر ۱۵ فایلونو پورې اضافه کړئ",
+  "@chatDropZoneText": {},
+  "notificationBannerText": "آیا غواړی چې زه تاسو ته خبر درکړم که ستاسو د صحت په اړه څه مهمه خبره راشي؟",
+  "@notificationBannerText": {
+    "description": "Текст предлагающий пользователю включить пуш уведомления"
+  },
+  "notificationBannerButtonEnable": "هو، ما ته خبر راکړه",
+  "@notificationBannerButtonEnable": {
+    "description": "Кнопка разрешающая включить уведомления"
+  },
+  "notificationBannerButtonDisable": "شاید وروسته",
+  "@notificationBannerButtonDisable": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationBannerButtonClose": "بندول",
+  "@notificationBannerButtonClose": {
+    "description": "Кнопка временно скрывающая баннер запроса пуш уведомлений"
+  },
+  "notificationAreBlockedSystem": "خبرتیاوې په سیسټم کچه بندې دي. د Doctorina خبرتیاوې فعالولو دمخه یې په سیسټم تنظیماتو کې فعال کړئ.",
+  "@notificationAreBlockedSystem": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах операционной системы"
+  },
+  "notificationAreBlockedBrowser": "خبرتیاوې په سیسټم کچه بندې دي. د Doctorina خبرتیاوې فعالولو دمخه یې په براوزر تنظیماتو کې فعال کړئ.",
+  "@notificationAreBlockedBrowser": {
+    "description": "Сообщение об ошибке, уведомления отключены для приложения в пермишенах браузера"
+  },
+  "notificationDialogTitle": "د خپل مشورې په اړه تازه معلومات ترلاسه کړئ",
+  "@notificationDialogTitle": {
+    "description": "Title for notification dialog"
+  },
+  "notificationDialogDescription": "Doctorina کولی شي تاسو ته خبر درکړي کله چې ستاسو د روغتیا په اړه نوي بصیرتونه یا تازه معلومات شتون ولري.",
+  "@notificationDialogDescription": {
+    "description": "Description for notification dialog"
+  },
+  "notificationDialogEnableButton": "خبرتیاوې فعال کړئ",
+  "@notificationDialogEnableButton": {
+    "description": "Title for button to enable notifications"
+  },
+  "notificationDialogLaterButton": "شاید وروسته",
+  "@notificationDialogLaterButton": {
+    "description": "Title for button to skip enable notifications"
+  },
+  "termsAndConditionBannerText": "په دوام سره تاسې د شخصي معلوماتو د پروسس، د <c>cookies</c> کارولو، د <t>شرایطو او قوانینو</t> منلو او د <p>پرايويسي پالیسي</p> په پیژندلو موافقه کوئ. همدارنګه، تاسې پیژنې چې ستاسو مشوره له AI سره ده او نه له یو جواز لرونکي طبي متخصص سره",
+  "@termsAndConditionBannerText": {
+    "description": "Соглашение на обработку персональных данных.\nВ тэгах <t>, <c>, <p> указаны кликабельн спан, он должны присутсвовать во всех языках."
+  },
+  "termsAndConditionBannerDismissTooltip": "رد",
+  "@termsAndConditionBannerDismissTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "anonUserNewChatCreationWarningTitle": "لومړی دا چیټ خوندي کړئ؟",
+  "@anonUserNewChatCreationWarningTitle": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningText": "د نوې مشورې پیل کولو دمخه دې مشورې د خوندي کولو لپاره وړیا ثبت نام وکړئ",
+  "@anonUserNewChatCreationWarningText": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueBtn": "بې له خوندي کولو پیل کړئ",
+  "@anonUserNewChatCreationWarningContinueBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": "راجسټر شئ",
+  "@anonUserNewChatCreationWarningContinueLoginOrSignUpBtn": {
+    "description": "When anon users tries to create new chat, they would get warning dialog that they would lose chat history"
+  },
+  "inputBlockerContinueMessage": "د خبرو اترو د دوام لپاره، پورته یوه انتخاب وټاکئ",
+  "@inputBlockerContinueMessage": {
+    "description": "Message shown when chat input is blocked, prompting user to choose an option"
+  },
+  "chatServerDialogCloseBtnTooltip": "بند کړئ",
+  "@chatServerDialogCloseBtnTooltip": {
+    "description": "Tooltip for dimiss banner"
+  },
+  "chatAttachmentRemoveTooltip": "لرې کړئ ضمیمه",
+  "@chatAttachmentRemoveTooltip": {
+    "description": "Tooltip for remove attachment button on attachment card/chip"
+  },
+  "chatAttachmentErrorPickFilesDropZone": "د ډراپ زون نه فایلونه انتخابول ناکام شول",
+  "@chatAttachmentErrorPickFilesDropZone": {
+    "description": "Error when picking files from drop zone fails"
+  },
+  "chatAttachmentErrorEnterMessageOrAttach": "مهرباني وکړئ يو پيغام داخل کړئ يا يو فایل ضميمه کړئ",
+  "@chatAttachmentErrorEnterMessageOrAttach": {
+    "description": "Error when sending with empty message and no attachments"
+  },
+  "chatAttachmentErrorWaitForUploads": "مهرباني وکړئ د پورته کولو بشپړیدو ته انتظار وکړئ",
+  "@chatAttachmentErrorWaitForUploads": {
+    "description": "Error when send is pressed while uploads are in progress"
+  },
+  "chatAttachmentErrorMessageProcessing": "پیغام په پروسس کې دی",
+  "@chatAttachmentErrorMessageProcessing": {
+    "description": "Error when message is already being processed"
+  },
+  "chatAttachmentErrorMessageTooLong": "پیغام ډیر اوږد دی",
+  "@chatAttachmentErrorMessageTooLong": {
+    "description": "Error when message exceeds max length"
+  },
+  "chatAttachmentErrorMessageAlreadyProcessing": "پیغام همدا اوس پروسس کیږي.",
+  "@chatAttachmentErrorMessageAlreadyProcessing": {
+    "description": "Send button tooltip when message is already being processed"
+  },
+  "chatAttachmentErrorConnectionClosed": "اړیکه په پای کې بنده شوې ده",
+  "@chatAttachmentErrorConnectionClosed": {
+    "description": "Error when connection is permanently closed"
+  },
+  "chatAttachmentErrorNoConnection": "هیڅ سرور سره اړیکه نشته",
+  "@chatAttachmentErrorNoConnection": {
+    "description": "Error when there is no connection to server"
+  },
+  "chatAttachmentErrorPickFiles": "د فایلونو انتخاب کې ناکامي",
+  "@chatAttachmentErrorPickFiles": {
+    "description": "Error when file picker fails"
+  },
+  "chatAttachmentErrorPickImages": "د انځورونو انتخاب کې ناکامي",
+  "@chatAttachmentErrorPickImages": {
+    "description": "Error when image picker fails"
+  },
+  "chatAttachmentErrorCapturePhoto": "د کمره نه عکس نیول ناکام شو",
+  "@chatAttachmentErrorCapturePhoto": {
+    "description": "Error when camera capture fails"
+  },
+  "chatAttachmentErrorMaxFiles": "تاسې کولی شئ په یوه وخت کې تر {count} فایلونه ضمیمه کړئ.",
+  "@chatAttachmentErrorMaxFiles": {
+    "description": "Error when attachment limit is reached at pick",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "10",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatInputTooltipClearRecognizedText": "پاک کړئ پیژندل شوی متن",
+  "@chatInputTooltipClearRecognizedText": {
+    "description": "Tooltip for clear recognized text button"
+  },
+  "chatInputTooltipMessageTooLong": "پیغام ډیر اوږد دی.",
+  "@chatInputTooltipMessageTooLong": {
+    "description": "Send button tooltip when message is too long"
+  },
+  "chatInputTooltipWaitForUploads": "مهرباني وکړئ د پورته کولو بشپړیدو ته انتظار وکړئ.",
+  "@chatInputTooltipWaitForUploads": {
+    "description": "Send button tooltip when uploads are pending"
+  },
+  "chatAttachmentErrorMergeAlreadyAttached": "د {kind} \"{name}\" لا دمج شوی دی او بیا نه دی اضافه شوی.",
+  "@chatAttachmentErrorMergeAlreadyAttached": {
+    "description": "PickerException: file already attached (merge duplicate)",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeDuplicate": "د {kind} \"{name}\" د {exist} سره تکراري دی او نه دی اضافه شوی.",
+  "@chatAttachmentErrorMergeDuplicate": {
+    "description": "PickerException: file is duplicate of existing",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      },
+      "exist": {
+        "type": "String",
+        "example": "photo.jpg",
+        "description": "Name of the already-attached file it duplicates"
+      }
+    }
+  },
+  "chatAttachmentErrorMergeLimit": "د {kind} \"{name}\" اضافه نه شو ځکه چې د ضمیمو اعظمي شمیر زیات شوی دی.",
+  "@chatAttachmentErrorMergeLimit": {
+    "description": "PickerException: limit exceeded when adding file",
+    "placeholders": {
+      "kind": {
+        "type": "String",
+        "example": "file",
+        "description": "Kind of attachment, e.g. file / image"
+      },
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmptyWithName": "فایل \"{name}\" خالی است.",
+  "@chatAttachmentErrorFileEmptyWithName": {
+    "description": "Snackbar: file is empty (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileEmpty": "فایل خالی است",
+  "@chatAttachmentErrorFileEmpty": {
+    "description": "Snackbar: file is empty"
+  },
+  "chatAttachmentErrorFileSizeWithName": "فایل \"{name}\" د اعظمي اجازه شوي اندازه نه زیات دی.",
+  "@chatAttachmentErrorFileSizeWithName": {
+    "description": "Snackbar: file exceeds max size (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileSize": "فایل اندازه مجاز را رد می‌کند.",
+  "@chatAttachmentErrorFileSize": {
+    "description": "Snackbar: file exceeds max size"
+  },
+  "chatAttachmentErrorFileProcessingWithName": "یو تېروتنه د فایل \"{name}\" پروسس کولو پر مهال رامنځته شوه.",
+  "@chatAttachmentErrorFileProcessingWithName": {
+    "description": "Snackbar: error processing file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileProcessing": "یو تېروتنه د فایل پروسس کولو پر مهال رامنځته شوه.",
+  "@chatAttachmentErrorFileProcessing": {
+    "description": "Snackbar: error processing file"
+  },
+  "chatAttachmentErrorFileLimitWithName": "فایل \"{name}\" اضافه نشد زیرا حداکثر تعداد پیوست‌ها تجاوز شده است.",
+  "@chatAttachmentErrorFileLimitWithName": {
+    "description": "Snackbar: file not added, limit exceeded (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileLimitMultiple": "یو فایل(ونه) اضافه نشو ځکه چې د ضمیمو اعظمي شمیر زیات شوی دی.",
+  "@chatAttachmentErrorFileLimitMultiple": {
+    "description": "Snackbar: multiple files not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileLimitSingle": "یو فایل اضافه نشد ځکه چې د ضمیمو اعظمي شمیر تجاوز شوی دی.",
+  "@chatAttachmentErrorFileLimitSingle": {
+    "description": "Snackbar: one file not added, limit exceeded"
+  },
+  "chatAttachmentErrorFileMissingName": "یو فایل چې نوم نلري هڅه وشوه چې اضافه شي.",
+  "@chatAttachmentErrorFileMissingName": {
+    "description": "Snackbar: file without name"
+  },
+  "chatAttachmentErrorFileExtensionWithName": "یو فایل چې د ملاتړ نه لرونکي توکی سره هڅه وشوه: \"{name}\".",
+  "@chatAttachmentErrorFileExtensionWithName": {
+    "description": "Snackbar: unsupported extension (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileExtension": "یو فایل چې د ملاتړ نه لرونکي توکی سره دی، د زیاتولو هڅه وشوه.",
+  "@chatAttachmentErrorFileExtension": {
+    "description": "Snackbar: unsupported extension"
+  },
+  "chatAttachmentErrorFileNull": "نمی‌توان فایل را اضافه کرد.",
+  "@chatAttachmentErrorFileNull": {
+    "description": "Snackbar: impossible to add file"
+  },
+  "chatAttachmentErrorFileInvalidWithName": "فایل \"{name}\" نامعتبر است و نمی‌تواند اضافه شود",
+  "@chatAttachmentErrorFileInvalidWithName": {
+    "description": "Snackbar: file invalid (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorFileInvalid": "یو فایل ناسم دی او نشي اضافه کیدی",
+  "@chatAttachmentErrorFileInvalid": {
+    "description": "Snackbar: file invalid"
+  },
+  "chatAttachmentErrorItemNotFileWithName": "شيء \"{name}\" فایل معتبر نه دی",
+  "@chatAttachmentErrorItemNotFileWithName": {
+    "description": "Snackbar: item not valid file (with name)",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "report.pdf",
+        "description": "File name"
+      }
+    }
+  },
+  "chatAttachmentErrorItemNotFile": "یو شی معتبر فایل نه دی.",
+  "@chatAttachmentErrorItemNotFile": {
+    "description": "Snackbar: item not valid file"
+  },
+  "chatAttachmentErrorItemProcessingSingle": "یو تېروتنه د یوې توکي پروسس کولو پر مهال رامنځته شوه.",
+  "@chatAttachmentErrorItemProcessingSingle": {
+    "description": "Snackbar: error processing item (single)"
+  },
+  "chatAttachmentErrorItemProcessingMultiple": "یو تېروتنه د یو شی(انو) پروسس کولو پر مهال رامنځته شوه.",
+  "@chatAttachmentErrorItemProcessingMultiple": {
+    "description": "Snackbar: error processing items (multiple)"
+  },
+  "chatAttachmentErrorNoFiles": "هیڅ فایلونه نه دي اضافه شوي.",
+  "@chatAttachmentErrorNoFiles": {
+    "description": "Snackbar: no files added"
+  },
+  "chatAttachmentErrorFileDuplicates": "ځینې فایلونه د موجوده فایلونو سره د تکرار له امله پریښودل شوي.",
+  "@chatAttachmentErrorFileDuplicates": {
+    "description": "Snackbar: files skipped as duplicates"
+  },
+  "chatAttachmentErrorUnknown": "یو نامعلوم خطا رامنځته شو.",
+  "@chatAttachmentErrorUnknown": {
+    "description": "Snackbar: unknown error"
+  },
+  "chatAttachmentErrorSnackbarHeader": "لاندې تېروتنې د فایلونو ضمیمه کولو پر مهال رامنځته شوې:",
+  "@chatAttachmentErrorSnackbarHeader": {
+    "description": "Snackbar header when multiple attach errors"
+  },
+  "chatAttachmentPreviewErrorShare": "د فایل شریکولو کې ناکامي: {error}",
+  "@chatAttachmentPreviewErrorShare": {
+    "description": "Attachment preview: share failed",
+    "placeholders": {
+      "error": {
+        "type": "String",
+        "example": "Permission denied",
+        "description": "Underlying error message"
+      }
+    }
+  },
+  "chatAttachmentPreviewTooltipClose": "بندول",
+  "@chatAttachmentPreviewTooltipClose": {
+    "description": "Attachment preview app bar close button"
+  },
+  "chatAttachmentPreviewTooltipShare": "شریک کړئ",
+  "@chatAttachmentPreviewTooltipShare": {
+    "description": "Attachment preview app bar share button"
+  },
+  "chatAttachmentPreviewLoading": "فایل در حال بارگذاری...",
+  "@chatAttachmentPreviewLoading": {
+    "description": "Attachment preview loading state"
+  },
+  "chatAttachmentPreviewErrorLoad": "د فایل بار کولو کې ناکامي",
+  "@chatAttachmentPreviewErrorLoad": {
+    "description": "Attachment preview error state title"
+  },
+  "chatAttachmentPreviewErrorUnknown": "نامعلوم خطا واقع شو",
+  "@chatAttachmentPreviewErrorUnknown": {
+    "description": "Attachment preview error fallback"
+  },
+  "chatAttachmentPreviewButtonRetry": "بیا هڅه وکړئ",
+  "@chatAttachmentPreviewButtonRetry": {
+    "description": "Attachment preview retry button"
+  },
+  "chatAttachmentPreviewUnsupportedType": "د فایل ډول ملاتړ نه لري",
+  "@chatAttachmentPreviewUnsupportedType": {
+    "description": "Attachment preview unsupported type title"
+  },
+  "chatAttachmentPreviewCannotPreview": "نمی‌توان پیش‌نمایش {contentType}",
+  "@chatAttachmentPreviewCannotPreview": {
+    "description": "Attachment preview cannot preview content type",
+    "placeholders": {
+      "contentType": {
+        "type": "String",
+        "example": "application/pdf",
+        "description": "MIME type of the content"
+      }
+    }
+  },
+  "chatAttachmentPreviewButtonShareFile": "د فایل شریکول",
+  "@chatAttachmentPreviewButtonShareFile": {
+    "description": "Attachment preview share file button"
+  },
+  "chatAttachmentPreviewErrorImage": "د انځور ښودلو کې ناکامي",
+  "@chatAttachmentPreviewErrorImage": {
+    "description": "Attachment preview image display failed"
+  },
+  "chatAttachmentPreviewTooltipResetZoom": "د زوم بیا تنظیمول",
+  "@chatAttachmentPreviewTooltipResetZoom": {
+    "description": "Attachment preview reset zoom FAB"
+  },
+  "chatAttachmentPreviewErrorPdf": "د PDF بارول ناکام شو",
+  "@chatAttachmentPreviewErrorPdf": {
+    "description": "Attachment preview PDF load failed"
+  },
+  "chatAttachmentPreviewErrorDecodeText": "د متن محتوا د تشریح کولو کې ناکامي",
+  "@chatAttachmentPreviewErrorDecodeText": {
+    "description": "Attachment preview text decode failed"
+  },
+  "chatAttachmentErrorSnackbarMore": "او {count} نورې تېروتنې.",
+  "@chatAttachmentErrorSnackbarMore": {
+    "description": "Snackbar: N more errors",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3",
+        "description": "Number of items"
+      }
+    }
+  },
+  "chatAttachmentPreviewFileMalformed": "فایل نادرست است",
+  "@chatAttachmentPreviewFileMalformed": {
+    "description": "Attachment preview: file malformed"
+  },
+  "chatConsentRequiredTitle": "اجازه درکار دی",
+  "@chatConsentRequiredTitle": {
+    "description": "Title \"Consent Required\""
+  },
+  "chatConsentRequiredText": "د دوام ورکولو سره، تاسو زموږ <tc>شرایط</tc>، <privacy_policy>د محرمیت پالیسي</privacy_policy> او <cookies>د کوکیو کارول</cookies> سره موافق یاست، او تایید کوئ چې دا مشوره د AI لخوا چمتو کیږي، نه د جواز لرونکي طبي مسلکي لخوا.",
+  "@chatConsentRequiredText": {
+    "description": "Text of \"Privacy policy\" and \"Terms and Conditions\""
+  },
+  "chatConsentRequiredCloseTooltip": "بندول",
+  "@chatConsentRequiredCloseTooltip": {
+    "description": "Tooltip for button close \"Consent Required\""
+  },
+  "chatHistoryDelete": "لرې کول",
+  "@chatHistoryDelete": {
+    "description": "Popup menu button"
+  },
+  "chatDelete": "چت حذف کړئ",
+  "@chatDelete": {
+    "description": "Popup menu button"
+  },
+  "chatHistoryDeletedSnackbarSuccess": "چت “{title}” په بریالیتوب سره حذف شو.",
+  "@chatHistoryDeletedSnackbarSuccess": {
+    "description": "Snack bar message for successfully deleted chat",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "chatDeleteConfirmationTitle": "چت حذف کړئ؟",
+  "@chatDeleteConfirmationTitle": {
+    "description": "Заголовок модального окна подтверждения удаления чата"
+  },
+  "chatDeleteConfirmationSubtitle": "ستاسو نښې، تشخیص لنډیز، او په دې چټ کې کومې سپارښتنې له منځه ځي.\nدا عمل نه شي بیرته راوستلی.",
+  "@chatDeleteConfirmationSubtitle": {
+    "description": "Текст модального окна подтверждения удаления чата"
+  },
+  "chatAttachmentPreviewZoomInTooltip": "زیاتول",
+  "@chatAttachmentPreviewZoomInTooltip": {
+    "description": "Tooltip for zoom in button in preview attachment screen"
+  },
+  "chatAttachmentPreviewZoomOutTooltip": "زوی کمول",
+  "@chatAttachmentPreviewZoomOutTooltip": {},
+  "chatAttachmentPreviewZoomResetTooltip": "د زوم بیا تنظیمول",
+  "@chatAttachmentPreviewZoomResetTooltip": {},
+  "chatAttachmentPreviewShareTooltip": "شریک کړئ",
+  "@chatAttachmentPreviewShareTooltip": {},
+  "dateToday": "نن",
+  "@dateToday": {
+    "description": "Запись даты \"сегодня\""
+  },
+  "dateYesterday": "تیره ورځ",
+  "@dateYesterday": {
+    "description": "Запись даты \"вчера\""
+  },
+  "chatAttachmentPreviewDocumentNotice": "یوازې لومړۍ پاڼه. د بشپړ فایل د ډاونلوډ لپاره Share وکاروئ.",
+  "@chatAttachmentPreviewDocumentNotice": {
+    "description": "Уведомление в предпросмотре вложения, если документ показан как превью первой страницы"
+  }
+}

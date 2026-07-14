@@ -1,0 +1,18 @@
+{
+  "@@locale": "fa",
+  "@@author": "example@gmail.com",
+  "@@last_modified": "2026-07-14T13:18:25.440497Z",
+  "@@comment": "Generated from Google Sheets",
+  "error": "خطایی رخ داده است",
+  "@error": {
+    "description": "Ошибка"
+  },
+  "unexpectedError": "یک خطای غیرمنتظره رخ داد",
+  "@unexpectedError": {
+    "description": "Произошла какая то ошибка"
+  },
+  "bugReportSentText": "گزارش باگ با موفقیت ارسال شد.",
+  "@bugReportSentText": {
+    "description": "Сообщение об успешной отправке баг репорта"
+  }
+}
