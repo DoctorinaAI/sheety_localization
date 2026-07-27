@@ -1,3 +1,8 @@
+## 0.6.0
+
+- **FIX**: `localize` skipped any sheet whose base language was not English — a `label | description | meta | ru | ...` header was rejected as "not a localization sheet". The fourth column is now accepted as the source language whenever it is a recognized language code (`ru`, `de`, `pt_BR`, …); non-language data columns (e.g. a `Family` reference table) are still skipped. The source language is carried through into the model prompt and JSON schema, so rows are translated *from* the actual base language instead of always "from English".
+- **FIX**: `generate` hard-coded the `flutter gen-l10n` template to `<prefix>_en.arb`, so a bucket without an English column failed to generate. The template is now chosen per bucket — English when present (unchanged behaviour), otherwise the first available ARB — so a non-English base language generates too.
+
 ## 0.5.0
 
 - **BREAKING**: `localize` now only writes to a sheet whose header matches `label | description | meta | en | <locale> ...`. A sheet whose fourth column is not the English source is skipped with a warning — reference tables kept in the same spreadsheet were previously "translated", overwriting their data.

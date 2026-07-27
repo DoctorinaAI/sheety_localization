@@ -40,7 +40,7 @@ LocalizeRow rowWith(List<String> codes) => LocalizeRow(
       label: 'greeting',
       description: null,
       meta: null,
-      english: 'Hello',
+      source: 'Hello',
       cells: <LocalizeCell>[
         for (var i = 0; i < codes.length; i++)
           LocalizeCell(column: 4 + i, code: codes[i], text: ''),
@@ -135,7 +135,7 @@ void main() {
 
     test('retries only the language whose translation is invalid', () async {
       final row = rowWith(['uk', 'ru', 'de']);
-      row.english = 'Hello, {name}!';
+      row.source = 'Hello, {name}!';
       var attempt = 0;
       final client = FakeClient((languages) {
         attempt++;

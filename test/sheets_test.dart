@@ -29,7 +29,7 @@ LocalizeRow rowWith(Map<String, String> cells, {int row = 4}) => LocalizeRow(
       label: 'greeting',
       description: null,
       meta: null,
-      english: 'Hello',
+      source: 'Hello',
       cells: <LocalizeCell>[
         for (final (index, MapEntry(:key, :value))
             in cells.entries.indexed.toList())

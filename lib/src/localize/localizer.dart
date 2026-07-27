@@ -13,23 +13,29 @@ import 'validation.dart';
 
 /// Whether [header] describes a localization sheet.
 ///
-/// The expected layout is `label | description | meta | en | <locale> ...`, so
-/// the fourth column must be the English source. A spreadsheet usually holds
-/// other sheets too — reference tables, notes — whose columns are ordinary
-/// data. Localizing those would overwrite them with translations, so a sheet
-/// that does not match the layout is left alone.
+/// The expected layout is `label | description | meta | source | locale ...`,
+/// so the fourth column is the source language the rest are translated from.
+/// It does not have to be English: `ru`, `de`, `pt_BR` and any other
+/// recognized language code are equally valid sources.
+///
+/// A spreadsheet usually holds other sheets too — reference tables, notes —
+/// whose columns are ordinary data. Localizing those would overwrite them with
+/// translations, so a sheet whose fourth column is not a recognized language
+/// (e.g. a `Family` or `Region` data column) is left alone.
 bool isLocalizationHeader(List<Object?> header) {
   if (header.length < 5) return false;
-  final en = header[3];
-  if (en is! String) return false;
-  final code = normalizeLanguageCode(en);
-  return code == 'en' || code.startsWith('en_');
+  final source = header[3];
+  if (source is! String) return false;
+  return resolveLanguageName(source) != null;
 }
 
 /// Extract cells to be localized from the raw [values] of a sheet.
 ///
 /// [title] is the sheet title, used for diagnostics only.
-/// Column layout: `label | description | meta | en | <locale> ...`.
+/// Column layout: `label | description | meta | <source> | <locale> ...`.
+/// The fourth column is the source language (English by default, but any
+/// recognized language code is accepted); rows are translated from it into the
+/// locale columns that follow.
 /// A sheet whose header does not match that layout is skipped entirely.
 List<LocalizeRow> extractEmptyCells({
   required String title,
@@ -48,11 +54,17 @@ List<LocalizeRow> extractEmptyCells({
   if (!isLocalizationHeader(header)) {
     $err(
       'Sheet "$bucket" is not a localization sheet '
-      '(expected "label | description | meta | en | <locale> ..." header, '
+      '(expected "label | description | meta | <source> | <locale> ..." '
+      'header with a recognized source language in the fourth column, '
       'got ${header.take(4).toList()}), skipping sheet...',
     );
     return const [];
   }
+
+  // The fourth column is the source language every other column is translated
+  // from. `isLocalizationHeader` has already vouched for it being a String and
+  // a recognized language, so the sanitized code is safe to reuse below.
+  final sourceCode = sanitize(header[3] as String);
 
   // Fill locales
   final locales = List.filled(header.length, '', growable: false);
@@ -102,8 +114,8 @@ List<LocalizeRow> extractEmptyCells({
         continue;
       }
 
-      // Extract label, description, and meta from the row
-      final [$label, $description, $meta, $english, ..._] = row;
+      // Extract label, description, meta and source text from the row
+      final [$label, $description, $meta, $source, ..._] = row;
       if ($label == null || $label is! String || $label.isEmpty) {
         $err(
           'Sheet "$bucket" has empty label in row #${i + 1}, '
@@ -137,6 +149,7 @@ List<LocalizeRow> extractEmptyCells({
         LocalizeRow(
           row: i,
           label: label,
+          sourceCode: sourceCode,
           description: switch ($description) {
             String text when text.isNotEmpty => text,
             num number => number.toString(),
@@ -147,7 +160,7 @@ List<LocalizeRow> extractEmptyCells({
             num number => number.toString(),
             _ => null,
           },
-          english: switch ($english) {
+          source: switch ($source) {
             String text when text.isNotEmpty => text,
             num number => number.toString(),
             _ => label,
@@ -191,7 +204,8 @@ Stream<LocalizeRow> localizeRows({
     try {
       final (:prompt, :schema) = buildLocalizationPrompt(
         label: row.label,
-        en: row.english,
+        source: row.source,
+        sourceCode: row.sourceCode,
         description: row.description,
         meta: row.meta,
         languages: languages,
@@ -215,7 +229,7 @@ Stream<LocalizeRow> localizeRows({
         _ => null,
       };
       final problem =
-          validateTranslation(source: row.english, translation: text);
+          validateTranslation(source: row.source, translation: text);
       if (problem != null) {
         $err('Rejected "$code" for "${row.label}": $problem');
         failed.add(code);
