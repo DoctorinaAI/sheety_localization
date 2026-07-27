@@ -714,6 +714,24 @@ Future<List<io.File>> generateArbFiles({
   return files;
 }
 
+/// Choose the `flutter gen-l10n` template ARB for a single bucket.
+///
+/// gen-l10n needs one ARB as the template that defines every key and
+/// placeholder. Historically this was hard-coded to `<prefix>_en.arb`, which
+/// breaks a bucket whose base language is not English (no `en` column, so no
+/// `<prefix>_en.arb` is ever written). This prefers the English ARB when it
+/// exists — keeping the previous behaviour — and otherwise falls back to the
+/// first ARB by name, so a non-English base still generates.
+///
+/// [bucketArbs] are the ARB file paths (or names) belonging to one bucket.
+String selectTemplateArb(Iterable<String> bucketArbs, {String prefix = 'app'}) {
+  final names = bucketArbs.map(path.basename).toSet();
+  final english = '${prefix}_en.arb';
+  if (names.contains(english)) return english;
+  final sorted = names.toList()..sort();
+  return sorted.isEmpty ? english : sorted.first;
+}
+
 /// Generate Flutter localization files from the arb files
 /// flutter gen-l10n --no-synthetic-package \
 ///   --no-nullable-getter --template-arb-file=app_en.arb \
@@ -773,10 +791,21 @@ Future<Set<String>> generateFlutterLocalization({
 
   final localizations = <String>{};
 
-  final toGenerate = arbs.map((e) => e.parent.absolute.path).toSet();
+  // Group the generated ARB files by their bucket directory, so the gen-l10n
+  // template can be chosen from what each bucket actually has — the base
+  // language does not have to be English.
+  final arbsByDir = <String, List<io.File>>{};
+  for (final arb in arbs) {
+    arbsByDir.putIfAbsent(arb.parent.absolute.path, () => <io.File>[]).add(arb);
+  }
+  final toGenerate = arbsByDir.keys.toSet();
 
   for (final dir in toGenerate) {
     final bucket = path.basename(dir);
+    final template = selectTemplateArb(
+      arbsByDir[dir]!.map((f) => f.path),
+      prefix: prefix ?? 'app',
+    );
     final genPath = path.normalize(path.join(genDirectory.path, bucket));
     if (!genPath.startsWith(libDirectory.path)) {
       $err('Gen path is outside of the library directory: $genPath');
@@ -796,7 +825,7 @@ Future<Set<String>> generateFlutterLocalization({
         '--no-nullable-getter',
         // flutter config --explicit-package-dependencies
         //'--no-synthetic-package',
-        '--template-arb-file=${prefix ?? 'app'}_en.arb',
+        '--template-arb-file=$template',
         '--arb-dir=$dir',
         '--output-dir=${genDir.path}',
         '--output-localization-file=$outputFile',
