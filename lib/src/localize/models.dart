@@ -31,8 +31,9 @@ class LocalizeRow {
     required this.label,
     required this.description,
     required this.meta,
-    required this.english,
+    required this.source,
     required this.cells,
+    this.sourceCode = 'en',
   });
 
   /// Zero-based row index in the sheet.
@@ -47,8 +48,14 @@ class LocalizeRow {
   /// Optional ICU/intl placeholder description.
   String? meta;
 
-  /// English source text.
-  String english;
+  /// Language code of the source text, e.g. `en`, `ru`, `pt_BR`.
+  ///
+  /// Taken from the fourth column of the sheet header; the whole row is
+  /// translated *from* this language into the locale columns.
+  String sourceCode;
+
+  /// Source text, written in the [sourceCode] language.
+  String source;
 
   /// Cells (locales) that have to be localized.
   List<LocalizeCell> cells;

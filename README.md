@@ -421,7 +421,7 @@ dart pub global run sheety_localization:localize \
 
 ### How Localization Failures Are Handled
 
-> **Only localization sheets are written to.** A sheet is localized only when its header matches `label | description | meta | en | <locale> ...` — that is, when the fourth column is the English source. Reference tables and notes kept in the same spreadsheet have ordinary data in those columns, and translating them would overwrite it, so they are skipped with a warning. `--ignore` remains available for sheets that *do* match the layout but should be left alone anyway.
+> **Only localization sheets are written to.** A sheet is localized only when its header matches `label | description | meta | <source> | <locale> ...` — that is, when the fourth column is a recognized source language. It does not have to be English: `ru`, `de`, `pt_BR` and any other known language code work just as well, and the rest of the row is translated *from* that language. Reference tables and notes kept in the same spreadsheet have ordinary data in the fourth column (e.g. `Family`, `Region`), which is not a language, so they are skipped with a warning rather than overwritten with translations. `--ignore` remains available for sheets that *do* match the layout but should be left alone anyway.
 
 Language models are unreliable on ambiguous or rare locale codes, so `localize` defends against that:
 

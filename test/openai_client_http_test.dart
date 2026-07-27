@@ -89,7 +89,7 @@ void main() {
           List<String> languages) =>
       buildLocalizationPrompt(
         label: 'greeting',
-        en: 'Hello',
+        source: 'Hello',
         languages: languages,
       );
 

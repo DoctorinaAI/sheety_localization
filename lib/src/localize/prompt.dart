@@ -14,10 +14,16 @@ import 'language_names.dart';
 ///
 /// Every target language is spelled out by name, endonym and — for codes that
 /// models routinely misread, such as `uk` — an explicit disambiguation note.
+///
+/// [source] is the source text, written in the [sourceCode] language. The
+/// source language defaults to English but can be any recognized language
+/// code (`ru`, `de`, `pt_BR`, …); the prompt and schema name it explicitly so
+/// the model translates *from* the right language.
 ({String prompt, Map<String, Object?> schema}) buildLocalizationPrompt({
   required String label,
-  required String en,
+  required String source,
   required List<String> languages,
+  String sourceCode = 'en',
   String? description,
   String? meta, // keep as String? to avoid breaking callers; embed as-is
 }) {
@@ -36,13 +42,16 @@ import 'language_names.dart';
   // -- unpack & normalize ----------------------------------------------------
   final normLabel = safeStr(label);
   final normDesc = safeStr(description);
-  final normEn = safeStr(en);
+  final normSource = safeStr(source);
   final langs = uniqLangs(languages);
   final String? metaInline = safeStr(meta); // already a string; embed as-is
 
+  // Human-readable name of the source language, used to instruct the model.
+  final sourceName = resolveLanguageName(sourceCode) ?? sourceCode;
+
   // -- validation (explicit) -------------------------------------------------
   if (normLabel == null) throw ArgumentError('Missing label');
-  if (normEn == null) throw ArgumentError('Missing source English text');
+  if (normSource == null) throw ArgumentError('Missing source text');
   if (langs.isEmpty) throw ArgumentError('No target languages provided');
 
   // -- output skeleton (built once; used in prompt to fix structure) ---------
@@ -73,7 +82,8 @@ import 'language_names.dart';
     p.writeln('meta_placeholders (ICU / intl format): $metaInline');
   }
   p
-    ..writeln('en_source: $normEn')
+    ..writeln('source_language: ${describeLanguage(sourceCode)}')
+    ..writeln('source_text: $normSource')
     ..writeln('--- TARGET LANGUAGES ---')
     ..writeln('The JSON keys below are ISO 639-1 / BCP-47 LANGUAGE codes, '
         'never country codes. Translate into the named language, '
@@ -87,7 +97,8 @@ import 'language_names.dart';
   p
     ..writeln('Write each translation in the natural script of that language '
         '(e.g. Cyrillic for uk/ru/bg, Devanagari for hi, Arabic for ar).')
-    ..writeln('Never answer in English for a non-English language code.')
+    ..writeln('Never answer in $sourceName for a non-$sourceName '
+        'language code.')
     ..writeln('--- OUTPUT REQUIREMENTS ---')
     ..writeln(
         'Return ONLY valid minified JSON (no comments, no markdown fences).')
@@ -97,16 +108,16 @@ import 'language_names.dart';
         '(e.g., {name}, {version}, {count}).')
     ..writeln('Preserve HTML-like or XML-like tags verbatim if present.')
     ..writeln('Do not introduce new placeholders or variables.')
-    ..writeln('If translation would be identical to English, '
-        'repeat the English text.')
+    ..writeln('If translation would be identical to the source, '
+        'repeat the source text.')
     ..writeln('If a translation is infeasible or unclear, '
-        'copy the English text as fallback.')
+        'copy the source text as fallback.')
     ..writeln('Avoid adding periods if original does not have one; '
         'keep stylistic equivalence.')
     ..writeln('No leading/trailing spaces in values.')
     ..writeln('Each value MUST be culturally and medically appropriate, '
         'neutral and concise.')
-    ..writeln('Keep each translation roughly as long as the English source; '
+    ..writeln('Keep each translation roughly as long as the source text; '
         'never pad, repeat or explain.')
     ..writeln('No quotes escaping beyond standard JSON string escaping.')
     ..writeln('--- JSON SCHEMA (informal) ---')
@@ -146,7 +157,7 @@ import 'language_names.dart';
           'type': 'string',
           'minLength': 1,
           if (name != null)
-            'description': 'Translation of en_source into $name '
+            'description': 'Translation of source_text into $name '
                 '($code), written in the native script of that language.',
         },
       },

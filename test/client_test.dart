@@ -150,7 +150,7 @@ void main() {
     Map<String, Object?> schemaFor(List<String> languages) =>
         buildLocalizationPrompt(
           label: 'greeting',
-          en: 'Hello',
+          source: 'Hello',
           languages: languages,
         ).schema;
 

@@ -30,7 +30,8 @@ void main() {
 
       final greeting = rows.first;
       expect(greeting.row, 1);
-      expect(greeting.english, 'Hello');
+      expect(greeting.source, 'Hello');
+      expect(greeting.sourceCode, 'en');
       expect(greeting.description, 'Main screen');
       expect(greeting.meta, '{name}');
       expect(greeting.cells.map((c) => c.code), ['uk']);
@@ -63,7 +64,33 @@ void main() {
           ['greeting', null, null, null, null, null],
         ],
       );
-      expect(rows.single.english, 'greeting');
+      expect(rows.single.source, 'greeting');
+    });
+
+    test('accepts a non-English source language and carries its code', () {
+      // The source column is `ru`, not `en`: the sheet must still be
+      // localized, translating the Russian source into the other columns.
+      final rows = extractEmptyCells(
+        title: 'auth',
+        values: <List<Object?>>[
+          ['label', 'description', 'meta', 'ru', 'en', 'uk'],
+          ['greeting', null, null, 'Привет', null, null],
+        ],
+      );
+      expect(rows.single.sourceCode, 'ru');
+      expect(rows.single.source, 'Привет');
+      expect(rows.single.cells.map((c) => c.code), ['en', 'uk']);
+    });
+
+    test('normalizes the source language code from the header', () {
+      final rows = extractEmptyCells(
+        title: 'auth',
+        values: <List<Object?>>[
+          ['label', 'description', 'meta', 'pt-BR', 'en'],
+          ['greeting', null, null, 'Olá', null],
+        ],
+      );
+      expect(rows.single.sourceCode, 'pt_BR');
     });
 
     test('skips malformed rows', () {
@@ -151,7 +178,24 @@ void main() {
       );
     });
 
-    test('rejects a sheet whose fourth column is not English', () {
+    test('accepts any recognized source language, not only English', () {
+      expect(
+        isLocalizationHeader(
+          const ['label', 'description', 'meta', 'ru', 'en'],
+        ),
+        isTrue,
+      );
+      expect(
+        isLocalizationHeader(
+          const ['label', 'description', 'meta', 'pt-BR', 'en'],
+        ),
+        isTrue,
+      );
+    });
+
+    test('rejects a sheet whose fourth column is not a language', () {
+      // A reference/data table: `Family` is not a locale, so the sheet must be
+      // left alone rather than overwritten with translations.
       expect(
         isLocalizationHeader(
           const ['Language', 'Total', 'Native', 'Family', 'Regions'],
