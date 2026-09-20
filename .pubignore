@@ -7,6 +7,18 @@ credentials.json
 openai.key
 *.key
 *.pem
+*.p12
+*.jks
+*.keystore
+service-account*.json
+
+# Archives: a bundle can smuggle out the very files excluded above
+arch.z
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
 
 # Local configuration
 .vscode/
@@ -16,3 +28,10 @@ tool/
 
 # Generated example output
 example/lib/
+
+# Build, test and tooling output
+build/
+coverage/
+reports/
+doc/api/
+*.vm.json
