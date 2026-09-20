@@ -5,3 +5,6 @@ pubspec.lock
 prompt.txt
 openai.key
 .claude/
+
+# Local bundle of the secrets above
+arch.z
