@@ -72,7 +72,82 @@ final class GenerateIssue {
 /// Name of the directory inside an output directory where [OutputWriter]
 /// stages new files before moving them into place. Removed after every
 /// write; a leftover of an interrupted run is replaced by the next one.
+///
+/// The plan of a target stages into [stagingDirNameFor] its target instead,
+/// so two targets never share (and never clear) one staging directory.
 const String stagingDirName = '.sheety-staging';
+
+/// The staging directory name of the plan of [target]:
+/// `.sheety-staging-<target>`, or [stagingDirName] without a target.
+String stagingDirNameFor(String? target) =>
+    target == null ? stagingDirName : '$stagingDirName-$target';
+
+/// File names Windows reserves for devices, in any case and with any
+/// extension (`con`, `CON.ts`, `nul.tar.gz`).
+const Set<String> windowsReservedNames = {
+  'con', 'prn', 'aux', 'nul', //
+  'com1', 'com2', 'com3', 'com4', 'com5', 'com6', 'com7', 'com8', 'com9',
+  'lpt1', 'lpt2', 'lpt3', 'lpt4', 'lpt5', 'lpt6', 'lpt7', 'lpt8', 'lpt9',
+};
+
+/// Whether the path segment [name] is a device name on Windows (see
+/// [windowsReservedNames]); Windows ignores the extension and trailing
+/// spaces and dots.
+bool isWindowsReservedName(String name) => windowsReservedNames
+    .contains(name.split('.').first.trimRight().toLowerCase());
+
+/// A canonical form of the directory [path] for telling whether two paths
+/// are the same directory (or one is inside the other): absolute and
+/// normalized, with the symbolic links of its nearest existing ancestor
+/// resolved (the rest appended), and lower-cased when that ancestor is on a
+/// case-insensitive file system (probed: the default APFS of macOS, NTFS),
+/// where `out` and `OUT` are one directory.
+String canonicalPath(String path) {
+  var existing = p.normalize(p.absolute(path));
+  final rest = <String>[];
+  while (io.FileSystemEntity.typeSync(existing) ==
+      io.FileSystemEntityType.notFound) {
+    final parent = p.dirname(existing);
+    if (parent == existing) break;
+    rest.insert(0, p.basename(existing));
+    existing = parent;
+  }
+  var real = existing;
+  try {
+    real = io.Directory(existing).resolveSymbolicLinksSync();
+  } on io.FileSystemException {
+    // Not a directory (or unreadable): compare it as written.
+  }
+  final full = p.normalize(p.joinAll([real, ...rest]));
+  return isCaseInsensitiveAt(real) ? full.toLowerCase() : full;
+}
+
+/// Whether the existing directory [dir] is on a case-insensitive file
+/// system: probed by looking its nearest component with letters up in the
+/// other case. Without such a component (`/`), the platform default
+/// (insensitive on macOS and Windows).
+bool isCaseInsensitiveAt(String dir) {
+  var current = p.normalize(p.absolute(dir));
+  while (true) {
+    final name = p.basename(current);
+    final upper = name.toUpperCase();
+    final other = upper != name ? upper : name.toLowerCase();
+    if (other != name) {
+      final variant = p.join(p.dirname(current), other);
+      try {
+        return io.FileSystemEntity.typeSync(variant) !=
+                io.FileSystemEntityType.notFound &&
+            io.FileSystemEntity.identicalSync(current, variant);
+      } on io.FileSystemException {
+        return false;
+      }
+    }
+    final parent = p.dirname(current);
+    if (parent == current) break;
+    current = parent;
+  }
+  return io.Platform.isMacOS || io.Platform.isWindows;
+}
 
 /// Writing to the file system failed in [OutputWriter.applyAll].
 final class WriteFailure implements Exception {
@@ -144,10 +219,14 @@ final class WritePlan {
     required this.outputDir,
     required this.actions,
     required this.issues,
+    this.target,
   });
 
   /// Absolute output directory.
   final String outputDir;
+
+  /// The target the plan belongs to, if any (names its staging directory).
+  final String? target;
 
   /// Every action, sorted by path; the manifest is last.
   final List<FileAction> actions;
@@ -184,12 +263,14 @@ final class OutputWriter {
   /// Creates a writer.
   ///
   /// A file not owned by the generator "looks generated" when its first
-  /// 2 KiB contain one of [markers] (header texts), or when
-  /// [looksGenerated] says so (e.g. 0.6.0 ARB files for Dart).
+  /// 2 KiB contain one of [markers] (header texts) as a comment: every line
+  /// of the header, in order, each on a line of its own after `//` or `#`
+  /// (so a short custom header does not match every file that merely
+  /// mentions its first line), or when [looksGenerated] says so (e.g. 0.6.0
+  /// ARB files for Dart).
   const OutputWriter({
     this.markers = const [EmitOptions.defaultHeader],
     this.looksGenerated,
-    this.skipDirs = const [],
   });
 
   /// Header texts that mark a file as generated.
@@ -197,10 +278,6 @@ final class OutputWriter {
 
   /// Extra test for "looks generated", given the relative path.
   final bool Function(String relativePath)? looksGenerated;
-
-  /// Absolute directories inside the output directory that the scan for
-  /// leftovers skips (e.g. another target's output nested in this one).
-  final List<String> skipDirs;
 
   /// Plans writing [files] (plus the [manifest]) into [outputDir].
   ///
@@ -251,6 +328,18 @@ final class OutputWriter {
         error('path-traversal', escape, rel);
         continue;
       }
+      if (rel.split('/').where(isWindowsReservedName).firstOrNull
+          case final String reserved) {
+        error(
+          'reserved-file-name',
+          '"$rel" contains "$reserved", a device name on Windows (con, prn, '
+              'aux, nul, com1-9, lpt1-9, with any extension) that cannot be a '
+              'file or directory name there; rename the sheet or locale it '
+              'comes from',
+          p.join(root, rel),
+        );
+        continue;
+      }
       desired[rel] = file.contents;
     }
 
@@ -294,6 +383,7 @@ final class OutputWriter {
     };
 
     final actions = <FileAction>[];
+    final takenOver = <String>[];
     for (final MapEntry(key: rel, value: contents) in desired.entries) {
       final file = io.File(p.join(root, rel));
       final type = io.FileSystemEntity.typeSync(file.path, followLinks: false);
@@ -334,8 +424,34 @@ final class OutputWriter {
         );
         continue;
       }
+      if (!isOwned) {
+        takenOver.add(rel);
+      } else if (rel != manifestFileName &&
+          sha256Hex(current) != owned![ownedAs]) {
+        issues.add(GenerateIssue(
+          'modified-generated-file',
+          '$rel was edited after it was generated; the edit is overwritten '
+              'with the generated content (change the sheet instead)',
+          severity: Severity.warning,
+          target: target,
+          path: file.path,
+        ));
+      }
       actions.add(FileAction(rel, FileChange.changed,
           contents: contents, adopted: !isOwned));
+    }
+    if (takenOver.isNotEmpty) {
+      takenOver.sort();
+      issues.add(GenerateIssue(
+        'took-over-file',
+        '${takenOver.length} existing file(s) in $root that no '
+            '$manifestFileName lists carry the generated header; they are '
+            'overwritten and owned by $generatorName from now on:\n'
+            '${_summarize(takenOver).map((f) => '  $f').join('\n')}',
+        severity: Severity.warning,
+        target: target,
+        path: takenOver.length == 1 ? p.join(root, takenOver.single) : root,
+      ));
     }
 
     // Stale owned files.
@@ -356,14 +472,18 @@ final class OutputWriter {
       }
       if (!desiredLowerCase.contains(rel.toLowerCase()) &&
           sha256Hex(_read(file)) != hash) {
+        // Keep the edit: the file is left in place and, as the new manifest
+        // lists only generated files, is not owned any more.
         issues.add(GenerateIssue(
           'modified-generated-file',
-          '$rel was edited after it was generated; it is no longer '
-              'generated and is deleted anyway',
+          '$rel was edited after it was generated and is no longer '
+              'generated; it is kept, and no longer owned by $generatorName '
+              '(delete it if it is obsolete)',
           severity: Severity.warning,
           target: target,
           path: file.path,
         ));
+        continue;
       }
       actions.add(FileAction(rel, FileChange.removed));
     }
@@ -401,7 +521,12 @@ final class OutputWriter {
       if (b.path == manifestFileName) return -1;
       return a.path.compareTo(b.path);
     });
-    return WritePlan(outputDir: root, actions: actions, issues: issues);
+    return WritePlan(
+      outputDir: root,
+      actions: actions,
+      issues: issues,
+      target: target,
+    );
   }
 
   /// Applies [plan]; see [applyAll].
@@ -411,8 +536,9 @@ final class OutputWriter {
   /// as a file system allows:
   ///
   /// 1. every added or changed file of every plan is written to a staging
-  ///    directory ([stagingDirName]) inside its output directory; when that
-  ///    fails, the staged files are deleted and nothing was written;
+  ///    directory ([stagingDirNameFor] its target) inside its output
+  ///    directory; when that fails, the staged files are deleted and nothing
+  ///    was written;
   /// 2. then, plan by plan, the files no longer generated are deleted (and
   ///    the directories that became empty), the staged files are moved into
   ///    place (a rename on the same file system) and the manifest last.
@@ -420,11 +546,22 @@ final class OutputWriter {
   /// Deleting before moving makes a rename by case only (`chat/` ->
   /// `Chat/`) work on case-insensitive file systems.
   ///
-  /// Throws [StateError] when a plan has errors, and [WriteFailure] (with
-  /// what was written) when the file system fails.
+  /// Throws [StateError] when a plan has errors or the output directories of
+  /// two plans overlap (also through a symbolic link, or by case on a
+  /// case-insensitive file system; see [canonicalPath]), and [WriteFailure]
+  /// (with what was written) when the file system fails.
   void applyAll(List<WritePlan> plans) {
     if (plans.any((p) => p.hasErrors)) {
       throw StateError('Refusing to apply a plan with errors');
+    }
+    final canonical = [for (final plan in plans) canonicalPath(plan.outputDir)];
+    for (final (i, a) in canonical.indexed) {
+      for (final b in canonical.skip(i + 1)) {
+        if (p.equals(a, b) || p.isWithin(a, b) || p.isWithin(b, a)) {
+          throw StateError('Refusing to apply plans whose output directories '
+              'overlap: $a and $b');
+        }
+      }
     }
     final staged = <WritePlan, io.Directory>{};
     final createdRoots = <io.Directory>[];
@@ -465,7 +602,8 @@ final class OutputWriter {
           createdRoots.add(missing);
           root.createSync(recursive: true);
         }
-        final staging = io.Directory(p.join(plan.outputDir, stagingDirName));
+        final staging = io.Directory(
+            p.join(plan.outputDir, stagingDirNameFor(plan.target)));
         if (staging.existsSync()) staging.deleteSync(recursive: true);
         staging.createSync();
         staged[plan] = staging;
@@ -536,11 +674,23 @@ final class OutputWriter {
       _hasMarker(
           contents.length > 2048 ? contents.substring(0, 2048) : contents);
 
-  bool _hasMarker(String head) =>
-      markers.any((m) => m.isNotEmpty && head.contains(m));
+  bool _hasMarker(String head) => markers
+      .any((m) => m.trim().isNotEmpty && _commentPattern(m).hasMatch(head));
 
-  /// Relative paths of every file under [root], skipping hidden directories,
-  /// dependency/build directories and [skipDirs]; symlinks are not followed.
+  /// [header] as consecutive comment lines: `// line` or `# line` each.
+  static RegExp _commentPattern(String header) => RegExp(
+        [
+          for (final line in header.split('\n'))
+            line.trim().isEmpty
+                ? r'^[ \t]*(?://|#)[ \t]*\r?$'
+                : '^[ \\t]*(?://|#) ?${RegExp.escape(line.trim())}'
+                    r'[ \t]*\r?$',
+        ].join(r'\n'),
+        multiLine: true,
+      );
+
+  /// Relative paths of every file under [root], skipping hidden directories
+  /// and dependency/build directories; symlinks are not followed.
   Iterable<String> _scan(String root) sync* {
     const skipped = {'node_modules', '__pycache__', 'build', '.dart_tool'};
     final pending = [io.Directory(root)];
@@ -556,7 +706,6 @@ final class OutputWriter {
         final name = p.basename(entity.path);
         if (entity is io.Directory) {
           if (name.startsWith('.') || skipped.contains(name)) continue;
-          if (skipDirs.any((d) => p.equals(d, entity.path))) continue;
           pending.add(entity);
         } else if (entity is io.File) {
           yield p.posix.joinAll(p.split(p.relative(entity.path, from: root)));

@@ -37,6 +37,28 @@ void main() {
       );
     });
 
+    test('reports a file that is not UTF-8 or cannot be read', () async {
+      final latin1 = io.File(p.join(temp.path, 'latin1.json'))
+        ..writeAsBytesSync([0x7B, 0x22, 0xE9, 0xFF, 0x22, 0x7D]);
+      await expectLater(
+        SnapshotSource(latin1.path).fetchAll(),
+        throwsA(isA<SheetSourceException>().having((e) => e.message, 'message',
+            contains('Cannot read the snapshot ${latin1.path}'))),
+      );
+      if (io.Platform.isWindows) return;
+      final locked = io.File(p.join(temp.path, 'locked.json'))
+        ..writeAsStringSync('{"sheets": []}');
+      io.Process.runSync('chmod', ['000', locked.path]);
+      addTearDown(() => io.Process.runSync('chmod', ['644', locked.path]));
+      // Running as root reads it anyway.
+      if (io.Process.runSync('cat', [locked.path]).exitCode == 0) return;
+      await expectLater(
+        SnapshotSource(locked.path).fetchAll(),
+        throwsA(isA<SheetSourceException>().having(
+            (e) => e.message, 'message', contains('Cannot read the snapshot'))),
+      );
+    });
+
     test('reports invalid JSON and a wrong shape', () async {
       final bad = io.File(p.join(temp.path, 'bad.json'))
         ..writeAsStringSync('{');
@@ -183,6 +205,68 @@ void main() {
         throwsA(isA<SheetSourceException>().having(
             (e) => e.message, 'message', contains('not a service account'))),
       );
+    });
+
+    // A key file the error messages must never quote any of.
+    const sentinel = 'PRIVATESENTINEL';
+    const key = '-----BEGIN PRIVATE KEY-----\\n'
+        'MIIEvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA$sentinel\\n'
+        '-----END PRIVATE KEY-----\\n';
+    for (final (name, contents) in [
+      // A trailing comma right after the key: a FormatException whose
+      // toString() quotes the source around it.
+      (
+        'malformed JSON',
+        '{"type": "service_account", "client_email": "a@b.c", '
+            '"client_id": "1", "private_key": "$key",}'
+      ),
+      // Valid JSON, but the key cannot be parsed.
+      (
+        'an invalid key',
+        '{"type": "service_account", "private_key": "$key", '
+            '"client_email": "a@b.c", "client_id": "1"}'
+      ),
+      // Valid JSON of another kind.
+      ('another kind of key', '{"type": "user", "private_key": "$key"}'),
+    ]) {
+      test('$name: the error does not quote the private key', () async {
+        final file = io.File(p.join(temp.path, 'key.json'))
+          ..writeAsStringSync(contents);
+        for (final call in [
+          () => createSheetsClient(file.path),
+          () => readServiceAccountCredentials(file.path),
+        ]) {
+          final error =
+              await call().then<Object?>((_) => null, onError: (Object e) => e);
+          expect(error, isA<SheetSourceException>());
+          expect('$error', isNot(contains(sentinel)));
+          expect('$error', contains(file.path));
+        }
+      });
+    }
+
+    test('a JSON error reports its reason and offset', () async {
+      final file = io.File(p.join(temp.path, 'key.json'))
+        ..writeAsStringSync('{"private_key": "x",}');
+      await expectLater(
+        readServiceAccountCredentials(file.path),
+        throwsA(isA<SheetSourceException>().having((e) => e.message, 'message',
+            allOf(contains('not valid JSON'), contains('offset')))),
+      );
+    });
+  });
+
+  group('redactCredentials', () {
+    test('removes the key and each of its lines', () {
+      const key = '-----BEGIN PRIVATE KEY-----\n'
+          'AAAAPRIVATESENTINEL1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n'
+          'BBBBPRIVATESENTINEL2BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\n'
+          '-----END PRIVATE KEY-----\n';
+      final redacted =
+          redactCredentials('boom: $key; line: ${key.split('\n')[2]}', key);
+      expect(redacted, isNot(contains('PRIVATESENTINEL')));
+      expect(redacted, contains('<redacted>'));
+      expect(redactCredentials('nothing secret', key), 'nothing secret');
     });
   });
 }

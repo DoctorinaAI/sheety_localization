@@ -212,6 +212,7 @@ final class TargetResult {
     required this.scopes,
     this.plan,
     this.written = false,
+    this.partial = false,
   });
 
   /// The target's configuration.
@@ -226,9 +227,16 @@ final class TargetResult {
   /// Whether [plan] was applied: the files are on disk.
   final bool written;
 
+  /// Whether writing [plan] failed half-way: some of its files are on disk.
+  final bool partial;
+
   /// Copy marked as [written].
   TargetResult markWritten() =>
       TargetResult(config: config, scopes: scopes, plan: plan, written: true);
+
+  /// Copy marked as [partial]ly written.
+  TargetResult markPartial() =>
+      TargetResult(config: config, scopes: scopes, plan: plan, partial: true);
 
   /// The target.
   Target get target => config.target;
@@ -239,6 +247,7 @@ final class TargetResult {
         'output': config.output,
         'scopes': scopes,
         'written': written,
+        if (partial) 'partial': true,
         if (plan case final WritePlan plan) ...{
           'added': plan.added,
           'changed': plan.changed,
@@ -258,7 +267,19 @@ final class GenerateResult {
     required this.check,
     this.written = false,
     this.sheets = 0,
+    this.exitCodeOverride,
   });
+
+  /// A result for a run that stopped before the pipeline (invalid usage or
+  /// configuration, an unreadable source, an unexpected exception): only
+  /// [issues], and the exit code [exitCode].
+  const GenerateResult.failed(this.issues, {required int exitCode})
+      : diagnostics = const [],
+        targets = const [],
+        check = false,
+        written = false,
+        sheets = 0,
+        exitCodeOverride = exitCode;
 
   /// Sheet diagnostics (after `--strict`).
   final List<Diagnostic> diagnostics;
@@ -279,6 +300,10 @@ final class GenerateResult {
   /// Number of sheets read.
   final int sheets;
 
+  /// The exit code when it is not derived from the issues (e.g. 64 for
+  /// invalid usage).
+  final int? exitCodeOverride;
+
   /// Whether any diagnostic or issue is an error.
   bool get hasErrors =>
       diagnostics.any((d) => d.isError) || issues.any((i) => i.isError);
@@ -287,11 +312,13 @@ final class GenerateResult {
   bool get isStale => check && targets.any((t) => t.plan?.hasChanges ?? false);
 
   /// The process exit code.
-  int get exitCode => hasErrors
-      ? exitErrors
-      : isStale
-          ? exitStale
-          : exitOk;
+  int get exitCode =>
+      exitCodeOverride ??
+      (hasErrors
+          ? exitErrors
+          : isStale
+              ? exitStale
+              : exitOk);
 
   /// JSON form (for `--diagnostics-format=json`).
   Map<String, Object?> toJson() => {
@@ -498,12 +525,13 @@ final class GeneratePipeline {
           continue;
         }
       }
+      // A file "looks generated" when it carries a whole header as a
+      // comment (not just its first line, which may be a common word).
       final writer = OutputWriter(
         markers: {
           EmitOptions.defaultHeader,
-          if (config.header.isNotEmpty) config.header.split('\n').first,
-          if (t.header case final String h when h.isNotEmpty)
-            h.split('\n').first,
+          if (config.header.isNotEmpty) config.header,
+          if (t.header case final String h when h.isNotEmpty) h,
         }.toList(),
         looksGenerated: spec.legacyFile,
       );
@@ -577,9 +605,13 @@ final class GeneratePipeline {
         diagnostics: diagnostics,
         targets: [
           for (final r in results)
-            written.contains(p.normalize(r.plan!.outputDir))
-                ? r.markWritten()
-                : r,
+            if (written.contains(p.normalize(r.plan!.outputDir)))
+              r.markWritten()
+            else if (e.partial != null &&
+                p.equals(e.partial!, r.plan!.outputDir))
+              r.markPartial()
+            else
+              r,
         ],
         sheets: sheets.length,
       );
@@ -724,20 +756,29 @@ String formatResultText(GenerateResult result, {bool verbose = false}) {
       for (final path in plan.changed) buffer.writeln('  ~ $path');
       for (final path in plan.removed) buffer.writeln('  - $path');
     } else {
-      buffer.writeln('$head ($counts)${t.written ? '' : ' - not written'}');
+      buffer.writeln('$head ($counts)${t.written ? '' : t.partial ? ' - '
+          'partly written' : ' - not written'}');
     }
   }
+  final writtenIds = [
+    for (final t in result.targets)
+      if (t.written) t.target.id,
+  ];
+  final partialIds = [
+    for (final t in result.targets)
+      if (t.partial) t.target.id,
+  ];
   final verdict = switch (result.exitCode) {
     exitOk when result.check => 'Generated code is up to date.',
     exitOk when result.written => 'Done.',
     exitOk => 'Done (nothing generated).',
     exitStale => 'Generated code is out of date: run generate without '
         '--check.',
-    _ when result.targets.any((t) => t.written) =>
-      'Generation failed after writing ${[
-        for (final t in result.targets)
-          if (t.written) t.target.id,
-      ].join(', ')} (see write-failed).',
+    _ when writtenIds.isNotEmpty || partialIds.isNotEmpty =>
+      'Generation failed after ${[
+        if (writtenIds.isNotEmpty) 'writing ${writtenIds.join(', ')}',
+        if (partialIds.isNotEmpty) 'partly writing ${partialIds.join(', ')}',
+      ].join(' and ')} (see write-failed).',
     _ => 'Generation failed: nothing was written.',
   };
   buffer.writeln(verdict);
@@ -746,7 +787,20 @@ String formatResultText(GenerateResult result, {bool verbose = false}) {
 
 /// GitHub Actions workflow commands for the errors and warnings of
 /// [result] (`::error title=...::message`).
-List<String> githubAnnotations(GenerateResult result) {
+///
+/// GitHub resolves the `file=` of an annotation against the repository
+/// root, so a path inside [workspace] (default: `$GITHUB_WORKSPACE`, else
+/// the current directory) is given relative to it, with `/` separators.
+List<String> githubAnnotations(GenerateResult result, {String? workspace}) {
+  final root = p.normalize(p.absolute(workspace ??
+      io.Platform.environment['GITHUB_WORKSPACE'] ??
+      io.Directory.current.path));
+  String file(String path) {
+    final absolute = p.normalize(p.absolute(path));
+    if (!p.isWithin(root, absolute)) return absolute;
+    return p.split(p.relative(absolute, from: root)).join('/');
+  }
+
   String data(String s) =>
       s.replaceAll('%', '%25').replaceAll('\r', '%0D').replaceAll('\n', '%0A');
   String property(String s) =>
@@ -763,7 +817,7 @@ List<String> githubAnnotations(GenerateResult result) {
     for (final i in result.issues)
       if (i.severity != Severity.info)
         '::${command(i.severity)} '
-            '${i.path == null ? '' : 'file=${property(i.path!)},'}'
+            '${i.path == null ? '' : 'file=${property(file(i.path!))},'}'
             'title=${property('sheety ${i.code}')}::${data(i.toString())}',
   ];
 }
@@ -850,16 +904,45 @@ Future<int> runGenerate(
 }) async {
   final stdout = out ?? io.stdout;
   final stderr = err ?? io.stderr;
+  final workspace =
+      io.Platform.environment['GITHUB_WORKSPACE'] ?? workingDirectory;
+  // Until the arguments are parsed, the format is looked up in them as
+  // written, so that even a usage error is reported in it.
+  var format = _diagnosticsFormatIn(arguments);
+  var verbose = arguments.contains('--verbose') || arguments.contains('-v');
+
+  // Reports a failure that stopped the run before (or outside) the
+  // pipeline: the error on stderr, plus a JSON result or an annotation.
+  int fail(String code, String message, int exitCode, {bool usage = false}) {
+    final result = GenerateResult.failed(
+      [GenerateIssue(code, message)],
+      exitCode: exitCode,
+    );
+    switch (format) {
+      case DiagnosticsFormat.json:
+        stdout.writeln(
+            const JsonEncoder.withIndent('  ').convert(result.toJson()));
+      case DiagnosticsFormat.github:
+        for (final line in githubAnnotations(result, workspace: workspace)) {
+          stdout.writeln(line);
+        }
+      case DiagnosticsFormat.text:
+        break;
+    }
+    stderr.writeln('error: $message');
+    if (usage) stderr.writeln('Run with --help for usage.');
+    return exitCode;
+  }
+
   final parser = generateArgParser();
   final ArgResults args;
   try {
     args = parser.parse(arguments);
   } on FormatException catch (e) {
-    stderr
-      ..writeln('error: ${e.message}')
-      ..writeln('Run with --help for usage.');
-    return exitUsage;
+    return fail('usage-error', e.message, exitUsage, usage: true);
   }
+  format = DiagnosticsFormat.byName(args.option('diagnostics-format')!)!;
+  verbose = args.flag('verbose');
   if (args.flag('help')) {
     stdout
       ..writeln(generateHelp)
@@ -872,10 +955,7 @@ Future<int> runGenerate(
   try {
     config = GenerateConfig.fromArgs(args, workingDirectory: workingDirectory);
   } on ConfigException catch (e) {
-    stderr
-      ..writeln('error: ${e.message}')
-      ..writeln('Run with --help for usage.');
-    return exitUsage;
+    return fail('config-error', e.message, exitUsage, usage: true);
   }
 
   final json = config.diagnosticsFormat == DiagnosticsFormat.json;
@@ -888,26 +968,65 @@ Future<int> runGenerate(
     verbose: config.verbose ? log.writeln : null,
   );
 
+  int internalError(Object e, StackTrace s) {
+    if (verbose) stderr.writeln(s);
+    return fail(
+      'internal-error',
+      'Unexpected error (please report it; run with --verbose for the stack '
+          'trace): $e',
+      exitErrors,
+    );
+  }
+
   final SheetSource source;
   try {
     source = await (sourceFor ?? defaultSourceFor)(config);
   } on SheetSourceException catch (e) {
-    stderr.writeln('error: ${e.message}');
-    return exitErrors;
+    return fail('source-error', e.message, exitErrors);
+  } on Object catch (e, s) {
+    return internalError(e, s);
   }
-  final result = await pipeline.run(config, source);
+  final GenerateResult result;
+  try {
+    result = await pipeline.run(config, source);
+  } on Object catch (e, s) {
+    return internalError(e, s);
+  }
 
   switch (config.diagnosticsFormat) {
     case DiagnosticsFormat.json:
       stdout
           .writeln(const JsonEncoder.withIndent('  ').convert(result.toJson()));
     case DiagnosticsFormat.github:
-      for (final line in githubAnnotations(result)) stdout.writeln(line);
+      for (final line in githubAnnotations(result, workspace: workspace)) {
+        stdout.writeln(line);
+      }
       stderr.write(formatResultText(result, verbose: config.verbose));
     case DiagnosticsFormat.text:
       stderr.write(formatResultText(result, verbose: config.verbose));
   }
   return result.exitCode;
+}
+
+/// The last `--diagnostics-format` in [arguments] as written (before `--`),
+/// [DiagnosticsFormat.text] when there is none or it is not a format.
+DiagnosticsFormat _diagnosticsFormatIn(List<String> arguments) {
+  const option = '--diagnostics-format';
+  var format = DiagnosticsFormat.text;
+  for (var i = 0; i < arguments.length; i++) {
+    final arg = arguments[i];
+    if (arg == '--') break;
+    final String? value;
+    if (arg.startsWith('$option=')) {
+      value = arg.substring(option.length + 1);
+    } else if (arg == option && i + 1 < arguments.length) {
+      value = arguments[++i];
+    } else {
+      continue;
+    }
+    format = DiagnosticsFormat.byName(value) ?? format;
+  }
+  return format;
 }
 
 /// The source [config] asks for: its snapshot, or the Google spreadsheet.

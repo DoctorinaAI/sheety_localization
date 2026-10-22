@@ -293,6 +293,25 @@ targets:
       for (final l in lines) expect(l, isNot(contains('\n')));
     });
 
+    test('GitHub annotations name files relative to the workspace', () async {
+      io.File(p.join(cwd, 'out/ts/index.txt'))
+        ..createSync(recursive: true)
+        ..writeAsStringSync('hand-written');
+      final result =
+          await run(['--snapshot=$multi', '--ignore=^backend', '--ts=out/ts']);
+      final line = githubAnnotations(result, workspace: cwd)
+          .singleWhere((l) => l.contains('unowned-file'));
+      expect(line, startsWith('::error file=out/ts/index.txt,title='));
+      // Outside the workspace, the path stays absolute.
+      final outside =
+          githubAnnotations(result, workspace: p.join(cwd, 'elsewhere'))
+              .singleWhere((l) => l.contains('unowned-file'));
+      expect(
+          outside,
+          contains('file=${p.join(cwd, 'out', 'ts', 'index.txt')}'
+              .replaceAll(':', '%3A')));
+    });
+
     test('verbose logs every written file', () async {
       final log = <String>[];
       await run(['--snapshot=$multi', '--ts=o', '--ts-ignore=^backend'],
@@ -327,6 +346,75 @@ targets:
       expect(text, contains('nothing was written'));
       expect(text, isNot(contains(' added,')));
     }, testOn: '!windows');
+
+    test('a target left partly written is reported as such', () async {
+      final args = [
+        '--snapshot=$multi',
+        '--ignore=^help\$',
+        '--mustache=^backend-',
+        '--ts=out/ts',
+      ];
+      expect((await run(args)).exitCode, exitOk);
+      // backend_mail is stale now; its directory is read-only, so deleting
+      // it fails half-way through the commit.
+      final stale = p.join(cwd, 'out/ts/backend_mail');
+      io.Process.runSync('chmod', ['555', stale]);
+      addTearDown(() => io.Process.runSync('chmod', ['755', stale]));
+      final result = await run([...args, '--ts-ignore=^backend']);
+      expect(result.exitCode, exitErrors);
+      expect(result.issues.single.message, contains('partly written'));
+      final ts = result.targets.single;
+      expect(ts.written, isFalse);
+      expect(ts.partial, isTrue);
+      expect(ts.toJson()['partial'], isTrue);
+      final text = formatResultText(result);
+      expect(text, isNot(contains('nothing was written')));
+      expect(text, contains('partly writing ts'));
+      expect(text, contains('- partly written'));
+    }, testOn: '!windows');
+
+    test('two targets in one directory by case or symlink are refused',
+        () async {
+      io.Directory(p.join(cwd, 'out')).createSync();
+      io.Link(p.join(cwd, 'alias')).createSync(p.join(cwd, 'out'));
+      expect(
+        () => config([
+          '--snapshot=$multi',
+          '--ts=out',
+          '--python=alias',
+        ]),
+        throwsA(isA<ConfigException>()),
+      );
+      if (isCaseInsensitiveAt(cwd)) {
+        expect(
+          () => config(['--snapshot=$multi', '--ts=out', '--python=OUT']),
+          throwsA(isA<ConfigException>()),
+        );
+      }
+    }, testOn: '!windows');
+
+    test('a hand-written file mentioning a custom header is not taken over',
+        () async {
+      io.File(p.join(cwd, 'out/ts/index.txt'))
+        ..createSync(recursive: true)
+        ..writeAsStringSync('Generated for tests. Then edited by hand.\n');
+      final args = [
+        '--snapshot=$multi',
+        '--ignore=^backend',
+        '--ts=out/ts',
+        '--header=Generated for tests.',
+      ];
+      final conflict = await run(args);
+      expect(conflict.issues.map((i) => i.code), ['unowned-file']);
+      expect(read('out/ts/index.txt'), startsWith('Generated for tests. Then'));
+      // The same header as a comment is the generator's: taken over, with a
+      // warning.
+      io.File(p.join(cwd, 'out/ts/index.txt'))
+          .writeAsStringSync('# Generated for tests.\nold\n');
+      final takeover = await run(args);
+      expect(takeover.exitCode, exitOk);
+      expect(takeover.issues.map((i) => i.code), ['took-over-file']);
+    });
 
     test('after a conflict the summary does not claim changes as done',
         () async {

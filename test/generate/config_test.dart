@@ -122,6 +122,36 @@ void main() {
           hasLength(2));
     });
 
+    test('a symbolic link to another target\'s directory is the same one', () {
+      io.Directory(p.join(cwd, 'out')).createSync();
+      io.Link(p.join(cwd, 'alias')).createSync(p.join(cwd, 'out'));
+      expect(() => parse(['--sheet=x', '--ts=out', '--python=alias']),
+          fails(contains('same output directory')));
+      // A link into it nests: alias/py is out/py, inside out.
+      expect(() => parse(['--sheet=x', '--ts=out/ts', '--python=alias']),
+          fails(contains('must not overlap')));
+      // The directory behind the link does not even need to exist yet.
+      expect(() => parse(['--sheet=x', '--ts=out/a/b', '--python=alias/a/b']),
+          fails(contains('same output directory')));
+    }, testOn: '!windows');
+
+    test(
+        'directories differing only in case are the same on a '
+        'case-insensitive file system', () {
+      io.Directory(p.join(cwd, 'out')).createSync();
+      if (!isCaseInsensitiveAt(cwd)) {
+        markTestSkipped('the temporary directory is case-sensitive');
+        return;
+      }
+      expect(() => parse(['--sheet=x', '--ts=out', '--python=OUT']),
+          fails(contains('same output directory')));
+      // Also when neither exists yet.
+      expect(() => parse(['--sheet=x', '--ts=new/x', '--python=NEW/X']),
+          fails(contains('same output directory')));
+      expect(() => parse(['--sheet=x', '--ts=new', '--python=NEW/py']),
+          fails(contains('must not overlap')));
+    });
+
     test('RegExp lists split only at top-level commas', () {
       final c = parse([
         '--sheet=x',

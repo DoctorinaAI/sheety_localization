@@ -95,6 +95,108 @@ void main() {
       expect(r.out, contains('::error title=sheety icu-syntax'));
     });
 
+    group('errors before the pipeline still follow --diagnostics-format', () {
+      Map<String, Object?> decode(String out) =>
+          jsonDecode(out) as Map<String, Object?>;
+      List<String> codes(Map<String, Object?> json) => [
+            for (final i
+                in (json['issues']! as List).cast<Map<String, Object?>>())
+              i['code'] as String,
+          ];
+
+      void credentials(String contents) =>
+          io.File(p.join(cwd, 'key.json')).writeAsStringSync(contents);
+      const badKey = '{"type": "service_account", "private_key": '
+          '"-----BEGIN PRIVATE KEY-----\\nPRIVATESENTINEL\\n", }';
+      final google = ['--sheet=x', '--credentials=key.json', '--ts=o'];
+
+      test('json: bad credentials, without quoting the key', () async {
+        credentials(badKey);
+        final r = await cli([...google, '--diagnostics-format=json']);
+        expect(r.code, exitErrors);
+        final json = decode(r.out);
+        expect(json['ok'], isFalse);
+        expect(json['exitCode'], exitErrors);
+        expect(codes(json), ['source-error']);
+        expect(json['diagnostics'], isEmpty);
+        expect(r.out + r.err, isNot(contains('PRIVATESENTINEL')));
+        expect(r.err, contains('error: Credentials file'));
+      });
+
+      test('json: missing credentials', () async {
+        final r = await cli([...google, '--diagnostics-format=json']);
+        expect(r.code, exitErrors);
+        expect(codes(decode(r.out)), ['source-error']);
+      });
+
+      test('json: an invalid sheety.yaml and an invalid option', () async {
+        io.File(p.join(cwd, 'sheety.yaml')).writeAsStringSync('targts: {}\n');
+        final yaml = await cli(const ['--diagnostics-format=json']);
+        expect(yaml.code, exitUsage);
+        final json = decode(yaml.out);
+        expect(json['exitCode'], exitUsage);
+        expect(codes(json), ['config-error']);
+        final usage =
+            await cli(const ['--frobnicate', '--diagnostics-format', 'json']);
+        expect(usage.code, exitUsage);
+        expect(codes(decode(usage.out)), ['usage-error']);
+        expect(usage.err, contains('frobnicate'));
+      });
+
+      test('github: bad credentials and an invalid sheety.yaml', () async {
+        credentials(badKey);
+        final source = await cli([...google, '--diagnostics-format=github']);
+        expect(source.code, exitErrors);
+        expect(source.out, startsWith('::error title=sheety source-error::'));
+        expect(source.out, isNot(contains('PRIVATESENTINEL')));
+        io.File(p.join(cwd, 'sheety.yaml')).writeAsStringSync('targts: {}\n');
+        final yaml = await cli(const ['--diagnostics-format=github']);
+        expect(yaml.code, exitUsage);
+        expect(yaml.out, startsWith('::error title=sheety config-error::'));
+      });
+
+      test('text mode keeps stdout clean', () async {
+        final r = await cli(google);
+        expect(r.code, exitErrors);
+        expect(r.out, isEmpty);
+        expect(r.err, contains('Credentials file not found'));
+      });
+    });
+
+    test('an unexpected exception is an internal-error with exit 2', () async {
+      Future<({int code, String out, String err})> crash(
+          List<String> args) async {
+        final out = StringBuffer(), err = StringBuffer();
+        final code = await runGenerate(
+          ['--snapshot=s.json', '--ts=o', ...args],
+          registry: fakeRegistry(),
+          sourceFor: (_) async => throw StateError('kaboom'),
+          out: out,
+          err: err,
+          workingDirectory: cwd,
+        );
+        return (code: code, out: '$out', err: '$err');
+      }
+
+      final text = await crash(const []);
+      expect(text.code, exitErrors);
+      expect(text.err, contains('kaboom'));
+      final json = await crash(const ['--diagnostics-format=json']);
+      expect(json.code, exitErrors);
+      final decoded = jsonDecode(json.out) as Map<String, Object?>;
+      expect((decoded['issues']! as List).single,
+          containsPair('code', 'internal-error'));
+      final verbose = await crash(const ['-v']);
+      expect(verbose.err, contains('cli_test.dart'), reason: 'stack trace');
+    });
+
+    test('an unreadable snapshot is a source-error, not a crash', () async {
+      io.File(p.join(cwd, 'bad.json')).writeAsBytesSync([0x7B, 0xFF, 0x7D]);
+      final r = await cli(const ['--snapshot=bad.json', '--ts=o']);
+      expect(r.code, exitErrors);
+      expect(r.err, contains('Cannot read the snapshot'));
+    });
+
     test('usage errors exit with 64', () async {
       final unknown = await cli(const ['--frobnicate']);
       expect(unknown.code, exitUsage);

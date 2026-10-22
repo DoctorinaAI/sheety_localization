@@ -1,7 +1,6 @@
 // ignore_for_file: depend_on_referenced_packages
 
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io' as io;
 
 import 'package:args/args.dart';
@@ -372,14 +371,10 @@ Future<({SheetsApi api, AutoRefreshingAuthClient client})>
   $log('Extracting credentials from file...');
   ServiceAccountCredentials credentials;
   try {
-    final bytes = await credentialsFile.readAsBytes();
-    final credentialsJson = const Utf8Decoder()
-        .fuse(const JsonDecoder())
-        .cast<List<int>, Map<String, Object?>>()
-        .convert(bytes);
-    credentials = ServiceAccountCredentials.fromJson(credentialsJson);
-  } on Object catch (e) {
-    $err('Error reading credentials file: $e');
+    // Its errors never quote the file (no piece of the private key).
+    credentials = await readServiceAccountCredentials(credentialsPath);
+  } on SheetSourceException catch (e) {
+    $err('Error reading credentials file: ${e.message}');
     io.exit(1);
   }
 
@@ -391,7 +386,8 @@ Future<({SheetsApi api, AutoRefreshingAuthClient client})>
     ]);
     return (api: SheetsApi(client), client: client);
   } on Object catch (e) {
-    $err('Error creating Google Sheets API client: $e');
+    $err('Error creating Google Sheets API client: '
+        '${redactCredentials('$e', credentials.privateKey)}');
     io.exit(1);
   }
 }

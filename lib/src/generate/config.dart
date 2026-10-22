@@ -10,6 +10,7 @@ import 'package:yaml/yaml.dart';
 
 import 'emitter.dart';
 import 'reader.dart';
+import 'writer.dart' show canonicalPath;
 
 /// The default configuration file name, used when it exists in the working
 /// directory and `--config` is not given.
@@ -694,15 +695,21 @@ GenerateConfig _build(ArgResults args, String cwd) {
     for (final t in Target.values)
       if (targets[t] case final TargetConfig c) c,
   ];
+  // Compared canonically: `out` and `OUT` on a case-insensitive file system,
+  // or a symbolic link to `out`, are the directory `out`.
+  final canonical = {for (final t in ordered) t: canonicalPath(t.output)};
   for (final (i, a) in ordered.indexed) {
     for (final b in ordered.skip(i + 1)) {
-      if (p.equals(a.output, b.output)) {
+      if (p.equals(canonical[a]!, canonical[b]!)) {
         throw ConfigException('Targets ${a.target.id} and ${b.target.id} '
-            'have the same output directory ${a.output}; each target needs '
+            'have the same output directory ${a.output}'
+            '${p.equals(a.output, b.output) ? '' : ' (${b.output} is the same '
+                'directory, by a symbolic link or by case on a '
+                'case-insensitive file system)'}; each target needs '
             'its own (it keeps a manifest of the files it owns there)');
       }
       for (final (outer, inner) in [(a, b), (b, a)]) {
-        if (p.isWithin(outer.output, inner.output)) {
+        if (p.isWithin(canonical[outer]!, canonical[inner]!)) {
           throw ConfigException('The output directory of the '
               '${inner.target.id} target (${inner.output}) is inside the one '
               'of the ${outer.target.id} target (${outer.output}); the '

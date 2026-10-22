@@ -180,27 +180,77 @@ Future<AutoRefreshingAuthClient> createSheetsClient(
   String credentialsPath, {
   List<String> scopes = const [SheetsApi.spreadsheetsReadonlyScope],
 }) async {
-  final file = io.File(credentialsPath);
-  if (!file.existsSync()) {
-    throw SheetSourceException(
-      'Credentials file not found: $credentialsPath '
-      '(pass --credentials or set "credentials" in sheety.yaml)',
-    );
-  }
-  final ServiceAccountCredentials credentials;
-  try {
-    final json = jsonDecode(await file.readAsString());
-    credentials = ServiceAccountCredentials.fromJson(json);
-  } on Object catch (e) {
-    throw SheetSourceException(
-      'Credentials file $credentialsPath is not a service account key: $e',
-    );
-  }
+  final credentials = await readServiceAccountCredentials(
+    credentialsPath,
+    hint: ' (pass --credentials or set "credentials" in sheety.yaml)',
+  );
   try {
     return await clientViaServiceAccount(credentials, scopes);
   } on Object catch (e) {
-    throw SheetSourceException('Cannot authenticate with Google: $e');
+    throw SheetSourceException(
+      'Cannot authenticate with Google: '
+      '${redactCredentials('$e', credentials.privateKey)}',
+    );
   }
+}
+
+/// Reads the service account key at [credentialsPath]. Throws
+/// [SheetSourceException] (with [hint] appended when the file is missing).
+///
+/// The messages never quote the file: a JSON error reports only its reason
+/// and offset (a `FormatException` would print an excerpt of the source,
+/// i.e. a piece of the private key), and an invalid key only which fields a
+/// key needs.
+Future<ServiceAccountCredentials> readServiceAccountCredentials(
+  String credentialsPath, {
+  String hint = '',
+}) async {
+  final file = io.File(credentialsPath);
+  if (!file.existsSync()) {
+    throw SheetSourceException(
+      'Credentials file not found: $credentialsPath$hint',
+    );
+  }
+  final Object? json;
+  try {
+    json = jsonDecode(utf8.decode(await file.readAsBytes()));
+  } on FormatException catch (e) {
+    throw SheetSourceException(
+      'Credentials file $credentialsPath is not valid JSON: ${e.message}'
+      '${e.offset == null ? '' : ' (at offset ${e.offset})'}',
+    );
+  } on io.FileSystemException catch (e) {
+    throw SheetSourceException(
+      'Cannot read the credentials file $credentialsPath: ${e.message}'
+      '${e.osError == null ? '' : ' (${e.osError!.message})'}',
+    );
+  }
+  try {
+    return ServiceAccountCredentials.fromJson(json);
+  } on Object {
+    throw SheetSourceException(
+      'Credentials file $credentialsPath is not a service account key (it '
+      'needs "type": "service_account", "client_email", "client_id" and a '
+      'PEM "private_key"; download a new JSON key of the service account '
+      'from the Google Cloud console)',
+    );
+  }
+}
+
+/// [text] with the private key [privateKey] (and every line of it) replaced
+/// by `<redacted>`, for error messages that might echo it.
+String redactCredentials(String text, String privateKey) {
+  var result = text;
+  if (privateKey.isNotEmpty) {
+    result = result.replaceAll(privateKey, '<redacted>');
+  }
+  for (final line in privateKey.split('\n')) {
+    final trimmed = line.trim();
+    if (trimmed.length >= 16 && !trimmed.startsWith('-----')) {
+      result = result.replaceAll(trimmed, '<redacted>');
+    }
+  }
+  return result;
 }
 
 /// Reads a JSON snapshot: `{"sheets": [{"title": "...", "values": [[...]]}]}`
@@ -227,6 +277,11 @@ final class SnapshotSource implements SheetSource {
     } on FormatException catch (e) {
       throw SheetSourceException('Snapshot $path is not valid JSON: '
           '${e.message}');
+    } on io.FileSystemException catch (e) {
+      // Unreadable, a directory, or not UTF-8.
+      throw SheetSourceException('Cannot read the snapshot $path: '
+          '${e.message}'
+          '${e.osError == null ? '' : ' (${e.osError!.message})'}');
     }
     for (final sheet in parseSnapshot(json, path)) {
       if (where == null || where(sheet.title)) yield sheet;
