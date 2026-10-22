@@ -6,9 +6,9 @@ import 'dart:io' as io;
 // ignore: implementation_imports
 import 'package:intl/src/plural_rules.dart' as intl_rules;
 import 'package:intl/intl.dart' as intl;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
+import '../sheety.dart';
 import 'helpers.dart' show hasTool;
 
 /// Locales of the real sheets (Flutter and backend scopes).

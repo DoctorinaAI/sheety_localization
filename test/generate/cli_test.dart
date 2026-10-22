@@ -5,9 +5,9 @@ import 'dart:convert';
 import 'dart:io' as io;
 
 import 'package:path/path.dart' as p;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
+import '../sheety.dart';
 import '../fixtures/infra/fake_emitter.dart';
 
 final _fixtures = p.absolute('test/fixtures/infra');
@@ -304,9 +304,9 @@ void main() {
 snapshot: $real
 ignore: ['^help\$', '^locales\$']
 syntax:
-  mustache: ['^backend-monetization\$']
+  mustache: ['^backend-billing\$']
 targets:
-  dart:   { output: dart/lib, ignore: ['^backend', '^telegram'] }
+  dart:   { output: dart/lib, ignore: ['^backend', '^bot'] }
   python: { output: python/src/app_localization, include: ['^backend'] }
   ts:     { output: web/src/generated, ignore: ['^backend'] }
 ''');

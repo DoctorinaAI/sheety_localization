@@ -1,10 +1,10 @@
 import 'dart:io' as io;
 
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:sheety_localization/src/generate/emit/python/python_code.dart';
 import 'package:sheety_localization/src/generate/emit/python/python_runtime.dart';
 import 'package:test/test.dart';
 
+import '../../../sheety.dart';
 import '../../helpers.dart';
 import 'python_test_helpers.dart';
 
@@ -44,7 +44,7 @@ void main() {
           {const LocaleTag('pt'): const LocaleTag('pt_BR')});
       expect(app.fallbackCount(const LocaleTag('ar')), greaterThan(0));
       final countries = fixture.catalog.scope(
-        'backend_2026_09_23_country_names',
+        'backend_2025_01_15_regions',
       )!;
       expect(
         countries
@@ -54,7 +54,7 @@ void main() {
         const LocaleTag('pt'),
       );
       expect(
-        fixture.catalog.scope('backend_monetization')!.syntax,
+        fixture.catalog.scope('backend_billing')!.syntax,
         MessageSyntax.mustache,
       );
     });
@@ -99,12 +99,12 @@ void main() {
         for (final l in ['en', 'ru', 'pt_BR', 'ar', 'sl', 'he', 'de', 'ja'])
           'app/_$l.py',
         'app/_pt.py',
-        'backend_2026_09_23_country_names/__init__.py',
+        'backend_2025_01_15_regions/__init__.py',
         for (final l in ['en', 'ru', 'pt', 'pt_BR', 'es_419', 'es'])
-          'backend_2026_09_23_country_names/_$l.py',
-        'backend_monetization/__init__.py',
-        'backend_monetization/_en.py',
-        'backend_monetization/_ru.py',
+          'backend_2025_01_15_regions/_$l.py',
+        'backend_billing/__init__.py',
+        'backend_billing/_en.py',
+        'backend_billing/_ru.py',
       ]);
     });
 
@@ -179,16 +179,16 @@ void main() {
     });
 
     test('scope titles become package names, labels sanitized keys', () {
-      final countries = file('backend_2026_09_23_country_names/__init__.py');
+      final countries = file('backend_2025_01_15_regions/__init__.py');
       expect(
         countries,
-        contains('class Backend20260923CountryNamesLocalization'),
+        contains('class Backend20250115RegionsLocalization'),
       );
       expect(countries, contains('key="country_name_ad"'));
       expect(
           countries,
           contains('SHEET_TITLE = '
-              '"backend-2026-09-23-country-names"'));
+              '"backend-2025-01-15-regions"'));
     });
 
     test('plural with intl selection, per-locale CLDR rule', () {
@@ -212,7 +212,7 @@ void main() {
       final ar = file('app/_ar.py');
       expect(ar, contains('"distance",'));
       expect(ar, contains('FALLBACK_KEYS = frozenset('));
-      final ptBr = file('backend_2026_09_23_country_names/_pt_BR.py');
+      final ptBr = file('backend_2025_01_15_regions/_pt_BR.py');
       expect(ptBr, contains('return "Brasil"'));
       expect(
           ptBr,
@@ -230,20 +230,20 @@ void main() {
     });
 
     test('mustache scope', () {
-      final en = file('backend_monetization/_en.py');
+      final en = file('backend_billing/_en.py');
       expect(
         en,
-        contains('"monetization_price": "Only {{price}} per month '
-            '({{ avg_cost }} on average)",'),
+        contains('"billing_price": "Only {{price}} per month '
+            '({{ unit_price }} per seat)",'),
       );
       expect(
         en,
         contains('return f"Only {_to_str(price)} per month '
-            '({_to_str(avg_cost)} on average)"'),
+            '({_to_str(unit_price)} per seat)"'),
       );
-      expect(en, contains('return "Support {consult}"'));
-      expect(file('backend_monetization/__init__.py'),
-          contains('SYNTAX = "mustache"'));
+      expect(en, contains('return "Contact {team}"'));
+      expect(
+          file('backend_billing/__init__.py'), contains('SYNTAX = "mustache"'));
     });
 
     test('runtime compiles only the rules in use', () {

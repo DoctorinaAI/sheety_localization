@@ -2,10 +2,10 @@
 // Flutter SDK (skipped without one) and regenerates it with UPDATE_GOLDENS=1.
 import 'dart:io' as io;
 
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:sheety_localization/src/generate/emit/dart/locale_description.dart';
 import 'package:test/test.dart';
 
+import '../../../sheety.dart';
 import 'helpers.dart';
 
 void main() {

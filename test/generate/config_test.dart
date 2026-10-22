@@ -1,8 +1,9 @@
 import 'dart:io' as io;
 
 import 'package:path/path.dart' as p;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 void main() {
   late io.Directory temp;
@@ -233,7 +234,7 @@ sheet: SHEET
 credentials: secrets/key.json
 ignore: ['^help$', '^locales$']
 syntax:
-  mustache: '^backend-monetization$'
+  mustache: '^backend-billing$'
 header: |-
   Generated.
   Do not edit.
@@ -242,7 +243,7 @@ format: false
 include_empty: false
 legacy_regional_override: true
 targets:
-  dart:   { output: dart/lib, ignore: ['^backend', '^telegram'], options: { directory: src/generated, nested: [1, {a: b}] } }
+  dart:   { output: dart/lib, ignore: ['^backend', '^bot'], options: { directory: src/generated, nested: [1, {a: b}] } }
   python: { output: python/src/app_localization, include: ['^backend'] }
   ts:     { output: web/src/generated, ignore: '^backend', header: TS only }
 ''';
@@ -254,7 +255,7 @@ targets:
       expect(c.sheet, 'SHEET');
       expect(c.credentials, p.join(cwd, 'secrets/key.json'));
       expect([for (final r in c.ignore) r.pattern], [r'^help$', r'^locales$']);
-      expect(c.mustache.single.pattern, r'^backend-monetization$');
+      expect(c.mustache.single.pattern, r'^backend-billing$');
       expect(c.header, 'Generated.\nDo not edit.');
       expect(c.strict && c.legacyRegionalOverride, isTrue);
       expect(c.format || c.includeEmpty, isFalse);
@@ -271,9 +272,9 @@ targets:
       expect(python.include.single.pattern, '^backend');
       expect(ts.ignore.single.pattern, '^backend');
       expect(ts.header, 'TS only');
-      expect(c.selects(python, 'backend-2026-09-23-country-names'), isTrue);
+      expect(c.selects(python, 'backend-2025-01-15-regions'), isTrue);
       expect(c.selects(python, 'app'), isFalse);
-      expect(c.selects(dart, 'telegram-bot'), isFalse);
+      expect(c.selects(dart, 'bot-commands'), isFalse);
       expect(c.selects(dart, 'help'), isFalse);
       expect(c.anySelects('locales'), isFalse);
     });

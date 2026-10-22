@@ -1,9 +1,9 @@
 import 'dart:io' as io;
 
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:sheety_localization/src/generate/emit/ts/ts_code.dart';
 import 'package:test/test.dart';
 
+import '../../../sheety.dart';
 import '../../helpers.dart';
 import 'ts_helpers.dart';
 

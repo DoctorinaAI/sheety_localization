@@ -1,6 +1,6 @@
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
+import '../sheety.dart';
 import 'helpers.dart';
 
 const _header = ['label', 'description', 'meta', 'en', 'de'];
@@ -524,7 +524,7 @@ void main() {
 
     test('mustache sheets parse {{name}} into arguments', () {
       final r = readCatalog(
-        sheet('backend-monetization', rows),
+        sheet('backend-billing', rows),
         options: ReaderOptions(mustacheSheets: [RegExp('^backend')]),
       );
       final scope = r.catalog.scopes.single;

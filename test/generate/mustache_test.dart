@@ -1,5 +1,6 @@
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 String dump(IcuMessage m) => [
       for (final p in m.parts)
@@ -71,7 +72,7 @@ void main() {
     expect(dump(parseMessage('{x}', MessageSyntax.icu)), 'A(x)');
     expect(dump(parseMessage('{x}', MessageSyntax.mustache)), 'T({x})');
     expect(MessageSyntax.byName('mustache'), MessageSyntax.mustache);
-    expect(looksLikeMustache('costs {{avg_cost}}'), isTrue);
-    expect(looksLikeMustache('costs {avg_cost}'), isFalse);
+    expect(looksLikeMustache('costs {{unit_price}}'), isTrue);
+    expect(looksLikeMustache('costs {unit_price}'), isFalse);
   });
 }

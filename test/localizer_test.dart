@@ -1,7 +1,8 @@
 import 'dart:async';
 
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import 'sheety.dart';
 
 /// Scripted [LocalizationClient] that records which languages were requested.
 class FakeClient implements LocalizationClient {

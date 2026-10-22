@@ -1,6 +1,6 @@
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
+import '../sheety.dart';
 import 'helpers.dart';
 
 const _header = ['label', 'description', 'meta', 'en', 'ru'];

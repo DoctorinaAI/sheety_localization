@@ -1,7 +1,8 @@
 import 'dart:convert';
 
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import 'sheety.dart';
 
 void main() {
   group('OpenAIClient.parseResponseBody', () {

@@ -2,7 +2,7 @@
 # ruff: noqa
 """Generated localization package.
 
-Scopes (one sub-package per sheet): app, backend_2026_09_23_country_names, backend_monetization.
+Scopes (one sub-package per sheet): app, backend_2025_01_15_regions, backend_billing.
 
 Use a scope directly (``from .app import get``) or by name
 (``get("app", "pt-BR")``).
@@ -23,17 +23,17 @@ from ._runtime import (
     sanitize_key as _sanitize_key,
 )
 from . import app
-from . import backend_2026_09_23_country_names
-from . import backend_monetization
+from . import backend_2025_01_15_regions
+from . import backend_billing
 from .app import AppLocalization
-from .backend_2026_09_23_country_names import Backend20260923CountryNamesLocalization
-from .backend_monetization import BackendMonetizationLocalization
+from .backend_2025_01_15_regions import Backend20250115RegionsLocalization
+from .backend_billing import BackendBillingLocalization
 
 __all__ = [
     "AppLocalization",
     "BASE_LOCALE",
-    "Backend20260923CountryNamesLocalization",
-    "BackendMonetizationLocalization",
+    "Backend20250115RegionsLocalization",
+    "BackendBillingLocalization",
     "CLDR_VERSION",
     "Localization",
     "Message",
@@ -41,8 +41,8 @@ __all__ = [
     "SCOPES",
     "SUPPORTED_LOCALES",
     "app",
-    "backend_2026_09_23_country_names",
-    "backend_monetization",
+    "backend_2025_01_15_regions",
+    "backend_billing",
     "get",
     "negotiate_locale",
     "parse_accept_language",
@@ -51,7 +51,7 @@ __all__ = [
 ]
 
 #: Every scope (sheet), in sheet order.
-SCOPES: _typing.Tuple[str, ...] = ("app", "backend_2026_09_23_country_names", "backend_monetization")
+SCOPES: _typing.Tuple[str, ...] = ("app", "backend_2025_01_15_regions", "backend_billing")
 #: Every locale of any scope, in order of first appearance.
 SUPPORTED_LOCALES: _typing.Tuple[str, ...] = ("en", "ru", "pt_BR", "ar", "sl", "he", "de", "ja", "pt", "es_419", "es")
 #: The base locale shared by the scopes (that of the first scope if they differ).
@@ -61,8 +61,8 @@ _GETTERS: _typing.Mapping[
     str, _typing.Callable[[_typing.Union[str, _typing.Sequence[str]]], Localization]
 ] = {
     "app": app.get,
-    "backend_2026_09_23_country_names": backend_2026_09_23_country_names.get,
-    "backend_monetization": backend_monetization.get,
+    "backend_2025_01_15_regions": backend_2025_01_15_regions.get,
+    "backend_billing": backend_billing.get,
 }
 
 

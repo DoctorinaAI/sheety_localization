@@ -292,8 +292,14 @@ final class OutputWriter {
   }) {
     final root = p.normalize(p.absolute(outputDir));
     final issues = <GenerateIssue>[];
+    // Issue paths are absolute, like those of the diagnostics, so the
+    // GitHub annotations point at the file.
     void error(String code, String message, [String? path]) =>
-        issues.add(GenerateIssue(code, message, target: target, path: path));
+        issues.add(GenerateIssue(code, message,
+            target: target,
+            path: path == null || p.isAbsolute(path)
+                ? path
+                : p.normalize(p.join(root, path))));
 
     // Desired files: generated + manifest.
     final desired = <String, String>{};
@@ -336,7 +342,7 @@ final class OutputWriter {
               'aux, nul, com1-9, lpt1-9, with any extension) that cannot be a '
               'file or directory name there; rename the sheet or locale it '
               'comes from',
-          p.join(root, rel),
+          rel,
         );
         continue;
       }

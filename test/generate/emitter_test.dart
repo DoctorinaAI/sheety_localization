@@ -1,5 +1,6 @@
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 final class _Echo implements Emitter {
   @override

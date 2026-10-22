@@ -2,8 +2,9 @@ import 'dart:convert';
 import 'dart:io' as io;
 
 import 'package:path/path.dart' as p;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 /// Reads a snapshot (`{"sheets":[{"title":..,"values":[[..]]}]}`).
 List<SheetData> loadSnapshot(String path) {

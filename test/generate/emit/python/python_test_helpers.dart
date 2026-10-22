@@ -1,16 +1,15 @@
 import 'dart:convert';
 import 'dart:io' as io;
 
-import 'package:sheety_localization/sheety_localization.dart';
-
+import '../../../sheety.dart';
 import '../../helpers.dart';
 
 /// The in-repo fixture of the Python target.
 const String pythonFixturePath = 'test/fixtures/python/python_snapshot.json';
 
-/// Reader options of the fixture: the monetization sheet is mustache.
+/// Reader options of the fixture: the billing sheet is mustache.
 final ReaderOptions pythonReaderOptions = ReaderOptions(
-  mustacheSheets: [RegExp(r'^backend-monetization$')],
+  mustacheSheets: [RegExp(r'^backend-billing$')],
 );
 
 /// Reads [path] and returns the catalog with its diagnostics (reader +

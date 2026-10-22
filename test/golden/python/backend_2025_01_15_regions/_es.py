@@ -1,6 +1,6 @@
 # This file is generated, do not edit it manually!
 # ruff: noqa
-"""Messages of the sheet "backend-2026-09-23-country-names" in es_419.
+"""Messages of the sheet "backend-2025-01-15-regions" in es (no column of its own, copied from es_419).
 
 1 of 3 messages use a fallback text.
 """
@@ -9,17 +9,17 @@ from __future__ import annotations
 
 from types import MappingProxyType as _MappingProxyType
 
-from . import Backend20260923CountryNamesLocalization
+from . import Backend20250115RegionsLocalization
 
-__all__ = ["Backend20260923CountryNamesLocalizationEs419", "LOCALIZATION"]
+__all__ = ["Backend20250115RegionsLocalizationEs", "LOCALIZATION"]
 
 
-class Backend20260923CountryNamesLocalizationEs419(Backend20260923CountryNamesLocalization):
-    """backend-2026-09-23-country-names in es_419."""
+class Backend20250115RegionsLocalizationEs(Backend20250115RegionsLocalization):
+    """backend-2025-01-15-regions in es."""
 
     __slots__ = ()
 
-    LOCALE = "es_419"
+    LOCALE = "es"
     TEMPLATES = _MappingProxyType(
         {
             "country_name_ad": "Andorra",
@@ -43,4 +43,4 @@ class Backend20260923CountryNamesLocalizationEs419(Backend20260923CountryNamesLo
 
 
 #: The (stateless) instance returned by ``get()``.
-LOCALIZATION = Backend20260923CountryNamesLocalizationEs419()
+LOCALIZATION = Backend20250115RegionsLocalizationEs()

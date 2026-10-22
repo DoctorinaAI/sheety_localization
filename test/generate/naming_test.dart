@@ -1,5 +1,6 @@
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 void main() {
   group('case conversion', () {
@@ -15,8 +16,7 @@ void main() {
     test('snake, camel, Pascal', () {
       expect(toSnakeCase('drawerTooltipHelp'), 'drawer_tooltip_help');
       expect(toSnakeCase('openAIKey'), 'open_ai_key');
-      expect(toSnakeCase('monetization_help_message2'),
-          'monetization_help_message2');
+      expect(toSnakeCase('billing_help_message2'), 'billing_help_message2');
       expect(toSnakeCase('step2Title'), 'step2_title');
       expect(toCamelCase('sign_up'), 'signUp');
       expect(toCamelCase('HTTP_server'), 'httpServer');
@@ -29,8 +29,8 @@ void main() {
     test('scope classes reproduce the previous generator', () {
       expect(scopeClassName('chat'), 'ChatLocalization');
       expect(scopeClassName('sign_up'), 'SignUpLocalization');
-      expect(scopeClassName('backend_2026_09_23_country_names'),
-          'Backend20260923CountryNamesLocalization');
+      expect(scopeClassName('backend_2025_01_15_regions'),
+          'Backend20250115RegionsLocalization');
       // The previous generator lower-cased the rest of every part.
       expect(legacyPascalCase('myAPI'), 'Myapi');
       expect(legacyPascalCase('a_b'), 'AB');

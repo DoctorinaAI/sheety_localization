@@ -1,6 +1,6 @@
 # This file is generated, do not edit it manually!
 # ruff: noqa
-"""Messages of the sheet "backend-monetization\".
+"""Messages of the sheet "backend-billing\".
 
 Base locale: en. Locales: en, ru.
 """
@@ -21,15 +21,15 @@ __all__ = [
     "SCOPE",
     "SHEET_TITLE",
     "SYNTAX",
-    "BackendMonetizationLocalization",
+    "BackendBillingLocalization",
     "get",
     "resolve_locale",
 ]
 
 #: Scope name (sanitized sheet title).
-SCOPE = "backend_monetization"
+SCOPE = "backend_billing"
 #: Title of the sheet.
-SHEET_TITLE = "backend-monetization"
+SHEET_TITLE = "backend-billing"
 #: Message syntax of the sheet: ``icu`` or ``mustache``.
 SYNTAX = "mustache"
 #: Base locale (the fourth column of the sheet).
@@ -38,26 +38,19 @@ BASE_LOCALE = "en"
 LOCALES: _typing.Tuple[str, ...] = ("en", "ru")
 
 
-class BackendMonetizationLocalization(Localization):
-    """Messages of the sheet "backend-monetization" (base locale en)."""
+class BackendBillingLocalization(Localization):
+    """Messages of the sheet "backend-billing" (base locale en)."""
 
     __slots__ = ()
 
-    SCOPE = "backend_monetization"
+    SCOPE = "backend_billing"
     BASE_LOCALE = "en"
     MESSAGES: _typing.ClassVar[_typing.Tuple[Message, ...]] = (
         Message(
-            key="monetization_price",
-            attribute="monetization_price",
+            key="billing_price",
+            attribute="billing_price",
             description="Mustache placeholders",
             placeholders=(
-                Placeholder(
-                    name="avg_cost",
-                    parameter="avg_cost",
-                    type="Object",
-                    example=None,
-                    description=None,
-                ),
                 Placeholder(
                     name="price",
                     parameter="price",
@@ -65,11 +58,18 @@ class BackendMonetizationLocalization(Localization):
                     example=None,
                     description=None,
                 ),
+                Placeholder(
+                    name="unit_price",
+                    parameter="unit_price",
+                    type="Object",
+                    example=None,
+                    description=None,
+                ),
             ),
         ),
         Message(
-            key="monetization_title",
-            attribute="monetization_title",
+            key="billing_title",
+            attribute="billing_title",
             description="Single braces are text in mustache",
             placeholders=(),
         ),
@@ -77,33 +77,33 @@ class BackendMonetizationLocalization(Localization):
     _MESSAGES_BY_KEY = _MappingProxyType({m.key: m for m in MESSAGES})
 
     @_abc.abstractmethod
-    def monetization_price(self, *, avg_cost: object, price: object) -> str:
+    def billing_price(self, *, price: object, unit_price: object) -> str:
         """Mustache placeholders
 
-        Key: ``monetization_price``.
+        Key: ``billing_price``.
 
         Arguments:
-            avg_cost (Object)
             price (Object)
+            unit_price (Object)
 
-        In en: Only {{price}} per month ({{ avg_cost }} on average)
+        In en: Only {{price}} per month ({{ unit_price }} per seat)
         """
 
     @property
     @_abc.abstractmethod
-    def monetization_title(self) -> str:
+    def billing_title(self) -> str:
         """Single braces are text in mustache
 
-        Key: ``monetization_title``.
+        Key: ``billing_title``.
 
-        In en: Support {consult}
+        In en: Contact {team}
         """
 
 
 #: Message metadata, in sheet order.
-MESSAGES = BackendMonetizationLocalization.MESSAGES
+MESSAGES = BackendBillingLocalization.MESSAGES
 
-_INSTANCES: _typing.Dict[str, BackendMonetizationLocalization] = {}
+_INSTANCES: _typing.Dict[str, BackendBillingLocalization] = {}
 
 
 def resolve_locale(requested: _typing.Union[str, _typing.Sequence[str]]) -> str:
@@ -112,7 +112,7 @@ def resolve_locale(requested: _typing.Union[str, _typing.Sequence[str]]) -> str:
     return negotiate_locale(requested, LOCALES, BASE_LOCALE)
 
 
-def get(locale: _typing.Union[str, _typing.Sequence[str]] = BASE_LOCALE) -> BackendMonetizationLocalization:
+def get(locale: _typing.Union[str, _typing.Sequence[str]] = BASE_LOCALE) -> BackendBillingLocalization:
     """The localization for ``locale`` (negotiated with :func:`resolve_locale`).
 
     Locale modules are imported on first use; instances are cached.
@@ -121,6 +121,6 @@ def get(locale: _typing.Union[str, _typing.Sequence[str]] = BASE_LOCALE) -> Back
     instance = _INSTANCES.get(code)
     if instance is None:
         module = _importlib.import_module("._" + code, __name__)
-        instance = _typing.cast(BackendMonetizationLocalization, getattr(module, "LOCALIZATION"))
+        instance = _typing.cast(BackendBillingLocalization, getattr(module, "LOCALIZATION"))
         _INSTANCES[code] = instance
     return instance

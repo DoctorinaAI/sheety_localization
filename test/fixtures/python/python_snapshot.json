@@ -223,7 +223,7 @@
    ]
   },
   {
-   "title": "backend-2026-09-23-country-names",
+   "title": "backend-2025-01-15-regions",
    "values": [
     [
      "label",
@@ -268,7 +268,7 @@
    ]
   },
   {
-   "title": "backend-monetization",
+   "title": "backend-billing",
    "values": [
     [
      "label",
@@ -278,18 +278,18 @@
      "ru"
     ],
     [
-     "monetization.price",
+     "billing.price",
      "Mustache placeholders",
      "",
-     "Only {{price}} per month ({{ avg_cost }} on average)",
-     "Всего {{price}} в месяц ({{avg_cost}} в среднем)"
+     "Only {{price}} per month ({{ unit_price }} per seat)",
+     "Всего {{price}} в месяц ({{unit_price}} за место)"
     ],
     [
-     "monetization.title",
+     "billing.title",
      "Single braces are text in mustache",
      "",
-     "Support {consult}",
-     "Поддержите {consult}"
+     "Contact {team}",
+     "Напишите {team}"
     ]
    ]
   }

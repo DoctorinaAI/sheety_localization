@@ -63,8 +63,10 @@ output of all three targets) is in [`example/`](example/).
 - **Per-target sheet selection.** For example, the Flutter app gets
   `app`/`chat`/`settings` and the backend gets the `backend-*` sheets.
 - **ICU messages**: placeholders, `plural` and `select` (nested too), with the
-  semantics of `package:intl` in every target. A plural renders the same text
-  in Dart, TypeScript and Python.
+  semantics of `package:intl` in every target. A plural picks the same branch
+  in Dart, TypeScript and Python. (JavaScript has one number type, so a `num`
+  placeholder holding `1.0` prints `1` in TypeScript and `1.0` in Dart and
+  Python; declare it `double` to get `1.0` everywhere, or pass integers.)
 - **`{{name}}` (mustache) placeholders** for sheets that use them, typically
   backend or e-mail texts.
 - **Validation before anything is written.** Each error and warning names the
@@ -129,15 +131,22 @@ Every localization sheet has the same layout. Row 1 is the header:
   sheet can have its own base.
 - **Columns E onwards** are locales: `de`, `pt_BR`, `pt-BR`, `zh_Hant`,
   `zh_Hant_TW`, `es_419`… They are normalized to `ll`, `ll_CC`, `ll_Ssss` or
-  `ll_Ssss_CC`. A header that is not a locale code is skipped with a warning.
-  A duplicate locale (`pt-BR` next to `pt_BR`) keeps the first column.
+  `ll_Ssss_CC`. A header cell is sanitized first (`pt BR` → `pt_BR`), exactly
+  as for column D. A header that is not a locale code is skipped with a
+  warning. A duplicate locale (`pt-BR` next to `pt_BR`) keeps the first
+  column. `localize` reads the header the same way, so it never fills a
+  column that `generate` skips (a `Notes` column, a second `pt_br`).
+- A cell that holds only whitespace counts as **empty** in both executables.
 - A sheet whose fourth header cell is not a language code (a `help` tab, a
   reference table) is **not a localization sheet**. It is skipped
   (`not-localization-sheet`, info). Use `ignore` to skip a sheet that matches
   the layout but should not be generated.
-- The **sheet title** becomes the scope name, sanitized and lowercased by the
-  same rule: `sign-up` becomes `sign_up` (`SignUpLocalization` in Dart and
-  Python, `sign_up` in TypeScript).
+- The **sheet title** becomes the scope name, sanitized by the same rule
+  (case is kept): `sign-up` becomes `sign_up` (`SignUpLocalization` in Dart
+  and Python, `sign_up` in TypeScript), `Sign-Up` becomes `Sign_Up`. A title
+  that is a Dart keyword (`default`, `new`) is fine for Dart, whose class is
+  always `<Name>Localization`; TypeScript and Python reject their own
+  keywords as scope names.
 
 ### Messages (ICU subset)
 
@@ -207,8 +216,9 @@ sheet looks like a mustache sheet.
   omits from short rows. Each fallback is recorded in the metadata
   (`fallbackKeys`, `isFallback`) and reported as a `fallback` info with
   counts.
-- **An empty base cell is an error** (`empty-base`). The message cannot exist
-  without its source text.
+- **An empty base cell leaves the message out** (`empty-base`, warning). The
+  message cannot exist without its source text; the rest is generated, and
+  `localize` skips such a row instead of translating its label.
 - **Duplicate labels are an error** (`duplicate-label`). Two rows of a sheet
   whose labels sanitize to the same key (`chat.title` and `chat_title`) must be
   merged in the sheet.
@@ -376,7 +386,8 @@ legacy_regional_override: false
 # Targets ----------------------------------------------------------------------
 # At least one. Each target needs its own output directory, and the
 # directories must not be nested in each other (each target keeps a manifest
-# of the files it owns there). Per target:
+# of the files it owns there). Directories are compared through symlinks and,
+# on a case-insensitive file system, ignoring case. Per target:
 #   output   (required) directory to generate into
 #   include  only sheets matching one of these RegExps (applied first)
 #   ignore   then skip sheets matching one of these (after the global ignore)
@@ -385,7 +396,7 @@ legacy_regional_override: false
 targets:
   dart:
     output: app/lib
-    ignore: ['^backend', '^telegram']
+    ignore: ['^backend', '^bot']
     options:
       directory: src/generated   # per-scope files, locales.dart, localization_meta.dart
       barrel: localization.dart  # library exporting everything; "" for none
@@ -530,9 +541,9 @@ generated into `localization_meta.dart`, so no runtime package is needed:
 |---|---|
 | `localizationScopes` | Every scope: `name`, `baseLocale`, `supportedLocales`, `messages`, `delegate`, `lookup(Locale)` |
 | `AppLocalization.messages` | Every message in sheet order: `key`, `description`, `placeholders` (`name`, `type`, `example`, `description`, `exampleValue`), `isGetter`, `exampleArguments` |
-| `l10n.templates` | The ICU text of every message in this locale (fallbacks resolved) |
+| `l10n.templates` | The source text of every message in this locale as written in the sheet: ICU, or mustache for a mustache sheet (fallbacks resolved) |
 | `l10n.fallbackKeys` | Keys that this locale has no text of its own for |
-| `l10n.format(key, args)` | Renders a message by key with named arguments, like calling the getter or method. Throws `ArgumentError` for an unknown key or a missing or mistyped argument |
+| `l10n.format(key, args)` | Renders a message by key with named arguments, like calling the getter or method. Throws `ArgumentError` for an unknown key or a missing or mistyped argument. Numbers are checked by value, the same on the VM and the web: a `double` placeholder accepts any number, an `int` one a whole number (`2.0`, not `2.5`) |
 
 Every generated class implements `LocalizationBundle` (`localeName`,
 `templates`, `fallbackKeys`, `format`). Because of that, `messages`,
@@ -870,13 +881,17 @@ generator:
 
 - rewrites only files whose content changed;
 - deletes files it generated before that are no longer generated (a removed
-  sheet or locale), even if they were edited by hand (with a warning);
+  sheet or locale). A file edited by hand since is **kept** instead and is no
+  longer owned (`modified-generated-file` warning); an edited file that is
+  still generated is overwritten with the same warning;
 - **never touches any other file**: a `pubspec.yaml`, `package.json`,
   `pyproject.toml`, `README.md` or `CHANGELOG.md` can sit in the same
   directory;
 - refuses to overwrite a file it does not own (`unowned-file`). Without a
-  manifest (first run), an existing file is taken over only when it is
-  identical or carries the generated header.
+  manifest (first run, or a path that is new to the manifest), an existing
+  file is taken over only when it is identical or carries the whole
+  generated header as comment lines; a takeover that changes the file is
+  reported (`took-over-file` warning).
 
 Commit `sheety_manifest.json` with the code. Its `sourceHash` and per-locale
 `coverage` are handy in release notes and version checks. The
@@ -1005,7 +1020,9 @@ jobs:
   usual text. `json` prints one JSON document on stdout (`ok`, `exitCode`,
   `summary`, `targets`, `issues`, `diagnostics`, each diagnostic with `code`,
   `severity`, `message`, `scope`, `sheet`, `row`, `column`, `locale`, `key`)
-  and logs to stderr.
+  and logs to stderr, also for a bad command line, configuration or
+  credentials. Annotation paths are relative to `GITHUB_WORKSPACE` (or the
+  working directory).
 
 **Offline / reproducible runs.** Save the sheet once, commit the snapshot,
 and generate from it without credentials:
@@ -1035,13 +1052,14 @@ Infos are shown with `-v`.
 | `select-duplicate-case` | error | A select has the same case twice |
 | `duplicate-label` | error | Two rows have the same key after sanitizing |
 | `duplicate-scope` | error | Two sheets have the same scope name after sanitizing; the second is skipped |
-| `empty-base` | error | The base-language cell of a row is empty; the message is left out |
+| `empty-base` | warning | The base-language cell of a row is empty; the message is left out |
 | `unsupported-meta` | error | `meta` uses `DateTime`, an unknown type, `format`, `optionalParameters`… |
 | `invalid-meta-json` | error | `meta` is not a JSON object |
 | `reserved-word` | error | A key, placeholder or scope is a reserved word of a target (`class`, Python `def`) or a name the generated code uses itself (Dart `format`, `intl`, `override`; TypeScript `then`; Python `get`) |
 | `invalid-identifier` | error | A name is not a valid identifier in a target (a key or sheet title starting with a digit, a Dart key starting with an upper-case letter) |
 | `name-collision` | error | Two names collide after case conversion (Python `fooBar` and `foo_bar`), or two scopes give the same class or (case-insensitively) directory (`rate-us-2` and `rate_us2` are both `RateUs2Localization`) |
 | `plural-missing-category` | warning | A plural lacks a category CLDR requires for the locale (`ru` needs `one few many other`); `other` is used |
+| `plural-exact-as-category` | warning | An exact `=0`/`=1`/`=2` stands in for `zero`/`one`/`two`, but that category also covers other numbers in the locale (Russian `=1{…}` without `one{…}` is also shown for 21, 31…); add the keyword case |
 | `plural-duplicate-case` | warning | A plural has `=1` and `one` (or similar); the later branch wins, as in gen-l10n |
 | `tag-mismatch` | warning | Markup tags differ from the base text or are not balanced |
 | `unused-placeholder` | warning | A placeholder declared in `meta` is used by no text |
@@ -1068,21 +1086,25 @@ Problems outside the sheet are reported with these codes:
 | `foreign-manifest` | error | The `sheety_manifest.json` in the output belongs to another target (two targets' directories mixed up); nothing is deleted |
 | `case-collision` | error | Two generated paths differ only in case |
 | `path-traversal`, `duplicate-output` | error | An output path escapes the directory, or is generated twice |
+| `reserved-file-name` | error | A generated path has a segment Windows cannot create (`con`, `nul`, `com1`…, from a sheet title or locale) |
 | `unknown-option`, `invalid-option` | error | An unknown key under `targets.<target>.options`, or a value of the wrong type |
 | `no-scopes` | error | A target's filters select no localization sheet |
-| `source-error` | error | The sheet or snapshot cannot be read |
+| `source-error` | error | The sheet or snapshot cannot be read (error messages never quote the credentials file) |
+| `usage-error`, `config-error`, `internal-error` | error | Bad command line, invalid `sheety.yaml`, or an unexpected failure (exit code 64, 2, 2); also reported in `json` / `github` format |
 | `format-failed`, `emitter-failed`, `write-failed`, `snapshot-write` | error | `dart format`, an emitter, or writing a file failed. Writing is staged (see below), so `write-failed` says exactly which targets were written |
 | `legacy-output` | warning | First run: files that look generated but are not produced any more (old ARBs, removed scopes). They are left untouched; delete them |
-| `modified-generated-file` | warning | A stale generated file was edited by hand; it is deleted anyway |
+| `modified-generated-file` | warning | A generated file was edited by hand: a stale one is kept and no longer owned, one that is still generated is overwritten |
+| `took-over-file` | warning | Files without a manifest entry that carried the generated header were taken over and rewritten |
 
 Writing is staged: the new files of every target are first written into a
-`.sheety-staging` directory inside the target's output directory. Only when
+`.sheety-staging-<target>` directory inside the target's output directory. Only when
 all of them were written are they moved into place, target by target (stale
 files are deleted first, the manifest is written last); the staging
 directories are then removed. When staging fails, nothing was written. A
 failure while moving files into place is rare (a rename on the same file
 system); the `write-failed` message then lists the targets written completely
-and the one left partly written, and the next run repairs it. Deleting before
+and the one left partly written (also `"partial": true` in `json`), and the
+next run repairs it. Deleting before
 moving also makes renaming a sheet by case only (`chat` -> `Chat`) work on
 case-insensitive file systems (macOS, Windows).
 
@@ -1188,7 +1210,7 @@ dart pub global run sheety_localization:localize \
 - `--timeout`:
   Hard timeout of a single OpenAI request, in seconds. Defaults to `120`, range 10–900. A request that the model never finishes is aborted instead of stalling a worker forever.
 - `--ignore` (or `-i`):
-  Comma-separated list of **regular expressions** — not globs — matched against sheet titles; a sheet whose title matches any of them is skipped (e.g. `^help$,^backend,^temp-`). The match is unanchored, so `backend` also skips `backend-monetization`; anchor with `^`/`$` when you want an exact title. A glob-looking `temp-*` means "temp followed by any number of dashes" and will not do what you expect.
+  Comma-separated list of **regular expressions** — not globs — matched against sheet titles; a sheet whose title matches any of them is skipped (e.g. `^help$,^backend,^temp-`). The match is unanchored, so `backend` also skips `backend-billing`; anchor with `^`/`$` when you want an exact title. A glob-looking `temp-*` means "temp followed by any number of dashes" and will not do what you expect.
 - `--prompt` (or `-p`):
   Path to a custom system prompt file for the AI model.
 
@@ -1202,7 +1224,7 @@ Language models are unreliable on ambiguous or rare locale codes, so `localize` 
 
 - **Every locale code is spelled out for the model** — name, native endonym and, for codes that are routinely misread, an explicit warning. `uk` is sent as `uk — Ukrainian (українська) — Ukrainian (Cyrillic script). NOT English and NOT "United Kingdom"`, so it can no longer come back as English.
 - **A failed batch is split, not retried.** If a request for a batch of languages fails — timeout, truncated or invalid JSON, garbage output — the batch is *not* re-sent as-is. Each language of that batch is retried on its own, so one problematic rare language cannot take its neighbours down with it.
-- **Every translation is validated before it is written**: non-empty, ICU placeholders (`{name}`) and markup tags preserved exactly, no leaked markdown fences, no runaway output. A translation that fails validation is retried alone; only that one language is affected.
+- **Every translation is validated before it is written**: non-empty, ICU placeholders (`{name}`) and markup tags preserved exactly, no leaked markdown fences, no runaway output. An ICU source must give a translation that `generate`'s ICU parser accepts, with every placeholder used the same way (argument, plural or select); a `{{name}}` source must keep its `{{name}}` placeholders. A translation that fails validation is retried alone; only that one language is affected.
 - **Partial rows are still saved.** Languages that succeeded are written to the sheet even if one of their neighbours never worked; the failed cell stays empty and is picked up on the next run.
 
 Run `generate` after `localize`: it validates the new translations as well

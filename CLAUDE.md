@@ -25,7 +25,8 @@ Keep it in sync with behaviour changes.
 ```
 bin/generate.dart            thin: runGenerate(args) + exit code
 bin/localize.dart            CLI of localize
-lib/sheety_localization.dart public barrel (exports both pipelines)
+lib/sheety_localization.dart public barrel (localize API + runGenerate; tests
+                             import the generate internals via test/sheety.dart)
 lib/src/common/              shared by both executables
   sheet_layout.dart          sanitizer(), columnFromIndex(), isLocalizationHeader()
 lib/src/localize/            the OpenAI translation pipeline (+ language_names.dart,
@@ -96,6 +97,9 @@ when a toolchain is missing. Environment variables:
 - `SHEETY_DIAGNOSTICS_OUT`: file to write the full diagnostics of the real
   snapshot to.
 - `SHEETY_KEEP_TMP=1`: keep the temporary TypeScript projects for inspection.
+- `SHEETY_REQUIRE_TOOLS=1`: a missing toolchain fails the integration tests
+  instead of skipping them (set in CI). `UPDATE_GOLDENS` is refused when `CI`
+  is set.
 
 The real sheet is internal: tests read it only through these variables and skip
 without them. Never copy real data into the repository (fixtures, goldens or

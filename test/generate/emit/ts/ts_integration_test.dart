@@ -4,7 +4,7 @@
 // node, render every message of every locale exactly like the Dart code
 // gen-l10n generates (package:intl semantics).
 //
-// Needs `node` and `npx` (tsc is fetched by `npx -y -p typescript@5.9`);
+// Needs `node` and `npx` (tsc is fetched by `npx -y -p typescript@5.9.3`);
 // skipped otherwise. With SHEETY_REAL_SNAPSHOT set, the real spreadsheet is
 // verified as well.
 @Tags(['integration'])
@@ -16,9 +16,9 @@ import 'dart:io' as io;
 import 'package:intl/intl.dart' as intl;
 // ignore: implementation_imports
 import 'package:intl/src/plural_rules.dart' as intl_rules;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
+import '../../../sheety.dart';
 import 'ts_helpers.dart';
 
 final Object _skip =

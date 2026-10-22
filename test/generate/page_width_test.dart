@@ -1,8 +1,9 @@
 import 'dart:io' as io;
 
 import 'package:path/path.dart' as p;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 void main() {
   group('resolveDartPageWidth', () {

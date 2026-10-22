@@ -7,6 +7,8 @@ import 'package:args/args.dart';
 import 'package:googleapis/sheets/v4.dart';
 import 'package:googleapis_auth/auth_io.dart';
 import 'package:sheety_localization/sheety_localization.dart';
+import 'package:sheety_localization/src/generate/source.dart'
+    show SheetSourceException, readServiceAccountCredentials, redactCredentials;
 
 /// Localize Google Sheets with OpenAI API (ChatGPT)
 void main(List<String>? $arguments) => runZonedGuarded<void>(

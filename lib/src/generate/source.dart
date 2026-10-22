@@ -9,7 +9,10 @@ import 'dart:io' as io;
 import 'package:googleapis/sheets/v4.dart';
 import 'package:googleapis_auth/auth_io.dart';
 
+import '../common/sheet_range.dart';
 import '../localize/sheets.dart' show SheetData;
+
+export '../common/sheet_range.dart' show sheetRange;
 
 /// A failure to read the spreadsheet (credentials, network, permissions,
 /// malformed snapshot).
@@ -46,13 +49,6 @@ extension SheetSourceX on SheetSource {
   Future<List<SheetData>> fetchAll({bool Function(String title)? where}) =>
       fetch(where: where).toList();
 }
-
-/// The A1 range that selects the whole sheet [title].
-///
-/// The title is always quoted and its apostrophes doubled (like
-/// `cellRange` of `localize`): an unquoted title with spaces or one that
-/// looks like a cell reference (`A1`) is not the sheet it names.
-String sheetRange(String title) => "'${title.replaceAll("'", "''")}'";
 
 /// Reads a spreadsheet through the Google Sheets API.
 final class GoogleSheetSource implements SheetSource {

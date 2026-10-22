@@ -1,6 +1,6 @@
 # This file is generated, do not edit it manually!
 # ruff: noqa
-"""Messages of the sheet "backend-2026-09-23-country-names" in en.
+"""Messages of the sheet "backend-2025-01-15-regions" in pt.
 
 0 of 3 messages use a fallback text.
 """
@@ -9,22 +9,22 @@ from __future__ import annotations
 
 from types import MappingProxyType as _MappingProxyType
 
-from . import Backend20260923CountryNamesLocalization
+from . import Backend20250115RegionsLocalization
 
-__all__ = ["Backend20260923CountryNamesLocalizationEn", "LOCALIZATION"]
+__all__ = ["Backend20250115RegionsLocalizationPt", "LOCALIZATION"]
 
 
-class Backend20260923CountryNamesLocalizationEn(Backend20260923CountryNamesLocalization):
-    """backend-2026-09-23-country-names in en."""
+class Backend20250115RegionsLocalizationPt(Backend20250115RegionsLocalization):
+    """backend-2025-01-15-regions in pt."""
 
     __slots__ = ()
 
-    LOCALE = "en"
+    LOCALE = "pt"
     TEMPLATES = _MappingProxyType(
         {
             "country_name_ad": "Andorra",
-            "country_name_br": "Brazil",
-            "country_name_us": "United States",
+            "country_name_br": "Brasil",
+            "country_name_us": "Estados Unidos",
         }
     )
     FALLBACK_KEYS = frozenset()
@@ -35,12 +35,12 @@ class Backend20260923CountryNamesLocalizationEn(Backend20260923CountryNamesLocal
 
     @property
     def country_name_br(self) -> str:
-        return "Brazil"
+        return "Brasil"
 
     @property
     def country_name_us(self) -> str:
-        return "United States"
+        return "Estados Unidos"
 
 
 #: The (stateless) instance returned by ``get()``.
-LOCALIZATION = Backend20260923CountryNamesLocalizationEn()
+LOCALIZATION = Backend20250115RegionsLocalizationPt()

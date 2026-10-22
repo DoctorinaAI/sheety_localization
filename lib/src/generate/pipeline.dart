@@ -862,7 +862,7 @@ to the file; unknown keys are errors; command-line options override it):
   targets:
     dart:
       output: dart/lib
-      ignore: ['^backend', '^telegram']
+      ignore: ['^backend', '^bot']
       options: { directory: src/generated, barrel: localization.dart }
     python:
       output: python/src/app_localization

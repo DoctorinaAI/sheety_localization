@@ -1,5 +1,6 @@
 // This file is generated, do not edit it manually!
 // ignore_for_file: directives_ordering
+// ignore_for_file: type=lint
 
 import 'dart:ui' show Locale;
 
@@ -15,5 +16,5 @@ abstract final class Locales {
   static const Locale ar$EG = Locale('ar', 'EG');
   static const Locale pt = Locale('pt');
 
-  static const List<Locale> values = [en, de, ru, pt$BR, ar, ar$EG, pt];
+  static const List<Locale> values = <Locale>[en, de, ru, pt$BR, ar, ar$EG, pt];
 }

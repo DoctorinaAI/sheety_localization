@@ -2,9 +2,9 @@ import 'dart:convert';
 import 'dart:io' as io;
 
 import 'package:path/path.dart' as p;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
+import '../sheety.dart';
 import '../fixtures/infra/fake_emitter.dart';
 
 const _multi = 'test/fixtures/infra/multi_snapshot.json';

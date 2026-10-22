@@ -1,9 +1,10 @@
 import 'dart:convert';
 import 'dart:io' as io;
 
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 import 'package:yaml/yaml.dart';
+
+import '../sheety.dart';
 
 Future<Catalog> _catalog() async {
   final sheets = await const SnapshotSource('test/fixtures/basic_snapshot.json')

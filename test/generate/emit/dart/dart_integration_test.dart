@@ -16,10 +16,10 @@ import 'dart:convert';
 import 'dart:io' as io;
 
 import 'package:path/path.dart' as p;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:sheety_localization/src/generate/emit/dart/dart_code.dart';
 import 'package:test/test.dart';
 
+import '../../../sheety.dart';
 import '../../helpers.dart';
 import 'helpers.dart';
 import 'real_snapshot_test.dart' show escapeRawControls, firstDifference;

@@ -9,10 +9,10 @@ import 'package:intl/intl.dart' as intl;
 // it covers; the public API only exposes evaluation.
 // ignore: implementation_imports
 import 'package:intl/src/plural_rules.dart' as intl_rules;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:sheety_localization/src/generate/emit/python/python_runtime.dart';
 import 'package:test/test.dart';
 
+import '../../../sheety.dart';
 import 'python_test_helpers.dart';
 
 /// Integration tests of the generated Python package.
@@ -43,18 +43,18 @@ void main() {
       final labels = [
         // Raw sheet labels are sanitized by format().
         [
-          'backend-2026-09-23-country-names',
+          'backend-2025-01-15-regions',
           'pt_BR',
           'country.name.ad',
           <String, Object?>{},
           'Andorra',
         ],
         [
-          'backend_monetization',
+          'backend_billing',
           'ru',
-          'monetization.price',
-          {'price': r'$5', 'avg_cost': 4.5},
-          r'Всего $5 в месяц (4.5 в среднем)',
+          'billing.price',
+          {'price': r'$5', 'unit_price': 4.5},
+          r'Всего $5 в месяц (4.5 за место)',
         ],
       ];
       run.check(

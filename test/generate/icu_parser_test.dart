@@ -1,5 +1,6 @@
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 /// Compact structural dump of a message.
 String dump(IcuMessage message) => message.parts.map(_node).join();

@@ -1,4 +1,4 @@
-import 'package:sheety_localization/sheety_localization.dart';
+import '../../sheety.dart';
 
 /// A deterministic stand-in for a real emitter: one text file per scope
 /// plus an index, and one `.dart` file so formatting can be observed.

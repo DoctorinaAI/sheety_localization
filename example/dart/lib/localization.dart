@@ -1,5 +1,6 @@
 // This file is generated, do not edit it manually!
 // ignore_for_file: directives_ordering
+// ignore_for_file: type=lint
 library;
 
 export 'package:flutter_localizations/flutter_localizations.dart';

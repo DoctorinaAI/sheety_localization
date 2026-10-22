@@ -8,8 +8,9 @@
 import 'dart:convert';
 import 'dart:io' as io;
 
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 const _flutterScopes = [
   'app',

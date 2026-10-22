@@ -1,8 +1,9 @@
 import 'dart:io' as io;
 
 import 'package:path/path.dart' as p;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 const _header = '// ${EmitOptions.defaultHeader}\n';
 
@@ -214,6 +215,9 @@ void main() {
     ]);
     expect(result.issues.map((i) => i.code),
         containsAll(['case-collision', 'duplicate-output']));
+    // Absolute, so a GitHub annotation points at the file.
+    expect(result.issues.map((i) => i.path),
+        everyElement(predicate<String?>((path) => p.isAbsolute(path!))));
   });
 
   test('an edited file that is no longer generated is kept and disowned', () {

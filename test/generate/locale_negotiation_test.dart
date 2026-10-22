@@ -8,9 +8,10 @@ import 'dart:convert';
 import 'dart:io' as io;
 
 import 'package:path/path.dart' as p;
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:sheety_localization/src/generate/emit/python/python_runtime.dart';
 import 'package:test/test.dart';
+
+import '../sheety.dart';
 
 const String _table = 'test/fixtures/locale_negotiation.json';
 

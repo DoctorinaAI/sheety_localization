@@ -1,6 +1,6 @@
 # This file is generated, do not edit it manually!
 # ruff: noqa
-"""Messages of the sheet "backend-2026-09-23-country-names\".
+"""Messages of the sheet "backend-2025-01-15-regions\".
 
 Base locale: en. Locales: en, ru, pt, pt_BR, es_419, es.
 """
@@ -21,15 +21,15 @@ __all__ = [
     "SCOPE",
     "SHEET_TITLE",
     "SYNTAX",
-    "Backend20260923CountryNamesLocalization",
+    "Backend20250115RegionsLocalization",
     "get",
     "resolve_locale",
 ]
 
 #: Scope name (sanitized sheet title).
-SCOPE = "backend_2026_09_23_country_names"
+SCOPE = "backend_2025_01_15_regions"
 #: Title of the sheet.
-SHEET_TITLE = "backend-2026-09-23-country-names"
+SHEET_TITLE = "backend-2025-01-15-regions"
 #: Message syntax of the sheet: ``icu`` or ``mustache``.
 SYNTAX = "icu"
 #: Base locale (the fourth column of the sheet).
@@ -38,12 +38,12 @@ BASE_LOCALE = "en"
 LOCALES: _typing.Tuple[str, ...] = ("en", "ru", "pt", "pt_BR", "es_419", "es")
 
 
-class Backend20260923CountryNamesLocalization(Localization):
-    """Messages of the sheet "backend-2026-09-23-country-names" (base locale en)."""
+class Backend20250115RegionsLocalization(Localization):
+    """Messages of the sheet "backend-2025-01-15-regions" (base locale en)."""
 
     __slots__ = ()
 
-    SCOPE = "backend_2026_09_23_country_names"
+    SCOPE = "backend_2025_01_15_regions"
     BASE_LOCALE = "en"
     MESSAGES: _typing.ClassVar[_typing.Tuple[Message, ...]] = (
         Message(
@@ -99,9 +99,9 @@ class Backend20260923CountryNamesLocalization(Localization):
 
 
 #: Message metadata, in sheet order.
-MESSAGES = Backend20260923CountryNamesLocalization.MESSAGES
+MESSAGES = Backend20250115RegionsLocalization.MESSAGES
 
-_INSTANCES: _typing.Dict[str, Backend20260923CountryNamesLocalization] = {}
+_INSTANCES: _typing.Dict[str, Backend20250115RegionsLocalization] = {}
 
 
 def resolve_locale(requested: _typing.Union[str, _typing.Sequence[str]]) -> str:
@@ -110,7 +110,7 @@ def resolve_locale(requested: _typing.Union[str, _typing.Sequence[str]]) -> str:
     return negotiate_locale(requested, LOCALES, BASE_LOCALE)
 
 
-def get(locale: _typing.Union[str, _typing.Sequence[str]] = BASE_LOCALE) -> Backend20260923CountryNamesLocalization:
+def get(locale: _typing.Union[str, _typing.Sequence[str]] = BASE_LOCALE) -> Backend20250115RegionsLocalization:
     """The localization for ``locale`` (negotiated with :func:`resolve_locale`).
 
     Locale modules are imported on first use; instances are cached.
@@ -119,6 +119,6 @@ def get(locale: _typing.Union[str, _typing.Sequence[str]] = BASE_LOCALE) -> Back
     instance = _INSTANCES.get(code)
     if instance is None:
         module = _importlib.import_module("._" + code, __name__)
-        instance = _typing.cast(Backend20260923CountryNamesLocalization, getattr(module, "LOCALIZATION"))
+        instance = _typing.cast(Backend20250115RegionsLocalization, getattr(module, "LOCALIZATION"))
         _INSTANCES[code] = instance
     return instance
