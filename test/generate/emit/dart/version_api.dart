@@ -1,7 +1,6 @@
-/// The API extraction of the consumer's `tool/version.dart`
-/// (DoctorinaAI/localization), copied verbatim: it decides the semver bump
-/// of the published package from the generated Dart, so the generated code
-/// must keep matching these expressions.
+/// A release script that derives the semver bump of a package wrapping the
+/// generated Dart from its public API by matching these expressions on the
+/// sources. The generated code must keep matching them.
 library;
 
 /// The public surface of a generated `lib/`, as `tool/version.dart` sees it.

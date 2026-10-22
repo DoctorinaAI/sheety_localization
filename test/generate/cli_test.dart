@@ -205,7 +205,7 @@ syntax:
   mustache: ['^backend-monetization\$']
 targets:
   dart:   { output: dart/lib, ignore: ['^backend', '^telegram'] }
-  python: { output: python/src/doctorina_localization, include: ['^backend'] }
+  python: { output: python/src/app_localization, include: ['^backend'] }
   ts:     { output: web/src/generated, ignore: ['^backend'] }
 ''');
       final registry = defaultTargets();

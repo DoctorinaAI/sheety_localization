@@ -213,7 +213,7 @@ include_empty: false
 legacy_regional_override: true
 targets:
   dart:   { output: dart/lib, ignore: ['^backend', '^telegram'], options: { directory: src/generated, nested: [1, {a: b}] } }
-  python: { output: python/src/doctorina_localization, include: ['^backend'] }
+  python: { output: python/src/app_localization, include: ['^backend'] }
   ts:     { output: web/src/generated, ignore: '^backend', header: TS only }
 ''';
 

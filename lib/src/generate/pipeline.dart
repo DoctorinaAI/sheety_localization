@@ -811,7 +811,7 @@ to the file; unknown keys are errors; command-line options override it):
       ignore: ['^backend', '^telegram']
       options: { directory: src/generated, barrel: localization.dart }
     python:
-      output: python/src/doctorina_localization
+      output: python/src/app_localization
       include: ['^backend']
     ts:
       output: web/src/generated
