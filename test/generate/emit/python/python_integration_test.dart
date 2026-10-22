@@ -4,7 +4,13 @@ library;
 import 'dart:convert';
 import 'dart:io' as io;
 
+import 'package:intl/intl.dart' as intl;
+// The plural cross-check needs intl's own rule table to know which locales
+// it covers; the public API only exposes evaluation.
+// ignore: implementation_imports
+import 'package:intl/src/plural_rules.dart' as intl_rules;
 import 'package:sheety_localization/sheety_localization.dart';
+import 'package:sheety_localization/src/generate/emit/python/python_runtime.dart';
 import 'package:test/test.dart';
 
 import 'python_test_helpers.dart';
@@ -121,6 +127,158 @@ void main() {
     test('renders like the Dart reference', () => run.check());
   }, skip: skip);
 
+  group('plural rules', () {
+    late final io.Directory dir;
+    late final List<String> shared;
+    setUpAll(() {
+      dir = io.Directory.systemTemp.createTempSync('sheety_py_pl_');
+      // Locales whose rules package:intl knows under the same name.
+      shared = [
+        for (final l in pluralLocales())
+          if (intl.Intl.verifiedLocale(
+                l,
+                intl_rules.localeHasPluralRules,
+                onFailure: (_) => null,
+              ) ==
+              intl.Intl.canonicalizedLocale(l))
+            l,
+      ];
+      io.File('${dir.path}/_runtime.py').writeAsStringSync(pythonRuntime(
+        '',
+        [for (final l in shared) LocaleTag.parse(l)],
+      ));
+    });
+    tearDownAll(() => dir.deleteSync(recursive: true));
+
+    /// Runs [script] with `_runtime` importable and [input] in a JSON file;
+    /// returns the decoded JSON it prints.
+    Object? runPython(String script, Object? input) {
+      final file = io.File('${dir.path}/check.py')..writeAsStringSync(script);
+      final data = io.File('${dir.path}/input.json')
+        ..writeAsStringSync(jsonEncode(input));
+      final result =
+          runChecked(python!, ['-I', file.path, dir.path, data.path]);
+      return jsonDecode(result.stdout as String);
+    }
+
+    test('compiled CLDR rules + intl operands == Intl.pluralLogic', () {
+      expect(shared.length, greaterThan(80));
+      final numbers = <num>[
+        for (var k = 0; k <= 220; k++) k,
+        for (var k = 1; k <= 25; k++) -k,
+        1000, 1001, 10000, 100000, 1000000, 2000000, 1000001, 10000000, //
+        for (var k = 0; k <= 120; k++) k / 10,
+        for (var k = 0; k <= 40; k++) k / 4,
+        // Fractions beyond intl's three digits: `n` relations see them.
+        0.01, 0.001, 0.0001, 0.0004, 1.0001, 1.0004, 1.001, 2.0001, 2.0004,
+        3.0004, 11.0004, 101.0004, 21.0, 1.05, 1.005, 2.999, 11.5, 21.25,
+        101.5, 1e-7, -0.5, -1.5, -2.5, -21.5, -1.0004, 1000000.5, 3.14159,
+      ];
+      const sets = [
+        ['zero', 'one', 'two', 'few', 'many', 'other'],
+        ['one', 'other'],
+        ['few', 'other'],
+        ['many', 'other'],
+        ['two', 'few', 'other'],
+        ['zero', 'other'],
+      ];
+      final got = (runPython('''
+import json
+import sys
+
+sys.path.insert(0, sys.argv[1])
+import _runtime as rt
+
+with open(sys.argv[2], encoding="utf-8") as f:
+    data = json.load(f)
+out = []
+for locale in data["locales"]:
+    rule = rt.PLURAL_RULES[locale]
+    for n in data["numbers"]:
+        for cases in data["sets"]:
+            out.append(rt.plural_case(n, rule, tuple(cases)))
+print(json.dumps(out))
+''', {
+        'locales': shared,
+        'numbers': numbers,
+        'sets': sets,
+      })! as List<Object?>)
+          .cast<String>();
+      final mismatches = <String>[];
+      var k = 0;
+      for (final l in shared) {
+        for (final n in numbers) {
+          for (final s in sets) {
+            String? c(String name) => s.contains(name) ? name : null;
+            final dart = intl.Intl.pluralLogic<String>(
+              n,
+              locale: intl.Intl.canonicalizedLocale(l),
+              zero: c('zero'),
+              one: c('one'),
+              two: c('two'),
+              few: c('few'),
+              many: c('many'),
+              other: 'other',
+            );
+            if (dart != got[k]) {
+              mismatches.add('$l($n, $s): dart=$dart python=${got[k]}');
+            }
+            k++;
+          }
+        }
+      }
+      expect(k, got.length);
+      expect(mismatches, isEmpty, reason: mismatches.take(20).join('\n'));
+    });
+
+    test('counts of other numeric types', () {
+      final got = runPython('''
+import json
+import sys
+from decimal import Decimal
+from fractions import Fraction
+
+sys.path.insert(0, sys.argv[1])
+import _runtime as rt
+
+cases = ("one", "few", "many", "other")
+ru = rt.PLURAL_RULES["ru"]
+out = [
+    rt.plural_case(Decimal("1.5"), ru, cases),
+    rt.plural_case(Decimal("21"), ru, cases),
+    rt.plural_case(Fraction(5, 1), ru, cases),
+    rt.plural_case(Fraction(3, 2), ru, cases),
+    rt.plural_category("ru", Decimal("22")),
+]
+for bad in ("1", 1j, None):
+    try:
+        rt.plural_case(bad, ru, cases)
+        out.append("no error")
+    except TypeError as e:
+        out.append(str(e))
+print(json.dumps(out))
+''', null);
+      String dart(num n) => intl.Intl.pluralLogic<String>(
+            n,
+            locale: 'ru',
+            one: 'one',
+            few: 'few',
+            many: 'many',
+            other: 'other',
+          );
+      expect(got, [
+        dart(1.5),
+        dart(21),
+        dart(5),
+        dart(1.5),
+        'few',
+        'Plural count must be a real number, got str',
+        'Plural count must be a real number, got complex',
+        'Plural count must be a real number, got NoneType',
+      ]);
+    });
+  }, skip: skip);
+
   final real = io.Platform.environment['SHEETY_REAL_SNAPSHOT'];
   group('real snapshot', () {
     late final _Run run;
@@ -233,6 +391,7 @@ final class _Run {
       for (var i = 0; i <= 100; i++) i / 10,
       for (var i = 0; i <= 300; i += 7) i / 100,
       1e6, 2e6, 1.5, 21.5, 100.05, 1.005, -1, -1.5, 1e-7, 0.999, //
+      1.001, 1.0004, 2.0001, 21.0, 0.5, 11.0004, -1.0004,
     ];
     final values = <num>[
       0.0, -0.0, 1.0, 1.5, 0.1, 1e20, 1e21, 1.5e21, 1e-6, 1e-7, 1.5e-7, //
@@ -298,9 +457,30 @@ final class _Run {
     final pluralMismatches = <String>[];
     for (final locale in catalog.locales) {
       final rules = pluralRulesFor(locale.code);
+      // intl itself where it has the locale's rules; the CLDR rules over
+      // intl operands where it has none (the documented divergence).
+      final viaIntl = !intlLacksPluralRules(locale.code) &&
+          intl.Intl.verifiedLocale(
+                locale.code,
+                intl_rules.localeHasPluralRules,
+                onFailure: (_) => null,
+              ) !=
+              null;
       final got = (plural[locale.code]! as List<Object?>).cast<String>();
       for (var i = 0; i < numbers.length; i++) {
-        final want = rules.select(PluralOperands.intl(numbers[i])).name;
+        final want = viaIntl
+            ? intl.Intl.pluralLogic<String>(
+                numbers[i],
+                locale: locale.code,
+                zero: 'zero',
+                one: 'one',
+                two: 'two',
+                few: 'few',
+                many: 'many',
+                other: 'other',
+                useExplicitNumberCases: false,
+              )
+            : rules.select(PluralOperands.intl(numbers[i])).name;
         if (got[i] != want) {
           pluralMismatches.add('$locale ${numbers[i]}: python ${got[i]}, '
               'dart $want');

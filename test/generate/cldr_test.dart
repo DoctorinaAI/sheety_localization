@@ -158,10 +158,21 @@ void main() {
     test('intl rounds the integer digits', () {
       expect(
         PluralOperands.intl(1.5),
-        const PluralOperands(i: 2, v: 1, f: 5, t: 5),
+        const PluralOperands(i: 2, v: 1, f: 5, t: 5, n: 1.5),
       );
-      expect(PluralOperands.intl(1.0), const PluralOperands(i: 1));
+      expect(PluralOperands.intl(1.0), const PluralOperands(i: 1, n: 1));
       expect(PluralOperands.intl(-1).i, -1);
+    });
+
+    test('intl keeps the count: digits beyond the third are not lost', () {
+      // f only sees three fraction digits, but `n` relations test the count.
+      final tiny = PluralOperands.intl(1.0004);
+      expect(tiny.f, 0);
+      expect(tiny.isIntegral, isFalse);
+      expect(PluralOperands.intl(21.0).isIntegral, isTrue);
+      expect(PluralOperands.intl(9007199254740993).isIntegral, isTrue);
+      expect(PluralOperands.parse('1.000').isIntegral, isTrue);
+      expect(PluralOperands.parse('1.001').isIntegral, isFalse);
     });
   });
 
@@ -385,6 +396,49 @@ process.stdout.write(JSON.stringify(out));
             '${value.take(3).join('; ')}');
       }
       expect(report['fr'], contains('1.5: ecma=one intl=other'));
+    });
+
+    test('evaluator over intl operands == intl for fractional counts', () {
+      // `n` relations must test the count itself: `f` only sees three
+      // fraction digits, so 1.001 is not `n = 1` (es), 1e-7 is not `n = 0`
+      // (ar) and 2.0001 is not `n = 2` (mt).
+      const values = <num>[
+        0.5, 1.5, 2.5, 10.5, 0.1, 21.0, 1.001, 1.0004, 1.0001, 1e-7, 0.001, //
+        0.0004, 2.0001, 2.0004, 3.0001, 11.0001, 21.0001, 100.0001,
+        1000000.0001, 0.999, 1.999, -1.0004, -2.0001, -0.5,
+      ];
+      final integerReport = intlDiscrepancies();
+      final locales = intl_rules.pluralRules.keys
+          .where((l) => l != 'default' && l != 'en_ISO')
+          .where((l) => hasPluralRules(l) && !integerReport.containsKey(l))
+          .toList()
+        ..sort();
+      expect(locales, containsAll(['ar', 'be', 'es', 'lt', 'lv', 'mt', 'ro']));
+      final mismatches = <String>[];
+      for (final locale in locales) {
+        final rules = pluralRulesFor(locale);
+        for (final value in values) {
+          final theirs = intl.Intl.pluralLogic<String>(
+            value,
+            zero: 'zero',
+            one: 'one',
+            two: 'two',
+            few: 'few',
+            many: 'many',
+            other: 'other',
+            locale: locale,
+            useExplicitNumberCases: false,
+          );
+          final ours = rules.select(PluralOperands.intl(value)).name;
+          if (ours != theirs) mismatches.add('$locale $value: $ours/$theirs');
+        }
+      }
+      expect(mismatches, isEmpty, reason: mismatches.take(20).join('\n'));
+      String select(String locale, num value) =>
+          pluralRulesFor(locale).select(PluralOperands.intl(value)).name;
+      expect(select('es', 1.001), 'other');
+      expect(select('ar', 1e-7), 'other');
+      expect(select('mt', 2.0001), 'other');
     });
   });
 }

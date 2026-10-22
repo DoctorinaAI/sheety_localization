@@ -9,7 +9,8 @@ output, which uses ``package:intl``:
   ``=2`` (``zero``/``one``/``two``) branch wins first, then the CLDR category
   of the locale, with ``two`` falling back to ``few`` and everything to
   ``other``; the CLDR operands are computed like intl does (``i`` is the
-  *rounded* value, at most three fraction digits);
+  *rounded* value, at most three fraction digits) and ``n`` relations test
+  the count itself (``1.0004`` is not ``n = 1``);
 * select branches are chosen like ``Intl.selectLogic``;
 * values are converted to text like Dart's ``'$value'`` (``1.0``, ``1e+21``,
   ``true``), see :func:`to_str`.
@@ -21,8 +22,10 @@ from __future__ import annotations
 
 import abc
 import math
+import numbers
 import re
 from dataclasses import dataclass
+from decimal import Decimal
 from types import MappingProxyType
 from typing import (
     Callable,
@@ -58,8 +61,8 @@ __all__ = [
 #: Unicode CLDR release the plural rules were compiled from.
 CLDR_VERSION = "@CLDR@"
 
-#: A compiled plural rule: ``(i, v, f, t) -> category``.
-PluralRule = Callable[[int, int, int, int], str]
+#: A compiled plural rule: ``(n, i, v, f, t) -> category``.
+PluralRule = Callable[[float, int, int, int, int], str]
 
 
 class _Record:
@@ -240,19 +243,32 @@ def to_str(value: object) -> str:
     return str(value)
 
 
-def intl_operands(how_many: float) -> Tuple[int, int, int, int]:
-    """CLDR operands ``(i, v, f, t)`` exactly as ``package:intl`` computes
-    them: an integral float counts as an int, ``i`` is the value rounded half
-    away from zero, ``v`` the number of fraction digits of the Dart text
-    (at most 3), ``f``/``t`` from floating point arithmetic."""
-    n: Union[int, float] = how_many
+def intl_operands(how_many: object) -> Tuple[float, int, int, int, int]:
+    """CLDR operands ``(n, i, v, f, t)`` exactly as ``package:intl`` computes
+    them: ``n`` is the count itself (an integral float counts as an int; the
+    sign is kept), ``i`` the count rounded half away from zero, ``v`` the
+    number of fraction digits of the Dart text (at most 3), ``f``/``t`` from
+    floating point arithmetic.
+
+    Other real numbers (``Decimal``, ``Fraction``) are converted with
+    ``float()``; anything else raises ``TypeError``."""
+    n: Union[int, float]
+    if isinstance(how_many, (int, float)):
+        n = how_many
+    elif isinstance(how_many, (numbers.Real, Decimal)):
+        n = float(how_many)
+    else:
+        raise TypeError(
+            f"Plural count must be a real number, got {type(how_many).__name__}"
+        )
     if isinstance(n, float):
         if not math.isfinite(n):
             raise ValueError(f"Plural count must be finite, got {n!r}")
         if n.is_integer():
             n = int(n)
     if isinstance(n, int):
-        return int(n), 0, 0, 0
+        count = int(n)
+        return count, count, 0, 0, 0
     magnitude = abs(n)
     rounded = math.floor(magnitude)
     if magnitude - rounded >= 0.5:
@@ -266,7 +282,7 @@ def intl_operands(how_many: float) -> Tuple[int, int, int, int]:
     t = f
     while t and t % 10 == 0:
         t //= 10
-    return i, v, f, t
+    return n, i, v, f, t
 
 
 def plural_case(how_many: float, rule: PluralRule, cases: Tuple[str, ...]) -> str:
@@ -304,50 +320,50 @@ def select_case(choice: object, cases: Tuple[str, ...]) -> str:
 # --- CLDR plural rules (cardinal), only for the locales in use ---
 
 
-def cardinal_root(i: int, v: int, f: int, t: int) -> str:
+def cardinal_root(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "root"."""
     return "other"
 
 
-def cardinal_ar(i: int, v: int, f: int, t: int) -> str:
+def cardinal_ar(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "ar"."""
-    if (f == 0 and i == 0):
+    if (n == i and i == 0):
         return "zero"
-    if (f == 0 and i == 1):
+    if (n == i and i == 1):
         return "one"
-    if (f == 0 and i == 2):
+    if (n == i and i == 2):
         return "two"
-    if (f == 0 and 3 <= i % 100 <= 10):
+    if (n == i and 3 <= i % 100 <= 10):
         return "few"
-    if (f == 0 and 11 <= i % 100 <= 99):
+    if (n == i and 11 <= i % 100 <= 99):
         return "many"
     return "other"
 
 
-def cardinal_de(i: int, v: int, f: int, t: int) -> str:
+def cardinal_de(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "de"."""
     if i == 1 and v == 0:
         return "one"
     return "other"
 
 
-def cardinal_en(i: int, v: int, f: int, t: int) -> str:
+def cardinal_en(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "en"."""
     if i == 1 and v == 0:
         return "one"
     return "other"
 
 
-def cardinal_es(i: int, v: int, f: int, t: int) -> str:
+def cardinal_es(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "es"."""
-    if (f == 0 and i == 1):
+    if (n == i and i == 1):
         return "one"
     if i != 0 and i % 1000000 == 0 and v == 0:
         return "many"
     return "other"
 
 
-def cardinal_he(i: int, v: int, f: int, t: int) -> str:
+def cardinal_he(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "he"."""
     if (i == 1 and v == 0) or (i == 0 and v != 0):
         return "one"
@@ -356,12 +372,12 @@ def cardinal_he(i: int, v: int, f: int, t: int) -> str:
     return "other"
 
 
-def cardinal_ja(i: int, v: int, f: int, t: int) -> str:
+def cardinal_ja(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "ja"."""
     return "other"
 
 
-def cardinal_pt(i: int, v: int, f: int, t: int) -> str:
+def cardinal_pt(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "pt"."""
     if 0 <= i <= 1:
         return "one"
@@ -370,7 +386,7 @@ def cardinal_pt(i: int, v: int, f: int, t: int) -> str:
     return "other"
 
 
-def cardinal_ru(i: int, v: int, f: int, t: int) -> str:
+def cardinal_ru(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "ru"."""
     if v == 0 and i % 10 == 1 and i % 100 != 11:
         return "one"
@@ -381,7 +397,7 @@ def cardinal_ru(i: int, v: int, f: int, t: int) -> str:
     return "other"
 
 
-def cardinal_sl(i: int, v: int, f: int, t: int) -> str:
+def cardinal_sl(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR 48.2.0 cardinal rules of "sl"."""
     if v == 0 and i % 100 == 1:
         return "one"

@@ -85,6 +85,7 @@ final class PluralOperands {
     this.f = 0,
     this.t = 0,
     this.e = 0,
+    this.n,
   });
 
   /// Operands of a decimal string such as `1`, `1.50`, `-3.0` or `1.1c6`.
@@ -157,6 +158,10 @@ final class PluralOperands {
   /// (`1.0`) is first converted to an int, so `v` is `0` for it. The sign is
   /// kept (`n` is not made absolute). Only `i`, `v`, `f` and `t` are
   /// produced; `w` and `e` are always `0`, as in intl.
+  ///
+  /// intl tests `n` relations against the count itself, not against the
+  /// truncated fraction digits, so the count is kept as [n]: `1.0004` has
+  /// `f = 0` but is not integral, and `n = 1` does not hold for it.
   factory PluralOperands.intl(num howMany) {
     var n = howMany;
     final truncated = n.truncate();
@@ -177,7 +182,7 @@ final class PluralOperands {
         t ~/= 10;
       }
     }
-    return PluralOperands(i: i, v: v, f: f, t: t);
+    return PluralOperands(i: i, v: v, f: f, t: t, n: n);
   }
 
   /// Parses integer digits, keeping huge values within 64 bits.
@@ -214,12 +219,21 @@ final class PluralOperands {
   /// Compact decimal exponent (`c` and `e` are synonyms).
   final int e;
 
-  /// Whether `n` is an integer (has no non-zero fraction digits).
-  bool get isIntegral => f == 0;
+  /// The source number itself, when known ([PluralOperands.intl]); `null`
+  /// when the operands describe a decimal string, whose visible fraction
+  /// digits are all there is.
+  final num? n;
+
+  /// Whether `n` is an integer: the source number [n] when known, otherwise
+  /// the visible fraction digits are all zero.
+  bool get isIntegral => switch (n) {
+        null => f == 0,
+        final num n => n is int || n == n.truncateToDouble(),
+      };
 
   @override
   String toString() => 'PluralOperands(i: $i, v: $v, w: $w, f: $f, t: $t, '
-      'e: $e)';
+      'e: $e${n == null ? '' : ', n: $n'})';
 
   @override
   bool operator ==(Object other) =>
@@ -229,10 +243,11 @@ final class PluralOperands {
       other.w == w &&
       other.f == f &&
       other.t == t &&
-      other.e == e;
+      other.e == e &&
+      other.n == n;
 
   @override
-  int get hashCode => Object.hash(i, v, w, f, t, e);
+  int get hashCode => Object.hash(i, v, w, f, t, e, n);
 }
 
 /// Plain (non-exponential) shortest decimal representation of [value] >= 0.
@@ -320,7 +335,8 @@ final class PluralRelation {
   /// Evaluates the relation for [operands].
   bool evaluate(PluralOperands operands) {
     // `n` is the only operand that can be non-integral. A non-integral value
-    // never equals an integer, so `=` is false and `!=` is true.
+    // never equals an integer (nor does its modulo), so `=` is false and `!=`
+    // is true. An integral `n` equals `i`.
     final int value;
     switch (operand) {
       case PluralOperand.n:

@@ -16,18 +16,20 @@ String pyPluralFunctionFor(LocaleTag locale) =>
     pyPluralFunction(resolvePluralLocale(locale.code));
 
 /// Compiles the cardinal rules of the CLDR locale [resolved] into a Python
-/// function `(i, v, f, t) -> str` over `package:intl` operands.
+/// function `(n, i, v, f, t) -> str` over `package:intl` operands.
 ///
 /// Operands `w` and `e` do not exist in intl (always 0) and are compiled as
-/// the constant `0`. `n` relations hold only for integral values
-/// (`f == 0`), as in the core evaluator.
+/// the constant `0`. `n` relations hold only for an integral count
+/// (`n == i`, the count equals its rounded value), as in intl and the core
+/// evaluator: `f` sees three fraction digits only, so `1.0004` has `f == 0`
+/// but is not `n = 1`.
 String compilePluralFunction(String? resolved) {
   final name = pyPluralFunction(resolved);
   final rules = resolved == null
       ? const <PluralCategory, PluralCondition>{}
       : pluralRulesFor(resolved).conditions;
   final out = StringBuffer()
-    ..writeln('def $name(i: int, v: int, f: int, t: int) -> str:')
+    ..writeln('def $name(n: float, i: int, v: int, f: int, t: int) -> str:')
     ..writeln(
       '    """CLDR $cldrVersion cardinal rules of '
       '"${resolved ?? 'root'}"."""',
@@ -110,8 +112,9 @@ String _relation(PluralRelation relation) {
     inRange = relation.negated ? 'not $any' : any;
   }
   if (relation.operand != PluralOperand.n) return inRange;
-  // `n` is never equal to an integer when it has a fraction.
-  return relation.negated ? '(f != 0 or $inRange)' : '(f == 0 and $inRange)';
+  // `n` is never equal to an integer (nor is its modulo) when it has a
+  // fraction; an integral `n` equals `i`.
+  return relation.negated ? '(n != i or $inRange)' : '(n == i and $inRange)';
 }
 
 /// The complete `_runtime.py` for [locales] (every locale of the catalog).
@@ -155,7 +158,8 @@ output, which uses ``package:intl``:
   ``=2`` (``zero``/``one``/``two``) branch wins first, then the CLDR category
   of the locale, with ``two`` falling back to ``few`` and everything to
   ``other``; the CLDR operands are computed like intl does (``i`` is the
-  *rounded* value, at most three fraction digits);
+  *rounded* value, at most three fraction digits) and ``n`` relations test
+  the count itself (``1.0004`` is not ``n = 1``);
 * select branches are chosen like ``Intl.selectLogic``;
 * values are converted to text like Dart's ``'$value'`` (``1.0``, ``1e+21``,
   ``true``), see :func:`to_str`.
@@ -167,8 +171,10 @@ from __future__ import annotations
 
 import abc
 import math
+import numbers
 import re
 from dataclasses import dataclass
+from decimal import Decimal
 from types import MappingProxyType
 from typing import (
     Callable,
@@ -204,8 +210,8 @@ __all__ = [
 #: Unicode CLDR release the plural rules were compiled from.
 CLDR_VERSION = "@CLDR@"
 
-#: A compiled plural rule: ``(i, v, f, t) -> category``.
-PluralRule = Callable[[int, int, int, int], str]
+#: A compiled plural rule: ``(n, i, v, f, t) -> category``.
+PluralRule = Callable[[float, int, int, int, int], str]
 
 
 class _Record:
@@ -386,19 +392,32 @@ def to_str(value: object) -> str:
     return str(value)
 
 
-def intl_operands(how_many: float) -> Tuple[int, int, int, int]:
-    """CLDR operands ``(i, v, f, t)`` exactly as ``package:intl`` computes
-    them: an integral float counts as an int, ``i`` is the value rounded half
-    away from zero, ``v`` the number of fraction digits of the Dart text
-    (at most 3), ``f``/``t`` from floating point arithmetic."""
-    n: Union[int, float] = how_many
+def intl_operands(how_many: object) -> Tuple[float, int, int, int, int]:
+    """CLDR operands ``(n, i, v, f, t)`` exactly as ``package:intl`` computes
+    them: ``n`` is the count itself (an integral float counts as an int; the
+    sign is kept), ``i`` the count rounded half away from zero, ``v`` the
+    number of fraction digits of the Dart text (at most 3), ``f``/``t`` from
+    floating point arithmetic.
+
+    Other real numbers (``Decimal``, ``Fraction``) are converted with
+    ``float()``; anything else raises ``TypeError``."""
+    n: Union[int, float]
+    if isinstance(how_many, (int, float)):
+        n = how_many
+    elif isinstance(how_many, (numbers.Real, Decimal)):
+        n = float(how_many)
+    else:
+        raise TypeError(
+            f"Plural count must be a real number, got {type(how_many).__name__}"
+        )
     if isinstance(n, float):
         if not math.isfinite(n):
             raise ValueError(f"Plural count must be finite, got {n!r}")
         if n.is_integer():
             n = int(n)
     if isinstance(n, int):
-        return int(n), 0, 0, 0
+        count = int(n)
+        return count, count, 0, 0, 0
     magnitude = abs(n)
     rounded = math.floor(magnitude)
     if magnitude - rounded >= 0.5:
@@ -412,7 +431,7 @@ def intl_operands(how_many: float) -> Tuple[int, int, int, int]:
     t = f
     while t and t % 10 == 0:
         t //= 10
-    return i, v, f, t
+    return n, i, v, f, t
 
 
 def plural_case(how_many: float, rule: PluralRule, cases: Tuple[str, ...]) -> str:

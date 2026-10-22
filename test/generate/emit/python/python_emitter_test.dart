@@ -129,7 +129,7 @@ void main() {
         expect(
           RegExp(
                   r'^\s*(from|import) (?!\.|__future__|typing|abc|importlib|'
-                  r'math|re|types|dataclasses)',
+                  r'math|numbers|decimal|re|types|dataclasses)',
                   multiLine: true)
               .hasMatch(f.contents),
           isFalse,
@@ -382,7 +382,7 @@ void main() {
   group('plural rule compiler', () {
     test('ru', () {
       expect(compilePluralFunction('ru'), '''
-def cardinal_ru(i: int, v: int, f: int, t: int) -> str:
+def cardinal_ru(n: float, i: int, v: int, f: int, t: int) -> str:
     """CLDR $cldrVersion cardinal rules of "ru"."""
     if v == 0 and i % 10 == 1 and i % 100 != 11:
         return "one"
@@ -398,7 +398,9 @@ def cardinal_ru(i: int, v: int, f: int, t: int) -> str:
       expect(compilePluralFunction('en'), contains('if i == 1 and v == 0:'));
       expect(compilePluralFunction('de'), contains('if i == 1 and v == 0:'));
       expect(compilePluralFunction('ak'),
-          contains('if (f == 0 and 0 <= i <= 1):'));
+          contains('if (n == i and 0 <= i <= 1):'));
+      // `f` sees three fraction digits only: es 1.001 / 1.0004 is not `one`.
+      expect(compilePluralFunction('es'), contains('if (n == i and i == 1):'));
     });
 
     test('w and e are folded (always 0 in intl)', () {
