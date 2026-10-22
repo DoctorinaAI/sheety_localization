@@ -9,6 +9,8 @@ import 'package:intl/intl.dart' as intl;
 import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
 
+import 'helpers.dart' show hasTool;
+
 /// Locales of the real sheets (Flutter and backend scopes).
 const _sheetLocales = [
   'en', 'ru', 'be', 'es', 'de', 'hi', 'it', 'fr', 'pt', 'pt_BR', 'zh', //
@@ -532,10 +534,4 @@ List<String> expandSamples(String samples) {
   return out;
 }
 
-bool _which(String tool) {
-  try {
-    return io.Process.runSync('which', [tool]).exitCode == 0;
-  } on Object {
-    return false;
-  }
-}
+bool _which(String tool) => hasTool(tool);

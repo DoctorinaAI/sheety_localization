@@ -149,26 +149,30 @@ List<Map<String, Object?>> argumentSets(Message message) {
 }
 
 /// A Python 3 interpreter: `SHEETY_PYTHON` or `python3` on the `PATH`;
-/// `null` when none runs.
+/// `null` when none runs (a failure instead under `SHEETY_REQUIRE_TOOLS=1`).
 String? findPython() {
   final candidate = io.Platform.environment['SHEETY_PYTHON'] ?? 'python3';
   try {
     final result = io.Process.runSync(candidate, ['--version']);
     if (result.exitCode == 0) return candidate;
   } on io.ProcessException {
-    return null;
+    // Reported below.
   }
+  reportMissingTool('$candidate is not available (set SHEETY_PYTHON)');
   return null;
 }
 
-/// Whether `[python] -m [module] --version` works.
+/// Whether `[python] -m [module] --version` works (a failure instead of
+/// `false` under `SHEETY_REQUIRE_TOOLS=1`).
 bool hasPythonModule(String python, String module) {
+  var ok = false;
   try {
-    return io.Process.runSync(python, ['-m', module, '--version']).exitCode ==
-        0;
+    ok = io.Process.runSync(python, ['-m', module, '--version']).exitCode == 0;
   } on io.ProcessException {
-    return false;
+    ok = false;
   }
+  if (!ok) reportMissingTool('$python -m $module is not available');
+  return ok;
 }
 
 /// Writes [files] under [root].

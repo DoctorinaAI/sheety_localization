@@ -172,6 +172,12 @@ console.log(JSON.stringify({
           workingDirectory: dir.path,
         );
         if (install.exitCode != 0) {
+          // Offline locally is a skip; on a CI the registry must be
+          // reachable, or the Solid check would silently stop running.
+          final ci = (io.Platform.environment['CI'] ?? '').isNotEmpty;
+          if (ci || requireTools) {
+            fail('npm install failed: ${install.stderr}');
+          }
           markTestSkipped('npm install failed: ${install.stderr}');
           return;
         }

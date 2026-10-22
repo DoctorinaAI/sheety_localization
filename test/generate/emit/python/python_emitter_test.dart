@@ -62,7 +62,7 @@ void main() {
 
   group('golden', () {
     test('output matches test/golden/python', () {
-      final update = io.Platform.environment['UPDATE_GOLDENS'] == '1';
+      final update = updateGoldens;
       final root = io.Directory(_goldenDir);
       if (update) {
         if (root.existsSync()) root.deleteSync(recursive: true);

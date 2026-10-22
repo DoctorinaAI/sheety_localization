@@ -35,6 +35,12 @@ example/dart/
 example/ts/
 example/python/
 
+# Bulky test data: the expected emitter output (~460 KB) and the CLDR sample
+# table (~70 KB) only matter in a checkout of the repository, where the tests
+# that read them run; nobody runs the tests of a downloaded package.
+test/golden/
+test/fixtures/cldr_plural_samples.json
+
 # Build, test and tooling output
 build/
 coverage/

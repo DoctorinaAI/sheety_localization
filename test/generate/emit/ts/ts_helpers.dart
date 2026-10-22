@@ -9,6 +9,13 @@ import 'package:sheety_localization/sheety_localization.dart';
 
 import '../../helpers.dart';
 
+export '../../helpers.dart' show hasTool, requireTools;
+
+/// The exact TypeScript compiler the generated code is checked with. Pinned
+/// to a patch release so a new upstream release cannot change the result of
+/// a run; bump it deliberately.
+const String typescriptVersion = '5.9.3';
+
 /// The fixture of the TypeScript tests.
 const String tsFixturePath = 'test/fixtures/ts/ts_snapshot.json';
 
@@ -34,15 +41,6 @@ void writeFiles(io.Directory dir, Iterable<GeneratedFile> files) {
     io.File('${dir.path}/${file.relativePath}')
       ..parent.createSync(recursive: true)
       ..writeAsStringSync(file.contents);
-  }
-}
-
-/// Whether [tool] is on the PATH.
-bool hasTool(String tool) {
-  try {
-    return io.Process.runSync('which', [tool]).exitCode == 0;
-  } on io.ProcessException {
-    return false;
   }
 }
 
@@ -180,7 +178,7 @@ Map<String, Object?> toDart(Message message, Map<String, Object?> args) => {
 Future<io.ProcessResult> runTsc(
   io.Directory dir,
   List<String> arguments, {
-  String version = '5.9',
+  String version = typescriptVersion,
 }) =>
     io.Process.run(
       'npx',

@@ -47,7 +47,7 @@ void main() {
 
   group('golden', () {
     final files = emitTs(tsFixtureCatalog());
-    final update = io.Platform.environment['UPDATE_GOLDENS'] == '1';
+    final update = updateGoldens;
 
     setUpAll(() {
       if (!update) return;

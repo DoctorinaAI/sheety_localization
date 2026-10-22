@@ -1,5 +1,6 @@
 # Integration tests run the generated code with real toolchains (flutter,
-# node + tsc, python3 + mypy) and skip themselves when a tool is missing.
+# node + tsc, python3 + mypy + pyright) and skip themselves when a tool is
+# missing, unless SHEETY_REQUIRE_TOOLS=1 (set in CI) turns that into a failure.
 # Run only them with `dart test --tags=integration`, or exclude them with
 # `dart test -x integration`.
 tags:
