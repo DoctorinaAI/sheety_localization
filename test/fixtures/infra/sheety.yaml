@@ -1,0 +1,16 @@
+# Example configuration used by the CLI tests.
+snapshot: multi_snapshot.json
+ignore: ['^help$']
+syntax:
+  mustache: ['^backend-']
+header: Generated for tests.
+targets:
+  dart:
+    output: out/dart
+    ignore: ['^backend']
+  python:
+    output: out/python
+    include: ['^backend']
+  ts:
+    output: out/ts
+    ignore: ['^backend']

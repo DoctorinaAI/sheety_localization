@@ -1,0 +1,228 @@
+// This file is generated, do not edit it manually!
+
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localization.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Portuguese (`pt`).
+class AppLocalizationPt extends AppLocalization {
+  AppLocalizationPt([String locale = 'pt']) : super(locale);
+
+  @override
+  String get title => 'Exemplo';
+
+  @override
+  String greeting(String name) {
+    return 'Olá, $name!';
+  }
+
+  @override
+  String items(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count itens',
+      many: '$count de itens',
+      one: '# item',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String overridden(num n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n many',
+      two: 'two',
+      one: 'one-ish',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pronoun(String gender) {
+    String _temp0 = intl.Intl.selectLogic(gender, {
+      'male': 'ele',
+      'female': 'ela',
+      'other': 'eles',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String nested(String gender, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items',
+      one: 'one item',
+      zero: 'nothing',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items',
+      one: 'one item',
+      zero: 'nothing',
+    );
+    String _temp2 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count things',
+      one: 'one thing',
+      zero: 'nothing',
+    );
+    String _temp3 = intl.Intl.selectLogic(gender, {
+      'male': 'He has $_temp0',
+      'female': 'She has $_temp1',
+      'other': 'They have $_temp2',
+    });
+    return '$_temp3';
+  }
+
+  @override
+  String lastSeen(Object when) {
+    return 'Visto $when';
+  }
+
+  @override
+  String get terms => 'Aceite os <b>termos</b> e a <a>política</a>';
+
+  @override
+  String get special =>
+      'It\'s \$5 \\ 100% \"quoted\" #1\nsecond\tline\r\nthird ünïcødé 😀 \$x \\n';
+
+  @override
+  String specialArg(String name) {
+    return '${name}s and $name\'s \$ ${name}_x';
+  }
+
+  @override
+  String price(num amount) {
+    return 'Price: $amount €';
+  }
+
+  @override
+  String get fallbackOnly => 'Only English';
+
+  @override
+  String emptyBranch(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count',
+      one: '$count',
+      zero: '',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  Map<String, String> get templates => _templatesPt;
+
+  @override
+  Set<String> get fallbackKeys => const <String>{
+    'overridden',
+    'nested',
+    'special',
+    'specialArg',
+    'price',
+    'fallbackOnly',
+    'emptyBranch',
+  };
+}
+
+/// The translations for Portuguese, as used in Brazil (`pt_BR`).
+class AppLocalizationPtBr extends AppLocalizationPt {
+  AppLocalizationPtBr() : super('pt_BR');
+
+  @override
+  String get title => 'Exemplo';
+
+  @override
+  String greeting(String name) {
+    return 'Olá, $name!';
+  }
+
+  @override
+  String items(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count itens',
+      many: '$count de itens',
+      one: '# item',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pronoun(String gender) {
+    String _temp0 = intl.Intl.selectLogic(gender, {
+      'male': 'ele',
+      'female': 'ela',
+      'other': 'eles',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String lastSeen(Object when) {
+    return 'Visto $when';
+  }
+
+  @override
+  String get terms => 'Aceite os <b>termos</b> e a <a>política</a>';
+
+  @override
+  Map<String, String> get templates => _templatesPtBr;
+
+  @override
+  Set<String> get fallbackKeys => const <String>{
+    'overridden',
+    'nested',
+    'special',
+    'specialArg',
+    'price',
+    'fallbackOnly',
+    'emptyBranch',
+  };
+}
+
+const Map<String, String> _templatesPt = <String, String>{
+  'title': 'Exemplo',
+  'greeting': 'Olá, {name}!',
+  'items': '{count, plural, one{# item} many{{count} de itens} other{{count} itens}}',
+  'overridden':
+      '{n, plural, =1{exactly one} one{one-ish} =2{two} other{{n} many}}',
+  'pronoun': '{gender, select, male{ele} female{ela} other{eles}}',
+  'nested': '{gender, select, male{He has {count, plural, =0{nothing} one{one item} other{{count} items}}} female{She has {count, plural, =0{nothing} one{one item} other{{count} items}}} other{They have {count, plural, =0{nothing} one{one thing} other{{count} things}}}}',
+  'lastSeen': 'Visto {when}',
+  'terms': 'Aceite os <b>termos</b> e a <a>política</a>',
+  'special': 'It\'s \$5 \\ 100% \"quoted\" #1\nsecond\tline\r\nthird ünïcødé 😀 \$x \\n',
+  'specialArg': '{name}s and {name}\'s \$ {name}_x',
+  'price': 'Price: {amount} €',
+  'fallbackOnly': 'Only English',
+  'emptyBranch': '{count, plural, =0{} one{{count}} other{{count}}}',
+};
+
+const Map<String, String> _templatesPtBr = <String, String>{
+  'title': 'Exemplo',
+  'greeting': 'Olá, {name}!',
+  'items': '{count, plural, one{# item} many{{count} de itens} other{{count} itens}}',
+  'overridden':
+      '{n, plural, =1{exactly one} one{one-ish} =2{two} other{{n} many}}',
+  'pronoun': '{gender, select, male{ele} female{ela} other{eles}}',
+  'nested': '{gender, select, male{He has {count, plural, =0{nothing} one{one item} other{{count} items}}} female{She has {count, plural, =0{nothing} one{one item} other{{count} items}}} other{They have {count, plural, =0{nothing} one{one thing} other{{count} things}}}}',
+  'lastSeen': 'Visto {when}',
+  'terms': 'Aceite os <b>termos</b> e a <a>política</a>',
+  'special': 'It\'s \$5 \\ 100% \"quoted\" #1\nsecond\tline\r\nthird ünïcødé 😀 \$x \\n',
+  'specialArg': '{name}s and {name}\'s \$ {name}_x',
+  'price': 'Price: {amount} €',
+  'fallbackOnly': 'Only English',
+  'emptyBranch': '{count, plural, =0{} one{{count}} other{{count}}}',
+};

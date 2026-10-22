@@ -20,14 +20,20 @@ arch.z
 *.tar.gz
 *.tgz
 
-# Local configuration
+# Local configuration and contributor guidance
 .vscode/
 .claude/
+CLAUDE.md
 prompt.txt
 tool/
 
-# Generated example output
-example/lib/
+# Example: ship only the configuration, the snapshot and the README (pub.dev
+# shows example/README.md). The generated output and the packaging files of
+# example/dart, example/ts and example/python live in the repository; they
+# would only bloat the archive (and example/dart is a nested Flutter package).
+example/dart/
+example/ts/
+example/python/
 
 # Build, test and tooling output
 build/

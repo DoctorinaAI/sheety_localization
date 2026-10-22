@@ -1,0 +1,7 @@
+# Integration tests run the generated code with real toolchains (flutter,
+# node + tsc, python3 + mypy) and skip themselves when a tool is missing.
+# Run only them with `dart test --tags=integration`, or exclude them with
+# `dart test -x integration`.
+tags:
+  integration:
+    timeout: 10x

@@ -1,0 +1,56 @@
+abc } def
+a {b} c
+{n, plural, =0{z} one{o} other{# x}}
+it's {x}
+{n, plural, other{a}} tail}
+{ x }
+{0}
+{n,select,a{x} 1{y} other{z}}
+{n, plural, =3{x} other{y}}
+{n, plural, offset:1 other{y}}
+{n, selectordinal, one{x} other{y}}
+{a|b}
+{n, plural, other{a}
+a { b
+{n, plural, one{a}}
+{n, select, a{x}}
+{n, plural, few {a} many{b} other{c}}
+{n, plural, = 1 {a} other{b}}
+{n, plural, =1{a} one{b} other{c}}
+{n, plural, ONE{a} other{b}}
+{n, plural, 1{a} other{b}}
+{n, select, plural{a} other{b}}
+{n, select, other{{m, plural, one{x} other{{m} y}}}}
+{x, date, ::yMd}
+{x, time, ::Hm}
+{x, number}
+{plural}
+{other}
+{select, select, other{a}}
+''
+'{x}'
+{x}{y}
+{}
+{ }
+}
+{
+{n, plural,other{}}
+{n, plural, other {}  }
+{ n , plural , other { a } }
+{n, plural, other{a} xyz{b}}
+{n, select, a b{x} other{y}}
+{n, select, 1a{x} other{y}}
+{_x}
+{x$}
+{n, plural, =00{x} other{y}}
+{n, plural, zero{a} other{b} other{c}}
+<b>{x}</b>
+{n, plural, one{<b>1</b>} other{<b>#</b>}}
+a\nb {x}\n c
+{x, plural, other{a}, }
+{x , }
+{n, plural, other{a}}{n, select, other{b}}
+Hello
+{n, plural, =0{none} =1{one} =2{two} few{few} many{many} other{{n} more}}
+{a, select, x{{b, plural, one{1} other{n}}} other{-}}
+Price: $5 \ {amount}

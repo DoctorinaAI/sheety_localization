@@ -1,0 +1,38 @@
+{
+  "sheets": [
+    {
+      "title": "help",
+      "values": [
+        ["Notes for translators: keep {placeholders} and <tags> as they are."]
+      ]
+    },
+    {
+      "title": "app",
+      "values": [
+        ["label", "description", "meta", "en", "de", "ru", "pt_BR", "ar", "ar_EG"],
+        ["title", "Application title", "", "Sheety Notes", "Sheety Notizen", "Заметки Sheety", "Notas Sheety", "ملاحظات Sheety", ""],
+        ["greeting", "Greets the user on the home screen", "{\"placeholders\": {\"name\": {\"type\": \"String\", \"example\": \"Alice\", \"description\": \"First name of the user\"}}}", "Hello, {name}!", "Hallo, {name}!", "Привет, {name}!", "Olá, {name}!", "مرحبا {name}!", "أهلا {name}!"],
+        ["notes", "Number of notes in the list", "{\"placeholders\": {\"count\": {\"type\": \"int\", \"example\": \"3\"}}}", "{count, plural, =0{No notes} one{One note} other{{count} notes}}", "{count, plural, =0{Keine Notizen} one{Eine Notiz} other{{count} Notizen}}", "{count, plural, =0{Нет заметок} one{{count} заметка} few{{count} заметки} many{{count} заметок} other{{count} заметки}}", "{count, plural, =0{Nenhuma nota} one{Uma nota} many{{count} de notas} other{{count} notas}}", "{count, plural, zero{لا ملاحظات} one{ملاحظة واحدة} two{ملاحظتان} few{{count} ملاحظات} many{{count} ملاحظة} other{{count} ملاحظة}}", ""],
+        ["sharedBy", "Who shared a note", "{\"placeholders\": {\"gender\": {\"type\": \"String\", \"example\": \"female\"}, \"name\": {\"type\": \"String\", \"example\": \"Alice\"}}}", "{gender, select, male{{name} shared his note} female{{name} shared her note} other{{name} shared their note}}", "{gender, select, male{{name} hat seine Notiz geteilt} female{{name} hat ihre Notiz geteilt} other{{name} hat eine Notiz geteilt}}", "{gender, select, male{{name} поделился заметкой} female{{name} поделилась заметкой} other{{name} поделились заметкой}}", "{gender, select, male{{name} compartilhou a nota dele} female{{name} compartilhou a nota dela} other{{name} compartilhou uma nota}}", "", ""],
+        ["terms", "Inline markup is passed through as text", "", "I accept the <b>terms</b>", "Ich akzeptiere die <b>Bedingungen</b>", "Я принимаю <b>условия</b>", "Aceito os <b>termos</b>", "أوافق على <b>الشروط</b>", ""],
+        ["lastSync", "Undeclared placeholder: typed Object", "", "Last synced {time}", "Zuletzt synchronisiert {time}", "Синхронизировано {time}", "Sincronizado {time}"]
+      ]
+    },
+    {
+      "title": "sign-up",
+      "values": [
+        ["label", "description", "meta", "de", "en"],
+        ["signUp", "Button", "", "Registrieren", "Sign up"],
+        ["codeSent", "", "{\"placeholders\": {\"phone\": {\"type\": \"String\", \"example\": \"+49 30 1234567\"}, \"seconds\": {\"type\": \"int\", \"example\": \"30\"}}}", "Code an {phone} gesendet, erneut in {seconds} s", "Code sent to {phone}, resend in {seconds}s"]
+      ]
+    },
+    {
+      "title": "backend-mail",
+      "values": [
+        ["label", "description", "meta", "en", "de", "ru"],
+        ["welcome.subject", "Subject of the welcome e-mail", "{\"placeholders\": {\"name\": {\"type\": \"String\", \"example\": \"Alice\"}}}", "Welcome to Sheety Notes, {{name}}!", "Willkommen bei Sheety Notes, {{name}}!", "Добро пожаловать в Sheety Notes, {{ name }}!"],
+        ["trial.ends", "Single braces are plain text in mustache sheets", "{\"placeholders\": {\"days\": {\"type\": \"int\", \"example\": \"7\"}}}", "Your trial ends in {{days}} day(s) {see plans}", "Ihre Testphase endet in {{days}} Tag(en) {siehe Tarife}", "Пробный период закончится через {{days}} дн. {см. тарифы}"]
+      ]
+    }
+  ]
+}

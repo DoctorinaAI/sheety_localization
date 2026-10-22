@@ -15,6 +15,8 @@ on:
       - "bin/**.dart"
       - "lib/**.dart"
       - "test/**.dart"
+      - "test/fixtures/**"
+      - "dart_test.yaml"
       - "example/**.dart"
       - "example/**.html"
       - ".github/workflows/*.yml"
@@ -34,6 +36,8 @@ on:
       - "bin/**.dart"
       - "lib/**.dart"
       - "test/**.dart"
+      - "test/fixtures/**"
+      - "dart_test.yaml"
       - "example/**.dart"
       - "example/**.html"
       - ".github/workflows/*.yml"
@@ -61,7 +65,7 @@ jobs:
     env:
       pub-cache: pub
       PUB_CACHE: /github/home/.pub-cache
-    timeout-minutes: 10
+    timeout-minutes: 25
     outputs:
       version: ${{ steps.setup.outputs.version }}
     concurrency:
@@ -113,9 +117,67 @@ jobs:
         timeout-minutes: 1
         run: dart analyze --fatal-infos --fatal-warnings bin/ lib/ test/
 
-      - name: 🧪 Run unit tests
-        id: run-unit-tests
+      - name: 🧰 Install Node.js, Python and mypy
+        id: install-integration-tools
         timeout-minutes: 5
+        # The integration tests compile and run the generated TypeScript
+        # (node + npx tsc) and Python (python3 + mypy --strict). Without these
+        # tools they skip, so install them to actually exercise the output.
+        run: |
+          apt-get update -qq
+          apt-get install -y -qq --no-install-recommends \
+            nodejs npm python3 mypy ca-certificates > /dev/null
+          node --version && npm --version
+          python3 --version && mypy --version
+
+      - name: 🧪 Run unit and integration tests
+        id: run-unit-tests
+        timeout-minutes: 10
         run: |
           dart test --color --platform=vm --concurrency=12 \
-            --timeout=60s --reporter=github
+            --timeout=120s --reporter=github
+
+  flutter-integration:
+    name: "Flutter integration"
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: flutter-integration-${{ github.workflow }}-${{ github.ref_name }}
+      cancel-in-progress: true
+    permissions:
+      contents: read
+    steps:
+      - name: 📦 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: 🐦 Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: 🧰 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 🐍 Setup Python and mypy
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 👷 Install dependencies
+        run: |
+          python -m pip install --quiet mypy
+          dart pub get --no-example
+
+      - name: 🧪 Run integration tests (generated Dart analyzed by Flutter)
+        timeout-minutes: 15
+        # The generated Dart imports package:flutter, so analyzing and
+        # running it needs the Flutter SDK; the container job above only has
+        # the Dart SDK and skips those tests.
+        run: |
+          dart test --color --platform=vm --tags=integration \
+            --timeout=300s --reporter=github

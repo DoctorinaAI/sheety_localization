@@ -4,30 +4,12 @@ library;
 import 'dart:async';
 import 'dart:collection';
 
+import '../common/sheet_layout.dart';
 import 'client.dart';
-import 'language_names.dart';
 import 'models.dart';
 import 'prompt.dart';
 import 'utils.dart';
 import 'validation.dart';
-
-/// Whether [header] describes a localization sheet.
-///
-/// The expected layout is `label | description | meta | source | locale ...`,
-/// so the fourth column is the source language the rest are translated from.
-/// It does not have to be English: `ru`, `de`, `pt_BR` and any other
-/// recognized language code are equally valid sources.
-///
-/// A spreadsheet usually holds other sheets too — reference tables, notes —
-/// whose columns are ordinary data. Localizing those would overwrite them with
-/// translations, so a sheet whose fourth column is not a recognized language
-/// (e.g. a `Family` or `Region` data column) is left alone.
-bool isLocalizationHeader(List<Object?> header) {
-  if (header.length < 5) return false;
-  final source = header[3];
-  if (source is! String) return false;
-  return resolveLanguageName(source) != null;
-}
 
 /// Extract cells to be localized from the raw [values] of a sheet.
 ///

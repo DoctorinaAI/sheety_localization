@@ -1,0 +1,297 @@
+{
+ "sheets": [
+  {
+   "title": "help",
+   "values": [
+    [
+     "Not a localization sheet."
+    ]
+   ]
+  },
+  {
+   "title": "app",
+   "values": [
+    [
+     "label",
+     "description",
+     "meta",
+     "en",
+     "ru",
+     "pt_BR",
+     "ar",
+     "sl",
+     "he",
+     "de",
+     "ja"
+    ],
+    [
+     "title",
+     "Application title",
+     "",
+     "Example",
+     "Пример",
+     "Exemplo",
+     "مثال",
+     "Primer",
+     "דוגמה",
+     "Beispiel",
+     "例"
+    ],
+    [
+     "greeting",
+     "Greets the user",
+     "{\"placeholders\": {\"userName\": {\"type\": \"String\", \"example\": \"Bob\", \"description\": \"User name\"}}}",
+     "Hello, {userName}!",
+     "Привет, {userName}!",
+     "Olá, {userName}!",
+     "مرحبا {userName}",
+     "Živjo, {userName}!",
+     "שלום, {userName}!",
+     "Hallo, {userName}!",
+     "こんにちは、{userName}さん！"
+    ],
+    [
+     "items",
+     "",
+     "{\"description\": \"Number of items in the cart\", \"placeholders\": {\"count\": {\"type\": \"int\", \"example\": \"3\"}}}",
+     "{count, plural, =0{No items} =1{One item} other{{count} items}}",
+     "{count, plural, =0{Нет товаров} one{{count} товар} few{{count} товара} many{{count} товаров} other{{count} товара}}",
+     "{count, plural, =0{Nenhum item} one{Um item} many{{count} de itens} other{{count} itens}}",
+     "{count, plural, zero{لا عناصر} one{عنصر واحد} two{عنصران} few{{count} عناصر} many{{count} عنصرًا} other{{count} عنصر}}",
+     "{count, plural, one{{count} izdelek} few{{count} izdelki} other{{count} izdelkov}}",
+     "{count, plural, one{פריט אחד} two{שני פריטים} other{{count} פריטים}}",
+     "{count, plural, =0{Keine Artikel} one{Ein Artikel} other{{count} Artikel}}",
+     "{count, plural, other{{count} 個}}"
+    ],
+    [
+     "distance",
+     "Fractional plural count",
+     "{\"placeholders\": {\"km\": {\"type\": \"num\", \"example\": \"1.5\"}}}",
+     "{km, plural, one{{km} kilometer} other{{km} kilometers}}",
+     "{km, plural, one{{km} километр} few{{km} километра} many{{km} километров} other{{km} километра}}",
+     "{km, plural, one{{km} quilômetro} other{{km} quilômetros}}",
+     "",
+     "",
+     "",
+     "{km, plural, one{{km} Kilometer} other{{km} Kilometer}}",
+     ""
+    ],
+    [
+     "pronoun",
+     "Select with a nested plural",
+     "{\"placeholders\": {\"gender\": {\"type\": \"String\", \"example\": \"female\"}, \"count\": {\"type\": \"int\", \"example\": \"2\"}}}",
+     "{gender, select, male{He has {count, plural, =1{one cat} other{{count} cats}}} female{She has {count, plural, =1{one cat} other{{count} cats}}} other{They have {count, plural, =1{one cat} other{{count} cats}}}}",
+     "{gender, select, male{У него {count, plural, one{{count} кошка} few{{count} кошки} other{{count} кошек}}} other{У них {count, plural, one{{count} кошка} few{{count} кошки} other{{count} кошек}}}}",
+     "",
+     "",
+     "",
+     "",
+     "{gender, select, male{Er hat {count} Katzen} female{Sie hat {count} Katzen} other{Sie haben {count} Katzen}}",
+     ""
+    ],
+    [
+     "nestedPlural",
+     "Plural inside a plural",
+     "{\"placeholders\": {\"files\": {\"type\": \"int\", \"example\": \"2\"}, \"folders\": {\"type\": \"int\", \"example\": \"1\"}}}",
+     "{files, plural, =0{No files} one{One file in {folders, plural, one{one folder} other{{folders} folders}}} other{{files} files in {folders, plural, one{one folder} other{{folders} folders}}}}",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "terms",
+     "Inline markup",
+     "",
+     "Accept the <b>terms</b> and the <a>policy</a><br/>",
+     "Примите <b>условия</b> и <a>политику</a><br/>",
+     "",
+     "",
+     "",
+     "",
+     "Akzeptieren Sie die <b>Bedingungen</b> und die <a>Richtlinie</a><br/>",
+     ""
+    ],
+    [
+     "special",
+     "Characters that need escaping: \"quotes\", \\ and\nnewlines",
+     "",
+     "It's \"quoted\" \\ backslash $5 100% #1\nsecond line\ttab   end 👋🏽 ‮",
+     "Это \"цитата\" — 'апостроф' \\ $5 #",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "タブ\tと改行\r\n"
+    ],
+    [
+     "lastSeen",
+     "Undeclared placeholder (typed Object)",
+     "",
+     "Last seen {when}",
+     "Был(а) {when}",
+     "Visto {when}",
+     "",
+     "",
+     "",
+     "Zuletzt {when}",
+     ""
+    ],
+    [
+     "getHTTPError",
+     "Acronym in the key",
+     "{\"placeholders\": {\"statusCode\": {\"type\": \"int\", \"example\": \"404\"}}}",
+     "HTTP error {statusCode}",
+     "Ошибка HTTP {statusCode}",
+     "Erro HTTP {statusCode}",
+     "",
+     "",
+     "",
+     "HTTP-Fehler {statusCode}",
+     ""
+    ],
+    [
+     "type",
+     "Key and placeholder shadowing Python builtins",
+     "{\"placeholders\": {\"id\": {\"type\": \"String\", \"example\": \"a1\"}}}",
+     "Type {id}",
+     "Тип {id}",
+     "",
+     "",
+     "",
+     "",
+     "Typ {id}",
+     ""
+    ],
+    [
+     "step2Title",
+     "",
+     "",
+     "Step 2",
+     "Шаг 2",
+     "Passo 2",
+     "",
+     "",
+     "",
+     "Schritt 2",
+     ""
+    ],
+    [
+     "badge",
+     "Empty plural branch",
+     "{\"placeholders\": {\"count\": {\"type\": \"int\", \"example\": \"0\"}}}",
+     "{count, plural, =0{} other{{count}}}",
+     "{count, plural, =0{} other{{count}}}",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "role",
+     "Inferred select (String)",
+     "",
+     "{role, select, admin{Administrator} other{User}}",
+     "{role, select, admin{Администратор} other{Пользователь}}",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    [
+     "price",
+     "Double placeholder",
+     "{\"placeholders\": {\"amount\": {\"type\": \"double\", \"example\": \"9.99\"}}}",
+     "Price: {amount}",
+     "Цена: {amount}",
+     "Preço: {amount}",
+     "",
+     "",
+     "",
+     "Preis: {amount}",
+     ""
+    ]
+   ]
+  },
+  {
+   "title": "backend-2026-09-23-country-names",
+   "values": [
+    [
+     "label",
+     "description",
+     "meta",
+     "en",
+     "ru",
+     "pt",
+     "pt_BR",
+     "es_419"
+    ],
+    [
+     "country.name.ad",
+     "Country name",
+     "",
+     "Andorra",
+     "Андорра",
+     "Andorra",
+     "Andorra",
+     "Andorra"
+    ],
+    [
+     "country.name.br",
+     "Country name",
+     "",
+     "Brazil",
+     "Бразилия",
+     "Brasil",
+     "",
+     "Brasil"
+    ],
+    [
+     "country.name.us",
+     "Country name",
+     "",
+     "United States",
+     "США",
+     "Estados Unidos",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "title": "backend-monetization",
+   "values": [
+    [
+     "label",
+     "description",
+     "meta",
+     "en",
+     "ru"
+    ],
+    [
+     "monetization.price",
+     "Mustache placeholders",
+     "",
+     "Only {{price}} per month ({{ avg_cost }} on average)",
+     "Всего {{price}} в месяц ({{avg_cost}} в среднем)"
+    ],
+    [
+     "monetization.title",
+     "Single braces are text in mustache",
+     "",
+     "Support {consult}",
+     "Поддержите {consult}"
+    ]
+   ]
+  }
+ ]
+}

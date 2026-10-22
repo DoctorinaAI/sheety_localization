@@ -1,0 +1,118 @@
+// This file is generated, do not edit it manually!
+
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localization.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Russian (`ru`).
+class AppLocalizationRu extends AppLocalization {
+  AppLocalizationRu([String locale = 'ru']) : super(locale);
+
+  @override
+  String get title => 'Пример';
+
+  @override
+  String greeting(String name) {
+    return 'Привет, $name!';
+  }
+
+  @override
+  String items(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count товара',
+      many: '$count товаров',
+      few: '$count товара',
+      one: '$count товар',
+      zero: 'Нет товаров',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String overridden(num n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n many',
+      two: 'two',
+      one: 'one-ish',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pronoun(String gender) {
+    String _temp0 = intl.Intl.selectLogic(gender, {
+      'male': 'он',
+      'female': 'она',
+      'other': 'они',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String nested(String gender, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вещи',
+      many: '$count вещей',
+      few: '$count вещи',
+      one: '$count вещь',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count вещи',
+      many: '$count вещей',
+      few: '$count вещи',
+      one: '$count вещь',
+    );
+    String _temp2 = intl.Intl.selectLogic(gender, {
+      'male': 'У него $_temp0',
+      'other': 'У них $_temp1',
+    });
+    return '$_temp2';
+  }
+
+  @override
+  String lastSeen(Object when) {
+    return 'Был(а) $when';
+  }
+
+  @override
+  String get terms => 'Примите <b>условия</b> и <a>политику</a>';
+
+  @override
+  String get special => 'Это \$5 \\ 100% #1\nвторая строка';
+
+  @override
+  String specialArg(String name) {
+    return '$nameы';
+  }
+
+  @override
+  String price(num amount) {
+    return 'Цена: $amount ₽';
+  }
+
+  @override
+  String get fallbackOnly => 'Only English';
+
+  @override
+  String emptyBranch(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count',
+      one: '$count',
+      zero: '',
+    );
+    return '$_temp0';
+  }
+}

@@ -1,0 +1,19 @@
+{
+ "sheets": [
+  {
+   "title": "app",
+   "values": [
+    ["label", "description", "meta", "en", "de"],
+    ["broken", "", "", "Hello {name", "Hallo {name}"],
+    ["ok", "", "", "Fine", "Gut"]
+   ]
+  },
+  {
+   "title": "chat",
+   "values": [
+    ["label", "description", "meta", "en", "ru"],
+    ["items", "", "{\"placeholders\": {\"count\": {\"type\": \"int\"}}}", "{count, plural, one{one} other{many}}", "{count, plural, one{один} other{много}}"]
+   ]
+  }
+ ]
+}
