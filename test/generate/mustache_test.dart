@@ -43,7 +43,8 @@ void main() {
       'a {{user.name}}': (4, IcuErrorKind.unsupported),
       '{{ 2fa }}': (3, IcuErrorKind.syntax),
       '{{a-b}}': (2, IcuErrorKind.syntax),
-      '{{{x}}}': (2, IcuErrorKind.syntax),
+      '{{{x}}}': (0, IcuErrorKind.unsupported),
+      'a {{{ x }}}': (2, IcuErrorKind.unsupported),
     };
     for (final MapEntry(key: source, value: (offset, kind)) in cases.entries) {
       try {
@@ -53,6 +54,17 @@ void main() {
         expect((e.offset, e.kind), (offset, kind), reason: source);
       }
     }
+  });
+
+  test('triple braces get a clear error', () {
+    expect(
+      () => parseMustache('Hi {{{name}}}'),
+      throwsA(isA<IcuSyntaxException>().having(
+        (e) => e.message,
+        'message',
+        contains('Triple braces'),
+      )),
+    );
   });
 
   test('parseMessage dispatches; looksLikeMustache', () {

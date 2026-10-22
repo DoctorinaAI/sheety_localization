@@ -238,13 +238,37 @@ void main() {
       expect(message.description, 'bad \uD800 desc');
     });
 
-    test('empty base is an error and the message is left out', () {
+    test('empty base is a warning and the message is left out', () {
       final r = read([
         ['a', '', '', '', 'B'],
+        ['b', '', '', ' ', 'B'],
+        ['c', '', '', 'C', 'C'],
       ]);
-      expect(r.catalog.scopes.single.messages, isEmpty);
-      final d = only(r, DiagnosticCode.emptyBase).single;
-      expect((d.row, d.column, d.locale, d.key), (2, 'D', 'en', 'a'));
+      expect(r.catalog.scopes.single.messages.map((m) => m.key), ['c']);
+      final d = only(r, DiagnosticCode.emptyBase).toList();
+      expect([
+        for (final x in d) (x.row, x.column, x.locale, x.key)
+      ], [
+        (2, 'D', 'en', 'a'),
+        (3, 'D', 'en', 'b'),
+      ]);
+      // The message says the row is left out, so the run must not fail.
+      expect(d.first.severity, Severity.warning);
+      expect(r.diagnostics.where((x) => x.isError), isEmpty);
+    });
+
+    test('whitespace-only cells are empty', () {
+      final r = read([
+        [' ', '', '', '', ''],
+        [' ', 'desc', '', 'A', 'B'],
+        ['a', ' ', '', 'A', '  '],
+      ]);
+      expect(codes(r.diagnostics), ['empty-row', 'empty-label']);
+      final a = r.catalog.scopes.single.messages.single;
+      expect(a.description, isNull);
+      // A blank target cell falls back instead of shipping a blank string.
+      expect(a.translations.keys.map((l) => l.code), ['en']);
+      expect(a.translationFor(LocaleTag.parse('de')).isFallback, isTrue);
     });
 
     test('non-string cells are converted', () {
@@ -317,6 +341,20 @@ void main() {
             .translations[LocaleTag.parse('de')]!.raw,
         'D',
       );
+    });
+
+    test('a base header cell is sanitized like the others', () {
+      final r = read(
+        [
+          ['a', '', '', 'A', 'B', 'C', 'D'],
+        ],
+        header: ['label', 'description', 'meta', 'pt BR', 'en', 'Notes', 'EN'],
+      );
+      final scope = r.catalog.scopes.single;
+      expect(scope.baseLocale.code, 'pt_BR');
+      expect(scope.localeTags.map((l) => l.code), ['pt_BR', 'en', 'pt']);
+      expect(codes(r.diagnostics.where((d) => d.row == 1)),
+          ['invalid-locale', 'duplicate-locale']);
     });
 
     test('an empty trailing header cell without data is ignored', () {

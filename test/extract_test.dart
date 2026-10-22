@@ -56,15 +56,72 @@ void main() {
           'Brazilian Portuguese');
     });
 
-    test('falls back to the label when the English cell is empty', () {
+    test('skips a row whose source text is empty or blank', () {
+      // `generate` leaves such a row out; translating the label instead would
+      // fill the sheet with translations of a key nobody wrote a text for.
       final rows = extractEmptyCells(
         title: 'app',
         values: <List<Object?>>[
           header,
           ['greeting', null, null, null, null, null],
+          ['bye', null, null, '  ', null, null],
+          ['thanks', null, null, 'Thanks', null, null],
         ],
       );
-      expect(rows.single.source, 'greeting');
+      expect(rows.map((r) => r.label), ['thanks']);
+    });
+
+    test('treats whitespace-only cells as empty', () {
+      final rows = extractEmptyCells(
+        title: 'app',
+        values: <List<Object?>>[
+          header,
+          [' ', null, null, 'Hello', null, null], // blank label
+          ['  ', ' ', ' ', ' ', ' ', ' '], // blank row
+          ['greeting', ' ', '\t', 'Hello', ' ', 'Привет'],
+        ],
+      );
+      final greeting = rows.single;
+      expect(greeting.label, 'greeting');
+      // A target cell holding just a space is not a translation.
+      expect(greeting.cells.map((c) => c.code), ['uk']);
+      expect(greeting.description, isNull);
+      expect(greeting.meta, isNull);
+    });
+
+    test('reads locale columns exactly as generate does', () {
+      // "pt BR" is pt_BR, "Notes" is not a locale and "pt_br" duplicates
+      // pt_BR: generate skips the last two, so localize must not fill them.
+      final values = <List<Object?>>[
+        ['label', 'description', 'meta', 'en', 'pt BR', 'Notes', 'pt_br'],
+        ['greeting', null, null, 'Hello', null, null, null],
+      ];
+      final rows = extractEmptyCells(title: 'app', values: values);
+      expect(
+        rows.single.cells.map((c) => (c.code, c.column)),
+        [('pt_BR', 4)],
+      );
+
+      final read = readCatalog([(title: 'app', values: values)]);
+      final scope = read.catalog.scopes.single;
+      expect(
+        [
+          for (final l in scope.locales)
+            if (l.column != null) l.tag.code
+        ],
+        ['en', ...rows.single.cells.map((c) => c.code)],
+      );
+    });
+
+    test('accepts a source column D1 written with a space', () {
+      final rows = extractEmptyCells(
+        title: 'app',
+        values: <List<Object?>>[
+          ['label', 'description', 'meta', 'pt BR', 'en'],
+          ['greeting', null, null, 'Olá', null],
+        ],
+      );
+      expect(rows.single.sourceCode, 'pt_BR');
     });
 
     test('accepts a non-English source language and carries its code', () {
@@ -162,6 +219,47 @@ void main() {
     });
   });
 
+  group('readLocaleHeader', () {
+    test('sanitizes, normalizes and deduplicates locale columns', () {
+      final layout = readLocaleHeader(const [
+        'label',
+        'description',
+        'meta',
+        'en',
+        'pt BR',
+        'Notes',
+        'pt_br',
+        ' ',
+        42,
+        'zh-hant',
+      ]);
+      expect(
+        [for (final c in layout.columns) (c.letter, c.tag.code)],
+        [('D', 'en'), ('E', 'pt_BR'), ('J', 'zh_Hant')],
+      );
+      expect(
+        [for (final s in layout.skipped) (s.letter, s.problem)],
+        [
+          ('F', HeaderCellProblem.invalid),
+          ('G', HeaderCellProblem.duplicate),
+          ('H', HeaderCellProblem.blank),
+          ('I', HeaderCellProblem.notText),
+        ],
+      );
+      expect(layout.skipped[1].duplicateOf!.letter, 'E');
+    });
+  });
+
+  group('isBlankCell', () {
+    test('null and whitespace-only strings are blank', () {
+      expect(isBlankCell(null), isTrue);
+      expect(isBlankCell(''), isTrue);
+      expect(isBlankCell(' \t\n'), isTrue);
+      expect(isBlankCell(' x '), isFalse);
+      expect(isBlankCell(0), isFalse);
+    });
+  });
+
   group('isLocalizationHeader', () {
     test('accepts the documented layout', () {
       expect(
@@ -188,6 +286,21 @@ void main() {
       expect(
         isLocalizationHeader(
           const ['label', 'description', 'meta', 'pt-BR', 'en'],
+        ),
+        isTrue,
+      );
+    });
+
+    test('reads D1 like every other locale header cell', () {
+      expect(
+        isLocalizationHeader(
+          const ['label', 'description', 'meta', 'pt BR', 'en'],
+        ),
+        isTrue,
+      );
+      expect(
+        isLocalizationHeader(
+          const ['label', 'description', 'meta', ' en ', 'de'],
         ),
         isTrue,
       );

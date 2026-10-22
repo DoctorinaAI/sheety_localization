@@ -71,8 +71,9 @@ enum DiagnosticCode {
   /// Two names collide after case conversion for a target.
   nameCollision('name-collision', Severity.error),
 
-  /// The base-language cell of a row is empty.
-  emptyBase('empty-base', Severity.error),
+  /// The base-language cell of a row is empty (or whitespace only); the
+  /// message is left out of every locale, as gen-l10n did.
+  emptyBase('empty-base', Severity.warning),
 
   /// A header cell is not a usable locale code; the column is skipped.
   invalidLocale('invalid-locale', Severity.warning),
@@ -124,7 +125,13 @@ enum DiagnosticCode {
   /// A plural is rendered differently by the Dart target (package:intl has
   /// no rules for the locale) than by the TypeScript and Python targets
   /// (CLDR rules).
-  pluralRulesMismatch('plural-rules-mismatch', Severity.warning);
+  pluralRulesMismatch('plural-rules-mismatch', Severity.warning),
+
+  /// An exact plural case (`=0`, `=1`, `=2`) stands in for a category
+  /// (`zero`, `one`, `two`) the message has no case for, and the locale's
+  /// CLDR rule of that category matches other numbers too: Russian `=1{...}`
+  /// without `one{...}` is also used for 21, 31, ... (gen-l10n semantics).
+  pluralExactAsCategory('plural-exact-as-category', Severity.warning);
 
   const DiagnosticCode(this.id, this.defaultSeverity);
 

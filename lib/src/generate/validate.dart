@@ -16,6 +16,9 @@ import 'naming.dart';
 /// * `plural-missing-category` — a plural lacks a category CLDR requires for
 ///   the locale (`=0`/`=1`/`=2` count as `zero`/`one`/`two`, as gen-l10n
 ///   maps them);
+/// * `plural-exact-as-category` — such an exact case stands in for a
+///   category whose CLDR rule matches other numbers too (Russian `=1`
+///   without `one` is also used for 21);
 /// * `plural-duplicate-case`, `select-duplicate-case`;
 /// * `tag-mismatch` — markup tags differ from the base text or are
 ///   unbalanced;
@@ -149,6 +152,20 @@ void _validateScope(Scope scope, DiagnosticSink sink) {
           '"${translation.locale.code}" (the "other" text is used instead)',
           translation,
         );
+      }
+      for (final plural in ast.plurals) {
+        for (final (branch, numbers)
+            in _exactStandIns(plural, translation.locale.code)) {
+          final category = branch.category.name;
+          report(
+            DiagnosticCode.pluralExactAsCategory,
+            'Plural "${plural.argument}": "${branch.selector}" is also used '
+            'for ${numbers.join(', ')}, ... because there is no "$category" '
+            'case and CLDR $cldrVersion puts those numbers in "$category" '
+            'for "${translation.locale.code}"; add a "$category" case',
+            translation,
+          );
+        }
       }
     }
 
@@ -341,6 +358,54 @@ List<(String, String Function(String scope))> scopeIdentifiers(
           ('class', scopeClassName),
         ],
     };
+
+/// The exact branches of [plural] (`=1`) that stand in for a category
+/// (`one`) the plural has no keyword case for, although the CLDR rule of
+/// that category in [locale] matches other integers too, each with a few of
+/// those integers.
+///
+/// gen-l10n maps `=0`/`=1`/`=2` onto `zero`/`one`/`two`, so such a branch is
+/// chosen for every number of the category (Russian `=1` also for 21). It is
+/// harmless where the category holds only the exact number (English `one` is
+/// `i = 1 and v = 0`) or does not exist (English has no `zero`).
+List<(IcuPluralBranch, List<int>)> _exactStandIns(
+  IcuPlural plural,
+  String locale,
+) {
+  final keywords = {
+    for (final b in plural.branches)
+      if (b.kind == IcuPluralSelectorKind.keyword) b.category,
+  };
+  final result = <(IcuPluralBranch, List<int>)>[];
+  for (final branch in plural.branches) {
+    if (branch.kind != IcuPluralSelectorKind.exact ||
+        keywords.contains(branch.category)) {
+      continue;
+    }
+    final numbers = _otherNumbers(
+      locale,
+      branch.category,
+      int.parse(branch.selector.substring(1)),
+    );
+    if (numbers.isNotEmpty) result.add((branch, numbers));
+  }
+  return result;
+}
+
+final Map<(String, PluralCategory, int), List<int>> _otherNumbersCache = {};
+
+/// Up to three integers other than [exact] that [category] holds in
+/// [locale] (the CLDR cardinal rules), searched in 0..1000.
+List<int> _otherNumbers(String locale, PluralCategory category, int exact) =>
+    _otherNumbersCache.putIfAbsent((locale, category, exact), () {
+      final rules = pluralRulesFor(locale);
+      if (!rules.conditions.containsKey(category)) return const [];
+      final numbers = <int>[];
+      for (var n = 0; n <= 1000 && numbers.length < 3; n++) {
+        if (n != exact && rules.selectNum(n) == category) numbers.add(n);
+      }
+      return numbers;
+    });
 
 Set<String> _tagNames(IcuMessage ast) => {
       for (final tag in ast.allTags)

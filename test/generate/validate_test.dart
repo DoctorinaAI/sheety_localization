@@ -63,6 +63,43 @@ void main() {
       expect(missing.severity, Severity.warning);
     });
 
+    test('an exact case standing in for a wider category', () {
+      final d = validate(
+        [
+          // ru: `one` is 1, 21, 31, ... so `=1` alone is used for 21 too.
+          [
+            'a',
+            '',
+            '',
+            '{n, plural, =1{one file} other{# files}}',
+            '{n, plural, =1{один файл} few{файла} many{файлов} other{файла}}',
+            '{n, plural, =0{nav} one{fails} other{faili}}',
+          ],
+          // An explicit `one` case: `=1` is only for 1.
+          [
+            'b',
+            '',
+            '',
+            '{n, plural, =0{none} =1{one} other{many}}',
+            '{n, plural, =1{один} one{один} few{x} many{x} other{y}}',
+            '{n, plural, zero{nav} =1{viens} one{x} other{y}}',
+          ],
+        ],
+        header: ['label', 'description', 'meta', 'en', 'ru', 'lv'],
+      );
+      final exact = only(d, DiagnosticCode.pluralExactAsCategory).toList();
+      // en: `one` is only 1 and there is no `zero`, so nothing is reported.
+      expect([
+        for (final x in exact) (x.key, x.locale, x.column)
+      ], [
+        ('a', 'ru', 'E'),
+        ('a', 'lv', 'F'),
+      ]);
+      expect(exact.first.message, contains('"=1" is also used for 21, 31'));
+      expect(exact.last.message, contains('"=0" is also used for 10, 11'));
+      expect(exact.first.severity, Severity.warning);
+    });
+
     test('duplicate cases', () {
       final d = validate([
         [

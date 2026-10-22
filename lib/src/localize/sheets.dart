@@ -9,6 +9,7 @@ library;
 import 'dart:async';
 import 'dart:collection';
 
+import '../common/sheet_range.dart';
 import 'models.dart';
 import 'utils.dart';
 
@@ -74,10 +75,8 @@ String cellRange({
   required String sheetTitle,
   required int column,
   required int row,
-}) {
-  final title = sheetTitle.replaceAll("'", "''");
-  return "'$title'!${columnFromIndex(column)}${row + 1}";
-}
+}) =>
+    '${sheetRange(sheetTitle)}!${columnFromIndex(column)}${row + 1}';
 
 /// Writes the localized cells of [row] into [sheetTitle], in one batch request.
 ///

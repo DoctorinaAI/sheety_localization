@@ -38,7 +38,7 @@ final RegExp _dotted = RegExp(r'^[A-Za-z_][A-Za-z0-9_]*(\.[A-Za-z0-9_]+)+$');
 ///
 /// * `{{ name }}` — whitespace inside the braces is tolerated; `name` must
 ///   be an identifier (`[A-Za-z_][A-Za-z0-9_]*`). Dotted names
-///   (`{{user.name}}`) are rejected.
+///   (`{{user.name}}`) and triple braces (`{{{name}}}`) are rejected.
 /// * Every other character, single `{` and `}` and a lone `}}` included, is
 ///   literal text.
 /// * An unterminated `{{` is an error at its offset.
@@ -60,6 +60,15 @@ IcuMessage parseMustache(String source) {
       text.write(source[index]);
       index++;
       continue;
+    }
+    if (source.startsWith('{{{', index)) {
+      // Mustache's unescaped output; there is no escaping to opt out of.
+      throw IcuSyntaxException(
+        'Triple braces ("{{{name}}}") are not supported; use "{{name}}"',
+        source,
+        index,
+        kind: IcuErrorKind.unsupported,
+      );
     }
     final close = source.indexOf('}}', index + 2);
     if (close < 0) {

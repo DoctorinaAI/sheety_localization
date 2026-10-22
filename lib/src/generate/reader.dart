@@ -281,7 +281,7 @@ final class _SheetReader {
     for (var i = 1; i < values.length; i++) {
       final rowNumber = i + 1;
       var row = values[i];
-      if (row.every(_isBlank)) {
+      if (row.every(isBlankCell)) {
         _report(
           DiagnosticCode.emptyRow,
           'Empty row; skipped',
@@ -308,7 +308,7 @@ final class _SheetReader {
         ];
       }
       final label = row.first;
-      if (label is! String || label.isEmpty) {
+      if (label is! String || label.trim().isEmpty) {
         _report(
           DiagnosticCode.emptyLabel,
           'The row has no label (column A); skipped',
@@ -369,7 +369,7 @@ final class _SheetReader {
 
       // Description and meta of the row (the later duplicate wins).
       final description = switch (row[1]) {
-        final String text when text.isNotEmpty => text,
+        final String text when !isBlankCell(text) => text,
         final num number => '$number',
         _ => null,
       };
@@ -451,81 +451,82 @@ final class _SheetReader {
   }
 
   /// Valid locale columns, base first; `null` when the base is unusable.
+  ///
+  /// The columns are read by [readLocaleHeader], shared with `localize`, so
+  /// both executables agree on which columns are locales.
   List<_Column>? _readHeader(List<Object?> header) {
+    final layout = readLocaleHeader(header);
+    final valid = {for (final c in layout.columns) c.index: c};
+    final skippedAt = {for (final s in layout.skipped) s.index: s};
     final columns = <_Column>[];
-    final seen = <LocaleTag, _Column>{};
+    // Reported in column order.
     for (var i = 3; i < header.length; i++) {
-      final cell = header[i];
       final letter = columnFromIndex(i);
-      if (cell is! String || cell.trim().isEmpty) {
-        final hasData = sheet.values
-            .skip(1)
-            .any((row) => row.length > i && !_isBlank(row[i]));
-        if (i == 3 || hasData) {
+      final column = valid[i];
+      if (column != null) {
+        final tag = column.tag;
+        if (resolveLanguageName(tag.code) == null) {
+          _report(
+            DiagnosticCode.unknownLocale,
+            'Language "${tag.language}" of "${header[i]}" is not a known '
+            'ISO 639 code; the column is used anyway',
+            row: 1,
+            column: letter,
+            locale: tag.code,
+          );
+        }
+        columns.add(_Column(i, tag));
+        continue;
+      }
+      final skipped = skippedAt[i]!;
+      final severity = i == 3 ? Severity.error : null;
+      switch (skipped.problem) {
+        case HeaderCellProblem.blank || HeaderCellProblem.notText:
+          final hasData = sheet.values
+              .skip(1)
+              .any((row) => row.length > i && !isBlankCell(row[i]));
+          if (i != 3 && !hasData) continue;
           _report(
             DiagnosticCode.invalidLocale,
             'Column $letter has data but no locale code in row 1; the column '
             'is skipped',
-            severity: i == 3 ? Severity.error : null,
+            severity: severity,
             row: 1,
             column: letter,
           );
-          if (i == 3) return null;
-        }
-        continue;
+        case HeaderCellProblem.invalid:
+          _report(
+            DiagnosticCode.invalidLocale,
+            '"${skipped.cell}" is not a locale code (expected "en", "pt_BR", '
+            '"zh_Hant" or "zh_Hant_TW"); the column is skipped',
+            severity: severity,
+            row: 1,
+            column: letter,
+          );
+        case HeaderCellProblem.duplicate:
+          final duplicate = skipped.duplicateOf!;
+          _report(
+            DiagnosticCode.duplicateLocale,
+            'Locale "${duplicate.tag.code}" already is column '
+            '${duplicate.letter}; the column is skipped',
+            row: 1,
+            column: letter,
+            locale: duplicate.tag.code,
+          );
       }
-      final tag = LocaleTag.tryParse(_sanitize(cell));
-      if (tag == null) {
-        _report(
-          DiagnosticCode.invalidLocale,
-          '"$cell" is not a locale code (expected "en", "pt_BR", "zh_Hant" '
-          'or "zh_Hant_TW"); the column is skipped',
-          severity: i == 3 ? Severity.error : null,
-          row: 1,
-          column: letter,
-        );
-        if (i == 3) return null;
-        continue;
-      }
-      final duplicate = seen[tag];
-      if (duplicate != null) {
-        _report(
-          DiagnosticCode.duplicateLocale,
-          'Locale "${tag.code}" already is column ${duplicate.letter}; the '
-          'column is skipped',
-          row: 1,
-          column: letter,
-          locale: tag.code,
-        );
-        continue;
-      }
-      if (resolveLanguageName(tag.code) == null) {
-        _report(
-          DiagnosticCode.unknownLocale,
-          'Language "${tag.language}" of "$cell" is not a known ISO 639 '
-          'code; the column is used anyway',
-          row: 1,
-          column: letter,
-          locale: tag.code,
-        );
-      }
-      final column = _Column(i, tag);
-      seen[tag] = column;
-      columns.add(column);
+      if (i == 3) return null;
     }
     return columns;
   }
 
-  static bool _isBlank(Object? cell) =>
-      cell == null || (cell is String && cell.isEmpty);
-
-  /// The text of a cell, or `null` when it is empty.
+  /// The text of a cell, or `null` when it is empty or whitespace only.
   String? _text(List<Object?> row, int index) {
     if (index >= row.length) return null;
     return switch (row[index]) {
-      null => null,
-      final String text => text.isEmpty ? null : text,
+      final Object? cell when isBlankCell(cell) => null,
+      final String text => text,
       final Object other => '$other',
+      null => null,
     };
   }
 
