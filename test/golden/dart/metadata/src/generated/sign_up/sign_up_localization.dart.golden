@@ -124,7 +124,9 @@ abstract class SignUpLocalization implements LocalizationBundle {
     ),
   ];
 
-  /// The ICU text of every message in this locale, by key.
+  /// The source text of every message in this locale, by key, as
+  /// written in the sheet: ICU, or mustache (`{{name}}`) for a
+  /// mustache sheet.
   @override
   Map<String, String> get templates;
 

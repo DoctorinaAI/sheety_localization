@@ -78,10 +78,42 @@ void main() {
       expect(check('Title', Target.dart, IdentifierRole.parameter), isNull);
       expect(check('switch', Target.dart, IdentifierRole.parameter)?.reserved,
           isTrue);
-      expect(
-        check('function', Target.dart, IdentifierRole.scope)?.reserved,
-        isTrue,
-      );
+    });
+
+    test('Dart scopes only name files and `<Stem>Localization` classes', () {
+      // 0.6.0 generated these: `DefaultLocalization`, `NewLocalization`,
+      // `lookupSwitchLocalization`, `FunctionLocalization`, `default/`.
+      for (final name in [
+        'default',
+        'new',
+        'switch',
+        'Function',
+        'function',
+        'class',
+        'get',
+      ]) {
+        expect(check(name, Target.dart, IdentifierRole.scope), isNull,
+            reason: name);
+      }
+      expect(check('_1', Target.dart, IdentifierRole.scope)?.reason,
+          contains('"1Localization"'));
+    });
+
+    test('TypeScript and Python scopes still reject their keywords', () {
+      // `export * as <scope>` and the Python package name are identifiers.
+      for (final name in ['default', 'new', 'switch', 'function']) {
+        expect(check(name, Target.ts, IdentifierRole.scope)?.reserved, isTrue,
+            reason: name);
+      }
+      for (final name in ['class', 'def', 'None', 'import']) {
+        expect(
+          check(name, Target.python, IdentifierRole.scope)?.reserved,
+          isTrue,
+          reason: name,
+        );
+      }
+      expect(check('Function', Target.ts, IdentifierRole.scope), isNull);
+      expect(check('default', Target.python, IdentifierRole.scope), isNull);
     });
 
     test('Dart: names the generated code needs', () {

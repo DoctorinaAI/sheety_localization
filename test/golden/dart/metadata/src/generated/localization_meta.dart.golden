@@ -75,7 +75,8 @@ abstract interface class LocalizationBundle {
   /// The canonicalized locale of this instance (`pt_BR`).
   String get localeName;
 
-  /// The ICU text of every message in this locale, by key.
+  /// The source text of every message in this locale, by key, as written
+  /// in the sheet: ICU, or mustache (`{{name}}`) for a mustache sheet.
   Map<String, String> get templates;
 
   /// Keys of the messages this locale has no text of its own for.
@@ -119,6 +120,11 @@ final class LocalizationScope {
 
 /// The argument [name] of message [key] from [args], checked to be a [T].
 ///
+/// Numbers are checked by value, so that the result is the same on the VM
+/// and on the web (where every number is a JavaScript double): any `num` is
+/// accepted for a `double` and converted, an integral finite `num` (`2.0`)
+/// for an `int`.
+///
 /// Throws an [ArgumentError] when it is missing or of another type.
 T localizationArgument<T extends Object>(
   Map<String, Object?> args,
@@ -126,7 +132,12 @@ T localizationArgument<T extends Object>(
   String name,
 ) {
   final value = args[name];
-  if (value is T) return value;
+  if (value is num && T == double) return value.toDouble() as T;
+  if (value is num && T == int) {
+    if (value.isFinite && value == value.truncate()) return value.toInt() as T;
+  } else if (value is T) {
+    return value;
+  }
   throw ArgumentError.value(
     value,
     name,

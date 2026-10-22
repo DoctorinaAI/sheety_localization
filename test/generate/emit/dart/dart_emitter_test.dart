@@ -229,6 +229,44 @@ void main() {
           r"intl.Intl.selectLogic(g, {'a': '$_temp0', 'other': '$_temp1'})");
     });
   });
+  group('lints of consumers', () {
+    test('locales.dart and the barrel ignore every lint with metadata', () {
+      final files = emit(catalog);
+      for (final path in ['src/generated/locales.dart', 'localization.dart']) {
+        expect(files[path], contains('// ignore_for_file: type=lint\n'),
+            reason: path);
+      }
+      expect(files['src/generated/locales.dart'],
+          contains('static const List<Locale> values = <Locale>['));
+    });
+
+    test('gen-l10n mode keeps the files of the previous generator', () {
+      final files = emit(catalog, const {'metadata': false});
+      for (final path in ['src/generated/locales.dart', 'localization.dart']) {
+        expect(files[path], isNot(contains('type=lint')), reason: path);
+      }
+      expect(files['src/generated/locales.dart'],
+          contains('static const List<Locale> values = [\n'));
+    });
+  });
+
+  test('format() checks numbers by value, not by runtime type', () {
+    final meta = emit(catalog)['src/generated/localization_meta.dart']!;
+    expect(meta, contains('T == double) return value.toDouble() as T;'));
+    expect(meta, contains('value.isFinite && value == value.truncate()'));
+  });
+
+  test('templates are documented as the source text of the sheet', () {
+    final files = emit(catalog);
+    for (final path in [
+      'src/generated/app/app_localization.dart',
+      'src/generated/localization_meta.dart',
+    ]) {
+      expect(files[path], isNot(contains('The ICU text')), reason: path);
+      expect(files[path], contains('mustache'), reason: path);
+    }
+  });
+
   group('names that would break the generated code', () {
     Catalog awkward() => readCatalog([
           (
@@ -297,6 +335,28 @@ void main() {
         ),
       ]).catalog;
       expect(const DartEmitter().validate(placeholder, const {}), isEmpty);
+    });
+
+    test('scopes named like Dart keywords are valid (as in 0.6.0)', () {
+      final catalog = readCatalog([
+        for (final title in ['default', 'new', 'switch', 'Function'])
+          (
+            title: title,
+            values: [
+              ['label', 'description', 'meta', 'en'],
+              ['title', '', '', 'x'],
+            ],
+          ),
+      ]).catalog;
+      expect(const DartEmitter().validate(catalog, const {}), isEmpty);
+      final files = emit(catalog);
+      final main = files['src/generated/default/default_localization.dart']!;
+      expect(main, contains('abstract class DefaultLocalization'));
+      expect(main, contains('DefaultLocalization lookupDefaultLocalization('));
+      expect(
+        files['src/generated/Function/Function_localization.dart'],
+        contains('abstract class FunctionLocalization'),
+      );
     });
 
     test('lone surrogates become U+FFFD in doc comments only', () {

@@ -215,7 +215,11 @@ IdentifierProblem? checkIdentifier(
   }
   switch (target) {
     case Target.dart:
-      if (dartReservedWords.contains(name)) {
+      // A scope name is never a Dart identifier itself: it only names a
+      // directory, a file and, through [scopeClassName], the classes and
+      // functions (`DefaultLocalization`, `lookupDefaultLocalization`), so
+      // `default` or `Function` are fine sheet names.
+      if (role != IdentifierRole.scope && dartReservedWords.contains(name)) {
         return (reserved: true, reason: 'is a Dart reserved word');
       }
       switch (role) {
@@ -257,12 +261,12 @@ IdentifierProblem? checkIdentifier(
             );
           }
         case IdentifierRole.scope:
-          final stem = legacyPascalCase(name);
-          if (dartBuiltInIdentifiers.contains(stem)) {
+          final className = scopeClassName(name);
+          if (!RegExp('^[A-Za-z]').hasMatch(className)) {
             return (
-              reserved: true,
-              reason: 'gives the class name "$stem", '
-                  'a Dart built-in identifier'
+              reserved: false,
+              reason: 'gives the class name "$className", which does not '
+                  'start with a letter'
             );
           }
       }

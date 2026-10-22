@@ -538,7 +538,9 @@ final class _ScopeWriter {
     ];
     return [
       messages.toString(),
-      '  /// The ICU text of every message in this locale, by key.\n'
+      '  /// The source text of every message in this locale, by key, as\n'
+          '  /// written in the sheet: ICU, or mustache (`{{name}}`) for a\n'
+          '  /// mustache sheet.\n'
           '  @override\n'
           '  Map<String, String> get templates;\n',
       '  /// Keys of the messages this locale has no text of its own for\n'
@@ -903,12 +905,18 @@ String dartLocaleField(LocaleTag locale) {
 
 /// `locales.dart`, as the previous generator wrote it (field `pt$BR`,
 /// union of all locales in order of first appearance).
+///
+/// In gen-l10n mode (no metadata) the file stays byte-identical to the
+/// previous generator's; otherwise it ignores every lint, like the scope
+/// files, and types its list literal.
 String _locales(_Context context, Catalog catalog) {
   final layout = context.layout;
+  final metadata = context.dart.metadata;
   final fields = <String>[];
   final b = StringBuffer()
     ..write(context.headerLine)
     ..writeln('// ignore_for_file: directives_ordering')
+    ..write(metadata ? '// ignore_for_file: type=lint\n' : '')
     ..writeln()
     ..writeln("import 'dart:ui' show Locale;")
     ..writeln()
@@ -929,7 +937,11 @@ String _locales(_Context context, Catalog catalog) {
     ..writeln(
       layout.assignment(
         'static const List<Locale> values',
-        Group('[', [for (final f in fields) Atom(f)], ']'),
+        Group(
+          metadata ? '<Locale>[' : '[',
+          [for (final f in fields) Atom(f)],
+          ']',
+        ),
         indent: 2,
       ),
     )
@@ -938,13 +950,15 @@ String _locales(_Context context, Catalog catalog) {
 }
 
 /// The barrel: exports `flutter_localizations`, every scope, `locales.dart`
-/// and (with metadata) `localization_meta.dart`.
+/// and (with metadata) `localization_meta.dart`. With metadata it also
+/// ignores every lint (without, it is the previous generator's file).
 String _barrel(_Context context, Catalog catalog) {
   final from = p.posix.dirname(context.dart.barrel);
   String uri(String path) => p.posix.relative(path, from: from);
   final b = StringBuffer()
     ..write(context.headerLine)
     ..writeln('// ignore_for_file: directives_ordering')
+    ..write(context.dart.metadata ? '// ignore_for_file: type=lint\n' : '')
     ..writeln('library;')
     ..writeln()
     ..writeln(
@@ -1076,7 +1090,8 @@ abstract interface class LocalizationBundle {
   /// The canonicalized locale of this instance (`pt_BR`).
   String get localeName;
 
-  /// The ICU text of every message in this locale, by key.
+  /// The source text of every message in this locale, by key, as written
+  /// in the sheet: ICU, or mustache (`{{name}}`) for a mustache sheet.
   Map<String, String> get templates;
 
   /// Keys of the messages this locale has no text of its own for.
@@ -1120,6 +1135,11 @@ final class LocalizationScope {
 
 /// The argument [name] of message [key] from [args], checked to be a [T].
 ///
+/// Numbers are checked by value, so that the result is the same on the VM
+/// and on the web (where every number is a JavaScript double): any `num` is
+/// accepted for a `double` and converted, an integral finite `num` (`2.0`)
+/// for an `int`.
+///
 /// Throws an [ArgumentError] when it is missing or of another type.
 T localizationArgument<T extends Object>(
   Map<String, Object?> args,
@@ -1127,7 +1147,12 @@ T localizationArgument<T extends Object>(
   String name,
 ) {
   final value = args[name];
-  if (value is T) return value;
+  if (value is num && T == double) return value.toDouble() as T;
+  if (value is num && T == int) {
+    if (value.isFinite && value == value.truncate()) return value.toInt() as T;
+  } else if (value is T) {
+    return value;
+  }
   throw ArgumentError.value(
     value,
     name,

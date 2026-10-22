@@ -100,7 +100,8 @@ void main() {
   );
 
   test(
-    'awkward names (keys key/args, locales is/as/new) analyze and render',
+    'awkward names (keys key/args, locales is/as/new, scopes default/'
+    'Function) analyze and render',
     () async {
       final catalog = readCatalog([
         (
@@ -119,6 +120,32 @@ void main() {
               '{n, plural, one{one} other{{n}}}',
               '{n, plural, other{{n}}}',
             ],
+          ],
+        ),
+        // Scope names that are Dart keywords: 0.6.0 generated them fine.
+        (
+          title: 'default',
+          values: [
+            ['label', 'description', 'meta', 'en'],
+            [
+              'ratio',
+              '',
+              '{"placeholders": {"r": {"type": "double"}}}',
+              'Ratio {r}',
+            ],
+            [
+              'count',
+              '',
+              '{"placeholders": {"n": {"type": "int"}}}',
+              '{n} things',
+            ],
+          ],
+        ),
+        (
+          title: 'Function',
+          values: [
+            ['label', 'description', 'meta', 'en'],
+            ['title', '', '', 'Fn'],
           ],
         ),
       ]).catalog;
@@ -418,6 +445,8 @@ void main() {
     expect(app('en').format('items', {'count': 2}), '2 items');
     expect(() => app('en').format('items', {'count': 2.5}),
         throwsArgumentError);
+    expect(app('en').format('items', {'count': 2.0}), '2 items');
+    expect(app('en').format('price', {'amount': 1}), 'Price: 1 €');
   });
 
   test('metadata', () {
@@ -463,8 +492,7 @@ analyzer:
 
 const String _awkwardTest = r'''
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sheety_dart_check/src/generated/awkward/awkward_localization.dart';
-import 'package:sheety_dart_check/src/generated/locales.dart';
+import 'package:sheety_dart_check/localization.dart';
 
 void main() {
   test('format() reaches the messages named like its parameters', () {
@@ -473,6 +501,27 @@ void main() {
     expect(l.format('args', {'a': 'x'}), 'args x');
     expect(lookupAwkwardLocalization(Locales.is$).key, 'k');
     expect(Locales.values, hasLength(4));
+  });
+
+  test('scopes named like Dart keywords', () {
+    expect(lookupFunctionLocalization(Locales.en).title, 'Fn');
+    expect(localizationScopes.map((s) => s.name),
+        ['awkward', 'default', 'Function']);
+  });
+
+  test('format() checks numbers by value, as on the web', () {
+    final l = lookupDefaultLocalization(Locales.en);
+    // An int for a double placeholder (on the web `1 is double` is true).
+    expect(l.format('ratio', {'r': 1}), l.ratio(1.0));
+    expect(l.format('ratio', {'r': 1.5}), 'Ratio 1.5');
+    expect(() => l.format('ratio', {'r': '1'}), throwsArgumentError);
+    // An integral double for an int placeholder (on the web `2.0 is int`).
+    expect(l.format('count', {'n': 2.0}), '2 things');
+    expect(l.format('count', {'n': 2}), '2 things');
+    for (final bad in [2.5, double.nan, double.infinity, '2']) {
+      expect(() => l.format('count', {'n': bad}), throwsArgumentError,
+          reason: '$bad');
+    }
   });
 }
 ''';
