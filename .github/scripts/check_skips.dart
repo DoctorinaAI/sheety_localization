@@ -11,8 +11,12 @@ import 'dart:convert';
 import 'dart:io';
 
 /// Skip reasons that are expected on every CI run: the real sheet is
-/// internal and never available there.
-final RegExp _allowed = RegExp(r'SHEETY_REAL_(SNAPSHOT|REFERENCE)');
+/// internal and never available there, and the Linux runners have no
+/// case-insensitive file system (the case-only rename tests run on macOS).
+final RegExp _allowed = RegExp(
+  r'SHEETY_REAL_(SNAPSHOT|REFERENCE)'
+  '|the temporary directory is case-sensitive',
+);
 
 void main(List<String> args) {
   if (args.isEmpty) {
@@ -60,7 +64,8 @@ void main(List<String> args) {
       stdout.writeln('::error::Unexpected skip: $entry');
     }
     stdout.writeln('${unexpected.length} of $skipped skipped tests were not '
-        'expected to skip on the CI (only the real-snapshot tests may).');
+        'expected to skip on the CI (only the real-snapshot and the '
+        'case-insensitive file system tests may).');
     exit(1);
   }
   stdout.writeln('$skipped skipped tests, all of them expected.');

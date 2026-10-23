@@ -393,9 +393,10 @@ void main() {
     test('a failure while staging writes nothing and leaves no temp files', () {
       io.Directory(second).createSync();
       final plans = [planIn(out, v1), planIn(second, v1)];
-      // The second output directory is read-only: staging fails there.
-      io.Process.runSync('chmod', ['555', second]);
-      addTearDown(() => io.Process.runSync('chmod', ['755', second]));
+      // A file where the second staging directory goes: staging fails there
+      // (also as root, unlike a read-only directory).
+      final blocker = io.File(p.join(second, stagingDirName))
+        ..writeAsStringSync('x');
       final failure = () {
         try {
           const OutputWriter().applyAll(plans);
@@ -409,21 +410,24 @@ void main() {
       expect(failure.partial, isNull);
       expect(io.Directory(out).existsSync(), isFalse,
           reason: 'the first output directory was created only to stage');
-      expect(io.Directory(second).listSync(), isEmpty);
+      expect(
+          io.Directory(second).listSync().map((e) => e.path), [blocker.path]);
+      expect(blocker.readAsStringSync(), 'x');
     }, testOn: '!windows');
 
     test('a failure while committing names the written and partial targets',
         () {
       write([...v1, GeneratedFile('old/x.ts', 'x')]);
-      // `old/x.ts` is stale now and its directory is read-only: the first
-      // plan commits, deleting the stale file of the second one fails.
+      // `old/x.ts` is stale now. Its directory is then swapped for a link
+      // out of the output directory: the first plan commits, deleting the
+      // stale file of the second one is refused (also as root).
       final plans = [
         planIn(second, v1),
         plan(v1),
       ];
-      final oldDir = p.join(out, 'old');
-      io.Process.runSync('chmod', ['555', oldDir]);
-      addTearDown(() => io.Process.runSync('chmod', ['755', oldDir]));
+      final outside = p.join(temp.path, 'outside');
+      io.Directory(p.join(out, 'old')).renameSync(outside);
+      io.Link(p.join(out, 'old')).createSync(outside);
       final failure = () {
         try {
           const OutputWriter().applyAll(plans);
@@ -441,6 +445,8 @@ void main() {
       expect(io.Directory(p.join(out, stagingDirName)).existsSync(), isFalse);
       expect(
           io.Directory(p.join(second, stagingDirName)).existsSync(), isFalse);
+      expect(io.File(p.join(outside, 'x.ts')).readAsStringSync(), 'x',
+          reason: 'nothing outside the output directory is touched');
     }, testOn: '!windows');
 
     test('each target stages into a directory of its own', () {

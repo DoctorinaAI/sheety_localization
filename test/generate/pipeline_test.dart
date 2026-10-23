@@ -29,13 +29,14 @@ void main() {
     TargetRegistry? registry,
     CodeFormatter? formatter,
     List<String>? log,
+    void Function(String line)? verbose,
   }) {
     final c = config(args);
     return GeneratePipeline(
       registry: registry ?? fakeRegistry(),
       dartFormatter: formatter ?? FakeFormatter(),
       log: log?.add,
-      verbose: log?.add,
+      verbose: verbose ?? log?.add,
     ).run(c, SnapshotSource(c.snapshot!));
   }
 
@@ -322,12 +323,13 @@ targets:
 
   group('writing', () {
     test('a write failure says precisely what was written', () async {
-      // The ts output directory is read-only: staging fails there, so the
-      // dart target (staged fine) is not written either.
+      // A file where the ts staging directory goes: staging fails there
+      // (also as root, unlike a read-only directory), so the dart target
+      // (staged fine) is not written either.
       final ts = io.Directory(p.join(cwd, 'out/ts'))
         ..createSync(recursive: true);
-      io.Process.runSync('chmod', ['555', ts.path]);
-      addTearDown(() => io.Process.runSync('chmod', ['755', ts.path]));
+      final blocker = io.File(p.join(ts.path, stagingDirNameFor('ts')))
+        ..writeAsStringSync('x');
       final result = await run([
         '--snapshot=$multi',
         '--ignore=^backend',
@@ -341,7 +343,8 @@ targets:
       expect(result.written, isFalse);
       expect(result.targets.any((t) => t.written), isFalse);
       expect(io.Directory(p.join(cwd, 'out/d')).existsSync(), isFalse);
-      expect(ts.listSync(), isEmpty, reason: 'no staging leftovers');
+      expect(ts.listSync().map((e) => e.path), [blocker.path],
+          reason: 'no staging leftovers');
       final text = formatResultText(result);
       expect(text, contains('nothing was written'));
       expect(text, isNot(contains(' added,')));
@@ -355,12 +358,20 @@ targets:
         '--ts=out/ts',
       ];
       expect((await run(args)).exitCode, exitOk);
-      // backend_mail is stale now; its directory is read-only, so deleting
-      // it fails half-way through the commit.
+      // backend_mail is stale now. After planning (the verbose log runs
+      // between planning and writing) its directory is swapped for a link
+      // out of the output directory, so deleting it is refused half-way
+      // through the commit (also as root, unlike a read-only directory).
       final stale = p.join(cwd, 'out/ts/backend_mail');
-      io.Process.runSync('chmod', ['555', stale]);
-      addTearDown(() => io.Process.runSync('chmod', ['755', stale]));
-      final result = await run([...args, '--ts-ignore=^backend']);
+      final outside = p.join(cwd, 'outside');
+      void swap(String _) {
+        if (io.FileSystemEntity.isLinkSync(stale)) return;
+        io.Directory(stale).renameSync(outside);
+        io.Link(stale).createSync(outside);
+      }
+
+      final result = await run([...args, '--ts-ignore=^backend', '--verbose'],
+          verbose: swap);
       expect(result.exitCode, exitErrors);
       expect(result.issues.single.message, contains('partly written'));
       final ts = result.targets.single;
