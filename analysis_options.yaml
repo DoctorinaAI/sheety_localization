@@ -15,6 +15,8 @@ analyzer:
     - "assets/**"
     # Flutter Version Manager
     - ".fvm/**"
+    # Example: generated Flutter code of a separate package (needs Flutter)
+    - "example/**"
     # Tools
     #- "tool/**"
     - "scripts/**"

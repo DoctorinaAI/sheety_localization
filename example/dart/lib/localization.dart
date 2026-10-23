@@ -1,0 +1,11 @@
+// This file is generated, do not edit it manually!
+// ignore_for_file: directives_ordering
+// ignore_for_file: type=lint
+library;
+
+export 'package:flutter_localizations/flutter_localizations.dart';
+
+export 'src/generated/app/app_localization.dart';
+export 'src/generated/sign_up/sign_up_localization.dart';
+export 'src/generated/locales.dart';
+export 'src/generated/localization_meta.dart';

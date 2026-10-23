@@ -5,11 +5,11 @@
 name: sheety_localization
 
 description: >
-  A package to generate localization files from Google Sheets.
-  It uses the Google Sheets API to fetch translations and generates
-  Dart localization files for use in Flutter applications.
+  Generate Flutter (Dart), TypeScript and Python localization code from
+  Google Sheets, with ICU plural/select support, validation, and AI-assisted
+  translation of missing cells.
 
-version: 0.6.0
+version: 0.7.0-dev
 
 homepage: https://github.com/DoctorinaAI/sheety_localization
 repository: https://github.com/DoctorinaAI/sheety_localization
@@ -17,10 +17,10 @@ issue_tracker: https://github.com/DoctorinaAI/sheety_localization/issues
 
 topics:
   - localization
-  - sheet
   - cli
   - google-sheets
   - l10n
+  - i18n
 
 platforms:
   linux:
@@ -43,24 +43,18 @@ executables:
 
 environment:
   sdk: ">=3.6.0 <4.0.0"
-  #flutter: ">=3.29.0"
 
 dependencies:
   crypto: ^3.0.6
-  #flutter:
-  #  sdk: flutter
-  #flutter_localizations:
-  #  sdk: flutter
   path: ^1.9.1
   args: ^2.7.0
   googleapis: ">=14.0.0 <16.0.0"
   googleapis_auth: ^2.0.0
+  yaml: ^3.1.2
 
 dev_dependencies:
-  #flutter_test:
-  #  sdk: flutter
+  http: ^1.2.0
+  intl: ^0.20.2
   lints: ">=5.0.0 <7.0.0"
   test: ^1.25.0
 
-flutter:
-  generate: true

@@ -1,0 +1,109 @@
+{
+  "generator": "sheety_localization",
+  "version": "0.7.0-dev",
+  "format": 1,
+  "target": "ts",
+  "sourceHash": "61d37015dcdf5f6138a9db0719530f6989236a1f8f040e24c11d46b46402209a",
+  "baseLocale": null,
+  "locales": [
+    "en",
+    "de",
+    "ru",
+    "pt_BR",
+    "ar",
+    "ar_EG",
+    "pt"
+  ],
+  "scopes": [
+    {
+      "name": "app",
+      "sheet": "app",
+      "baseLocale": "en",
+      "locales": [
+        "en",
+        "de",
+        "ru",
+        "pt_BR",
+        "ar",
+        "ar_EG",
+        "pt"
+      ],
+      "synthetic": {
+        "pt": "pt_BR"
+      },
+      "keys": 6,
+      "coverage": {
+        "en": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "de": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "ru": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "pt_BR": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "ar": {
+          "translated": 4,
+          "fallback": 2
+        },
+        "ar_EG": {
+          "translated": 1,
+          "fallback": 5
+        },
+        "pt": {
+          "translated": 6,
+          "fallback": 0
+        }
+      }
+    },
+    {
+      "name": "sign_up",
+      "sheet": "sign-up",
+      "baseLocale": "de",
+      "locales": [
+        "de",
+        "en"
+      ],
+      "keys": 2,
+      "coverage": {
+        "de": {
+          "translated": 2,
+          "fallback": 0
+        },
+        "en": {
+          "translated": 2,
+          "fallback": 0
+        }
+      }
+    }
+  ],
+  "files": {
+    "app/ar-EG.ts": "f832642b8161fdc72627e2fb35c811f2c5da4d74d505b6d60cf5048b0fe4ca8d",
+    "app/ar.ts": "3dca54bf2c912662ca802ac73783b6b4b1dbcf4369b2a01d152b8ff4e0877344",
+    "app/de.ts": "e0eb7725fdd69e7d617f7f6211c5dd89330a099b4e2ec5fa2052f0ad7c63b319",
+    "app/eager.ts": "3c85874c32144ad09d1f7c455787add32e491a8f79ef55d52397d9738efce66f",
+    "app/en.ts": "4198bb41944dabaefa5077944d0b5dcafa15040efed3bb2f03cb61cbf4f5cfad",
+    "app/index.ts": "2fdc51f64fe243ef6f8e57ae1f54870b5c7efe6e84dfcc015802c432f80855a9",
+    "app/meta.ts": "1e9482efa8bfac9d5220dfceebe7959a85652eb176aca6731fe65b1151591d09",
+    "app/pt-BR.ts": "ba02eb8ca4d7624cc5c08e99964c2961c5ad542db4c1ca78dc312b36ea3b78d3",
+    "app/pt.ts": "7e0a189f6b035470a0e59dd07e9f8c3fe6aebc537737b2cf0a9086475391702a",
+    "app/ru.ts": "6278df424c43b2346de4f40c893fcf2762ccc350f12f72c3255e5dfb54ca234d",
+    "app/types.ts": "02355e1989d24f3a15d15fbcf3e882b21bdf73afdcdf907a52d00ce2602ab4ca",
+    "index.ts": "4bc170612daeda2a771f74f0c25fc8f460580762fa2783b5a876e704ae3d613a",
+    "meta.ts": "d454f75af9f07cb89a29e60e7bcf3b4e47f6f198f654eb72aac6d5f4dc5e49ac",
+    "runtime.ts": "81dd27675f13668c0d9c85942ab42e6957f71f54b5a5f90e562ffdd71bf01116",
+    "sign_up/de.ts": "a1fc42e3f047f5b4f985477ad157c8e8f3415abbb855b4864ac1643480401ad5",
+    "sign_up/eager.ts": "3fdeb45f0da4fbe393bd639cbf54181dadf5fb00a2b62a2b2636fe8c8c076014",
+    "sign_up/en.ts": "48efcba1c112eb5f6bba285c25c1818f5e296420c1f198d71f8a60ab09539b0e",
+    "sign_up/index.ts": "1766b7a69178988768b694bfd0ac66480528dae56423e6a1d9d3914c4057091f",
+    "sign_up/meta.ts": "3852f3b594090888d48c0ec2c54c801e932a8d44797f897d26c15a873ae02ab6",
+    "sign_up/types.ts": "63b0092d0713c19559d6dd51764acc54dc295776124138221f63bfda5ae13894"
+  }
+}

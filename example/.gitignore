@@ -1,0 +1,6 @@
+# Build output of the packaging examples
+node_modules/
+dist/
+__pycache__/
+*.egg-info/
+build/

@@ -3,6 +3,7 @@ library;
 
 import 'package:googleapis/sheets/v4.dart';
 
+import '../common/sheet_range.dart';
 import 'sheets.dart';
 import 'utils.dart';
 
@@ -51,7 +52,9 @@ class GoogleSheetsGateway implements SheetsGateway {
 
       final List<List<Object?>>? values;
       try {
-        values = (await api.spreadsheets.values.get(id, title)).values;
+        // Quoted: a bare `v2` or `web1` is a cell reference, not the sheet.
+        values =
+            (await api.spreadsheets.values.get(id, sheetRange(title))).values;
       } on Object catch (e) {
         throw _translate(e, 'Error reading sheet "$title"');
       }

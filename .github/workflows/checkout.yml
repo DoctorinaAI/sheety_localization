@@ -11,15 +11,24 @@ on:
     branches:
       - "main"
       - "master"
+    # Everything that can change a check below: the code, the test data
+    # (fixtures and goldens), the generated example, the published file set
+    # (.pubignore, README, CHANGELOG, LICENSE, pubspec) and the CI itself.
+    # Keep the pull_request list below identical.
     paths:
-      - "bin/**.dart"
-      - "lib/**.dart"
-      - "test/**.dart"
-      - "example/**.dart"
-      - "example/**.html"
-      - ".github/workflows/*.yml"
-      - "pubspec.yaml"
+      - "bin/**"
+      - "lib/**"
+      - "test/**"
+      - "tool/**"
+      - "example/**"
+      - ".github/**"
+      - "dart_test.yaml"
       - "analysis_options.yaml"
+      - "pubspec.yaml"
+      - ".pubignore"
+      - "README.md"
+      - "CHANGELOG.md"
+      - "LICENSE"
   pull_request:
     branches:
       - "main"
@@ -31,14 +40,19 @@ on:
       - "hotfix/**"
       - "support/**"
     paths:
-      - "bin/**.dart"
-      - "lib/**.dart"
-      - "test/**.dart"
-      - "example/**.dart"
-      - "example/**.html"
-      - ".github/workflows/*.yml"
-      - "pubspec.yaml"
+      - "bin/**"
+      - "lib/**"
+      - "test/**"
+      - "tool/**"
+      - "example/**"
+      - ".github/**"
+      - "dart_test.yaml"
       - "analysis_options.yaml"
+      - "pubspec.yaml"
+      - ".pubignore"
+      - "README.md"
+      - "CHANGELOG.md"
+      - "LICENSE"
 
 permissions:
   contents: read
@@ -48,6 +62,14 @@ permissions:
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
+
+# Pinned toolchains of the integration job: a new upstream release must not
+# change the result of a run. Bump them deliberately.
+env:
+  NODE_VERSION: "22"
+  PYTHON_VERSION: "3.12"
+  MYPY_VERSION: "2.4.0"
+  PYRIGHT_VERSION: "1.1.414"
 
 jobs:
   checkout:
@@ -61,7 +83,7 @@ jobs:
     env:
       pub-cache: pub
       PUB_CACHE: /github/home/.pub-cache
-    timeout-minutes: 10
+    timeout-minutes: 20
     outputs:
       version: ${{ steps.setup.outputs.version }}
     concurrency:
@@ -89,16 +111,28 @@ jobs:
         timeout-minutes: 1
         run: dart format --set-exit-if-changed --line-length 80 -o none bin/ lib/ test/
 
-      - name: 🔍 Check what would be published
+      - name: 📈 Check analyzer
+        id: check-analyzer
+        timeout-minutes: 2
+        run: dart analyze --fatal-infos --fatal-warnings bin/ lib/ test/
+
+      - name: 🔍 Check the package publishes
         id: check-published-files
         timeout-minutes: 2
-        # A .pubignore replaces the .gitignore of its own directory for
+        # `dart pub publish --dry-run` exits 0 when the package is clean and
+        # 65 on any validation warning or error, so a non-zero exit fails
+        # the job. The leak scan below is the last line of defence: a
+        # .pubignore replaces the .gitignore of its own directory for
         # `pub publish`, so a rule forgotten there uploads credentials or
-        # build output to pub.dev. This is the last line of defence.
+        # build output to pub.dev.
         run: |
-          dart pub publish --dry-run > /tmp/publish-set.txt 2>&1 || true
+          set +e
+          dart pub publish --dry-run > /tmp/publish-set.txt 2>&1
+          status=$?
+          set -e
+          cat /tmp/publish-set.txt
           sed -E 's/.*[├└]── //; s/ \([^)]*\)$//' /tmp/publish-set.txt |
-            grep -iE '^([^ ]+\.(key|pem|p12|jks|keystore)|[^ ]+\.vm\.json|credentials\.json|service-account[^ ]*\.json|build|coverage|reports|node_modules)$' \
+            grep -iE '^([^ ]+\.(key|pem|p12|jks|keystore)|[^ ]+\.vm\.json|credentials\.json|service-account[^ ]*\.json|arch\.z|build|coverage|reports|node_modules|\.dart_tool)$' \
             > /tmp/leaked.txt || true
           if [ -s /tmp/leaked.txt ]; then
             echo "::error::Files that must never reach pub.dev are in the published set:"
@@ -106,16 +140,92 @@ jobs:
             echo "Add them to .pubignore - it replaces .gitignore for pub."
             exit 1
           fi
-          echo "The published file set is clean."
+          if [ "$status" -ne 0 ]; then
+            echo "::error::dart pub publish --dry-run failed (exit $status): the package would not publish cleanly."
+            exit "$status"
+          fi
+          echo "The package publishes and the published file set is clean."
 
-      - name: 📈 Check analyzer
-        id: check-analyzer
-        timeout-minutes: 1
-        run: dart analyze --fatal-infos --fatal-warnings bin/ lib/ test/
+      - name: 🧬 Check the generated example is up to date
+        id: check-example
+        timeout-minutes: 2
+        run: dart run sheety_localization:generate --config=example/sheety.yaml --check
 
       - name: 🧪 Run unit tests
         id: run-unit-tests
-        timeout-minutes: 5
+        timeout-minutes: 10
+        # The integration tests (real toolchains) run in the job below; the
+        # Dart image has none of them.
         run: |
           dart test --color --platform=vm --concurrency=12 \
-            --timeout=60s --reporter=github
+            --exclude-tags=integration --timeout=120s --reporter=github
+
+  integration:
+    name: "Integration"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    concurrency:
+      group: integration-${{ github.workflow }}-${{ github.ref_name }}
+      cancel-in-progress: true
+    permissions:
+      contents: read
+    env:
+      # Every toolchain is installed below, so a missing one is a failure,
+      # not a skip that looks like a pass.
+      SHEETY_REQUIRE_TOOLS: "1"
+      SHEETY_PYTHON: python
+      SHEETY_MYPY_PYTHON: python
+      SHEETY_PYRIGHT: pyright
+    steps:
+      - name: 📦 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: 🐦 Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: 🧰 Setup Node.js
+        # The TypeScript locale negotiation test runs the .ts runtime with
+        # node's type stripping, which needs node >= 22.
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: 👷 Install dependencies
+        run: |
+          python -m pip install --quiet "mypy==${MYPY_VERSION}"
+          npm install --global --no-audit --no-fund "pyright@${PYRIGHT_VERSION}"
+          flutter --version
+          # The gen-l10n parity test loads flutter_tools from the SDK; the
+          # first `flutter` run normally resolves its packages already.
+          tools="$(dirname "$(dirname "$(command -v flutter)")")/packages/flutter_tools"
+          test -f "$tools/.dart_tool/package_config.json" ||
+            (cd "$tools" && dart pub get)
+          node --version && npx --version
+          python --version && python -m mypy --version && pyright --version
+          dart pub get --no-example
+
+      - name: 🧪 Run all tests with the real toolchains
+        timeout-minutes: 25
+        # Everything, not only `--tags=integration`: some untagged tests
+        # (the CLDR cross-check against node) need a toolchain too.
+        run: |
+          mkdir -p reports
+          dart test --color --platform=vm --timeout=300s --reporter=github \
+            --file-reporter=json:reports/tests.json
+
+      - name: 🚫 Fail on unexpected skips
+        if: ${{ !cancelled() }}
+        # A probe that does not go through the test helpers (and so ignores
+        # SHEETY_REQUIRE_TOOLS) still only skips; only the real-snapshot
+        # tests are allowed to.
+        run: dart .github/scripts/check_skips.dart reports/tests.json

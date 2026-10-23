@@ -1,0 +1,101 @@
+{
+  "generator": "sheety_localization",
+  "version": "0.7.0-dev",
+  "format": 1,
+  "target": "dart",
+  "sourceHash": "61d37015dcdf5f6138a9db0719530f6989236a1f8f040e24c11d46b46402209a",
+  "baseLocale": null,
+  "locales": [
+    "en",
+    "de",
+    "ru",
+    "pt_BR",
+    "ar",
+    "ar_EG",
+    "pt"
+  ],
+  "scopes": [
+    {
+      "name": "app",
+      "sheet": "app",
+      "baseLocale": "en",
+      "locales": [
+        "en",
+        "de",
+        "ru",
+        "pt_BR",
+        "ar",
+        "ar_EG",
+        "pt"
+      ],
+      "synthetic": {
+        "pt": "pt_BR"
+      },
+      "keys": 6,
+      "coverage": {
+        "en": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "de": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "ru": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "pt_BR": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "ar": {
+          "translated": 4,
+          "fallback": 2
+        },
+        "ar_EG": {
+          "translated": 1,
+          "fallback": 5
+        },
+        "pt": {
+          "translated": 6,
+          "fallback": 0
+        }
+      }
+    },
+    {
+      "name": "sign_up",
+      "sheet": "sign-up",
+      "baseLocale": "de",
+      "locales": [
+        "de",
+        "en"
+      ],
+      "keys": 2,
+      "coverage": {
+        "de": {
+          "translated": 2,
+          "fallback": 0
+        },
+        "en": {
+          "translated": 2,
+          "fallback": 0
+        }
+      }
+    }
+  ],
+  "files": {
+    "localization.dart": "5b2d5abbd4954fc0026316e96fb5fc74f5eb13b546d6dc9eb4b1e59c2e375cef",
+    "src/generated/app/app_localization.dart": "7fb1868245103171b6d5df00b012c0c757b716bdd479d32ee77fc258f44b6633",
+    "src/generated/app/app_localization_ar.dart": "a30faeb7bf6249b1a4ab77a46b9229341702ebd1dd5dbdf221dd52630e9676c0",
+    "src/generated/app/app_localization_de.dart": "2802a7d1f1171a85009556182a657d39adfe1b0432d177920029f0302e693a6f",
+    "src/generated/app/app_localization_en.dart": "0e4320b2de05df6a477b56685f7a7c7aed19c49fad9b82749464035d68c6426b",
+    "src/generated/app/app_localization_pt.dart": "7140895254fc0c9fa6027720b48f09a047358a03450d513bf96008318ec97d0d",
+    "src/generated/app/app_localization_ru.dart": "299e69a1072c082a8ac579bacd319e8d8833088ccdbd9521d16bb9b2cc1a8f67",
+    "src/generated/locales.dart": "557c5d3442df2023ce50fa2aa42eea151ea8819ab07f97733c1e0e0bb784c2e5",
+    "src/generated/localization_meta.dart": "3534dd3762f3e432685cb5358446dcf287feaa361a065cfe3aa2132607f08d29",
+    "src/generated/sign_up/sign_up_localization.dart": "e72c2a2ca9445ec96f993c2be723a9004724e47397319f38ac88de9f7e72f5eb",
+    "src/generated/sign_up/sign_up_localization_de.dart": "f9e950d9f2c68106f3769d9787880d17205846c658780813167dd18bbf22b6df",
+    "src/generated/sign_up/sign_up_localization_en.dart": "27dbaecd1a70975232e0d2182f3cfa8d46ff092bef06962c02b4c3c41504513d"
+  }
+}

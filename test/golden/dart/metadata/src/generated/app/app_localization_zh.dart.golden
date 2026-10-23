@@ -1,0 +1,256 @@
+// This file is generated, do not edit it manually!
+
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localization.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Chinese (`zh`).
+class AppLocalizationZh extends AppLocalization {
+  AppLocalizationZh([String locale = 'zh']) : super(locale);
+
+  @override
+  String get title => '範例';
+
+  @override
+  String greeting(String name) {
+    return '你好，$name！';
+  }
+
+  @override
+  String items(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 項',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String overridden(num n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n many',
+      two: 'two',
+      one: 'one-ish',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pronoun(String gender) {
+    String _temp0 = intl.Intl.selectLogic(gender, {
+      'male': 'he',
+      'female': 'she',
+      'other': 'they',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String nested(String gender, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items',
+      one: 'one item',
+      zero: 'nothing',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items',
+      one: 'one item',
+      zero: 'nothing',
+    );
+    String _temp2 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count things',
+      one: 'one thing',
+      zero: 'nothing',
+    );
+    String _temp3 = intl.Intl.selectLogic(gender, {
+      'male': 'He has $_temp0',
+      'female': 'She has $_temp1',
+      'other': 'They have $_temp2',
+    });
+    return '$_temp3';
+  }
+
+  @override
+  String lastSeen(Object when) {
+    return 'Last seen $when';
+  }
+
+  @override
+  String get terms => 'Accept the <b>terms</b> and the <a>policy</a>';
+
+  @override
+  String get special =>
+      'It\'s \$5 \\ 100% \"quoted\" #1\nsecond\tline\r\nthird ünïcødé 😀 \$x \\n';
+
+  @override
+  String specialArg(String name) {
+    return '${name}s and $name\'s \$ ${name}_x';
+  }
+
+  @override
+  String price(num amount) {
+    return 'Price: $amount €';
+  }
+
+  @override
+  String get fallbackOnly => 'Only English';
+
+  @override
+  String emptyBranch(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count',
+      one: '$count',
+      zero: '',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  Map<String, String> get templates => _templatesZh;
+
+  @override
+  Set<String> get fallbackKeys => const <String>{
+    'overridden',
+    'pronoun',
+    'nested',
+    'lastSeen',
+    'terms',
+    'special',
+    'specialArg',
+    'price',
+    'fallbackOnly',
+    'emptyBranch',
+  };
+}
+
+/// The translations for Chinese, using the Han script (`zh_Hant`).
+class AppLocalizationZhHant extends AppLocalizationZh {
+  AppLocalizationZhHant() : super('zh_Hant');
+
+  @override
+  String get title => '範例';
+
+  @override
+  String greeting(String name) {
+    return '你好，$name！';
+  }
+
+  @override
+  String items(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 項',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  Map<String, String> get templates => _templatesZhHant;
+
+  @override
+  Set<String> get fallbackKeys => const <String>{
+    'overridden',
+    'pronoun',
+    'nested',
+    'lastSeen',
+    'terms',
+    'special',
+    'specialArg',
+    'price',
+    'fallbackOnly',
+    'emptyBranch',
+  };
+}
+
+/// The translations for Chinese, as used in Taiwan, using the Han script (`zh_Hant_TW`).
+class AppLocalizationZhHantTw extends AppLocalizationZh {
+  AppLocalizationZhHantTw() : super('zh_Hant_TW');
+
+  @override
+  String get title => '範例 TW';
+
+  @override
+  Map<String, String> get templates => _templatesZhHantTw;
+
+  @override
+  Set<String> get fallbackKeys => const <String>{
+    'greeting',
+    'items',
+    'overridden',
+    'pronoun',
+    'nested',
+    'lastSeen',
+    'terms',
+    'special',
+    'specialArg',
+    'price',
+    'fallbackOnly',
+    'emptyBranch',
+  };
+}
+
+const Map<String, String> _templatesZh = <String, String>{
+  'title': '範例',
+  'greeting': '你好，{name}！',
+  'items': '{count, plural, other{{count} 項}}',
+  'overridden':
+      '{n, plural, =1{exactly one} one{one-ish} =2{two} other{{n} many}}',
+  'pronoun': '{gender, select, male{he} female{she} other{they}}',
+  'nested': '{gender, select, male{He has {count, plural, =0{nothing} one{one item} other{{count} items}}} female{She has {count, plural, =0{nothing} one{one item} other{{count} items}}} other{They have {count, plural, =0{nothing} one{one thing} other{{count} things}}}}',
+  'lastSeen': 'Last seen {when}',
+  'terms': 'Accept the <b>terms</b> and the <a>policy</a>',
+  'special': 'It\'s \$5 \\ 100% \"quoted\" #1\nsecond\tline\r\nthird ünïcødé 😀 \$x \\n',
+  'specialArg': '{name}s and {name}\'s \$ {name}_x',
+  'price': 'Price: {amount} €',
+  'fallbackOnly': 'Only English',
+  'emptyBranch': '{count, plural, =0{} one{{count}} other{{count}}}',
+};
+
+const Map<String, String> _templatesZhHant = <String, String>{
+  'title': '範例',
+  'greeting': '你好，{name}！',
+  'items': '{count, plural, other{{count} 項}}',
+  'overridden':
+      '{n, plural, =1{exactly one} one{one-ish} =2{two} other{{n} many}}',
+  'pronoun': '{gender, select, male{he} female{she} other{they}}',
+  'nested': '{gender, select, male{He has {count, plural, =0{nothing} one{one item} other{{count} items}}} female{She has {count, plural, =0{nothing} one{one item} other{{count} items}}} other{They have {count, plural, =0{nothing} one{one thing} other{{count} things}}}}',
+  'lastSeen': 'Last seen {when}',
+  'terms': 'Accept the <b>terms</b> and the <a>policy</a>',
+  'special': 'It\'s \$5 \\ 100% \"quoted\" #1\nsecond\tline\r\nthird ünïcødé 😀 \$x \\n',
+  'specialArg': '{name}s and {name}\'s \$ {name}_x',
+  'price': 'Price: {amount} €',
+  'fallbackOnly': 'Only English',
+  'emptyBranch': '{count, plural, =0{} one{{count}} other{{count}}}',
+};
+
+const Map<String, String> _templatesZhHantTw = <String, String>{
+  'title': '範例 TW',
+  'greeting': '你好，{name}！',
+  'items': '{count, plural, other{{count} 項}}',
+  'overridden':
+      '{n, plural, =1{exactly one} one{one-ish} =2{two} other{{n} many}}',
+  'pronoun': '{gender, select, male{he} female{she} other{they}}',
+  'nested': '{gender, select, male{He has {count, plural, =0{nothing} one{one item} other{{count} items}}} female{She has {count, plural, =0{nothing} one{one item} other{{count} items}}} other{They have {count, plural, =0{nothing} one{one thing} other{{count} things}}}}',
+  'lastSeen': 'Last seen {when}',
+  'terms': 'Accept the <b>terms</b> and the <a>policy</a>',
+  'special': 'It\'s \$5 \\ 100% \"quoted\" #1\nsecond\tline\r\nthird ünïcødé 😀 \$x \\n',
+  'specialArg': '{name}s and {name}\'s \$ {name}_x',
+  'price': 'Price: {amount} €',
+  'fallbackOnly': 'Only English',
+  'emptyBranch': '{count, plural, =0{} one{{count}} other{{count}}}',
+};

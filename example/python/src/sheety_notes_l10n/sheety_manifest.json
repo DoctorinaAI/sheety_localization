@@ -1,0 +1,109 @@
+{
+  "generator": "sheety_localization",
+  "version": "0.7.0-dev",
+  "format": 1,
+  "target": "python",
+  "sourceHash": "4a06712649e860d27a6bb43b13671a81e40f532406af4780ec839293a33824a9",
+  "baseLocale": "en",
+  "locales": [
+    "en",
+    "de",
+    "ru",
+    "pt_BR",
+    "ar",
+    "ar_EG",
+    "pt"
+  ],
+  "scopes": [
+    {
+      "name": "app",
+      "sheet": "app",
+      "baseLocale": "en",
+      "locales": [
+        "en",
+        "de",
+        "ru",
+        "pt_BR",
+        "ar",
+        "ar_EG",
+        "pt"
+      ],
+      "synthetic": {
+        "pt": "pt_BR"
+      },
+      "keys": 6,
+      "coverage": {
+        "en": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "de": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "ru": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "pt_BR": {
+          "translated": 6,
+          "fallback": 0
+        },
+        "ar": {
+          "translated": 4,
+          "fallback": 2
+        },
+        "ar_EG": {
+          "translated": 1,
+          "fallback": 5
+        },
+        "pt": {
+          "translated": 6,
+          "fallback": 0
+        }
+      }
+    },
+    {
+      "name": "backend_mail",
+      "sheet": "backend-mail",
+      "baseLocale": "en",
+      "locales": [
+        "en",
+        "de",
+        "ru"
+      ],
+      "keys": 2,
+      "coverage": {
+        "en": {
+          "translated": 2,
+          "fallback": 0
+        },
+        "de": {
+          "translated": 2,
+          "fallback": 0
+        },
+        "ru": {
+          "translated": 2,
+          "fallback": 0
+        }
+      }
+    }
+  ],
+  "files": {
+    "__init__.py": "b9f9068c062351357cb5113310c51f886463d3ef5a9b9ccc8d05f73d8ceddd62",
+    "_runtime.py": "1edebc3cc26afe59eb367533cf597bee6db9a830e9859dbfcd4f9d474296b9fd",
+    "app/__init__.py": "a124fd78603709f92b0aaee2b52da78e2bf80d25fae0c98c1a9aa05facd8d5f1",
+    "app/_ar.py": "0762c44fc0363cb4925ca0db05f35c7d32f2f5305f55677d8a103e73c6e48a76",
+    "app/_ar_EG.py": "04c23b7bd60d9375308ce53d6bfdc82ca93ec065de6b36eaf65b59049ea6e57e",
+    "app/_de.py": "4494b99f03540bd919f5df3fc8227426a67fa5f8f1e31afddfe7e139cd6099c2",
+    "app/_en.py": "331515c87af8a2cd2fb8ba6bd212395857bb06c4629e10eab12fda5124de3bbc",
+    "app/_pt.py": "8ce5798674e8f148fae3f10e23c99485f97f421c56468eb29ad38b005737239c",
+    "app/_pt_BR.py": "ac87da3cb9c4c1a687665ba062136507caf9609fb0f208c3c34d43d7347e2e45",
+    "app/_ru.py": "f9f7ff752ced6fff596bd29adcfeef27fa64e6aced39f8349ce796fcb7c09b24",
+    "backend_mail/__init__.py": "cc08a6a4c32c7a963a08dd156566094a5d882b95d2cfc2e8472486f401e27f94",
+    "backend_mail/_de.py": "8736764bb40f4a6d6047dc4d9c01e7cda05fc218529172e6f0c7b9b95eb6caf4",
+    "backend_mail/_en.py": "ca89f52dc84c869394fc680d73538e1b8a5abd1836529ec7f590ab18b7a59670",
+    "backend_mail/_ru.py": "7fd8c06d803f26592328bf3405f477cfef97a27fa2d696a78665c3af0260fcc9",
+    "py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

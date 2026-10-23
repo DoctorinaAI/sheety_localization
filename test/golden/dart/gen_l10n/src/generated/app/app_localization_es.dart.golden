@@ -1,0 +1,131 @@
+// This file is generated, do not edit it manually!
+
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+
+import 'app_localization.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for Spanish Castilian (`es`).
+class AppLocalizationEs extends AppLocalization {
+  AppLocalizationEs([String locale = 'es']) : super(locale);
+
+  @override
+  String get title => 'Ejemplo';
+
+  @override
+  String greeting(String name) {
+    return '¡Hola, $name!';
+  }
+
+  @override
+  String items(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count artículos',
+      many: '$count de artículos',
+      one: '$count artículo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String overridden(num n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n many',
+      two: 'two',
+      one: 'one-ish',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pronoun(String gender) {
+    String _temp0 = intl.Intl.selectLogic(gender, {
+      'male': 'he',
+      'female': 'she',
+      'other': 'they',
+    });
+    return '$_temp0';
+  }
+
+  @override
+  String nested(String gender, int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items',
+      one: 'one item',
+      zero: 'nothing',
+    );
+    String _temp1 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count items',
+      one: 'one item',
+      zero: 'nothing',
+    );
+    String _temp2 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count things',
+      one: 'one thing',
+      zero: 'nothing',
+    );
+    String _temp3 = intl.Intl.selectLogic(gender, {
+      'male': 'He has $_temp0',
+      'female': 'She has $_temp1',
+      'other': 'They have $_temp2',
+    });
+    return '$_temp3';
+  }
+
+  @override
+  String lastSeen(Object when) {
+    return 'Last seen $when';
+  }
+
+  @override
+  String get terms => 'Accept the <b>terms</b> and the <a>policy</a>';
+
+  @override
+  String get special =>
+      'It\'s \$5 \\ 100% \"quoted\" #1\nsecond\tline\r\nthird ünïcødé 😀 \$x \\n';
+
+  @override
+  String specialArg(String name) {
+    return '${name}s and $name\'s \$ ${name}_x';
+  }
+
+  @override
+  String price(num amount) {
+    return 'Price: $amount €';
+  }
+
+  @override
+  String get fallbackOnly => 'Only English';
+
+  @override
+  String emptyBranch(num count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count',
+      one: '$count',
+      zero: '',
+    );
+    return '$_temp0';
+  }
+}
+
+/// The translations for Spanish Castilian, as used in Latin America and the Caribbean (`es_419`).
+class AppLocalizationEs419 extends AppLocalizationEs {
+  AppLocalizationEs419() : super('es_419');
+
+  @override
+  String get title => 'Ejemplo LatAm';
+}

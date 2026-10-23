@@ -4,30 +4,12 @@ library;
 import 'dart:async';
 import 'dart:collection';
 
+import '../common/sheet_layout.dart';
 import 'client.dart';
-import 'language_names.dart';
 import 'models.dart';
 import 'prompt.dart';
 import 'utils.dart';
 import 'validation.dart';
-
-/// Whether [header] describes a localization sheet.
-///
-/// The expected layout is `label | description | meta | source | locale ...`,
-/// so the fourth column is the source language the rest are translated from.
-/// It does not have to be English: `ru`, `de`, `pt_BR` and any other
-/// recognized language code are equally valid sources.
-///
-/// A spreadsheet usually holds other sheets too — reference tables, notes —
-/// whose columns are ordinary data. Localizing those would overwrite them with
-/// translations, so a sheet whose fourth column is not a recognized language
-/// (e.g. a `Family` or `Region` data column) is left alone.
-bool isLocalizationHeader(List<Object?> header) {
-  if (header.length < 5) return false;
-  final source = header[3];
-  if (source is! String) return false;
-  return resolveLanguageName(source) != null;
-}
 
 /// Extract cells to be localized from the raw [values] of a sheet.
 ///
@@ -61,46 +43,37 @@ List<LocalizeRow> extractEmptyCells({
     return const [];
   }
 
-  // The fourth column is the source language every other column is translated
-  // from. `isLocalizationHeader` has already vouched for it being a String and
-  // a recognized language, so the sanitized code is safe to reuse below.
-  final sourceCode = sanitize(header[3] as String);
+  // Locale columns are read exactly as `generate` reads them: sanitized,
+  // parsed as a locale code and deduplicated by the normalized code. A column
+  // `generate` skips ("Notes", a second "pt_br") must not be filled with
+  // translations either.
+  final layout = readLocaleHeader(header);
+  for (final skipped in layout.skipped) {
+    final column = '[${skipped.letter}]';
+    $err(switch (skipped.problem) {
+      HeaderCellProblem.blank => 'Sheet "$bucket" has empty column $column '
+          'in header, ignoring the whole column...',
+      HeaderCellProblem.notText => 'Sheet "$bucket" has non-string column '
+          '$column in header, ignoring the whole column...',
+      HeaderCellProblem.invalid => 'Sheet "$bucket" has "${skipped.cell}" in '
+          'column $column of the header, which is not a locale code, '
+          'ignoring the whole column...',
+      // Localizing both would ask the model for a language twice and write
+      // the answer into the first column only, leaving the second one empty
+      // forever.
+      HeaderCellProblem.duplicate => 'Sheet "$bucket" has a duplicate locale '
+          '"${skipped.duplicateOf!.tag.code}" in column $column, '
+          'ignoring the whole column...',
+    });
+  }
 
-  // Fill locales
+  // The fourth column is the source language every other column is translated
+  // from. `isLocalizationHeader` has already vouched for it being a valid,
+  // recognized locale, so it is the first column read.
+  final sourceCode = layout.columns.first.tag.code;
   final locales = List.filled(header.length, '', growable: false);
-  final seen = <String>{};
-  for (var i = 3; i < header.length; i++) {
-    final cell = header[i];
-    switch (cell) {
-      case String text when text.isNotEmpty:
-        final locale = sanitize(text);
-        // Two columns can sanitize to the same code ("pt-BR" and "pt_BR", or a
-        // trailing space). Localizing both would ask the model for a language
-        // twice and write the answer into the first column only, leaving the
-        // second one empty forever.
-        if (!seen.add(locale)) {
-          $err(
-            'Sheet "$bucket" has a duplicate locale "$locale" in column '
-            '[${columnFromIndex(i)}], ignoring the whole column...',
-          );
-          continue;
-        }
-        locales[i] = locale;
-      case String _:
-        $err(
-          'Sheet "$bucket" has empty column '
-          '[${columnFromIndex(i)}] in header, '
-          'ignore the whole column...',
-        );
-        continue;
-      default:
-        $err(
-          'Sheet "$bucket" has non-string column '
-          '[${columnFromIndex(i)}] in header, '
-          'ignore whole column...',
-        );
-        continue;
-    }
+  for (final column in layout.columns.skip(1)) {
+    locales[column.index] = column.tag.code;
   }
 
   // Process locales from the sheet, skipping empty ones
@@ -109,38 +82,43 @@ List<LocalizeRow> extractEmptyCells({
     final queue = Queue<LocalizeCell>();
     for (var i = 1; i < values.length; i++) {
       final row = values[i];
-      if (row.isEmpty || row.every((cell) => cell == null) || row.length < 4) {
+      if (row.length < 4 || row.every(isBlankCell)) {
         $err('Sheet "$bucket" has empty row ${i + 1}, skipping row...');
         continue;
       }
 
       // Extract label, description, meta and source text from the row
       final [$label, $description, $meta, $source, ..._] = row;
-      if ($label == null || $label is! String || $label.isEmpty) {
+      // `generate` skips a label without letters or digits ("---", " ").
+      final label = $label is String ? sanitize($label) : '';
+      if (label.isEmpty) {
         $err(
           'Sheet "$bucket" has empty label in row #${i + 1}, '
           'skipping row...',
         );
         continue;
       }
-      final label = sanitize($label);
+
+      // Without a source text there is nothing to translate, and `generate`
+      // leaves such a row out: never translate the label instead.
+      final source = _text($source);
+      if (source == null) {
+        $err(
+          'Sheet "$bucket" has empty source text in row #${i + 1}, '
+          'skipping row...',
+        );
+        continue;
+      }
 
       // Extract locales from the row
       for (var j = 4; j < locales.length; j++) {
         final cell = row.length > j ? row[j] : null;
         final locale = locales[j];
         if (locale.isEmpty) continue; // Skip empty locales
-        switch (cell) {
-          case null:
-            queue.add(LocalizeCell(column: j, code: locale, text: ''));
-          case String text when text.isNotEmpty:
-            continue; // Already localized, skip
-          case String():
-            queue.add(LocalizeCell(column: j, code: locale, text: ''));
-          case num():
-          default:
-            continue; // Skip non-string cells
+        if (isBlankCell(cell)) {
+          queue.add(LocalizeCell(column: j, code: locale, text: ''));
         }
+        // Otherwise already localized (or a non-string cell): skip.
       }
 
       // Skip rows with no locales to localize
@@ -150,21 +128,9 @@ List<LocalizeRow> extractEmptyCells({
           row: i,
           label: label,
           sourceCode: sourceCode,
-          description: switch ($description) {
-            String text when text.isNotEmpty => text,
-            num number => number.toString(),
-            _ => null,
-          },
-          meta: switch ($meta) {
-            String text when text.isNotEmpty => text,
-            num number => number.toString(),
-            _ => null,
-          },
-          source: switch ($source) {
-            String text when text.isNotEmpty => text,
-            num number => number.toString(),
-            _ => label,
-          },
+          description: _text($description),
+          meta: _text($meta),
+          source: source,
           cells: queue.toList(growable: false),
         ),
       );
@@ -174,6 +140,14 @@ List<LocalizeRow> extractEmptyCells({
 
   return localize;
 }
+
+/// The text of a non-blank cell (a number or a boolean as text), else `null`.
+String? _text(Object? cell) => switch (cell) {
+      _ when isBlankCell(cell) => null,
+      final String text => text,
+      final Object other => '$other',
+      null => null,
+    };
 
 /// Localize rows using the OpenAI API.
 ///

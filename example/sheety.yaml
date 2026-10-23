@@ -1,0 +1,40 @@
+# Configuration of `dart run sheety_localization:generate` for this example.
+#
+# Regenerate everything from the snapshot (no Google access needed):
+#   dart run sheety_localization:generate --config=example/sheety.yaml
+# Check that the committed output is up to date (CI):
+#   dart run sheety_localization:generate --config=example/sheety.yaml --check
+#
+# Paths are relative to this file.
+
+# A real project reads the Google Sheet:
+#   sheet: <spreadsheet-id>
+#   credentials: credentials.json
+# This example reads an offline snapshot of a small synthetic sheet instead.
+snapshot: snapshot.json
+
+# Not a localization sheet: skipped by every target.
+ignore: ['^help$']
+
+# Sheets whose texts use {{name}} placeholders instead of ICU messages.
+syntax:
+  mustache: ['^backend-']
+
+targets:
+  # Flutter: drop-in replacement of `flutter gen-l10n` output.
+  dart:
+    output: dart/lib
+    ignore: ['^backend-']
+    options:
+      directory: src/generated
+      barrel: localization.dart
+
+  # Astro / SolidJS: plain ES modules, no runtime dependencies.
+  ts:
+    output: ts/src/i18n
+    ignore: ['^backend-']
+
+  # A backend (FastAPI, Django, ...): a typed package, no runtime dependencies.
+  python:
+    output: python/src/sheety_notes_l10n
+    include: ['^app$', '^backend-']

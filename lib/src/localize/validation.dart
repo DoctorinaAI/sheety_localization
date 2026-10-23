@@ -1,6 +1,10 @@
 /// Sanity checks applied to every translation returned by the model.
 library;
 
+import '../generate/icu/ast.dart';
+import '../generate/icu/mustache.dart';
+import '../generate/icu/parser.dart';
+
 /// HTML/XML-like tags: `<b>`, `</b>`, `<br/>`.
 final RegExp _tag = RegExp(r'</?[a-zA-Z][^<>]*>');
 
@@ -157,12 +161,26 @@ String? validateTranslation({
   // Unicode replacement character means the payload is already corrupted.
   if (text.contains('�')) return 'contains replacement characters';
 
-  // Placeholders must survive translation.
-  final expected = extractPlaceholders(source);
-  final actual = extractPlaceholders(text);
-
   if (_hasBalancedBraces(source) && !_hasBalancedBraces(text))
     return 'unbalanced braces in text';
+
+  // Placeholders must survive translation. A valid ICU source is read by the
+  // parser of `generate` (in `{g, select, male{He} other{They}}` the `{He}`
+  // is branch text, not a placeholder named `He`), anything else by the
+  // brace scanner.
+  final Placeholders expected;
+  final Placeholders actual;
+  final sourceAst = _tryParse(() => parseIcu(source));
+  if (sourceAst != null) {
+    final textAst = _tryParse(() => parseIcu(text));
+    if (textAst == null)
+      return validateSyntax(source: source, translation: text);
+    expected = _placeholdersOf(sourceAst, source);
+    actual = _placeholdersOf(textAst, text);
+  } else {
+    expected = extractPlaceholders(source);
+    actual = extractPlaceholders(text);
+  }
 
   final missing = expected.arguments.difference(actual.arguments);
   final extra = actual.arguments.difference(expected.arguments);
@@ -183,5 +201,106 @@ String? validateTranslation({
   if (expected.tags.join(' ') != actual.tags.join(' '))
     return 'markup mismatch: expected ${expected.tags}, got ${actual.tags}';
 
+  return validateSyntax(source: source, translation: text);
+}
+
+/// Checks [translation] with the parsers of `generate`, so that `localize`
+/// never writes a text `generate` rejects.
+///
+/// `localize` does not know which sheets are mustache sheets, so the syntax
+/// is inferred from the [source]:
+///
+/// * a source that is a valid ICU message (the gen-l10n subset) makes an ICU
+///   sheet: the translation must parse as ICU too (no `{n, number}`, `=5`,
+///   `selectordinal`, ...) and use the same placeholders the same way (an
+///   argument stays an argument, a plural count stays a plural count);
+/// * a source that is not valid ICU but has mustache placeholders
+///   (`{{name}}`) makes a mustache sheet: the translation must parse as
+///   mustache, have the same `{{name}}` set, and must not turn one of them
+///   into an ICU-style `{name}`;
+/// * a source that is neither (`generate` rejects it in any sheet) gets no
+///   further check.
+///
+/// Returns `null` when the translation is acceptable, or the reason why not.
+String? validateSyntax({required String source, required String translation}) {
+  final icu = _tryParse(() => parseIcu(source));
+  if (icu != null) {
+    final IcuMessage parsed;
+    try {
+      parsed = parseIcu(translation);
+    } on IcuSyntaxException catch (e) {
+      return 'not a valid ICU message: ${e.message} at offset ${e.offset}';
+    }
+    final expected = _uses(icu);
+    final actual = _uses(parsed);
+    if (expected.length != actual.length || !expected.containsAll(actual))
+      return 'placeholder usage mismatch: expected '
+          '${expected.toList()..sort()}, got ${actual.toList()..sort()}';
+    return null;
+  }
+
+  if (!looksLikeMustache(source)) return null;
+  final mustache = _tryParse(() => parseMustache(source));
+  if (mustache == null) return null;
+  final IcuMessage parsed;
+  try {
+    parsed = parseMustache(translation);
+  } on IcuSyntaxException catch (e) {
+    return 'not a valid mustache message: ${e.message} at offset ${e.offset}';
+  }
+  final expected = mustache.placeholderNames.toSet();
+  final actual = parsed.placeholderNames.toSet();
+  if (expected.length != actual.length || !expected.containsAll(actual))
+    return 'mustache placeholder mismatch: expected '
+        '${expected.toList()..sort()}, got ${actual.toList()..sort()}';
+  for (final name in expected) {
+    final single =
+        RegExp('(?<!\\{)\\{\\s*${RegExp.escape(name)}\\s*\\}(?!\\})');
+    if (single.hasMatch(translation))
+      return 'mustache placeholder {{$name}} turned into {$name}';
+  }
   return null;
 }
+
+IcuMessage? _tryParse(IcuMessage Function() parse) {
+  try {
+    return parse();
+  } on IcuSyntaxException {
+    return null;
+  }
+}
+
+/// The [Placeholders] of a parsed ICU [message] whose source is [text].
+Placeholders _placeholdersOf(IcuMessage message, String text) {
+  final uses = message.placeholderUses;
+  final branchArguments = <String>{};
+  for (final node in message.allNodes) {
+    final branches = switch (node) {
+      IcuPlural(:final branches) => [for (final b in branches) b.message],
+      IcuSelect(:final branches) => [for (final b in branches) b.message],
+      IcuText() || IcuArgument() => const <IcuMessage>[],
+    };
+    for (final branch in branches) {
+      branchArguments.addAll(branch.placeholderNames);
+    }
+  }
+  return Placeholders(
+    arguments: {for (final use in uses) use.name},
+    directives: {
+      for (final use in uses)
+        if (use.usage != IcuPlaceholderUsage.argument) use.name,
+    },
+    branchArguments: branchArguments,
+    tags: _tag.allMatches(text).map((m) => m.group(0)!).toList()..sort(),
+  );
+}
+
+/// `name` for an argument, `name (plural)` / `name (select)` otherwise.
+Set<String> _uses(IcuMessage message) => {
+      for (final use in message.placeholderUses)
+        switch (use.usage) {
+          IcuPlaceholderUsage.argument => use.name,
+          IcuPlaceholderUsage.plural => '${use.name} (plural)',
+          IcuPlaceholderUsage.select => '${use.name} (select)',
+        },
+    };

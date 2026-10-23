@@ -1,5 +1,6 @@
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import 'sheety.dart';
 
 void main() => group('buildLocalizationPrompt', () {
       test('spells out every language by name and endonym', () {

@@ -15,19 +15,16 @@ outputs:
 runs:
   using: composite
   steps:
+    # The whole tree, not a sparse list: dart_test.yaml (the integration tag
+    # and its timeout), .pubignore and LICENSE (the real published file
+    # set), example/ (the `--check` of the generated example) and tool/ are
+    # all needed, and a list silently goes stale when a file is added.
+    # Without `sparse-checkout`, checkout@v4 also disables the sparse
+    # checkout of `.github/` the calling job started with.
     - name: 📦 Checkout the repo
       uses: actions/checkout@v4
       with:
         fetch-depth: 1
-        sparse-checkout-cone-mode: false
-        sparse-checkout: |
-          bin/
-          lib/
-          test/
-          analysis_options.yaml
-          pubspec.yaml
-          README.md
-          CHANGELOG.md
 
     - name: 👀 Verify versions
       id: versions

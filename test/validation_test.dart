@@ -1,5 +1,6 @@
-import 'package:sheety_localization/sheety_localization.dart';
 import 'package:test/test.dart';
+
+import 'sheety.dart';
 
 void main() {
   group('extractPlaceholders', () {
@@ -184,6 +185,80 @@ void main() {
       expect(
         validateTranslation(source: 'Hello', translation: 'Прив\u{FFFD}т'),
         contains('replacement characters'),
+      );
+    });
+
+    test('rejects ICU that generate does not accept', () {
+      // The brace and argument checks pass on all of these; only the parser
+      // of `generate` knows they are outside the supported subset.
+      for (final translation in [
+        'Привет, {name, number}',
+        '{n, plural, =5{пять} other{{n} файлов}}',
+        '{n, selectordinal, one{{n}-й} other{{n}-й}}',
+      ]) {
+        final source = translation.contains('name')
+            ? 'Hello, {name}'
+            : '{n, plural, one{{n} file} other{{n} files}}';
+        expect(
+          validateTranslation(source: source, translation: translation),
+          contains('not a valid ICU message'),
+          reason: translation,
+        );
+      }
+    });
+
+    test('a one-word plural branch is text, not a placeholder', () {
+      // The brace scanner read `{item}` as a placeholder named `item`.
+      expect(
+        validateTranslation(
+          source: '{n, plural, one{item} other{items}}',
+          translation:
+              '{n, plural, one{штука} few{штуки} many{штук} other{штуки}}',
+        ),
+        isNull,
+      );
+    });
+
+    test('rejects a placeholder used another way', () {
+      expect(
+        validateTranslation(
+          source: '{g, select, male{He} other{They}}',
+          translation: '{g, plural, one{Он} other{Они}}',
+        ),
+        contains('placeholder usage mismatch'),
+      );
+    });
+
+    test('mustache: keeps the {{name}} placeholders', () {
+      // A mustache source is not valid ICU; the translation must keep the
+      // double braces instead of "fixing" them into ICU.
+      expect(
+        validateTranslation(
+          source: 'Hello {{name}}!',
+          translation: 'Привет, {{name}}!',
+        ),
+        isNull,
+      );
+      expect(
+        validateTranslation(
+          source: 'Hello {{name}}!',
+          translation: 'Привет, {name}!',
+        ),
+        contains('mustache placeholder mismatch'),
+      );
+      expect(
+        validateTranslation(
+          source: 'Hello {{name}}!',
+          translation: 'Привет, {{name}} ({name})!',
+        ),
+        contains('turned into {name}'),
+      );
+      expect(
+        validateTranslation(
+          source: 'Hello {{name}}!',
+          translation: 'Привет, {{name}!',
+        ),
+        isNotNull,
       );
     });
 

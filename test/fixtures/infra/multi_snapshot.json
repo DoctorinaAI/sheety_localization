@@ -1,0 +1,30 @@
+{
+ "sheets": [
+  {
+   "title": "help",
+   "values": [["Notes for translators."]]
+  },
+  {
+   "title": "app",
+   "values": [
+    ["label", "description", "meta", "en", "de", "pt_BR"],
+    ["title", "Application title", "", "Example", "Beispiel", "Exemplo"],
+    ["greeting", "", "{\"placeholders\": {\"name\": {\"type\": \"String\", \"example\": \"Bob\"}}}", "Hello, {name}!", "Hallo, {name}!"]
+   ]
+  },
+  {
+   "title": "sign-up",
+   "values": [
+    ["label", "description", "meta", "en", "de"],
+    ["signUp", "", "", "Sign up", "Registrieren"]
+   ]
+  },
+  {
+   "title": "backend-mail",
+   "values": [
+    ["label", "description", "meta", "en", "de"],
+    ["subject", "", "", "Hello {{user}}", "Hallo {{user}}"]
+   ]
+  }
+ ]
+}

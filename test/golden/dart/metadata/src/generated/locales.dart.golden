@@ -1,0 +1,43 @@
+// This file is generated, do not edit it manually!
+// ignore_for_file: directives_ordering
+// ignore_for_file: type=lint
+
+import 'dart:ui' show Locale;
+
+/// Supported locales for the application.
+abstract final class Locales {
+  const Locales._();
+
+  static const Locale en = Locale('en');
+  static const Locale ru = Locale('ru');
+  static const Locale pt$BR = Locale('pt', 'BR');
+  static const Locale de = Locale('de');
+  static const Locale ar = Locale('ar');
+  static const Locale es = Locale('es');
+  static const Locale es$419 = Locale('es', '419');
+  static const Locale zh$Hant = Locale.fromSubtags(
+    languageCode: 'zh',
+    scriptCode: 'Hant',
+  );
+  static const Locale zh$Hant$TW = Locale.fromSubtags(
+    languageCode: 'zh',
+    countryCode: 'TW',
+    scriptCode: 'Hant',
+  );
+  static const Locale pt = Locale('pt');
+  static const Locale zh = Locale('zh');
+
+  static const List<Locale> values = <Locale>[
+    en,
+    ru,
+    pt$BR,
+    de,
+    ar,
+    es,
+    es$419,
+    zh$Hant,
+    zh$Hant$TW,
+    pt,
+    zh,
+  ];
+}

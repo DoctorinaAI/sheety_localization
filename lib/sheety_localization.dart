@@ -5,6 +5,9 @@
 /// access.
 library;
 
+export 'src/common/sheet_layout.dart';
+export 'src/generate/pipeline.dart'
+    show exitErrors, exitOk, exitStale, exitUsage, generateHelp, runGenerate;
 export 'src/localize/client.dart';
 export 'src/localize/google_sheets.dart';
 export 'src/localize/language_names.dart';
