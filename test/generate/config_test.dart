@@ -220,7 +220,7 @@ void main() {
         expect(
           () => parse(['--sheet=x', '--dart=o', ...args]),
           fails(allOf(
-            startsWith('--$name was removed in 1.0.0.'),
+            startsWith('--$name was removed in 0.7.0-dev.'),
             contains(removedOptions[name]),
           )),
         );

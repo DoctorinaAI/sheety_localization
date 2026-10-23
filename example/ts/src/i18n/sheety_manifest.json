@@ -1,6 +1,6 @@
 {
   "generator": "sheety_localization",
-  "version": "1.0.0",
+  "version": "0.7.0-dev",
   "format": 1,
   "target": "ts",
   "sourceHash": "61d37015dcdf5f6138a9db0719530f6989236a1f8f040e24c11d46b46402209a",

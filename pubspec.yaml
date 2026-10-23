@@ -9,7 +9,7 @@ description: >
   Google Sheets, with ICU plural/select support, validation, and AI-assisted
   translation of missing cells.
 
-version: 1.0.0
+version: 0.7.0-dev
 
 homepage: https://github.com/DoctorinaAI/sheety_localization
 repository: https://github.com/DoctorinaAI/sheety_localization

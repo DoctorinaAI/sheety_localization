@@ -1,4 +1,4 @@
-## 1.0.0
+## 0.7.0-dev
 
 - **BREAKING**: `generate` no longer writes ARB files and no longer runs `flutter gen-l10n` — it parses the sheet itself and emits the code directly. Generation needs only the Dart SDK; CI no longer has to download Flutter.
 - **BREAKING**: Removed `--arb`, `--prefix`, `--author`, `--comment`, `--context`, `--modified` and `--[no-]last-modified` (they only shaped ARB files); using one fails with a migration hint. `--lib` / `--gen` keep working as a shortcut for the Dart target.

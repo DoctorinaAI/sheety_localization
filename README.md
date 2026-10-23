@@ -19,6 +19,15 @@ and product people edit one spreadsheet, and a single command generates:
 - **Python**: a zero-dependency typed package for a backend (FastAPI, Django,
   workers), with `Accept-Language` negotiation.
 
+> [!WARNING]
+> **The generation process changed in 0.7.0.** `generate` no longer writes ARB
+> files and no longer runs `flutter gen-l10n`: it reads the sheet and writes the
+> Dart, TypeScript and Python code itself. The ARB-only options (`--arb`,
+> `--prefix`, `--author`, …) are removed, a target (`--dart`, `--ts`,
+> `--python` or `sheety.yaml`) is required, and the sheet is validated more
+> strictly: duplicate labels and empty base texts are now errors. Read
+> [Migrating from 0.6.x](#migrating-from-06x) before upgrading.
+
 The package ships two executables:
 
 | Executable | What it does |
@@ -1000,7 +1009,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dart-lang/setup-dart@v1
-      - run: dart pub global activate sheety_localization 1.0.0
+      - run: dart pub global activate sheety_localization 0.7.0-dev
       - run: printf '%s' "$GOOGLE_SHEETS_KEY" > credentials.json
         env:
           GOOGLE_SHEETS_KEY: ${{ secrets.GOOGLE_SHEETS_KEY }}
@@ -1112,12 +1121,12 @@ case-insensitive file systems (macOS, Windows).
 
 ## Migrating from 0.6.x
 
-1.0.0 no longer writes ARB files or runs `flutter gen-l10n`. It generates the
+0.7.0-dev no longer writes ARB files or runs `flutter gen-l10n`. It generates the
 same Dart API directly.
 
 **Removed options.** Each one fails with an explanation (exit code 64):
 
-| 0.6.x | 1.0.0 |
+| 0.6.x | 0.7.0-dev |
 |---|---|
 | `--arb`, `-a` | Removed: no ARB files. Delete the old ARB directory (`lib/src/l10n`) |
 | `--prefix` | Removed (it named the ARB files) |
@@ -1139,7 +1148,7 @@ targets:
 `--sheet`, `--credentials`, `--ignore`, `--header`, `--[no-]format` and
 `--[no-]include-empty` keep their meaning, but the default of
 `--include-empty` is now on (see below). 0.6.x defaulted `--lib` to `lib`;
-1.0.0 needs a target, so a bare `generate --sheet=…` now asks for one. Pass
+0.7.0-dev needs a target, so a bare `generate --sheet=…` now asks for one. Pass
 `--lib=lib` or `--dart=lib`.
 
 **First run over the old output.** Without a manifest, files at the generated
@@ -1342,7 +1351,7 @@ docker build -t username/sheety:latest .
 docker buildx build \
   --platform linux/amd64,linux/arm64 \
   -t username/sheety:latest \
-  -t username/sheety:1.0.0 \
+  -t username/sheety:0.7.0-dev \
   --push .
 ```
 
@@ -1354,7 +1363,7 @@ docker buildx build \
   `--check` in CI, so a sheet edit can never silently change a release.
 - **Never commit the service account key.** Inject it from a CI secret.
 - **Pin the generator version** (`dart pub add --dev sheety_localization` or
-  `dart pub global activate sheety_localization 1.0.0`). The output is
+  `dart pub global activate sheety_localization 0.7.0-dev`). The output is
   deterministic for a given version, but may change between versions.
 - **Keep non-localization tabs** (notes, glossaries) in the spreadsheet. They
   are skipped automatically, and you can list them in `ignore` to silence the

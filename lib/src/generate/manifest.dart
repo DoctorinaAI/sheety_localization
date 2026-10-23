@@ -15,7 +15,7 @@ const String generatorName = 'sheety_localization';
 
 /// Version of the generator. Must equal `version:` in `pubspec.yaml` (a test
 /// enforces it).
-const String generatorVersion = '1.0.0';
+const String generatorVersion = '0.7.0-dev';
 
 /// File name of the manifest inside a target's output directory.
 const String manifestFileName = 'sheety_manifest.json';

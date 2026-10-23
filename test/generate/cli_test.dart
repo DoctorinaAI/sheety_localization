@@ -203,7 +203,7 @@ void main() {
       expect(unknown.err, contains('frobnicate'));
       final removed = await cli(const ['--sheet=x', '--dart=o', '--arb=l10n']);
       expect(removed.code, exitUsage);
-      expect(removed.err, contains('--arb was removed in 1.0.0'));
+      expect(removed.err, contains('--arb was removed in 0.7.0-dev'));
       io.File(p.join(cwd, 'sheety.yaml')).writeAsStringSync('targts: {}\n');
       final yaml = await cli(const []);
       expect(yaml.code, exitUsage);

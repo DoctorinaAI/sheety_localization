@@ -1,6 +1,6 @@
 {
   "generator": "sheety_localization",
-  "version": "1.0.0",
+  "version": "0.7.0-dev",
   "format": 1,
   "target": "python",
   "sourceHash": "4a06712649e860d27a6bb43b13671a81e40f532406af4780ec839293a33824a9",

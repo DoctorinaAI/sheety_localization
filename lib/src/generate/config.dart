@@ -206,7 +206,7 @@ final class GenerateConfig {
 // Command line
 // ---------------------------------------------------------------------------
 
-/// Options removed in 1.0.0 and what replaces them.
+/// Options removed in 0.7.0-dev and what replaces them.
 const Map<String, String> removedOptions = {
   'arb': 'ARB files are no longer generated: the Dart target emits the '
       'localization classes directly (no `flutter gen-l10n`). Remove --arb '
@@ -550,7 +550,7 @@ GenerateConfig _build(ArgResults args, String cwd) {
   // Removed options first: they make every other message irrelevant.
   for (final MapEntry(:key, :value) in removedOptions.entries) {
     if (args.wasParsed(key)) {
-      throw ConfigException('--$key was removed in 1.0.0. $value');
+      throw ConfigException('--$key was removed in 0.7.0-dev. $value');
     }
   }
   if (args.rest.isNotEmpty) {
